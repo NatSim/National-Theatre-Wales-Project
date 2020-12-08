@@ -79,3 +79,11 @@ If all's well with the above steps, you should see a list of names. If your brow
 ## What's Next?!
 
 Now it's time to start building your project.
+
+### Start Instructions
+
+To start the client:
+Run `npm start` in command line.
+
+Start the server:
+`npm run develop`
