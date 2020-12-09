@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import NTWlogo from "./components/NTWlogo";
+import LargeImage from "./components/LargeImage";
 
 // SERVICES
-import userService from './services/userService';
+import userService from "./services/userService";
 
 function App() {
   const [users, setusers] = useState(null);
@@ -17,15 +19,19 @@ function App() {
     setusers(res);
   };
 
-  const renderUser = (user) => {
+  const renderUser = () => {
     return (
-      <li key={user._id}>
-        <h3>
-          {`${user.first_name} 
+      <div>
+        {/* <li key={user._id}>
+          <h3>
+            {`${user.first_name} 
           ${user.last_name}`}
-        </h3>
-        <p>{user.location}</p>
-      </li>
+          </h3>
+          <p>{user.location}</p>
+        </li> */}
+        <NTWlogo />
+        <LargeImage />
+      </div>
     );
   };
 

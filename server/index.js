@@ -1,14 +1,15 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+const express = require("express");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
 
 // IMPORT YOUR MODELS
-require('./models/Users');
+require("./models/Users");
 
 const app = express();
 
 mongoose.Promise = global.Promise;
 mongoose.connect(
+  // Connecting to Repo DB
   process.env.MONGODB_URI ||
     `mongodb://localhost:27017/black-codher-personal-project`,
   {
@@ -20,7 +21,7 @@ mongoose.connect(
 app.use(bodyParser.json());
 
 // IMPORT YOUR ROUTES
-require('./routes/usersRoutes')(app);
+require("./routes/usersRoutes")(app);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
