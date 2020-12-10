@@ -4,7 +4,8 @@ import Image2 from "../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 
 console.log(Image);
 
-//NTW Logo Component
+//NTW Image Functional Component
+
 const LargeImage = () => (
   <section>
     <img src={Image} alt="Large Image" />;
