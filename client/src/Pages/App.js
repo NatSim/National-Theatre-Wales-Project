@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import NTWlogo from "./components/NTWlogo";
-import LargeImage from "./components/LargeImage";
+import NTWlogo from "../Components/NTWlogo";
+import LargeImage from "../Components/LargeImage";
+import SmallButton from "../Components/Button";
 
 // SERVICES
-import userService from "./services/userService";
+import userService from "../services/userService";
 
 function App() {
   const [users, setusers] = useState(null);
@@ -29,21 +30,22 @@ function App() {
           </h3>
           <p>{user.location}</p>
         </li> */}
-        <NTWlogo />
-        <LargeImage />
       </div>
     );
   };
 
   return (
     <div>
-      <ul>
+      {/* <ul>
         {users && users.length > 0 ? (
           users.map((user) => renderUser(user))
         ) : (
           <p>No users found</p>
         )}
-      </ul>
+      </ul> */}
+      <NTWlogo />
+      <LargeImage />
+      <SmallButton />
     </div>
   );
 }
