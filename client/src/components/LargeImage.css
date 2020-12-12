@@ -9,6 +9,8 @@
   float: right;
   width: 304px;
   height: 200px;
+  transform: rotateY(180deg);
+  perspective: 1000px; /*Redundant code- Will soon add a 3D effect*/
 }
 
 .team2 {

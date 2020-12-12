@@ -1,9 +1,10 @@
 import React from "react";
+import "./NextButton.css";
 
 //Next Button Functional Component
 const SmallButton = () => (
-  <div className="next">
-    <button class="ui yellow button">NEXT</button>
+  <div className="smallbutton">
+    <button class="next">NEXT</button>
   </div>
 );
 

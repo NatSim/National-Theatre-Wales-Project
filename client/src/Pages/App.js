@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NTWlogo from "../Components/NTWlogo";
 import LargeImage from "../Components/LargeImage";
-import SmallButton from "../Components/Button";
 
 // SERVICES
 import userService from "../services/userService";
@@ -45,7 +44,6 @@ function App() {
       </ul> */}
       <NTWlogo />
       <LargeImage />
-      <SmallButton />
     </div>
   );
 }
