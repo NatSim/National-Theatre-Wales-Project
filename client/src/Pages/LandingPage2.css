@@ -1,0 +1,15 @@
+body {
+  font-family: "Caveat";
+  text-align: center;
+  font-size: 36px;
+}
+
+/*'Simple Acts'*/
+em {
+  color: #00c1a2;
+}
+
+/*Main Title */
+.go_tell_the_bees {
+  color: #ff9f00;
+}

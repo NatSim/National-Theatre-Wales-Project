@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import NTWlogo from "../Components/NTWlogo";
 import LargeImage from "../Components/LargeImage";
+import Welcome from "./LandingPage2";
+import Story from "./LandingPage3";
+import Start from "./LandingPage4";
 
 // SERVICES
 import userService from "../services/userService";
@@ -44,6 +47,8 @@ function App() {
       </ul> */}
       <NTWlogo />
       <LargeImage />
+      <Welcome />
+      <Story />
     </div>
   );
 }

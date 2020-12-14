@@ -7,8 +7,8 @@ import "./LargeImage.css";
 
 const LargeImage = () => (
   <div className="largeimage">
-    <img className="bee1" src={Image} alt="Large Image" />
-    <img className="team2" src={Image2} alt="Large Image" />
+    <img className="bee1" src={Image} alt="Large half Bee" />
+    <img className="team2" src={Image2} alt="NTWTeam" />
   </div>
 );
 
