@@ -31,6 +31,9 @@ const About = () => {
       <article>
         To learn more about NTW Team and how you can get involved click here
       </article>
+      <div>
+        <button>Contact Us</button>
+      </div>
     </section>
   );
 };
