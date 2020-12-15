@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import NTWlogo from "../Components/NTWlogo";
 import LargeImage from "../Components/LargeImage";
 import Welcome from "../Components/Welcome";
 import SimpleActVideo from "./SimpleActsPage";
-import { Router, Route, Switch } from "react-router";
+// import { Router, Route, Switch } from "react-router";
 import WelcomeBee from "../Components/BeeStamp";
+import BeeStamp from "../images/whole-beeimage.png";
+// import "../Components/Welcome.css";
 
-// SERVICES
-import userService from "../services/userService";
+// // SERVICES
+// import userService from "../services/userService";
 
 /**
  * Landing Page Content
@@ -29,26 +31,17 @@ const welcomeText = [
     mainText: "",
   },
   {
-    imageUrl: "../images/whole-beeimage.png",
+    imageUrl: BeeStamp,
   },
 ];
-
-//Adding Class for styling
-const str = welcomeText[0].title;
-const res = str.slice(11, 27);
-
-const specialChars = document.getElementsByName(res);
-specialChars.className = "title";
-
-console.log(specialChars);
 
 //Setting state 0,1,2
 function App() {
   const [title, setTitle] = useState(welcomeText[0].title);
   const [mainText, setMainText] = useState(welcomeText[0].mainText);
-  const [imageUrl, setImageUrl] = useState(welcomeText[(0, 1, 2)].imageUrl);
-  const [welcomeStep, setWelcomeStep] = useState(0);
-
+  const [imageUrl, setImageUrl] = useState(welcomeText[3].imageUrl);
+  const [welcomeStep, setWelcomeStep] = useState(0); //starting point
+  console.log({ imageUrl });
   //Button onclick function arrayElement
   const onClickHandler = (arrayElement) => {
     setTitle(welcomeText[arrayElement].title);

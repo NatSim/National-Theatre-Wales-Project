@@ -1,16 +1,16 @@
 import React from "react";
-import "./NextButton.css";
+import "../Components/NextButton.css";
 
 //Next Button Functional Component
-const SmallButton = ({ onClickHandler, welcomeStep }) => {
+const NextButton = ({ onClickHandler, welcomeStep }) => {
   console.log(onClickHandler, welcomeStep);
   return (
-    <div className="smallbutton">
-      <button onClick={() => onClickHandler(welcomeStep + 1)} class="next">
+    <div>
+      <button onClick={() => onClickHandler(welcomeStep + 1)} className="next">
         NEXT
       </button>
     </div>
   );
 };
 
-export default SmallButton;
+export default NextButton;

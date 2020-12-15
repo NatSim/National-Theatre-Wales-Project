@@ -1,6 +1,6 @@
 import React from "react";
 import "./Welcome.css";
-import SmallButton from "./NextButton";
+import NextButton from "./NextButton";
 
 /**
  *Functional component-Welcome message
@@ -15,13 +15,24 @@ const Welcome = ({
   onClickHandler,
   welcomeStep,
 }) => {
-  console.log(title, mainText, onClickHandler); //check for errors
+  console.log(title, mainText, imageUrl, onClickHandler); //check for errors
+
+  //Adding Class for styling
+  const str = title;
+  const last = str.slice(11, 27);
+  const first = str.slice(0, 10);
+  const newTitle = () => (
+    <>
+      Welcome to
+      <span className="yellow">Go tell the bees</span>
+    </>
+  );
 
   return (
     <div>
-      <h1>{title}</h1>
+      <h1>{welcomeStep === 0 ? newTitle() : title}</h1>
       <p>{mainText}</p>
-      <SmallButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
+      <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
       <img className="wholeBee" src={imageUrl} alt="LargeBee" />
     </div>
   );

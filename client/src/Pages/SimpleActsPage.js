@@ -23,10 +23,5 @@ class SimpleActVideo extends Component {
     const { videoId } = this.props;
     return <YouTube videoId={videoId} opts={opts} onReady={this._onReady} />;
   }
-
-  videoOnReady(event) {
-    // access to player in all event handlers via event.target
-    event.target.pauseVideo();
-  }
 }
 export default SimpleActVideo;

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import BeeStamp from "../images/whole-beeimage.png";
 import "../Components/BeeStamp.css";
 
