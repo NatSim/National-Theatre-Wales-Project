@@ -9,7 +9,7 @@ import SmallButton from "../Components/NextButton";
  */
 
 const Welcome = ({ title, mainText, onClickHandler, welcomeStep }) => {
-  console.log(title, mainText, onClickHandler);
+  console.log(title, mainText, onClickHandler); //check for errors
   return (
     <div>
       <h1>{title}</h1>
