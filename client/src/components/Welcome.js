@@ -1,7 +1,7 @@
 import React from "react";
 import "./Welcome.css";
 import NextButton from "./NextButton";
-
+import BeeStamp from "../images/whole-beeimage.png";
 /**
  *Functional component-Welcome message
  *
@@ -17,7 +17,7 @@ const Welcome = ({
 }) => {
   console.log(title, mainText, imageUrl, onClickHandler); //check for errors
 
-  //Adding Class for styling
+  //Adding Class for styling welcomeText first attempt
   const str = title;
   const last = str.slice(11, 27);
   const first = str.slice(0, 10);
@@ -30,10 +30,16 @@ const Welcome = ({
 
   return (
     <div>
-      <h1>{welcomeStep === 0 ? newTitle() : title}</h1>
-      <p>{mainText}</p>
-      <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
-      <img className="wholeBee" src={imageUrl} alt="LargeBee" />
+      <section>
+        <h1>{welcomeStep === 0 ? newTitle() : title}</h1>
+        <p>{mainText}</p>
+        <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
+      </section>
+      <section>
+        <figure>
+          <img className="wholeBee" src={BeeStamp} alt="Large Bee Stamp" />
+        </figure>
+      </section>
     </div>
   );
 };

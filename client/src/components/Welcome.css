@@ -4,12 +4,18 @@ body {
   font-size: 36px;
 }
 
-/*'Simple Acts'*/
+/*title "Go Tell The Bees" */
+.yellow {
+  color: #ff9f00;
+}
+
+/* mainText "Simple Acts"*/
 em {
   color: #00c1a2;
 }
 
-/*Main Title */
-.yellow {
-  color: #ff9f00;
+.wholeBee {
+  width: 244px;
+  height: 63;
+  border-radius: 10px;
 }

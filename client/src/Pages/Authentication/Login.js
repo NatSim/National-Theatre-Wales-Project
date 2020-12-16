@@ -1,3 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-//Login Component Class Component
+//Login Component
+
+function Login() {
+  return (
+    <div>
+      <h1>Login Page</h1>
+    </div>
+  );
+}
+
+export default Login;
