@@ -14,8 +14,14 @@ em {
   color: #00c1a2;
 }
 
-.wholeBee {
+.tranisition-image {
   width: 244px;
   height: 63;
   border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.tranisition-image:hover {
+  opacity: 1;
 }

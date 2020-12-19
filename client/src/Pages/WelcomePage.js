@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { welcomeText } from "../Models/welcomeText";
 import Welcome from "../Components/Welcome";
 
+//App Context Steps-Component, only BrandNew users will see on first visit
+//Set state 0,1,2
 function WelcomePage() {
   const [title, setTitle] = useState(welcomeText[0].title);
   const [mainText, setMainText] = useState(welcomeText[0].mainText);

@@ -1,9 +1,8 @@
 import React from "react";
+import Image2 from "../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
+import "./AboutInfo.css";
 
-import React from "react";
-
-//About Page
-const About = () => {
+function AboutInfo() {
   return (
     <section>
       <article>
@@ -17,10 +16,12 @@ const About = () => {
         people of the county.
       </article>
       <article>
-        <figure>
-          <img></img>
-          <figcaption>Team Social-Tide Whisperer</figcaption>
-        </figure>
+        <img
+          className="pem-image2"
+          src={Image2}
+          alt="Tide-Whisperer-TEAM-Social Pembrokeshire Landscape"
+        ></img>
+        <figcaption>Team Social-Tide Whisperer</figcaption>
       </article>
       <article>
         Having decided on climate change and the environment as the most urgent
@@ -40,6 +41,6 @@ const About = () => {
       </article>
     </section>
   );
-};
+}
 
-export default About;
+export default AboutInfo;

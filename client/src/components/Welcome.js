@@ -24,9 +24,15 @@ const Welcome = ({
   const newTitle = () => (
     <>
       Welcome to
+      <br />
       <span className="yellow">Go tell the bees</span>
     </>
   );
+
+  // //Bee transition Effect
+  // const FadeOutBee = ({ BeeStamp }) => {
+  //   // image fade out
+  // };
 
   return (
     <div>
@@ -36,8 +42,12 @@ const Welcome = ({
         <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
       </section>
       <section>
-        <figure>
-          <img className="wholeBee" src={BeeStamp} alt="Large Bee Stamp" />
+        <figure className="image-container">
+          <img
+            className="tranisition-image"
+            src={BeeStamp}
+            alt="Large Bee Stamp"
+          />
         </figure>
       </section>
     </div>
