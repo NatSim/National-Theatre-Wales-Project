@@ -4,6 +4,11 @@ body {
 
 .white-h1 {
   color: white;
+  font-size: 36px;
+}
+
+.home-button-container {
+  padding-top: 10px;
 }
 
 img {

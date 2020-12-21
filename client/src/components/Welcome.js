@@ -43,13 +43,13 @@ const Welcome = ({
     </>
   );
 
-  {
-    /* 
-   Bee transition Effect
-   const FadeOutBee = ({ BeeStamp }) => {
-   image fade out
-   }; */
-  }
+  // {
+  //   /*
+  //  Bee transition Effect
+  //  const FadeOutBee = ({ BeeStamp }) => {
+  //  image fade out
+  //  }; */
+  // }
 
   return (
     <div>

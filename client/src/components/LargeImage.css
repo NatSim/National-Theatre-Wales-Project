@@ -1,7 +1,8 @@
 .largeimage {
   border-radius: 10%;
-  border-color: crimson;
+
   align-items: left;
+  justify-content: space-evenly;
 }
 
 .bee1 {

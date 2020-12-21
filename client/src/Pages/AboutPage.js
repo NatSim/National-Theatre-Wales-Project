@@ -2,7 +2,7 @@ import React from "react";
 import AboutInfo from "../Components/AboutInfo";
 import SimpleActVideo from "../Components/SimpleActVideo";
 import { Link } from "react-router-dom";
-import "../Components/NextButton.css";
+import "../Components/MainButton.css";
 
 //About Page
 const About = () => {

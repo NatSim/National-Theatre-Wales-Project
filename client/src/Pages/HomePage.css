@@ -4,6 +4,45 @@
   font-size: 22px;
 }
 
+a,
 li {
   list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  margin: 0 30px 10px 0;
+}
+
+.default-button {
+  width: 200px;
+  height: 54px;
+  font-family: "Caveat";
+  font: bold;
+  font-size: 24px;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Bee Image about button*/
+
+#simple-button {
+  background-color: #00c1a2;
+}
+
+#meditate-button {
+  background-color: #82d121;
+}
+
+#music-button {
+  background-color: #ff2f69;
+}
+
+#term-button {
+  background-color: #89d7e8;
+}
+
+#contact-button {
+  background-color: #fbce69;
 }

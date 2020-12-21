@@ -10,13 +10,19 @@ import TakeAWalk from "../images/TakeAWalk.jpg";
 import "../Pages/SimpleActPage.css";
 
 const SimpleActsPage = () => {
-  // const onClickHandler = (arrayItem) => {
-  //   simpleText;
-  // };
+  function handleClick(e) {
+    e.preventDefault();
+
+    console.log("The link was clicked.");
+  }
 
   return (
     <div>
-      <button>Home</button>
+      <div className="home-button-container">
+        <button className="button" path="/home" onClick={handleClick}>
+          Home
+        </button>
+      </div>
       <h1 className="white-h1">Simple Acts</h1>
       <div className="simple-acts">
         <SimpleActVideo videoId={"qxB3-sw2HAQ"} />

@@ -1,6 +1,8 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import "./HomePage.css";
+import BeeStamp from "../images/whole-beeimage.png";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
@@ -16,25 +18,43 @@ function HomePage() {
       <h1>
         <Greeting name="Natasha" />
       </h1>
+
       <nav>
         <ul>
           <li>
-            <Link to="/about"> About</Link>
+            <a href="/about">
+              <img
+                id="about-button"
+                className="default-button"
+                src={BeeStamp}
+                alt="whole bee image"
+              />
+            </a>
           </li>
           <li>
-            <Link to="/simpleacts">Simple Acts</Link>
+            <Button id="simple-button" className="default-button">
+              <Link to="/simpleacts">Simple Acts</Link>
+            </Button>
           </li>
           <li>
-            <Link to="/meditation">Meditation</Link>
+            <button id="meditate-button" className="default-button">
+              <Link to="/meditation">Meditation</Link>
+            </button>
           </li>
           <li>
-            <Link to="/music">Music</Link>
+            <button id="music-button" className="default-button">
+              <Link to="/music">Music</Link>
+            </button>
           </li>
           <li>
-            <Link to="/terms">Terms {`&`} Conditions</Link>
+            <button id="term-button" className="default-button">
+              <Link to="/terms">Terms {`&`} Conditions</Link>
+            </button>
           </li>
           <li>
-            <Link to="/contact">Contact Us</Link>
+            <button id="contact-button" className="default-button">
+              <Link to="/contact">Contact Us</Link>
+            </button>
           </li>
         </ul>
       </nav>
