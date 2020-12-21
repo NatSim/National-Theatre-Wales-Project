@@ -1,12 +1,15 @@
 import React from "react";
-import "../Components/NextButton.css";
+import "../Components/MainButton.css";
 
 //Next Button Functional Component
 const NextButton = ({ onClickHandler, welcomeStep }) => {
   console.log(onClickHandler, welcomeStep);
   return (
     <div>
-      <button onClick={() => onClickHandler(welcomeStep + 1)} className="next">
+      <button
+        onClick={() => onClickHandler(welcomeStep + 1)}
+        className="button"
+      >
         NEXT
       </button>
     </div>
