@@ -13,11 +13,11 @@ img {
 }
 
 .flex-container {
-  border: 5px solid white;
+  /* border: 5px solid white; */
   display: flex;
-  /* display: block;
-   */
-  /* flex-direction: row; */
+  /* display: block; */
+
+  flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }

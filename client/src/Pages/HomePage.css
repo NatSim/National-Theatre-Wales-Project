@@ -3,3 +3,7 @@
   font: bold;
   font-size: 22px;
 }
+
+li {
+  list-style: none;
+}

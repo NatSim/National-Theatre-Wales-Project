@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./HomePage.css";
 
 /**Homepage with Nav buttons as routes to other pages
@@ -17,12 +18,24 @@ function HomePage() {
       </h1>
       <nav>
         <ul>
-          <li>About</li>
-          <li>Simple Acts</li>
-          <li>Meditation</li>
-          <li>Music</li>
-          <li>Terms {`&`} Conditions</li>
-          <li>Contact Us</li>
+          <li>
+            <Link to="/about"> About</Link>
+          </li>
+          <li>
+            <Link to="/simpleacts">Simple Acts</Link>
+          </li>
+          <li>
+            <Link to="/meditation">Meditation</Link>
+          </li>
+          <li>
+            <Link to="/music">Music</Link>
+          </li>
+          <li>
+            <Link to="/terms">Terms {`&`} Conditions</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+          </li>
         </ul>
       </nav>
     </div>
