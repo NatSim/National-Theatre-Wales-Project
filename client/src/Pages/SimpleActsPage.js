@@ -1,27 +1,51 @@
-import React, { Component } from "react";
-import YouTube from "react-youtube";
+import React from "react";
+import SimpleActVideo from "../Components/SimpleActVideo";
+import BeKind from "../images/BeKind.jpg";
+import Connect from "../images/Connect.jpg";
+import Consider from "../images/Consider.jpg";
+import Consume from "../images/Consume.jpg";
+import Learn1 from "../images/Learn1.jpg";
+import Plant from "../images/Plant.jpg";
+import TakeAWalk from "../images/TakeAWalk.jpg";
+import "../Pages/SimpleActPage.css";
 
-//Simple Acts Page - Features Simple Act buttons route to pages
-//https://www.youtube.com/watch?v=qxB3-sw2HAQ&feature=emb_imp_woyt
-//https://youtu.be/qxB3-sw2HAQ
+const SimpleActsPage = () => {
+  // const onClickHandler = (arrayItem) => {
+  //   simpleText;
+  // };
 
-class SimpleActVideo extends Component {
-  videoOnReady(event) {
-    //access to player in all event handlers via event.target
-    event.target.pauseVideo();
-    console.log(event.target);
-  }
-  render() {
-    const opts = {
-      height: "390",
-      width: "640",
-      playerVars: {
-        // https://developers.google.com/youtube/player_parameters
-        autoplay: 1,
-      },
-    };
-    const { videoId } = this.props;
-    return <YouTube videoId={videoId} opts={opts} onReady={this._onReady} />;
-  }
-}
-export default SimpleActVideo;
+  return (
+    <div>
+      <button>Home</button>
+      <h1 className="white-h1">Simple Acts</h1>
+      <div className="simple-acts">
+        <SimpleActVideo videoId={"qxB3-sw2HAQ"} />
+      </div>
+      <section className="flex-container">
+        <div>
+          <img src={BeKind} alt="Kind" />
+        </div>
+        <div>
+          <img src={Connect} alt="Connecting" />
+        </div>
+        <div>
+          <img src={Consider} alt="Consider" />
+        </div>
+        <div>
+          <img src={Consume} alt="Consume" />
+        </div>
+        <div>
+          <img src={Learn1} alt="Learn" />
+        </div>
+        <div>
+          <img src={Plant} alt="Plant" />
+        </div>
+        <div>
+          <img src={TakeAWalk} alt="Talk a walk" />
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default SimpleActsPage;

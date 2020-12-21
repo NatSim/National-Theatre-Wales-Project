@@ -10,10 +10,11 @@ body {
 }
 
 /* mainText "Simple Acts"*/
-em {
+.blue {
   color: #00c1a2;
 }
 
+/* Bee Stamp*/
 .tranisition-image {
   width: 244px;
   height: 63;
@@ -24,4 +25,10 @@ em {
 
 .tranisition-image:hover {
   opacity: 1;
+}
+
+/* Temp image placeholder*/
+.callum {
+  width: 200px;
+  height: 130px;
 }

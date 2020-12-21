@@ -2,7 +2,7 @@ import React from "react";
 import SignUp from "../Components/SignUp";
 import Login from "../Components/Login";
 
-function AuthenticationPage() {
+const AuthenticationPage = () => {
   return (
     <div>
       <h1>
@@ -13,6 +13,6 @@ function AuthenticationPage() {
       </h1>
     </div>
   );
-}
+};
 
 export default AuthenticationPage;

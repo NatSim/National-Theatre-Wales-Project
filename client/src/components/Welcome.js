@@ -2,6 +2,7 @@ import React from "react";
 import "./Welcome.css";
 import NextButton from "./NextButton";
 import BeeStamp from "../images/whole-beeimage.png";
+import PlaceHolder from "../images/callum.jpg";
 /**
  *Functional component-Welcome message
  *
@@ -18,9 +19,9 @@ const Welcome = ({
   console.log(title, mainText, imageUrl, onClickHandler); //check for errors
 
   //Adding Class for styling welcomeText first attempt
-  const str = title;
-  const last = str.slice(11, 27);
-  const first = str.slice(0, 10);
+  // const str = title;
+  // const last = str.slice(11, 27);
+  // const first = str.slice(0, 10);
   const newTitle = () => (
     <>
       Welcome to
@@ -29,16 +30,39 @@ const Welcome = ({
     </>
   );
 
-  // //Bee transition Effect
-  // const FadeOutBee = ({ BeeStamp }) => {
-  //   // image fade out
-  // };
+  const specialChars = () => (
+    <>
+      Go Tell the Bees, asks each one of us to perform seven
+      <span className="blue"> Simple Acts </span> in our daily lives.
+    </>
+  );
+
+  const questionChars = () => (
+    <>
+      <span className="yellow">So what will you tell the bees?</span>
+    </>
+  );
+
+  {
+    /* 
+   Bee transition Effect
+   const FadeOutBee = ({ BeeStamp }) => {
+   image fade out
+   }; */
+  }
 
   return (
     <div>
       <section>
-        <h1>{welcomeStep === 0 ? newTitle() : title}</h1>
-        <p>{mainText}</p>
+        <h1>
+          {welcomeStep === 0
+            ? newTitle()
+            : title && welcomeStep === 2
+            ? questionChars()
+            : title}
+        </h1>
+        <img className="callum" src={PlaceHolder} alt="Callum" />
+        <p>{welcomeStep === 0 ? specialChars() : mainText}</p>
         <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
       </section>
       <section>

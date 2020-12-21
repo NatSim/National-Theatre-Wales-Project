@@ -36,7 +36,7 @@ function AboutInfo() {
         <button>Contact Us</button>
       </div>
       <article>
-        To find out more about Go Tell The Bees ${`&`} the show visit:
+        To find out more about Go Tell The Bees {`&`} the show visit:
         https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/
       </article>
     </section>

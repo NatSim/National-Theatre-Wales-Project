@@ -1,3 +1,35 @@
+body {
+  font-family: "Caveat";
+}
+
 .App {
   text-align: center;
 }
+
+/*Landing Page NTW Logo */
+.ntw-main {
+  float: left;
+  width: 223px;
+  height: 138px;
+}
+
+/*Individual Page Background Color*/
+
+#main,
+body {
+  background: #a2d33b;
+}
+/* 
+#authpage,
+body {
+  background-color: #a2d33b;
+}
+
+#homepage,
+ {
+  background-color: #ff9f00;
+}
+#aboutpage,
+ {
+  background-color: #82d121;
+} */

@@ -1,0 +1,23 @@
+body {
+  background: #82d121;
+}
+
+.white-h1 {
+  color: white;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.flex-container {
+  border: 5px solid white;
+  display: flex;
+  /* display: block;
+   */
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
