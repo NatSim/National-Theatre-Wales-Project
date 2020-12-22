@@ -19,10 +19,8 @@ function WelcomePage() {
     setWelcomeStep(arrayElement);
   };
 
-  const [color] = useState("#A2D33B");
-
   return (
-    <div style={{ background: color }} id="welcomepage">
+    <div>
       <Welcome
         welcomeStep={welcomeStep}
         onClickHandler={onClickHandler}

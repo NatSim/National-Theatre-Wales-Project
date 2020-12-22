@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import "./HomePage.css";
 import BeeStamp from "../images/whole-beeimage.png";
+import SimpleActsPage from "./SimpleActsPage";
+import MeditationPage from "./MeditationPage";
+import MusicPage from "./MusicPage";
+import Terms from "./TermsPage";
+import ContactUsPage from "./ContactUsPage";
+import About from "./AboutPage";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
@@ -11,10 +17,20 @@ const Greeting = (props) => {
   return <h1 className="welcome">Welcome back, {props.name}</h1>;
 };
 
-function HomePage() {
-  const [color, changeColor] = useState("#FF9F00");
+const NavButton = (props) => {
   return (
-    <div style={{ background: color }} id="homepage">
+    //Reusable button component
+    <Link to={props.link}>
+      <Button id={props.buttonColor} className="default-button">
+        {props.children}
+      </Button>
+    </Link>
+  );
+};
+
+function HomePage() {
+  return (
+    <div className="homepage">
       <header>
         <Greeting name="Natasha" />
       </header>
@@ -22,24 +38,24 @@ function HomePage() {
         <nav>
           <ul>
             <li>
-              <a href="/about" onClick={() => changeColor("#FF9F00")}>
+              <Link to="/about">
                 <img
                   id="about-button"
                   className="default-button"
                   src={BeeStamp}
                   alt="whole bee "
                 />
-              </a>
+              </Link>
             </li>
             <li>
-              <Button id="simple-button" className="default-button">
-                <Link to="/simpleacts">Simple Acts</Link>
-              </Button>
+              <NavButton link={"/simpleacts"} buttonColor={"simple-button"}>
+                Simple Acts
+              </NavButton>
             </li>
             <li>
-              <button id="meditate-button" className="default-button">
-                <Link to="/meditation">Meditation</Link>
-              </button>
+              <NavButton link={"/meditation"} buttonColor={"meditate-button"}>
+                Meditation
+              </NavButton>
             </li>
             <li>
               <button id="music-button" className="default-button">
@@ -59,6 +75,12 @@ function HomePage() {
           </ul>
         </nav>
       </main>
+      <Route path="/about" exact component={About} />
+      <Route path="/simpleacts" component={SimpleActsPage} />
+      <Route path="/meditation" component={MeditationPage} />
+      <Route path="/music" component={MusicPage} />
+      <Route path="/terms" component={Terms} />
+      <Route path="/contact" component={ContactUsPage} />
     </div>
   );
 }

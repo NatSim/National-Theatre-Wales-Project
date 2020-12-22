@@ -10,6 +10,7 @@ import TakeAWalk from "../images/TakeAWalk.jpg";
 import "../Pages/SimpleActPage.css";
 
 const SimpleActsPage = () => {
+  //onclick function to Home
   function handleClick(e) {
     e.preventDefault();
 
