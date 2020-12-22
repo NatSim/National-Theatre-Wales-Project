@@ -28,8 +28,6 @@ import WalkPage from "./SAPromptPages/WalkPage";
  */
 
 function App() {
-  // const [color, changeColor] = useState("#a2d33b");
-  // style={{ background: color }} id="body main"
   return (
     <div>
       <Switch>

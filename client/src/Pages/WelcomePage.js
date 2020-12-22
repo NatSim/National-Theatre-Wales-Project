@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { welcomeText } from "../Models/welcomeText";
 import Welcome from "../Components/Welcome";
+import "./App.css";
 
 //App Context Steps-Component, only BrandNew users will see on first visit
 //Set state 0,1,2
@@ -18,14 +19,18 @@ function WelcomePage() {
     setWelcomeStep(arrayElement);
   };
 
+  const [color] = useState("#A2D33B");
+
   return (
-    <Welcome
-      welcomeStep={welcomeStep}
-      onClickHandler={onClickHandler}
-      title={title}
-      mainText={mainText}
-      imageUrl={imageUrl}
-    />
+    <div style={{ background: color }} id="welcomepage">
+      <Welcome
+        welcomeStep={welcomeStep}
+        onClickHandler={onClickHandler}
+        title={title}
+        mainText={mainText}
+        imageUrl={imageUrl}
+      />
+    </div>
   );
 }
 

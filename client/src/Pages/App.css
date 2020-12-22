@@ -1,5 +1,7 @@
 body {
+  margin: 0;
   font-family: "Caveat";
+  background-color: #a2d33b;
 }
 
 .App {
@@ -15,21 +17,12 @@ body {
 
 /*Individual Page Background Color*/
 
-#main,
-body {
+/* #landing {
   background: #a2d33b;
-}
-/* 
-#authpage,
-body {
-  background-color: #a2d33b;
-}
-
-#homepage,
- {
-  background-color: #ff9f00;
-}
-#aboutpage,
- {
-  background-color: #82d121;
 } */
+
+/* Welcome Page size */
+#welcome {
+  height: 100vh;
+  padding: 0px 24px;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import "./HomePage.css";
@@ -12,52 +12,53 @@ const Greeting = (props) => {
 };
 
 function HomePage() {
-  // import bee image
+  const [color, changeColor] = useState("#FF9F00");
   return (
-    <div>
-      <h1>
+    <div style={{ background: color }} id="homepage">
+      <header>
         <Greeting name="Natasha" />
-      </h1>
-
-      <nav>
-        <ul>
-          <li>
-            <a href="/about">
-              <img
-                id="about-button"
-                className="default-button"
-                src={BeeStamp}
-                alt="whole bee "
-              />
-            </a>
-          </li>
-          <li>
-            <Button id="simple-button" className="default-button">
-              <Link to="/simpleacts">Simple Acts</Link>
-            </Button>
-          </li>
-          <li>
-            <button id="meditate-button" className="default-button">
-              <Link to="/meditation">Meditation</Link>
-            </button>
-          </li>
-          <li>
-            <button id="music-button" className="default-button">
-              <Link to="/music">Music</Link>
-            </button>
-          </li>
-          <li>
-            <button id="term-button" className="default-button">
-              <Link to="/terms">Terms {`&`} Conditions</Link>
-            </button>
-          </li>
-          <li>
-            <button id="contact-button" className="default-button">
-              <Link to="/contact">Contact Us</Link>
-            </button>
-          </li>
-        </ul>
-      </nav>
+      </header>
+      <main>
+        <nav>
+          <ul>
+            <li>
+              <a href="/about" onClick={() => changeColor("#FF9F00")}>
+                <img
+                  id="about-button"
+                  className="default-button"
+                  src={BeeStamp}
+                  alt="whole bee "
+                />
+              </a>
+            </li>
+            <li>
+              <Button id="simple-button" className="default-button">
+                <Link to="/simpleacts">Simple Acts</Link>
+              </Button>
+            </li>
+            <li>
+              <button id="meditate-button" className="default-button">
+                <Link to="/meditation">Meditation</Link>
+              </button>
+            </li>
+            <li>
+              <button id="music-button" className="default-button">
+                <Link to="/music">Music</Link>
+              </button>
+            </li>
+            <li>
+              <button id="term-button" className="default-button">
+                <Link to="/terms">Terms {`&`} Conditions</Link>
+              </button>
+            </li>
+            <li>
+              <button id="contact-button" className="default-button">
+                <Link to="/contact">Contact Us</Link>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </main>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "./Welcome.css";
 import NextButton from "./MainButton";
 import BeeStamp from "../images/whole-beeimage.png";
-import PlaceHolder from "../images/callum.jpg";
+import PlaceHolder from "../images/whole-beeimage.png";
 /**
  *Functional component-Welcome message
  *

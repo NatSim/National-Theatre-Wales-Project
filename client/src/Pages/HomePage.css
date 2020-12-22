@@ -1,7 +1,18 @@
+body {
+  margin: 0%;
+  /* text-align: center; */
+}
+
+#homepage {
+  height: 100vh;
+  padding: 0px 24px;
+}
+
 .welcome {
   font-family: "Caveat";
   font: bold;
   font-size: 22px;
+  padding: 35px;
 }
 
 a,
