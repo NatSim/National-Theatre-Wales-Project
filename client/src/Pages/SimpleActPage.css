@@ -17,12 +17,27 @@ img {
   border-radius: 10px;
 }
 
-.flex-container {
-  /* border: 5px solid white; */
-  display: flex;
-  /* display: block; */
+/* Simple Act images*/
 
-  flex-direction: row;
-  justify-content: space-evenly;
+.flex-container {
+  border: 5px solid white;
+  border-style: hidden;
+  padding: 25px;
   flex-wrap: wrap;
+}
+
+.child-container {
+  border: 5px solid white;
+  border-style: hidden;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.child2-container {
+  border: 5px solid white;
+  border-style: hidden;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
 }

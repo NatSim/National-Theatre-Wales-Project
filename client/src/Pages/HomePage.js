@@ -27,7 +27,7 @@ function HomePage() {
                 id="about-button"
                 className="default-button"
                 src={BeeStamp}
-                alt="whole bee image"
+                alt="whole bee "
               />
             </a>
           </li>

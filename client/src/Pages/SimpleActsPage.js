@@ -28,26 +28,30 @@ const SimpleActsPage = () => {
         <SimpleActVideo videoId={"qxB3-sw2HAQ"} />
       </div>
       <section className="flex-container">
-        <div>
-          <img src={BeKind} alt="Kind" />
+        <div className="child-container">
+          <div>
+            <img src={BeKind} alt="Kind" />
+          </div>
+          <div>
+            <img src={Connect} alt="Connecting" />
+          </div>
+          <div>
+            <img src={Consider} alt="Consider" />
+          </div>
+          <div>
+            <img src={Consume} alt="Consume" />
+          </div>
         </div>
-        <div>
-          <img src={Connect} alt="Connecting" />
-        </div>
-        <div>
-          <img src={Consider} alt="Consider" />
-        </div>
-        <div>
-          <img src={Consume} alt="Consume" />
-        </div>
-        <div>
-          <img src={Learn1} alt="Learn" />
-        </div>
-        <div>
-          <img src={Plant} alt="Plant" />
-        </div>
-        <div>
-          <img src={TakeAWalk} alt="Talk a walk" />
+        <div className="child2-container">
+          <div>
+            <img src={Learn1} alt="Learn" />
+          </div>
+          <div>
+            <img src={Plant} alt="Plant" />
+          </div>
+          <div>
+            <img src={TakeAWalk} alt="Talk a walk" />
+          </div>
         </div>
       </section>
     </div>
