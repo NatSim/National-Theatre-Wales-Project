@@ -30,27 +30,41 @@ const SimpleActsPage = () => {
       <section className="flex-container">
         <div className="child-container">
           <div>
-            <img src={BeKind} alt="Kind" />
+            <a href="/bekind">
+              <img src={BeKind} alt="Kind" />
+            </a>
           </div>
           <div>
-            <img src={Connect} alt="Connecting" />
+            <a href="/connect">
+              <img src={Connect} alt="Connecting" />
+            </a>
           </div>
           <div>
-            <img src={Consider} alt="Consider" />
+            <a href="/consider">
+              <img src={Consider} alt="Consider" />
+            </a>
           </div>
           <div>
-            <img src={Consume} alt="Consume" />
+            <a href="/consume">
+              <img src={Consume} alt="Consume" />
+            </a>{" "}
           </div>
         </div>
         <div className="child2-container">
           <div>
-            <img src={Learn1} alt="Learn" />
+            <a href="/learn">
+              <img src={Learn1} alt="Learn" />
+            </a>
           </div>
           <div>
-            <img src={Plant} alt="Plant" />
+            <a href="/plant">
+              <img src={Plant} alt="Plant" />
+            </a>
           </div>
           <div>
-            <img src={TakeAWalk} alt="Talk a walk" />
+            <a href="/walk">
+              <img src={TakeAWalk} alt="Talk a walk" />
+            </a>
           </div>
         </div>
       </section>
