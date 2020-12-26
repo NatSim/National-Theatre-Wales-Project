@@ -19,7 +19,7 @@ const Greeting = (props) => {
 
 const NavButton = (props) => {
   return (
-    //Reusable button component
+    //Reusable component
     <Link to={props.link}>
       <Button id={props.buttonColor} className="default-button">
         {props.children}
@@ -58,19 +58,19 @@ function HomePage() {
               </NavButton>
             </li>
             <li>
-              <button id="music-button" className="default-button">
-                <Link to="/music">Music</Link>
-              </button>
+              <NavButton link={"/music"} buttonColor={"music-button"}>
+                Music
+              </NavButton>
             </li>
             <li>
-              <button id="term-button" className="default-button">
-                <Link to="/terms">Terms {`&`} Conditions</Link>
-              </button>
+              <NavButton link={"/terms"} buttonColor={"term-button"}>
+                Terms {`&`} Conditions
+              </NavButton>
             </li>
             <li>
-              <button id="contact-button" className="default-button">
-                <Link to="/contact">Contact Us</Link>
-              </button>
+              <NavButton link={"/contact"} buttonColor={"contact-button"}>
+                Contact Us
+              </NavButton>
             </li>
           </ul>
         </nav>
