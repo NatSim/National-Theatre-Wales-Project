@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import { Link, Route } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import "./HomePage.css";
 import BeeStamp from "../images/whole-beeimage.png";
 import SimpleActsPage from "./SimpleActsPage";
@@ -75,12 +75,14 @@ function HomePage() {
           </ul>
         </nav>
       </main>
-      <Route path="/about" exact component={About} />
-      <Route path="/simpleacts" component={SimpleActsPage} />
-      <Route path="/meditation" component={MeditationPage} />
-      <Route path="/music" component={MusicPage} />
-      <Route path="/terms" component={Terms} />
-      <Route path="/contact" component={ContactUsPage} />
+      <Switch>
+        <Route path="/about" exact component={About} />
+        <Route path="/simpleacts" component={SimpleActsPage} />
+        <Route path="/meditation" component={MeditationPage} />
+        <Route path="/music" component={MusicPage} />
+        <Route path="/terms" component={Terms} />
+        <Route path="/contact" component={ContactUsPage} />
+      </Switch>
     </div>
   );
 }

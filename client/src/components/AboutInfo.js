@@ -1,6 +1,8 @@
 import React from "react";
+import { Link, Route } from "react-router-dom";
 import Image2 from "../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import "./AboutInfo.css";
+import Contact from "../Pages/ContactUsPage";
 
 function AboutInfo() {
   return (
@@ -27,17 +29,19 @@ function AboutInfo() {
         Having decided on climate change and the environment as the most urgent
         issue, Go Tell The Bees is the community’s co-created response – a bold
         new work that redefines the way in which theatre is made while telling a
-        universal story of our human connection to nature and to each other.{" "}
+        universal story of our human connection to nature and to each other.
       </article>
       <article>
         To learn more about NTW Team and how you can get involved click here
       </article>
       <div>
-        <button>Contact Us</button>
+        <Link to="/contact">{Contact}Contact Us</Link>
       </div>
       <article>
         To find out more about Go Tell The Bees {`&`} the show visit:
-        https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/
+        <a href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/">
+          {"National Theatre Wales"}
+        </a>
       </article>
     </section>
   );

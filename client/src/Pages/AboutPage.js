@@ -3,17 +3,15 @@ import AboutInfo from "../Components/AboutInfo";
 import SimpleActVideo from "../Components/SimpleActVideo";
 import { Link } from "react-router-dom";
 import "../Components/MainButton.css";
-import "./App.css";
+import "./AboutPage.css";
+import HomePage from "./HomePage";
 
 //About Page
 const About = () => {
-  const [color, changeColor] = useState("#82D121");
   return (
-    <div style={{ background: color }} id="aboutpage">
+    <div className="aboutpage">
       <button className="button">
-        <Link to="/home" onClick={() => changeColor("#82D121")}>
-          Home
-        </Link>
+        <Link to="/home">Home</Link>
       </button>
       <div>
         <SimpleActVideo videoId={"xV2FF-YUy94"} />
