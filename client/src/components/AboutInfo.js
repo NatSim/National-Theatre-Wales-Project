@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Image2 from "../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import "./AboutInfo.css";
 import Contact from "../Pages/ContactUsPage";
@@ -35,11 +35,16 @@ function AboutInfo() {
         To learn more about NTW Team and how you can get involved click here
       </article>
       <div>
-        <Link to="/contact">{Contact}Contact Us</Link>
+        <Link to="/contact" className="button">
+          {Contact}Contact Us
+        </Link>
       </div>
       <article>
         To find out more about Go Tell The Bees {`&`} the show visit:
-        <a href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/">
+        <a
+          className="button"
+          href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/"
+        >
           {"National Theatre Wales"}
         </a>
       </article>

@@ -4,6 +4,10 @@ body {
   background-color: #a2d33b;
 }
 
-.aboutpage {
+.home-container {
+  padding: 10%;
+}
+
+.video-container {
   padding: 10%;
 }

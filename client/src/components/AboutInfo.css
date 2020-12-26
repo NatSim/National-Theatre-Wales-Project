@@ -3,3 +3,14 @@
   height: 141px;
   border-radius: 10%;
 }
+
+.button {
+  width: 200px;
+  height: 54px;
+  font-family: "Caveat";
+  font: bold;
+  font-size: 24px;
+  color: white;
+  background-color: #fbce69;
+  border-radius: 10px;
+}
