@@ -1,6 +1,19 @@
+body {
+  margin: 0;
+}
+/*SA Prompt Page generic*/
+
 .prompt-text {
   color: white;
 }
-/* 
-img {
-} */
+
+.charity-name {
+  color: #82d121;
+}
+
+/*Connect Page*/
+.connect-page {
+  height: 400vh;
+  padding: 0px 24px;
+  background-color: #ff2f69;
+}

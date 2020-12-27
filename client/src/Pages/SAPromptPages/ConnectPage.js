@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Connect from "../../images/Connect.jpg";
 import "./SAPromptPages.css";
+import ConnectArticle from "../../Components/SAArticles/ConnectArticle";
 
 const ConnectPage = () => {
   return (
-    <div>
+    <div className="connect-page">
       <div className="home-button-container">
         <Link to="/simpleacts">
           <Button className="button">Back</Button>
@@ -17,6 +18,7 @@ const ConnectPage = () => {
         <div>
           <img src={Connect} alt="People connecting" />
         </div>
+        <ConnectArticle />
       </section>
     </div>
   );

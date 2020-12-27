@@ -39,7 +39,7 @@ function AboutInfo() {
         </Link>
       </div>
       <article>
-        <span id="more-info">
+        <span className="more-info">
           To find out more about Go Tell The Bees {`&`} the show visit:
         </span>
         <a href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/">
