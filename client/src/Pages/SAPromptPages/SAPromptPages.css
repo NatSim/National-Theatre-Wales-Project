@@ -10,10 +10,37 @@ body {
 .charity-name {
   color: #82d121;
 }
+.charity-name2 {
+  color: #ff2f69;
+}
 
-/*Connect Page*/
-.connect-page {
-  height: 400vh;
+.charity-name3 {
+  color: #ff9f00;
+}
+
+/* All Page sizing & Background-colors*/
+.connect-page,
+.plant-page,
+.kind-page,
+.consider-page,
+.consume-page,
+.learn-page,
+.walk-page {
+  height: 450vh;
   padding: 0px 24px;
+}
+.connect-page,
+.consume-page {
   background-color: #ff2f69;
+}
+
+.plant-page,
+.kind-page,
+.consider-page {
+  background-color: #ff9f00;
+}
+
+.learn-page,
+.walk-page {
+  background-color: #82d121;
 }

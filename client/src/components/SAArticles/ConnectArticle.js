@@ -5,7 +5,7 @@ const ConnectArticle = () => {
     <article>
       <p>
         It might start with listening – to a new piece of music or poetry, a
-        recipe, or someone’s point of view.{" "}
+        recipe, or someone’s point of view.
       </p>
       <p>
         It’s easy for us to get trapped in our habits and what we know, but

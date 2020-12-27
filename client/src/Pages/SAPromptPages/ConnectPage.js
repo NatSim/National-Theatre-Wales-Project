@@ -13,13 +13,13 @@ const ConnectPage = () => {
           <Button className="button">Back</Button>
         </Link>
       </div>
-      <section>
+      <article>
         <h1 className="prompt-text">Your Simple Act is to...</h1>
         <div>
           <img src={Connect} alt="People connecting" />
         </div>
         <ConnectArticle />
-      </section>
+      </article>
     </div>
   );
 };

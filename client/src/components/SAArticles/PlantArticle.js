@@ -20,7 +20,14 @@ const PlantArticle = () => {
         in saving the wonder plant through Project Seagrass.
         <a href="www.projectseagrass.org">{"www.projectseagrass.org"}</a>
       </p>
-      <p></p>
+      <p>
+        <span className="charity-name">Mencap Gardens</span> at the National
+        Trust’s estate at Stackpole, Pembrokeshire provides horticultural
+        training to local adults and young people with learning difficulties.
+        <a href="www.stackpole-walledgardens.co.uk">
+          {"www.stackpole-walledgardens.co.uk"}
+        </a>
+      </p>
     </article>
   );
 };
