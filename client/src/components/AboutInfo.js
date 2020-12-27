@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Image2 from "../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import "./AboutInfo.css";
-import Contact from "../Pages/ContactUsPage";
 
 function AboutInfo() {
   return (
@@ -36,16 +35,15 @@ function AboutInfo() {
       </article>
       <div>
         <Link to="/contact" className="button">
-          {Contact}Contact Us
+          Contact Us
         </Link>
       </div>
       <article>
-        To find out more about Go Tell The Bees {`&`} the show visit:
-        <a
-          className="button"
-          href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/"
-        >
-          {"National Theatre Wales"}
+        <span id="more-info">
+          To find out more about Go Tell The Bees {`&`} the show visit:
+        </span>
+        <a href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/">
+          {"https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/"}
         </a>
       </article>
     </section>

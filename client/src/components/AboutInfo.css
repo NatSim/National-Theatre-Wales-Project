@@ -14,3 +14,12 @@
   background-color: #fbce69;
   border-radius: 10px;
 }
+
+a {
+  color: blue;
+  font-size: 22px;
+}
+
+#more-info {
+  color: white;
+}
