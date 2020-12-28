@@ -1,16 +1,17 @@
 import React from "react";
-import SignUp from "../Components/SignUp";
-import Login from "../Components/Login";
+import Register from "../Components/Auth/Register";
+import BeeStamp from "../images/whole-beeimage.png";
+import "../Components/Auth.css";
+
+// import Login from "../Components/Auth/Login";
 
 const AuthenticationPage = () => {
   return (
     <div>
-      <h1>
-        <Login />
-      </h1>
-      <h1>
-        <SignUp />
-      </h1>
+      <Register />
+      <figure className="image-container">
+        <img className="bee-stamp" src={BeeStamp} alt="Bee" />
+      </figure>
     </div>
   );
 };
