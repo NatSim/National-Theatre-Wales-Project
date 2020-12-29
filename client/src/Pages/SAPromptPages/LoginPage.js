@@ -1,14 +1,16 @@
 import React from "react";
-import Form from "./RegForm";
 import BeeStamp from "../../images/whole-beeimage.png";
-import "../Auth/custom.css";
+import LogForm from "../../Components/Auth/LogForm";
+import "../../Components/Auth/custom.css";
 
-function Register() {
+function Login() {
   return (
     <div>
-      <h1>Register😊</h1>
+      <h1>So what will you tell the bees today?</h1>
+      <h2>Login😊</h2>
+      <div />
       <section>
-        <Form />
+        <LogForm />
       </section>
       <figure className="image-container">
         <img className="bee-stamp" src={BeeStamp} alt="Bee" />
@@ -17,4 +19,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default Login;

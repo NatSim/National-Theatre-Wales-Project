@@ -2,9 +2,13 @@
 #card {
   display: block;
   text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
-  width: 50%;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 form {
