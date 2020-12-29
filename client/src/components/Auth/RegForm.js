@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../Auth/custom.css";
 
+//Registration functions
 function RegistrationForm(props) {
   const [state, setState] = useState({
     email: "",
@@ -13,7 +13,7 @@ function RegistrationForm(props) {
       [id]: value,
     }));
 
-    //Handle submit button
+    //Handle submit(register) button
     const handleSubmitClick = (e) => {
       e.preventDefault();
       if (state.password === state.confirmPassword) {

@@ -1,9 +1,9 @@
 import React from "react";
-import Register from "../Components/Auth/Register";
+import Register from "../Components/Auth/RegisterPage";
 import BeeStamp from "../images/whole-beeimage.png";
 import "../Components/Auth/custom.css";
 
-// import Login from "../Components/Auth/Login";
+/*DELETE THIS FILE*/
 
 const AuthenticationPage = () => {
   return (

@@ -3,7 +3,8 @@ import { Route, Switch } from "react-router";
 import "./App.css";
 import WelcomePage from "./WelcomePage";
 import LandingPage from "./LandingPage";
-import AuthenticationPage from "./AuthenticationPage";
+import LoginPage from "../Components/Auth/LoginPage";
+import RegisterPage from "../Components/Auth/RegisterPage";
 import HomePage from "./HomePage";
 import AboutPage from "./AboutPage";
 import SimpleActsPage from "./SimpleActsPage";
@@ -33,7 +34,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={LandingPage} />
         <Route path="/welcome" component={WelcomePage} />
-        <Route path="/authentication" component={AuthenticationPage} />
+        <Route path="/login" component={LoginPage} />
+        <Route path="/register" component={RegisterPage} />
         <Route path="/home" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/simpleacts" component={SimpleActsPage} />
