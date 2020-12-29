@@ -36,7 +36,7 @@ function RegistrationForm(props) {
     );
   };
   return (
-    <div className="card">
+    <div id="card" className="card col-12 col-lg-4 login-card mt-2 hv-center">
       <form>
         <div className="form-group text-left">
           <label htmlFor="exampleInputEmail1">Email address</label>

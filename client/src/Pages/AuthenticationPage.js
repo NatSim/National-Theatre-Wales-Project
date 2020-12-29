@@ -1,7 +1,7 @@
 import React from "react";
 import Register from "../Components/Auth/Register";
 import BeeStamp from "../images/whole-beeimage.png";
-import "../Components/Auth.css";
+import "../Components/Auth/custom.css";
 
 // import Login from "../Components/Auth/Login";
 
