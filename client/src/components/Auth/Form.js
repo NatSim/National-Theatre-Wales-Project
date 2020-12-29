@@ -1,9 +1,42 @@
 import React, { useState } from "react";
-import "../Auth.css";
+import "../Auth/custom.css";
 
 function RegistrationForm(props) {
+  const [state, setState] = useState({
+    email: "",
+    password: "",
+  });
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setState((prevState) => ({
+      ...prevState,
+      [id]: value,
+    }));
+
+    //Handle submit button
+    const handleSubmitClick = (e) => {
+      e.preventDefault();
+      if (state.password === state.confirmPassword) {
+        // sendDetailsToServer();
+      } else {
+        props.showError("Passwords do not match");
+      }
+    };
+
+    return (
+      <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
+        <button
+          type="submit"
+          className="btn btn-primary"
+          onClick={handleSubmitClick}
+        >
+          Register
+        </button>
+      </div>
+    );
+  };
   return (
-    <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
+    <div className="card">
       <form>
         <div className="form-group text-left">
           <label htmlFor="exampleInputEmail1">Email address</label>
