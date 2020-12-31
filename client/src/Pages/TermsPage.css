@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Caveat";
+}
+
+.terms-page {
+  height: 100vh;
+  padding: 0px 24px;
+  background-color: #00c1a2;
+  color: white;
+}

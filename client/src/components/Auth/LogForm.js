@@ -5,8 +5,8 @@ import axios from "axios";
 //Login functions
 function LoginForm(props) {
   const [state, setState] = useState({
-    username: "Natasha",
-    password: "1234",
+    username: "",
+    password: "",
   });
 
   //POST REQUEST - This send req to server to confirm entered user info(exists) & create a session
