@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../../Components/Auth/RegForm";
+import RegForm from "../../Components/Auth/RegForm";
 import BeeStamp from "../../images/whole-beeimage.png";
 import "../../Components/Auth/custom.css";
 
@@ -8,7 +8,7 @@ function Register() {
     <div>
       <h1>Register😊</h1>
       <section className="card-container">
-        <Form />
+        <RegForm />
       </section>
       <figure className="image-container">
         <img className="bee-stamp" src={BeeStamp} alt="Bee" />

@@ -9,7 +9,7 @@ function Login() {
       <h1>So what will you tell the bees today?</h1>
       <h2>Login😊</h2>
       <div />
-      <section>
+      <section className="card-container">
         <LogForm />
       </section>
       <figure className="image-container">
