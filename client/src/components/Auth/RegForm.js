@@ -40,7 +40,7 @@ function RegistrationForm(props) {
           console.log(error);
         });
     } else {
-      console.log("Error!"); // props.showError("Please enter valid username and password");
+      console.log("Error"); // props.showError("Please enter valid username and password");
     }
   };
   const handleChange = (e) => {
@@ -58,7 +58,7 @@ function RegistrationForm(props) {
       sendDetailsToServer();
     } else {
       // props.showError("Passwords do not match");
-      console.log("Error");
+      console.log("Error,passwords do not match");
     }
   };
 
