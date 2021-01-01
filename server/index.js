@@ -18,7 +18,41 @@ mongoose.connect(
   }
 );
 
+app.use(function (req, res, next) {
+  // Website you wish to allow to connect
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+
+  // Request methods you wish to allow
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+
+  // Request headers you wish to allow
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type"
+  );
+
+  // Set to true if you need the website to include cookies in the requests sent
+  // to the API (e.g. in case you use sessions)
+  // res.setHeader('Access-Control-Allow-Credentials', 8080);
+
+  // Pass to next layer of middleware
+  next();
+});
+
 app.use(bodyParser.json());
+
+//Post request register
+app.post("/register", (req, res) => {
+  res.send("Post successful");
+});
+
+//Post request login
+app.post("/login", async (req, res) => {
+  res.send("Post successful!!");
+});
 
 // IMPORT YOUR ROUTES
 require("./routes/usersRoutes")(app);

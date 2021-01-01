@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Caveat";
+}
+
+#contact-page {
+  height: 100vh;
+  padding: 0px 24px;
+  background-color: #89d7e8;
+  color: white;
+}
