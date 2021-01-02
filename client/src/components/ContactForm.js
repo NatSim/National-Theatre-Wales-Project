@@ -43,7 +43,7 @@ class Form extends Component {
 
         <form action="" method="get" className="form-parent">
           <div className="contact-form-child">
-            <label>Username:</label>
+            {/* <label>Username:</label> */}
             <input
               type="text"
               placeholder={this.state.placeholder.username}
@@ -52,7 +52,7 @@ class Form extends Component {
             />
           </div>
           <div className="contact-form-child">
-            <label>Email:</label>
+            {/* <label>Email:</label> */}
             <input
               required
               type="text"
@@ -64,12 +64,12 @@ class Form extends Component {
           <div className="contact-form-child">
             {/* <label>Subject</label> */}
             <select
+              defaultValue={"DEFAULT"}
               required
-              value={this.state.subject}
               onChange={this.handleSubjectChange}
             >
-              <option value="" disabled selected hidden>
-                Select a subject...
+              <option value="DEFAULT" disabled>
+                --Please select a subject--
               </option>
               <option value="general">General Feedback</option>
               <option value="app-support">Application Support</option>
