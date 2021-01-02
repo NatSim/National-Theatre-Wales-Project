@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Button from "react-bootstrap/Button";
 
 class Form extends Component {
   constructor(props) {
@@ -8,7 +9,12 @@ class Form extends Component {
       username: "",
       email: "",
       message: "",
-      subject: "general",
+      placeholder: {
+        username: "Enter Username",
+        email: "Enter Email",
+        message: "Write message here...",
+      },
+      subject: "",
     };
   }
 
@@ -30,48 +36,59 @@ class Form extends Component {
 
   render() {
     return (
-      <div className="contact-form">
+      <>
         <section className="title-container">
           <h1>Contact Us</h1>
         </section>
-        <form>
-          <div>
+
+        <form action="" method="get" className="form-parent">
+          <div className="contact-form-child">
             <label>Username:</label>
             <input
               type="text"
+              placeholder={this.state.placeholder.username}
               value={this.state.username}
               onChange={this.handleUsernameChange}
             />
           </div>
-          <div>
+          <div className="contact-form-child">
             <label>Email:</label>
             <input
+              required
               type="text"
+              placeholder={this.state.placeholder.email}
               value={this.state.email}
               onChange={this.handleEmailChange}
             />
           </div>
-          <div>
-            <label>Subject</label>
+          <div className="contact-form-child">
+            {/* <label>Subject</label> */}
             <select
+              required
               value={this.state.subject}
               onChange={this.handleSubjectChange}
             >
+              <option value="" disabled selected hidden>
+                Select a subject...
+              </option>
               <option value="general">General Feedback</option>
               <option value="app-support">Application Support</option>
               <option value="ntw">National Theatre Wales Team Enquiry</option>
             </select>
           </div>
-          <div>
-            <label>Message:</label>
+          <div className="contact-form-child">
+            {/* <label>Message:</label> */}
             <textarea
+              required
               type="text"
+              placeholder={this.state.placeholder.message}
               value={this.state.message}
               onChange={this.handleMessageChange}
             ></textarea>
           </div>
+          <Button>Submit</Button>
         </form>
-      </div>
+      </>
     );
   }
 }

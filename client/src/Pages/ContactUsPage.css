@@ -1,11 +1,27 @@
 body {
   margin: 0;
   font-family: "Caveat";
+  text-align: center;
 }
 
 #contact-page {
-  height: 100vh;
-  padding: 0px 24px;
+  height: 100%;
+  padding: 24px 24px;
   background-color: #89d7e8;
   color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-top: 20px;
 }
