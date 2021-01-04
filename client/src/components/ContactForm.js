@@ -17,7 +17,7 @@ class Form extends Component {
       subject: "",
     };
   }
-
+  //Select, Text Input & Submit Button  event handlers
   handleUsernameChange = (event) => {
     this.setState({ username: event.target.value });
   };
@@ -34,20 +34,37 @@ class Form extends Component {
     this.setState({ subject: event.target.value });
   };
 
+  handleSubmit = (event) => {
+    alert(
+      `${this.state.username} ${this.state.email} ${this.state.subject} ${this.state.message}`
+    );
+    event.preventDefault();
+  };
+
   render() {
+    //adding 'this.state' here covers all occurances thus allows DRY/cleaner code
+    const { username, email, message } = this.state;
+
     return (
       <>
         <section className="title-container">
           <h1>Contact Us</h1>
         </section>
 
-        <form action="" method="get" className="form-parent">
+        <form
+          action=""
+          method="get"
+          className="form-parent"
+          onSubmit={this.handleSubmit}
+        >
           <div className="contact-form-child">
             {/* <label>Username:</label> */}
             <input
+              required
+              className="form-control"
               type="text"
               placeholder={this.state.placeholder.username}
-              value={this.state.username}
+              value={username}
               onChange={this.handleUsernameChange}
             />
           </div>
@@ -55,17 +72,18 @@ class Form extends Component {
             {/* <label>Email:</label> */}
             <input
               required
+              className="form-control"
               type="text"
               placeholder={this.state.placeholder.email}
-              value={this.state.email}
+              value={email}
               onChange={this.handleEmailChange}
             />
           </div>
-          <div className="contact-form-child">
+          <div id="select-control" className="contact-form-child">
             {/* <label>Subject</label> */}
             <select
-              defaultValue={"DEFAULT"}
               required
+              defaultValue={"DEFAULT"}
               onChange={this.handleSubjectChange}
             >
               <option value="DEFAULT" disabled>
@@ -82,11 +100,11 @@ class Form extends Component {
               required
               type="text"
               placeholder={this.state.placeholder.message}
-              value={this.state.message}
+              value={message}
               onChange={this.handleMessageChange}
             ></textarea>
           </div>
-          <Button>Submit</Button>
+          <Button type="submit">Submit</Button>
         </form>
       </>
     );

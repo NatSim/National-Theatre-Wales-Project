@@ -10,7 +10,7 @@ function LoginForm(props) {
   });
 
   //POST REQUEST - This send req to server to confirm entered user info(exists) & create a session
-  const getDetailsFromServer = () => {
+  const sendDetailsToServer = () => {
     if (state.username.length && state.password.length) {
       const payload = {
         username: state.username,
@@ -49,11 +49,12 @@ function LoginForm(props) {
   const handleSubmitClick = (e) => {
     e.preventDefault();
     if (
-      //username matches stored username && password matches created password
-      state.username === state.username &&
-      state.password === state.password
+      //username matches stored username && password registered
+      state.username === true &&
+      state.password === true
     ) {
-      getDetailsFromServer();
+      sendDetailsToServer();
+      console.log(state.username);
     } else {
       // props.showError("username or password is incorrect");
       console.log("Error,username or password is incorrect!");
