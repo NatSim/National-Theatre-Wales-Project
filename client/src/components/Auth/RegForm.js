@@ -16,7 +16,7 @@ function RegistrationForm(props) {
       // props.showError(null);
 
       const payload = {
-        username: state.email,
+        username: state.username,
         email: state.email,
         password: state.password,
       };
@@ -24,7 +24,7 @@ function RegistrationForm(props) {
       axios
         .post("http://localhost:5000/register", payload)
         .then(function (response) {
-          if (response.status === 200) {
+          if (response.status === 201) {
             setState((prevState) => ({
               ...prevState,
               successMessage:

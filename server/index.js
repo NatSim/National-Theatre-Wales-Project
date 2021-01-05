@@ -44,11 +44,6 @@ app.use(function (req, res, next) {
 
 app.use(bodyParser.json());
 
-//Post request register
-app.post("/register", (req, res) => {
-  res.send("Post successful");
-});
-
 //Post request login
 app.post("/login", async (req, res) => {
   res.send("Post successful!!");

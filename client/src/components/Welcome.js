@@ -53,7 +53,7 @@ const Welcome = ({
 
   return (
     <div>
-      <section>
+      <section className="title-container">
         <h1>
           {welcomeStep === 0
             ? newTitle()
@@ -65,15 +65,14 @@ const Welcome = ({
         <p>{welcomeStep === 0 ? specialChars() : mainText}</p>
         <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
       </section>
-      <section>
-        <figure className="image-container">
-          <img
-            className="tranisition-image"
-            src={BeeStamp}
-            alt="Large Bee Stamp"
-          />
-        </figure>
-      </section>
+
+      <figure className="image-container">
+        <img
+          className="tranisition-image"
+          src={BeeStamp}
+          alt="Large Bee Stamp"
+        />
+      </figure>
     </div>
   );
 };
