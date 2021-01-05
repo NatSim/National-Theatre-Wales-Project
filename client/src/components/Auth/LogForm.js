@@ -11,9 +11,11 @@ function LoginForm(props) {
 
   //POST REQUEST - This send req to server to confirm entered user info(exists) & create a session
   const sendDetailsToServer = () => {
-    if (state.username.length && state.password.length) {
+    console.log("SHOW!", state);
+    if (state.email.length && state.password.length) {
+      console.log("SHOW!");
       const payload = {
-        username: state.username,
+        username: state.email,
         password: state.password,
       };
       axios
@@ -25,15 +27,16 @@ function LoginForm(props) {
               successMessage:
                 "User exists.Login successful. Redirecting to home page..",
             }));
+            console.log("Successful!");
           } else {
             console.log("Error!");
           }
         })
-        .cache(function (error) {
+        .catch(function (error) {
           console.log(error);
         });
     } else {
-      console.log("Error");
+      console.log("Error,username or password is incorrect!");
     }
   };
 
@@ -48,17 +51,8 @@ function LoginForm(props) {
   //Handle submit(login) button
   const handleSubmitClick = (e) => {
     e.preventDefault();
-    if (
-      //username matches stored username && password registered
-      state.username === true &&
-      state.password === true
-    ) {
-      sendDetailsToServer();
-      console.log(state.username);
-    } else {
-      // props.showError("username or password is incorrect");
-      console.log("Error,username or password is incorrect!");
-    }
+
+    sendDetailsToServer();
   };
 
   return (
@@ -82,6 +76,7 @@ function LoginForm(props) {
             className="form-control"
             id="password"
             placeholder="Password"
+            onChange={handleChange}
           />
         </div>
 

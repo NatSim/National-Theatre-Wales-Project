@@ -6,6 +6,10 @@ import "./AboutInfo.css";
 function AboutInfo() {
   return (
     <section>
+      <h1 className="heading-control">
+        <u>Go Tell The Bees</u>
+      </h1>
+      <br />
       <article>
         Planet Earth is in crisis. Digitally, we are more plugged in than ever
         before, yet so many of us talk of an increasing sense of disconnect from

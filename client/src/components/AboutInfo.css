@@ -1,3 +1,14 @@
+.heading-control {
+  align-content: center;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 24px;
+}
+
+article {
+  font-size: 24px;
+}
+
 .pem-image2 {
   width: 242px;
   height: 141px;
@@ -7,7 +18,7 @@
 .button {
   width: 200px;
   height: 54px;
-  font-family: "Caveat";
+  font-family: hero-new, sans-serif;
   font: bold;
   font-size: 24px;
   color: white;

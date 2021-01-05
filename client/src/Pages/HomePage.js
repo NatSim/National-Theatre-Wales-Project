@@ -64,7 +64,7 @@ function HomePage() {
             </li>
             <li>
               <NavButton link={"/terms"} buttonColor={"term-button"}>
-                Terms {`&`} Conditions
+                Terms{`&`}Conditions
               </NavButton>
             </li>
             <li>

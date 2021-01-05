@@ -7,13 +7,29 @@ module.exports = (app) => {
     return res.status(200).send(persons);
   });
 
+  //function called everytime register button hit
   app.post(`/register`, async (req, res) => {
     console.log(req);
-    const user = await User.create(req.body);
+    const user = await User.create(req.body); //(create a record from the json:object)
     return res.status(201).send({
       error: false,
       user,
     });
+  });
+
+  app.post(`/login`, async (req, res) => {
+    console.log(req);
+    const user = await User.findOne({ email: req.body.email }); //(create a record from the json:object)
+    if (user === null) {
+      return res.status(401).send({
+        error: true,
+      });
+    } else {
+      return res.status(200).send({
+        error: false,
+        user,
+      });
+    }
   });
 
   app.put(`/api/user/:id`, async (req, res) => {

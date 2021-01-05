@@ -1,7 +1,9 @@
 body {
   margin: 0;
-  font-family: "Caveat";
   text-align: center;
+  font-family: hero-new, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 #contact-page {

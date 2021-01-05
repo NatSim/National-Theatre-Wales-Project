@@ -1,5 +1,7 @@
 body {
-  font-family: "Caveat";
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   font-size: 36px;
 }

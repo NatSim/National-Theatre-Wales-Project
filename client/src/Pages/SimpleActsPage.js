@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import SimpleActVideo from "../Components/SimpleActVideo";
 import BeKind from "../images/BeKind.jpg";
@@ -10,14 +10,14 @@ import Learn1 from "../images/Learn1.jpg";
 import Plant from "../images/Plant.jpg";
 import TakeAWalk from "../images/TakeAWalk.jpg";
 import "../Pages/SimpleActPage.css";
-import BeKindPage from "./SAPromptPages/BeKindPage";
-import ConnectPage from "./SAPromptPages/ConnectPage";
-import ConsiderPage from "./SAPromptPages/ConsiderPage";
-import ConsumePage from "./SAPromptPages/ConsumePage";
-import LearnPage from "./SAPromptPages/LearnPage";
-import PlantPage from "./SAPromptPages/PlantPage";
-import WalkPage from "./SAPromptPages/WalkPage";
-import HomePage from "./HomePage";
+// import BeKindPage from "./SAPromptPages/BeKindPage";
+// import ConnectPage from "./SAPromptPages/ConnectPage";
+// import ConsiderPage from "./SAPromptPages/ConsiderPage";
+// import ConsumePage from "./SAPromptPages/ConsumePage";
+// import LearnPage from "./SAPromptPages/LearnPage";
+// import PlantPage from "./SAPromptPages/PlantPage";
+// import WalkPage from "./SAPromptPages/WalkPage";
+// import HomePage from "./HomePage";
 
 const SAPrompts = (props) => {
   return (
@@ -31,7 +31,7 @@ const SAPrompts = (props) => {
 
 const SimpleActsPage = () => {
   return (
-    <div>
+    <div className="simplepage-container">
       <div className="home-button-container">
         <Link to="/home">
           <Button className="button">Home</Button>
@@ -103,7 +103,7 @@ const SimpleActsPage = () => {
           </div>
         </div>
       </section>
-      <Switch>
+      {/* <Switch>
         <Route path="/bekind" exact component={BeKindPage} />
         <Route path="/connect" component={ConnectPage} />
         <Route path="/consider" component={ConsiderPage} />
@@ -112,7 +112,7 @@ const SimpleActsPage = () => {
         <Route path="/plant" component={PlantPage} />
         <Route path="/walk" component={WalkPage} />
         <Route path="/home" component={HomePage} />
-      </Switch>
+      </Switch> */}
     </div>
   );
 };

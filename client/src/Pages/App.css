@@ -1,7 +1,9 @@
 body {
   margin: 0;
-  font-family: "Caveat";
-  background-color: #a2d33b;
+  /* background-color: #a2d33b; */
+  font-family: hero-new, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .App {
