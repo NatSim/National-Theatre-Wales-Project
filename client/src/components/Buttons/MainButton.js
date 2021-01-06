@@ -1,5 +1,5 @@
 import React from "react";
-import "../Components/MainButton.css";
+import "../../Components/Buttons/MainButton.css";
 
 //Next Button Functional Component
 const NextButton = ({ onClickHandler, welcomeStep }) => {

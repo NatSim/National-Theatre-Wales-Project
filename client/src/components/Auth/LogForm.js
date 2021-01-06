@@ -40,6 +40,7 @@ function LoginForm(props) {
     }
   };
 
+  //Handle Text input
   const handleChange = (e) => {
     const { id, value } = e.target;
     setState((prevState) => ({

@@ -1,3 +1,4 @@
+import axios from "axios";
 import { Component } from "react";
 import Button from "react-bootstrap/Button";
 
@@ -17,6 +18,39 @@ class Form extends Component {
       subject: "",
     };
   }
+  //POST REQUEST - This sends the contact form to Database
+  sendContactFormToServer = () => {
+    if (
+      this.state.username.length &&
+      this.state.email.length &&
+      this.state.message.length &&
+      this.state.subject.length
+    ) {
+      console.log("There is a message!");
+      const payload = {
+        username: this.state.username,
+        email: this.state.email,
+        message: this.state.message,
+        subject: this.state.subject,
+      };
+
+      axios
+        .post("http://localhost:5000/contact", payload)
+        .then(function (response) {
+          if (response.status === 200) {
+            console.log("Message sent");
+          } else {
+            console.log("Error!");
+          }
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    } else {
+      console.log("Invalid inputs!");
+    }
+  };
+
   //Select, Text Input & Submit Button  event handlers
   handleUsernameChange = (event) => {
     this.setState({ username: event.target.value });
@@ -35,10 +69,9 @@ class Form extends Component {
   };
 
   handleSubmit = (event) => {
-    alert(
-      `${this.state.username} ${this.state.email} ${this.state.subject} ${this.state.message}`
-    );
     event.preventDefault();
+
+    sendContactFormToServer();
   };
 
   render() {

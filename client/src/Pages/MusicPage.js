@@ -1,19 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
+import SideNav from "../Components/Nav/SideNav";
 
 const MusicPage = () => {
   return (
-    <div>
-      <div className="home-button-container">
-        <Link to="/home">
-          <Button className="button">Home</Button>
-        </Link>
+    <>
+      <SideNav />
+      <div>
+        <div className="home-button-container"></div>
+        <section>
+          <h1>Music</h1>
+        </section>
       </div>
-      <section>
-        <h1>Music</h1>
-      </section>
-    </div>
+    </>
   );
 };
 

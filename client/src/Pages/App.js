@@ -1,5 +1,7 @@
 import React from "react";
-import { Route, Switch } from "react-router";
+import { Route, Switch, Link } from "react-router";
+import { BrowserRouter as Router } from "react-router-dom";
+import SideNav from "../Components/Nav/SideNav";
 import "./App.css";
 import WelcomePage from "./WelcomePage";
 import LandingPage from "./LandingPage";
@@ -23,35 +25,33 @@ import WalkPage from "./SAPromptPages/WalkPage";
 // // SERVICES
 // import userService from "../services/userService";
 
-/**
- * Landing Page Content
- * welcomeText Array = Each key:pair object is user Step/State change
- */
-
+//App Routes
 function App() {
   return (
-    <div>
-      <Switch>
-        <Route exact path="/" component={LandingPage} />
-        <Route path="/welcome" component={WelcomePage} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/register" component={RegisterPage} />
-        <Route path="/home" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/simpleacts" component={SimpleActsPage} />
-        <Route path="/meditation" component={MeditationPage} />
-        <Route path="/music" component={MusicPage} />
-        <Route path="/terms" component={TermsPage} />
-        <Route path="/contact" component={ContactUsPage} />
-        <Route path="/bekind" component={BeKindPage} />
-        <Route path="/connect" component={ConnectPage} />
-        <Route path="/consider" component={ConsiderPage} />
-        <Route path="/consume" component={ConsumePage} />
-        <Route path="/learn" component={LearnPage} />
-        <Route path="/plant" component={PlantPage} />
-        <Route path="/walk" component={WalkPage} />
-      </Switch>
-    </div>
+    <>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route path="/welcome" component={WelcomePage} />
+          <Route path="/login" component={LoginPage} />
+          <Route path="/register" component={RegisterPage} />
+          <Route path="/home" component={HomePage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/simpleacts" component={SimpleActsPage} />
+          <Route path="/meditation" component={MeditationPage} />
+          <Route path="/music" component={MusicPage} />
+          <Route path="/terms" component={TermsPage} />
+          <Route path="/contact" component={ContactUsPage} />
+          <Route path="/bekind" component={BeKindPage} />
+          <Route path="/connect" component={ConnectPage} />
+          <Route path="/consider" component={ConsiderPage} />
+          <Route path="/consume" component={ConsumePage} />
+          <Route path="/learn" component={LearnPage} />
+          <Route path="/plant" component={PlantPage} />
+          <Route path="/walk" component={WalkPage} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 

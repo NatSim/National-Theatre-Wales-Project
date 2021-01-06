@@ -2,19 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import "./TermsPage.css";
+import TermsContent from "../Components/PageContent/Terms";
+import SideNav from "../Components/Nav/SideNav";
 
 const Terms = () => {
   return (
-    <div className="terms-page">
-      <div className="home-button-container">
-        <Link to="/home">
-          <Button className="button">Home</Button>
-        </Link>
-      </div>
-      <section>
+    <>
+      <SideNav />
+      <div className="terms-page">
         <h1>Terms {`&`} Conditions</h1>
-      </section>
-    </div>
+        <section>
+          <TermsContent />
+        </section>
+      </div>
+    </>
   );
 };
 

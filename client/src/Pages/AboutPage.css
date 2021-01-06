@@ -16,9 +16,11 @@ body {
 .info-container {
   border-style: hidden;
   border-width: 10px;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: white;
+}
+
+.section-color {
   background-color: #ff9f00;
 }
-/* .background-outer{
-
-} */
