@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 import "./TermsPage.css";
 import TermsContent from "../Components/PageContent/Terms";
 import SideNav from "../Components/Nav/SideNav";

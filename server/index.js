@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 
 // IMPORT YOUR MODELS
 require("./models/Users");
+require("./models/ContactForms");
 
 const app = express();
 
@@ -43,11 +44,6 @@ app.use(function (req, res, next) {
 });
 
 app.use(bodyParser.json());
-
-//Post request login
-app.post("/login", async (req, res) => {
-  res.send("Post successful!!");
-});
 
 // IMPORT YOUR ROUTES
 require("./routes/usersRoutes")(app);

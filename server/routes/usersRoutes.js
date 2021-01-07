@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const User = mongoose.model("users");
+const Contact = mongoose.model("contactforms");
 
 module.exports = (app) => {
   app.get(`/api/user`, async (req, res) => {
@@ -7,7 +8,7 @@ module.exports = (app) => {
     return res.status(200).send(persons);
   });
 
-  //function called everytime register button hit
+  //Function called everytime register button hit
   app.post(`/register`, async (req, res) => {
     console.log(req);
     const user = await User.create(req.body); //(create a record from the json:object)
@@ -16,7 +17,7 @@ module.exports = (app) => {
       user,
     });
   });
-
+  //Function called everytime login button hit
   app.post(`/login`, async (req, res) => {
     console.log(req);
     const user = await User.findOne({ email: req.body.email }); //(create a record from the json:object)
@@ -30,6 +31,16 @@ module.exports = (app) => {
         user,
       });
     }
+  });
+
+  //Contact Form function called everytime button hit
+  app.post(`/contact`, async (req, res) => {
+    console.log(req);
+    const user = await Contact.create(req.body); //(create a record from the json:object)
+    return res.status(201).send({
+      error: false,
+      user,
+    });
   });
 
   app.put(`/api/user/:id`, async (req, res) => {

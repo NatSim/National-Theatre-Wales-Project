@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 import SimpleActVideo from "../Components/SimpleActVideo";
 import BeKind from "../images/BeKind.jpg";
 import Connect from "../images/Connect.jpg";

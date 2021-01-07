@@ -1,7 +1,6 @@
 import React from "react";
-import { Route, Switch, Link } from "react-router";
+import { Route, Switch } from "react-router";
 import { BrowserRouter as Router } from "react-router-dom";
-import SideNav from "../Components/Nav/SideNav";
 import "./App.css";
 import WelcomePage from "./WelcomePage";
 import LandingPage from "./LandingPage";

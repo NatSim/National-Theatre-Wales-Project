@@ -1,44 +1,45 @@
+import React, { useState } from "react";
 import axios from "axios";
-import { Component } from "react";
 import Button from "react-bootstrap/Button";
+import ContactFormStyle from "../Components/ContactFormStyle.css";
 
-class Form extends Component {
-  constructor(props) {
-    super(props);
+function ContactForm(props) {
+  const [state, setState] = useState({
+    username: "",
+    email: "",
+    message: "",
+    placeholder: {
+      username: "Enter Username",
+      email: "Enter Email",
+      message: "Write message here...",
+    },
+    subject: "",
+  });
 
-    this.state = {
-      username: "",
-      email: "",
-      message: "",
-      placeholder: {
-        username: "Enter Username",
-        email: "Enter Email",
-        message: "Write message here...",
-      },
-      subject: "",
-    };
-  }
-  //POST REQUEST - This sends the contact form to Database
-  sendContactFormToServer = () => {
+  //POST REQUEST - This sends message to server
+  const sendContactForm = () => {
     if (
-      this.state.username.length &&
-      this.state.email.length &&
-      this.state.message.length &&
-      this.state.subject.length
+      state.username.length &&
+      state.email.length &&
+      state.message.length
+      // &&state.subject.length
     ) {
       console.log("There is a message!");
       const payload = {
-        username: this.state.username,
-        email: this.state.email,
-        message: this.state.message,
-        subject: this.state.subject,
+        username: state.username,
+        email: state.email,
+        message: state.message,
+        subject: state.subject,
       };
-
       axios
         .post("http://localhost:5000/contact", payload)
         .then(function (response) {
-          if (response.status === 200) {
-            console.log("Message sent");
+          if (response.status === 201) {
+            setState((prevState) => ({
+              ...prevState,
+              successMessage: "User has submitted a contact form",
+            }));
+            console.log("Successful!");
           } else {
             console.log("Error!");
           }
@@ -52,96 +53,84 @@ class Form extends Component {
   };
 
   //Select, Text Input & Submit Button  event handlers
-  handleUsernameChange = (event) => {
-    this.setState({ username: event.target.value });
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setState((prevState) => ({ ...prevState, [id]: value }));
   };
 
-  handleMessageChange = (event) => {
-    this.setState({ message: event.target.value });
-  };
-
-  handleEmailChange = (event) => {
-    this.setState({ email: event.target.value });
-  };
-
-  handleSubjectChange = (event) => {
-    this.setState({ subject: event.target.value });
-  };
-
-  handleSubmit = (event) => {
+  //Handles Input changes
+  const handleSubmit = (event) => {
     event.preventDefault();
 
-    sendContactFormToServer();
+    sendContactForm();
   };
 
-  render() {
-    //adding 'this.state' here covers all occurances thus allows DRY/cleaner code
-    const { username, email, message } = this.state;
+  return (
+    <>
+      <section className="title-container">
+        <h1>Contact Us</h1>
+      </section>
 
-    return (
-      <>
-        <section className="title-container">
-          <h1>Contact Us</h1>
-        </section>
-
-        <form
-          action=""
-          method="get"
-          className="form-parent"
-          onSubmit={this.handleSubmit}
-        >
-          <div className="contact-form-child">
-            {/* <label>Username:</label> */}
-            <input
-              required
-              className="form-control"
-              type="text"
-              placeholder={this.state.placeholder.username}
-              value={username}
-              onChange={this.handleUsernameChange}
-            />
-          </div>
-          <div className="contact-form-child">
-            {/* <label>Email:</label> */}
-            <input
-              required
-              className="form-control"
-              type="text"
-              placeholder={this.state.placeholder.email}
-              value={email}
-              onChange={this.handleEmailChange}
-            />
-          </div>
-          <div id="select-control" className="contact-form-child">
-            {/* <label>Subject</label> */}
-            <select
-              required
-              defaultValue={"DEFAULT"}
-              onChange={this.handleSubjectChange}
-            >
-              <option value="DEFAULT" disabled>
-                --Please select a subject--
-              </option>
-              <option value="general">General Feedback</option>
-              <option value="app-support">Application Support</option>
-              <option value="ntw">National Theatre Wales Team Enquiry</option>
-            </select>
-          </div>
-          <div className="contact-form-child">
-            {/* <label>Message:</label> */}
-            <textarea
-              required
-              type="text"
-              placeholder={this.state.placeholder.message}
-              value={message}
-              onChange={this.handleMessageChange}
-            ></textarea>
-          </div>
-          <Button type="submit">Submit</Button>
-        </form>
-      </>
-    );
-  }
+      <form
+        action=""
+        method="get"
+        className="form-parent"
+        onSubmit={handleSubmit}
+      >
+        <div className="contact-form-child">
+          {/* <label>Username:</label> */}
+          <input
+            className="form-control"
+            type="username"
+            id="username"
+            placeholder={state.placeholder.username}
+            value={state.username}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="contact-form-child">
+          {/* <label>Email:</label> */}
+          <input
+            className="form-control"
+            type="email"
+            id="email"
+            placeholder={state.placeholder.email}
+            value={state.email}
+            onChange={handleChange}
+          />
+        </div>
+        <div id="select-control" className="contact-form-child">
+          {/* <label>Subject</label> */}
+          <span style={{ fontSize: "20px", float: "left" }}>
+            Select <i className="text-danger">required</i>
+          </span>
+          <select
+            type="select"
+            id="select"
+            defaultValue={"DEFAULT"}
+            // value={state.subject}
+            onChange={handleChange}
+          >
+            <option value="DEFAULT">--Please select a subject--</option>
+            <option value="general">General Feedback</option>
+            <option value="app-support">Application Support</option>
+            <option value="ntw">National Theatre Wales Team Enquiry</option>
+          </select>
+        </div>
+        <div className="contact-form-child">
+          {/* <label>Message:</label> */}
+          <textarea
+            type="message"
+            id="message"
+            placeholder={state.placeholder.message}
+            value={state.message}
+            onChange={handleChange}
+          ></textarea>
+        </div>
+        <Button type="submit">Submit</Button>
+      </form>
+    </>
+  );
 }
 
-export default Form;
+export default ContactForm;

@@ -1,7 +1,10 @@
 import React from "react";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
+import * as AiIcons from "react-icons/ai";
+import * as RiIcons from "react-icons/ri";
+import * as FaIcons from "react-icons/fa";
+import * as SiIcons from "react-icons/si";
+import * as MdIcons from "react-icons/md";
 
 const SidebarData = [
   {
@@ -20,7 +23,7 @@ const SidebarData = [
   {
     title: "Simple Acts",
     path: "/simpleacts",
-    icon: <AiIcons.AiFillHome />,
+    icon: <RiIcons.RiPlantLine />,
     cName: "nav-text",
   },
   {
@@ -32,20 +35,20 @@ const SidebarData = [
   {
     title: "Music",
     path: "/music",
-    icon: <AiIcons.AiFillHome />,
+    icon: <FaIcons.FaHeadphones />,
     cName: "nav-text",
   },
   {
     title: "Terms & Conditions",
     path: "/terms",
-    icon: <AiIcons.AiFillHome />,
+    icon: <SiIcons.SiReadthedocs style={{ width: "45px", height: "20px" }} />,
     cName: "nav-text",
   },
 
   {
     title: "Contact",
     path: "/contact",
-    icon: <AiIcons.AiFillHome />,
+    icon: <MdIcons.MdEmail />,
     cName: "nav-text",
   },
 ];

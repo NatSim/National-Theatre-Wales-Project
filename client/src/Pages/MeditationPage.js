@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 import SimpleActVideo from "../Components/SimpleActVideo";
 import SideNav from "../Components/Nav/SideNav";
 
