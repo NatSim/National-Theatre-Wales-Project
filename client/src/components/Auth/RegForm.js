@@ -8,6 +8,10 @@ function RegistrationForm(props) {
     email: "",
     password: "",
     confirmPassword: "",
+    usernameError: "name is empty",
+    emailError: "",
+    passwordError: "",
+    confirmPasswordError: "",
   });
 
   //POST REQUEST- This send info to server
@@ -75,6 +79,9 @@ function RegistrationForm(props) {
             placeholder="Enter name"
             onChange={handleChange}
           />
+          <div style={{ fontSize: 12, color: "red" }}>
+            {state.usernameError}
+          </div>
         </div>
         <div className="form-group text-left">
           <label htmlFor="email">Email address</label>
@@ -96,7 +103,7 @@ function RegistrationForm(props) {
             type="password"
             className="form-control"
             id="password"
-            placeholder="Password"
+            placeholder="password"
             onChange={handleChange}
           />
         </div>

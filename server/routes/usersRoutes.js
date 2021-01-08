@@ -36,10 +36,10 @@ module.exports = (app) => {
   //Contact Form function called everytime button hit
   app.post(`/contact`, async (req, res) => {
     console.log(req);
-    const user = await Contact.create(req.body); //(create a record from the json:object)
+    const contact = await Contact.create(req.body); //(create a record from the json:object)
     return res.status(201).send({
       error: false,
-      user,
+      contact,
     });
   });
 

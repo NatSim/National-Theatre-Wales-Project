@@ -1,29 +1,23 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Button from "react-bootstrap/Button";
-import ContactFormStyle from "../Components/ContactFormStyle.css";
 
 function ContactForm(props) {
   const [state, setState] = useState({
     username: "",
     email: "",
     message: "",
+    subject: "",
     placeholder: {
       username: "Enter Username",
       email: "Enter Email",
       message: "Write message here...",
     },
-    subject: "",
   });
 
   //POST REQUEST - This sends message to server
   const sendContactForm = () => {
-    if (
-      state.username.length &&
-      state.email.length &&
-      state.message.length
-      // &&state.subject.length
-    ) {
+    if (state.username.length && state.email.length && state.message.length) {
       console.log("There is a message!");
       const payload = {
         username: state.username,
@@ -57,6 +51,8 @@ function ContactForm(props) {
     const { id, value } = e.target;
     setState((prevState) => ({ ...prevState, [id]: value }));
   };
+
+  //Handles Select value
 
   //Handles Input changes
   const handleSubmit = (event) => {
@@ -105,13 +101,13 @@ function ContactForm(props) {
             Select <i className="text-danger">required</i>
           </span>
           <select
-            type="select"
-            id="select"
+            type="subject"
+            id="subject"
             defaultValue={"DEFAULT"}
-            // value={state.subject}
+            value={state.subject}
             onChange={handleChange}
           >
-            <option value="DEFAULT">--Please select a subject--</option>
+            <option>--Please select a subject--</option>
             <option value="general">General Feedback</option>
             <option value="app-support">Application Support</option>
             <option value="ntw">National Theatre Wales Team Enquiry</option>
