@@ -80,7 +80,6 @@ function ContactForm(props) {
             type="username"
             id="username"
             placeholder={state.placeholder.username}
-            value={state.username}
             onChange={handleChange}
           />
         </div>
@@ -91,7 +90,6 @@ function ContactForm(props) {
             type="email"
             id="email"
             placeholder={state.placeholder.email}
-            value={state.email}
             onChange={handleChange}
           />
         </div>
@@ -104,7 +102,6 @@ function ContactForm(props) {
             type="subject"
             id="subject"
             defaultValue={"DEFAULT"}
-            value={state.subject}
             onChange={handleChange}
           >
             <option>--Please select a subject--</option>

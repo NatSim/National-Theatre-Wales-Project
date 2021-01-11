@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 import axios from "axios";
-// import "../Auth/custom.css";
+import { Link } from "react-router-dom";
 
 //Login functions
-function LoginForm(props) {
+const LoginForm = (props) => {
   const [state, setState] = useState({
-    username: "",
+    email: "",
     password: "",
   });
 
   //POST REQUEST - This send req to server to confirm entered user info(exists) & create a session
   const sendDetailsToServer = () => {
-    console.log("SHOW!", state);
+    console.log(state);
     if (state.email.length && state.password.length) {
-      console.log("SHOW!");
       const payload = {
-        username: state.email,
+        email: state.email,
         password: state.password,
       };
       axios
@@ -49,45 +48,87 @@ function LoginForm(props) {
     }));
   };
 
-  //Handle submit(login) button
-  const handleSubmitClick = (e) => {
-    e.preventDefault();
+  //Handles input errors
+  const validate = () => {
+    let emailError = "";
+    let passwordError = "";
 
-    sendDetailsToServer();
+    if (!state.email) {
+      emailError = "Email cannot be empty";
+    }
+
+    if (!state.password) {
+      passwordError = "Password cannot be empty";
+    }
+
+    if ((emailError, passwordError)) {
+      setState({
+        emailError,
+        passwordError,
+      });
+      return false;
+    }
+    return true;
+  };
+
+  //Handle submit(login) button
+  const handleSubmitClick = (event) => {
+    event.preventDefault();
+
+    const isValid = validate();
+
+    if (isValid) {
+      sendDetailsToServer();
+    }
   };
 
   return (
     <div id="card" className="card col-12 col-lg-4 login-card mt-2 hv-center">
-      <form onSubmit={handleSubmitClick}>
+      <h1 className="reg-title">🐝Login😊</h1>
+      <h2>So what will you tell the bees today?</h2>
+      <form className="reg-parent-container" onSubmit={handleSubmitClick}>
         <div className="form-group text-left">
-          <label htmlFor="email">Email address</label>
+          <label htmlFor="email" alt="enter email">
+            Email address
+          </label>
           <input
             type="email"
             className="form-control"
             id="email"
             aria-describedby="emailHelp"
-            placeholder="Enter email"
+            placeholder="Enter Email"
             onChange={handleChange}
           />
+          <div style={{ fontSize: 14, color: "red" }}>{state.emailError}</div>
         </div>
         <div className="form-group text-left">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password" alt="enter password">
+            Password
+          </label>
           <input
             type="password"
             className="form-control"
             id="password"
-            placeholder="Password"
+            placeholder="Enter Password"
             onChange={handleChange}
           />
+          <div style={{ fontSize: 14, color: "red" }}>
+            {state.passwordError}
+          </div>
         </div>
 
         <button type="submit" className="btn btn-primary">
           LOGIN
         </button>
-        <div>forgot password here</div>
+        <br />
+        <Link>forgot password here</Link>
+        <br />
+        <Link to="/register" className="auth-route-link">
+          Register
+        </Link>
       </form>
     </div>
   );
-}
+};
 
 export default LoginForm;

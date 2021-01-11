@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 //Registration functions
 function RegistrationForm(props) {
@@ -7,18 +8,11 @@ function RegistrationForm(props) {
     username: "",
     email: "",
     password: "",
-    confirmPassword: "",
-    usernameError: "name is empty",
-    emailError: "",
-    passwordError: "",
-    confirmPasswordError: "",
   });
 
   //POST REQUEST- This send info to server
   const sendDetailsToServer = () => {
     if (state.email.length && state.password.length) {
-      // props.showError(null);
-
       const payload = {
         username: state.username,
         email: state.email,
@@ -34,10 +28,8 @@ function RegistrationForm(props) {
               successMessage:
                 "Registration successful. Redirecting to login page..",
             }));
-            // redirectToLogin();
-            // props.showError(null);
           } else {
-            console.log("Error!"); // props.showError("Some error ocurred");
+            console.log("Error!");
           }
         })
         .catch(function (error) {
@@ -47,6 +39,8 @@ function RegistrationForm(props) {
       console.log("Error"); // props.showError("Please enter valid username and password");
     }
   };
+
+  //Handles Text Input change
   const handleChange = (e) => {
     const { id, value } = e.target;
     setState((prevState) => ({
@@ -55,20 +49,58 @@ function RegistrationForm(props) {
     }));
   };
 
+  //Handles input errors
+  const validate = () => {
+    // let username = "";
+    let usernameError = "";
+    let emailError = "";
+    let passwordError = "";
+    let confirmPasswordError = "";
+
+    if (!state.username || (!state.username > 5 && !state.username < 10)) {
+      usernameError =
+        " Invalid username ,must include between 5 and 10 characters";
+      console.log(state);
+    }
+
+    if (!state.email) {
+      emailError = "Email cannot be empty";
+    }
+
+    if (!state.password && !state.confirmPassword) {
+      passwordError = "Password must be created";
+    }
+
+    if (state.password !== state.confirmPassword) {
+      confirmPasswordError = "Password does not match above,please check";
+    }
+
+    if ((usernameError, emailError, passwordError)) {
+      setState({
+        usernameError,
+        emailError,
+        passwordError,
+      });
+      return false;
+    }
+    return true;
+  };
+
   //Handle submit(register) button
   const handleSubmitClick = (e) => {
     e.preventDefault();
-    if (state.password === state.confirmPassword) {
+
+    const isValid = validate();
+
+    if (isValid) {
       sendDetailsToServer();
-    } else {
-      // props.showError("Passwords do not match");
-      console.log("Error,passwords do not match");
     }
   };
 
   return (
     <div id="card" className="card col-12 col-lg-4 login-card mt-2 hv-center">
-      <form onSubmit={handleSubmitClick}>
+      <h1 className="reg-title">🐝Register😊</h1>
+      <form className="reg-parent-container" onSubmit={handleSubmitClick}>
         <div className="form-group text-left">
           <label htmlFor="username">Username</label>
           <input
@@ -76,39 +108,47 @@ function RegistrationForm(props) {
             className="form-control"
             id="username"
             aria-describedby="username"
-            placeholder="Enter name"
+            placeholder="Enter Username"
             onChange={handleChange}
           />
-          <div style={{ fontSize: 12, color: "red" }}>
+          <div style={{ fontSize: 14, color: "red" }}>
             {state.usernameError}
           </div>
         </div>
         <div className="form-group text-left">
-          <label htmlFor="email">Email address</label>
+          <label htmlFor="email" alt="enter email">
+            Email address
+          </label>
           <input
             type="email"
             className="form-control"
             id="email"
             aria-describedby="emailHelp"
-            placeholder="Enter email"
+            placeholder="Enter Email"
             onChange={handleChange}
           />
+          <div style={{ fontSize: 14, color: "red" }}>{state.emailError}</div>
           <small id="emailHelp" className="form-text text-muted">
             We'll never share your email with anyone else.
           </small>
         </div>
         <div className="form-group text-left">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password" alt="enter a password">
+            Password
+          </label>
           <input
             type="password"
             className="form-control"
             id="password"
-            placeholder="password"
+            placeholder="Enter Password"
             onChange={handleChange}
           />
+          <div style={{ fontSize: 14, color: "red" }}>
+            {state.passwordError}
+          </div>
         </div>
         <div className="form-group text-left">
-          <label htmlFor="confirmpassword">Confirm Password</label>
+          {/* <label htmlFor="confirmpassword">Confirm Password</label> */}
           <input
             type="password"
             className="form-control"
@@ -116,10 +156,17 @@ function RegistrationForm(props) {
             placeholder="Confirm Password"
             onChange={handleChange}
           />
+          <div style={{ fontSize: 14, color: "red" }}>
+            {state.confirmPasswordError}
+          </div>
         </div>
         <button type="submit" className="btn btn-primary">
           Register
         </button>
+        <br />
+        <Link to="/login" className="auth-route-link">
+          Already a users,sign in here
+        </Link>
       </form>
     </div>
   );

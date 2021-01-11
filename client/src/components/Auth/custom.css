@@ -24,3 +24,30 @@ form {
   border-radius: 10px;
   margin-top: 10%;
 }
+
+/*Registration Form*/
+.reg-parent-container {
+  width: 250px;
+
+  margin-top: 24px;
+}
+
+.reg-title {
+  margin-top: 24px;
+  background-color: #afe272;
+  padding: 10px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-text {
+  font-size: initial;
+}
+
+/* .register-page-button {
+  width: 
+
+} */
