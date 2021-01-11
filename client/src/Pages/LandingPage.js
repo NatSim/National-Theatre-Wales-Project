@@ -10,6 +10,7 @@ function LandingPage() {
       <header className="header-banner"></header>
       <NTWlogo />
       <LargeImage />
+      <footer id="footer-banner"></footer>
     </>
   );
 }
