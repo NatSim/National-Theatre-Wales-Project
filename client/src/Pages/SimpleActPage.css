@@ -7,14 +7,14 @@
   font-size: 36px;
 }
 
-.home-button-container {
-  padding-top: 10px;
-}
-
 img {
   width: 70px;
   height: 70px;
   border-radius: 10px;
+}
+
+.prompt-text {
+  padding-top: 50px;
 }
 
 /* Simple Act images*/

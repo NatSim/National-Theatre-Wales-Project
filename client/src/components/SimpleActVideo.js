@@ -13,6 +13,11 @@ class SimpleActVideo extends React.Component {
     console.log(event.target);
   }
 
+  videoStateChange(event) {
+    const player = event.target;
+    console.log(player.getCurrentTime);
+  }
+
   render() {
     const opts = {
       height: "123",

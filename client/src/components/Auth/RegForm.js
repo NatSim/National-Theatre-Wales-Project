@@ -80,6 +80,7 @@ function RegistrationForm(props) {
         usernameError,
         emailError,
         passwordError,
+        confirmPasswordError,
       });
       return false;
     }
@@ -128,9 +129,9 @@ function RegistrationForm(props) {
             onChange={handleChange}
           />
           <div style={{ fontSize: 14, color: "red" }}>{state.emailError}</div>
-          <small id="emailHelp" className="form-text text-muted">
+          <div id="emailHelp" className="form-text text-muted">
             We'll never share your email with anyone else.
-          </small>
+          </div>
         </div>
         <div className="form-group text-left">
           <label htmlFor="password" alt="enter a password">
@@ -165,7 +166,7 @@ function RegistrationForm(props) {
         </button>
         <br />
         <Link to="/login" className="auth-route-link">
-          Already a users,sign in here
+          Already a users,login here
         </Link>
       </form>
     </div>

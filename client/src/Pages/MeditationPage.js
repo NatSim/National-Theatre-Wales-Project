@@ -1,6 +1,7 @@
 import React from "react";
 import SimpleActVideo from "../Components/SimpleActVideo";
 import SideNav from "../Components/Nav/SideNav";
+import "./MeditationPage.css";
 
 const MeditationPage = () => {
   return (

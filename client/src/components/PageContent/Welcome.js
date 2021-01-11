@@ -18,10 +18,6 @@ const Welcome = ({
 }) => {
   console.log(title, mainText, imageUrl, onClickHandler); //check for errors
 
-  //Adding Class for styling welcomeText first attempt
-  // const str = title;
-  // const last = str.slice(11, 27);
-  // const first = str.slice(0, 10);
   const newTitle = () => (
     <>
       Welcome to
@@ -43,13 +39,14 @@ const Welcome = ({
     </>
   );
 
-  // {
-  //   /*
   //  Bee transition Effect
-  //  const FadeOutBee = ({ BeeStamp }) => {
-  //  image fade out
-  //  }; */
-  // }
+  // const fadeOutBee = () => {
+  //   if (!welcomeStep === 0 || 2);
+  //   return true;
+  //   {
+  //     return false;
+  //   }
+  // };
 
   return (
     <div>

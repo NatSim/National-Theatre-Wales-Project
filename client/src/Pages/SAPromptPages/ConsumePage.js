@@ -1,26 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 import Consume from "../../images/Consume.jpg";
 import "./SAPromptPages.css";
 import ConsumeArticle from "../../Components/SAArticles/ConsumeArticle";
+import SideNav from "../../Components/Nav/SideNav";
 
 const ConsumePage = () => {
   return (
-    <div className="consume-page">
-      <div className="home-button-container">
-        <Link to="/simpleacts">
-          <Button className="button">Back</Button>
-        </Link>
+    <>
+      <SideNav />
+      <div className="consume-page">
+        <article>
+          <h1 className="prompt-text">Your Simple Act is to...</h1>
+          <div className="image-container">
+            <img src={Consume} alt="Consume less" />
+          </div>
+          <ConsumeArticle />
+        </article>
       </div>
-      <article>
-        <h1 className="prompt-text">Your Simple Act is to...</h1>
-        <div>
-          <img src={Consume} alt="Consume less" />
-        </div>
-        <ConsumeArticle />
-      </article>
-    </div>
+    </>
   );
 };
 

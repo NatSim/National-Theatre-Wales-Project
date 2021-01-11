@@ -24,3 +24,11 @@ body {
 .section-color {
   background-color: #ff9f00;
 }
+
+.copyright-footer {
+  font-size: 12px;
+}
+
+.home-container-video {
+  padding-top: 75px;
+}

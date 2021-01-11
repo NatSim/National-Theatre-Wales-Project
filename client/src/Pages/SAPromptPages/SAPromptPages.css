@@ -27,8 +27,30 @@ body {
 .learn-page,
 .walk-page {
   height: 450vh;
-  padding: 0px 24px;
+  padding: 34px 24px 0px;
 }
+
+img {
+  margin: 5px;
+  width: 120px;
+  height: 120px;
+}
+
+.image-container {
+  padding: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.simple-acts {
+  padding: 50px;
+}
+
 .connect-page,
 .consume-page {
   background-color: #ff2f69;

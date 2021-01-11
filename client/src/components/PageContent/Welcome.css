@@ -17,16 +17,28 @@ body {
 }
 
 /* Bee Stamp*/
+.tranisition-image1 {
+  width: 244px;
+  height: 63;
+  border-radius: 10px;
+  /* transition: opacity 0.5s ease; */
+}
+
 .tranisition-image {
   width: 244px;
   height: 63;
   border-radius: 10px;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+  animation: beeFade 30s;
+  opacity: 1;
 }
 
-.tranisition-image:hover {
-  opacity: 1;
+@keyframes beeFade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 /* Temp image placeholder*/
