@@ -1,7 +1,6 @@
 import React from "react";
 import "./Welcome.css";
 import NextButton from "../Buttons/MainButton";
-import BeeStamp from "../../images/whole-beeimage.png";
 import PlaceHolder from "../../images/whole-beeimage.png";
 /**
  *Functional component-Welcome message
@@ -39,15 +38,6 @@ const Welcome = ({
     </>
   );
 
-  //  Bee transition Effect
-  // const fadeOutBee = () => {
-  //   if (!welcomeStep === 0 || 2);
-  //   return true;
-  //   {
-  //     return false;
-  //   }
-  // };
-
   return (
     <div>
       <section className="title-container">
@@ -58,18 +48,18 @@ const Welcome = ({
             ? questionChars()
             : title}
         </h1>
-        <img className="callum" src={PlaceHolder} alt="Callum" />
+        <img className="transition-image" src={PlaceHolder} alt="bee" />
         <p>{welcomeStep === 0 ? specialChars() : mainText}</p>
         <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
       </section>
 
-      <figure className="image-container">
+      {/* <figure className="image-container">
         <img
           className="tranisition-image"
           src={BeeStamp}
           alt="Large Bee Stamp"
         />
-      </figure>
+      </figure> */}
     </div>
   );
 };

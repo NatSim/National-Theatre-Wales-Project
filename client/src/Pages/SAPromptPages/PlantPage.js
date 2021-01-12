@@ -12,7 +12,7 @@ const PlantPage = () => {
         <article>
           <h1 className="prompt-text">Your Simple Act is to...</h1>
           <div className="image-container">
-            <img src={Plant} alt="Plant" />
+            <img className="image" src={Plant} alt="Plant" />
           </div>
           <PlantArticle />
         </article>

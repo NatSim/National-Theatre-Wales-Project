@@ -1,18 +1,19 @@
 import React from "react";
 import AboutInfo from "../Components/PageContent/AboutInfo";
-import SimpleActVideo from "../Components/SimpleActVideo";
 import "../Components/Buttons/MainButton.css";
 import "./AboutPage.css";
 import SideNav from "../Components/Nav/SideNav";
+import VideoPlayer from "../Components/VideoPlayer";
 
 //About Page
 const About = () => {
+  const videoTeam = "https://www.youtube.com/watch?v=xV2FF-YUy94";
   return (
     <>
       <SideNav />
       <div className="section-color">
         <div className="home-container-video">
-          <SimpleActVideo videoId={"xV2FF-YUy94"} />
+          <VideoPlayer url={videoTeam} />
         </div>
         <div className="background-outer">
           <article>

@@ -1,16 +1,18 @@
 import React from "react";
-import SimpleActVideo from "../Components/SimpleActVideo";
 import SideNav from "../Components/Nav/SideNav";
 import "./MeditationPage.css";
+import VideoPlayer from "../Components/VideoPlayer";
 
 const MeditationPage = () => {
+  const videoMedi = "https://www.youtube.com/watch?v=fcWiJQW5GwQ";
+
   return (
     <>
       <SideNav />
       <div>
         <h1>Meditation</h1>
         <div>
-          <SimpleActVideo videoId={"xV2FF-YUy94"} />
+          <VideoPlayer url={videoMedi} />
         </div>
       </div>
     </>

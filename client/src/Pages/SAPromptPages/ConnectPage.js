@@ -12,7 +12,7 @@ const ConnectPage = () => {
         <article>
           <h1 className="prompt-text">Your Simple Act is to...</h1>
           <div className="image-container">
-            <img src={Connect} alt="People connecting" />
+            <img className="image" src={Connect} alt="People connecting" />
           </div>
           <ConnectArticle />
         </article>

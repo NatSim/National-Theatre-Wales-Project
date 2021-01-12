@@ -12,7 +12,7 @@ const BeKindPage = () => {
         <article>
           <h1 className="prompt-text">Your Simple Act is to...</h1>
           <div className="image-container">
-            <img src={BeKind} alt="Be Kind" />
+            <img className="image" src={BeKind} alt="Be Kind" />
           </div>
           <BeKindArticle />
         </article>

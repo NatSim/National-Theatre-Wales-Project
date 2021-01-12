@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SimpleActVideo from "../Components/SimpleActVideo";
 import BeKind from "../images/BeKind.jpg";
 import Connect from "../images/Connect.jpg";
 import Consider from "../images/Consider.jpg";
@@ -10,26 +9,28 @@ import Plant from "../images/Plant.jpg";
 import TakeAWalk from "../images/TakeAWalk.jpg";
 import "../Pages/SimpleActPage.css";
 import SideNav from "../Components/Nav/SideNav";
+import VideoPlayer from "../Components/VideoPlayer";
 
 const SAPrompts = (props) => {
   return (
     //Reusable component
     <Link to={props.link}>
-      <img src={props.img} alt={props.alt} />
+      <img className="image" src={props.img} alt={props.alt} />
       {props.children}
     </Link>
   );
 };
 
 const SimpleActsPage = () => {
+  const videoSimple = "https://www.youtube.com/watch?v=xV2FF-YUy94";
+
   return (
     <>
       <SideNav />
       <div className="simplepage-container">
-        <div className="home-button-container"></div>
-        <h1 className="white-h1">Simple Acts</h1>
+        <h1 className="simple-title">Simple Acts</h1>
         <div className="simple-acts">
-          <SimpleActVideo videoId={"qxB3-sw2HAQ"} />
+          <VideoPlayer url={videoSimple} />
         </div>
         <section className="flex-container">
           <div className="child-container">

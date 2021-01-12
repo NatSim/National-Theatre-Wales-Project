@@ -12,7 +12,7 @@ const LearnPage = () => {
         <article>
           <h1 className="prompt-text">Your Simple Act is to...</h1>
           <div className="image-container">
-            <img src={Learn1} alt="Learn one new thing" />
+            <img className="image" src={Learn1} alt="Learn one new thing" />
           </div>
           <LearnArticle />
         </article>

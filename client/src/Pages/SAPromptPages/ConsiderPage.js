@@ -12,7 +12,7 @@ const ConsiderPage = () => {
         <article>
           <h1 className="prompt-text">Your Simple Act is to...</h1>
           <div className="image-container">
-            <img src={Consider} alt="Consider the stars" />
+            <img className="image" src={Consider} alt="Consider the stars" />
           </div>
           <ConsiderArticle />
         </article>

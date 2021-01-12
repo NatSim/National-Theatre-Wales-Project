@@ -18,15 +18,15 @@ body {
 
 /* Bee Stamp*/
 .tranisition-image1 {
-  width: 244px;
-  height: 63;
+  width: 200px;
+  height: 100px;
   border-radius: 10px;
   /* transition: opacity 0.5s ease; */
 }
 
 .tranisition-image {
-  width: 244px;
-  height: 63;
+  width: 200px;
+  height: 100px;
   border-radius: 10px;
   animation: beeFade 30s;
   opacity: 1;
@@ -42,10 +42,6 @@ body {
 }
 
 /* Temp image placeholder*/
-.callum {
-  width: 200px;
-  height: 130px;
-}
 
 .title-container {
   margin: 20px;

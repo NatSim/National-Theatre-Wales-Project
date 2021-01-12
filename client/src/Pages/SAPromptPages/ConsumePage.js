@@ -12,7 +12,7 @@ const ConsumePage = () => {
         <article>
           <h1 className="prompt-text">Your Simple Act is to...</h1>
           <div className="image-container">
-            <img src={Consume} alt="Consume less" />
+            <img className="image" src={Consume} alt="Consume less" />
           </div>
           <ConsumeArticle />
         </article>
