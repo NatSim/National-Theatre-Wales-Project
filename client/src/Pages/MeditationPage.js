@@ -10,7 +10,7 @@ const MeditationPage = () => {
     <>
       <SideNav />
       <div>
-        <h1>Meditation</h1>
+        <h1 className="title">Meditation</h1>
         <div>
           <VideoPlayer url={videoMedi} />
         </div>

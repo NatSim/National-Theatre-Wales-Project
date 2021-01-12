@@ -10,7 +10,7 @@ const MusicPage = () => {
     <>
       <SideNav />
       <div>
-        <h1>Music</h1>
+        <h1 className="title">Music</h1>
         <div>
           <VideoPlayer url={videoMusic} />
           <span className="title-text">

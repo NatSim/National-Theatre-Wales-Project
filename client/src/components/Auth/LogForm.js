@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 //Login functions
 const LoginForm = (props) => {
@@ -8,6 +8,12 @@ const LoginForm = (props) => {
     email: "",
     password: "",
   });
+  const history = useHistory();
+
+  //login route to homepage
+  const navigateToHome = () => {
+    history.push("/home");
+  };
 
   //POST REQUEST - This send req to server to confirm entered user info(exists) & create a session
   const sendDetailsToServer = () => {
@@ -27,6 +33,7 @@ const LoginForm = (props) => {
                 "User exists.Login successful. Redirecting to home page..",
             }));
             console.log("Successful!");
+            navigateToHome(); //navigate to homepage call function here;
           } else {
             console.log("Error!");
           }

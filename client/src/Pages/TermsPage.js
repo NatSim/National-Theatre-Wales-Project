@@ -8,7 +8,7 @@ const Terms = () => {
     <>
       <SideNav />
       <div className="terms-page">
-        <h1>Terms {`&`} Conditions</h1>
+        <h1 className="title">Terms {`&`} Conditions</h1>
         <section>
           <TermsContent />
         </section>

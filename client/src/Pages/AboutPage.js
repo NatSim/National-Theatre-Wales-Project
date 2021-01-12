@@ -21,7 +21,7 @@ const About = () => {
               <AboutInfo />
             </div>
           </article>
-        </div>{" "}
+        </div>
         <footer id="footer-banner" className="copyright-footer">
           Copyright © National Theatre Wales. Website developed by Natasha
           Simone. Registered Company No. 6693227 Charity Registration No.

@@ -40,6 +40,7 @@ const Welcome = ({
 
   return (
     <div>
+      {console.log(welcomeStep)}
       <section className="title-container">
         <h1>
           {welcomeStep === 0
@@ -48,18 +49,16 @@ const Welcome = ({
             ? questionChars()
             : title}
         </h1>
-        <img className="transition-image" src={PlaceHolder} alt="bee" />
+        <img
+          className={`bee-default ${
+            welcomeStep === 1 ? "transition-image" : ""
+          }`}
+          src={PlaceHolder}
+          alt="bee"
+        />
         <p>{welcomeStep === 0 ? specialChars() : mainText}</p>
         <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
       </section>
-
-      {/* <figure className="image-container">
-        <img
-          className="tranisition-image"
-          src={BeeStamp}
-          alt="Large Bee Stamp"
-        />
-      </figure> */}
     </div>
   );
 };

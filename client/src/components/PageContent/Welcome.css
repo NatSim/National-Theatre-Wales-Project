@@ -16,20 +16,14 @@ body {
   color: #00c1a2;
 }
 
-/* Bee Stamp*/
-.tranisition-image1 {
+.bee-default {
   width: 200px;
   height: 100px;
   border-radius: 10px;
-  /* transition: opacity 0.5s ease; */
 }
 
-.tranisition-image {
-  width: 200px;
-  height: 100px;
-  border-radius: 10px;
-  animation: beeFade 30s;
-  opacity: 1;
+.transition-image {
+  animation: beeFade 10s;
 }
 
 @keyframes beeFade {
