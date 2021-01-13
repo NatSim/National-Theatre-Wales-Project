@@ -4,8 +4,8 @@ body {
 }
 
 .homepage {
-  height: 110vh;
-  padding: 0px 24px;
+  /* height: 110vh; */
+  /* padding: 0px 24px; */
   background-color: #ff9f00;
 }
 
@@ -62,4 +62,22 @@ li {
 
 #contact-button {
   background-color: #fbce69;
+}
+
+/*section white/yellow*/
+.h-container-video {
+  padding: 10%;
+}
+
+.info-container {
+  padding: 10%;
+}
+
+.nav-container {
+  padding-top: 15px;
+  border-style: hidden;
+  border-width: 100px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: white;
 }

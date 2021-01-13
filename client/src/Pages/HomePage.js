@@ -31,50 +31,59 @@ const NavButton = (props) => {
 function HomePage() {
   return (
     <div className="homepage">
-      <header>
-        <Greeting name="Natasha" />
-      </header>
-      <main>
-        <nav className="nav-container">
-          <ul>
-            <li>
-              <Link to="/about">
-                <img
-                  id="about-button"
-                  className="default-button"
-                  src={BeeStamp}
-                  alt="whole bee "
-                />
-              </Link>
-            </li>
-            <li>
-              <NavButton link={"/simpleacts"} buttonColor={"simple-button"}>
-                Simple Acts
-              </NavButton>
-            </li>
-            <li>
-              <NavButton link={"/meditation"} buttonColor={"meditate-button"}>
-                Meditation
-              </NavButton>
-            </li>
-            <li>
-              <NavButton link={"/music"} buttonColor={"music-button"}>
-                Music
-              </NavButton>
-            </li>
-            <li>
-              <NavButton link={"/terms"} buttonColor={"term-button"}>
-                Terms{`&`}Conditions
-              </NavButton>
-            </li>
-            <li>
-              <NavButton link={"/contact"} buttonColor={"contact-button"}>
-                Contact Us
-              </NavButton>
-            </li>
-          </ul>
-        </nav>
-      </main>
+      <div className="h-container-video">
+        <header>
+          <Greeting name="Natasha" />
+        </header>
+      </div>
+      <div className="background-outer">
+        <div>
+          <main>
+            <nav className="nav-container">
+              <ul>
+                <li>
+                  <Link to="/about">
+                    <img
+                      id="about-button"
+                      className="default-button"
+                      src={BeeStamp}
+                      alt="whole bee "
+                    />
+                  </Link>
+                </li>
+                <li>
+                  <NavButton link={"/simpleacts"} buttonColor={"simple-button"}>
+                    Simple Acts
+                  </NavButton>
+                </li>
+                <li>
+                  <NavButton
+                    link={"/meditation"}
+                    buttonColor={"meditate-button"}
+                  >
+                    Meditation
+                  </NavButton>
+                </li>
+                <li>
+                  <NavButton link={"/music"} buttonColor={"music-button"}>
+                    Music
+                  </NavButton>
+                </li>
+                <li>
+                  <NavButton link={"/terms"} buttonColor={"term-button"}>
+                    Terms{`&`}Conditions
+                  </NavButton>
+                </li>
+                <li>
+                  <NavButton link={"/contact"} buttonColor={"contact-button"}>
+                    Contact Us
+                  </NavButton>
+                </li>
+              </ul>
+            </nav>
+          </main>
+        </div>
+      </div>
       <Switch>
         <Route path="/about" exact component={About} />
         <Route path="/simpleacts" component={SimpleActsPage} />
