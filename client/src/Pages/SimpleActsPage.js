@@ -28,7 +28,9 @@ const SimpleActsPage = () => {
     <>
       <SideNav />
       <div className="simplepage-container">
-        <h1 className="simple-title">Simple Acts</h1>
+        <h1 id="simple-title" className="title">
+          Simple Acts
+        </h1>
         <div className="simple-acts">
           <VideoPlayer url={videoSimple} />
         </div>

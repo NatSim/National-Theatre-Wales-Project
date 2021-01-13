@@ -35,7 +35,7 @@ function HomePage() {
         <Greeting name="Natasha" />
       </header>
       <main>
-        <nav>
+        <nav className="nav-container">
           <ul>
             <li>
               <Link to="/about">

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 //Registration functions
 function RegistrationForm(props) {
@@ -9,6 +9,12 @@ function RegistrationForm(props) {
     email: "",
     password: "",
   });
+  const history = useHistory();
+
+  //On reg route to login
+  const navigateToLogPage = () => {
+    history.push("/login");
+  };
 
   //POST REQUEST- This send info to server
   const sendDetailsToServer = () => {
@@ -28,6 +34,8 @@ function RegistrationForm(props) {
               successMessage:
                 "Registration successful. Redirecting to login page..",
             }));
+            console.log("Successful");
+            navigateToLogPage();
           } else {
             console.log("Error!");
           }
