@@ -7,10 +7,10 @@ function LandingPage() {
   return (
     //React.Fragment shorcut
     <>
-      <header className="header-banner"></header>
+      {/* <header className="header-banner"></header> */}
       <NTWlogo />
       <LargeImage />
-      <footer id="footer-banner"></footer>
+      {/* <footer id="footer-banner"></footer> */}
     </>
   );
 }

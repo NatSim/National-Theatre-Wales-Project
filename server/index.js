@@ -10,7 +10,7 @@ const app = express();
 
 mongoose.Promise = global.Promise;
 mongoose.connect(
-  // Connecting to Repo DB
+  // Connecting to MONGO DATABASE
   process.env.MONGODB_URI ||
     `mongodb://localhost:27017/black-codher-personal-project`,
   {
@@ -48,6 +48,7 @@ app.use(bodyParser.json());
 // IMPORT YOUR ROUTES
 require("./routes/usersRoutes")(app);
 
+//LISTENS FOR PORT CONNECTIONS
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`app running on port ${PORT}`);

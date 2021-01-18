@@ -9,6 +9,8 @@ import MusicPage from "./MusicPage";
 import Terms from "./TermsPage";
 import ContactUsPage from "./ContactUsPage";
 import About from "./AboutPage";
+import { IconContext } from "react-icons";
+import * as CgIcons from "react-icons/cg";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
@@ -31,6 +33,7 @@ const NavButton = (props) => {
 function HomePage() {
   return (
     <div className="homepage">
+      <CgIcons.CgProfile className="profile-svg" />
       <div className="h-container-video">
         <header>
           <Greeting name="Natasha" />

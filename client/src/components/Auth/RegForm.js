@@ -16,7 +16,7 @@ function RegistrationForm(props) {
     history.push("/login");
   };
 
-  //POST REQUEST- This send info to server
+  //POST REQUEST- This send info to server code runs when someone submits form
   const sendDetailsToServer = () => {
     if (state.email.length && state.password.length) {
       const payload = {

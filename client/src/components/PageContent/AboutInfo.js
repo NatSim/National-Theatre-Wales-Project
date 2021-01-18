@@ -34,8 +34,9 @@ function AboutInfo() {
         new work that redefines the way in which theatre is made while telling a
         universal story of our human connection to nature and to each other.
       </article>
-      <article>
-        To learn more about NTW Team and how you can get involved click here
+      <br />
+      <article className="more-info2">
+        To learn more about NTW Team and how you can get involved click here.
       </article>
       <div>
         <Link to="/contact" className="button">
@@ -43,10 +44,14 @@ function AboutInfo() {
         </Link>
       </div>
       <article>
+        <br />
         <span className="more-info">
           To find out more about Go Tell The Bees {`&`} the show visit:
         </span>
-        <a href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/">
+        <a
+          className="ntw-link"
+          href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/"
+        >
           {"https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/"}
         </a>
       </article>

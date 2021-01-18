@@ -24,6 +24,7 @@ article {
   color: white;
   background-color: #fbce69;
   border-radius: 10px;
+  padding: 10px;
 }
 
 a {
@@ -31,6 +32,12 @@ a {
   font-size: 22px;
 }
 
-.more-info {
-  color: white;
+.more-info2 {
+  margin-bottom: 20px;
+}
+
+.ntw-link {
+  display: flex;
+  justify-content: center;
+  font-size: initial;
 }
