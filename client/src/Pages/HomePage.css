@@ -41,7 +41,7 @@ li {
 
 #about-button {
   border: black;
-  border-style: double;
+  box-shadow: 5px 5px whitesmoke;
 }
 
 .default-button {
@@ -52,6 +52,7 @@ li {
   font-size: 22px;
   color: white;
   border-radius: 10px;
+  box-shadow: 5px 5px whitesmoke;
 }
 
 /* Bee Image about button*/

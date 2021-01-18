@@ -13,6 +13,7 @@ article {
   width: 242px;
   height: 141px;
   border-radius: 10%;
+  box-shadow: 5px 5px whitesmoke;
 }
 
 .button {
@@ -25,6 +26,7 @@ article {
   background-color: #fbce69;
   border-radius: 10px;
   padding: 10px;
+  box-shadow: 5px 5px whitesmoke;
 }
 
 a {
@@ -40,4 +42,13 @@ a {
   display: flex;
   justify-content: center;
   font-size: initial;
+}
+
+.fig-caption {
+  font-size: initial;
+}
+
+.more-info,
+.more-info2 {
+  font-size: 20px;
 }

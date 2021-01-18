@@ -26,7 +26,9 @@ function AboutInfo() {
           src={Image2}
           alt="Tide-Whisperer-TEAM-Social Pembrokeshire Landscape"
         ></img>
-        <figcaption>Team Social-Tide Whisperer</figcaption>
+        <figcaption className="fig-caption">
+          Team Social-Tide Whisperer
+        </figcaption>
       </article>
       <article>
         Having decided on climate change and the environment as the most urgent
