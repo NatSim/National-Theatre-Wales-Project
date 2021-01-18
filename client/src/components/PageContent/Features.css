@@ -1,0 +1,11 @@
+.image-control {
+  width: 320px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-svg {
+    width: 10%;
+    height: 10%;
+  }
+}

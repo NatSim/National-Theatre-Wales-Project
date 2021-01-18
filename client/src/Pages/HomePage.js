@@ -9,8 +9,12 @@ import MusicPage from "./MusicPage";
 import Terms from "./TermsPage";
 import ContactUsPage from "./ContactUsPage";
 import About from "./AboutPage";
-import { IconContext } from "react-icons";
 import * as CgIcons from "react-icons/cg";
+import Features from "../Components/PageContent/Features";
+import Meditate from "../images/meditate.jpg";
+import Carys from "../images/Carys.jpg";
+import Walk from "../images/TakeAWalk.jpg";
+import Tide from "../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
@@ -39,6 +43,7 @@ function HomePage() {
           <Greeting name="Natasha" />
         </header>
       </div>
+      <Features image={Meditate} image2={Carys} image3={Walk} image4={Tide} />
       <div className="background-outer">
         <div>
           <main>
