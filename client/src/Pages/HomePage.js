@@ -16,6 +16,9 @@ import Carys from "../images/Carys.jpg";
 import Walk from "../images/TakeAWalk.jpg";
 import Tide from "../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import SideNav from "../Components/Nav/SideNav";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
@@ -51,7 +54,31 @@ function HomePage() {
         </span>
       </div>
       <h2 className="subtitle">Featured</h2>
-      <Features image={Meditate} image2={Carys} image3={Walk} image4={Tide} />
+      <Container>
+        <Row>
+          <Col sm>
+            <Features image={Tide} />
+          </Col>
+          <Col sm>
+            <Features image={Meditate} />
+          </Col>
+          <Col sm>
+            <Features image={Carys} />
+          </Col>
+        </Row>
+        <Row>
+          <Col sm>
+            <Features image={Walk} />
+          </Col>
+          <Col sm>
+            <Features image={Carys} />
+          </Col>
+          <Col sm>
+            <Features image={Carys} />
+          </Col>
+        </Row>
+      </Container>
+
       <div className="background-outer">
         <div>
           <main>
@@ -100,6 +127,13 @@ function HomePage() {
             </nav>
           </main>
         </div>
+        <footer>
+          <p>
+            2021 Go Tell The Bees Copyright © National Theatre Wales. Website
+            developed by Natasha Simone. Registered Company No. 6693227 Charity
+            Registration No. 1127952
+          </p>{" "}
+        </footer>
       </div>
       <Switch>
         <Route path="/about" exact component={About} />

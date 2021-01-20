@@ -17,3 +17,11 @@
   box-shadow: 20px 20px wheat;
   border-radius: 20px;
 }
+
+.feature-card {
+  width: 18rem;
+}
+
+.img-control {
+  height: 198px;
+}
