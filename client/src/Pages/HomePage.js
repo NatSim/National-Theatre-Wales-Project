@@ -15,10 +15,12 @@ import Meditate from "../images/meditate.jpg";
 import Carys from "../images/Carys.jpg";
 import Walk from "../images/TakeAWalk.jpg";
 import Tide from "../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
+import SideNav from "../Components/Nav/SideNav";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
-
+//set state for username
+let username = "Natasha";
 const Greeting = (props) => {
   return <h1 className="welcome">Welcome back, {props.name}</h1>;
 };
@@ -37,17 +39,24 @@ const NavButton = (props) => {
 function HomePage() {
   return (
     <div className="homepage">
-      <CgIcons.CgProfile className="profile-svg" />
-      <div className="h-container-video">
-        <header>
-          <Greeting name="Natasha" />
-        </header>
+      <div className="header">
+        <div>
+          <SideNav />
+        </div>
+        <CgIcons.CgProfile className="profile-svg" />
       </div>
+      <div className="h-container-video">
+        <span>
+          <Greeting name={username} />
+        </span>
+      </div>
+      <h2 className="subtitle">Featured</h2>
       <Features image={Meditate} image2={Carys} image3={Walk} image4={Tide} />
       <div className="background-outer">
         <div>
           <main>
             <nav className="nav-container">
+              <h2 className="subtitle">Discover</h2>
               <ul>
                 <li>
                   <Link to="/about">

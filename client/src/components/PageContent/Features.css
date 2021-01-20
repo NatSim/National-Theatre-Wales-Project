@@ -1,6 +1,7 @@
 .image-control {
-  width: 320px;
-  height: 200px;
+  width: 280px;
+  height: 180px;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -8,4 +9,11 @@
     width: 10%;
     height: 10%;
   }
+}
+
+.parent-container {
+  background-color: whitesmoke;
+  padding: 25px;
+  box-shadow: 20px 20px wheat;
+  border-radius: 20px;
 }

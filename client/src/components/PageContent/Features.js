@@ -4,14 +4,14 @@ import "./Features.css";
 
 const Features = (props) => {
   // const CustomRightArrow = ({ onClick, ...rest }) => {
-  // //   const {
-  // //     onMove,
-  // //     carouselState: { currentSlide, deviceType },
-  // //   } = rest;
-  // //   // onMove means if dragging or swiping in progress.
-  // //   return <button onClick={() => onClick()} />;
-  // // };
-  // // <Carousel customRightArrow={<CustomRightArrow />} />;
+  //   const {
+  //     onMove,
+  //     carouselState: { currentSlide, deviceType },
+  //   } = rest;
+  //   // onMove means if dragging or swiping in progress.
+  //   return <button onClick={() => onClick()} />;
+  // };
+  // <Carousel customRightArrow={<CustomRightArrow />} />;
 
   const responsive = {
     desktop: {
@@ -45,21 +45,29 @@ const Features = (props) => {
       transitionDuration={500}
       containerClass="carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}
-      // deviceType={this.props.deviceType}
+      deviceType={props.deviceType}
       dotListClass="custom-dot-list-style"
       itemClass="carousel-item-padding-40-px"
     >
-      <div>
-        <img className="image-control" src={props.image} />
+      <div className="parent-container">
+        <img
+          className="image-control"
+          src={props.image}
+          alt="meditating feature"
+        />
       </div>
-      <div>
-        <img className="image-control" src={props.image2} />
+      <div className="parent-container">
+        <img className="image-control" src={props.image2} alt="music feature" />
       </div>
-      <div>
-        <img className="image-control" src={props.image3} />
+      <div className="parent-container">
+        <img
+          className="image-control"
+          src={props.image3}
+          alt="walking feature"
+        />
       </div>
-      <div>
-        <img className="image-control" src={props.image4} />
+      <div className="parent-container">
+        <img className="image-control" src={props.image4} alt="feature" />
       </div>
     </Carousel>
   );
