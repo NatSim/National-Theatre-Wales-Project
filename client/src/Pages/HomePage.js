@@ -54,7 +54,7 @@ function HomePage() {
         </span>
       </div>
       <h2 className="subtitle">Featured</h2>
-      <Container>
+      <Container className="card-control">
         <Row>
           <Col sm>
             <Features image={Tide} />
