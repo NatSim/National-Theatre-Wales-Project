@@ -1,0 +1,31 @@
+/*Header */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.content {
+  padding: 16px;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.nav-links {
+  min-height: 10vh;
+  background: white;
+  text-decoration: none;
+}
+
+li {
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}

@@ -3,20 +3,34 @@ body {
   /* text-align: center; */
 }
 
-.homepage {
-  /* height: 110vh; */
-  /* padding: 0px 24px; */
+/* Middle nav*/
+.nav-container {
+  padding: 10px 0px 25px 0px;
+  position: relative;
+}
+.nav-container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   background-color: #ff9f00;
+  background-size: cover;
+  opacity: 0.5;
 }
 
-.header {
-  background-color: white;
-  height: 100px;
+.subtitle,
+.middle-nav-list,
+h2 {
+  position: relative;
 }
 
 .profile-svg {
-  float: right;
+  float: left;
   margin: 10px;
+  width: 50px;
+  height: 40px;
 }
 
 .welcome {
@@ -25,7 +39,7 @@ body {
   padding: 35px;
   font-size: 30px;
   display: inline-block;
-  color: white;
+  color: black;
 }
 
 .welcome {
@@ -77,21 +91,19 @@ a,
 li {
   list-style: none;
   text-decoration: none;
-  color: white;
 }
 
 li {
   margin: 0 30px 10px 0;
 }
 
-.nav-container {
-  margin-top: 20px;
-  padding-bottom: 40px;
+.greeting-container {
+  padding: 250px;
 }
 
 #about-button {
   border: black;
-  box-shadow: 5px 5px whitesmoke;
+  box-shadow: 2px 2px whitesmoke;
 }
 
 .default-button {
@@ -102,7 +114,7 @@ li {
   font-size: 22px;
   color: white;
   border-radius: 10px;
-  box-shadow: 5px 5px whitesmoke;
+  box-shadow: 2px 2px grey;
 }
 
 /* Bee Image about button*/
@@ -136,11 +148,11 @@ li {
   padding: 10%;
 }
 
-.nav-container {
-  padding-top: 15px;
-  border-style: hidden;
-  border-width: 100px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background-color: white;
+.home-footer {
+  margin-top: 50px;
+}
+
+.footer-ul-control {
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -9,7 +9,7 @@ import RegisterPage from "../Components/Auth/RegisterPage";
 import HomePage from "./HomePage";
 import AboutPage from "./AboutPage";
 import SimpleActsPage from "./SimpleActsPage";
-import MeditationPage from "./MeditationPage";
+import MonologuePage from "./MonologuePage";
 import MusicPage from "./MusicPage";
 import TermsPage from "./TermsPage";
 import ContactUsPage from "./ContactUsPage";
@@ -37,7 +37,7 @@ function App() {
           <Route path="/home" component={HomePage} />
           <Route path="/about" component={AboutPage} />
           <Route path="/simpleacts" component={SimpleActsPage} />
-          <Route path="/meditation" component={MeditationPage} />
+          <Route path="/monologue" component={MonologuePage} />
           <Route path="/music" component={MusicPage} />
           <Route path="/terms" component={TermsPage} />
           <Route path="/contact" component={ContactUsPage} />
