@@ -34,12 +34,14 @@ const Header = () => {
     <>
       <div className="header" id="nav-header">
         <ul className="nav-links">
-          <SideNav />
+          <li>
+            <SideNav />
+          </li>
 
           <Link to="/about" className="nav-child">
             <li> About </li>
           </Link>
-          <span>{username}</span>
+          <li>{username}</li>
 
           <Link to="/profile" className="nav-child">
             <li>

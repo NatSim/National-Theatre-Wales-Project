@@ -5,7 +5,7 @@ body {
 
 /* Middle nav*/
 .nav-container {
-  padding: 10px 0px 25px 0px;
+  padding: 10px 0px 50px 0px;
   position: relative;
 }
 .nav-container::before {
@@ -17,13 +17,21 @@ body {
   left: 0px;
   background-color: #ff9f00;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.85;
 }
 
 .subtitle,
 .middle-nav-list,
 h2 {
   position: relative;
+}
+
+.nav-child {
+  font-size: 20px;
+}
+
+.nav-links {
+  padding-top: 15px;
 }
 
 .profile-svg {
@@ -41,6 +49,8 @@ h2 {
   display: inline-block;
   color: black;
 }
+
+/*Transition elements*/
 
 .welcome {
   animation: transitionIn 2s;
@@ -97,10 +107,7 @@ li {
   margin: 0 30px 10px 0;
 }
 
-.greeting-container {
-  padding: 250px;
-}
-
+/*Middle nav*/
 #about-button {
   border: black;
   box-shadow: 2px 2px whitesmoke;
