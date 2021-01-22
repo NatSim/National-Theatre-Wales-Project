@@ -22,7 +22,8 @@ const SAPrompts = (props) => {
 };
 
 const SimpleActsPage = () => {
-  const videoSimple = "https://www.youtube.com/watch?v=xV2FF-YUy94";
+  const videoSimple =
+    "https://www.youtube.com/watch?v=qxB3-sw2HAQ&feature=emb_logo";
 
   return (
     <>

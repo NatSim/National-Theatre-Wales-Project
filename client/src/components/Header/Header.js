@@ -4,12 +4,6 @@ import SideNav from "../../Components/Nav/SideNav";
 import * as CgIcons from "react-icons/cg";
 import "./Header.css";
 
-//set state for username
-let username = "Natasha";
-const Greeting = (props) => {
-  return <h1 className="welcome">Welcome {props.name}</h1>;
-};
-
 const Header = () => {
   // When the user scrolls the page, execute myFunction
   window.onscroll = function () {
@@ -37,11 +31,12 @@ const Header = () => {
           <li>
             <SideNav />
           </li>
-
+          <Link to="/home" className="nav-child">
+            <li> Home </li>
+          </Link>
           <Link to="/about" className="nav-child">
             <li> About </li>
           </Link>
-          <li>{username}</li>
 
           <Link to="/profile" className="nav-child">
             <li>

@@ -20,6 +20,7 @@ import ConsumePage from "./SAPromptPages/ConsumePage";
 import LearnPage from "./SAPromptPages/LearnPage";
 import PlantPage from "./SAPromptPages/PlantPage";
 import WalkPage from "./SAPromptPages/WalkPage";
+import ProfilePage from "./ProfilePage/ProfilePage";
 
 // // SERVICES
 // import userService from "../services/userService";
@@ -48,6 +49,7 @@ function App() {
           <Route path="/learn" component={LearnPage} />
           <Route path="/plant" component={PlantPage} />
           <Route path="/walk" component={WalkPage} />
+          <Route path="/profile" component={ProfilePage} />
         </Switch>
       </Router>
     </>

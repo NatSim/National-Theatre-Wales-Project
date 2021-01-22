@@ -19,29 +19,6 @@ const Features = (props) => {
         </Card.Body>
       </Card>
     );
-    /* <div className="parent-container">
-        <img
-          className="image-control"
-          src={props.image}
-          alt="meditating feature"
-        />
-      </div>
-      <div className="parent-container">
-        <img className="image-control" src={props.image2} alt="music feature" />
-      </div>
-      <div className="parent-container">
-        <img
-          className="image-control"
-          src={props.image3}
-          alt="walking feature"
-        />
-      </div>
-      <div className="parent-container">
-        <img className="image-control" src={props.image4} alt="feature" />
-      </div>
-    </Carousel>
-  );
-}; */
   }
 };
 

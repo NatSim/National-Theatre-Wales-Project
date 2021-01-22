@@ -156,10 +156,15 @@ li {
 }
 
 .home-footer {
-  margin-top: 50px;
+  margin: 100px 0px 50px 0px;
+  font-size: 16px;
 }
 
 .footer-ul-control {
   display: flex;
   justify-content: space-evenly;
+}
+
+.Link-control {
+  font-size: 16px;
 }

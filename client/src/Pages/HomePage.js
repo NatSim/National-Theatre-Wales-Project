@@ -60,8 +60,8 @@ function HomePage() {
                 </NavButton>
               </li>
               <li>
-                <NavButton link={"/meditation"} buttonColor={"meditate-button"}>
-                  Meditation
+                <NavButton link={"/monologues"} buttonColor={"meditate-button"}>
+                  Monologues
                 </NavButton>
               </li>
               <li>
@@ -80,7 +80,7 @@ function HomePage() {
         </main>
       </div>
 
-      <h2 className="subtitle">Featured</h2>
+      <h2 className="subtitle">Explore</h2>
       <Container className="card-control">
         <Row>
           <Col sm>
@@ -105,12 +105,20 @@ function HomePage() {
             <ImIcons.ImFacebook2 />
           </Link>
           <li>
-            <Link link={"/terms"} buttonColor={"term-button"}>
+            <Link
+              className="Link-control"
+              link={"/terms"}
+              buttonColor={"term-button"}
+            >
               Terms{`&`}Conditions
             </Link>
           </li>
           <li>
-            <Link link={"/privacy"} buttonColor={"term-button"}>
+            <Link
+              className="Link-control"
+              link={"/privacy"}
+              buttonColor={"term-button"}
+            >
               Privacy
             </Link>
           </li>
