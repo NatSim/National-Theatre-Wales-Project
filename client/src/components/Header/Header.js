@@ -28,9 +28,6 @@ const Header = () => {
     <>
       <div className="header" id="nav-header">
         <ul className="nav-links">
-          <li>
-            <SideNav />
-          </li>
           <Link to="/home" className="nav-child">
             <li> Home </li>
           </Link>

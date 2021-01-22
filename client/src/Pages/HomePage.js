@@ -7,7 +7,7 @@ import SimpleActsPage from "./SimpleActsPage";
 import MeditationPage from "./MonologuePage";
 import MusicPage from "./MusicPage";
 import Terms from "./TermsPage";
-import ContactUsPage from "./ContactUsPage";
+import ContactUsPage from "../Pages/ContactUs/ContactUsPage";
 import About from "./../Pages/About/AboutPage";
 import Features from "../Components/PageContent/Features";
 import Meditate from "../images/meditate.jpg";
@@ -106,7 +106,7 @@ function HomePage() {
           <li>
             <Link
               className="Link-control"
-              link={"/terms"}
+              to={"/terms"}
               buttonColor={"term-button"}
             >
               Terms{`&`}Conditions

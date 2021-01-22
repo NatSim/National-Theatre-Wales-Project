@@ -12,7 +12,7 @@ import SimpleActsPage from "./SimpleActsPage";
 import MonologuePage from "./MonologuePage";
 import MusicPage from "./MusicPage";
 import TermsPage from "./TermsPage";
-import ContactUsPage from "./../Pages/ContactUs/ContactUsPage";
+import ContactUsPage from "./ContactUs/ContactUsPage";
 import BeKindPage from "./SAPromptPages/BeKindPage";
 import ConnectPage from "./SAPromptPages/ConnectPage";
 import ConsiderPage from "./SAPromptPages/ConsiderPage";
@@ -21,6 +21,7 @@ import LearnPage from "./SAPromptPages/LearnPage";
 import PlantPage from "./SAPromptPages/PlantPage";
 import WalkPage from "./SAPromptPages/WalkPage";
 import ProfilePage from "./Profile/ProfilePage";
+import ShowPage from "./Show/ShowPage";
 
 // // SERVICES
 // import userService from "../services/userService";
@@ -50,6 +51,7 @@ function App() {
           <Route path="/plant" component={PlantPage} />
           <Route path="/walk" component={WalkPage} />
           <Route path="/profile" component={ProfilePage} />
+          <Route path="/show" component={ShowPage} />
         </Switch>
       </Router>
     </>

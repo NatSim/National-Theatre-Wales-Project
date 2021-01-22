@@ -4,6 +4,7 @@ import "../../Components/Buttons/MainButton.css";
 import "./AboutPage.css";
 import SideNav from "../../Components/Nav/SideNav";
 import VideoPlayer from "../../Components/VideoPlayer";
+import Header from "../../Components/Header/Header";
 
 //About Page
 const About = () => {
@@ -11,9 +12,10 @@ const About = () => {
   return (
     <>
       <SideNav />
+      <Header />
       <div className="section-color">
         <div className="home-container-video">
-          <VideoPlayer url={videoTeam} />
+          <VideoPlayer url={videoTeam} className="video" />
         </div>
         <div className="background-outer">
           <article>

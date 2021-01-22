@@ -1,7 +1,7 @@
 import React from "react";
-import Form from "../Components/PageContent/ContactForm";
-import "./ContactUsPage.css";
-import SideNav from "../Components/Nav/SideNav";
+import Form from "../../Components/PageContent/ContactForm";
+import "../ContactUs/ContactUsPage.css";
+import SideNav from "../../Components/Nav/SideNav";
 
 const ContactUsPage = () => {
   return (
