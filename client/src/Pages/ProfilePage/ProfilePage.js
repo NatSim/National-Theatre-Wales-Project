@@ -15,31 +15,32 @@ const ProfilePage = () => {
   return (
     <>
       <Header />
-
       <div>
         <Greeting />
       </div>
-      <div className="subheadings-container">
-        <div className="challenges-container">
-          <Link to={"/simpleacts"}>View Challenges</Link>
-        </div>
+      <div className="profile-background-container">
+        <div className="subheadings-container">
+          <div className="challenges-container">
+            <Link to={"/simpleacts"}>View Challenges</Link>
+          </div>
 
-        <div className="rewards-container">
-          <Link to={"/rewards"}>
-            Your Rewards
-            <Rewards />
-          </Link>
+          <div className="rewards-container">
+            <Link to={"/rewards"}>
+              Your Rewards
+              <Rewards />
+            </Link>
+          </div>
         </div>
-      </div>
-      <div className="completed-container">
-        <span>Your Completed Challenges</span>
-      </div>
-      <div className="completed-image-parent">
-        <img
-          src={bekind}
-          alt="simple act be kind"
-          className="completed-image-child"
-        ></img>
+        <div className="completed-container">
+          <span>Your Completed Challenges</span>
+        </div>
+        <div className="completed-image-parent">
+          <img
+            src={bekind}
+            alt="simple act be kind"
+            className="completed-image-child"
+          ></img>
+        </div>
       </div>
     </>
   );
