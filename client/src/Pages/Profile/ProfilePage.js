@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
-import Rewards from "../../Components/PageContent/Rewards/RewardsPage";
 import { Link } from "react-router-dom";
 import "./ProfilePage.css";
 import bekind from "../../images/BeKind.jpg";
+import RewardsPage from "../Rewards/RewardsPage";
 
 const ProfilePage = () => {
   //set state for username
@@ -27,15 +27,16 @@ const ProfilePage = () => {
           <div className="rewards-container">
             <Link to={"/rewards"}>
               Your Rewards
-              <Rewards />
+              <RewardsPage />
             </Link>
           </div>
         </div>
         <div className="completed-container">
-          <span>Your Completed Challenges</span>
+          <span className="completed-text">Your Completed Challenges</span>
         </div>
         <div className="completed-image-parent">
           <img
+            className="image-control"
             src={bekind}
             alt="simple act be kind"
             className="completed-image-child"

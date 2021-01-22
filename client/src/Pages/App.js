@@ -7,12 +7,12 @@ import LandingPage from "./LandingPage";
 import LoginPage from "../Components/Auth/LoginPage";
 import RegisterPage from "../Components/Auth/RegisterPage";
 import HomePage from "./HomePage";
-import AboutPage from "./AboutPage";
+import AboutPage from "./About/AboutPage";
 import SimpleActsPage from "./SimpleActsPage";
 import MonologuePage from "./MonologuePage";
 import MusicPage from "./MusicPage";
 import TermsPage from "./TermsPage";
-import ContactUsPage from "./ContactUsPage";
+import ContactUsPage from "./../Pages/ContactUs/ContactUsPage";
 import BeKindPage from "./SAPromptPages/BeKindPage";
 import ConnectPage from "./SAPromptPages/ConnectPage";
 import ConsiderPage from "./SAPromptPages/ConsiderPage";
@@ -20,7 +20,7 @@ import ConsumePage from "./SAPromptPages/ConsumePage";
 import LearnPage from "./SAPromptPages/LearnPage";
 import PlantPage from "./SAPromptPages/PlantPage";
 import WalkPage from "./SAPromptPages/WalkPage";
-import ProfilePage from "./ProfilePage/ProfilePage";
+import ProfilePage from "./Profile/ProfilePage";
 
 // // SERVICES
 // import userService from "../services/userService";

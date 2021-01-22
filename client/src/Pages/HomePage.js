@@ -8,7 +8,7 @@ import MeditationPage from "./MonologuePage";
 import MusicPage from "./MusicPage";
 import Terms from "./TermsPage";
 import ContactUsPage from "./ContactUsPage";
-import About from "./AboutPage";
+import About from "./../Pages/About/AboutPage";
 import Features from "../Components/PageContent/Features";
 import Meditate from "../images/meditate.jpg";
 import Carys from "../images/Carys.jpg";
@@ -37,7 +37,6 @@ function HomePage() {
   return (
     <>
       <Header />
-
       <div className="homepage">
         <div className="background-outer"></div>
         <main>
