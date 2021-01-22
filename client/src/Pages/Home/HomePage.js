@@ -2,29 +2,30 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { Link, Route, Switch } from "react-router-dom";
 import "./HomePage.css";
-import BeeStamp from "../images/whole-beeimage.png";
-import SimpleActsPage from "./SimpleActsPage";
-import MeditationPage from "./MonologuePage";
-import MusicPage from "./MusicPage";
-import Terms from "./TermsPage";
-import ContactUsPage from "../Pages/ContactUs/ContactUsPage";
-import About from "./../Pages/About/AboutPage";
-import Features from "../Components/PageContent/Features";
-import Meditate from "../images/meditate.jpg";
-import Carys from "../images/Carys.jpg";
-import Tide from "../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
+import BeeStamp from "../../images/whole-beeimage.png";
+import SimpleActsPage from "../SimpleActsPage";
+import MeditationPage from "../MonologuePage";
+import MusicPage from "../MusicPage";
+import Terms from "../TermsPage";
+import ContactUsPage from "../ContactUs/ContactUsPage";
+import About from "../About/AboutPage";
+import Features from "../../Components/PageContent/Features";
+import Meditate from "../../images/meditate.jpg";
+import Carys from "../../images/Carys.jpg";
+import Tide from "../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-import Header from "./../Components/Header/Header";
+import Header from "../../Components/Header/Header";
 import * as ImIcons from "react-icons/im";
+import SideNav from "../../Components/Nav/SideNav";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
 
 const NavButton = (props) => {
   return (
-    //Reusable component
+    //Reusable Nav button component
     <Link to={props.link}>
       <Button id={props.buttonColor} className="default-button">
         {props.children}
@@ -33,9 +34,18 @@ const NavButton = (props) => {
   );
 };
 
+//Card Title Text
+const titleTeam = "Join Team";
+const titleMedi = "Relax";
+const titleCarys = "Listen";
+
+//Card Button Text
+const clickHere = "Click Here";
+
 function HomePage() {
   return (
     <>
+      <SideNav />
       <Header />
       <div className="homepage">
         <div className="background-outer"></div>
@@ -59,19 +69,18 @@ function HomePage() {
                 </NavButton>
               </li>
               <li>
-                <NavButton link={"/monologues"} buttonColor={"meditate-button"}>
-                  Monologues
+                <NavButton link={"/team"} buttonColor={"blue-button"}>
+                  Team
                 </NavButton>
               </li>
               <li>
-                <NavButton link={"/music"} buttonColor={"music-button"}>
+                <NavButton link={"/music"} buttonColor={"pink-button"}>
                   Music
                 </NavButton>
               </li>
-
               <li>
-                <NavButton link={"/contact"} buttonColor={"contact-button"}>
-                  Contact Us
+                <NavButton link={"/monologues"} buttonColor={"green-button"}>
+                  Monologues
                 </NavButton>
               </li>
             </ul>
@@ -83,45 +92,45 @@ function HomePage() {
       <Container className="card-control">
         <Row>
           <Col sm>
-            <Features image={Tide} />
+            <Features image={Tide} title={titleTeam} button={clickHere} />
           </Col>
           <Col sm>
-            <Features image={Meditate} />
+            <Features image={Meditate} title={titleMedi} button={clickHere} />
           </Col>
           <Col sm>
-            <Features image={Carys} />
+            <Features image={Carys} title={titleCarys} button={clickHere} />
           </Col>
         </Row>
       </Container>
       <footer className="home-footer">
+        <ul className="footer-ul-control">
+          <li>
+            <Link to={"/"}>
+              <ImIcons.ImFacebook2 />
+            </Link>
+          </li>
+          <li>
+            <Link className="Link-control" to={"/contact"}>
+              Contact Us
+            </Link>
+          </li>
+
+          <li>
+            <Link className="Link-control" to={"/terms"}>
+              Terms{`&`}Conditions
+            </Link>
+          </li>
+          <li>
+            <Link className="Link-control" link={"/privacy"}>
+              Privacy
+            </Link>
+          </li>
+        </ul>
         <p>
           2021 Go Tell The Bees Copyright © National Theatre Wales. Website
           developed by Natasha Simone. Registered Company No. 6693227 Charity
           Registration No. 1127952
         </p>
-        <ul className="footer-ul-control">
-          <Link to={"/"}>
-            <ImIcons.ImFacebook2 />
-          </Link>
-          <li>
-            <Link
-              className="Link-control"
-              to={"/terms"}
-              buttonColor={"term-button"}
-            >
-              Terms{`&`}Conditions
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="Link-control"
-              link={"/privacy"}
-              buttonColor={"term-button"}
-            >
-              Privacy
-            </Link>
-          </li>
-        </ul>
       </footer>
 
       <Switch>

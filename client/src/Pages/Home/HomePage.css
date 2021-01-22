@@ -126,25 +126,29 @@ li {
 
 /* Bee Image about button*/
 
+.nav-container-control {
+  padding: 50px;
+}
+
 #simple-button {
   background-color: #00c1a2;
 }
 
-#meditate-button {
+#green-button {
   background-color: #82d121;
 }
 
-#music-button {
-  background-color: #ff2f69;
-}
-
-#term-button {
+#blue-button {
   background-color: #89d7e8;
 }
 
-#contact-button {
-  background-color: #fbce69;
+#pink-button {
+  background-color: #ff2f69;
 }
+
+/* #monologues-button {
+  background-color: #fbce69;
+} */
 
 /*section white/yellow*/
 .h-container-video {
