@@ -1,7 +1,9 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
-import Rewards from "../../Components/PageContent/Rewards/Rewards";
+import Rewards from "../../Components/PageContent/Rewards/RewardsPage";
 import { Link } from "react-router-dom";
+import "./ProfilePage.css";
+import bekind from "../../images/BeKind.jpg";
 
 const ProfilePage = () => {
   //set state for username
@@ -13,19 +15,32 @@ const ProfilePage = () => {
   return (
     <>
       <Header />
-      <header>
-        <h1>Profile</h1>
-      </header>
+
       <div>
         <Greeting />
       </div>
-      <div>
-        <Link to={"/simpleacts"}>Challenges</Link>
+      <div className="subheadings-container">
+        <div className="challenges-container">
+          <Link to={"/simpleacts"}>View Challenges</Link>
+        </div>
+
+        <div className="rewards-container">
+          <Link to={"/rewards"}>
+            Your Rewards
+            <Rewards />
+          </Link>
+        </div>
       </div>
-      <div>
-        <h2>Your Rewards</h2>
+      <div className="completed-container">
+        <span>Your Completed Challenges</span>
       </div>
-      <Rewards />
+      <div className="completed-image-parent">
+        <img
+          src={bekind}
+          alt="simple act be kind"
+          className="completed-image-child"
+        ></img>
+      </div>
     </>
   );
 };

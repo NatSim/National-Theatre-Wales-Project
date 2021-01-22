@@ -35,6 +35,7 @@ const SimpleActsPage = () => {
         <div className="simple-acts">
           <VideoPlayer url={videoSimple} />
         </div>
+        <span>Complete a challenge to gain your reward</span>
         <section className="flex-container">
           <div className="child-container">
             <div>

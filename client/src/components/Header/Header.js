@@ -37,7 +37,9 @@ const Header = () => {
           <Link to="/about" className="nav-child">
             <li> About </li>
           </Link>
-
+          <Link to="/show" className="nav-child">
+            <li> The Show </li>
+          </Link>
           <Link to="/profile" className="nav-child">
             <li>
               <CgIcons.CgProfile className="profile-svg" />

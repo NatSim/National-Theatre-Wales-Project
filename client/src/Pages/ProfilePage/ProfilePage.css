@@ -1,0 +1,22 @@
+/*This contains Rewards & Challenge headings*/
+.subheadings-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rewards-container {
+  margin-bottom: 50px;
+}
+
+.challenges-container {
+  margin-bottom: 50px;
+}
+
+.completed-image-parent {
+  display: flex;
+}
+
+.completed-image-child {
+  width: 120px;
+  height: 120px;
+}

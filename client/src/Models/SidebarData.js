@@ -3,7 +3,7 @@ import * as IoIcons from "react-icons/io";
 import * as AiIcons from "react-icons/ai";
 import * as RiIcons from "react-icons/ri";
 import * as FaIcons from "react-icons/fa";
-import * as SiIcons from "react-icons/si";
+import * as CgIcons from "react-icons/cg";
 import * as MdIcons from "react-icons/md";
 
 const SidebarData = [
@@ -27,8 +27,8 @@ const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "Meditation",
-    path: "/meditation",
+    title: "Monologues",
+    path: "/monolgues",
     icon: <AiIcons.AiFillHome />,
     cName: "nav-text",
   },
@@ -39,9 +39,9 @@ const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "Terms & Conditions",
-    path: "/terms",
-    icon: <SiIcons.SiReadthedocs style={{ width: "45px", height: "20px" }} />,
+    title: "My Profile",
+    path: "/profile",
+    icon: <CgIcons.CgProfile />,
     cName: "nav-text",
   },
 
