@@ -1,16 +1,16 @@
 import React from "react";
-import SideNav from "../Components/Nav/SideNav";
+import SideNav from "../../Components/Nav/SideNav";
 import "./MonologuePage.css";
-import VideoPlayer from "../Components/VideoPlayer";
+import VideoPlayer from "../../Components/VideoPlayer";
 
-const MeditationPage = () => {
+const MonologuePage = () => {
   const videoMedi = "https://www.youtube.com/watch?v=fcWiJQW5GwQ";
 
   return (
     <>
       <SideNav />
       <div>
-        <h1 className="title">Meditation</h1>
+        <h1 className="title">Monologues</h1>
         <div>
           <VideoPlayer url={videoMedi} />
         </div>
@@ -19,4 +19,4 @@ const MeditationPage = () => {
   );
 };
 
-export default MeditationPage;
+export default MonologuePage;

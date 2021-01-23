@@ -4,7 +4,7 @@ import { Link, Route, Switch } from "react-router-dom";
 import "./HomePage.css";
 import BeeStamp from "../../images/whole-beeimage.png";
 import SimpleActsPage from "../SimpleActsPage";
-import MeditationPage from "../MonologuePage";
+import MonologuePage from "../Monologue/MonologuePage";
 import MusicPage from "../MusicPage";
 import Terms from "../TermsPage";
 import ContactUsPage from "../ContactUs/ContactUsPage";
@@ -45,7 +45,6 @@ const clickHere = "Click Here";
 function HomePage() {
   return (
     <>
-      <SideNav />
       <Header />
       <div className="homepage">
         <div className="background-outer"></div>
@@ -136,7 +135,7 @@ function HomePage() {
       <Switch>
         <Route path="/about" exact component={About} />
         <Route path="/simpleacts" component={SimpleActsPage} />
-        <Route path="/meditation" component={MeditationPage} />
+        <Route path="/monologue" component={MonologuePage} />
         <Route path="/music" component={MusicPage} />
         <Route path="/terms" component={Terms} />
         <Route path="/contact" component={ContactUsPage} />
