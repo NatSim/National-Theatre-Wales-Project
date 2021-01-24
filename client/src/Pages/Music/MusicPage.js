@@ -1,6 +1,6 @@
 import React from "react";
-import SideNav from "../Components/Nav/SideNav";
-import VideoPlayer from "../Components/VideoPlayer";
+import SideNav from "../../Components/Nav/SideNav";
+import VideoPlayer from "../../Components/VideoPlayer";
 import "./MusicPage.css";
 
 const MusicPage = () => {

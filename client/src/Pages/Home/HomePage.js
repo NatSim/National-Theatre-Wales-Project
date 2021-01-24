@@ -3,9 +3,9 @@ import Button from "react-bootstrap/Button";
 import { Link, Route, Switch } from "react-router-dom";
 import "./HomePage.css";
 import BeeStamp from "../../images/whole-beeimage.png";
-import SimpleActsPage from "../SimpleActsPage";
+import SimpleActsPage from "../SimpleActs/SimpleActsPage";
 import MonologuePage from "../Monologue/MonologuePage";
-import MusicPage from "../MusicPage";
+import MusicPage from "../Music/MusicPage";
 import Terms from "../TermsPage";
 import ContactUsPage from "../ContactUs/ContactUsPage";
 import About from "../About/AboutPage";
@@ -18,7 +18,6 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Header from "../../Components/Header/Header";
 import * as ImIcons from "react-icons/im";
-import SideNav from "../../Components/Nav/SideNav";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
