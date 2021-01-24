@@ -1,7 +1,7 @@
 import React from "react";
 import SideNav from "../../Components/Nav/SideNav";
 import "./MonologuePage.css";
-import VideoPlayer from "../../Components/VideoPlayer";
+import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
 
 const MonologuePage = () => {
   const videoMedi = "https://www.youtube.com/watch?v=fcWiJQW5GwQ";

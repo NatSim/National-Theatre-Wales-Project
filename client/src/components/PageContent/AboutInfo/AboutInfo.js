@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Image2 from "../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
+import Image2 from "../../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import "./AboutInfo.css";
 
 function AboutInfo() {

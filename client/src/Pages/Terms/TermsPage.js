@@ -1,8 +1,8 @@
 import React from "react";
-import "./TermsPage.css";
-import TermsContent from "../Components/PageContent/Terms";
-import SideNav from "../Components/Nav/SideNav";
-import Header from "../Components/Header/Header";
+import "../Terms/TermsPage.css";
+import TermsContent from "../../Components/PageContent/Terms/Terms";
+import SideNav from "../../Components/Nav/SideNav";
+import Header from "../../Components/Header/Header";
 
 const Terms = () => {
   return (

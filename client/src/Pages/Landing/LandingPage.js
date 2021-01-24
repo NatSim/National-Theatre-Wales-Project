@@ -1,6 +1,6 @@
 import React from "react";
-import NTWlogo from "../../Components/NTWlogo";
-import LargeImage from "../../Components/LargeImage";
+import NTWlogo from "../../Components/PageContent/NTWLogo/NTWlogo";
+import LargeImage from "../../Components/PageContent/LargeImages/LargeImage";
 import "./LandingPage.css";
 
 function LandingPage() {

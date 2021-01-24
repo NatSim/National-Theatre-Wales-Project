@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BeKind from "../images/BeKind.jpg";
-import Connect from "../images/Connect.jpg";
-import Consider from "../images/Consider.jpg";
-import Consume from "../images/Consume.jpg";
-import Learn1 from "../images/Learn1.jpg";
-import Plant from "../images/Plant.jpg";
-import TakeAWalk from "../images/TakeAWalk.jpg";
-import "../Pages/SimpleActPage.css";
-import SideNav from "../Components/Nav/SideNav";
-import VideoPlayer from "../Components/VideoPlayer";
+import BeKind from "../../images/BeKind.jpg";
+import Connect from "../../images/Connect.jpg";
+import Consider from "../../images/Consider.jpg";
+import Consume from "../../images/Consume.jpg";
+import Learn1 from "../../images/Learn1.jpg";
+import Plant from "../../images/Plant.jpg";
+import TakeAWalk from "../../images/TakeAWalk.jpg";
+import "../SimpleActs/SimpleActPage.css";
+import SideNav from "../../Components/Nav/SideNav";
+import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
 
 const SAPrompts = (props) => {
   return (

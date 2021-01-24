@@ -1,7 +1,7 @@
 import React from "react";
 import "./Welcome.css";
-import NextButton from "../Buttons/MainButton";
-import PlaceHolder from "../../images/whole-beeimage.png";
+import NextButton from "../../Buttons/MainButton";
+import PlaceHolder from "../../../images/whole-beeimage.png";
 /**
  *Functional component-Welcome message
  *

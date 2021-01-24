@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../images/logo.svg";
+import Logo from "../../../images/logo.svg";
 import "./NTWlogo.css";
 
 //NTW Logo Component

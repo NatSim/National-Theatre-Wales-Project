@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import "./VideoPlayer.css";
+import "../VideoPlayer/VideoPlayer.css";
 
 const VideoPlayer = (props) => {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
-import AboutInfo from "../../Components/PageContent/AboutInfo";
+import AboutInfo from "../../Components/PageContent/AboutInfo/AboutInfo";
 import "../../Components/Buttons/MainButton.css";
 import "./AboutPage.css";
 import SideNav from "../../Components/Nav/SideNav";
-import VideoPlayer from "../../Components/VideoPlayer";
+import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../Components/Header/Header";
 
 //About Page
