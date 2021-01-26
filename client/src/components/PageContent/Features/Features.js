@@ -15,7 +15,9 @@ const Features = (props) => {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text>
-          <Button variant="primary">{props.button}</Button>
+          <Button variant="primary" href={props.link}>
+            {props.button}
+          </Button>
         </Card.Body>
       </Card>
     );

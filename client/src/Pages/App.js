@@ -8,9 +8,9 @@ import LoginPage from "../Components/Auth/LoginPage";
 import RegisterPage from "../Components/Auth/RegisterPage";
 import HomePage from "./Home/HomePage";
 import AboutPage from "./About/AboutPage";
-import SimpleActsPage from "./SimpleActs/SimpleActsPage";
-import MonologuePage from "./Monologue/MonologuePage";
-import MusicPage from "./Music/MusicPage";
+import SimpleActsPage from "./Act/SimpleActsPage";
+import MonologuePage from "./Watch/MonologuePage";
+import MusicPage from "./Listen/MusicPage";
 import TermsPage from "./Terms/TermsPage";
 import ContactUsPage from "./ContactUs/ContactUsPage";
 import BeKindPage from "./SAPromptPages/BeKindPage";
@@ -22,6 +22,7 @@ import PlantPage from "./SAPromptPages/PlantPage";
 import WalkPage from "./SAPromptPages/WalkPage";
 import ProfilePage from "./Profile/ProfilePage";
 import ShowPage from "./Show/ShowPage";
+import MapPage from "./Map/MapPage";
 
 // // SERVICES
 // import userService from "../services/userService";
@@ -52,6 +53,7 @@ function App() {
           <Route path="/walk" component={WalkPage} />
           <Route path="/profile" component={ProfilePage} />
           <Route path="/show" component={ShowPage} />
+          <Route path="/map" component={MapPage} />
         </Switch>
       </Router>
     </>

@@ -3,15 +3,15 @@ import Button from "react-bootstrap/Button";
 import { Link, Route, Switch } from "react-router-dom";
 import "./HomePage.css";
 import BeeStamp from "../../images/whole-beeimage.png";
-import SimpleActsPage from "../SimpleActs/SimpleActsPage";
-import MonologuePage from "../Monologue/MonologuePage";
-import MusicPage from "../Music/MusicPage";
+import SimpleActsPage from "../Act/SimpleActsPage";
+import MonologuePage from "../Watch/MonologuePage";
+import MusicPage from "../Listen/MusicPage";
 import Terms from "../Terms/TermsPage";
 import ContactUsPage from "../ContactUs/ContactUsPage";
 import About from "../About/AboutPage";
 import Features from "../../Components/PageContent/Features/Features";
-import Meditate from "../../images/meditate.jpg";
-import Carys from "../../images/Carys.jpg";
+import NTWLogo from "../../images/logo.svg";
+import Party from "../../images/NTWHaverHub.jpg";
 import Tide from "../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -34,12 +34,14 @@ const NavButton = (props) => {
 };
 
 //Card Title Text
-const titleTeam = "Join Team";
-const titleMedi = "Relax";
-const titleCarys = "Listen";
+const titleTeam = "Join TEAM";
+const titleNTW = "National Theatre Wales";
+const contactUs = "Contact Us";
 
 //Card Button Text
 const clickHere = "Click Here";
+
+const link = "https://www.nationaltheatrewales.org/";
 
 function HomePage() {
   return (
@@ -62,23 +64,24 @@ function HomePage() {
                 </Link>
               </li>
               <li>
-                <NavButton link={"/simpleacts"} buttonColor={"simple-button"}>
-                  Simple Acts
-                </NavButton>
-              </li>
-              <li>
-                <NavButton link={"/team"} buttonColor={"blue-button"}>
-                  Team
+                <NavButton link={"/monologues"} buttonColor={"green-button"}>
+                  Watch
                 </NavButton>
               </li>
               <li>
                 <NavButton link={"/music"} buttonColor={"pink-button"}>
-                  Music
+                  Listen
+                </NavButton>
+              </li>
+
+              <li>
+                <NavButton link={"/simpleacts"} buttonColor={"simple-button"}>
+                  Act
                 </NavButton>
               </li>
               <li>
-                <NavButton link={"/monologues"} buttonColor={"green-button"}>
-                  Monologues
+                <NavButton link={"/map"} buttonColor={"blue-button"}>
+                  Map
                 </NavButton>
               </li>
             </ul>
@@ -90,13 +93,18 @@ function HomePage() {
       <Container className="card-control">
         <Row>
           <Col sm>
-            <Features image={Tide} title={titleTeam} button={clickHere} />
+            <Features
+              image={Tide}
+              title={titleTeam}
+              button={clickHere}
+              link={link}
+            />
           </Col>
           <Col sm>
-            <Features image={Meditate} title={titleMedi} button={clickHere} />
+            <Features image={NTWLogo} title={titleNTW} button={clickHere} />
           </Col>
           <Col sm>
-            <Features image={Carys} title={titleCarys} button={clickHere} />
+            <Features image={Party} title={contactUs} button={clickHere} />
           </Col>
         </Row>
       </Container>
