@@ -5,6 +5,7 @@ import * as RiIcons from "react-icons/ri";
 import * as FaIcons from "react-icons/fa";
 import * as CgIcons from "react-icons/cg";
 import * as MdIcons from "react-icons/md";
+import * as ImIcons from "react-icons/im";
 
 const SidebarData = [
   {
@@ -21,21 +22,21 @@ const SidebarData = [
   },
 
   {
-    title: "Simple Acts",
-    path: "/simpleacts",
-    icon: <RiIcons.RiPlantLine />,
-    cName: "nav-text",
-  },
-  {
-    title: "Monologues",
+    title: "Watch",
     path: "/monolgues",
-    icon: <AiIcons.AiFillHome />,
+    icon: <ImIcons.ImFilm />,
     cName: "nav-text",
   },
   {
-    title: "Music",
+    title: "Listen",
     path: "/music",
     icon: <FaIcons.FaHeadphones />,
+    cName: "nav-text",
+  },
+  {
+    title: "Act",
+    path: "/simpleacts",
+    icon: <RiIcons.RiPlantLine />,
     cName: "nav-text",
   },
   {

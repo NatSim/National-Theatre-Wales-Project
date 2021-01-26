@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../../Components/Header/Header";
 import SideNav from "../../Components/Nav/SideNav";
 import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
 import "./MusicPage.css";
@@ -9,6 +10,7 @@ const MusicPage = () => {
   return (
     <>
       <SideNav />
+      <Header />
       <div>
         <h1 className="title">Music</h1>
         <div>

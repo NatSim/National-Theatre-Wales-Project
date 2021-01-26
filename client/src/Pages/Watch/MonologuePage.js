@@ -2,6 +2,7 @@ import React from "react";
 import SideNav from "../../Components/Nav/SideNav";
 import "./MonologuePage.css";
 import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
+import Header from "../../Components/Header/Header";
 
 const MonologuePage = () => {
   const videoMedi = "https://www.youtube.com/watch?v=fcWiJQW5GwQ";
@@ -9,6 +10,7 @@ const MonologuePage = () => {
   return (
     <>
       <SideNav />
+      <Header />
       <div>
         <h1 className="title">Monologues</h1>
         <div>

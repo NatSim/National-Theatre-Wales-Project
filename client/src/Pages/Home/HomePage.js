@@ -41,10 +41,12 @@ const contactUs = "Contact Us";
 //Card Button Text
 const clickHere = "Click Here";
 
-//Footer href Links
+//Card Button Link
 const ntwLink = "https://www.nationaltheatrewales.org/";
 const teamLink =
   "https://www.nationaltheatrewales.org/ntw-projects/team-pembrokeshire/";
+
+//Footer href Links
 const ntwFacebookPage = "https://www.facebook.com/nationaltheatrewales/";
 
 function HomePage() {

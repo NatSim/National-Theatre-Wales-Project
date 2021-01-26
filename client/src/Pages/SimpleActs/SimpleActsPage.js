@@ -10,6 +10,7 @@ import TakeAWalk from "../../images/TakeAWalk.jpg";
 import "./SimpleActPage.css";
 import SideNav from "../../Components/Nav/SideNav";
 import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
+import Header from "../../Components/Header/Header";
 
 const SAPrompts = (props) => {
   return (
@@ -28,6 +29,7 @@ const SimpleActsPage = () => {
   return (
     <>
       <SideNav />
+      <Header />
       <div className="simplepage-container">
         <h1 id="simple-title" className="title">
           Simple Acts

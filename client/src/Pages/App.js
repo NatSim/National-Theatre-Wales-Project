@@ -24,6 +24,7 @@ import ProfilePage from "./Profile/ProfilePage";
 import ShowPage from "./Show/ShowPage";
 import MapPage from "./Map/MapPage";
 import AboutTeamPage from "./About/AboutTeamPage";
+import RewardsPage from "./Rewards/RewardsPage";
 
 // // SERVICES
 // import userService from "../services/userService";
@@ -41,7 +42,7 @@ function App() {
           <Route path="/home" component={HomePage} />
           <Route path="/about" component={AboutPage} />
           <Route path="/simpleacts" component={SimpleActsPage} />
-          <Route path="/monologue" component={MonologuePage} />
+          <Route path="/monologues" component={MonologuePage} />
           <Route path="/music" component={MusicPage} />
           <Route path="/terms" component={TermsPage} />
           <Route path="/contact" component={ContactUsPage} />
@@ -56,6 +57,7 @@ function App() {
           <Route path="/show" component={ShowPage} />
           <Route path="/map" component={MapPage} />
           <Route path="/team" component={AboutTeamPage} />
+          <Route path="/reward" component={RewardsPage} />
         </Switch>
       </Router>
     </>

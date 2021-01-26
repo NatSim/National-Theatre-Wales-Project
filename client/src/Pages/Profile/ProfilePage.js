@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./ProfilePage.css";
 import bekind from "../../images/BeKind.jpg";
 import RewardsPage from "../Rewards/RewardsPage";
+import Rewards from "../../Components/PageContent/Rewards/Reward";
 
 const ProfilePage = () => {
   //set state for username
@@ -25,9 +26,9 @@ const ProfilePage = () => {
           </div>
 
           <div className="rewards-container">
-            <Link to={"/rewards"}>
-              Your Rewards
-              <RewardsPage />
+            <Link to={"/reward"}>
+              My Rewards
+              <Rewards />
             </Link>
           </div>
         </div>
