@@ -23,6 +23,7 @@ import WalkPage from "./SAPromptPages/WalkPage";
 import ProfilePage from "./Profile/ProfilePage";
 import ShowPage from "./Show/ShowPage";
 import MapPage from "./Map/MapPage";
+import AboutTeamPage from "./About/AboutTeamPage";
 
 // // SERVICES
 // import userService from "../services/userService";
@@ -54,6 +55,7 @@ function App() {
           <Route path="/profile" component={ProfilePage} />
           <Route path="/show" component={ShowPage} />
           <Route path="/map" component={MapPage} />
+          <Route path="/team" component={AboutTeamPage} />
         </Switch>
       </Router>
     </>

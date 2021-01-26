@@ -41,7 +41,11 @@ const contactUs = "Contact Us";
 //Card Button Text
 const clickHere = "Click Here";
 
-const link = "https://www.nationaltheatrewales.org/";
+//Footer href Links
+const ntwLink = "https://www.nationaltheatrewales.org/";
+const teamLink =
+  "https://www.nationaltheatrewales.org/ntw-projects/team-pembrokeshire/";
+const ntwFacebookPage = "https://www.facebook.com/nationaltheatrewales/";
 
 function HomePage() {
   return (
@@ -97,21 +101,31 @@ function HomePage() {
               image={Tide}
               title={titleTeam}
               button={clickHere}
-              link={link}
+              link={"/team"}
             />
           </Col>
           <Col sm>
-            <Features image={NTWLogo} title={titleNTW} button={clickHere} />
+            <Features
+              image={NTWLogo}
+              title={titleNTW}
+              button={clickHere}
+              link={ntwLink}
+            />
           </Col>
           <Col sm>
-            <Features image={Party} title={contactUs} button={clickHere} />
+            <Features
+              image={Party}
+              title={contactUs}
+              button={clickHere}
+              link={"/contact"}
+            />
           </Col>
         </Row>
       </Container>
       <footer className="home-footer">
         <ul className="footer-ul-control">
           <li>
-            <Link to={"/"}>
+            <Link to={ntwFacebookPage}>
               <ImIcons.ImFacebook2 />
             </Link>
           </li>
