@@ -5,14 +5,20 @@ import "./AboutPage.css";
 import SideNav from "../../Components/Nav/SideNav";
 import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../Components/Header/Header";
+import * as CgIcons from "react-icons/cg";
 
 //About Page
 const About = () => {
+  //Intro Video
   const videoTeam = "https://www.youtube.com/watch?v=xV2FF-YUy94";
+
+  //Header Profile icon/path
+  const Item = "/profile";
+  const itemIcon = [<CgIcons.CgProfile className="profile-svg" />];
   return (
     <>
       <SideNav />
-      <Header />
+      <Header Link={Item} Icon={itemIcon} />
       <div className="section-color">
         <div className="home-container-video">
           <VideoPlayer url={videoTeam} className="video" />

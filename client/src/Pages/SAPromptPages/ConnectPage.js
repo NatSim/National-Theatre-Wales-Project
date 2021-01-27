@@ -3,6 +3,7 @@ import Connect from "../../images/Connect.jpg";
 import "./SAPromptPages.css";
 import ConnectArticle from "../../Components/SAArticles/ConnectArticle";
 import SideNav from "../../Components/Nav/SideNav";
+import Button from "react-bootstrap/Button";
 
 const ConnectPage = () => {
   return (
@@ -17,6 +18,15 @@ const ConnectPage = () => {
           <ConnectArticle />
         </article>
       </div>
+      <Button>
+        <input
+          type="checkbox"
+          id="connect"
+          name="connect"
+          value="connect"
+        ></input>
+        <label for="connect"> I have completed this Act</label>
+      </Button>
     </>
   );
 };

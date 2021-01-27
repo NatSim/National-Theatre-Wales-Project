@@ -3,6 +3,7 @@ import Plant from "../../images/Plant.jpg";
 import "./SAPromptPages.css";
 import PlantArticle from "../../Components/SAArticles/PlantArticle";
 import SideNav from "../../Components/Nav/SideNav";
+import Button from "react-bootstrap/Button";
 
 const PlantPage = () => {
   return (
@@ -17,6 +18,10 @@ const PlantPage = () => {
           <PlantArticle />
         </article>
       </div>
+      <Button>
+        <input type="checkbox" id="plant" name="plant" value="plant"></input>
+        <label for="plant"> I have completed this Act</label>
+      </Button>
     </>
   );
 };

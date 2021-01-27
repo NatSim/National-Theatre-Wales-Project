@@ -3,6 +3,7 @@ import Consider from "../../images/Consider.jpg";
 import "./SAPromptPages.css";
 import ConsiderArticle from "../../Components/SAArticles/ConsiderArticle";
 import SideNav from "../../Components/Nav/SideNav";
+import Button from "react-bootstrap/esm/Button";
 
 const ConsiderPage = () => {
   return (
@@ -17,6 +18,15 @@ const ConsiderPage = () => {
           <ConsiderArticle />
         </article>
       </div>
+      <Button>
+        <input
+          type="checkbox"
+          id="consider"
+          name="consider"
+          value="consider"
+        ></input>
+        <label for="consider"> I have completed this Act</label>
+      </Button>
     </>
   );
 };

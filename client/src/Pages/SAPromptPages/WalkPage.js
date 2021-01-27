@@ -3,6 +3,7 @@ import TakeAWalk from "../../images/TakeAWalk.jpg";
 import "./SAPromptPages.css";
 import WalkArticle from "../../Components/SAArticles/WalkArticle";
 import SideNav from "../../Components/Nav/SideNav";
+import Button from "react-bootstrap/Button";
 
 const WalkPage = () => {
   return (
@@ -17,6 +18,15 @@ const WalkPage = () => {
           <WalkArticle />
         </article>
       </div>
+      <Button>
+        <input
+          type="checkbox"
+          id="be-kind"
+          name="be-kind"
+          value="be-kind"
+        ></input>
+        <label for="be-kind"> I have completed this Act</label>
+      </Button>
     </>
   );
 };

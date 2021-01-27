@@ -26,10 +26,14 @@ const SimpleActsPage = () => {
   const videoSimple =
     "https://www.youtube.com/watch?v=qxB3-sw2HAQ&feature=emb_logo";
 
+  //Header Profile icon/path
+  const profileLink6 = "/profile";
+  const profileIcon6 = [<CgIcons.CgProfile className="profile-svg" />];
+
   return (
     <>
       <SideNav />
-      <Header />
+      <Header Link={profileLink6} Icon={profileIcon6} />
       <div className="simplepage-container">
         <h1 id="simple-title" className="title">
           Simple Acts

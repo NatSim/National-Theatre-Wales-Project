@@ -45,7 +45,7 @@ module.exports = (app) => {
     });
   });
 
-  app.put(`/api/user/:id`, async (req, res) => {
+  app.put(`/api/user/:id/challenges/:challengeId`, async (req, res) => {
     const { id } = req.params;
 
     const user = await User.findByIdAndUpdate(id, req.body);

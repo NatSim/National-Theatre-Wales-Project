@@ -3,6 +3,7 @@ import Consume from "../../images/Consume.jpg";
 import "./SAPromptPages.css";
 import ConsumeArticle from "../../Components/SAArticles/ConsumeArticle";
 import SideNav from "../../Components/Nav/SideNav";
+import Button from "react-bootstrap/Button";
 
 const ConsumePage = () => {
   return (
@@ -17,6 +18,15 @@ const ConsumePage = () => {
           <ConsumeArticle />
         </article>
       </div>
+      <Button>
+        <input
+          type="checkbox"
+          id="consume"
+          name="consume"
+          value="consume"
+        ></input>
+        <label for="consume"> I have completed this Act</label>
+      </Button>
     </>
   );
 };

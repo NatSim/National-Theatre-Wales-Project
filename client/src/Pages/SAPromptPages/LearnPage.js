@@ -3,6 +3,7 @@ import Learn1 from "../../images/Learn1.jpg";
 import "./SAPromptPages.css";
 import LearnArticle from "../../Components/SAArticles/LearnArticle";
 import SideNav from "../../Components/Nav/SideNav";
+import Button from "react-bootstrap/Button";
 
 const LearnPage = () => {
   return (
@@ -17,6 +18,10 @@ const LearnPage = () => {
           <LearnArticle />
         </article>
       </div>
+      <Button>
+        <input type="checkbox" id="learn" name="learn" value="learn"></input>
+        <label for="learn"> I have completed this Act</label>
+      </Button>
     </>
   );
 };

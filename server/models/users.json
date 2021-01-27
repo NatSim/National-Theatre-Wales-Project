@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "username": "Natasha",
+        "email": "natsimbig@gmail.com",
+        "password":"1234",
+        "challenges":[]
+        
+    },
+    {
+        "id":2,
+        "username": "Charlene",
+        "email": "Hunter ",
+        "password":"",
+        "challenges":[]
+        
+    },
+    {
+        "id":3,
+        "username": "Tanya",
+        "email": "Powell ",
+        "password":"",
+        "challenges":[]
+        
+    },
+    {
+        "id":4,
+        "username": "Oyin",
+        "email": "Adebayo ",
+        "password":"",
+        "challenges":[]
+      
+    }
+]

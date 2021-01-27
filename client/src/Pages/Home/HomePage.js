@@ -19,7 +19,7 @@ import Container from "react-bootstrap/Container";
 import Header from "../../Components/Header/Header";
 import * as ImIcons from "react-icons/im";
 import SideNav from "../../Components/Nav/SideNav";
-import * as CgIcons from "react-icons/cg";
+import * as GrIcons from "react-icons/gr";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
@@ -45,18 +45,18 @@ const clickHere = "Click Here";
 
 //Card Button Link
 const ntwLink = "https://www.nationaltheatrewales.org/";
-const teamLink =
-  "https://www.nationaltheatrewales.org/ntw-projects/team-pembrokeshire/";
 
 //Footer href Links
 const ntwFacebookPage = "https://www.facebook.com/nationaltheatrewales/";
 
 function HomePage(props) {
-  const Item = "/profile";
-  const itemIcon = [<CgIcons.CgProfile className="profile-svg" />];
+  //Header Login/Reg icon/path
+  const Item = "/login";
+  const itemIcon = [<GrIcons.GrLogin className="profile-svg" />];
 
   return (
     <>
+      <SideNav />
       <Header Link={Item} Icon={itemIcon} />
       <div className="homepage">
         <div className="background-outer"></div>
@@ -132,7 +132,7 @@ function HomePage(props) {
       <footer className="home-footer">
         <ul className="footer-ul-control">
           <li>
-            <a href={ntwFacebookPage} target="_blank">
+            <a href={ntwFacebookPage} target="_blank" rel="noreferrer">
               <ImIcons.ImFacebook2 />
             </a>
           </li>

@@ -27,6 +27,7 @@
 .completed-image-child {
   width: 120px;
   height: 120px;
+  position: relative;
 }
 
 /*Background Control*/
@@ -51,8 +52,7 @@
 .challenges-container,
 .rewards-container,
 .completed-container,
-.completed-image-parent,
-.completed-image-child {
+.completed-image-parent {
   position: relative;
 }
 

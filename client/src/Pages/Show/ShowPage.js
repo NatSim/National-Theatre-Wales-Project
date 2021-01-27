@@ -4,6 +4,7 @@ import Header from "../../Components/Header/Header";
 import SideNav from "../../Components/Nav/SideNav";
 import "./ShowPage.css";
 import Button from "react-bootstrap/Button";
+import * as CgIcons from "react-icons/cg";
 
 const NavButton = (props) => {
   return (
@@ -17,10 +18,14 @@ const NavButton = (props) => {
 };
 
 function ShowPage() {
+  //Header Profile icon/path
+  const profileLink5 = "/profile";
+  const profileIcon5 = [<CgIcons.CgProfile className="profile-svg" />];
+
   return (
     <>
       <SideNav />
-      <Header />
+      <Header Link={profileLink5} Icon={profileIcon5} />
       <div>
         <h1 className="live-title">Live Performance</h1>
       </div>

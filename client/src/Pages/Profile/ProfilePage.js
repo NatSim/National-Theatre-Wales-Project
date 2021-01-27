@@ -3,10 +3,14 @@ import Header from "../../Components/Header/Header";
 import { Link } from "react-router-dom";
 import "./ProfilePage.css";
 import bekind from "../../images/BeKind.jpg";
-import RewardsPage from "../Rewards/RewardsPage";
 import Rewards from "../../Components/PageContent/Rewards/Reward";
+import * as CgIcons from "react-icons/cg";
 
 const ProfilePage = () => {
+  //Header Profile icon/path
+  const loginLink = "/profile";
+  const loginIcon = [<CgIcons.CgProfile className="profile-svg" />];
+
   //set state for username
   let username = "Natasha";
   const Greeting = (props) => {
@@ -15,7 +19,7 @@ const ProfilePage = () => {
 
   return (
     <>
-      <Header />
+      <Header Link={loginLink} Icon={loginIcon} />
       <div>
         <Greeting />
       </div>
@@ -37,10 +41,9 @@ const ProfilePage = () => {
         </div>
         <div className="completed-image-parent">
           <img
-            className="image-control"
+            className="completed-image-child"
             src={bekind}
             alt="simple act be kind"
-            className="completed-image-child"
           ></img>
         </div>
       </div>
