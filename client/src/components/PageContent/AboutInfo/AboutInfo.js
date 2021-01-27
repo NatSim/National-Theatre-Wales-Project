@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Image2 from "../../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
+import beeimage from "../../../images/whole-beeimage.png";
 import "./AboutInfo.css";
 
 function AboutInfo() {
@@ -23,12 +23,9 @@ function AboutInfo() {
       <article>
         <img
           className="pem-image2"
-          src={Image2}
+          src={beeimage}
           alt="Tide-Whisperer-TEAM-Social Pembrokeshire Landscape"
         ></img>
-        <figcaption className="fig-caption">
-          Team Social-Tide Whisperer
-        </figcaption>
       </article>
       <article>
         Having decided on climate change and the environment as the most urgent
@@ -38,7 +35,8 @@ function AboutInfo() {
       </article>
       <br />
       <article className="more-info2">
-        To learn more about NTW Team and how you can get involved click here.
+        To find out more about National Theatre Wales and how you can get
+        involved click here.
       </article>
       <div>
         <Link to="/contact" className="button">
@@ -54,7 +52,7 @@ function AboutInfo() {
           className="ntw-link"
           href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/"
         >
-          {"https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/"}
+          National Theatre Wales
         </a>
       </article>
     </section>

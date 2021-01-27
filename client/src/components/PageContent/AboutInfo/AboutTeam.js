@@ -1,4 +1,5 @@
 import React from "react";
+import Image2 from "../../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 
 function AboutTeam() {
   return (
@@ -18,6 +19,16 @@ function AboutTeam() {
           {" "}
           TEAM{" "}
         </a>
+      </article>
+      <article>
+        <img
+          className="pem-image2"
+          src={Image2}
+          alt="Tide-Whisperer-TEAM-Social Pembrokeshire Landscape"
+        ></img>
+        <figcaption className="fig-caption">
+          Team Social-Tide Whisperer
+        </figcaption>
       </article>
     </section>
   );

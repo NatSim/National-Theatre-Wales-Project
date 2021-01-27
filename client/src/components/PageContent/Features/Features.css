@@ -4,13 +4,6 @@
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-  .profile-svg {
-    width: 10%;
-    height: 10%;
-  }
-}
-
 .parent-container {
   background-color: whitesmoke;
   padding: 25px;

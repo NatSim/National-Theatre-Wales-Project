@@ -18,6 +18,8 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Header from "../../Components/Header/Header";
 import * as ImIcons from "react-icons/im";
+import SideNav from "../../Components/Nav/SideNav";
+import * as CgIcons from "react-icons/cg";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
@@ -49,10 +51,13 @@ const teamLink =
 //Footer href Links
 const ntwFacebookPage = "https://www.facebook.com/nationaltheatrewales/";
 
-function HomePage() {
+function HomePage(props) {
+  const Item = "/profile";
+  const itemIcon = [<CgIcons.CgProfile className="profile-svg" />];
+
   return (
     <>
-      <Header />
+      <Header Link={Item} Icon={itemIcon} />
       <div className="homepage">
         <div className="background-outer"></div>
         <main>
@@ -127,9 +132,9 @@ function HomePage() {
       <footer className="home-footer">
         <ul className="footer-ul-control">
           <li>
-            <Link to={ntwFacebookPage}>
+            <a href={ntwFacebookPage} target="_blank">
               <ImIcons.ImFacebook2 />
-            </Link>
+            </a>
           </li>
           <li>
             <Link className="Link-control" to={"/contact"}>

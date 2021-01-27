@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SideNav from "../../Components/Nav/SideNav";
-import * as CgIcons from "react-icons/cg";
+
 import "./Header.css";
 
-const Header = () => {
+const Header = (props) => {
   // When the user scrolls the page, execute myFunction
   window.onscroll = function () {
     // Get the header
@@ -37,10 +36,8 @@ const Header = () => {
           <Link to="/show" className="nav-child">
             <li> The Show </li>
           </Link>
-          <Link to="/profile" className="nav-child">
-            <li>
-              <CgIcons.CgProfile className="profile-svg" />
-            </li>
+          <Link to={props.Link} className="nav-child">
+            <li>{props.Icon}</li>
           </Link>
         </ul>
       </div>
