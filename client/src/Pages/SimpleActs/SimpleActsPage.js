@@ -22,8 +22,6 @@ const SAPrompts = (props) => {
   );
 };
 
-console.log(SAPrompts);
-
 const SimpleActsPage = () => {
   const videoSimple =
     "https://www.youtube.com/watch?v=qxB3-sw2HAQ&feature=emb_logo";
@@ -31,6 +29,8 @@ const SimpleActsPage = () => {
   //Header Profile icon/path
   const profileLink = "/profile";
   const profileIcon = <CgIcons.CgProfile className="profile-svg" />;
+
+  console.log("Helloooooo");
 
   return (
     <>

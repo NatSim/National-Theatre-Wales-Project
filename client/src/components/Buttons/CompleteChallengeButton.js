@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../Components/Buttons/MainButton.css";
 import Button from "react-bootstrap/Button";
 
@@ -10,8 +10,36 @@ import Button from "react-bootstrap/Button";
 /*if(button was clicked){
 function(send details to server)
 } */
-const CompleteChallengeButton = () => {
+const CompleteChallengeButton = (props) => {
   // const [state, setState] = useState({});
+  //Display 7 pages in one component? State
+  const exampleTry = [
+    {
+      direction: "Your Simple Act is to...",
+      image: "BeKind.jpg",
+      text: "Hello",
+      id: 1,
+    },
+    {
+      direction: "Your Simple Act is to...",
+      image: "BeKind.jpg",
+      text: "Hello",
+      id: 1,
+    },
+    {
+      direction: "Your Simple Act is to...",
+      image: "BeKind.jpg",
+      text: "Hello",
+      id: 1,
+    },
+  ];
+
+  function ChallengeItems() {
+    const [direction, setDirection] = useState(exampleTry[0].direction);
+    const [image, setImage] = useState(exampleTry[0].image);
+    const [text, setText] = useState(exampleTry[0].text);
+    const [id, setId] = useState(exampleTry[0].id);
+  }
 
   //Button Handler
   const onClickHandler = (event) => {
@@ -22,9 +50,9 @@ const CompleteChallengeButton = () => {
       <div>
         <Button
           onClick={onClickHandler}
-          type="subject"
-          id="bekind"
-          className="bekind"
+          type="submit"
+          id={props.id}
+          className="challenge"
         >
           Completed
         </Button>

@@ -1,14 +1,8 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import { Link, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./HomePage.css";
 import BeeStamp from "../../images/whole-beeimage.png";
-import SimpleActsPage from "../Act/SimpleActsPage";
-import MonologuePage from "../Watch/MonologuePage";
-import MusicPage from "../Listen/MusicPage";
-import Terms from "../Terms/TermsPage";
-import ContactUsPage from "../ContactUs/ContactUsPage";
-import About from "../About/AboutPage";
 import Features from "../../Components/PageContent/Features/Features";
 import NTWLogo from "../../images/logo.svg";
 import Party from "../../images/NTWHaverHub.jpg";
@@ -65,7 +59,7 @@ function HomePage(props) {
             <h2 className="subtitle">Discover</h2>
             <ul className="middle-nav-list">
               <li>
-                <Link to="/about">
+                <Link to={"/about"}>
                   <img
                     id="about-button"
                     className="default-button"
@@ -108,7 +102,7 @@ function HomePage(props) {
               image={Tide}
               title={titleTeam}
               button={clickHere}
-              link={"/team"}
+              links={"/team"}
             />
           </Col>
           <Col sm>
@@ -116,7 +110,7 @@ function HomePage(props) {
               image={NTWLogo}
               title={titleNTW}
               button={clickHere}
-              link={ntwLink}
+              links={ntwLink}
             />
           </Col>
           <Col sm>
@@ -124,7 +118,7 @@ function HomePage(props) {
               image={Party}
               title={contactUs}
               button={clickHere}
-              link={"/contact"}
+              links={"/contact"}
             />
           </Col>
         </Row>
@@ -137,18 +131,18 @@ function HomePage(props) {
             </a>
           </li>
           <li>
-            <Link className="Link-control" to={"/contact"}>
+            <Link to={"/contact"} className="Link-control">
               Contact Us
             </Link>
           </li>
 
           <li>
-            <Link className="Link-control" to={"/terms"}>
+            <Link to={"/terms"} className="Link-control">
               Terms{`&`}Conditions
             </Link>
           </li>
           <li>
-            <Link className="Link-control" link={"/privacy"}>
+            <Link to={"/privacy"} className="Link-control">
               Privacy
             </Link>
           </li>
@@ -159,15 +153,6 @@ function HomePage(props) {
           Registration No. 1127952
         </p>
       </footer>
-
-      <Switch>
-        <Route path="/about" exact component={About} />
-        <Route path="/simpleacts" component={SimpleActsPage} />
-        <Route path="/monologue" component={MonologuePage} />
-        <Route path="/music" component={MusicPage} />
-        <Route path="/terms" component={Terms} />
-        <Route path="/contact" component={ContactUsPage} />
-      </Switch>
     </>
   );
 }

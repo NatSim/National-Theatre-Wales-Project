@@ -128,7 +128,9 @@ const LoginForm = (props) => {
           LOGIN
         </button>
         <br />
-        <Link className="forgot-password">Forgot password here</Link>
+        <Link to="/home" className="forgot-password">
+          Forgot password here
+        </Link>
         <br />
         <Link to="/register" className="auth-route-link">
           Register

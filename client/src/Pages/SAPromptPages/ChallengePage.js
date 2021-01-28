@@ -12,32 +12,6 @@ const BeKindPage = () => {
   const profileLink = "/profile";
   const profileIcon = <CgIcons.CgProfile className="profile-svg" />;
 
-  //Display 7 pages in one component? State
-  const exampleTry = [
-    {
-      direction: "Your Simple Act is to...",
-      image: "BeKind.jpg",
-      text: "Hello",
-      id: 1,
-    },
-    {
-      direction: "Your Simple Act is to...",
-      image: "BeKind.jpg",
-      text: "Hello",
-      id: 1,
-    },
-    {
-      direction: "Your Simple Act is to...",
-      image: "BeKind.jpg",
-      text: "Hello",
-      id: 1,
-    },
-  ];
-
-  function ChallengeItems() {
-    const [direction, setDirection] = useState(exampleTry[0].direction);
-  }
-
   return (
     // return 7 challenge pages below, from array?
     <>
