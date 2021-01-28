@@ -2,43 +2,43 @@
 {
     "direction": "Your Simple Act is to...",
    " image": "BeKind.jpg",
-    "text": "",
+    "text": "Hello",
     "id":1
   },
   {
     "direction": "Your Simple Act is to...",
    "image": "Connect.jpg",
-   "text": "",
+   "text": "Hi",
     "id":2
   },
   {
     "direction": "Your Simple Act is to...",
    "image": "Consider.jpg",
-    "text": "",
+    "text": "Salut",
     "id":3
   },
   {
     "direction": "Your Simple Act is to...",
    "image": "Consume.jpg",
-    "text": "",
+    "text": "Hola",
     "id":4
   },
   {
     "direction": "Your Simple Act is to...",
    "image": "Learn1.jpg",
-    "text": "",
+    "text": "Bonjour",
     "id":5
   },
   {
     "direction": "Your Simple Act is to...",
    "image": "Plant.jpg",
-    "text": "",
+    "text": "Hey",
     "id":6
   },
   {
     "direction": "Your Simple Act is to...",
    "image": "TakeAWalk.jpg",
-    "text": "",
+    "text": "Welcome",
     "id":7
   }
 ]

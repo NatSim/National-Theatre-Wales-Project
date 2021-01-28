@@ -14,7 +14,7 @@ const About = () => {
 
   //Header Profile icon/path
   const Item = "/profile";
-  const itemIcon = [<CgIcons.CgProfile className="profile-svg" />];
+  const itemIcon = <CgIcons.CgProfile className="profile-svg" />;
   return (
     <>
       <SideNav />

@@ -52,7 +52,7 @@ const ntwFacebookPage = "https://www.facebook.com/nationaltheatrewales/";
 function HomePage(props) {
   //Header Login/Reg icon/path
   const Item = "/login";
-  const itemIcon = [<GrIcons.GrLogin className="profile-svg" />];
+  const itemIcon = <GrIcons.GrLogin className="profile-svg" />;
 
   return (
     <>

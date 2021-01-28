@@ -18,6 +18,7 @@ function WelcomePage() {
     setImageUrl(welcomeText[arrayElement].imageUrl);
     setWelcomeStep(arrayElement);
   };
+  console.log(Welcome);
 
   return (
     <div>

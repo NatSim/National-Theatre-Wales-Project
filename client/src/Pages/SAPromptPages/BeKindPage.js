@@ -10,7 +10,7 @@ import Button from "react-bootstrap/Button";
 const BeKindPage = () => {
   //Header Profile icon/path
   const profileLink9 = "/profile";
-  const profileIcon9 = [<CgIcons.CgProfile className="profile-svg" />];
+  const profileIcon9 = <CgIcons.CgProfile className="profile-svg" />;
 
   return (
     <>
@@ -25,7 +25,7 @@ const BeKindPage = () => {
           <BeKindArticle />
         </article>
         <Button type="subject" id="bekind" className="bekind">
-          I have completed this Act
+          Completed
         </Button>
       </div>
     </>
