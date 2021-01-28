@@ -1,22 +1,19 @@
 import React from "react";
 import "../../Components/Buttons/MainButton.css";
+import Button from "react-bootstrap/Button";
 
 //Next Button Functional Component
 
 //Make a request to handler to route defined(user-1/challenge-1) make axios request, it will pass in user id& challenge id.
 //Once its returned -Make handler redirect to profile
-const NextButton = ({ onClickHandler, welcomeStep }) => {
-  console.log(onClickHandler, welcomeStep);
+const CompleteChallengeButton = () => {
   return (
     <div>
-      <button
-        onClick={() => onClickHandler(welcomeStep + 1)}
-        className="button"
-      >
-        NEXT
-      </button>
+      <Button type="subject" id="bekind" className="bekind">
+        Completed
+      </Button>
     </div>
   );
 };
 
-export default NextButton;
+export default CompleteChallengeButton;

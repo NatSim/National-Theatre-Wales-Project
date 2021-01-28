@@ -13,13 +13,7 @@ import MonologuePage from "./Watch/MonologuePage";
 import MusicPage from "./Listen/MusicPage";
 import TermsPage from "./Terms/TermsPage";
 import ContactUsPage from "./ContactUs/ContactUsPage";
-import BeKindPage from "./SAPromptPages/BeKindPage";
-import ConnectPage from "./SAPromptPages/ConnectPage";
-import ConsiderPage from "./SAPromptPages/ConsiderPage";
-import ConsumePage from "./SAPromptPages/ConsumePage";
-import LearnPage from "./SAPromptPages/LearnPage";
-import PlantPage from "./SAPromptPages/PlantPage";
-import WalkPage from "./SAPromptPages/WalkPage";
+import ChallengePage from "./SAPromptPages/ChallengePage";
 import ProfilePage from "./Profile/ProfilePage";
 import ShowPage from "./Show/ShowPage";
 import MapPage from "./Map/MapPage";
@@ -46,13 +40,7 @@ function App() {
           <Route path="/music" component={MusicPage} />
           <Route path="/terms" component={TermsPage} />
           <Route path="/contact" component={ContactUsPage} />
-          <Route path="/bekind" component={BeKindPage} />
-          <Route path="/connect" component={ConnectPage} />
-          <Route path="/consider" component={ConsiderPage} />
-          <Route path="/consume" component={ConsumePage} />
-          <Route path="/learn" component={LearnPage} />
-          <Route path="/plant" component={PlantPage} />
-          <Route path="/walk" component={WalkPage} />
+          <Route path="/challenge" component={ChallengePage} />
           <Route path="/profile" component={ProfilePage} />
           <Route path="/show" component={ShowPage} />
           <Route path="/map" component={MapPage} />

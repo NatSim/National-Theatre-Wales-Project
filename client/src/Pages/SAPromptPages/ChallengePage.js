@@ -5,17 +5,18 @@ import BeKindArticle from "../../Components/SAArticles/BeKindArticle";
 import SideNav from "../../Components/Nav/SideNav";
 import Header from "../../Components/Header/Header";
 import * as CgIcons from "react-icons/cg";
-import Button from "react-bootstrap/Button";
+import CompleteChallengeButton from "../../Components/Buttons/CompleteChallengeButton";
 
 const BeKindPage = () => {
   //Header Profile icon/path
-  const profileLink9 = "/profile";
-  const profileIcon9 = <CgIcons.CgProfile className="profile-svg" />;
+  const profileLink = "/profile";
+  const profileIcon = <CgIcons.CgProfile className="profile-svg" />;
 
   return (
+    // return 7 challenge pages below?
     <>
       <SideNav />
-      <Header Link={profileLink9} Icon={profileIcon9} />
+      <Header Link={profileLink} Icon={profileIcon} />
       <div className="kind-page">
         <article>
           <h1 className="prompt-text">Your Simple Act is to...</h1>
@@ -24,9 +25,7 @@ const BeKindPage = () => {
           </div>
           <BeKindArticle />
         </article>
-        <Button type="subject" id="bekind" className="bekind">
-          Completed
-        </Button>
+        <CompleteChallengeButton />
       </div>
     </>
   );
