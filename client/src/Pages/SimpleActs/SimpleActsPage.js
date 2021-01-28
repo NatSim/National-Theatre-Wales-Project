@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "react-router-dom";
 import BeKind from "../../images/BeKind.jpg";
 import Connect from "../../images/Connect.jpg";
 import Consider from "../../images/Consider.jpg";
@@ -22,18 +22,20 @@ const SAPrompts = (props) => {
   );
 };
 
+console.log(SAPrompts);
+
 const SimpleActsPage = () => {
   const videoSimple =
     "https://www.youtube.com/watch?v=qxB3-sw2HAQ&feature=emb_logo";
 
   //Header Profile icon/path
-  const profileLink6 = "/profile";
-  const profileIcon6 = [<CgIcons.CgProfile className="profile-svg" />];
+  const profileLink = "/profile";
+  const profileIcon = <CgIcons.CgProfile className="profile-svg" />;
 
   return (
     <>
       <SideNav />
-      <Header Link={profileLink6} Icon={profileIcon6} />
+      <Header Link={profileLink} Icon={profileIcon} />
       <div className="simplepage-container">
         <h1 id="simple-title" className="title">
           Simple Acts
@@ -46,7 +48,7 @@ const SimpleActsPage = () => {
           <div className="child-container">
             <div>
               <SAPrompts
-                link={"/bekind"}
+                link={"/challenge"}
                 img={BeKind}
                 src={BeKind}
                 alt="Kind"
@@ -54,7 +56,7 @@ const SimpleActsPage = () => {
             </div>
             <div>
               <SAPrompts
-                link={"/connect"}
+                link={"/challenge"}
                 img={Connect}
                 src={Connect}
                 alt="Connecting"
@@ -62,7 +64,7 @@ const SimpleActsPage = () => {
             </div>
             <div>
               <SAPrompts
-                link={"/consider"}
+                link={"/challenge"}
                 img={Consider}
                 src={Consider}
                 alt="Consider"
@@ -70,7 +72,7 @@ const SimpleActsPage = () => {
             </div>
             <div>
               <SAPrompts
-                link={"/consume"}
+                link={"/challenge"}
                 img={Consume}
                 src={Consume}
                 alt="Consume"
@@ -80,7 +82,7 @@ const SimpleActsPage = () => {
           <div className="child2-container">
             <div>
               <SAPrompts
-                link={"/learn"}
+                link={"/challenge"}
                 img={Learn1}
                 src={Learn1}
                 alt="Learn"
@@ -88,7 +90,7 @@ const SimpleActsPage = () => {
             </div>
             <div>
               <SAPrompts
-                link={"/plant"}
+                link={"/challenge"}
                 img={Plant}
                 src={Plant}
                 alt="Plant"
@@ -96,7 +98,7 @@ const SimpleActsPage = () => {
             </div>
             <div>
               <SAPrompts
-                link={"/walk"}
+                link={"/challenge"}
                 img={TakeAWalk}
                 src={TakeAWalk}
                 alt="Talk a walk"

@@ -8,7 +8,7 @@ body {
 }
 
 .charity-name {
-  color: #82d121;
+  color: #ff2f69;
 }
 .charity-name2 {
   color: #ff2f69;
@@ -19,13 +19,8 @@ body {
 }
 
 /* All Page sizing & Background-colors*/
-.connect-page,
-.plant-page,
-.kind-page,
-.consider-page,
-.consume-page,
-.learn-page,
-.walk-page {
+
+.challenge-page {
   height: 450vh;
   padding: 34px 24px 0px;
 }
@@ -51,18 +46,6 @@ body {
   padding: 50px;
 }
 
-.connect-page,
-.consume-page {
-  background-color: #ff2f69;
-}
-
-.plant-page,
-.kind-page,
-.consider-page {
-  background-color: #ff9f00;
-}
-
-.learn-page,
-.walk-page {
+.challenge-page {
   background-color: #82d121;
 }
