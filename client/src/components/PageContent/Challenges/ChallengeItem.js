@@ -1,9 +1,23 @@
-// import React from 'react'
+import React from "react";
+import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 
-// const ChallengeItem = () {
-//     return (
+//whichChallengeIsClicked function to display unique data
+//if else statement -teniry
 
-//     )
-// }
+const ChallengeItem = ({ direction, image, text, challengeChoice }) => {
+  console.log(direction, image, text, challengeChoice);
 
-// export default ChallengeItem
+  return (
+    <div className="challenge-page">
+      <h1 className="prompt-text"> Your Simple Act is to...</h1>
+      <div className="image-container">
+        <img className="image" src={image} alt={"simple act challenge"} />
+        <p> {text}</p>
+      </div>
+      <CompleteChallengeButton />
+    </div>
+  );
+};
+console.log(ChallengeItem);
+
+export default ChallengeItem;
