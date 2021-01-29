@@ -15,7 +15,7 @@ const Welcome = ({
   onClickHandler,
   welcomeStep,
 }) => {
-  // console.log(title, mainText, imageUrl, onClickHandler); //check for errors
+  console.log(typeof welcomeStep); //check for errors
 
   const newTitle = () => (
     <>

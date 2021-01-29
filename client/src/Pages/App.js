@@ -13,7 +13,7 @@ import MonologuePage from "./Watch/MonologuePage";
 import MusicPage from "./Listen/MusicPage";
 import TermsPage from "./Terms/TermsPage";
 import ContactUsPage from "./ContactUs/ContactUsPage";
-import Challenges from "../Components/PageContent/Challenges/Challenges";
+import Challenges from "../Components/PageContent/Challenges/ChallengePage";
 import ProfilePage from "./Profile/ProfilePage";
 import ShowPage from "./Show/ShowPage";
 import MapPage from "./Map/MapPage";

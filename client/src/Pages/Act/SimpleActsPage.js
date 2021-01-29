@@ -14,14 +14,14 @@ import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
 const SAPrompts = (props) => {
   return (
     //Reusable component
-    <Link to={props.link}>
+    <Link to={"/challenge"}>
       <img className="image" src={props.img} alt={props.alt} />
       {props.children}
     </Link>
   );
 };
 
-const SimpleActsPage = () => {
+const SimpleActsPage = (props) => {
   const videoSimple =
     "https://www.youtube.com/watch?v=qxB3-sw2HAQ&feature=emb_logo";
 
@@ -40,7 +40,7 @@ const SimpleActsPage = () => {
           <div className="child-container">
             <div>
               <SAPrompts
-                link={"/challenge"}
+                link={props.link}
                 img={BeKind}
                 src={BeKind}
                 alt="Kind"
@@ -48,7 +48,7 @@ const SimpleActsPage = () => {
             </div>
             <div>
               <SAPrompts
-                link={"/connect"}
+                link={props.link}
                 img={Connect}
                 src={Connect}
                 alt="Connecting"
@@ -64,7 +64,7 @@ const SimpleActsPage = () => {
             </div>
             <div>
               <SAPrompts
-                link={"/consume"}
+                link={props.link}
                 img={Consume}
                 src={Consume}
                 alt="Consume"
@@ -74,7 +74,7 @@ const SimpleActsPage = () => {
           <div className="child2-container">
             <div>
               <SAPrompts
-                link={"/learn"}
+                link={props.link}
                 img={Learn1}
                 src={Learn1}
                 alt="Learn"
@@ -82,7 +82,7 @@ const SimpleActsPage = () => {
             </div>
             <div>
               <SAPrompts
-                link={"/plant"}
+                link={props.link}
                 img={Plant}
                 src={Plant}
                 alt="Plant"
@@ -90,7 +90,7 @@ const SimpleActsPage = () => {
             </div>
             <div>
               <SAPrompts
-                link={"/walk"}
+                link={props.link}
                 img={TakeAWalk}
                 src={TakeAWalk}
                 alt="Talk a walk"
