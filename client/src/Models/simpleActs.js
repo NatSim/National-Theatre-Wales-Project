@@ -44,4 +44,4 @@ const simpleText = [
   },
 ];
 
-export default { simpleText };
+export default simpleText;
