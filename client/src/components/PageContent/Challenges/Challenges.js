@@ -1,19 +1,18 @@
 import React from "react";
-import BeKind from "../../images/BeKind.jpg";
-import "./SAPromptPages.css";
-import BeKindArticle from "../../Components/SAArticles/BeKindArticle";
-import SideNav from "../../Components/Nav/SideNav";
-import Header from "../../Components/Header/Header";
+import BeKind from "../../../images/BeKind.jpg";
+import "./Challenges.css";
+import SideNav from "../../Nav/SideNav";
+import Header from "../../Header/Header";
 import * as CgIcons from "react-icons/cg";
-import CompleteChallengeButton from "../../Components/Buttons/CompleteChallengeButton";
+import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 
-const BeKindPage = () => {
+const Challenges = () => {
   //Header Profile icon/path
   const profileLink = "/profile";
   const profileIcon = <CgIcons.CgProfile className="profile-svg" />;
 
   return (
-    // return 7 challenge pages below, from array?
+    // return 7 challenge content in component below, from array?
     <>
       <SideNav />
       <Header Link={profileLink} Icon={profileIcon} />
@@ -23,7 +22,6 @@ const BeKindPage = () => {
           <div className="image-container">
             <img className="image" src={BeKind} alt="Be Kind" />
           </div>
-          <BeKindArticle />
         </article>
         <CompleteChallengeButton />
       </div>
@@ -31,4 +29,4 @@ const BeKindPage = () => {
   );
 };
 
-export default BeKindPage;
+export default Challenges;

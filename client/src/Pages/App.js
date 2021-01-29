@@ -13,7 +13,7 @@ import MonologuePage from "./Watch/MonologuePage";
 import MusicPage from "./Listen/MusicPage";
 import TermsPage from "./Terms/TermsPage";
 import ContactUsPage from "./ContactUs/ContactUsPage";
-import ChallengePage from "./SAPromptPages/ChallengePage";
+import Challenges from "../Components/PageContent/Challenges/Challenges";
 import ProfilePage from "./Profile/ProfilePage";
 import ShowPage from "./Show/ShowPage";
 import MapPage from "./Map/MapPage";
@@ -40,7 +40,7 @@ function App() {
           <Route path="/music" component={MusicPage} />
           <Route path="/terms" component={TermsPage} />
           <Route path="/contact" component={ContactUsPage} />
-          <Route path="/challenge" component={ChallengePage} />
+          <Route path="/challenge" component={Challenges} />
           <Route path="/profile" component={ProfilePage} />
           <Route path="/show" component={ShowPage} />
           <Route path="/map" component={MapPage} />

@@ -40,7 +40,7 @@ const SimpleActsPage = () => {
           <div className="child-container">
             <div>
               <SAPrompts
-                link={"/bekind"}
+                link={"/challenge"}
                 img={BeKind}
                 src={BeKind}
                 alt="Kind"
