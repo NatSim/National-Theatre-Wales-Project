@@ -14,7 +14,7 @@ import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
 const SAPrompts = (props) => {
   return (
     //Reusable component
-    <Link to={"/challenge"}>
+    <Link to={"/challenge/" + props.id}>
       <img className="image" src={props.img} alt={props.alt} />
       {props.children}
     </Link>
@@ -40,60 +40,55 @@ const SimpleActsPage = (props) => {
           <div className="child-container">
             <div>
               <SAPrompts
-                link={props.link}
                 img={BeKind}
                 src={BeKind}
                 alt="Kind"
+                id="1"
               ></SAPrompts>
             </div>
             <div>
               <SAPrompts
-                link={props.link}
                 img={Connect}
                 src={Connect}
                 alt="Connecting"
+                id="2"
               ></SAPrompts>
             </div>
             <div>
               <SAPrompts
-                link={"/consider"}
                 img={Consider}
                 src={Consider}
                 alt="Consider"
+                id="3"
               ></SAPrompts>
             </div>
             <div>
               <SAPrompts
-                link={props.link}
                 img={Consume}
                 src={Consume}
                 alt="Consume"
+                id="4"
               ></SAPrompts>
             </div>
           </div>
           <div className="child2-container">
             <div>
               <SAPrompts
-                link={props.link}
                 img={Learn1}
                 src={Learn1}
                 alt="Learn"
+                id="5"
               ></SAPrompts>
             </div>
             <div>
-              <SAPrompts
-                link={props.link}
-                img={Plant}
-                src={Plant}
-                alt="Plant"
-              ></SAPrompts>
+              <SAPrompts img={Plant} src={Plant} alt="Plant" id="6"></SAPrompts>
             </div>
             <div>
               <SAPrompts
-                link={props.link}
                 img={TakeAWalk}
                 src={TakeAWalk}
                 alt="Talk a walk"
+                id="7"
               ></SAPrompts>
             </div>
           </div>

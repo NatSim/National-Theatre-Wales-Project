@@ -2,11 +2,9 @@ import React from "react";
 import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 
 //whichChallengeIsClicked function to display unique data
-//if else statement -teniry
+//if else statement -teniry // map function goes through each simple text displays?
 
 const ChallengeItem = ({ direction, image, text, challengeChoice }) => {
-  console.log(direction, image, text, challengeChoice);
-
   return (
     <div className="challenge-page">
       <h1 className="prompt-text"> Your Simple Act is to...</h1>
@@ -18,6 +16,5 @@ const ChallengeItem = ({ direction, image, text, challengeChoice }) => {
     </div>
   );
 };
-console.log(ChallengeItem);
 
 export default ChallengeItem;

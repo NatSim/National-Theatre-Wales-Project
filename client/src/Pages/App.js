@@ -13,10 +13,9 @@ import MonologuePage from "./Watch/MonologuePage";
 import MusicPage from "./Listen/MusicPage";
 import TermsPage from "./Terms/TermsPage";
 import ContactUsPage from "./ContactUs/ContactUsPage";
-import Challenges from "../Components/PageContent/Challenges/ChallengePage";
+import ChallengePage from "../Components/PageContent/Challenges/ChallengePage";
 import ProfilePage from "./Profile/ProfilePage";
 import ShowPage from "./Show/ShowPage";
-import MapPage from "./Map/MapPage";
 import AboutTeamPage from "./About/AboutTeamPage";
 import RewardsPage from "./Rewards/RewardsPage";
 
@@ -40,10 +39,9 @@ function App() {
           <Route path="/music" component={MusicPage} />
           <Route path="/terms" component={TermsPage} />
           <Route path="/contact" component={ContactUsPage} />
-          <Route path="/challenge" component={Challenges} />
+          <Route path="/challenge/:id" component={ChallengePage} />
           <Route path="/profile" component={ProfilePage} />
           <Route path="/show" component={ShowPage} />
-          <Route path="/map" component={MapPage} />
           <Route path="/team" component={AboutTeamPage} />
           <Route path="/reward" component={RewardsPage} />
         </Switch>

@@ -8,40 +8,36 @@ import TakeAWalk from "../images/TakeAWalk.jpg";
 
 const simpleText = [
   {
-    direction: "Your Simple Act is to...",
     image: BeKind,
-    text: "",
+    text: "Example Text1",
   },
   {
-    direction: "Your Simple Act is to...",
     image: Connect,
-    text: "",
+    text: "Example Text2",
   },
   {
-    direction: "Your Simple Act is to...",
     image: Consider,
-    text: "",
+    text: "ExampleText3",
   },
   {
-    direction: "Your Simple Act is to...",
     image: Consume,
-    text: "",
+    text: "ExampleText4",
   },
   {
-    direction: "Your Simple Act is to...",
     image: Learn1,
-    text: "",
+    text: "ExampleText5",
   },
   {
-    direction: "Your Simple Act is to...",
     image: Plant,
-    text: "",
+    text: "ExampleText6",
   },
   {
-    direction: "Your Simple Act is to...",
     image: TakeAWalk,
-    text: "",
+    text: "ExampleText7",
   },
 ];
+
+const direction = "Your Simple Act is to...";
+export { direction };
 
 export default simpleText;
