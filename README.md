@@ -1,6 +1,6 @@
 <h1>Go Tell The Bees-App</h1>
 
-This Project is called **Got Tell The Bees** and is a responsive web application to go alongside a site-specific show for **National Theatre Wales** . The app will go live by Mays' performance date.
+This Project is called **Got Tell The Bees** and is a responsive web application to go alongside a site-specific show for **National Theatre Wales** . This app uses **React Framework**.
 
 ## Project Structure
 
@@ -37,6 +37,14 @@ Run `npm start` in command line.
 
 Start the server:
 `npm run develop`
+
+<h2>Prerequisites</h2>
+
+Before you continue, ensure you have met the following requirements:
+
+You have a basic understanding of React Framework/JavaScript
+React Functional Components
+Props and State
 
 <h3>Contributors</h3>
 
