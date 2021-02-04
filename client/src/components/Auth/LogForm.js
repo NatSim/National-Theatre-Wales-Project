@@ -10,9 +10,9 @@ const LoginForm = (props) => {
   });
   const history = useHistory();
 
-  //login route to homepage
-  const navigateToHome = () => {
-    history.push("/home");
+  //login route to profile page
+  const navigateToProfile = () => {
+    history.push("/profile");
   };
 
   //POST REQUEST - This send req to server to confirm entered user info(exists) & create a session
@@ -33,7 +33,7 @@ const LoginForm = (props) => {
                 "User exists.Login successful. Redirecting to home page..",
             }));
             console.log("Successful!");
-            navigateToHome(); //navigate to homepage call function here;
+            navigateToProfile(); //navigate to homepage call function here;
           } else {
             console.log("Error!");
           }
