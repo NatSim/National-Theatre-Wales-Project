@@ -38,10 +38,11 @@ Run `npm start` in command line.
 Start the server:
 `npm run develop`
 
-Contributors
+<h3>Contributors</h3>
+
 Thanks to the following people who have contributed to this project:
 
 🧑‍🏫 @shawsy171
 
-Contact
+<h4>Contact</h4>
 If you want to contact me you can reach me at: natsimbig@gmail.com
