@@ -5,6 +5,9 @@
   top: 0;
   width: 100%;
   z-index: 1;
+  border-bottom-style: double;
+  border-color: wheat;
+  background-color: white;
 }
 .content {
   padding: 16px;
