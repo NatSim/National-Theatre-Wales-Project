@@ -16,10 +16,6 @@ The structure of the repository is:
 ### server
 **Node.js** code here.
 
-## Getting Started
-
-### Forked Project
-
 ###The Database
 **Mongo Database**
 
