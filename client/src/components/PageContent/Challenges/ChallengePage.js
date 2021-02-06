@@ -23,12 +23,14 @@ const ChallengePage = (props) => {
   //2a. if(onclick === simpleText id [0]) {
   // arrayItemIndex.push to user challenges collection db
   //} ****
-  const sendClickedItemToDB = () => {};
-  console.log(simpleText[0].id);
+  const sendClickedItemToDB = () => {
+    const arrayItem = simpleText[0].image;
+  };
+
   //challenge choice has 0,1,2,3,4,5,6 challenges(7 total) should make a challenge choice for each SA challenge to display
   // const [id, setId] = useState(simpleText[0].id);
 
-  //onclick handler takes in image icon link
+  //onclick handler takes in image icon
   const onClickHandler = (arrayElement) => {};
   console.log(props.match.params.id);
   const id = props.match.params.id;

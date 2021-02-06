@@ -20,7 +20,7 @@ const NavButton = (props) => {
 function ShowPage() {
   //Header Profile icon/path
   const profileLink5 = "/profile";
-  const profileIcon5 = [<CgIcons.CgProfile className="profile-svg" />];
+  const profileIcon5 = <CgIcons.CgProfile className="profile-svg" />;
 
   return (
     <>
