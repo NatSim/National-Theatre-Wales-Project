@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../../Components/Header/Header";
+import Header from "../../components/Header/Header";
 import { Link } from "react-router-dom";
 import "./ProfilePage.css";
 import bekind from "../../images/BeKind.jpg";
-import Rewards from "../../Components/PageContent/Rewards/Reward";
+import Rewards from "../../components/PageContent/Rewards/Reward";
 import * as CgIcons from "react-icons/cg";
 
 const ProfilePage = () => {
@@ -14,16 +14,17 @@ const ProfilePage = () => {
   //set state for username
   let username = "Natasha";
   const Greeting = (props) => {
-    return <h1 className="welcome">Welcome {username}</h1>;
+    return <h2 className="subtitle">Welcome {username}</h2>;
   };
 
   return (
     <>
       <Header Link={loginLink} Icon={loginIcon} />
-      <div>
-        <Greeting />
-      </div>
+
       <div className="profile-background-container">
+        <div>
+          <Greeting />
+        </div>
         <div className="subheadings-container">
           <div className="challenges-container">
             <Link to={"/simpleacts"}>View Challenges</Link>

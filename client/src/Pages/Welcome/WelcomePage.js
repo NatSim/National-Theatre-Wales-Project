@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { welcomeText } from "../../Models/welcomeText";
-import Welcome from "../../Components/PageContent/Welcome/Welcome";
+import Welcome from "../../components/PageContent/Welcome/Welcome";
 import "../App.css";
 
 //App Context Steps-Component, only BrandNew users will see on first visit

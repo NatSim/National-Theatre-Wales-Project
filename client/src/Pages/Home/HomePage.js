@@ -3,16 +3,16 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import "./HomePage.css";
 import BeeStamp from "../../images/whole-beeimage.png";
-import Features from "../../Components/PageContent/Features/Features";
+import Features from "../../components/PageContent/Features/Features";
 import NTWLogo from "../../images/logo.svg";
 import Party from "../../images/NTWHaverHub.jpg";
 import Tide from "../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-import Header from "../../Components/Header/Header";
+import Header from "../../components/Header/Header";
 import * as ImIcons from "react-icons/im";
-import SideNav from "../../Components/Nav/SideNav";
+import SideNav from "../../components/Nav/SideNav";
 import * as GrIcons from "react-icons/gr";
 
 /**Homepage with Nav buttons as routes to other pages

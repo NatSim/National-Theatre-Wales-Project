@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Components/Buttons/MainButton.css";
+import "../../components/Buttons/MainButton.css";
 import Button from "react-bootstrap/Button";
 
 //Next Button Functional Component

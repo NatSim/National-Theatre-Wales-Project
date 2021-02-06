@@ -8,8 +8,8 @@ import Learn1 from "../../images/Learn1.jpg";
 import Plant from "../../images/Plant.jpg";
 import TakeAWalk from "../../images/TakeAWalk.jpg";
 import "./SimpleActPage.css";
-import SideNav from "../../Components/Nav/SideNav";
-import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
+import SideNav from "../../components/Nav/SideNav";
+import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 
 const SAPrompts = (props) => {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
-import Form from "../../Components/PageContent/ContactForm/ContactForm";
+import Form from "../../components/PageContent/ContactForm/ContactForm";
 import "../ContactUs/ContactUsPage.css";
-import SideNav from "../../Components/Nav/SideNav";
+import SideNav from "../../components/Nav/SideNav";
 import * as CgIcons from "react-icons/cg";
-import Header from "../../Components/Header/Header";
+import Header from "../../components/Header/Header";
 
 const ContactUsPage = () => {
   //Header Profile icon/path

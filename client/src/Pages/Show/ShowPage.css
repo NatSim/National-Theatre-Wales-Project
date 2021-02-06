@@ -1,8 +1,14 @@
 .live-title {
   padding: 35px;
+  float: left;
+  animation: transitionIn;
 }
 
 .live-background-container {
   background-color: #89d7e8;
   height: 100vh;
+  padding: 10px;
+  border-top-style: double;
+  border-color: grey;
+  border-top-width: 0.5px;
 }

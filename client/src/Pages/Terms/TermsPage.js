@@ -1,8 +1,8 @@
 import React from "react";
 import "../Terms/TermsPage.css";
-import TermsContent from "../../Components/PageContent/Terms/Terms";
-import SideNav from "../../Components/Nav/SideNav";
-import Header from "../../Components/Header/Header";
+import TermsContent from "../../components/PageContent/Terms/Terms";
+import SideNav from "../../components/Nav/SideNav";
+import Header from "../../components/Header/Header";
 import * as CgIcons from "react-icons/cg";
 
 const Terms = () => {

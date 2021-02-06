@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../../Components/Header/Header";
-import SideNav from "../../Components/Nav/SideNav";
+import Header from "../../components/Header/Header";
+import SideNav from "../../components/Nav/SideNav";
 import "./ShowPage.css";
 import Button from "react-bootstrap/Button";
 import * as CgIcons from "react-icons/cg";
@@ -26,10 +26,9 @@ function ShowPage() {
     <>
       <SideNav />
       <Header Link={profileLink5} Icon={profileIcon5} />
-      <div>
-        <h1 className="live-title">Live Performance</h1>
-      </div>
+
       <div className="live-background-container">
+        <h2 className="subtitle">Live Performance</h2>
         <span>
           Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
           sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -57,8 +56,8 @@ function ShowPage() {
               </NavButton>
             </li>
             <li>
-              <NavButton link={"/monologues"} buttonColor={"pink-button"}>
-                Monologues
+              <NavButton link={"/programme"} buttonColor={"pink-button"}>
+                Programme
               </NavButton>
             </li>
           </ul>

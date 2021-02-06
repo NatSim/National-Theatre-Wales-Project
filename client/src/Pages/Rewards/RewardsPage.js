@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../../Components/Header/Header";
-import SideNav from "../../Components/Nav/SideNav";
-import Rewards from "../../Components/PageContent/Rewards/Reward";
+import Header from "../../components/Header/Header";
+import SideNav from "../../components/Nav/SideNav";
+import Rewards from "../../components/PageContent/Rewards/Reward";
 import * as CgIcons from "react-icons/cg";
 
 function RewardsPage() {

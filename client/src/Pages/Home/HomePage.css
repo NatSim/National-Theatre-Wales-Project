@@ -18,6 +18,9 @@ body {
   background-color: #ff9f00;
   background-size: cover;
   opacity: 0.85;
+  border-top-style: double;
+  border-color: grey;
+  border-top-width: 0.5px;
 }
 
 .subtitle,

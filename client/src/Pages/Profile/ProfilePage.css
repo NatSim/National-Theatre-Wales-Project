@@ -35,6 +35,9 @@
   padding: 10px 0px 50px 0px;
   position: relative;
   height: 100vh;
+  border-top-style: double;
+  border-color: grey;
+  border-top-width: 0.5px;
 }
 .profile-background-container::before {
   content: "";

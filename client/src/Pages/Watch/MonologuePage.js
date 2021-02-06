@@ -1,8 +1,8 @@
 import React from "react";
-import SideNav from "../../Components/Nav/SideNav";
+import SideNav from "../../components/Nav/SideNav";
 import "./MonologuePage.css";
-import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
-import Header from "../../Components/Header/Header";
+import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
+import Header from "../../components/Header/Header";
 import * as CgIcons from "react-icons/cg";
 
 const MonologuePage = () => {

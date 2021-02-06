@@ -8,6 +8,9 @@ body {
 
 .home-container-video {
   padding: 10%;
+  border-top-style: double;
+  border-color: grey;
+  border-top-width: 0.5px;
 }
 
 .info-container {

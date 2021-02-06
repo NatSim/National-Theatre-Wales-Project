@@ -1,9 +1,9 @@
 import React from "react";
 import "./AboutTeamPage.css";
-import AboutTeam from "../../Components/PageContent/AboutInfo/AboutTeam";
-import SideNav from "../../Components/Nav/SideNav";
-import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
-import Header from "../../Components/Header/Header";
+import AboutTeam from "../../components/PageContent/AboutInfo/AboutTeam";
+import SideNav from "../../components/Nav/SideNav";
+import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
+import Header from "../../components/Header/Header";
 
 function AboutTeamPage() {
   const videoTeam = "https://www.youtube.com/watch?v=xV2FF-YUy94";

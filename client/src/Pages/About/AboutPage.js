@@ -1,10 +1,10 @@
 import React from "react";
-import AboutInfo from "../../Components/PageContent/AboutInfo/AboutInfo";
-import "../../Components/Buttons/MainButton.css";
+import AboutInfo from "../../components/PageContent/AboutInfo/AboutInfo";
+import "../../components/Buttons/MainButton.css";
 import "./AboutPage.css";
-import SideNav from "../../Components/Nav/SideNav";
-import VideoPlayer from "../../Components/PageContent/VideoPlayer/VideoPlayer";
-import Header from "../../Components/Header/Header";
+import SideNav from "../../components/Nav/SideNav";
+import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
+import Header from "../../components/Header/Header";
 import * as CgIcons from "react-icons/cg";
 
 //About Page
@@ -21,6 +21,7 @@ const About = () => {
       <Header Link={Item} Icon={itemIcon} />
       <div className="section-color">
         <div className="home-container-video">
+          <h2 className="subtitle">About</h2>
           <VideoPlayer url={videoTeam} className="video" />
         </div>
         <div className="background-outer">
