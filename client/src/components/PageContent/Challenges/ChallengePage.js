@@ -1,5 +1,5 @@
 import React from "react";
-import simpleText, { direction } from "../../../Models/simpleActs";
+import simpleText, { direction } from "../../../Models/simpleText";
 import ChallengeItem from "../Challenges/ChallengeItem";
 import "./ChallengePage.css";
 import SideNav from "../../Nav/SideNav";
@@ -14,14 +14,25 @@ const profileIcon = <CgIcons.CgProfile className="profile-svg" />;
 //Display 7 pages in one component? State
 //simpleText content
 const ChallengePage = (props) => {
-  //challenge choice has 0,1,2,3,4,5,6 challenges(7 total) should make a challenge choice for each SA challenge to display
+  //*****function steps:
 
+  //1.send clicked item(image) to challenges collection in(database).
+  //1b.clicked item = simpleText array object i.e simpleText[0].image.
+
+  //2.function if (button is clicked) arrayItemIndex.push to user collection array.
+  //2a. if(onclick === simpleText id [0]) {
+  // arrayItemIndex.push to user challenges collection db
+  //} ****
+  const sendClickedItemToDB = () => {};
+  console.log(simpleText[0].id);
+  //challenge choice has 0,1,2,3,4,5,6 challenges(7 total) should make a challenge choice for each SA challenge to display
   // const [id, setId] = useState(simpleText[0].id);
 
   //onclick handler takes in image icon link
   const onClickHandler = (arrayElement) => {};
   console.log(props.match.params.id);
   const id = props.match.params.id;
+
   return (
     // return 7 challenge content in component below, from array?
     <>

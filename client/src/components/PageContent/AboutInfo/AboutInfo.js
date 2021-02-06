@@ -20,13 +20,7 @@ function AboutInfo() {
         of Pembrokeshire, exploring the key things that matter most for the
         people of the county.
       </article>
-      <article>
-        <img
-          className="pem-image2"
-          src={beeimage}
-          alt="Tide-Whisperer-TEAM-Social Pembrokeshire Landscape"
-        ></img>
-      </article>
+
       <article>
         Having decided on climate change and the environment as the most urgent
         issue, Go Tell The Bees is the community’s co-created response – a bold
@@ -54,6 +48,13 @@ function AboutInfo() {
         >
           National Theatre Wales
         </a>
+      </article>
+      <article>
+        <img
+          className="pem-image2"
+          src={beeimage}
+          alt="Tide-Whisperer-TEAM-Social Pembrokeshire Landscape"
+        ></img>
       </article>
     </section>
   );
