@@ -18,6 +18,7 @@ import ProfilePage from "./Profile/ProfilePage";
 import ShowPage from "./Show/ShowPage";
 import AboutTeamPage from "./About/AboutTeamPage";
 import RewardsPage from "./Rewards/RewardsPage";
+import Footer from "../components/PageContent/Footer/Footer";
 
 // // SERVICES
 // import userService from "../services/userService";
@@ -46,6 +47,7 @@ function App() {
           <Route path="/reward" component={RewardsPage} />
         </Switch>
       </Router>
+      <Footer />
     </>
   );
 }

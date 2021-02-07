@@ -17,7 +17,7 @@ const MonologuePage = () => {
       <SideNav />
       <Header Link={profileLink8} Icon={profileIcon8} />
       <div>
-        <h1 className="title">Monologues</h1>
+        <h2 className="subtitle">Monologues</h2>
         <div>
           <VideoPlayer url={videoMono} />
         </div>

@@ -17,7 +17,7 @@ const MusicPage = () => {
       <SideNav />
       <Header Link={profileLink2} Icon={profileIcon2} />
       <div>
-        <h1 className="title">Music</h1>
+        <h2 className="subtitle">Music</h2>
         <div>
           <VideoPlayer url={videoMusic} />
           <span className="title-text">

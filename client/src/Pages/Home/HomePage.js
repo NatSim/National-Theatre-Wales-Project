@@ -11,7 +11,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Header from "../../components/Header/Header";
-import * as ImIcons from "react-icons/im";
 import SideNav from "../../components/Nav/SideNav";
 import * as GrIcons from "react-icons/gr";
 
@@ -39,9 +38,6 @@ const clickHere = "Click Here";
 
 //Card Button Link
 const ntwLink = "https://www.nationaltheatrewales.org/";
-
-//Footer href Links
-const ntwFacebookPage = "https://www.facebook.com/nationaltheatrewales/";
 
 function HomePage(props) {
   //Header Login/Reg icon/path
@@ -123,36 +119,6 @@ function HomePage(props) {
           </Col>
         </Row>
       </Container>
-      <footer className="home-footer">
-        <ul className="footer-ul-control">
-          <li>
-            <a href={ntwFacebookPage} target="_blank" rel="noreferrer">
-              <ImIcons.ImFacebook2 />
-            </a>
-          </li>
-          <li>
-            <Link to={"/contact"} className="Link-control">
-              Contact Us
-            </Link>
-          </li>
-
-          <li>
-            <Link to={"/terms"} className="Link-control">
-              Terms{`&`}Conditions
-            </Link>
-          </li>
-          <li>
-            <Link to={"/privacy"} className="Link-control">
-              Privacy
-            </Link>
-          </li>
-        </ul>
-        <p>
-          2021 Go Tell The Bees Copyright © National Theatre Wales. Website
-          developed by Natasha Simone. Registered Company No. 6693227 Charity
-          Registration No. 1127952
-        </p>
-      </footer>
     </>
   );
 }
