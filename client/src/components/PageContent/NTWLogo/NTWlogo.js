@@ -4,7 +4,7 @@ import "./NTWlogo.css";
 
 //NTW Logo Component
 const NTWlogo = () => (
-  <div>
+  <div className="flex-container">
     <img className="ntw-main" src={Logo} alt="Logo" />
   </div>
 );

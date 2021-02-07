@@ -1,12 +1,12 @@
 .largeimage {
   border-radius: 10%;
-  align-items: left;
+  /* align-items: left; */
   justify-content: space-evenly;
 }
 
 .bee1 {
   border-radius: 10%;
-  float: right;
+  /* float: right; */
   width: 304px;
   height: 200px;
   transform: rotateY(180deg);
@@ -15,7 +15,7 @@
 
 .team2 {
   border-radius: 10%;
-  float: left;
+  /* float: left; */
   width: 307px;
   height: 191px;
   margin-top: 30px;

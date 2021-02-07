@@ -1,16 +1,18 @@
 import React from "react";
 import NTWlogo from "../../components/PageContent/NTWLogo/NTWlogo";
 import LargeImage from "../../components/PageContent/LargeImages/LargeImage";
+import LargeImage2 from "../../components/PageContent/LargeImages/LargeImage2";
 import "./LandingPage.css";
 
 function LandingPage() {
   return (
     //React.Fragment shorcut
     <>
-      {/* <header className="header-banner"></header> */}
-      <NTWlogo />
-      <LargeImage />
-      {/* <footer id="footer-banner"></footer> */}
+      <div className="parent-flex-container">
+        <NTWlogo className="ntw-logo-control" />
+        <LargeImage className="large-bee-control" />
+        <LargeImage2 />
+      </div>
     </>
   );
 }
