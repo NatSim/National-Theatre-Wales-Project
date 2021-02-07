@@ -32,12 +32,14 @@ const SimpleActsPage = (props) => {
   return (
     <>
       <Header Link={Item} Icon={itemIcon} />
-      <div className="simplepage-container">
+      <div className="home-container-video3">
         <h2 className="subtitle">Simple Acts</h2>
         <div className="simple-acts">
           <VideoPlayer url={videoSimple} />
         </div>
-        <span>Complete a challenge to gain your reward</span>
+        <span className="challenge-text">
+          Complete a challenge to gain your reward
+        </span>
         <section className="flex-container">
           <div className="child-container">
             <div>

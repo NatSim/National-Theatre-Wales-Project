@@ -9,7 +9,7 @@ import * as CgIcons from "react-icons/cg";
 const ProfilePage = () => {
   //Header Profile icon/path
   const loginLink = "/profile";
-  const loginIcon = [<CgIcons.CgProfile className="profile-svg" />];
+  const loginIcon = <CgIcons.CgProfile className="profile-svg" />;
 
   //set state for username
   let username = "Natasha";

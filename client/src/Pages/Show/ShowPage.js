@@ -38,7 +38,7 @@ function ShowPage() {
           vulputate velit esse molestie consequat, vel illum dolore eu feugiat
           nulla facilisis at vero eros et accumsan.{" "}
         </span>
-        <div className="nav-container-control">
+        {/* <div className="nav-container-control">
           <ul>
             <li>
               <NavButton link={"/simpleacts"} buttonColor={"simple-button"}>
@@ -61,7 +61,7 @@ function ShowPage() {
               </NavButton>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -51,6 +51,9 @@ body {
   background-color: #82d121;
   background-size: cover;
   opacity: 0.85;
+  border-top-style: double;
+  border-color: grey;
+  border-top-width: 0.5px;
 }
 
 video,
