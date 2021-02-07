@@ -8,7 +8,8 @@ import Learn1 from "../../images/Learn1.jpg";
 import Plant from "../../images/Plant.jpg";
 import TakeAWalk from "../../images/TakeAWalk.jpg";
 import "./SimpleActPage.css";
-import SideNav from "../../components/Nav/SideNav";
+import Header from "../../components/Header/Header";
+import * as CgIcons from "react-icons/cg";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 
 const SAPrompts = (props) => {
@@ -25,13 +26,14 @@ const SimpleActsPage = (props) => {
   const videoSimple =
     "https://www.youtube.com/watch?v=qxB3-sw2HAQ&feature=emb_logo";
 
+  const Item = "/profile";
+  const itemIcon = <CgIcons.CgProfile className="profile-svg" />;
+
   return (
     <>
-      <SideNav />
+      <Header Link={Item} Icon={itemIcon} />
       <div className="simplepage-container">
-        <h1 id="simple-title" className="title">
-          Simple Acts
-        </h1>
+        <h2 className="subtitle">Simple Acts</h2>
         <div className="simple-acts">
           <VideoPlayer url={videoSimple} />
         </div>
