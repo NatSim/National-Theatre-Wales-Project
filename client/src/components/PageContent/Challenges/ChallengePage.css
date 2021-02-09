@@ -3,7 +3,7 @@ body {
 }
 /*SA Prompt Page generic*/
 
-#prompt-text {
+.prompt-text {
   /* color: white; */
   font-size: 30px;
 }
@@ -36,6 +36,7 @@ body {
   padding: 24px;
 }
 
+/*small image setting, to be changed at later stage in favor of full app media queries setting*/
 @media only screen and (max-width: 600px) {
   .image {
     width: 70px;
@@ -46,9 +47,34 @@ body {
 .simple-acts {
   padding: 50px;
 }
-
+/*Background*/
 .challenge-page {
+  padding: 10px 0px 50px 0px;
+  position: relative;
+}
+
+.challenge-page::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   background-color: #82d121;
+  background-size: cover;
+  opacity: 0.85;
+  border-top-style: double;
+  border-color: grey;
+  border-top-width: 0.5px;
+}
+
+.prompt-text,
+.act-control-child,
+.act-control-container,
+.act-control-child,
+.image-container,
+.intro-text {
+  position: relative;
 }
 
 /*Challenge Item layout control */

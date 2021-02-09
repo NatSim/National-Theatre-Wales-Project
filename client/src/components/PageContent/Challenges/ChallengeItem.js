@@ -13,25 +13,25 @@ const ChallengeItem = ({
   challengeChoice,
 }) => {
   return (
-    <div className="challenge-page">
-      <section className="prompt-act-container">
-        <div className="prompt-text-container">
-          <h1 className="subtitle" id="prompt-text">
-            Your Simple Act is to...
-          </h1>
-        </div>
+    <>
+      <div className="challenge-page">
+        <section className="prompt-act-container">
+          <div className="prompt-text-container">
+            <h1 className="prompt-text">Your Simple Act is to...</h1>
+          </div>
 
-        <div className="act-control-container">
-          <h2 className="act-control-child">{act}</h2>
-        </div>
-        <div className="image-container">
-          <img className="image" src={image} alt={"simple act challenge"} />
-        </div>
+          <div className="act-control-container">
+            <h2 className="act-control-child">{act}</h2>
+          </div>
+          <div className="image-container">
+            <img className="image" src={image} alt={"simple act challenge"} />
+          </div>
 
-        <div className="intro-text">
-          <p className="text-control"> {text1}</p>
-        </div>
-      </section>
+          <div className="intro-text">
+            <p className="text-control"> {text1}</p>
+          </div>
+        </section>
+      </div>
       <div className="challenge-page-background2">
         <section className="article-image-container">
           <div className="flex-parent">
@@ -44,9 +44,9 @@ const ChallengeItem = ({
             </div>
           </div>
         </section>
+        <CompleteChallengeButton />
       </div>
-      <CompleteChallengeButton />
-    </div>
+    </>
   );
 };
 
