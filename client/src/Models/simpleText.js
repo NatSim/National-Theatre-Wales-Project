@@ -8,7 +8,7 @@ import TakeAWalk from "../images/TakeAWalk.jpg";
 
 const simpleText = [
   {
-    act: "Be kind to your neighbour",
+    act: "be kind to your neighbour",
     image: BeKind,
 
     text1:
@@ -18,42 +18,42 @@ const simpleText = [
       "Did you know that acts of kindness are often accompanied by emotional warmth. Emotional warmth produces the hormone, oxytocin, therefore kindness can be said to be cardioprotective - being kind really can help your heart!",
   },
   {
-    act: "Connect",
+    act: "connect",
     image: Connect,
     text1: "Example Text1",
     text2Subheading: "Did you know",
     text2: "Example Text2",
   },
   {
-    act: "Consider",
+    act: "consider",
     image: Consider,
     text1: "ExampleText1",
     text2Subheading: "Did you know",
     text2: "Example Text2",
   },
   {
-    act: "Consume",
+    act: "consume",
     image: Consume,
     text1: "ExampleText1",
     text2Subheading: "Did you know",
     text2: "Example Text2",
   },
   {
-    act: "Learn",
+    act: "learn",
     image: Learn1,
     text1: "ExampleText5",
     text2Subheading: "Did you know",
     text2: "Example Text2",
   },
   {
-    act: "Plant",
+    act: "plant",
     image: Plant,
     text1: "ExampleText6",
     text2Subheading: "Did you know",
     text2: "Example Text2",
   },
   {
-    act: "Walk",
+    act: "walk",
     image: TakeAWalk,
     text1: "ExampleText7",
     text2Subheading: "Did you know",

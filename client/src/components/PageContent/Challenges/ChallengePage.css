@@ -22,7 +22,6 @@ body {
 /* All Page sizing & Background-colors*/
 
 .challenge-page {
-  height: 450vh;
   padding: 34px 24px 0px;
 }
 
@@ -37,11 +36,15 @@ body {
 }
 
 /*small image setting, to be changed at later stage in favor of full app media queries setting*/
-@media only screen and (max-width: 600px) {
-  .image {
-    width: 70px;
-    height: 70px;
+/* @media only screen and (max-width: 600px) {
+  .place-holder {
+    width: 100%;
   }
+} */
+
+.place-holder {
+  max-width: 100%;
+  height: auto;
 }
 
 .simple-acts {
@@ -101,6 +104,7 @@ body {
 .text2-subheading {
   padding: 0px 60px;
   text-align: left;
+  display: block;
 }
 
 .prompt-act-container {
