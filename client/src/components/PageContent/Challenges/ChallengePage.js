@@ -45,8 +45,10 @@ const ChallengePage = (props) => {
           challengeChoice={id}
           onClickHandler={onClickHandler}
           direction={direction}
+          act={simpleText[id - 1].act}
           image={simpleText[id - 1].image}
           text1={simpleText[id - 1].text1}
+          text2Subheading={simpleText[id - 1].text2Subheading}
           text2={simpleText[id - 1].text2}
         />
       </div>

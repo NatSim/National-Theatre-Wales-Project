@@ -3,8 +3,9 @@ body {
 }
 /*SA Prompt Page generic*/
 
-.prompt-text {
-  color: white;
+#prompt-text {
+  /* color: white; */
+  font-size: 30px;
 }
 
 .charity-name {
@@ -60,4 +61,22 @@ body {
 .article-image-container {
   padding: 50px 5px 30px 5px;
   margin: 5px 5px 25px 5px;
+}
+
+.intro-text {
+  margin: 0px 60px;
+}
+/*act control transitionIn (from homepage.css)*/
+.act-control-child {
+  animation: transitionIn 25s;
+}
+
+.text-control,
+.text2-subheading {
+  padding: 0px 60px;
+  text-align: left;
+}
+
+.prompt-act-container {
+  padding-bottom: 90px;
 }
