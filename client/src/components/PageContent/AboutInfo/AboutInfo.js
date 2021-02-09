@@ -40,7 +40,7 @@ function AboutInfo() {
       <article>
         <br />
         <span className="more-info">
-          To find out more about Go Tell The Bees {`&`} the show visit:
+          To find out more about Go Tell The Bees:
         </span>
         <a
           className="ntw-link"

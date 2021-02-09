@@ -9,31 +9,38 @@ import TakeAWalk from "../images/TakeAWalk.jpg";
 const simpleText = [
   {
     image: BeKind,
-    text: "Example Text1",
+    text1: "Example Text1",
+    text2: "Example Text2",
   },
   {
     image: Connect,
-    text: "Example Text2",
+    text1: "Example Text1",
+    text2: "Example Text2",
   },
   {
     image: Consider,
-    text: "ExampleText3",
+    text1: "ExampleText1",
+    text2: "Example Text2",
   },
   {
     image: Consume,
-    text: "ExampleText4",
+    text1: "ExampleText1",
+    text2: "Example Text2",
   },
   {
     image: Learn1,
-    text: "ExampleText5",
+    text1: "ExampleText5",
+    text2: "Example Text2",
   },
   {
     image: Plant,
-    text: "ExampleText6",
+    text1: "ExampleText6",
+    text2: "Example Text2",
   },
   {
     image: TakeAWalk,
-    text: "ExampleText7",
+    text1: "ExampleText7",
+    text2: "Example Text2",
   },
 ];
 

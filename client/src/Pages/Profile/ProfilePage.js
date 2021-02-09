@@ -12,7 +12,7 @@ const ProfilePage = () => {
   const loginIcon = <CgIcons.CgProfile className="profile-svg" />;
 
   //set state for username
-  let username = "Natasha";
+  let username = "Username";
   const Greeting = (props) => {
     return <h2 className="subtitle">Welcome {username}</h2>;
   };

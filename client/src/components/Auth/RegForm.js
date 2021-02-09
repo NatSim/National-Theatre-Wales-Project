@@ -174,7 +174,7 @@ function RegistrationForm(props) {
         </button>
         <br />
         <Link to="/login" className="auth-route-link">
-          Already a users,login here
+          Already a user,login here
         </Link>
       </form>
     </div>

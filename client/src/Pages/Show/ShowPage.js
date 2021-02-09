@@ -1,21 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import SideNav from "../../components/Nav/SideNav";
 import "./ShowPage.css";
-import Button from "react-bootstrap/Button";
+//import Button from "react-bootstrap/Button";
 import * as CgIcons from "react-icons/cg";
 
-const NavButton = (props) => {
-  return (
-    //Reusable Nav button component
-    <Link to={props.link}>
-      <Button id={props.buttonColor} className="default-button">
-        {props.children}
-      </Button>
-    </Link>
-  );
-};
+// const NavButton = (props) => {
+//   return (
+//     //Reusable Nav button component
+//     <Link to={props.link}>
+//       <Button id={props.buttonColor} className="default-button">
+//         {props.children}
+//       </Button>
+//     </Link>
+//   );
+// };
 
 function ShowPage() {
   //Header Profile icon/path

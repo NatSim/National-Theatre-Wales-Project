@@ -49,3 +49,15 @@ body {
 .challenge-page {
   background-color: #82d121;
 }
+
+/*Challenge Item layout control */
+
+.flex-parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-image-container {
+  padding: 50px 5px 30px 5px;
+  margin: 5px 5px 25px 5px;
+}
