@@ -65,8 +65,8 @@ function HomePage(props) {
                 </Link>
               </li>
               <li>
-                <NavButton link={"/monologues"} buttonColor={"green-button"}>
-                  Watch
+                <NavButton link={"/connect"} buttonColor={"green-button"}>
+                  Connect
                 </NavButton>
               </li>
               <li>

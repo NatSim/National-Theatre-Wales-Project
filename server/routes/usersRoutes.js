@@ -56,6 +56,7 @@ module.exports = (app) => {
     });
   });
 
+  //User delet account
   app.delete(`/api/user/:id`, async (req, res) => {
     const { id } = req.params;
 

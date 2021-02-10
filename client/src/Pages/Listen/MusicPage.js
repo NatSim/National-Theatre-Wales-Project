@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import SideNav from "../../components/Nav/SideNav";
+// import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import "./MusicPage.css";
 import * as CgIcons from "react-icons/cg";
@@ -14,16 +14,16 @@ const MusicPage = () => {
 
   return (
     <>
-      <SideNav />
+      {/* <SideNav /> */}
       <Header Link={profileLink2} Icon={profileIcon2} />
-      <div>
+      <div className="home-container-video4">
         <h2 className="subtitle">Music</h2>
-        <div>
+        <div className="video-container-child">
           <VideoPlayer url={videoMusic} />
-          <span className="title-text">
-            Carys Eleri - Go Tell The Bees/Dod nôl at fy nghoed
-          </span>
         </div>
+        <span className="title-text">
+          Carys Eleri - Go Tell The Bees/Dod nôl at fy nghoed
+        </span>
       </div>
     </>
   );

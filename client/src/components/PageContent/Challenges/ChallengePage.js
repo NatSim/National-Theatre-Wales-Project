@@ -17,19 +17,26 @@ const profileIcon = <CgIcons.CgProfile className="profile-svg" />;
 const ChallengePage = (props) => {
   //*****function steps:
 
-  //1.send clicked item(image) to challenges collection in(database).
-  //1b.clicked item = simpleText array object i.e simpleText[0].image.
+  //1.send clicked item(id) to user collection, challenge array in(database).
 
-  //2.function if (button is clicked) arrayItemIndex.push to user collection array.
-  //2a. if(onclick === simpleText id [0]) {
-  // arrayItemIndex.push id to user challenges (array)collection db
-  //} ****
   const sendClickedItemToDB = () => {
     const id = props.match.params.id;
     const payload = {
       email: "natsimbig@gmail.com",
       id: 1,
     };
+    axios
+      .post("http://localhost:5000/challenge", payload)
+      .then(function (response) {
+        if (response.status === 202) {
+          console.log("Succesful");
+        } else {
+          console.log("Error!");
+        }
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
   //challenge choice has 0,1,2,3,4,5,6 challenges(7 total) should make a challenge choice for each SA challenge to display
