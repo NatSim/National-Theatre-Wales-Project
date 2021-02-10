@@ -2,8 +2,10 @@
   background-color: white;
 }
 
+/*responsive settings*/
 .image {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -45,7 +47,7 @@ video,
 .flex-container {
   border: 5px solid white;
   border-style: hidden;
-  padding: 25px;
+
   flex-wrap: wrap;
 }
 
