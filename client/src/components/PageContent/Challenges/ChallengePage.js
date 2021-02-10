@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import simpleText, { direction } from "../../../Models/simpleText";
 import ChallengeItem from "../Challenges/ChallengeItem";
 import "./ChallengePage.css";
@@ -21,18 +22,25 @@ const ChallengePage = (props) => {
 
   //2.function if (button is clicked) arrayItemIndex.push to user collection array.
   //2a. if(onclick === simpleText id [0]) {
-  // arrayItemIndex.push to user challenges collection db
+  // arrayItemIndex.push id to user challenges (array)collection db
   //} ****
-  // const sendClickedItemToDB = () => {
-  //   const arrayItem = simpleText[0].image;
-  // };
+  const sendClickedItemToDB = () => {
+    const id = props.match.params.id;
+    const payload = {
+      email: "natsimbig@gmail.com",
+      id: 1,
+    };
+  };
 
   //challenge choice has 0,1,2,3,4,5,6 challenges(7 total) should make a challenge choice for each SA challenge to display
   // const [id, setId] = useState(simpleText[0].id);
 
   //onclick handler takes in image icon
-  const onClickHandler = (arrayElement) => {};
-  console.log(props.match.params.id);
+  const onClickHandler = (arrayElement) => {
+    console.log("button was clicked!");
+
+    sendClickedItemToDB();
+  };
   const id = props.match.params.id;
 
   return (

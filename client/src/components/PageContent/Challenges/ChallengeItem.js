@@ -10,6 +10,7 @@ const ChallengeItem = ({
   text1,
   text2,
   text2Subheading,
+  onClickHandler,
   challengeChoice,
 }) => {
   return (
@@ -44,7 +45,7 @@ const ChallengeItem = ({
             </div>
           </div>
         </section>
-        <CompleteChallengeButton />
+        <CompleteChallengeButton onClickHandler={onClickHandler} />
       </div>
     </>
   );

@@ -11,19 +11,14 @@ import Button from "react-bootstrap/Button";
 function(send details to server)
 } */
 const CompleteChallengeButton = (props) => {
-  //axios request to server here
+  //we use props(object)
 
-  //Button Handler
-  const onClickHandler = (event) => {
-    console.log("button was clicked!");
-  };
   return (
     <>
       <div>
         <Button
-          onClick={onClickHandler}
+          onClick={props.onClickHandler}
           type="submit"
-          id={props.id}
           className="challenge"
         >
           Completed
