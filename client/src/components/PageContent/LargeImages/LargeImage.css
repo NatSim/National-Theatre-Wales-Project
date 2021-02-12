@@ -4,12 +4,16 @@
   justify-content: space-evenly;
 }
 
-.bee1 {
+.main-bee-logo {
+  width: 100%;
+}
+
+.main-bee-logo {
   border-radius: 10%;
   /* float: right; */
-  width: 304px;
-  height: 200px;
-  transform: rotateY(180deg);
+  width: 300px;
+  height: auto;
+
   box-shadow: 5px 5px whitesmoke;
 }
 

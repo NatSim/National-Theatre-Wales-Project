@@ -11,7 +11,7 @@ function LandingPage() {
       <div className="parent-flex-container">
         <NTWlogo className="ntw-logo-control" />
         <LargeImage className="large-bee-control" />
-        <LargeImage2 />
+        {/* <LargeImage2 /> */}
       </div>
     </>
   );

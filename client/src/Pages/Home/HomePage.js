@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./HomePage.css";
 import BeeStamp from "../../images/whole-beeimage.png";
 import Features from "../../components/PageContent/Features/Features";
-import NTWLogo from "../../images/logo.svg";
+import NTWLogo from "../../images/logos/NTWLogo/NTW_Logo.png";
 import Party from "../../images/NTWHaverHub.jpg";
 import Tide from "../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import Col from "react-bootstrap/Col";

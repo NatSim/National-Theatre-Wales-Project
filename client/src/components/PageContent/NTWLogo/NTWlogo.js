@@ -1,11 +1,11 @@
 import React from "react";
-import Logo from "../../../images/logo.svg";
+import NTWLogo from "../../../images/logos/NTWLogo/NTW_Logo.png";
 import "./NTWlogo.css";
 
 //NTW Logo Component
 const NTWlogo = () => (
   <div className="flex-container">
-    <img className="ntw-main" src={Logo} alt="Logo" />
+    <img className="ntw-main" src={NTWLogo} alt="Logo" />
   </div>
 );
 

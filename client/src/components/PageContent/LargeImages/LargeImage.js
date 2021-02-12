@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "../../../images/beeimage20.png";
+import MainBeeLogo from "../../../images/logos/MainBeeLogo/GTTB_Logo.jpg";
 
 //NTW Image Functional Component
 
 const LargeImage = () => (
   <div className="largeimage">
     <div className="flex-container">
-      <img className="bee1" src={Image} alt="Large half Bee" />
+      <img className="main-bee-logo" src={MainBeeLogo} alt="Large half Bee" />
     </div>
   </div>
 );
