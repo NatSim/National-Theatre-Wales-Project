@@ -26,10 +26,10 @@ const ChallengePage = (props) => {
       id: 1,
     };
     axios
-      .post("http://localhost:5000/challenge", payload)
+      .put("http://localhost:5000/challenge/:id", payload)
       .then(function (response) {
         if (response.status === 202) {
-          console.log("Succesful");
+          console.log("Succesfull");
         } else {
           console.log("Error!");
         }

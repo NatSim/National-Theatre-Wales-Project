@@ -3,9 +3,7 @@ const { Schema } = mongoose;
 
 const challengesSchema = new Schema({
   id: Number,
-  direction: String,
-  image: String,
-  text: String,
+  email: String,
 });
 
 mongoose.model("challenges", challengesSchema);

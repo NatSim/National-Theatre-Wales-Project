@@ -22,8 +22,8 @@ const SidebarData = [
   },
 
   {
-    title: "Watch",
-    path: "/monolgues",
+    title: "Connect",
+    path: "/connect",
     icon: <ImIcons.ImFilm />,
     cName: "nav-text",
   },

@@ -1,0 +1,22 @@
+.home-footer {
+  margin: 100px 0px 50px 0px;
+  font-size: 16px;
+}
+
+/*fb/contacts/terms/privacy section*/
+.footer-ul-control {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Link-control {
+  font-size: 16px;
+}
+
+.charity-logo {
+  max-width: 100%;
+}
+.charity-logo {
+  width: 188px;
+  height: auto;
+}
