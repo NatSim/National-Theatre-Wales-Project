@@ -45,11 +45,13 @@ module.exports = (app) => {
     });
   });
 
-  app.put(`/api/users/:id/challenges/:challengeId`, async (req, res) => {
+  //incoming route(house for people to attend)
+  app.patch(`/api/users/challenge/`, async (req, res) => {
     const { id } = req.params;
-
+    //when id recieved=findByEmail, (email) used to find user and then update that user's challenge array
+    //challenge array true/false
     const user = await User.findByIdAndUpdate(id, req.body);
-
+    console.log("id received");
     return res.status(202).send({
       error: false,
       user,

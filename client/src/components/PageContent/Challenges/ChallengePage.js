@@ -23,10 +23,11 @@ const ChallengePage = (props) => {
     const id = props.match.params.id;
     const payload = {
       email: "natsimbig@gmail.com",
-      id: 1,
+      id: id,
     };
+    //sending data(people)
     axios
-      .put("http://localhost:5000/challenge/:id", payload)
+      .patch("http://localhost:5000/api/users/challenge/", payload)
       .then(function (response) {
         if (response.status === 202) {
           console.log("Succesfull");
