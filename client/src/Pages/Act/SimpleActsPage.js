@@ -33,7 +33,7 @@ const SimpleActsPage = (props) => {
     <>
       <Header Link={Item} Icon={itemIcon} />
       <div className="home-container-video3">
-        <h2 className="subtitle">Simple Acts</h2>
+        <h2 className="subtitle1">Simple Acts</h2>
         <div className="simple-acts">
           <VideoPlayer url={videoSimple} />
         </div>

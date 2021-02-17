@@ -5,9 +5,6 @@ import "./Footer.css";
 import Counterpoints from "../../../images/logos/Counterpoints/Counterpoints.jpg";
 import PHFLogo from "../../../images/logos/PaulHamlyn/PaulHamlynFoundation.jpg";
 import ACWColourLandscape from "../../../images/logos/ACW/ACWcolour.jpg";
-import ACWLandscapeBW from "../../../images/logos/ACW/ACWmono.jpg";
-import ACWPotraitColour from "../../../images/logos/ACW/ACWPotraitColour.jpg";
-import ACWPotraitBW from "../../../images/logos/ACW/ACWPotraitMono.jpg";
 
 const Footer = () => {
   //Footer href Links

@@ -14,7 +14,7 @@ const ProfilePage = () => {
   //set state for username
   let username = "Username";
   const Greeting = (props) => {
-    return <h2 className="subtitle">Welcome {username}</h2>;
+    return <h2 className="subtitle1">Welcome {username}</h2>;
   };
 
   return (

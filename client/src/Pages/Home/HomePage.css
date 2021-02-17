@@ -23,7 +23,8 @@ body {
   border-top-width: 0.5px;
 }
 
-.subtitle,
+.subtitle1,
+.subtitle2,
 .middle-nav-list,
 h2 {
   position: relative;
@@ -59,7 +60,8 @@ h2 {
   animation: transitionIn 2s;
 }
 
-.subtitle {
+.subtitle1,
+.subtitle2 {
   animation: transitionIn 8s;
 }
 
@@ -89,7 +91,13 @@ h2 {
   width: 100%;
 }
 
-.subtitle {
+.subtitle1 {
+  display: -webkit-box;
+  margin: 45px 10px 30px 0px;
+  padding: 60px 20px 10px 20px;
+}
+
+.subtitle2 {
   display: -webkit-box;
   margin: 30px 10px 30px 0px;
   padding: 20px;

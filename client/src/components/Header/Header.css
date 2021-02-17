@@ -1,6 +1,6 @@
 /*Header */
 
-.header {
+#nav-header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -8,12 +8,7 @@
   border-bottom-style: double;
   border-color: wheat;
   background-color: white;
-}
-.content {
-  padding: 16px;
-}
-.sticky + .content {
-  padding-top: 102px;
+  height: 20px;
 }
 
 .nav-links {

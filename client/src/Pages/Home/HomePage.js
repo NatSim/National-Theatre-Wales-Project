@@ -52,7 +52,8 @@ function HomePage(props) {
         <div className="background-outer"></div>
         <main>
           <nav className="nav-container">
-            <h2 className="subtitle">Discover</h2>
+            <h2 className="subtitle1">Discover</h2>
+
             <ul className="middle-nav-list">
               <li>
                 <Link to={"/about"}>
@@ -90,7 +91,7 @@ function HomePage(props) {
         </main>
       </div>
 
-      <h2 className="subtitle">Explore</h2>
+      <h2 className="subtitle2">Explore</h2>
       <Container className="card-control">
         <Row>
           <Col sm>

@@ -21,7 +21,7 @@ const About = () => {
       <Header Link={Item} Icon={itemIcon} />
       <div className="section-color">
         <div className="home-container-video">
-          <h2 className="subtitle">About</h2>
+          <h2 className="subtitle1">About</h2>
           <VideoPlayer url={videoTeam} className="video" />
         </div>
         <div className="background-outer">

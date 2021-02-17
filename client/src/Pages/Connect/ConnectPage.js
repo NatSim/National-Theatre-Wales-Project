@@ -17,7 +17,7 @@ const ConnectPage = () => {
       <SideNav />
       <Header Link={profileLink8} Icon={profileIcon8} />
       <div>
-        <h2 className="subtitle">Podcasts</h2>
+        <h2 className="subtitle1">Podcasts</h2>
         <div>
           <VideoPlayer url={videoMono} />
         </div>
