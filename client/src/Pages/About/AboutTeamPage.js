@@ -19,7 +19,7 @@ function AboutTeamPage() {
       <Header Link={Item} Icon={itemIcon} />
       <div className="section-color">
         <div className="home-container-video2">
-          <h2 className="subtitle">Team</h2>
+          <h2 className="subtitle1">Team</h2>
           <VideoPlayer url={videoTeam} className="video" />
         </div>
         <div className="background-outer">

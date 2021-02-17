@@ -28,7 +28,7 @@ function ShowPage() {
       <Header Link={profileLink5} Icon={profileIcon5} />
 
       <div className="live-background-container">
-        <h2 className="subtitle">Live Performance</h2>
+        <h2 className="subtitle1">Live Performance</h2>
         <span>
           Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
           sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
