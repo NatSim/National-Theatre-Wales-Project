@@ -66,6 +66,9 @@ const ChallengePage = (props) => {
           text1={simpleText[id - 1].text1}
           text2Subheading={simpleText[id - 1].text2Subheading}
           text2={simpleText[id - 1].text2}
+          discoverHeading={simpleText[id - 1].discoverHeading}
+          discoverItems={simpleText[id - 1].discoverItems}
+          artistLink={simpleText[id - 1].discoverItems.artistLink}
         />
       </div>
     </>

@@ -6,6 +6,10 @@ import Learn1 from "../images/Learn1.jpg";
 import Plant from "../images/Plant.jpg";
 import TakeAWalk from "../images/TakeAWalk.jpg";
 
+const artistLink = (
+  <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Artist</a>
+);
+
 const simpleText = [
   {
     act: "be kind to your neighbour",
@@ -16,6 +20,8 @@ const simpleText = [
     text2Subheading: "Did you know",
     text2:
       "Did you know that acts of kindness are often accompanied by emotional warmth. Emotional warmth produces the hormone, oxytocin, therefore kindness can be said to be cardioprotective - being kind really can help your heart!",
+    discoverHeading: "Discover",
+    discoverItems: ["Flim ", "Book ", artistLink],
   },
   {
     act: "connect",

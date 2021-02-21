@@ -65,4 +65,5 @@ video,
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  padding: 10px;
 }

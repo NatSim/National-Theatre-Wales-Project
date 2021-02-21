@@ -11,6 +11,8 @@ const ChallengeItem = ({
   text2,
   text2Subheading,
   onClickHandler,
+  discoverHeading,
+  discoverItems,
   challengeChoice,
 }) => {
   return (
@@ -43,6 +45,11 @@ const ChallengeItem = ({
             <div className="flex-child">
               <img className="place-holder" src={image} alt={"placeholder"} />
             </div>
+          </div>
+          <div className="flex-child">
+            <h2 className="discover-subheading">{discoverHeading}</h2>
+            <p className="discover-items-container"> {discoverItems}</p>
+            <span>{discoverItems.artistLink}</span>
           </div>
         </section>
         <CompleteChallengeButton onClickHandler={onClickHandler} />
