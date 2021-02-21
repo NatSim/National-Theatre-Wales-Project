@@ -2,7 +2,9 @@ import React from "react";
 import axios from "axios";
 import simpleText, {
   direction,
+  text2Subheading,
   discoverHeading,
+  quoteHeading,
 } from "../../../Models/simpleText";
 import ChallengeItem from "../Challenges/ChallengeItem";
 import "./ChallengePage.css";
@@ -67,12 +69,12 @@ const ChallengePage = (props) => {
           act={simpleText[id - 1].act}
           image={simpleText[id - 1].image}
           text1={simpleText[id - 1].text1}
-          text2Subheading={simpleText[id - 1].text2Subheading}
+          text2Subheading={text2Subheading}
           text2={simpleText[id - 1].text2}
           discoverHeading={discoverHeading}
           discoverItems={simpleText[id - 1].discoverItems}
           artistLink={simpleText[id - 1].discoverItems.artistLink}
-          quoteHeading={simpleText[id - 1].quoteHeading}
+          quoteHeading={quoteHeading}
           quote={simpleText[id - 1].quote}
         />
       </div>
