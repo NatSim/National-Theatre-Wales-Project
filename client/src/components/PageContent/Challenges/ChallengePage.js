@@ -60,7 +60,6 @@ const ChallengePage = (props) => {
     // return 7 challenge content in component below, from array?
     <>
       <div>
-        <SideNav />
         <Header Link={profileLink} Icon={profileIcon} />
         <ChallengeItem
           challengeChoice={id}

@@ -1,6 +1,5 @@
 import React from "react";
 import NTWLogo from "../../../images/logos/NTWLogo/NTW_Logo.png";
-import "./NTWlogo.css";
 
 //NTW Logo Component
 const NTWlogo = () => (

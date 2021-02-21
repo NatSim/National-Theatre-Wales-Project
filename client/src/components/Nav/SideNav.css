@@ -8,6 +8,11 @@
   float: left;
   cursor: pointer;
 }
+svg {
+  vertical-align: middle;
+  position: relative;
+  max-width: 100%;
+}
 
 .menu-bars {
   margin-left: 2rem;

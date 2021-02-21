@@ -1,0 +1,26 @@
+/*NTW Logo */
+
+.ntw-main {
+  max-width: 100%;
+  width: 100px;
+  height: auto;
+  float: right;
+}
+
+/* .ntw-logo-control {
+  border-radius: 10%;
+
+  justify-content: space-evenly;
+} */
+
+/*Bee Logo*/
+.main-bee-logo {
+  max-width: 100%;
+}
+
+.main-bee-logo {
+  border-radius: 10%;
+  width: 300px;
+  height: auto;
+  box-shadow: 5px 5px whitesmoke;
+}

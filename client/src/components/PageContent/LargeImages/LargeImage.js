@@ -5,7 +5,7 @@ import MainBeeLogo from "../../../images/logos/MainBeeLogo/GTTB_Logo.jpg";
 
 const LargeImage = () => (
   <div className="largeimage">
-    <div className="flex-container">
+    <div className="beeimage-container">
       <img className="main-bee-logo" src={MainBeeLogo} alt="Large half Bee" />
     </div>
   </div>
