@@ -1,6 +1,9 @@
 import React from "react";
 import axios from "axios";
-import simpleText, { direction } from "../../../Models/simpleText";
+import simpleText, {
+  direction,
+  discoverHeading,
+} from "../../../Models/simpleText";
 import ChallengeItem from "../Challenges/ChallengeItem";
 import "./ChallengePage.css";
 import SideNav from "../../Nav/SideNav";
@@ -66,9 +69,11 @@ const ChallengePage = (props) => {
           text1={simpleText[id - 1].text1}
           text2Subheading={simpleText[id - 1].text2Subheading}
           text2={simpleText[id - 1].text2}
-          discoverHeading={simpleText[id - 1].discoverHeading}
+          discoverHeading={discoverHeading}
           discoverItems={simpleText[id - 1].discoverItems}
           artistLink={simpleText[id - 1].discoverItems.artistLink}
+          quoteHeading={simpleText[id - 1].quoteHeading}
+          quote={simpleText[id - 1].quote}
         />
       </div>
     </>

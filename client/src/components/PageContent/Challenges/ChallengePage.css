@@ -88,6 +88,10 @@ body {
   justify-content: space-between;
 }
 
+.flex-child {
+  padding: 25px 0px 25px 0px;
+}
+
 .article-image-container {
   padding: 50px 5px 30px 5px;
   margin: 5px 5px 25px 5px;
@@ -103,8 +107,9 @@ body {
 
 .text-control,
 .text2-subheading,
-.discover-subheading {
-  padding: 0px 60px;
+.discover-subheading,
+.quote-heading {
+  padding: 0px 30px;
   text-align: left;
   display: block;
 }

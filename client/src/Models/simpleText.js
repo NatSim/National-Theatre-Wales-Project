@@ -20,8 +20,10 @@ const simpleText = [
     text2Subheading: "Did you know",
     text2:
       "Did you know that acts of kindness are often accompanied by emotional warmth. Emotional warmth produces the hormone, oxytocin, therefore kindness can be said to be cardioprotective - being kind really can help your heart!",
-    discoverHeading: "Discover",
+
     discoverItems: ["Flim ", "Book ", artistLink],
+    quoteHeading: "Simple Act Quote",
+    quote: "“No act of kindness, no matter how small, is ever wasted.” - Aesop",
   },
   {
     act: "connect",
@@ -29,6 +31,8 @@ const simpleText = [
     text1: "Example Text1",
     text2Subheading: "Did you know",
     text2: "Example Text2",
+
+    discoverItems: ["Flim ", "Book ", artistLink],
   },
   {
     act: "consider",
@@ -69,5 +73,8 @@ const simpleText = [
 
 const direction = "Your Simple Act is to...";
 export { direction };
+
+const discoverHeading = "Discover";
+export { discoverHeading };
 
 export default simpleText;
