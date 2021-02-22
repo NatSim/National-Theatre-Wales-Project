@@ -36,11 +36,10 @@ const SimpleActsPage = (props) => {
         <h2 className="subtitle1">Simple Acts</h2>
         <p className="challenge-text">
           With a few simple acts we can change how we interact with our
-          environment, and how we interact with each other.
-          {/* At the heart of Go
+          environment, and how we interact with each other. At the heart of Go
           Tell the Bees is the hope that by doing we can learn from each other,
           we can build confidence and skills and that we can experience through
-          all of the senses. */}
+          all of the senses.
           {/* We want this production to have a positive impact
           on communities. Learning in an active and imaginative way is critical
           to this. NTW TEAM have created and curated a hive of information,

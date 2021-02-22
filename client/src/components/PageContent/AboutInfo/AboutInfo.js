@@ -6,21 +6,17 @@ import "./AboutInfo.css";
 function AboutInfo() {
   return (
     <section>
-      <h1 className="heading-control">
+      <h3 className="heading-control">
         <u>Go Tell The Bees</u>
-      </h1>
-      <br />
+      </h3>
       <article>
         Planet Earth is in crisis. Digitally, we are more plugged in than ever
         before, yet so many of us talk of an increasing sense of disconnect from
-        others and the natural world around us…
+        others and the natural world around us… Over the last four years NTW
+        TEAM has been embedded in the communities of Pembrokeshire, exploring
+        the key things that matter most for the people of the county.
       </article>
-      <article>
-        Over the last four years NTW TEAM has been embedded in the communities
-        of Pembrokeshire, exploring the key things that matter most for the
-        people of the county.
-      </article>
-
+      <br />
       <article>
         Having decided on climate change and the environment as the most urgent
         issue, Go Tell The Bees is the community’s co-created response – a bold

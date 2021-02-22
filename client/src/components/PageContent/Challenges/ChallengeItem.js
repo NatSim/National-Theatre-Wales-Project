@@ -71,14 +71,15 @@ const ChallengeItem = ({
                 <li>{urlResources3}</li>
               </ul>
             </div>
+
+            <div className="flex-child">
+              <h3 className="resources-subheading">{charityHeading}</h3>
+              <span>{urlCharity}</span>
+            </div>
           </div>
-          <div className="flex-child">
+          <div className="flex-child" id="border-control">
             <h3 className="quote-heading">{quoteHeading}</h3>
             <p>{quote}</p>
-          </div>
-          <div className="flex-child">
-            <h3 className="resources-subheading">{charityHeading}</h3>
-            <span>{urlCharity}</span>
           </div>
         </section>
         <CompleteChallengeButton onClickHandler={onClickHandler} />

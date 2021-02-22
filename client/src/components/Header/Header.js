@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import mainBeeLogo from "../../images/logos/MainBeeLogo/GTTB_Logo.jpg";
 import "./Header.css";
 
 const Header = (props) => {
@@ -7,6 +8,13 @@ const Header = (props) => {
     <>
       <div className="header" id="nav-header">
         <ul className="nav-links">
+          <li className="bee-logo-parent">
+            <img
+              className="bee-logo-control"
+              src={mainBeeLogo}
+              alt="bee-logo"
+            />
+          </li>
           <Link to="/home" className="nav-child">
             <li> Home </li>
           </Link>
