@@ -153,60 +153,125 @@ const simpleText = [
     quote: "“No act of kindness, no matter how small, is ever wasted.” - Aesop",
   },
   {
-    act: "learn",
+    act: "Learn one new thing about Nature",
     image: Learn1,
-    text1: "ExampleText5",
+    text1:
+      "Imagine if you had a teacher as awe-inspiring and wise as Nature. The one who could help you find knowledge and wonder in the everyday. Rediscover your curiosity and adventurousness  Improve your well-being. Show you the importance of respect and humility.The teacher who could tell you crazy things that bend your mind, like that there are more trees on Earth than stars in the Milky Way. Or that giraffes are predominantly gay. Or that ocean is a home to nearly 95% of all life. Would you not want to learn about all that, and then share with everyone you meet?",
 
-    text2: "Example Text2",
+    text2:
+      "Did you know bees can map out a person’s facial characteristics, recognizing which kind souls would leave out nectar for them to come back to? “Look at the trees, look at the birds, look at the clouds, look at the stars and if you have eyes you will be able to see that the whole existence is joyful. Everything is simply happy”.- Osho",
 
-    urlFilm: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Film</a>
-    ),
+    urlFilm: <a href="">Film</a>,
     urlBook: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Book</a>
+      <a href="https://www.theguardian.com/environment/2016/sep/12/peter-wohlleben-man-who-believes-trees-talk-to-each-other">
+        Book
+      </a>
     ),
-    urlArtist: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Artist</a>
+    urlArtist: <a href="www.mileece.is/bio">Artist</a>,
+    urlResources: (
+      <a href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/">
+        Daisy Discovers Butterflies
+      </a>
     ),
 
-    quote: "“Quote Here”",
+    urlResources2: (
+      <a href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/#mission_1:_making_a_sunflower">
+        Make Your Own Sunflower
+      </a>
+    ),
+    urlResources3: (
+      <a href="https://www.nationaltheatrewales.org/plants-and-animals-escape-room/">
+        Plants And Animals Escape Room
+      </a>
+    ),
+    urlCharity: (
+      <a href="https://www.kew.org/kew-gardens/whats-in-the-gardens/the-hive">
+        Kew Gardens
+      </a>
+    ),
+    quote:
+      "“The goal of life is to make your heartbeat match the beat of the universe, to match your nature with nature” – Joseph Campbell",
   },
   {
-    act: "plant",
+    act: "Plant a Seed",
     image: Plant,
-    text1: "ExampleText6",
+    text1:
+      "Consider the power contained in a tiny seed. There in your palm, the potential to grow food, create shelter and turn carbon dioxide into oxygen. Plant, water, and wait for an everyday miracle. Invite bees back into your garden, street or local green space. Help a child discover where their food comes from. Or grow a tree that will one day offer shade to the children of their children’s children, long after we’re gone. ",
 
-    text2: "Example Text2",
+    text2:
+      "That seeds are time capsules? In 1978 a 12000 year old lotus seed grew after being discovered in a lake bed in China and in 2005 a 2000 year old extinct Judean date palm was successfully germinated after being discovered at the site of King Herod's Palace near the Dead Sea.",
     urlFilm: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Film</a>
+      <a href="https://www.gaiafoundation.org/seeds-of-freedom-trilogy/">
+        Film
+      </a>
     ),
     urlBook: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Book</a>
+      <a href="https://www.google.co.uk/books/edition/The_Triumph_of_Seeds/-N84DgAAQBAJ?hl=en&gbpv=1&printsec=frontcover">
+        Book
+      </a>
     ),
-    urlArtist: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Artist</a>
+    urlArtist: <a href="https://www.eastgategallery.co.uk/">Artist</a>,
+    urlResources: (
+      <a href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/">
+        Daisy Discovers Butterflies
+      </a>
     ),
 
-    quote: "“No act of kindness, no matter how small, is ever wasted.” - Aesop",
+    urlResources2: (
+      <a href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/#mission_1:_making_a_sunflower">
+        Make Your Own Sunflower
+      </a>
+    ),
+    urlResources3: (
+      <a href="https://www.nationaltheatrewales.org/plant-a-seed-of-kindness/">
+        Plant A Seed of Kindness
+      </a>
+    ),
+    urlCharity: (
+      <a href="https://sizeofwales.org.uk/">Size Of Wales Maint Cymru</a>
+    ),
+    quote:
+      "“Change the way things are. The seed may seem small and insignificant. It's not about what it is but about what it can become Dr Seuss, The Lorax” - Aesop",
   },
   {
-    act: "walk",
+    act: "Take A Walk",
     image: TakeAWalk,
-    text1: "ExampleText7",
+    text1:
+      "Ever wondered what happens to you when you take a walk in nature, when your feet start interacting with the ground and the sound of wind in leaves and waves against the land reach your brain?Trees secrete phytoncides, the olfactory-provoking chemicals that reduce stress hormones. The effect is that a walk in nature improves immunity and memory, reduces anxiety, helps battle colds and flu and makes you happy. The list goes on. And if you do it again and again, research says, the benefits grow into a true medicinal marvel.",
 
-    text2: "Example Text2",
+    text2:
+      "About 70,000 years ago a group of no more than 1000 Homo Sapiens left east Africa? Over the next 30,000 years they populated the rest of the world - and they walked all the way, which makes Africa the home of the human race.",
 
-    urlFilm: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Film</a>
-    ),
+    urlFilm: <a href="">Film</a>,
     urlBook: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Book</a>
+      <a href="https://www.google.co.uk/books/edition/Just_a_Little_Run_Around_the_World_5_Yea/giB3k6gWF7YC?hl=en&gbpv=1&printsec=frontcover">
+        Book
+      </a>
     ),
-    urlArtist: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Artist</a>
+    urlArtist: <a href="https://www.dylanthomasbirthdaywalk.co.uk/">Artist</a>,
+    urlResources: (
+      <a href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/">
+        Daisy Discovers Butterflies
+      </a>
     ),
 
-    quote: "“No act of kindness, no matter how small, is ever wasted.” - Aesop",
+    urlResources2: (
+      <a href="https://www.nationaltheatrewales.org/nature-scavenger-hunt/">
+        Nature Scavenger Hunt
+      </a>
+    ),
+    urlResources3: (
+      <a href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies-2/">
+        Sensory Walk
+      </a>
+    ),
+    urlCharity: (
+      <a href="https://www.google.com/url?q=https://www.pembrokeshirecoast.wales/coast-path&sa=D&source=editors&ust=1614011119176000&usg=AOvVaw1i0sEaOvJht3-AphYKtBIC">
+        Pembrokeshire Coast
+      </a>
+    ),
+    quote:
+      "“But the beauty is in the walking - we are deceived by destinations” - Gwyn Thomas",
   },
 ];
 
@@ -229,7 +294,7 @@ export { resourcesHeading };
 const resourcesSubheading = "Hive Learning Resources";
 export { resourcesSubheading };
 
-const charityHeading = "Need Support?";
+const charityHeading = "Organisation";
 export { charityHeading };
 
 export default simpleText;
