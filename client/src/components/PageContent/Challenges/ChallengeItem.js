@@ -1,5 +1,9 @@
 import React from "react";
-import { direction, resourcesSubheading } from "../../../Models/simpleText";
+import {
+  direction,
+  resourcesSubheading,
+  charityHeading,
+} from "../../../Models/simpleText";
 import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 
 //whichChallengeIsClicked function to display unique data
@@ -18,8 +22,10 @@ const ChallengeItem = ({
   urlArtist,
   urlResources,
   urlResources2,
+  urlResources3,
   quoteHeading,
   quote,
+  urlCharity,
   challengeChoice,
 }) => {
   return (
@@ -63,12 +69,17 @@ const ChallengeItem = ({
               <ul>
                 <li>{urlResources}</li>
                 <li>{urlResources2}</li>
+                <li>{urlResources3}</li>
               </ul>
             </div>
           </div>
           <div className="flex-child">
             <h3 className="quote-heading">{quoteHeading}</h3>
             <p>{quote}</p>
+          </div>
+          <div className="flex-child">
+            <h3 className="resources-subheading">{charityHeading}</h3>
+            <span>{urlCharity}</span>
           </div>
         </section>
         <CompleteChallengeButton onClickHandler={onClickHandler} />

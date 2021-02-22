@@ -76,8 +76,10 @@ const ChallengePage = (props) => {
           urlArtist={simpleText[id - 1].urlArtist}
           urlResources={simpleText[id - 1].urlResources}
           urlResources2={simpleText[id - 1].urlResources2}
+          urlResources3={simpleText[id - 1].urlResources3}
           quoteHeading={quoteHeading}
           quote={simpleText[id - 1].quote}
+          urlCharity={simpleText[id - 1].urlCharity}
         />
       </div>
     </>

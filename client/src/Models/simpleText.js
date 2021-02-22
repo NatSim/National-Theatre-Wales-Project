@@ -37,6 +37,16 @@ const simpleText = [
     urlResources2: (
       <a href="https://www.nationaltheatrewales.org/food-map/">Food Map</a>
     ),
+    urlResources3: (
+      <a href="https://www.nationaltheatrewales.org/making-a-bug-hotel/">
+        Making a Bug Hotel
+      </a>
+    ),
+    urlCharity: (
+      <a href="https://get-the-boys-a-lift.mybigcommerce.com/">
+        Give The Boys A Lift
+      </a>
+    ),
   },
   {
     act: "connect",
@@ -170,5 +180,8 @@ export { resourcesHeading };
 
 const resourcesSubheading = "Hive Learning Resources";
 export { resourcesSubheading };
+
+const charityHeading = "Need Support?";
+export { charityHeading };
 
 export default simpleText;

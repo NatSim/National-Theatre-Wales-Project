@@ -1,14 +1,29 @@
-.live-title {
+/* .live-title {
   padding: 35px;
   float: left;
   animation: transitionIn;
-}
+} */
 
 .live-background-container {
-  background-color: #89d7e8;
-  height: 100vh;
-  padding: 10px;
-  border-top-style: double;
-  border-color: grey;
+  padding: 10px 0px 50px 0px;
+  position: relative;
+}
+
+.live-background-container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #ff9f00;
+  background-size: cover;
+  opacity: 0.85;
+
   border-top-width: 0.5px;
+}
+
+.subtitle1,
+.programme-info-control {
+  position: relative;
 }

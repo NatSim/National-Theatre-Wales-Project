@@ -28,8 +28,8 @@ function ShowPage() {
       <Header Link={profileLink5} Icon={profileIcon5} />
 
       <div className="live-background-container">
-        <h2 className="subtitle1">Live Performance</h2>
-        <span>
+        <h2 className="subtitle1">Show Programme</h2>
+        <p className=" programme-info-control">
           Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
           sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
           aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
@@ -37,31 +37,7 @@ function ShowPage() {
           commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
           vulputate velit esse molestie consequat, vel illum dolore eu feugiat
           nulla facilisis at vero eros et accumsan.{" "}
-        </span>
-        {/* <div className="nav-container-control">
-          <ul>
-            <li>
-              <NavButton link={"/simpleacts"} buttonColor={"simple-button"}>
-                Simple Acts
-              </NavButton>
-            </li>
-            <li>
-              <NavButton link={"/beach"} buttonColor={"blue-button"}>
-                The Beach
-              </NavButton>
-            </li>
-            <li>
-              <NavButton link={"/castle"} buttonColor={"green-button"}>
-                The Castle
-              </NavButton>
-            </li>
-            <li>
-              <NavButton link={"/programme"} buttonColor={"pink-button"}>
-                Programme
-              </NavButton>
-            </li>
-          </ul>
-        </div> */}
+        </p>
       </div>
     </>
   );
