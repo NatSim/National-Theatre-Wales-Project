@@ -46,7 +46,7 @@ const Footer = () => {
           </li>
           <li>
             <img
-              className="charity-logo"
+              className="acw-logo"
               src={ACWColourLandscape}
               alt="Arts Council Wales"
             />

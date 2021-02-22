@@ -13,10 +13,17 @@
   font-size: 16px;
 }
 
+/*Charity Logos*/
 .charity-logo {
-  max-width: 100%;
-}
-.charity-logo {
-  width: auto;
+  width: 188px;
   height: auto;
+}
+
+.acw-logo {
+  width: 250px;
+  height: 43px;
+}
+.charity-logo,
+.acw-logo {
+  max-width: 100%;
 }
