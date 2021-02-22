@@ -1,4 +1,5 @@
 import React from "react";
+import { direction, resourcesSubheading } from "../../../Models/simpleText";
 import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 
 //whichChallengeIsClicked function to display unique data
@@ -12,7 +13,11 @@ const ChallengeItem = ({
   text2Subheading,
   onClickHandler,
   discoverHeading,
-  discoverItems,
+  urlFilm,
+  urlBook,
+  urlArtist,
+  urlResources,
+  urlResources2,
   quoteHeading,
   quote,
   challengeChoice,
@@ -22,7 +27,7 @@ const ChallengeItem = ({
       <div className="challenge-page">
         <section className="prompt-act-container">
           <div className="prompt-text-container">
-            <h1 className="prompt-text">Your Simple Act is to...</h1>
+            <h1 className="prompt-text">{direction}</h1>
           </div>
 
           <div className="act-control-container">
@@ -41,7 +46,7 @@ const ChallengeItem = ({
         <section className="article-image-container">
           <div className="flex-parent">
             <div className="flex-child">
-              <h2 className="text2-subheading">{text2Subheading}</h2>
+              <h3 className="text2-subheading">{text2Subheading}</h3>
               <p className="text-control"> {text2}</p>
             </div>
             <div className="flex-child">
@@ -49,12 +54,20 @@ const ChallengeItem = ({
             </div>
           </div>
           <div className="flex-child">
-            <h2 className="discover-subheading">{discoverHeading}</h2>
-            <p className="discover-items-container"> {discoverItems}</p>
-            <span>{discoverItems.artistLink}</span>
+            <h3 className="discover-subheading">{discoverHeading}</h3>
+            <span>
+              {urlFilm}, {urlBook}, {urlArtist}
+            </span>
+            <div className="flex-child">
+              <h3 className="resources-subheading">{resourcesSubheading}</h3>
+              <ul>
+                <li>{urlResources}</li>
+                <li>{urlResources2}</li>
+              </ul>
+            </div>
           </div>
           <div className="flex-child">
-            <h2 className="quote-heading">{quoteHeading}</h2>
+            <h3 className="quote-heading">{quoteHeading}</h3>
             <p>{quote}</p>
           </div>
         </section>

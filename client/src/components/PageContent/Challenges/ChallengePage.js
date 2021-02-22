@@ -8,7 +8,7 @@ import simpleText, {
 } from "../../../Models/simpleText";
 import ChallengeItem from "../Challenges/ChallengeItem";
 import "./ChallengePage.css";
-import SideNav from "../../Nav/SideNav";
+// import SideNav from "../../Nav/SideNav";
 import Header from "../../Header/Header";
 import * as CgIcons from "react-icons/cg";
 //import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
@@ -71,8 +71,11 @@ const ChallengePage = (props) => {
           text2Subheading={text2Subheading}
           text2={simpleText[id - 1].text2}
           discoverHeading={discoverHeading}
-          discoverItems={simpleText[id - 1].discoverItems}
-          artistLink={simpleText[id - 1].discoverItems.artistLink}
+          urlFilm={simpleText[id - 1].urlFilm}
+          urlBook={simpleText[id - 1].urlBook}
+          urlArtist={simpleText[id - 1].urlArtist}
+          urlResources={simpleText[id - 1].urlResources}
+          urlResources2={simpleText[id - 1].urlResources2}
           quoteHeading={quoteHeading}
           quote={simpleText[id - 1].quote}
         />

@@ -5,20 +5,21 @@
   top: 0;
   width: 100%;
   z-index: 1;
-  border-bottom-style: double;
-  border-color: wheat;
   background-color: white;
   height: 20px;
 }
 
 .nav-links {
   min-height: 10vh;
+  border-bottom-style: double;
+  border-color: wheat;
   background: white;
   text-decoration: none;
+  height: 50px;
 }
 
 li {
-  color: black;
+  color: #3e455a;
 }
 
 .nav-links {

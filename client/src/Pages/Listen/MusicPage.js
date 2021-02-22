@@ -10,14 +10,14 @@ const MusicPage = () => {
 
   //Header Profile icon/path
   const profileLink2 = "/profile";
-  const profileIcon2 = [<CgIcons.CgProfile className="profile-svg" />];
+  const profileIcon2 = <CgIcons.CgProfile className="profile-svg" />;
 
   return (
     <>
       {/* <SideNav /> */}
       <Header Link={profileLink2} Icon={profileIcon2} />
       <div className="home-container-video4">
-        <h2 className="subtitle">Music</h2>
+        <h2 className="subtitle1">Music</h2>
         <div className="video-container-child">
           <VideoPlayer url={videoMusic} />
         </div>
