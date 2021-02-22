@@ -8,6 +8,14 @@ body {
   font-size: 30px;
   padding: 100px 20px 10px 20px;
 }
+/* 
+.text-control2 {
+  background-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+} */
 
 .charity-name {
   color: #ff2f69;

@@ -35,7 +35,6 @@ const ChallengeItem = ({
           <div className="prompt-text-container">
             <h1 className="prompt-text">{direction}</h1>
           </div>
-
           <div className="act-control-container">
             <h2 className="act-control-child">{act}</h2>
           </div>
@@ -44,7 +43,7 @@ const ChallengeItem = ({
           </div>
 
           <div className="intro-text">
-            <p className="text-control"> {text1}</p>
+            <p className="text-control2"> {text1}</p>
           </div>
         </section>
       </div>
