@@ -13,7 +13,7 @@ import ConnectPage from "./Connect/ConnectPage";
 import MusicPage from "./Listen/MusicPage";
 import TermsPage from "./Terms/TermsPage";
 import ContactUsPage from "./ContactUs/ContactUsPage";
-import ChallengePage from "../components/PageContent/Challenges/ChallengePage";
+import ChallengePage from "../components/PageContent/Challenges/ChallengeLogic";
 import ProfilePage from "./Profile/ProfilePage";
 import ShowPage from "./Show/ShowPage";
 import AboutTeamPage from "./About/AboutTeamPage";

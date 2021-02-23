@@ -31,7 +31,7 @@ const NavButton = (props) => {
 //Card Title Text
 const titleTeam = "Join TEAM";
 const titleNTW = "National Theatre Wales";
-const contactUs = "Contact Us";
+const contactUs = "Get in Touch";
 
 //Card Button Text
 const clickHere = "Click Here";

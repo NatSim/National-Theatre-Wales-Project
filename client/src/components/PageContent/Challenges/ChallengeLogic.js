@@ -6,20 +6,20 @@ import simpleText, {
   discoverHeading,
   quoteHeading,
 } from "../../../Models/simpleText";
-import ChallengeItem from "../Challenges/ChallengeItem";
+import ChallengeItem from "./ChallengeItemPage";
 import "./ChallengePage.css";
 // import SideNav from "../../Nav/SideNav";
 import Header from "../../Header/Header";
 import * as CgIcons from "react-icons/cg";
-//import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
+import { useHistory } from "react-router-dom";
 
 //Header Profile icon/path
 const profileLink = "/profile";
 const profileIcon = <CgIcons.CgProfile className="profile-svg" />;
 
-//Display 7 pages in one component? State
+//Display 7 pages in one component
 //simpleText content
-const ChallengePage = (props) => {
+const ChallengeLogic = (props) => {
   //*****function steps:
 
   //1.send clicked item(id) to user collection, challenge array in(database).
@@ -45,19 +45,23 @@ const ChallengePage = (props) => {
       });
   };
 
-  //challenge choice has 0,1,2,3,4,5,6 challenges(7 total) should make a challenge choice for each SA challenge to display
-  // const [id, setId] = useState(simpleText[0].id);
+  const history = useHistory();
+  //Button clicked redirect to profile page
+  const navigateToProfile = () => {
+    history.push("/profile");
+  };
 
   //onclick handler takes in image icon
   const onClickHandler = (arrayElement) => {
     console.log("button was clicked!");
 
     sendClickedItemToDB();
+    navigateToProfile();
   };
   const id = props.match.params.id;
 
   return (
-    // return 7 challenge content in component below, from array?
+    // return 7 challenge content in component below, from array id -1
     <>
       <div>
         <Header Link={profileLink} Icon={profileIcon} />
@@ -86,4 +90,4 @@ const ChallengePage = (props) => {
   );
 };
 
-export default ChallengePage;
+export default ChallengeLogic;

@@ -28,15 +28,10 @@ function AboutInfo() {
         To find out more about National Theatre Wales and how you can get
         involved click here.
       </article>
-      <div>
-        <Link to="/contact" className="button">
-          Contact Us
-        </Link>
-      </div>
       <article>
         <br />
         <span className="more-info">
-          To find out more about Go Tell The Bees:
+          To find out more about Go Tell The Bees visit:
         </span>
         <a
           className="ntw-link"

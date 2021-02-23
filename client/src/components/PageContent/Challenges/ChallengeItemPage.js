@@ -6,8 +6,8 @@ import {
 } from "../../../Models/simpleText";
 import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 
-//whichChallengeIsClicked function to display unique data
-//if else statement -teniry // map function goes through each simple text displays?
+//**This page displays the unique challenge item content 7 total **/
+/**Props entered here to return below, imports above for generic content **/
 
 const ChallengeItem = ({
   act,
