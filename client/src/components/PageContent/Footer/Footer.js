@@ -9,14 +9,47 @@ import ACWColourLandscape from "../../../images/logos/ACW/ACWcolour.jpg";
 const Footer = () => {
   //Footer href Links
   const ntwFacebookPage = "https://www.facebook.com/nationaltheatrewales/";
+  const ntwInstagramPage = "https://www.instagram.com/nationaltheatrewales/";
+  const ntwTwitterPage = "https://twitter.com/ntwtweets";
+  const ntwYouTubePage =
+    "https://www.youtube.com/channel/UC54_0F_URQ5nvePaZRldKVg";
 
   return (
     <>
       <footer className="home-footer">
         <ul className="footer-ul-control">
           <li>
-            <a href={ntwFacebookPage} target="_blank" rel="noreferrer">
+            <a
+              href={ntwFacebookPage}
+              target="_blank"
+              rel="noreferrer"
+              className="social-media-control"
+            >
               <ImIcons.ImFacebook2 />
+            </a>
+            <a
+              href={ntwInstagramPage}
+              target="_blank"
+              rel="noreferrer"
+              className="social-media-control"
+            >
+              <ImIcons.ImInstagram />
+            </a>
+            <a
+              href={ntwTwitterPage}
+              target="_blank"
+              rel="noreferrer"
+              className="social-media-control"
+            >
+              <ImIcons.ImTwitter />
+            </a>
+            <a
+              href={ntwYouTubePage}
+              target="_blank"
+              rel="noreferrer"
+              className="social-media-control"
+            >
+              <ImIcons.ImYoutube />
             </a>
           </li>
           <li>

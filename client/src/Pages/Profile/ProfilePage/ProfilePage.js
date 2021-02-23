@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../../components/Header/Header";
+import Header from "../../../components/Header/Header";
 import { Link } from "react-router-dom";
-import "./ProfilePage.css";
-import bekind from "../../images/BeKind.jpg";
-import Rewards from "../../components/PageContent/Rewards/Reward";
+import "../ProfilePage.css";
+import bekind from "../../../images/BeKind.jpg";
+import Rewards from "../../../components/PageContent/Rewards/Reward";
 import * as CgIcons from "react-icons/cg";
 
 const ProfilePage = () => {
@@ -36,16 +36,21 @@ const ProfilePage = () => {
               <Rewards />
             </Link>
           </div>
+          <div className="challenges-container">
+            <Link to={"/account"}>My Account</Link>
+          </div>
         </div>
         <div className="completed-container">
-          <span className="completed-text">Your Completed Challenges</span>
+          <span className="completed-text">My Completed Challenges</span>
         </div>
         <div className="completed-image-parent">
-          <img
-            className="completed-image-child"
-            src={bekind}
-            alt="simple act be kind"
-          ></img>
+          <div className="image-border">
+            <img
+              className="completed-image-child"
+              src={bekind}
+              alt="simple act be kind"
+            />
+          </div>
         </div>
       </div>
     </>

@@ -13,6 +13,12 @@
   font-size: 16px;
 }
 
+/*Social Media handler control */
+.social-media-control {
+  display: flex;
+  padding: 5px;
+}
+
 /*Charity Logos*/
 .charity-logo {
   width: 188px;

@@ -14,12 +14,13 @@ import MusicPage from "./Listen/MusicPage";
 import TermsPage from "./Terms/TermsPage";
 import ContactUsPage from "./ContactUs/ContactUsPage";
 import ChallengePage from "../components/PageContent/Challenges/ChallengeLogic";
-import ProfilePage from "./Profile/ProfilePage";
+import ProfilePage from "./Profile/ProfilePage/ProfilePage";
 import ShowPage from "./Show/ShowPage";
 import AboutTeamPage from "./About/AboutTeamPage";
 import RewardsPage from "./Rewards/RewardsPage";
 import MapPage from "./Map/MapPage";
 import Footer from "../components/PageContent/Footer/Footer";
+import UserAccountPage from "./Profile/UserAccount/UserAccountPage";
 
 // // SERVICES
 // import userService from "../services/userService";
@@ -43,6 +44,7 @@ function App() {
           <Route path="/contact" component={ContactUsPage} />
           <Route path="/challenge/:id" component={ChallengePage} />
           <Route path="/profile" component={ProfilePage} />
+          <Route path="/account" component={UserAccountPage} />
           <Route path="/show" component={ShowPage} />
           <Route path="/team" component={AboutTeamPage} />
           <Route path="/reward" component={RewardsPage} />
