@@ -22,6 +22,7 @@ import RewardsPage from "./Rewards/RewardsPage";
 import MapPage from "./Map/MapPage";
 import Footer from "../components/PageContent/Footer/Footer";
 import UserAccountPage from "./Profile/UserAccount/UserAccountPage";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 // // SERVICES
 // import userService from "../services/userService";
@@ -31,6 +32,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route path="/welcome" component={WelcomePage} />

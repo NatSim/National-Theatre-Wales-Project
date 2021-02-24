@@ -15,9 +15,9 @@ function AboutTeam() {
           href="https://community.nationaltheatrewales.org/group/ntwteam"
           link
           to="https://community.nationaltheatrewales.org/group/ntwteam"
+          target="_blank"
         >
-          {" "}
-          TEAM{" "}
+          TEAM
         </a>
       </article>
       <article>
