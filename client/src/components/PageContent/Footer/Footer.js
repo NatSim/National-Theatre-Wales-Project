@@ -16,8 +16,8 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="home-footer">
-        <ul className="footer-ul-control">
+      <div className="home-footer">
+        <ul>
           <li>
             <a
               href={ntwFacebookPage}
@@ -27,6 +27,7 @@ const Footer = () => {
             >
               <ImIcons.ImFacebook2 />
             </a>
+
             <a
               href={ntwInstagramPage}
               target="_blank"
@@ -52,12 +53,13 @@ const Footer = () => {
               <ImIcons.ImYoutube />
             </a>
           </li>
+        </ul>
+        <ul className="footer-ul-control">
           <li>
             <Link to={"/contact"} className="Link-control">
               Contact Us
             </Link>
           </li>
-
           <li>
             <Link to={"/terms"} className="Link-control">
               Terms{`&`}Conditions
@@ -97,7 +99,7 @@ const Footer = () => {
           developed by Natasha Simone. Registered Company No. 6693227 Charity
           Registration No. 1127952
         </p>
-      </footer>
+      </div>
     </>
   );
 };

@@ -12,6 +12,7 @@ import SimpleActsPage from "./Act/SimpleActsPage";
 import ConnectPage from "./Connect/ConnectPage";
 import MusicPage from "./Listen/MusicPage";
 import TermsPage from "./Terms/TermsPage";
+import PrivacyPage from "./Privacy/PrivacyPage";
 import ContactUsPage from "./ContactUs/ContactUsPage";
 import ChallengePage from "../components/PageContent/Challenges/ChallengeLogic";
 import ProfilePage from "./Profile/ProfilePage/ProfilePage";
@@ -41,6 +42,7 @@ function App() {
           <Route path="/connect" component={ConnectPage} />
           <Route path="/music" component={MusicPage} />
           <Route path="/terms" component={TermsPage} />
+          <Route path="/privacy" component={PrivacyPage} />
           <Route path="/contact" component={ContactUsPage} />
           <Route path="/challenge/:id" component={ChallengePage} />
           <Route path="/profile" component={ProfilePage} />
@@ -50,8 +52,8 @@ function App() {
           <Route path="/reward" component={RewardsPage} />
           <Route path="/map" component={MapPage} />
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </>
   );
 }

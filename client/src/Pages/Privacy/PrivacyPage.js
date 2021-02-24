@@ -1,11 +1,9 @@
 import React from "react";
-import "../Terms/TermsPage.css";
-import TermsContent from "../../components/PageContent/Terms/Terms";
 import SideNav from "../../components/Nav/SideNav";
 import Header from "../../components/Header/Header";
 import * as CgIcons from "react-icons/cg";
 
-const Terms = () => {
+const Privacy = () => {
   //Header Profile icon/path
   const profileLink7 = "/profile";
   const profileIcon7 = <CgIcons.CgProfile className="profile-svg" />;
@@ -15,13 +13,11 @@ const Terms = () => {
       <SideNav />
       <Header Link={profileLink7} Icon={profileIcon7} />
       <div className="terms-page">
-        <h1 className="title">Terms {`&`} Conditions</h1>
-        <section>
-          <TermsContent />
-        </section>
+        <h1 className="title">Privacy</h1>
+        <section>{/* <TermsContent /> */}</section>
       </div>
     </>
   );
 };
 
-export default Terms;
+export default Privacy;
