@@ -18,32 +18,55 @@ const simpleText = [
       "Did you know that acts of kindness are often accompanied by emotional warmth. Emotional warmth produces the hormone, oxytocin, therefore kindness can be said to be cardioprotective - being kind really can help your heart!",
 
     urlFilm: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Film</a>
+      <a
+        href="https://tomhirons.com/poetry/sometimes-a-wild-god"
+        target="_blank"
+      >
+        Film
+      </a>
     ),
     urlBook: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Book</a>
+      <a
+        href="https://tomhirons.com/poetry/sometimes-a-wild-god"
+        target="_blank"
+      >
+        Book
+      </a>
     ),
     urlArtist: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Artist</a>
+      <a
+        href="https://tomhirons.com/poetry/sometimes-a-wild-god"
+        target="_blank"
+      >
+        Artist
+      </a>
     ),
 
     quote: "“No act of kindness, no matter how small, is ever wasted.” - Aesop",
 
     urlResources: (
-      <a href="https://www.nationaltheatrewales.org/daisy-discovers-sharing/">
+      <a
+        href="https://www.nationaltheatrewales.org/daisy-discovers-sharing/"
+        target="_blank"
+      >
         Daisy Discovers Sharing
       </a>
     ),
     urlResources2: (
-      <a href="https://www.nationaltheatrewales.org/food-map/">Food Map</a>
+      <a href="https://www.nationaltheatrewales.org/food-map/" target="_blank">
+        Food Map
+      </a>
     ),
     urlResources3: (
-      <a href="https://www.nationaltheatrewales.org/making-a-bug-hotel/">
+      <a
+        href="https://www.nationaltheatrewales.org/making-a-bug-hotel/"
+        target="_blank"
+      >
         Making a Bug Hotel
       </a>
     ),
     urlCharity: (
-      <a href="https://get-the-boys-a-lift.mybigcommerce.com/">
+      <a href="https://get-the-boys-a-lift.mybigcommerce.com/" target="_blank">
         Give The Boys A Lift
       </a>
     ),
@@ -56,35 +79,57 @@ const simpleText = [
 
     text2: " ",
 
-    urlFilm: <a href="http://www.human-themovie.org/">Film</a>,
+    urlFilm: (
+      <a href="http://www.human-themovie.org/" target="_blank">
+        Film
+      </a>
+    ),
     urlBook: (
-      <a href="https://www.amazon.com/Unafraid-survivors-quest-human-connection/dp/1733224505">
+      <a
+        href="https://www.amazon.com/Unafraid-survivors-quest-human-connection/dp/1733224505"
+        target="_blank"
+      >
         Book
       </a>
     ),
-    urlArtist: <a href="https://www.youtube.com/watch?v=XJ5zx__Iavs">Artist</a>,
+    urlArtist: (
+      <a href="https://www.youtube.com/watch?v=XJ5zx__Iavs" target="_blank">
+        Artist
+      </a>
+    ),
 
     quote:
       "“We are all connected to everyone and everything in the universe. Therefore everything one does as an individual affects the whole. All thoughts, words, images, prayers, blessings and deeds are listened to by all that is” Serge Kahili King ",
 
     urlResources: (
-      <a href="https://www.nationaltheatrewales.org/back-to-the-future-letter/">
+      <a
+        href="https://www.nationaltheatrewales.org/back-to-the-future-letter/"
+        target="_blank"
+      >
         Back To The Future Letter
       </a>
     ),
 
     urlResources2: (
-      <a href="https://www.nationaltheatrewales.org/daisy-discovers-sharing/">
+      <a
+        href="https://www.nationaltheatrewales.org/daisy-discovers-sharing/"
+        target="_blank"
+      >
         Daisy Discovers
       </a>
     ),
     urlResources3: (
-      <a href="https://www.nationaltheatrewales.org/getting-to-know-you-letter/">
+      <a
+        href="https://www.nationaltheatrewales.org/getting-to-know-you-letter/"
+        target="_blank"
+      >
         Getting To Know You Letter
       </a>
     ),
     urlCharity: (
-      <a href="https://counterpointsarts.org.uk">Counterpoints Arts</a>
+      <a href="https://counterpointsarts.org.uk" target="_blank">
+        Counterpoints Arts
+      </a>
     ),
   },
   {
@@ -95,9 +140,16 @@ const simpleText = [
 
     text2:
       "On a clear night you can see as far as 19 quadrillion miles up into the sky. Deneb in Cygnus is a bright star you can see in fall and winter, it is 19 quadrillion miles away.",
-    urlFilm: <a href="https://www.youtube.com/watch?v=SOZ0dG_NG2k">Film</a>,
+    urlFilm: (
+      <a href="https://www.youtube.com/watch?v=SOZ0dG_NG2k" target="_blank">
+        Film
+      </a>
+    ),
     urlBook: (
-      <a href="https://www.google.co.uk/books/edition/On_the_Edge_of_Infinity/TZ1JDwAAQBAJ?hl=en&gbpv=1&printsec=frontcover">
+      <a
+        href="https://www.google.co.uk/books/edition/On_the_Edge_of_Infinity/TZ1JDwAAQBAJ?hl=en&gbpv=1&printsec=frontcover"
+        target="_blank"
+      >
         Book
       </a>
     ),
@@ -105,24 +157,34 @@ const simpleText = [
       <a
         href="https://exoplanets.nasa.gov/news/1516/symphony-of-stars-the-science-of-stellar-sound-waves/
     "
+        target="_blank"
       >
         Artist
       </a>
     ),
     urlResources: (
-      <a href="https://www.nationaltheatrewales.org/estrons-journey/">
+      <a
+        href="https://www.nationaltheatrewales.org/estrons-journey/"
+        target="_blank"
+      >
         Estrons Journey
       </a>
     ),
 
     urlResources2: (
-      <a href="https://www.nationaltheatrewales.org/shadow-constellations/">
+      <a
+        href="https://www.nationaltheatrewales.org/shadow-constellations/"
+        target="_blank"
+      >
         Shadow Constellations
       </a>
     ),
 
     urlCharity: (
-      <a href="https://www.visitwales.com/inspire-me/days-out/dark-sky-destinations-go-stargazing-wales-winter">
+      <a
+        href="https://www.visitwales.com/inspire-me/days-out/dark-sky-destinations-go-stargazing-wales-winter"
+        target="_blank"
+      >
         Discover the best dark sky spots in Wales
       </a>
     ),
@@ -140,15 +202,24 @@ const simpleText = [
 
     urlFilm: <a href="">Film</a>,
     urlBook: <a href="">Book</a>,
-    urlArtist: <a href="https://thomasdambo.com/">Artist</a>,
+    urlArtist: (
+      <a href="https://thomasdambo.com/" target="_blank">
+        Artist
+      </a>
+    ),
     urlResources: (
-      <a href="https://www.nationaltheatrewales.org/daisy-discovers-sharing/">
+      <a
+        href="https://www.nationaltheatrewales.org/daisy-discovers-sharing/"
+        target="_blank"
+      >
         Daisy Discovers
       </a>
     ),
 
     urlResources2: (
-      <a href="https://www.nationaltheatrewales.org/eco-house/">Echo-House</a>
+      <a href="https://www.nationaltheatrewales.org/eco-house/" target="_blank">
+        Echo-House
+      </a>
     ),
     quote: "“No act of kindness, no matter how small, is ever wasted.” - Aesop",
   },
@@ -163,29 +234,44 @@ const simpleText = [
 
     urlFilm: <a href="">Film</a>,
     urlBook: (
-      <a href="https://www.theguardian.com/environment/2016/sep/12/peter-wohlleben-man-who-believes-trees-talk-to-each-other">
+      <a
+        href="https://www.theguardian.com/environment/2016/sep/12/peter-wohlleben-man-who-believes-trees-talk-to-each-other"
+        target="_blank"
+      >
         Book
       </a>
     ),
     urlArtist: <a href="www.mileece.is/bio">Artist</a>,
     urlResources: (
-      <a href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/">
+      <a
+        href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/"
+        target="_blank"
+      >
         Daisy Discovers Butterflies
       </a>
     ),
 
     urlResources2: (
-      <a href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/#mission_1:_making_a_sunflower">
+      <a
+        href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/#mission_1:_making_a_sunflower"
+        target="_blank"
+      >
         Make Your Own Sunflower
       </a>
     ),
     urlResources3: (
-      <a href="https://www.nationaltheatrewales.org/plants-and-animals-escape-room/">
+      <a
+        href="https://www.nationaltheatrewales.org/plants-and-animals-escape-room/"
+        target="_blank"
+      >
         Plants And Animals Escape Room
       </a>
     ),
     urlCharity: (
-      <a href="https://www.kew.org/kew-gardens/whats-in-the-gardens/the-hive">
+      <a
+        href="https://www.kew.org/kew-gardens/whats-in-the-gardens/the-hive"
+        target="_blank"
+      >
         Kew Gardens
       </a>
     ),
@@ -201,34 +287,55 @@ const simpleText = [
     text2:
       "That seeds are time capsules? In 1978 a 12000 year old lotus seed grew after being discovered in a lake bed in China and in 2005 a 2000 year old extinct Judean date palm was successfully germinated after being discovered at the site of King Herod's Palace near the Dead Sea.",
     urlFilm: (
-      <a href="https://www.gaiafoundation.org/seeds-of-freedom-trilogy/">
+      <a
+        href="https://www.gaiafoundation.org/seeds-of-freedom-trilogy/"
+        target="_blank"
+      >
         Film
       </a>
     ),
     urlBook: (
-      <a href="https://www.google.co.uk/books/edition/The_Triumph_of_Seeds/-N84DgAAQBAJ?hl=en&gbpv=1&printsec=frontcover">
+      <a
+        href="https://www.google.co.uk/books/edition/The_Triumph_of_Seeds/-N84DgAAQBAJ?hl=en&gbpv=1&printsec=frontcover"
+        target="_blank"
+      >
         Book
       </a>
     ),
-    urlArtist: <a href="https://www.eastgategallery.co.uk/">Artist</a>,
+    urlArtist: (
+      <a href="https://www.eastgategallery.co.uk/" target="_blank">
+        Artist
+      </a>
+    ),
     urlResources: (
-      <a href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/">
+      <a
+        href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/"
+        target="_blank"
+      >
         Daisy Discovers Butterflies
       </a>
     ),
 
     urlResources2: (
-      <a href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/#mission_1:_making_a_sunflower">
+      <a
+        href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/#mission_1:_making_a_sunflower"
+        target="_blank"
+      >
         Make Your Own Sunflower
       </a>
     ),
     urlResources3: (
-      <a href="https://www.nationaltheatrewales.org/plant-a-seed-of-kindness/">
+      <a
+        href="https://www.nationaltheatrewales.org/plant-a-seed-of-kindness/"
+        target="_blank"
+      >
         Plant A Seed of Kindness
       </a>
     ),
     urlCharity: (
-      <a href="https://sizeofwales.org.uk/">Size Of Wales Maint Cymru</a>
+      <a href="https://sizeofwales.org.uk/" target="_blank">
+        Size Of Wales Maint Cymru
+      </a>
     ),
     quote:
       "“Change the way things are. The seed may seem small and insignificant. It's not about what it is but about what it can become Dr Seuss, The Lorax” - Aesop",
@@ -242,31 +349,54 @@ const simpleText = [
     text2:
       "About 70,000 years ago a group of no more than 1000 Homo Sapiens left east Africa? Over the next 30,000 years they populated the rest of the world - and they walked all the way, which makes Africa the home of the human race.",
 
-    urlFilm: <a href="">Film</a>,
+    urlFilm: (
+      <a href="" target="_blank">
+        Film
+      </a>
+    ),
     urlBook: (
-      <a href="https://www.google.co.uk/books/edition/Just_a_Little_Run_Around_the_World_5_Yea/giB3k6gWF7YC?hl=en&gbpv=1&printsec=frontcover">
+      <a
+        href="https://www.google.co.uk/books/edition/Just_a_Little_Run_Around_the_World_5_Yea/giB3k6gWF7YC?hl=en&gbpv=1&printsec=frontcover"
+        target="_blank"
+      >
         Book
       </a>
     ),
-    urlArtist: <a href="https://www.dylanthomasbirthdaywalk.co.uk/">Artist</a>,
+    urlArtist: (
+      <a href="https://www.dylanthomasbirthdaywalk.co.uk/" target="_blank">
+        Artist
+      </a>
+    ),
     urlResources: (
-      <a href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/">
+      <a
+        href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/"
+        target="_blank"
+      >
         Daisy Discovers Butterflies
       </a>
     ),
 
     urlResources2: (
-      <a href="https://www.nationaltheatrewales.org/nature-scavenger-hunt/">
+      <a
+        href="https://www.nationaltheatrewales.org/nature-scavenger-hunt/"
+        target="_blank"
+      >
         Nature Scavenger Hunt
       </a>
     ),
     urlResources3: (
-      <a href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies-2/">
+      <a
+        href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies-2/"
+        target="_blank"
+      >
         Sensory Walk
       </a>
     ),
     urlCharity: (
-      <a href="https://www.google.com/url?q=https://www.pembrokeshirecoast.wales/coast-path&sa=D&source=editors&ust=1614011119176000&usg=AOvVaw1i0sEaOvJht3-AphYKtBIC">
+      <a
+        href="https://www.google.com/url?q=https://www.pembrokeshirecoast.wales/coast-path&sa=D&source=editors&ust=1614011119176000&usg=AOvVaw1i0sEaOvJht3-AphYKtBIC"
+        target="_blank"
+      >
         Pembrokeshire Coast
       </a>
     ),

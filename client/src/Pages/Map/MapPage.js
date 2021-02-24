@@ -13,7 +13,7 @@ export default function MapPage() {
   return (
     <div>
       <Header Link={Item} Icon={itemIcon} />
-      <h3 className="subtitle1">Map</h3>
+      <h3 className="subtitle1">Tour Locations</h3>
       <img src={mapPlaceholder} alt="tour-locations" />
     </div>
   );
