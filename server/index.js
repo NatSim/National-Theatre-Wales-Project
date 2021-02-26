@@ -5,16 +5,15 @@ const bodyParser = require("body-parser");
 // IMPORT YOUR MODELS
 require("./models/Users");
 require("./models/ContactForms");
-require("dotenv").config();
-// require("../.env").config({ path: ".env" });   MONGODB_URI = mongodb+srv://NatashaSimone:f7hne4GczsLBhNZ@cluster0.c5vab.mongodb.net/go-tell-the-bees-app?retryWrites=true&w=majority
+//MongoDB hosted in cloud
+require("dotenv").config({ path: ".env" });
 
 const app = express();
 
 mongoose.Promise = global.Promise;
 mongoose.connect(
   // Connecting to MONGO DATABASE
-  process.env.MONGODB_URI,
-  //  || `mongodb://localhost:27017/go-tell-the-bees-app`,
+  process.env.MONGODB_URI || `mongodb://localhost:27017/go-tell-the-bees-app`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
