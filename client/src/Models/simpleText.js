@@ -393,10 +393,7 @@ const simpleText = [
       </a>
     ),
     urlCharity: (
-      <a
-        href="https://www.google.com/url?q=https://www.pembrokeshirecoast.wales/coast-path&sa=D&source=editors&ust=1614011119176000&usg=AOvVaw1i0sEaOvJht3-AphYKtBIC"
-        target="_blank"
-      >
+      <a href="https://www.google.com/url?q=https://www.pembrokeshirecoast.wales/coast-path&sa=D&source=editors&ust=1614011119176000&usg=AOvVaw1i0sEaOvJht3-AphYKtBIC">
         Pembrokeshire Coast
       </a>
     ),
