@@ -1,6 +1,7 @@
 import React from "react";
 import "../../components/Buttons/MainButton.css";
 import Button from "react-bootstrap/Button";
+import simpleText from "../../Models/simpleText";
 
 //Next Button Functional Component
 
@@ -12,12 +13,12 @@ function(send details to server)
 } */
 const CompleteChallengeButton = (props) => {
   //we use props(object)
-
+  console.log(props);
   return (
     <>
       <div>
         <Button
-          onClick={props.onClickHandler}
+          onClick={(() => props.onClickHandler, props.sendItemsToLocal())}
           type="submit"
           className="challenge"
         >

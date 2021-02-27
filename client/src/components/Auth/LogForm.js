@@ -56,37 +56,37 @@ const LoginForm = (props) => {
   };
 
   //Handles input errors
-  const validate = () => {
-    let emailError = "";
-    let passwordError = "";
+  // const validate = () => {
+  //   let emailError = "";
+  //   let passwordError = "";
 
-    if (!state.email) {
-      emailError = "Email cannot be empty";
-    }
+  //   if (!state.email) {
+  //     emailError = "Email cannot be empty";
+  //   }
 
-    if (!state.password) {
-      passwordError = "Password cannot be empty";
-    }
+  //   if (!state.password) {
+  //     passwordError = "Password cannot be empty";
+  //   }
 
-    if ((emailError, passwordError)) {
-      setState({
-        emailError,
-        passwordError,
-      });
-      return false;
-    }
-    return true;
-  };
+  //   if ((emailError, passwordError)) {
+  //     setState({
+  //       emailError,
+  //       passwordError,
+  //     });
+  //     return false;
+  //   }
+  //   return true;
+  // };
 
   //Handle submit(login) button
   const handleSubmitClick = (event) => {
     event.preventDefault();
+    sendDetailsToServer();
+    // const isValid = validate();
 
-    const isValid = validate();
-
-    if (isValid) {
-      sendDetailsToServer();
-    }
+    // // if (isValid) {
+    // //   sendDetailsToServer();
+    // // }
   };
 
   return (

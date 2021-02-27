@@ -58,52 +58,52 @@ function RegistrationForm(props) {
   };
 
   //Handles input errors
-  const validate = () => {
-    // let username = "";
-    let usernameError = "";
-    let emailError = "";
-    let passwordError = "";
-    let confirmPasswordError = "";
+  // const validate = () => {
+  //   // let username = "";
+  //   let usernameError = "";
+  //   let emailError = "";
+  //   let passwordError = "";
+  //   let confirmPasswordError = "";
 
-    if (!state.username || (!state.username > 5 && !state.username < 10)) {
-      usernameError =
-        " Invalid username ,must include between 5 and 10 characters";
-      console.log(state);
-    }
+  //   if (!state.username || (!state.username > 5 && !state.username < 10)) {
+  //     usernameError =
+  //       " Invalid username ,must include between 5 and 10 characters";
+  //     console.log(state);
+  //   }
 
-    if (!state.email) {
-      emailError = "Email cannot be empty";
-    }
+  //   if (!state.email) {
+  //     emailError = "Email cannot be empty";
+  //   }
 
-    if (!state.password && !state.confirmPassword) {
-      passwordError = "Password must be created";
-    }
+  //   if (!state.password && !state.confirmPassword) {
+  //     passwordError = "Password must be created";
+  //   }
 
-    if (state.password !== state.confirmPassword) {
-      confirmPasswordError = "Password does not match above,please check";
-    }
+  //   if (state.password !== state.confirmPassword) {
+  //     confirmPasswordError = "Password does not match above,please check";
+  //   }
 
-    if ((usernameError, emailError, passwordError)) {
-      setState({
-        usernameError,
-        emailError,
-        passwordError,
-        confirmPasswordError,
-      });
-      return false;
-    }
-    return true;
-  };
+  //   if ((usernameError, emailError, passwordError)) {
+  //     setState({
+  //       usernameError,
+  //       emailError,
+  //       passwordError,
+  //       confirmPasswordError,
+  //     });
+  //     return false;
+  //   }
+  //   return true;
+  // };
 
   //Handle submit(register) button
   const handleSubmitClick = (e) => {
     e.preventDefault();
 
-    const isValid = validate();
-
-    if (isValid) {
-      sendDetailsToServer();
-    }
+    // const isValid = validate();
+    sendDetailsToServer();
+    // if (isValid) {
+    //   sendDetailsToServer();
+    // }
   };
 
   return (

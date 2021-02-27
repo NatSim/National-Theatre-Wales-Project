@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 const User = mongoose.model("users");
 const Contact = mongoose.model("contactforms");
 
+console.log(User);
+
 module.exports = (app) => {
   app.get(`/api/user`, async (req, res) => {
     const persons = await User.find();
@@ -10,13 +12,17 @@ module.exports = (app) => {
 
   //Function called everytime register button hit
   app.post(`/register`, async (req, res) => {
-    // console.log(req);
-    const user = await User.create(req.body); //(create a record from the json:object)
-    return res.status(201).send({
-      error: false,
-      user,
-    });
+    const user = await User.create(req.body);
+    console.log("data is valid");
+    return (
+      console.log("data is valid"),
+      res.status(201).send({
+        error: false,
+        user,
+      })
+    );
   });
+
   //Function called everytime login button hit
   app.post(`/login`, async (req, res) => {
     // console.log(req);
@@ -49,13 +55,21 @@ module.exports = (app) => {
   app.patch(`/api/users/challenge/`, async (req, res) => {
     const { id } = req.params;
     //when id recieved=findByEmail, (email) used to find user and then update that user's challenge array
-    //challenge array true/false
-    const user = await User.findByIdAndUpdate(id, req.body);
+    //challenge array true/false     Model.findByIdAndUpdate(id, updateObj, {new: true}, function(err, model) {...
+
+    const user = await User.findByIdAndUpdate(id, req.body, { new: true });
     console.log("id received");
-    return res.status(202).send({
-      error: false,
-      user,
-    });
+
+    try {
+      res.status(202).send({
+        user,
+      });
+    } catch (error) {
+      res.status(400).send({
+        status: false,
+        error,
+      });
+    }
   });
 
   //User delete account

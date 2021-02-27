@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
+// import axios from "axios";
 import Header from "../../../components/Header/Header";
 import "../UserAccount/UserAccountPage.css";
 import * as CgIcons from "react-icons/cg";
@@ -10,40 +10,40 @@ function UserAccountPage() {
   const loginLink = "/profile";
   const loginIcon = <CgIcons.CgProfile className="profile-svg" />;
 
-  const [state, setState] = useState({
-    username: "",
-    email: "",
-    password: "",
-  });
+  // const [state, setState] = useState({
+  //   username: "",
+  //   email: "",
+  //   password: "",
+  // });
   //POST REQUEST- This send info to server code runs when someone submits form
-  const updateAccountDetailsToServer = () => {
-    if (state.email.length && state.password.length) {
-      const payload = {
-        username: state.username,
-        email: state.email,
-        password: state.password,
-      };
+  // const updateAccountDetailsToServer = () => {
+  //   if (state.email.length && state.password.length) {
+  //     const payload = {
+  //       username: state.username,
+  //       email: state.email,
+  //       password: state.password,
+  //     };
 
-      axios
-        .post("http://localhost:5000/register", payload)
-        .then(function (response) {
-          if (response.status === 201) {
-            setState((prevState) => ({
-              ...prevState,
-              successMessage: "Account details updated successfull",
-            }));
-            console.log("Successful");
-          } else {
-            console.log("Error!");
-          }
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-    } else {
-      console.log("Error"); // props.showError("Please enter valid username and password");
-    }
-  };
+  //     axios
+  //       .post("http://localhost:5000/register", payload)
+  //       .then(function (response) {
+  //         if (response.status === 201) {
+  //           setState((prevState) => ({
+  //             ...prevState,
+  //             successMessage: "Account details updated successfull",
+  //           }));
+  //           console.log("Successful");
+  //         } else {
+  //           console.log("Error!");
+  //         }
+  //       })
+  //       .catch(function (error) {
+  //         console.log(error);
+  //       });
+  //   } else {
+  //     console.log("Error"); // props.showError("Please enter valid username and password");
+  //   }
+  // };
 
   return (
     <>
@@ -65,7 +65,7 @@ function UserAccountPage() {
               //   onChange={handleChange}
             />
             <div style={{ fontSize: 14, color: "red" }}>
-              {state.usernameError}
+              {/* {state.usernameError} */}
             </div>
           </div>
           <div className="user-label-control">
@@ -114,7 +114,7 @@ function UserAccountPage() {
             </div>
           </div>
           <button type="submit" className="btn btn-primary">
-            {state.isToggleOn ? "Save Changes" : "Edit"}
+            {/* {state.isToggleOn ? "Save Changes" : "Edit"} */}
           </button>
         </form>
       </div>

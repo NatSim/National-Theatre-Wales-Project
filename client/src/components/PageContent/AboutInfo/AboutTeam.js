@@ -16,6 +16,7 @@ function AboutTeam() {
           link
           to="https://community.nationaltheatrewales.org/group/ntwteam"
           target="_blank"
+          rel="noreferrer"
         >
           TEAM
         </a>

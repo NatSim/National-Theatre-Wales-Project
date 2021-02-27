@@ -1,6 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const Joi = require("joi");
+const Joigoose = require("joigoose")(mongoose);
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
+const myPlaintextPassword = "s0//P4$$w0rD";
+const someOtherPlaintextPassword = "not_bacon";
 
 // IMPORT YOUR MODELS
 require("./models/Users");
@@ -9,6 +15,11 @@ require("./models/ContactForms");
 require("dotenv").config({ path: ".env" });
 
 const app = express();
+
+//DepricationWarning
+mongoose.set("useNewUrlParser", true);
+mongoose.set("useFindAndModify", false);
+mongoose.set("useCreateIndex", true);
 
 mongoose.Promise = global.Promise;
 mongoose.connect(

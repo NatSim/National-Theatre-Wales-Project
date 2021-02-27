@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import simpleText, {
   direction,
@@ -36,6 +36,8 @@ const ChallengeLogic = (props) => {
       .then(function (response) {
         if (response.status === 202) {
           console.log("Succesfull");
+          localStorage.setItem("challenge", "Tom");
+          console.log(response);
         } else {
           console.log("Error!");
         }

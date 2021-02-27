@@ -21,6 +21,7 @@ const simpleText = [
       <a
         href="https://tomhirons.com/poetry/sometimes-a-wild-god"
         target="_blank"
+        rel="noreferrer"
       >
         Film
       </a>
@@ -29,6 +30,7 @@ const simpleText = [
       <a
         href="https://tomhirons.com/poetry/sometimes-a-wild-god"
         target="_blank"
+        rel="noreferrer"
       >
         Book
       </a>
@@ -37,6 +39,7 @@ const simpleText = [
       <a
         href="https://tomhirons.com/poetry/sometimes-a-wild-god"
         target="_blank"
+        rel="noreferrer"
       >
         Artist
       </a>
@@ -48,12 +51,17 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/daisy-discovers-sharing/"
         target="_blank"
+        rel="noreferrer"
       >
         Daisy Discovers Sharing
       </a>
     ),
     urlResources2: (
-      <a href="https://www.nationaltheatrewales.org/food-map/" target="_blank">
+      <a
+        href="https://www.nationaltheatrewales.org/food-map/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Food Map
       </a>
     ),
@@ -61,12 +69,17 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/making-a-bug-hotel/"
         target="_blank"
+        rel="noreferrer"
       >
         Making a Bug Hotel
       </a>
     ),
     urlCharity: (
-      <a href="https://get-the-boys-a-lift.mybigcommerce.com/" target="_blank">
+      <a
+        href="https://get-the-boys-a-lift.mybigcommerce.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Give The Boys A Lift
       </a>
     ),
@@ -80,7 +93,7 @@ const simpleText = [
     text2: " ",
 
     urlFilm: (
-      <a href="http://www.human-themovie.org/" target="_blank">
+      <a href="http://www.human-themovie.org/" target="_blank" rel="noreferrer">
         Film
       </a>
     ),
@@ -88,12 +101,17 @@ const simpleText = [
       <a
         href="https://www.amazon.com/Unafraid-survivors-quest-human-connection/dp/1733224505"
         target="_blank"
+        rel="noreferrer"
       >
         Book
       </a>
     ),
     urlArtist: (
-      <a href="https://www.youtube.com/watch?v=XJ5zx__Iavs" target="_blank">
+      <a
+        href="https://www.youtube.com/watch?v=XJ5zx__Iavs"
+        target="_blank"
+        rel="noreferrer"
+      >
         Artist
       </a>
     ),
@@ -105,6 +123,7 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/back-to-the-future-letter/"
         target="_blank"
+        rel="noreferrer"
       >
         Back To The Future Letter
       </a>
@@ -114,6 +133,7 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/daisy-discovers-sharing/"
         target="_blank"
+        rel="noreferrer"
       >
         Daisy Discovers
       </a>
@@ -122,12 +142,17 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/getting-to-know-you-letter/"
         target="_blank"
+        rel="noreferrer"
       >
         Getting To Know You Letter
       </a>
     ),
     urlCharity: (
-      <a href="https://counterpointsarts.org.uk" target="_blank">
+      <a
+        href="https://counterpointsarts.org.uk"
+        target="_blank"
+        rel="noreferrer"
+      >
         Counterpoints Arts
       </a>
     ),
@@ -141,7 +166,11 @@ const simpleText = [
     text2:
       "On a clear night you can see as far as 19 quadrillion miles up into the sky. Deneb in Cygnus is a bright star you can see in fall and winter, it is 19 quadrillion miles away.",
     urlFilm: (
-      <a href="https://www.youtube.com/watch?v=SOZ0dG_NG2k" target="_blank">
+      <a
+        href="https://www.youtube.com/watch?v=SOZ0dG_NG2k"
+        target="_blank"
+        rel="noreferrer"
+      >
         Film
       </a>
     ),
@@ -149,6 +178,7 @@ const simpleText = [
       <a
         href="https://www.google.co.uk/books/edition/On_the_Edge_of_Infinity/TZ1JDwAAQBAJ?hl=en&gbpv=1&printsec=frontcover"
         target="_blank"
+        rel="noreferrer"
       >
         Book
       </a>
@@ -158,6 +188,7 @@ const simpleText = [
         href="https://exoplanets.nasa.gov/news/1516/symphony-of-stars-the-science-of-stellar-sound-waves/
     "
         target="_blank"
+        rel="noreferrer"
       >
         Artist
       </a>
@@ -166,6 +197,7 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/estrons-journey/"
         target="_blank"
+        rel="noreferrer"
       >
         Estrons Journey
       </a>
@@ -175,6 +207,7 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/shadow-constellations/"
         target="_blank"
+        rel="noreferrer"
       >
         Shadow Constellations
       </a>
@@ -184,6 +217,7 @@ const simpleText = [
       <a
         href="https://www.visitwales.com/inspire-me/days-out/dark-sky-destinations-go-stargazing-wales-winter"
         target="_blank"
+        rel="noreferrer"
       >
         Discover the best dark sky spots in Wales
       </a>
@@ -200,10 +234,14 @@ const simpleText = [
 
     text2: "Example Text2",
 
-    urlFilm: <a href="">Film</a>,
-    urlBook: <a href="">Book</a>,
+    urlFilm: (
+      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Film</a>
+    ),
+    urlBook: (
+      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Book</a>
+    ),
     urlArtist: (
-      <a href="https://thomasdambo.com/" target="_blank">
+      <a href="https://thomasdambo.com/" target="_blank" rel="noreferrer">
         Artist
       </a>
     ),
@@ -211,13 +249,18 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/daisy-discovers-sharing/"
         target="_blank"
+        rel="noreferrer"
       >
         Daisy Discovers
       </a>
     ),
 
     urlResources2: (
-      <a href="https://www.nationaltheatrewales.org/eco-house/" target="_blank">
+      <a
+        href="https://www.nationaltheatrewales.org/eco-house/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Echo-House
       </a>
     ),
@@ -232,11 +275,14 @@ const simpleText = [
     text2:
       "Did you know bees can map out a person’s facial characteristics, recognizing which kind souls would leave out nectar for them to come back to? “Look at the trees, look at the birds, look at the clouds, look at the stars and if you have eyes you will be able to see that the whole existence is joyful. Everything is simply happy”.- Osho",
 
-    urlFilm: <a href="">Film</a>,
+    urlFilm: (
+      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Film</a>
+    ),
     urlBook: (
       <a
         href="https://www.theguardian.com/environment/2016/sep/12/peter-wohlleben-man-who-believes-trees-talk-to-each-other"
         target="_blank"
+        rel="noreferrer"
       >
         Book
       </a>
@@ -246,6 +292,7 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/"
         target="_blank"
+        rel="noreferrer"
       >
         Daisy Discovers Butterflies
       </a>
@@ -255,6 +302,7 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/#mission_1:_making_a_sunflower"
         target="_blank"
+        rel="noreferrer"
       >
         Make Your Own Sunflower
       </a>
@@ -263,6 +311,7 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/plants-and-animals-escape-room/"
         target="_blank"
+        rel="noreferrer"
       >
         Plants And Animals Escape Room
       </a>
@@ -271,6 +320,7 @@ const simpleText = [
       <a
         href="https://www.kew.org/kew-gardens/whats-in-the-gardens/the-hive"
         target="_blank"
+        rel="noreferrer"
       >
         Kew Gardens
       </a>
@@ -290,6 +340,7 @@ const simpleText = [
       <a
         href="https://www.gaiafoundation.org/seeds-of-freedom-trilogy/"
         target="_blank"
+        rel="noreferrer"
       >
         Film
       </a>
@@ -298,12 +349,17 @@ const simpleText = [
       <a
         href="https://www.google.co.uk/books/edition/The_Triumph_of_Seeds/-N84DgAAQBAJ?hl=en&gbpv=1&printsec=frontcover"
         target="_blank"
+        rel="noreferrer"
       >
         Book
       </a>
     ),
     urlArtist: (
-      <a href="https://www.eastgategallery.co.uk/" target="_blank">
+      <a
+        href="https://www.eastgategallery.co.uk/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Artist
       </a>
     ),
@@ -311,6 +367,7 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/"
         target="_blank"
+        rel="noreferrer"
       >
         Daisy Discovers Butterflies
       </a>
@@ -320,6 +377,7 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/ntw_shows/go-tell-the-bees/#mission_1:_making_a_sunflower"
         target="_blank"
+        rel="noreferrer"
       >
         Make Your Own Sunflower
       </a>
@@ -328,12 +386,13 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/plant-a-seed-of-kindness/"
         target="_blank"
+        rel="noreferrer"
       >
         Plant A Seed of Kindness
       </a>
     ),
     urlCharity: (
-      <a href="https://sizeofwales.org.uk/" target="_blank">
+      <a href="https://sizeofwales.org.uk/" target="_blank" rel="noreferrer">
         Size Of Wales Maint Cymru
       </a>
     ),
@@ -350,7 +409,11 @@ const simpleText = [
       "About 70,000 years ago a group of no more than 1000 Homo Sapiens left east Africa? Over the next 30,000 years they populated the rest of the world - and they walked all the way, which makes Africa the home of the human race.",
 
     urlFilm: (
-      <a href="" target="_blank">
+      <a
+        href="https://tomhirons.com/poetry/sometimes-a-wild-god"
+        target="_blank"
+        rel="noreferrer"
+      >
         Film
       </a>
     ),
@@ -358,12 +421,17 @@ const simpleText = [
       <a
         href="https://www.google.co.uk/books/edition/Just_a_Little_Run_Around_the_World_5_Yea/giB3k6gWF7YC?hl=en&gbpv=1&printsec=frontcover"
         target="_blank"
+        rel="noreferrer"
       >
         Book
       </a>
     ),
     urlArtist: (
-      <a href="https://www.dylanthomasbirthdaywalk.co.uk/" target="_blank">
+      <a
+        href="https://www.dylanthomasbirthdaywalk.co.uk/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Artist
       </a>
     ),
@@ -371,6 +439,7 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/"
         target="_blank"
+        rel="noreferrer"
       >
         Daisy Discovers Butterflies
       </a>
@@ -380,6 +449,7 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/nature-scavenger-hunt/"
         target="_blank"
+        rel="noreferrer"
       >
         Nature Scavenger Hunt
       </a>
@@ -388,6 +458,7 @@ const simpleText = [
       <a
         href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies-2/"
         target="_blank"
+        rel="noreferrer"
       >
         Sensory Walk
       </a>
