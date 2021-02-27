@@ -51,6 +51,7 @@ Props and State
 Thanks to the following people who have contributed to this project:
 
 🧑‍🏫 @shawsy171
+
 🧑‍🏫 [@tosimiadesoye](https://github.com/tosimiadesoye)
 
 <h4>Contact</h4>
