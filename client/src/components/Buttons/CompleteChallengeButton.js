@@ -13,7 +13,8 @@ function(send details to server)
 } */
 const CompleteChallengeButton = (props) => {
   //we use props(object)
-  console.log(props);
+  // console.log(props);
+  // console.log(simpleText)
   return (
     <>
       <div>
