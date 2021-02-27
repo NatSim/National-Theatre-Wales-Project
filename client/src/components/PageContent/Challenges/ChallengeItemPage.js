@@ -17,6 +17,9 @@ const ChallengeItem = (props) => {
   return (
     <>
       <div className="challenge-page">
+        {/* {simpleText.map((challenges) => {
+          console.log(challenges);
+        })} */}
         <section className="prompt-act-container">
           <div className="prompt-text-container">
             <h1 className="prompt-text">{props.direction}</h1>
