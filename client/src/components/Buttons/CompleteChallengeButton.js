@@ -1,7 +1,7 @@
 import React from "react";
 import "../../components/Buttons/MainButton.css";
 import Button from "react-bootstrap/Button";
-import simpleText from "../../Models/simpleText";
+// import simpleText from "../../Models/simpleText";
 
 //Next Button Functional Component
 
@@ -15,6 +15,12 @@ const CompleteChallengeButton = (props) => {
   //we use props(object)
   // console.log(props);
   // console.log(simpleText)
+  const sendItemsToLocal = () => {
+    //create an array and store the props in the array
+    return localStorage.setItem("challenge", JSON.stringify(props));
+  };
+  sendItemsToLocal();
+  console.log(`The button ${props} was clicked`);
   return (
     <>
       <div>

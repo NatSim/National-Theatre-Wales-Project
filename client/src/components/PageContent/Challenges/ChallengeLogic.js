@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import axios from "axios";
 import simpleText, {
   direction,
@@ -57,8 +57,13 @@ const ChallengeLogic = (props) => {
   const onClickHandler = (arrayElement) => {
     console.log("button was clicked!");
     alert("Well done you've completed a simple act!");
-    sendClickedItemToDB();
+    // sendClickedItemToDB();
     navigateToProfile();
+    const sendItemsToLocal = () => {
+      //create an array and store the props in the array
+      return localStorage.setItem("challenge", JSON.stringify(props));
+    };
+    sendItemsToLocal();
   };
   const id = props.match.params.id;
 

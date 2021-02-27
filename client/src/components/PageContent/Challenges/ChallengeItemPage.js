@@ -1,9 +1,9 @@
 import React from "react";
-import simpleText, {
-  direction,
-  resourcesSubheading,
-  charityHeading,
-} from "../../../Models/simpleText";
+// import simpleText, {
+//   direction,
+//   resourcesSubheading,
+//   charityHeading,
+// } from "../../../Models/simpleText";
 import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 
 //**This page displays the unique challenge item content 7 total **/
@@ -13,9 +13,7 @@ const ChallengeItem = (props) => {
   console.log(props);
   const sendItemsToLocal = () => {
     //create an array and store the props in the array
-      return localStorage.setItem("challenge", JSON.stringify(props));
-    
-
+    return localStorage.setItem("challenge", JSON.stringify(props));
   };
 
   return (
