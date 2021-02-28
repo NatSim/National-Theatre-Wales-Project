@@ -10,14 +10,6 @@ import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 /**Props entered here to return below, imports above for generic content **/
 
 const ChallengeItem = (props) => {
-  console.log(props);
-  const sendItemsToLocal = () => {
-    //create an array and store the props in the array
-      return localStorage.setItem("challenge", JSON.stringify(props));
-    
-
-  };
-
   return (
     <>
       <div className="challenge-page">
@@ -83,8 +75,8 @@ const ChallengeItem = (props) => {
           </div>
         </section>
         <CompleteChallengeButton
-          sendItemsToLocal={sendItemsToLocal}
-          onClickHandler={props.onClickHandler}
+          props={props}
+         
         />
       </div>
     </>

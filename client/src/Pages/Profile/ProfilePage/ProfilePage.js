@@ -21,10 +21,12 @@ const ProfilePage = () => {
     //this function gets the challenges from the local storage
     const getChallenges = () => {
       //data in the local storage
-      const storageChallenge = JSON.parse(localStorage.getItem("challenge"));
-      setChallenge(storageChallenge);
+      if (localStorage.getItem("challenge") !== null) {
+        const storageChallenge = JSON.parse(localStorage.getItem("challenge"));
+        setChallenge(storageChallenge);
+      }
     };
-    getChallenges()
+    getChallenges();
   }, []);
   return (
     <>
@@ -52,7 +54,13 @@ const ProfilePage = () => {
         <div className="completed-container">
           <span className="completed-text">My Completed Challenges</span>
           {/* display the completed challenge image */}
-           <img src={challenge.image} alt='completed challenges'/>
+          {challenge.map((item) => {
+            return (
+              <>
+                <img src={item.props.image} alt="completed challenges" />
+              </>
+            );
+          })}
         </div>
         <div className="completed-image-parent">
           <div className="image-border">

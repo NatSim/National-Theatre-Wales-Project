@@ -12,14 +12,26 @@ import simpleText from "../../Models/simpleText";
 function(send details to server)
 } */
 const CompleteChallengeButton = (props) => {
-  //we use props(object)
-  // console.log(props);
-  // console.log(simpleText)
+  console.log(props);
+//added all items clicked to local storage
+  const sendItemsToLocal = () => {
+    let challenge = [];
+
+    if (localStorage.getItem("challenge")) {
+      challenge = JSON.parse(localStorage.getItem("challenge"));
+    }
+
+    let newChallenge = challenge.concat([props]);
+
+    //create an array and store the props in the array
+    return localStorage.setItem("challenge", JSON.stringify(newChallenge));
+  };
+
   return (
     <>
       <div>
         <Button
-          onClick={(() => props.onClickHandler, props.sendItemsToLocal())}
+          onClick={(() => props.onClickHandler, sendItemsToLocal())}
           type="submit"
           className="challenge"
         >
