@@ -22,12 +22,12 @@ const ProfilePage = () => {
     //this function gets the challenges from the local storage
     const getChallenges = () => {
       //data in the local storage
-      let storageChallenge = JSON.parse(localStorage.getItem("challenge"));
-      let challenge = [];
+      let storageChallenge = [];
+      storageChallenge = JSON.parse(localStorage.getItem("challenge")) || [];
 
-      if (storageChallenge) {
-        challenge.concat([]);
-      }
+      // setChallenge((previousState) => {
+      //   return previousState.concat("challenge");
+      // });
 
       setChallenge(storageChallenge);
     };

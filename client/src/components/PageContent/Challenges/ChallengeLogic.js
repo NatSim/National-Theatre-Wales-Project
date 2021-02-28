@@ -61,6 +61,7 @@ const ChallengeLogic = (props) => {
     navigateToProfile();
     const sendItemsToLocal = () => {
       //create an array and store the props in the array
+
       return localStorage.setItem("challenge", JSON.stringify(props));
     };
     sendItemsToLocal();
