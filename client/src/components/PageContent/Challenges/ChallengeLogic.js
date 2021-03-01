@@ -1,12 +1,12 @@
 import React from "react";
-import axios from "axios";
+// import axios from "axios";
 import simpleText, {
   direction,
   text2Subheading,
   discoverHeading,
   quoteHeading,
 } from "../../../Models/simpleText";
-import ChallengeItem from "./ChallengeItemPage";
+import ChallengeItem from "./ChallengeChoicePage";
 import "./ChallengePage.css";
 // import SideNav from "../../Nav/SideNav";
 import Header from "../../Header/Header";
@@ -23,29 +23,29 @@ const ChallengeLogic = (props) => {
   //*****function steps:
 
   //1.send clicked item(id) to user collection, challenge array in(database).
-
-  const sendClickedItemToDB = () => {
-    const id = props.match.params.id;
-    const payload = {
-      email: "natsimbig@gmail.com",
-      id: id,
-    };
-    //sending data(people)
-    axios
-      .patch("http://localhost:5000/api/users/challenge/", payload)
-      .then(function (response) {
-        if (response.status === 202) {
-          console.log("Succesfull");
-          localStorage.setItem("challenge", "Tom");
-          console.log(response);
-        } else {
-          console.log("Error!");
-        }
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
+  //add to button onClick handler
+  // const sendClickedItemToDB = () => {
+  //   const id = props.match.params.id;
+  //   const payload = {
+  //     email: "natsimbig@gmail.com",
+  //     id: id,
+  //   };
+  //   //sending data(people)
+  //   axios
+  //     .patch("http://localhost:5000/api/users/challenge/", payload)
+  //     .then(function (response) {
+  //       if (response.status === 202) {
+  //         console.log("Succesfull");
+  //         localStorage.setItem("challenge", "Tom");
+  //         console.log(response);
+  //       } else {
+  //         console.log("Error!");
+  //       }
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  // };
 
   const history = useHistory();
   //Button clicked redirect to profile page
@@ -53,18 +53,27 @@ const ChallengeLogic = (props) => {
     history.push("/profile");
   };
 
+  //Send clicked item to local storage-display image
+  const sendItemsToLocal = () => {
+    //create an array and store the props in the array
+    console.log(props);
+
+    // let challengeChoice = ChallengeItem.challengeChoice;
+
+    return localStorage.setItem("challenge", JSON.stringify(id));
+  };
+
   //onclick handler takes in image icon
   const onClickHandler = (arrayElement) => {
     console.log("Completed button was clicked!");
-    alert("Well done you've completed a simple act!");
-    // sendClickedItemToDB();
-    navigateToProfile();
-    const sendItemsToLocal = () => {
-      //create an array and store the props in the array
 
-      return localStorage.setItem("challenge", JSON.stringify(props));
-    };
+    alert("Well done you've completed a simple act!");
+
     sendItemsToLocal();
+
+    // sendClickedItemToDB();
+
+    navigateToProfile();
   };
   const id = props.match.params.id;
 

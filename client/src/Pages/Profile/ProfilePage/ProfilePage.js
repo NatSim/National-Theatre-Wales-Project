@@ -17,18 +17,19 @@ const ProfilePage = () => {
   const Greeting = (props) => {
     return <h2 className="subtitle1">Welcome {username}</h2>;
   };
+
   useEffect(() => {
     //this function gets the challenges from the local storage
     const getChallenges = () => {
       //data in the local storage
-      let storageChallenge = [];
-      storageChallenge = JSON.parse(localStorage.getItem("challenge")) || [];
 
-      // setChallenge((previousState) => {
-      //   return previousState.concat("challenge");
-      // });
+      const storageChallenge = JSON.parse(localStorage.getItem("challenge"));
 
       setChallenge(storageChallenge);
+
+      console.log(storageChallenge);
+
+      console.log("receiving challenge image");
     };
     getChallenges([]);
   }, []);

@@ -12,10 +12,6 @@ import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 const ChallengeItem = (props) => {
   console.log(props);
   console.log("simple act link image was clicked!");
-  const sendItemsToLocal = () => {
-    //create an array and store the props in the array
-    return localStorage.setItem("challenge", JSON.stringify(props));
-  };
 
   return (
     <>
@@ -82,12 +78,12 @@ const ChallengeItem = (props) => {
           </div>
         </section>
         <CompleteChallengeButton
-          sendItemsToLocal={sendItemsToLocal}
+          // sendItemsToLocal={sendItemsToLocal}
           onClickHandler={props.onClickHandler}
         />
       </div>
     </>
   );
 };
-
+console.log(ChallengeItem);
 export default ChallengeItem;
