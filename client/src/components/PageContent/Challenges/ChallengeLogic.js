@@ -55,7 +55,7 @@ const ChallengeLogic = (props) => {
 
   //onclick handler takes in image icon
   const onClickHandler = (arrayElement) => {
-    console.log("button was clicked!");
+    console.log("Completed button was clicked!");
     alert("Well done you've completed a simple act!");
     // sendClickedItemToDB();
     navigateToProfile();

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "../ProfilePage.css";
 import Rewards from "../../../components/PageContent/Rewards/Reward";
 import * as CgIcons from "react-icons/cg";
-import CompleteChallengeButton from "../../../components/Buttons/CompleteChallengeButton";
 
 const ProfilePage = () => {
   const [challenge, setChallenge] = useState([]);
