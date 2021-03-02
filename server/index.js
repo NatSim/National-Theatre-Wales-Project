@@ -5,14 +5,15 @@ const bodyParser = require("body-parser");
 // IMPORT YOUR MODELS
 require("./models/Users");
 require("./models/ContactForms");
+//MongoDB hosted in cloud
+require("dotenv").config({ path: ".env" });
 
 const app = express();
 
 mongoose.Promise = global.Promise;
 mongoose.connect(
   // Connecting to MONGO DATABASE
-  process.env.MONGODB_URI ||
-    `mongodb://localhost:27017/black-codher-personal-project`,
+  process.env.MONGODB_URI || `mongodb://localhost:27017/go-tell-the-bees-app`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
