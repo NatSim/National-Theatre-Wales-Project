@@ -19,6 +19,9 @@ const ChallengeItem = (props) => {
   const displayWelldoneHandler = () => {
     // alert("this is working");
     setWelldone("Well done you have completed a Simple Act!");
+    console.log("completed button was clicked!");
+    console.log("Well done message displayed");
+    sendItemsToLocal();
   };
 
   const sendItemsToLocal = () => {
@@ -28,9 +31,7 @@ const ChallengeItem = (props) => {
 
     return localStorage.setItem("challenge", JSON.stringify(props), [props]);
   };
-
-  console.log("simple act link image was clicked!");
-  sendItemsToLocal();
+  // sendItemsToLocal();
   return (
     <>
       <div className="challenge-page">
@@ -95,11 +96,7 @@ const ChallengeItem = (props) => {
             <p>{props.quote}</p>
           </div>
         </section>
-        <CompleteChallengeButton
-          sendItemsToLocal={props.sendItemsToLocal}
-          onClickHandler={props.onClickHandler}
-          onClickHandler={displayWelldoneHandler}
-        />
+        <CompleteChallengeButton onClickHandler={displayWelldoneHandler} />
 
         <div className="welldone-message">
           <p>{welldone}</p>

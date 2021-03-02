@@ -54,18 +54,18 @@ const ChallengeLogic = (props) => {
   // };
 
   //Send clicked item to local storage-display image
-  const sendItemsToLocal = () => {
-    //create an array and store the props in the array
-    console.log(props);
+  // const sendItemsToLocal = () => {
+  //   //create an array and store the props in the array
+  //   console.log(props);
 
-    // let challengeChoice = ChallengeItem.challengeChoice;
+  //   // let challengeChoice = ChallengeItem.challengeChoice;
 
-    return localStorage.setItem("challenge", JSON.stringify(props));
-  };
+  //   return localStorage.setItem("challenge", JSON.stringify(props));
+  // };
 
   //onclick handler takes in image icon
-  const onClickHandler = (arrayElement) => {
-    console.log("Completed button was clicked!");
+  const onClickHandler = (props) => {
+    console.log("hello");
 
     // sendItemsToLocal();
 
@@ -74,7 +74,7 @@ const ChallengeLogic = (props) => {
     // navigateToProfile();
   };
   const id = props.match.params.id;
-  console.log(ChallengeItem);
+  console.log(id);
 
   return (
     // return 7 challenge content in component below, from array id -1
@@ -84,7 +84,6 @@ const ChallengeLogic = (props) => {
         <ChallengeItem
           challengeChoice={id}
           onClickHandler={onClickHandler}
-          sendItemsToLocal={sendItemsToLocal}
           direction={direction}
           act={simpleText[id - 1].act}
           image={simpleText[id - 1].image}

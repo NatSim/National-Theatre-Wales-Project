@@ -9,7 +9,7 @@ const CompleteChallengeButton = (props) => {
       <div>
         <Button
           onClick={props.onClickHandler}
-          // onClick={props.displayWelldoneHandler}
+          onClickHandler={props.sendItemsToLocal}
           type="submit"
           className="challenge"
         >
