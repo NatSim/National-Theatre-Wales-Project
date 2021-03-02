@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import simpleText, {
 //   direction,
 //   resourcesSubheading,
@@ -10,9 +10,27 @@ import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 /**Props entered here to return below, imports above for generic content **/
 
 const ChallengeItem = (props) => {
-  console.log(props);
-  console.log("simple act link image was clicked!");
+  //Display clicked well done message
+  const [welldone, setWelldone] = useState([]);
 
+  // console.log(setWelldone);
+
+  //DisplayWelldone onclick handler
+  const displayWelldoneHandler = () => {
+    // alert("this is working");
+    setWelldone("Well done you have completed a Simple Act!");
+  };
+
+  const sendItemsToLocal = () => {
+    console.log(props);
+
+    // let challengeChoice = ChallengeItem.challengeChoice;
+
+    return localStorage.setItem("challenge", JSON.stringify(props), [props]);
+  };
+
+  console.log("simple act link image was clicked!");
+  sendItemsToLocal();
   return (
     <>
       <div className="challenge-page">
@@ -78,12 +96,18 @@ const ChallengeItem = (props) => {
           </div>
         </section>
         <CompleteChallengeButton
-          // sendItemsToLocal={sendItemsToLocal}
+          sendItemsToLocal={props.sendItemsToLocal}
           onClickHandler={props.onClickHandler}
+          onClickHandler={displayWelldoneHandler}
         />
+
+        <div className="welldone-message">
+          <p>{welldone}</p>
+        </div>
       </div>
     </>
   );
 };
+
 console.log(ChallengeItem);
 export default ChallengeItem;

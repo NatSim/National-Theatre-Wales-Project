@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import "../ProfilePage.css";
 import Rewards from "../../../components/PageContent/Rewards/Reward";
 import * as CgIcons from "react-icons/cg";
+import ChallengeLogic from "../../../components/PageContent/Challenges/ChallengeLogic";
 
-const ProfilePage = () => {
+const ProfilePage = (props) => {
   const [challenge, setChallenge] = useState([]);
 
   //Header Profile icon/path
@@ -65,7 +66,7 @@ const ProfilePage = () => {
           <div className="image-border">
             <img
               className="completed-image-child"
-              src={challenge.image}
+              src={ChallengeLogic.image}
               alt="completed challenges"
             />
           </div>
