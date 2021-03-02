@@ -21,7 +21,7 @@ const ProfilePage = (props) => {
 
   useEffect(() => {
     //this function gets the challenges from the local storage
-    const getChallenges = () => {
+    const getChallenges = (props) => {
       //data in the local storage
 
       const storageChallenge = JSON.parse(localStorage.getItem("challenge"));
@@ -66,7 +66,7 @@ const ProfilePage = (props) => {
           <div className="image-border">
             <img
               className="completed-image-child"
-              src={ChallengeLogic.image}
+              src={challenge.image}
               alt="completed challenges"
             />
           </div>

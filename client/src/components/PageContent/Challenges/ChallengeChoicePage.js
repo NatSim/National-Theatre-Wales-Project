@@ -21,6 +21,7 @@ const ChallengeItem = (props) => {
     setWelldone("Well done you have completed a Simple Act!");
     console.log("completed button was clicked!");
     console.log("Well done message displayed");
+
     sendItemsToLocal();
   };
 
