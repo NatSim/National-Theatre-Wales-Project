@@ -8,6 +8,13 @@
   float: left;
   cursor: pointer;
 }
+
+@media only screen and (min-width: 801px) {
+  .nav-bar {
+    display: none;
+  }
+}
+
 svg {
   vertical-align: middle;
   position: relative;
