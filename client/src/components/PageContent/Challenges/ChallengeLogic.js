@@ -22,57 +22,6 @@ const profileIcon = <CgIcons.CgProfile className="profile-svg" />;
 const ChallengeLogic = (props) => {
   //*****function steps:
 
-  //1.send clicked item(id) to user collection, challenge array in(database).
-  //add to button onClick handler
-  // const sendClickedItemToDB = () => {
-  //   const id = props.match.params.id;
-  //   const payload = {
-  //     email: "natsimbig@gmail.com",
-  //     id: id,
-  //   };
-  //   //sending data(people)
-  //   axios
-  //     .patch("http://localhost:5000/api/users/challenge/", payload)
-  //     .then(function (response) {
-  //       if (response.status === 202) {
-  //         console.log("Succesfull");
-  //         localStorage.setItem("challenge", "Tom");
-  //         console.log(response);
-  //       } else {
-  //         console.log("Error!");
-  //       }
-  //     })
-  //     .catch(function (error) {
-  //       console.log(error);
-  //     });
-  // };
-
-  // const history = useHistory();
-  // //Button clicked redirect to profile page
-  // const navigateToProfile = () => {
-  //   history.push("/profile");
-  // };
-
-  //Send clicked item to local storage-display image
-  // const sendItemsToLocal = () => {
-  //   //create an array and store the props in the array
-  //   console.log(props);
-
-  //   // let challengeChoice = ChallengeItem.challengeChoice;
-
-  //   return localStorage.setItem("challenge", JSON.stringify(props));
-  // };
-
-  //onclick handler takes in image icon
-  const onClickHandler = (props) => {
-    console.log("hello");
-
-    // sendItemsToLocal();
-
-    // sendClickedItemToDB();
-
-    // navigateToProfile();
-  };
   const id = props.match.params.id;
   console.log(id);
 
@@ -83,7 +32,6 @@ const ChallengeLogic = (props) => {
         <Header Link={profileLink} Icon={profileIcon} />
         <ChallengeItem
           challengeChoice={id}
-          onClickHandler={onClickHandler}
           direction={direction}
           act={simpleText[id - 1].act}
           image={simpleText[id - 1].image}

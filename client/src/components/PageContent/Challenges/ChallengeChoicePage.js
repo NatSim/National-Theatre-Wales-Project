@@ -16,7 +16,7 @@ const ChallengeItem = (props) => {
   // console.log(setWelldone);
 
   //DisplayWelldone onclick handler
-  const displayWelldoneHandler = () => {
+  const onClickHandler = () => {
     // alert("this is working");
     setWelldone("Well done you have completed a Simple Act!");
     console.log("completed button was clicked!");
@@ -32,7 +32,46 @@ const ChallengeItem = (props) => {
 
     return localStorage.setItem("challenge", JSON.stringify(props), [props]);
   };
-  // sendItemsToLocal();
+
+  // const history = useHistory();
+  // //Button clicked redirect to profile page
+  // const navigateToProfile = () => {
+  //   history.push("/profile");
+  // };
+
+  //   // navigateToProfile();
+
+  /**1.send clicked item(id) to user collection, challenge array in(database).
+  //add to button onClick handler
+  // const sendClickedItemToDB = () => {
+  //   const id = props.match.params.id;
+  //   const payload = {
+  //     email: "natsimbig@gmail.com",
+  //     id: id,
+  //   };
+  //   //sending data(people)
+  //   axios
+  //     .patch("http://localhost:5000/api/users/challenge/", payload)
+  //     .then(function (response) {
+  //       if (response.status === 202) {
+  //         console.log("Succesfull");
+  //         localStorage.setItem("challenge", "Tom");
+  //         console.log(response);
+  //       } else {
+  //         console.log("Error!");
+  //       }
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  // };
+ // sendClickedItemToDB();
+
+
+  // };
+
+**/
+
   return (
     <>
       <div className="challenge-page">
@@ -97,7 +136,7 @@ const ChallengeItem = (props) => {
             <p>{props.quote}</p>
           </div>
         </section>
-        <CompleteChallengeButton onClickHandler={displayWelldoneHandler} />
+        <CompleteChallengeButton onClickHandler={onClickHandler} />
 
         <div className="welldone-message">
           <p>{welldone}</p>

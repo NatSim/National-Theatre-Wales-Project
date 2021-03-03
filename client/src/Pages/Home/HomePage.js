@@ -13,6 +13,7 @@ import Container from "react-bootstrap/Container";
 import Header from "../../components/Header/Header";
 // import SideNav from "../../components/Nav/SideNav";
 import * as GrIcons from "react-icons/gr";
+import SideNav from "../../components/Nav/SideNav";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
@@ -46,8 +47,8 @@ function HomePage(props) {
 
   return (
     <>
-      {/* <SideNav /> */}
       <Header Link={Item} Icon={itemIcon} />
+      <SideNav />
       <div className="homepage">
         <div className="background-outer"></div>
         <main>
@@ -90,7 +91,6 @@ function HomePage(props) {
           </nav>
         </main>
       </div>
-
       <h2 className="subtitle2">Explore</h2>
       <Container className="card-control">
         <Row>

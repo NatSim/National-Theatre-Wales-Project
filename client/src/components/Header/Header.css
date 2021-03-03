@@ -1,5 +1,11 @@
 /*Header */
 
+@media only screen and (max-width: 802px) {
+  #nav-header {
+    display: none;
+  }
+}
+
 #nav-header {
   position: fixed;
   top: 0;
