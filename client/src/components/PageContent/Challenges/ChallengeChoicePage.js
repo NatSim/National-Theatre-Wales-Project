@@ -70,7 +70,7 @@ const ChallengeItem = (props) => {
 
   // };
 
-**/
+/*Improve below code by mapping through JSON data and displaying page attributes and tags instead*/
 
   return (
     <>

@@ -15,6 +15,8 @@ const About = () => {
   //Header Profile icon/path
   const Item = "/profile";
   const itemIcon = <CgIcons.CgProfile className="profile-svg" />;
+  /*Improve code by using component as reusable about pages component( like for challenge page)*/
+
   return (
     <>
       <SideNav />

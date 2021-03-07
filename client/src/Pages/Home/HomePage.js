@@ -96,18 +96,20 @@ function HomePage(props) {
         <Row>
           <Col sm>
             <Features
-              image={Tide}
-              title={titleTeam}
+              image={NTWLogo}
+              title={titleNTW}
               button={clickHere}
-              links={"/team"}
+              links={"/about/"}
+              id={"1"}
             />
           </Col>
           <Col sm>
             <Features
-              image={NTWLogo}
-              title={titleNTW}
+              image={Tide}
+              title={titleTeam}
               button={clickHere}
-              links={ntwLink}
+              links={"/about/"}
+              id={"2"}
             />
           </Col>
           <Col sm>

@@ -7,7 +7,6 @@ import LandingPage from "./Landing/LandingPage";
 import LoginPage from "../components/Auth/LoginPage";
 import RegisterPage from "../components/Auth/RegisterPage";
 import HomePage from "./Home/HomePage";
-import AboutPage from "./About/AboutPage";
 import SimpleActsPage from "./Act/SimpleActsPage";
 import ConnectPage from "./Connect/ConnectPage";
 import MusicPage from "./Listen/MusicPage";
@@ -17,12 +16,13 @@ import ContactUsPage from "./ContactUs/ContactUsPage";
 import ChallengePage from "../components/PageContent/Challenges/ChallengeLogic";
 import ProfilePage from "./Profile/ProfilePage/ProfilePage";
 import ShowPage from "./Show/ShowPage";
-import AboutTeamPage from "./About/AboutTeamPage";
+import AboutTeamPage from "./About/AboutArticlesPage";
 import RewardsPage from "./Rewards/RewardsPage";
 import MapPage from "./Map/MapPage";
 import Footer from "../components/PageContent/Footer/Footer";
 import UserAccountPage from "./Profile/UserAccount/UserAccountPage";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
+import AboutArticlesPage from "./About/AboutArticlesPage";
 
 // // SERVICES
 // import userService from "../services/userService";
@@ -39,7 +39,7 @@ function App() {
           <Route path="/login" component={LoginPage} />
           <Route path="/register" component={RegisterPage} />
           <Route path="/home" component={HomePage} />
-          <Route path="/about" component={AboutPage} />
+          <Route path="/about/:id" component={AboutArticlesPage} />
           <Route path="/simpleacts" component={SimpleActsPage} />
           <Route path="/connect" component={ConnectPage} />
           <Route path="/music" component={MusicPage} />
