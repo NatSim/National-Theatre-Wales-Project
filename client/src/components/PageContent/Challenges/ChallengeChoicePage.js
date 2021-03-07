@@ -1,45 +1,45 @@
 import React, { useState } from "react";
-// import simpleText, {
-//   direction,
-//   resourcesSubheading,
-//   charityHeading,
-// } from "../../../Models/simpleText";
+import { useHistory } from "react-router";
+import * as CgIcons from "react-icons/cg";
 import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
+import Header from "../../../components/Header/Header";
+import SideNav from "../../Nav/SideNav";
 
-//**This page displays the unique challenge item content 7 total **/
-/**Props entered here to return below, imports above for generic content **/
+//**This page component displays the unique challenge item content 7 total **/
+
+//Header Profile icon/path
+const profileLink = "/profile";
+const profileIcon = <CgIcons.CgProfile className="profile-svg" />;
 
 const ChallengeItem = (props) => {
-  //Display clicked well done message
+  //Displays clicked well done message
   const [welldone, setWelldone] = useState([]);
-
-  // console.log(setWelldone);
 
   //DisplayWelldone onclick handler
   const onClickHandler = () => {
     // alert("this is working");
     setWelldone("Well done you have completed a Simple Act!");
+
     console.log("completed button was clicked!");
     console.log("Well done message displayed");
 
     sendItemsToLocal();
+
+    //navigateToProfile();
   };
 
   const sendItemsToLocal = () => {
+    //this function sends the selected challenge (page as an object) to the local storage
     console.log(props);
-
-    // let challengeChoice = ChallengeItem.challengeChoice;
 
     return localStorage.setItem("challenge", JSON.stringify(props), [props]);
   };
 
-  // const history = useHistory();
-  // //Button clicked redirect to profile page
-  // const navigateToProfile = () => {
-  //   history.push("/profile");
-  // };
-
-  //   // navigateToProfile();
+  const history = useHistory();
+  //On Button click redirects user to profile page
+  const navigateToProfile = () => {
+    history.push("/profile");
+  };
 
   /**1.send clicked item(id) to user collection, challenge array in(database).
   //add to button onClick handler
@@ -74,6 +74,8 @@ const ChallengeItem = (props) => {
 
   return (
     <>
+      <Header Link={profileLink} Icon={profileIcon} />
+      <SideNav />
       <div className="challenge-page">
         <section className="prompt-act-container">
           <div className="prompt-text-container">

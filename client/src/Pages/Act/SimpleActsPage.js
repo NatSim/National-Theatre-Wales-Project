@@ -11,6 +11,7 @@ import "./SimpleActPage.css";
 import Header from "../../components/Header/Header";
 import * as CgIcons from "react-icons/cg";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
+import SideNav from "../../components/Nav/SideNav";
 
 const SAPrompts = (props) => {
   return (
@@ -32,6 +33,7 @@ const SimpleActsPage = (props) => {
   return (
     <>
       <Header Link={Item} Icon={itemIcon} />
+      <SideNav />
       <div className="home-container-video3">
         <h2 className="subtitle1">Simple Acts</h2>
         <p className="challenge-text">

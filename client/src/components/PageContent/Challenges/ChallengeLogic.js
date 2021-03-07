@@ -8,14 +8,6 @@ import simpleText, {
 } from "../../../Models/simpleText";
 import ChallengeItem from "./ChallengeChoicePage";
 import "./ChallengePage.css";
-// import SideNav from "../../Nav/SideNav";
-import Header from "../../Header/Header";
-import * as CgIcons from "react-icons/cg";
-import { useHistory } from "react-router-dom";
-
-//Header Profile icon/path
-const profileLink = "/profile";
-const profileIcon = <CgIcons.CgProfile className="profile-svg" />;
 
 //Display 7 pages in one component
 //simpleText content
@@ -26,10 +18,9 @@ const ChallengeLogic = (props) => {
   console.log(id);
 
   return (
-    // return 7 challenge content in component below, from array id -1
+    //return 7 challenge content in component below, from array id -1
     <>
       <div>
-        <Header Link={profileLink} Icon={profileIcon} />
         <ChallengeItem
           challengeChoice={id}
           direction={direction}

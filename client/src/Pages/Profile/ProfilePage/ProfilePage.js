@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../ProfilePage.css";
 import Rewards from "../../../components/PageContent/Rewards/Reward";
 import * as CgIcons from "react-icons/cg";
-import ChallengeLogic from "../../../components/PageContent/Challenges/ChallengeLogic";
+import SideNav from "../../../components/Nav/SideNav";
 
 const ProfilePage = (props) => {
   const [challenge, setChallenge] = useState([]);
@@ -22,7 +22,7 @@ const ProfilePage = (props) => {
   useEffect(() => {
     //this function gets the challenges from the local storage
     const getChallenges = (props) => {
-      //data in the local storage
+      //props data in the local storage
 
       const storageChallenge = JSON.parse(localStorage.getItem("challenge"));
 
@@ -31,6 +31,7 @@ const ProfilePage = (props) => {
       console.log(storageChallenge);
 
       console.log("receiving challenge image");
+      //Aiming to hold multiple instances of 'stored object' in an array.
     };
     getChallenges([]);
   }, []);
@@ -38,7 +39,7 @@ const ProfilePage = (props) => {
   return (
     <>
       <Header Link={loginLink} Icon={loginIcon} />
-
+      <SideNav />
       <div className="profile-background-container">
         <div>
           <Greeting />

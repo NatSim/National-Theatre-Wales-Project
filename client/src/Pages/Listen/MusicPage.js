@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import "./MusicPage.css";
 import * as CgIcons from "react-icons/cg";
+import SideNav from "../../components/Nav/SideNav";
 
 const MusicPage = () => {
   const videoMusic = "https://www.youtube.com/watch?v=K37qZvu5zio";
@@ -14,8 +15,8 @@ const MusicPage = () => {
 
   return (
     <>
-      {/* <SideNav /> */}
       <Header Link={profileLink2} Icon={profileIcon2} />
+      <SideNav />
       <div className="home-container-video4">
         <h2 className="subtitle1">Music</h2>
         <div className="video-container-child">
