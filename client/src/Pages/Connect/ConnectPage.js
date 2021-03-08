@@ -16,11 +16,22 @@ const ConnectPage = () => {
     <>
       <SideNav />
       <Header Link={profileLink8} Icon={profileIcon8} />
-      <div>
+      <div className="home-container-video4">
         <h2 className="subtitle1">Podcasts</h2>
-        <div>
-          <VideoPlayer url={videoMono} />
-        </div>
+        <section className="audio-container-parent">
+          <div className="video-container-child">
+            <VideoPlayer url={videoMono} height={"150px"} />
+          </div>
+          <div className="video-container-child">
+            <VideoPlayer url={videoMono} height={"150px"} />
+          </div>
+          <div className="video-container-child">
+            <VideoPlayer url={videoMono} height={"150px"} />
+          </div>
+          <div className="video-container-child">
+            <VideoPlayer url={videoMono} height={"150px"} />
+          </div>
+        </section>
       </div>
     </>
   );

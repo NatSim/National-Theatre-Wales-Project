@@ -22,7 +22,7 @@ const MusicPage = () => {
         <h2 className="subtitle1">Music</h2>
         <section className="audio-container-parent">
           <div className="video-container-child">
-            <VideoPlayer url={videoMusic} height={"123px"} />
+            <VideoPlayer url={videoMusic} height={"150px"} />
             {/* <span className="title-text">
               Carys Eleri - Go Tell The Bees/Dod nôl at fy nghoed
             </span> */}
