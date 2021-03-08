@@ -19,11 +19,17 @@ video,
 .video-container,
 .info-container,
 .what-is-team-control,
-.heading-control {
+.heading-control,
+.video-about-text-control {
   position: relative;
 }
 
 .what-is-team-control {
   padding: 50px;
   text-align: justify;
+}
+
+.video-about-text-control {
+  display: flex;
+  justify-content: center;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import SideNav from "../../components/Nav/SideNav";
-import "./ConnectPage.css";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../components/Header/Header";
 import * as CgIcons from "react-icons/cg";

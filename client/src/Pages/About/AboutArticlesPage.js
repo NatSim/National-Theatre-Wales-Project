@@ -28,7 +28,7 @@ const AboutArticlesPage = (props) => {
             <h2 className="subtitle1">{props.title}</h2>
           </div>
           <div className="video-about-text-control">
-            <VideoPlayer url={videoTeam} className="video" />
+            <VideoPlayer url={videoTeam} height={"150px"} className="video" />
             <div>{props.subtitle}</div>
           </div>
         </div>

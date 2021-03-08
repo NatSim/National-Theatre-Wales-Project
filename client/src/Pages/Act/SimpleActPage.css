@@ -57,6 +57,7 @@ video,
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  padding: 25px;
 }
 
 .child2-container {
@@ -69,6 +70,15 @@ video,
 }
 
 .challenge-text {
-  text-align: center;
+  text-align: justify;
   padding: 15px;
+}
+
+.simple-acts-container-parent {
+  display: flex;
+  flex-flow: wrap;
+  max-width: 100%;
+  justify-content: space-evenly;
+  position: relative;
+  padding: 0px 0px 50px 0px;
 }

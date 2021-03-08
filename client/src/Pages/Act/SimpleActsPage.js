@@ -50,8 +50,8 @@ const SimpleActsPage = (props) => {
           a springboard for learning. Explore each Simple Act through
           activities, ideas and educational resources: */}
         </p>
-        <div className="simple-acts">
-          <VideoPlayer url={videoSimple} />
+        <div className="simple-acts-container-parent">
+          <VideoPlayer url={videoSimple} height="150px" />
         </div>
 
         <span className="challenge-text">
