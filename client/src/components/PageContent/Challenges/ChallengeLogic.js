@@ -16,7 +16,7 @@ const ChallengeLogic = (props) => {
 
   const id = props.match.params.id;
   console.log(id);
-
+  console.log(simpleText);
   return (
     //return 7 challenge content in component below, from array id -1
     <>

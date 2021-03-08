@@ -1,3 +1,5 @@
+import NTWLogo from "../images/logos/NTWLogo/NTW_Logo.png";
+
 const aboutText = [
   {
     title: "TEAM",
@@ -13,6 +15,7 @@ const aboutText = [
 
     websiteInfo:
       "nationaltheatrewales.org,  @ntwtweets,  nationaltheatrewales,  nationaltheatrewales",
+    ntwLogo: NTWLogo,
   },
 ];
 
