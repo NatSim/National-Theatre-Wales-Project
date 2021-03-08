@@ -1,4 +1,4 @@
-import BeeStamp from "../images/whole-beeimage.png";
+import MainBeeLogo from "./../images/logos/MainBeeLogo/GTTB_Logo.jpg";
 
 const welcomeText = [
   {
@@ -16,7 +16,7 @@ const welcomeText = [
     mainText: "",
   },
   {
-    imageUrl: BeeStamp,
+    imageUrl: MainBeeLogo,
   },
 ];
 
