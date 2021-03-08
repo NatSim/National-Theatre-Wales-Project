@@ -18,11 +18,11 @@ const Header = (props) => {
           <Link to="/home" className="nav-child">
             <li> Home </li>
           </Link>
-          <Link to="/about/1" className="nav-child">
+          <Link to="/show" className="nav-child">
             <li> About </li>
           </Link>
-          <Link to="/show" className="nav-child">
-            <li> Show </li>
+          <Link to="/about/2" className="nav-child">
+            <li> TEAM </li>
           </Link>
           <Link to={props.Link} className="nav-child">
             <li>{props.Icon}</li>

@@ -37,8 +37,9 @@ const contactUs = "Get in Touch";
 //Card Button Text
 const clickHere = "Click Here";
 
-//Card Button Link
-// const ntwLink = "https://www.nationaltheatrewales.org/";
+//Card placeholder Text
+const placeholderText =
+  "Some quick example text to build on the card title and make up the bulk of the card's content.";
 
 function HomePage(props) {
   //Header Login/Reg icon/path
@@ -92,14 +93,15 @@ function HomePage(props) {
         </main>
       </div>
       <h2 className="subtitle2">Explore</h2>
-      <Container className="card-control">
+      <Container className="card-deck">
         <Row>
           <Col sm>
             <Features
               image={NTWLogo}
               title={titleNTW}
+              text={placeholderText}
               button={clickHere}
-              links={"/about/"}
+              links={"/about/" + props.id}
               id={"1"}
             />
           </Col>
@@ -107,8 +109,9 @@ function HomePage(props) {
             <Features
               image={Tide}
               title={titleTeam}
+              text={placeholderText}
               button={clickHere}
-              links={"/about/"}
+              links={"/about/" + props.id}
               id={"2"}
             />
           </Col>
@@ -116,6 +119,7 @@ function HomePage(props) {
             <Features
               image={Party}
               title={contactUs}
+              text={placeholderText}
               button={clickHere}
               links={"/contact"}
             />

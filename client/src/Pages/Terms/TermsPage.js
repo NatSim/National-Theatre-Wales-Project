@@ -15,7 +15,7 @@ const Terms = () => {
       <SideNav />
       <Header Link={profileLink7} Icon={profileIcon7} />
       <div className="terms-page">
-        <h1 className="title">Terms {`&`} Conditions</h1>
+        <h1 className="subtitle1">Terms {`&`} Conditions</h1>
         <section>
           <TermsContent />
         </section>
