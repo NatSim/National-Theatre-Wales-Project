@@ -4,8 +4,8 @@ import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../components/Header/Header";
 import * as CgIcons from "react-icons/cg";
-import aboutText from "../../Models/aboutText";
-import "../About/AboutPage.css";
+// import aboutText from "../../Models/aboutText";
+
 // import WhatIsTeam from "../../components/PageContent/AboutInfo/WhatIsTeam";
 // import JoinTeam from "../../components/PageContent/AboutInfo/JoinTeam";
 
@@ -15,7 +15,7 @@ const itemIcon = <CgIcons.CgProfile className="profile-svg" />;
 //Aiming to use one page component and render different info using props
 const videoTeam = "https://www.youtube.com/watch?v=xV2FF-YUy94";
 
-console.log(aboutText);
+// console.log(aboutText);
 
 const AboutArticlesPage = (props) => {
   return (
@@ -35,6 +35,7 @@ const AboutArticlesPage = (props) => {
         <div className="background-outer">
           <article>
             <div className="info-container">{props.mainText1}</div>
+            <img src={props.ntwLogo} alt={"logo"} />
           </article>
         </div>
       </div>

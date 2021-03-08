@@ -15,7 +15,7 @@ const aboutText = [
 
     websiteInfo:
       "nationaltheatrewales.org,  @ntwtweets,  nationaltheatrewales,  nationaltheatrewales",
-    ntwLogo: NTWLogo,
+    image: NTWLogo,
   },
 ];
 

@@ -38,7 +38,7 @@ const contactUs = "Get in Touch";
 const clickHere = "Click Here";
 
 //Card Button Link
-const ntwLink = "https://www.nationaltheatrewales.org/";
+// const ntwLink = "https://www.nationaltheatrewales.org/";
 
 function HomePage(props) {
   //Header Login/Reg icon/path
@@ -57,7 +57,7 @@ function HomePage(props) {
 
             <ul className="middle-nav-list">
               <li>
-                <Link to={"/about"}>
+                <Link to={"/show"}>
                   <img
                     id="about-button"
                     className="default-button"
