@@ -1,7 +1,6 @@
 import React from "react";
 import aboutText from "../../../Models/aboutText";
 import AboutArticlesPage from "../../../Pages/About/AboutArticlesPage";
-import "../About/AboutPage.css";
 
 const AboutPageLogic = (props) => {
   /** Displays information for 2 or 3 article components with props */

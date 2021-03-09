@@ -21,7 +21,7 @@ const Header = (props) => {
           <Link to="/show" className="nav-child">
             <li> About </li>
           </Link>
-          <Link to="/about/2" className="nav-child">
+          <Link to="/about/1" className="nav-child">
             <li> TEAM </li>
           </Link>
           <Link to={props.Link} className="nav-child">

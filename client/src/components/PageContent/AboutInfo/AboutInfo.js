@@ -1,6 +1,5 @@
 import React from "react";
 import beeimage from "../../../images/whole-beeimage.png";
-import "./AboutInfo.css";
 
 function AboutInfo() {
   return (

@@ -16,13 +16,12 @@ import ContactUsPage from "./ContactUs/ContactUsPage";
 import ChallengePage from "../components/PageContent/Challenges/ChallengeLogic";
 import ProfilePage from "./Profile/ProfilePage/ProfilePage";
 import ShowPage from "./Show/ShowPage";
-import AboutTeamPage from "./About/AboutArticlesPage";
 import RewardsPage from "./Rewards/RewardsPage";
 import MapPage from "./Map/MapPage";
 import Footer from "../components/PageContent/Footer/Footer";
 import UserAccountPage from "./Profile/UserAccount/UserAccountPage";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
-import AboutArticlesPage from "./About/AboutArticlesPage";
+import AboutPageLogic from "../components/PageContent/AboutInfo/AboutPageLogic";
 
 // // SERVICES
 // import userService from "../services/userService";
@@ -39,7 +38,7 @@ function App() {
           <Route path="/login" component={LoginPage} />
           <Route path="/register" component={RegisterPage} />
           <Route path="/home" component={HomePage} />
-          <Route path="/about/:id" component={AboutArticlesPage} />
+          <Route path="/about/:id" component={AboutPageLogic} />
           <Route path="/simpleacts" component={SimpleActsPage} />
           <Route path="/connect" component={ConnectPage} />
           <Route path="/music" component={MusicPage} />
@@ -50,7 +49,6 @@ function App() {
           <Route path="/profile" component={ProfilePage} />
           <Route path="/account" component={UserAccountPage} />
           <Route path="/show" component={ShowPage} />
-          <Route path="/team" component={AboutTeamPage} />
           <Route path="/reward" component={RewardsPage} />
           <Route path="/map" component={MapPage} />
         </Switch>

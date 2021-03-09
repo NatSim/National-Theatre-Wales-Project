@@ -101,8 +101,8 @@ function HomePage(props) {
               title={titleNTW}
               text={placeholderText}
               button={clickHere}
-              links={"/about/" + props.id}
-              id={"1"}
+              links={"/about/2"}
+              id={"2"}
             />
           </Col>
           <Col sm>
@@ -111,8 +111,8 @@ function HomePage(props) {
               title={titleTeam}
               text={placeholderText}
               button={clickHere}
-              links={"/about/" + props.id}
-              id={"2"}
+              links={"/about/1"}
+              id={"1"}
             />
           </Col>
           <Col sm>

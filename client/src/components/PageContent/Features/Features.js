@@ -1,8 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import CardDeck from "react-bootstrap/CardDeck";
-
 import "./Features.css";
 
 const Features = (props) => {
