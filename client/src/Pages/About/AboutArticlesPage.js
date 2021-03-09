@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutTeamPage.css";
+import "./AboutArticlesPage.css";
 import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../components/Header/Header";
@@ -29,12 +29,13 @@ const AboutArticlesPage = (props) => {
           </div>
           <div className="video-about-text-control">
             <VideoPlayer url={videoTeam} height={"150px"} className="video" />
-            <div>{props.subtitle}</div>
           </div>
         </div>
         <div className="background-outer">
           <article>
-            <div className="info-container">{props.mainText1}</div>
+            <div className="info-container">
+              {props.mainText1} {props.listTitle} {props.listItems}
+            </div>
             <img src={props.ntwLogo} alt={"logo"} />
           </article>
         </div>
