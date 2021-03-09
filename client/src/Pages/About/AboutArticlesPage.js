@@ -33,12 +33,10 @@ const AboutArticlesPage = (props) => {
           </div>
         </div>
         <div className="background-outer">
-          <article>
-            <div className="info-container">
-              {props.mainText1} {props.listTitle} {props.listItems}
-            </div>
-            <img src={props.ntwLogo} alt={"logo"} />
-          </article>
+          <div className="info-container">
+            {props.mainText1} {props.listTitle}
+            {/* <AddListTags list={props.list} />; */}
+          </div>
         </div>
       </div>
     </>

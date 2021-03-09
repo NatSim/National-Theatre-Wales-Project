@@ -17,7 +17,6 @@ const AboutPageLogic = (props) => {
     console.log(aboutText[0].listItems);
     return <ul>{items}</ul>;
   };
-  <AddListTags list={props.list} />;
 
   return (
     <>
@@ -27,8 +26,8 @@ const AboutPageLogic = (props) => {
           title={aboutText[id - 1].title}
           mainText1={aboutText[id - 1].mainText1}
           listTitle={aboutText[id - 1].listTitle}
-          listItems={aboutText[id - 1].listItems}
-          image={aboutText[id - 1].image}
+          list={aboutText[id - 1].list}
+          otherText={aboutText[id - 1].otherText}
         />
         <AddListTags list={props.list} />
       </div>

@@ -25,7 +25,7 @@ const ChallengeItem = (props) => {
 
     sendItemsToLocal();
 
-    //navigateToProfile();
+    // navigateToProfile();
   };
 
   const sendItemsToLocal = () => {

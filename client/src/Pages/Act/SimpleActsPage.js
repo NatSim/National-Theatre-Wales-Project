@@ -13,12 +13,29 @@ import * as CgIcons from "react-icons/cg";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import SideNav from "../../components/Nav/SideNav";
 
-const SAPrompts = (props) => {
+{
+  /* <SAPrompts
+img={BeKind}
+alt="Kind"
+id="1"
+></SAPrompts> */
+}
+
+export const challengeData = [
+  { id: "1", img: BeKind, alt: "Kind" },
+  { id: "2", img: Connect, alt: "Connecting" },
+  { id: "3", img: Consider, alt: "Consider" },
+  { id: "4", img: Consume, alt: "Consume" },
+  { id: "5", img: Learn1, alt: "Learn1" },
+  { id: "6", img: Plant, alt: "Plant" },
+  { id: "7", img: TakeAWalk, alt: "Take a Walk" },
+];
+
+export const SAPrompts = (props) => {
   return (
     //Reusable component
     <Link to={"/challenge/" + props.id}>
       <img className="image" src={props.img} alt={props.alt} />
-      {props.children}
     </Link>
   );
 };
@@ -60,57 +77,13 @@ const SimpleActsPage = (props) => {
         <section className="flex-container">
           <div className="child-container">
             <div>
-              <SAPrompts
-                img={BeKind}
-                src={BeKind}
-                alt="Kind"
-                id="1"
-              ></SAPrompts>
-            </div>
-            <div>
-              <SAPrompts
-                img={Connect}
-                src={Connect}
-                alt="Connecting"
-                id="2"
-              ></SAPrompts>
-            </div>
-            <div>
-              <SAPrompts
-                img={Consider}
-                src={Consider}
-                alt="Consider"
-                id="3"
-              ></SAPrompts>
-            </div>
-            <div>
-              <SAPrompts
-                img={Consume}
-                src={Consume}
-                alt="Consume"
-                id="4"
-              ></SAPrompts>
-            </div>
-          </div>
-          <div className="child2-container">
-            <div>
-              <SAPrompts
-                img={Learn1}
-                src={Learn1}
-                alt="Learn"
-                id="5"
-              ></SAPrompts>
-            </div>
-            <div>
-              <SAPrompts img={Plant} src={Plant} alt="Plant" id="6"></SAPrompts>
-            </div>
-            <div>
-              <SAPrompts
-                img={TakeAWalk}
-                src={TakeAWalk}
-                alt="Talk a walk"
-                id="7"
-              ></SAPrompts>
+              {challengeData.map((challenge) => (
+                <SAPrompts
+                  img={challenge.img}
+                  alt={challenge.alt}
+                  id={challenge.id}
+                />
+              ))}
             </div>
           </div>
         </section>

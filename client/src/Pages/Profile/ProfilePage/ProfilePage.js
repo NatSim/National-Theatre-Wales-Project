@@ -5,6 +5,7 @@ import "../ProfilePage.css";
 import Rewards from "../../../components/PageContent/Rewards/Reward";
 import * as CgIcons from "react-icons/cg";
 import SideNav from "../../../components/Nav/SideNav";
+import { challengeData, SAPrompts } from "../../Act/SimpleActsPage";
 
 const ProfilePage = (props) => {
   const [challenge, setChallenge] = useState([]);
@@ -18,23 +19,20 @@ const ProfilePage = (props) => {
   const Greeting = (props) => {
     return <h2 className="subtitle1">Welcome {username}</h2>;
   };
-
+  //Fake example version
+  const natashaProfile = {
+    email: "natsimbig@gmail.com",
+    password: "1234",
+    challenge: ["6", "5", "3"],
+  };
   useEffect(() => {
-    //this function gets the challenges from the local storage
-    const getChallenges = (props) => {
-      //props data in the local storage
-
-      const storageChallenge = JSON.parse(localStorage.getItem("challenge"));
-
-      setChallenge(storageChallenge);
-
-      console.log(storageChallenge);
-
-      console.log("receiving challenge image");
-      //Aiming to hold multiple instances of 'stored object' in an array.
-    };
-    getChallenges([]);
-  }, []);
+    if (challenge.length === 0) {
+      const completedChallenges = challengeData.filter((challenge) =>
+        natashaProfile.challenge.includes(challenge.id)
+      );
+      setChallenge(completedChallenges);
+    }
+  }, [challenge]);
 
   return (
     <>
@@ -65,11 +63,9 @@ const ProfilePage = (props) => {
         </div>
         <div className="completed-image-parent">
           <div className="image-border">
-            <img
-              className="completed-image-child"
-              src={challenge.image}
-              alt="completed challenges"
-            />
+            {challenge.map((i) => (
+              <SAPrompts id={i.id} img={i.img} alt={i.alt} />
+            ))}
           </div>
         </div>
       </div>

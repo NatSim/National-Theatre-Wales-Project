@@ -33,3 +33,7 @@ video,
   display: flex;
   justify-content: center;
 }
+
+.info-container {
+  padding: 30px;
+}
