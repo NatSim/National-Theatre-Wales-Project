@@ -4,6 +4,7 @@ import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../components/Header/Header";
 import * as CgIcons from "react-icons/cg";
+
 // import aboutText from "../../Models/aboutText";
 
 // import WhatIsTeam from "../../components/PageContent/AboutInfo/WhatIsTeam";
@@ -36,6 +37,7 @@ const AboutArticlesPage = (props) => {
             <div className="info-container">
               {props.mainText1} {props.listTitle} {props.listItems}
             </div>
+            <div>{/* <AddListTags list={props.list} /> */}</div>
             <img src={props.ntwLogo} alt={"logo"} />
           </article>
         </div>

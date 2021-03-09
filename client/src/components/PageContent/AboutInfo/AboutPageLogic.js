@@ -10,16 +10,15 @@ const AboutPageLogic = (props) => {
   console.log(aboutText);
 
   //loop through list and add ul li to each list items index
-  const addListTags = () => {
-    let i;
-    let sentence = aboutText[0].listItems;
+  const AddListTags = (props) => {
+    const list = aboutText[0].listItems;
 
-    for (i = 0; i < sentence.length; i++) {
-      return sentence.push("<ul>") && sentence.unshift("<ul>");
-    }
+    const items = list.map((list) => <li>{list}</li>);
+    console.log(aboutText[0].listItems);
+    return <ul>{items}</ul>;
   };
-  console.log(aboutText[0].listItems);
-  addListTags();
+  <AddListTags list={props.list} />;
+
   return (
     <>
       <div>
@@ -31,6 +30,7 @@ const AboutPageLogic = (props) => {
           listItems={aboutText[id - 1].listItems}
           image={aboutText[id - 1].image}
         />
+        <AddListTags list={props.list} />
       </div>
     </>
   );
