@@ -37,7 +37,6 @@ const AboutArticlesPage = (props) => {
             <div className="info-container">
               {props.mainText1} {props.listTitle} {props.listItems}
             </div>
-            <div>{/* <AddListTags list={props.list} /> */}</div>
             <img src={props.ntwLogo} alt={"logo"} />
           </article>
         </div>

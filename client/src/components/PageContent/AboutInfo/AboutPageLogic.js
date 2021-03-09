@@ -13,7 +13,7 @@ const AboutPageLogic = (props) => {
   const AddListTags = (props) => {
     const list = aboutText[0].listItems;
 
-    const items = list.map((list) => <li>{list}</li>);
+    const items = list.map((list) => <li key={list.toString()}>{list}</li>);
     console.log(aboutText[0].listItems);
     return <ul>{items}</ul>;
   };
