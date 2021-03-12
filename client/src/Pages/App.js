@@ -4,8 +4,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import WelcomePage from "./Welcome/WelcomePage";
 import LandingPage from "./Landing/LandingPage";
-import LoginPage from "../components/Auth/LoginPage";
-import RegisterPage from "../components/Auth/RegisterPage";
+// import LoginPage from "../components/Auth/LoginPage";
+// import RegisterPage from "../components/Auth/RegisterPage";
+import UserAuthPage from "../components/Auth/UserAuthPage";
 import HomePage from "./Home/HomePage";
 import SimpleActsPage from "./Act/SimpleActsPage";
 import ConnectPage from "./Connect/ConnectPage";
@@ -35,8 +36,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route path="/welcome" component={WelcomePage} />
-          <Route path="/login" component={LoginPage} />
-          <Route path="/register" component={RegisterPage} />
+          <Route path="/auth" component={UserAuthPage} />
+          {/* <Route path="/login" component={LoginPage} />
+          <Route path="/register" component={RegisterPage} /> */}
           <Route path="/home" component={HomePage} />
           <Route path="/about/:id" component={AboutPageLogic} />
           <Route path="/simpleacts" component={SimpleActsPage} />

@@ -26,10 +26,10 @@ const AboutPageLogic = (props) => {
           title={aboutText[id - 1].title}
           mainText1={aboutText[id - 1].mainText1}
           listTitle={aboutText[id - 1].listTitle}
-          list={aboutText[id - 1].list}
+          listItems={aboutText[id - 1].listItems}
           otherText={aboutText[id - 1].otherText}
         />
-        <AddListTags list={props.list} />
+        {/* <AddListTags list={props.list} /> */}
       </div>
     </>
   );

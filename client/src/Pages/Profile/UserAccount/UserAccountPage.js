@@ -114,6 +114,11 @@ function UserAccountPage() {
             </div>
           </div>
           <button type="submit" className="btn btn-primary">
+            Save my changes
+            {/* {state.isToggleOn ? "Save Changes" : "Edit"} */}
+          </button>
+          <button type="delete" className="btn btn-primary">
+            Delete my account
             {/* {state.isToggleOn ? "Save Changes" : "Edit"} */}
           </button>
         </form>

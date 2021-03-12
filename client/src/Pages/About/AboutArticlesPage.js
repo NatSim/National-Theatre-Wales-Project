@@ -34,7 +34,7 @@ const AboutArticlesPage = (props) => {
         </div>
         <div className="background-outer">
           <div className="info-container">
-            {props.mainText1} {props.listTitle}
+            {props.mainText1} {props.listTitle} {props.listItems}
             {/* <AddListTags list={props.list} />; */}
           </div>
         </div>
