@@ -18,13 +18,13 @@ const db = mysql.createConnection({
   user: process.env.DB_USER,
   password: process.env.DB_PASS,
   database: process.env.DB_NAME,
-  port: process.env.DB_PORT,
 });
 // console.log(process.env);
 
 // CONNECT
 db.connect((err) => {
   if (err) {
+    // console.log(db);
     throw err;
   }
   console.log("Successfully connected to MySQL database");
