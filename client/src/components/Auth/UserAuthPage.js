@@ -1,10 +1,20 @@
 import React, { useState } from "react";
-
+import Axios from "axios";
 import "./UserAuth.css";
 
 const UserAuthPage = () => {
   const [usernameReg, setUsernameReg] = useState("");
   const [passwordReg, setPasswordReg] = useState("");
+
+  const register = () => {
+    Axios.post("http://localhost:3000/register", {
+      username: usernameReg,
+      password: passwordReg,
+    }).then((response) => {
+      console.log(response);
+    });
+  };
+
   return (
     <>
       <div>
@@ -26,7 +36,7 @@ const UserAuthPage = () => {
               setPasswordReg(e.target.value);
             }}
           ></input>
-          <button>Register</button>
+          <button onClick={register}>Register</button>
         </div>
 
         <div>

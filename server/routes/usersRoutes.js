@@ -1,10 +1,18 @@
-// const mongoose = require("mongoose");
-// const User = mongoose.model("users");
-// const Contact = mongoose.model("contactforms");
-
-// module.exports = (app) => {
-//   app.get("/");
-// };
+module.exports = (app) => {
+  //SEND USER DETAILS TO DATABASE
+  app.post("/register", (req, res) => {
+    const username = req.body.username;
+    const password = req.body.password;
+    db.query("INSERT INTO gotellthebees (username, password) VALUES (?,?)", [
+      username,
+      password,
+      (err,
+      (result) => {
+        console.log(err);
+      }),
+    ]);
+  });
+};
 
 // app.get(`/api/user`, async (req, res) => {
 //   const persons = await User.find();
