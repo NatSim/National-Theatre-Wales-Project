@@ -4,15 +4,24 @@ import "./UserAuth.css";
 
 const UserAuthPage = () => {
   const [usernameReg, setUsernameReg] = useState("");
+  const [emailReg, setEmailReg] = useState("");
   const [passwordReg, setPasswordReg] = useState("");
 
   const register = () => {
-    Axios.post("http://localhost:3000/register", {
+    Axios.post("http://localhost:5000/register", {
       username: usernameReg,
+      email: emailReg,
       password: passwordReg,
-    }).then((response) => {
-      console.log(response);
-    });
+    })
+      .then((response) => {
+        console.log(response);
+        if (response.status === 200) {
+          console.log("User data posted!");
+        }
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
   return (
@@ -28,7 +37,12 @@ const UserAuthPage = () => {
             }}
           ></input>
           <label>Email</label>
-          <input type="text"></input>
+          <input
+            type="text"
+            onChange={(e) => {
+              setEmailReg(e.target.value);
+            }}
+          ></input>
           <label>Password</label>
           <input
             type="text"

@@ -1,16 +1,20 @@
+const mysql = require("mysql");
+const db = require("../index");
+
 module.exports = (app) => {
   //SEND USER DETAILS TO DATABASE
-  app.post("/register", (req, res) => {
+  app.post(`/register`, (req, res) => {
     const username = req.body.username;
+    const email = req.body.email;
     const password = req.body.password;
-    db.query("INSERT INTO gotellthebees (username, password) VALUES (?,?)", [
-      username,
-      password,
-      (err,
-      (result) => {
+
+    db.query(
+      "INSERT INTO users (username, email, password) VALUES (?,?,?)",
+      [username, email, password],
+      (err, result) => {
         console.log(err);
-      }),
-    ]);
+      }
+    );
   });
 };
 
@@ -45,17 +49,19 @@ module.exports = (app) => {
 //       });
 //     }
 //   });
-//   //Contact Form function called everytime button hit
-//   //line 37 receives info ()
-//   app.post(`/contact`, async (req, res) => {
-//     console.log(req.body);
-//     const contact = await Contact.create(req.body); //(create a record from the json:object)
-//     return res.status(201).send({
-//       error: false,
-//       contact,
-//       success: "Success Message",
-//     });
+
+//Contact Form function called everytime button hit
+//line 37 receives info ()
+// app.post(`/contact`, async (req, res) => {
+//   console.log(req.body);
+//   const contact = await Contact.create(req.body); //(create a record from the json:object)
+//   return res.status(201).send({
+//     error: false,
+//     contact,
+//     success: "Success Message",
 //   });
+// });
+
 //   //incoming route(house for people to attend)
 //   app.patch(`/api/users/challenge/`, async (req, res) => {
 //     const { id } = req.params;
