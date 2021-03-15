@@ -35,20 +35,37 @@ db.connect((err) => {
   console.log("Successfully connected to MySQL database");
 });
 
-/**IMPORT YOUR ROUTES**/
-// require("./routes/usersRoutes")(app);
-//Contact Form function called everytime button hit
-//receives info ()
+/**USER ENPOINTS**/
+/**INSERT DATA INTO CONTACT FORM TABLE works fine**/
+app.post("/contact", (req, res) => {
+  const name = req.body.name;
+  const email = req.body.email;
+  const subject = req.body.subject;
+  const message = req.body.message;
 
-// app.post(`/contact`, async (req, res) => {
-//   console.log(req.body);
-//   const contact = await Contact.create(req.body); //(create a record from the json:object)
-//   return res.status(201).send({
-//     error: false,
-//     contact,
-//     success: "Success Message",
-//   });
-// });
+  db.query(
+    "INSERT INTO contact_forms(name, email, subject, message) VALUES (?,?,?,?)",
+    [name, email, subject, message],
+    (err, result) => {
+      if (err !== null) {
+        console.log(err);
+      } else {
+        res.send("Contact form data submitted");
+        console.log("succesfully sent data");
+      }
+    }
+  );
+});
+
+/** ALTER TABLE works fine **/
+app.get("/contactupdate", (req, res) => {
+  let sql = "ALTER TABLE contact_forms MODIFY message VARCHAR(1000)";
+  db.query(sql, (err, result) => {
+    if (err) throw err;
+    console.log(result);
+    res.send("Contact form table updated");
+  });
+});
 
 /** SEND USER DETAILS TO DATABASE user table works fine **/
 app.post("/register", (req, res) => {
@@ -71,67 +88,6 @@ app.post("/register", (req, res) => {
 
 app.get("/", (req, res) => {
   res.render("index");
-});
-
-app.get("/createdb", (req, res) => {
-  let sql = "CREATE DATABASE nodemysql";
-  db.query(sql, (err, result) => {
-    if (err) throw err;
-    console.log(result);
-    res.send("database created");
-  });
-});
-
-//INSERT DATA INTO CONTACT FORM TABLE
-app.post("/contact", (req, res) => {
-  const name = req.body.name;
-  const email = req.body.email;
-  const subject = req.body.subject;
-  const message = req.body.message;
-
-  db.query(
-    "INSERT INTO contact_forms(name, email, subject, message) VALUES (?,?,?,?)",
-    [name, email, subject, message],
-    (err, result) => {
-      if (err !== null) {
-        console.log(err);
-      } else {
-        res.send("Contact form data submitted");
-        console.log("succesfully sent data");
-      }
-    }
-  );
-});
-
-app.get("/contactupdate", (req, res) => {
-  let sql = "ALTER TABLE contact_forms MODIFY message VARCHAR(1000)";
-  db.query(sql, (err, result) => {
-    if (err) throw err;
-    console.log(result);
-    res.send("Contact form table updated");
-  });
-});
-
-// Create test table
-// app.get("/createcontact", (req, res) => {
-//   let sql =
-//     "CREATE TABLE contact_forms(id int AUTO_INCREMENT, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, subject VARCHAR(255) NOT NULL ,message VARCHAR(1000) NOT NULL, primary key (id))";
-//   db.query(sql, (err, result) => {
-//     if (err) throw err;
-//     console.log(result);
-//     res.send("Contact form table created");
-//   });
-// });
-
-//Insert post 1
-app.get("/addpost1", (req, res) => {
-  let post = { title: "Post One", body: "This is post number one" };
-  let sql = "INSERT INTO posts SET ?";
-  let query = db.query(sql, post, (err, result) => {
-    if (err) throw err;
-    console.log(result);
-    res.send("Post one added");
-  });
 });
 
 // //LISTENS FOR PORT CONNECTIONS| Run Server
