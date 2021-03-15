@@ -14,13 +14,9 @@ app.use(cors());
 // app.use("^/$", (req, res, next) => {});
 
 //IMPORT Public Directory
-// const publicDirectory = path.join(__dirname, "public", "index.html");
-// app.use(express.static(publicDirectory));
 
-// CREATE NEW DB TEST
+/** CREATE CONNECTION SQL DATABASE **/
 
-// Create CONNECTION  SQL DATABASE
-//process.env.DB_PASS,
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -29,7 +25,8 @@ const db = mysql.createConnection({
 });
 // console.log(process.env);
 
-// CONNECT
+/** CONNECT TO DATABASE **/
+
 db.connect((err) => {
   if (err) {
     console.log(err);
@@ -38,10 +35,22 @@ db.connect((err) => {
   console.log("Successfully connected to MySQL database");
 });
 
-// IMPORT YOUR ROUTES
+/**IMPORT YOUR ROUTES**/
 // require("./routes/usersRoutes")(app);
+//Contact Form function called everytime button hit
+//receives info ()
 
-//SEND USER DETAILS TO DATABASE
+// app.post(`/contact`, async (req, res) => {
+//   console.log(req.body);
+//   const contact = await Contact.create(req.body); //(create a record from the json:object)
+//   return res.status(201).send({
+//     error: false,
+//     contact,
+//     success: "Success Message",
+//   });
+// });
+
+/** SEND USER DETAILS TO DATABASE user table works fine **/
 app.post("/register", (req, res) => {
   const username = req.body.username;
   const email = req.body.email;
@@ -72,16 +81,48 @@ app.get("/createdb", (req, res) => {
     res.send("database created");
   });
 });
-//Create test table
-app.get("/createpoststable", (req, res) => {
-  let sql =
-    "CREATE TABLE posts(id int AUTO_INCREMENT, title VARCHAR(255), body VARCHAR(255), PRIMARY KEY(id))";
+
+//INSERT DATA INTO CONTACT FORM TABLE
+app.post("/contact", (req, res) => {
+  const name = req.body.name;
+  const email = req.body.email;
+  const subject = req.body.subject;
+  const message = req.body.message;
+
+  db.query(
+    "INSERT INTO contact_forms(name, email, subject, message) VALUES (?,?,?,?)",
+    [name, email, subject, message],
+    (err, result) => {
+      if (err !== null) {
+        console.log(err);
+      } else {
+        res.send("Contact form data submitted");
+        console.log("succesfully sent data");
+      }
+    }
+  );
+});
+
+app.get("/contactupdate", (req, res) => {
+  let sql = "ALTER TABLE contact_forms MODIFY message VARCHAR(1000)";
   db.query(sql, (err, result) => {
     if (err) throw err;
     console.log(result);
-    res.send("Post table created");
+    res.send("Contact form table updated");
   });
 });
+
+// Create test table
+// app.get("/createcontact", (req, res) => {
+//   let sql =
+//     "CREATE TABLE contact_forms(id int AUTO_INCREMENT, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, subject VARCHAR(255) NOT NULL ,message VARCHAR(1000) NOT NULL, primary key (id))";
+//   db.query(sql, (err, result) => {
+//     if (err) throw err;
+//     console.log(result);
+//     res.send("Contact form table created");
+//   });
+// });
+
 //Insert post 1
 app.get("/addpost1", (req, res) => {
   let post = { title: "Post One", body: "This is post number one" };

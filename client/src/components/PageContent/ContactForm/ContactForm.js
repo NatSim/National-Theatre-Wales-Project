@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import axios from "axios";
+import Axios from "axios";
 import Button from "react-bootstrap/Button";
 
 function ContactForm(props) {
   const [state, setState] = useState({
-    username: "",
+    name: "",
     email: "",
     message: "",
     subject: "",
     placeholder: {
-      username: "Enter Username",
+      name: "Enter Name",
       email: "Enter Email",
       message: "Write message here...",
     },
@@ -17,33 +17,26 @@ function ContactForm(props) {
 
   //POST REQUEST - This sends message to server
   const sendContactForm = () => {
-    if (state.username.length && state.email.length && state.message.length) {
-      console.log("There is a message!");
-      const payload = {
-        username: state.username,
-        email: state.email,
-        message: state.message,
-        subject: state.subject,
-      };
-      axios //line 29 goes to server
-        .post("http://localhost:5000/contact", payload)
-        .then(function (response) {
-          if (response.status === 201) {
-            setState((prevState) => ({
-              ...prevState,
-              successMessage: "User has submitted a contact form",
-            }));
-            console.log("Successful!");
-          } else {
-            console.log("Error!");
-          }
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-    } else {
-      console.log("Invalid inputs!");
-    }
+    Axios.post("http://localhost:5000/contact", {
+      name: state.name,
+      email: state.email,
+      message: state.message,
+      subject: state.subject,
+    }) //line 29 goes to server
+      .then(function (response) {
+        if (response.status === 201) {
+          setState((prevState) => ({
+            ...prevState,
+            successMessage: "User has submitted a contact form",
+          }));
+          console.log("Successful!");
+        } else {
+          console.log("Error!");
+        }
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
   //Select, Text Input & Submit Button  event handlers
@@ -57,7 +50,7 @@ function ContactForm(props) {
   //Handles Input changes
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    console.log(state);
     sendContactForm();
   };
 
@@ -77,9 +70,9 @@ function ContactForm(props) {
           {/* <label>Username:</label> */}
           <input
             className="form-control"
-            type="username"
-            id="username"
-            placeholder={state.placeholder.username}
+            type="name"
+            id="name"
+            placeholder={state.placeholder.name}
             onChange={handleChange}
           />
         </div>
