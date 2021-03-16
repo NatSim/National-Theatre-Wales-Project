@@ -7,10 +7,6 @@ import SideNav from "../../Nav/SideNav";
 
 //**This page component displays the unique challenge item content 7 total **/
 
-//Header Profile icon/path
-const profileLink = "/profile";
-const profileIcon = <CgIcons.CgProfile className="profile-svg" />;
-
 const ChallengeItem = (props) => {
   //Displays clicked well done message
   const [welldone, setWelldone] = useState([]);
@@ -19,62 +15,13 @@ const ChallengeItem = (props) => {
   const onClickHandler = () => {
     // alert("this is working");
     setWelldone("Well done you have completed a Simple Act!");
-
     console.log("completed button was clicked!");
     console.log("Well done message displayed");
-
-    sendItemsToLocal();
-
-    // navigateToProfile();
   };
-
-  const sendItemsToLocal = () => {
-    //this function sends the selected challenge (page as an object) to the local storage
-    console.log(props);
-
-    return localStorage.setItem("challenge", JSON.stringify(props), [props]);
-  };
-
-  const history = useHistory();
-  //On Button click redirects user to profile page
-  const navigateToProfile = () => {
-    history.push("/profile");
-  };
-
-  /**1.send clicked item(id) to user collection, challenge array in(database).
-  //add to button onClick handler
-  // const sendClickedItemToDB = () => {
-  //   const id = props.match.params.id;
-  //   const payload = {
-  //     email: "natsimbig@gmail.com",
-  //     id: id,
-  //   };
-  //   //sending data(people)
-  //   axios
-  //     .patch("http://localhost:5000/api/users/challenge/", payload)
-  //     .then(function (response) {
-  //       if (response.status === 202) {
-  //         console.log("Succesfull");
-  //         localStorage.setItem("challenge", "Tom");
-  //         console.log(response);
-  //       } else {
-  //         console.log("Error!");
-  //       }
-  //     })
-  //     .catch(function (error) {
-  //       console.log(error);
-  //     });
-  // };
- // sendClickedItemToDB();
-
-
-  // };
-
-/*Improve below code by mapping through JSON data and displaying page attributes and tags instead*/
 
   return (
     <>
-      <Header Link={profileLink} Icon={profileIcon} />
+      <Header />
       <SideNav />
       <div className="challenge-page">
         <section className="prompt-act-container">
@@ -115,22 +62,22 @@ const ChallengeItem = (props) => {
           <div className="flex-child">
             <h3 className="discover-subheading">{props.discoverHeading}</h3>
             <span>
-              {props.urlFilm}, {props.urlBook}, {props.urlArtist}
+              {props.urlFilm} {props.urlBook} {props.urlArtist}
             </span>
             <div className="flex-child">
               <h3 className="resources-subheading">
                 {props.resourcesSubheading}
               </h3>
+              <div className="flex-child">
+                <h3 className="resources-subheading">{props.charityHeading}</h3>
+                <span>{props.urlCharity}</span>
+              </div>
               <ul>
+                (Under 16s)
                 <li>{props.urlResources}</li>
                 <li>{props.urlResources2}</li>
                 <li>{props.urlResources3}</li>
               </ul>
-            </div>
-
-            <div className="flex-child">
-              <h3 className="resources-subheading">{props.charityHeading}</h3>
-              <span>{props.urlCharity}</span>
             </div>
           </div>
           <div className="flex-child" id="border-control">

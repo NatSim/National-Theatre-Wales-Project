@@ -17,31 +17,13 @@ const simpleText = [
     text2:
       "Did you know that acts of kindness are often accompanied by emotional warmth. Emotional warmth produces the hormone, oxytocin, therefore kindness can be said to be cardioprotective - being kind really can help your heart!",
 
-    urlFilm: (
-      <a
-        href="https://tomhirons.com/poetry/sometimes-a-wild-god"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Film
-      </a>
-    ),
-    urlBook: (
-      <a
-        href="https://tomhirons.com/poetry/sometimes-a-wild-god"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Book
-      </a>
-    ),
     urlArtist: (
       <a
         href="https://tomhirons.com/poetry/sometimes-a-wild-god"
         target="_blank"
         rel="noreferrer"
       >
-        Artist
+        Explore
       </a>
     ),
 
@@ -94,25 +76,7 @@ const simpleText = [
 
     urlFilm: (
       <a href="http://www.human-themovie.org/" target="_blank" rel="noreferrer">
-        Film
-      </a>
-    ),
-    urlBook: (
-      <a
-        href="https://www.amazon.com/Unafraid-survivors-quest-human-connection/dp/1733224505"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Book
-      </a>
-    ),
-    urlArtist: (
-      <a
-        href="https://www.youtube.com/watch?v=XJ5zx__Iavs"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Artist
+        Explore
       </a>
     ),
 
@@ -171,28 +135,10 @@ const simpleText = [
         target="_blank"
         rel="noreferrer"
       >
-        Film
+        Explore
       </a>
     ),
-    urlBook: (
-      <a
-        href="https://www.google.co.uk/books/edition/On_the_Edge_of_Infinity/TZ1JDwAAQBAJ?hl=en&gbpv=1&printsec=frontcover"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Book
-      </a>
-    ),
-    urlArtist: (
-      <a
-        href="https://exoplanets.nasa.gov/news/1516/symphony-of-stars-the-science-of-stellar-sound-waves/
-    "
-        target="_blank"
-        rel="noreferrer"
-      >
-        Artist
-      </a>
-    ),
+
     urlResources: (
       <a
         href="https://www.nationaltheatrewales.org/estrons-journey/"
@@ -234,15 +180,9 @@ const simpleText = [
 
     text2: "Example Text2",
 
-    urlFilm: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Film</a>
-    ),
-    urlBook: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Book</a>
-    ),
     urlArtist: (
       <a href="https://thomasdambo.com/" target="_blank" rel="noreferrer">
-        Artist
+        Explore
       </a>
     ),
     urlResources: (
@@ -275,19 +215,16 @@ const simpleText = [
     text2:
       "Did you know bees can map out a person’s facial characteristics, recognizing which kind souls would leave out nectar for them to come back to? “Look at the trees, look at the birds, look at the clouds, look at the stars and if you have eyes you will be able to see that the whole existence is joyful. Everything is simply happy”.- Osho",
 
-    urlFilm: (
-      <a href="https://tomhirons.com/poetry/sometimes-a-wild-god">Film</a>
-    ),
     urlBook: (
       <a
         href="https://www.theguardian.com/environment/2016/sep/12/peter-wohlleben-man-who-believes-trees-talk-to-each-other"
         target="_blank"
         rel="noreferrer"
       >
-        Book
+        Explore
       </a>
     ),
-    urlArtist: <a href="www.mileece.is/bio">Artist</a>,
+
     urlResources: (
       <a
         href="https://www.nationaltheatrewales.org/daisy-discovers-butterflies/"
@@ -336,31 +273,14 @@ const simpleText = [
 
     text2:
       "That seeds are time capsules? In 1978 a 12000 year old lotus seed grew after being discovered in a lake bed in China and in 2005 a 2000 year old extinct Judean date palm was successfully germinated after being discovered at the site of King Herod's Palace near the Dead Sea.",
-    urlFilm: (
-      <a
-        href="https://www.gaiafoundation.org/seeds-of-freedom-trilogy/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Film
-      </a>
-    ),
-    urlBook: (
-      <a
-        href="https://www.google.co.uk/books/edition/The_Triumph_of_Seeds/-N84DgAAQBAJ?hl=en&gbpv=1&printsec=frontcover"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Book
-      </a>
-    ),
+
     urlArtist: (
       <a
         href="https://www.eastgategallery.co.uk/"
         target="_blank"
         rel="noreferrer"
       >
-        Artist
+        Explore
       </a>
     ),
     urlResources: (
@@ -408,31 +328,13 @@ const simpleText = [
     text2:
       "About 70,000 years ago a group of no more than 1000 Homo Sapiens left east Africa? Over the next 30,000 years they populated the rest of the world - and they walked all the way, which makes Africa the home of the human race.",
 
-    urlFilm: (
-      <a
-        href="https://tomhirons.com/poetry/sometimes-a-wild-god"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Film
-      </a>
-    ),
     urlBook: (
       <a
         href="https://www.google.co.uk/books/edition/Just_a_Little_Run_Around_the_World_5_Yea/giB3k6gWF7YC?hl=en&gbpv=1&printsec=frontcover"
         target="_blank"
         rel="noreferrer"
       >
-        Book
-      </a>
-    ),
-    urlArtist: (
-      <a
-        href="https://www.dylanthomasbirthdaywalk.co.uk/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Artist
+        Explore
       </a>
     ),
     urlResources: (

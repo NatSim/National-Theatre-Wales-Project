@@ -42,13 +42,9 @@ const placeholderText =
   "Some quick example text to build on the card title and make up the bulk of the card's content.";
 
 function HomePage(props) {
-  //Header Login/Reg icon/path
-  const Item = "/login";
-  const itemIcon = <GrIcons.GrLogin className="profile-svg" />;
-
   return (
     <>
-      <Header Link={Item} Icon={itemIcon} />
+      <Header />
       <SideNav />
       <div className="homepage">
         <div className="background-outer"></div>

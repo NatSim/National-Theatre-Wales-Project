@@ -38,7 +38,8 @@
 video,
 .subtitle1,
 .title-text,
-.video-container-child {
+.video-container-child,
+.story-container {
   position: relative;
 }
 

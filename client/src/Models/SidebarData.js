@@ -16,7 +16,7 @@ const SidebarData = [
   },
   {
     title: "About",
-    path: "/about",
+    path: "/about/2",
     icon: <IoIcons.IoIosPaper />,
     cName: "nav-text",
   },
@@ -37,12 +37,6 @@ const SidebarData = [
     title: "Act",
     path: "/simpleacts",
     icon: <RiIcons.RiPlantLine />,
-    cName: "nav-text",
-  },
-  {
-    title: "My Profile",
-    path: "/profile",
-    icon: <CgIcons.CgProfile />,
     cName: "nav-text",
   },
 

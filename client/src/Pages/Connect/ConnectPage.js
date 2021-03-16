@@ -1,35 +1,39 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 import SideNav from "../../components/Nav/SideNav";
-import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../components/Header/Header";
-import * as CgIcons from "react-icons/cg";
 
-const ConnectPage = () => {
-  const videoMono = "https://www.youtube.com/watch?v=fcWiJQW5GwQ";
-
-  //Header Profile icon/path
-  const profileLink8 = "/profile";
-  const profileIcon8 = <CgIcons.CgProfile className="profile-svg" />;
-
+const ConnectPage = (props) => {
+  const NavButton = (props) => {
+    return (
+      //Reusable Nav button component
+      <Link to={props.link}>
+        <Button id={props.buttonColor} className="default-button">
+          {props.children}
+        </Button>
+      </Link>
+    );
+  };
   return (
     <>
       <SideNav />
-      <Header Link={profileLink8} Icon={profileIcon8} />
+      <Header />
       <div className="home-container-video4">
-        <h2 className="subtitle1">Podcasts</h2>
+        <h2 className="subtitle1">Stories</h2>
         <section className="audio-container-parent">
-          <div className="video-container-child">
-            <VideoPlayer url={videoMono} height={"150px"} />
-          </div>
-          <div className="video-container-child">
-            <VideoPlayer url={videoMono} height={"150px"} />
-          </div>
-          <div className="video-container-child">
-            <VideoPlayer url={videoMono} height={"150px"} />
-          </div>
-          <div className="video-container-child">
-            <VideoPlayer url={videoMono} height={"150px"} />
-          </div>
+          <ul className="story-container">
+            <li>
+              <NavButton link={"/connect"} buttonColor={"green-button"}>
+                Over 16s
+              </NavButton>
+            </li>
+            <li>
+              <NavButton link={"/music"} buttonColor={"pink-button"}>
+                Under 16s
+              </NavButton>
+            </li>
+          </ul>
         </section>
       </div>
     </>

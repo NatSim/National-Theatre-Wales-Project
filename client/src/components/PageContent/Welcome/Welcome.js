@@ -2,11 +2,13 @@ import React from "react";
 import "./Welcome.css";
 import NextButton from "../../Buttons/MainButton";
 import PlaceHolder from "../../../images/whole-beeimage.png";
+import { useHistory } from "react-router";
+
 /**
- *Functional component-Welcome message
- *
- *Appears only once for each first time user visit
- */
+ Functional component-Welcome message
+ 
+ Appears on Landing page
+ **/
 
 const Welcome = ({
   title,
@@ -38,6 +40,12 @@ const Welcome = ({
     </>
   );
 
+  const history = useHistory();
+  //On Button click redirects user to profile page
+  const navigateToHome = () => {
+    history.push("/home");
+  };
+
   return (
     <div>
       {console.log(welcomeStep)}
@@ -57,6 +65,7 @@ const Welcome = ({
           alt="bee"
         />
         <p>{welcomeStep === 0 ? specialChars() : mainText}</p>
+        <p>{welcomeStep === 3 ? navigateToHome() : ""}</p>
         <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
       </section>
     </div>

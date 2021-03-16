@@ -9,17 +9,8 @@ import Plant from "../../images/Plant.jpg";
 import TakeAWalk from "../../images/TakeAWalk.jpg";
 import "./SimpleActPage.css";
 import Header from "../../components/Header/Header";
-import * as CgIcons from "react-icons/cg";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import SideNav from "../../components/Nav/SideNav";
-
-{
-  /* <SAPrompts
-img={BeKind}
-alt="Kind"
-id="1"
-></SAPrompts> */
-}
 
 export const challengeData = [
   { id: "1", img: BeKind, alt: "Kind" },
@@ -44,12 +35,9 @@ const SimpleActsPage = (props) => {
   const videoSimple =
     "https://www.youtube.com/watch?v=qxB3-sw2HAQ&feature=emb_logo";
 
-  const Item = "/profile";
-  const itemIcon = <CgIcons.CgProfile className="profile-svg" />;
-
   return (
     <>
-      <Header Link={Item} Icon={itemIcon} />
+      <Header />
       <SideNav />
       <div className="home-container-video3">
         <h2 className="subtitle1">Simple Acts</h2>
@@ -71,9 +59,7 @@ const SimpleActsPage = (props) => {
           <VideoPlayer url={videoSimple} height="150px" />
         </div>
 
-        <span className="challenge-text">
-          Complete a simple act to receive your reward
-        </span>
+        <span className="challenge-text">Complete a simple act.</span>
         <section className="flex-container">
           <div className="child-container">
             <div>
