@@ -2,7 +2,7 @@ import React from "react";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import stories from "../../Models/stories";
 
-const StoriesPageA = ({ stories }) => {
+const StoriesPageA = () => {
   return (
     <div>
       <div className="video-container-child">

@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-// import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import "./MusicPage.css";
 import * as CgIcons from "react-icons/cg";

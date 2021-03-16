@@ -35,7 +35,7 @@ function App() {
           <Route path="/simpleacts" component={SimpleActsPage} />
           <Route path="/connect" component={ConnectPage} />
           <Route path="/storiesA" component={StoriesPageA} />
-          <Route path="/storiesA" component={StoriesPageC} />
+          <Route path="/storiesC" component={StoriesPageC} />
           <Route path="/music" component={MusicPage} />
           <Route path="/challenge/:id" component={ChallengePage} />
           <Route path="/show" component={ShowPage} />
