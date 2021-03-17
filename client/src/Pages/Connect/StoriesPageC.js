@@ -12,13 +12,13 @@ const StoriesPageA = () => {
         <VideoPlayer url={stories[0].videoMono} height={"150px"} />
       </div>
       <div className="video-container-child">
-        <VideoPlayer url={videoMono} height={"150px"} />
+        <VideoPlayer url={stories[0].videoMono} height={"150px"} />
       </div>
       <div className="video-container-child">
-        <VideoPlayer url={videoMono} height={"150px"} />
+        <VideoPlayer url={stories[0].videoMono} height={"150px"} />
       </div>
       <div className="video-container-child">
-        <VideoPlayer url={videoMono} height={"150px"} />
+        <VideoPlayer url={stories[0].videoMono} height={"150px"} />
       </div>
     </div>
   );
