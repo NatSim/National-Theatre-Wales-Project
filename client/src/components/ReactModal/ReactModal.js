@@ -1,8 +1,10 @@
 import React from "react";
 import Modal from "react-modal";
-import "./ReactMode/ReactModal.css";
+import "./ReactModal.css";
+import * as GRIcons from "react-icons/gr";
+import { MdEmail } from "react-icons/md";
 
-const customStyles = {
+const popupSizing = {
   content: {
     top: "50%",
     left: "50%",
@@ -22,7 +24,7 @@ const ReactModal = () => {
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
-    subtitle.style.color = "#f00";
+    // subtitle.style.color = "#f00";
   }
 
   function closeModal() {
@@ -38,19 +40,29 @@ const ReactModal = () => {
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
-        style={customStyles}
+        style={popupSizing}
         contentLabel="Example Modal"
         ariaHideApp={false}
       >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
+        <GRIcons.GrClose onClick={closeModal} className="exit-popup-icon" />
+        <h2 className="subscribe-subtitle">Subscribe to our Newsletter</h2>
+        <MdEmail className="email-icon" />
         <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Your email..."
+          />
+          <div className="subcribe-button-container">
+            <button>Subscribe</button>
+          </div>
+          <p className="terms-conditions-text">
+            By subscribing you agree to the
+            <a href={"/terms"} className="Link-control">
+              Terms{`&`}Conditions .
+            </a>
+          </p>
         </form>
       </Modal>
     </div>

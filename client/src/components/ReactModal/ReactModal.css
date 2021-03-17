@@ -1,3 +1,24 @@
 .trigger-pop-up {
   background-color: #82d121;
 }
+
+/*Pop Up box styling*/
+.subscribe-subtitle {
+  color: #82d121;
+}
+
+.exit-popup-icon {
+  left: 150px;
+}
+
+.email-icon {
+  width: 100px;
+  height: 50px;
+}
+
+.terms-conditions-text {
+  font-size: 15px;
+}
+.subcribe-button-container {
+  padding: 10px;
+}
