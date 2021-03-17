@@ -4,7 +4,6 @@ import stories from "../../Models/stories";
 // import stories from "../../Models/stories";
 
 const StoriesPageA = () => {
-  const videoMono = "https://www.youtube.com/watch?v=xV2FF-YUy94";
   console.log(stories[0].videoMono);
   return (
     <div>

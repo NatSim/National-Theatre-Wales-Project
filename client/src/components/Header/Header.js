@@ -24,9 +24,6 @@ const Header = (props) => {
           <Link to="/about/1" className="nav-child">
             <li> TEAM </li>
           </Link>
-          <Link to={props.Link} className="nav-child">
-            <li>{props.Icon}</li>
-          </Link>
         </ul>
       </div>
     </>

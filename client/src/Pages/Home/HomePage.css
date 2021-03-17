@@ -26,7 +26,8 @@ body {
 .subtitle1,
 .subtitle2,
 .middle-nav-list,
-h2 {
+h2,
+.trigger-pop-up {
   position: relative;
 }
 

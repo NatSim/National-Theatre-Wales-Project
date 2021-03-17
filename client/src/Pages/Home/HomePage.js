@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import "./HomePage.css";
@@ -12,6 +11,7 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Header from "../../components/Header/Header";
 import SideNav from "../../components/Nav/SideNav";
+import ReactModal from "../../components/ReactModal/ReactModal";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
@@ -49,10 +49,10 @@ function HomePage(props) {
         <main>
           <nav className="nav-container">
             <h2 className="subtitle1">Discover</h2>
-
+            <ReactModal />
             <ul className="middle-nav-list">
               <li>
-                <Link to={"/show"}>
+                <Link to="/show">
                   <img
                     id="about-button"
                     className="default-button"
