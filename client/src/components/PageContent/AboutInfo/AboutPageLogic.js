@@ -10,13 +10,13 @@ const AboutPageLogic = (props) => {
   console.log(aboutText);
 
   //loop through list and add ul li to each list items index
-  const AddListTags = (props) => {
-    const list = aboutText[0].listItems;
+  // const AddListTags = (props) => {
+  //   const list = aboutText[0].listItems;
 
-    const items = list.map((list) => <li key={list.toString()}>{list}</li>);
-    console.log(aboutText[0].listItems);
-    return <ul>{items}</ul>;
-  };
+  //   const items = list.map((list) => <li key={list.toString()}>{list}</li>);
+  //   console.log(aboutText[0].listItems);
+  //   return <ul>{items}</ul>;
+  // };
 
   return (
     <>

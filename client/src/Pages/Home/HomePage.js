@@ -11,8 +11,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Header from "../../components/Header/Header";
-// import SideNav from "../../components/Nav/SideNav";
-import * as GrIcons from "react-icons/gr";
 import SideNav from "../../components/Nav/SideNav";
 
 /**Homepage with Nav buttons as routes to other pages

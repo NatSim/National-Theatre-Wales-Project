@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router";
-import * as CgIcons from "react-icons/cg";
 import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 import Header from "../../../components/Header/Header";
 import SideNav from "../../Nav/SideNav";
@@ -15,8 +13,6 @@ const ChallengeItem = (props) => {
   const onClickHandler = () => {
     // alert("this is working");
     setWelldone("Well done you have completed a Simple Act!");
-    console.log("completed button was clicked!");
-    console.log("Well done message displayed");
   };
 
   return (
@@ -95,5 +91,4 @@ const ChallengeItem = (props) => {
   );
 };
 
-console.log(ChallengeItem);
 export default ChallengeItem;

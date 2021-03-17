@@ -3,7 +3,6 @@ import * as IoIcons from "react-icons/io";
 import * as AiIcons from "react-icons/ai";
 import * as RiIcons from "react-icons/ri";
 import * as FaIcons from "react-icons/fa";
-import * as CgIcons from "react-icons/cg";
 import * as MdIcons from "react-icons/md";
 import * as ImIcons from "react-icons/im";
 
