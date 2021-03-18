@@ -7,12 +7,6 @@ import * as CgIcons from "react-icons/cg";
 import aboutText from "../../Models/aboutText";
 import Team from "../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 
-// import WhatIsTeam from "../../components/PageContent/AboutInfo/WhatIsTeam";
-// import JoinTeam from "../../components/PageContent/AboutInfo/JoinTeam";
-
-//Header Profile icon/path
-const Item = "/profile";
-const itemIcon = <CgIcons.CgProfile className="profile-svg" />;
 //Aiming to use one page component and render different info using props
 const videoTeam = "https://www.youtube.com/watch?v=xV2FF-YUy94";
 
@@ -22,7 +16,7 @@ const AboutArticlesPage = (props) => {
   return (
     <>
       <SideNav />
-      <Header Link={Item} Icon={itemIcon} />
+      <Header />
       <div className="section-color">
         <div className="home-container-video2">
           <div>

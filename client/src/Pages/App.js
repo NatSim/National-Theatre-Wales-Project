@@ -16,8 +16,7 @@ import MapPage from "./Map/MapPage";
 import Footer from "../components/PageContent/Footer/Footer";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import AboutPageLogic from "../components/PageContent/AboutInfo/AboutPageLogic";
-import StoriesPageA from "./Connect/StoriesPageA";
-import StoriesPageC from "./Connect/StoriesPageC";
+import StoriesPage from "./Connect/StoriesPage";
 
 // // SERVICES
 // import userService from "../services/userService";
@@ -34,8 +33,7 @@ function App() {
           <Route path="/about/:id" component={AboutPageLogic} />
           <Route path="/simpleacts" component={SimpleActsPage} />
           <Route path="/connect" component={ConnectPage} />
-          <Route path="/storiesA" component={StoriesPageA} />
-          <Route path="/storiesC" component={StoriesPageC} />
+          <Route path="/stories/:id" component={StoriesPage} />
           <Route path="/music" component={MusicPage} />
           <Route path="/challenge/:id" component={ChallengePage} />
           <Route path="/show" component={ShowPage} />
