@@ -37,3 +37,15 @@ video,
 .info-container {
   padding: 30px;
 }
+
+/*UL style*/
+.list-items {
+  list-style: circle;
+}
+
+.list-items-parent {
+  display: flex;
+  background-color: moccasin;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

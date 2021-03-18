@@ -4,6 +4,9 @@ import "./ReactModal.css";
 import * as GRIcons from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
 
+//Axios POST email input to db here
+//And after first visit (visited code) here
+
 const popupSizing = {
   content: {
     top: "50%",
@@ -16,7 +19,6 @@ const popupSizing = {
 };
 
 const ReactModal = () => {
-  var subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
   function openModal() {
     setIsOpen(true);
