@@ -6,7 +6,7 @@ const aboutText = [
     subtitle: "About TEAM",
     mainText1: "TEAM is free to join and open to anyone over the age of 16.",
     listTitle: "Join TEAM and you’ll get:",
-    listItems: " A chance to have your say on how we run NTW",
+    listItems: " A chance to have your say on how we run NTW.",
     listItem2: "Free entry to selected NTW shows (often before anyone else).",
     listItem3: "Placement training and mentoring opportunities.",
     listItem4: " Invites to social and networking events",
@@ -15,7 +15,8 @@ const aboutText = [
     listItem7: "Discounts to shows and events run by our partners& much more.",
 
     otherText:
-      "Joining is easy:Join the NTW TEAM Group on our online community. This is where all our opportunities will be placed first, so keep an eye out for something that suits you.Join us at any NTW event and speak to a member of staff, TEAM Panel or another TEAM member.",
+      "Joining is easy: Join the NTW TEAM Group on our online community. This is where all our opportunities will be placed first, so keep an eye out for something that suits you.Join us at any NTW event and speak to a member of staff, TEAM Panel or another TEAM member.",
+    teamVideo: "",
   },
   {
     title: "National Theatre Wales",

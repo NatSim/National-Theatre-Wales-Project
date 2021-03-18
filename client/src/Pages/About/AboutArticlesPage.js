@@ -5,6 +5,7 @@ import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../components/Header/Header";
 import * as CgIcons from "react-icons/cg";
 import aboutText from "../../Models/aboutText";
+import Team from "../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 
 // import WhatIsTeam from "../../components/PageContent/AboutInfo/WhatIsTeam";
 // import JoinTeam from "../../components/PageContent/AboutInfo/JoinTeam";
@@ -33,21 +34,41 @@ const AboutArticlesPage = (props) => {
         </div>
         <div className="background-outer">
           <div className="info-container">
-            {props.mainText1}
+            <span>{props.mainText1}</span>
             <br />
-            <span>{props.listTitle}</span>
-            <ul className="list-items-parent">
-              <li className="list-items"> {props.listItems}</li>
-              <li className="list-items"> {props.listItem2}</li>
-              <li className="list-items"> {props.listItem3}</li>
-              <li className="list-items"> {props.listItem4}</li>
-              <li className="list-items"> {props.listItem5}</li>
-              <li className="list-items"> {props.listItem6}</li>
-              <li className="list-items"> {props.listItem7}</li>
-            </ul>
+
+            <h3 className="team-subtitle">{props.listTitle}</h3>
+            {
+              <ul className={props.listItems ? "list-items-parent" : ""}>
+                <li className={props.listItems ? "list-items" : ""}>
+                  {props.listItems}
+                </li>
+                <li className={props.listItems ? "list-items" : ""}>
+                  {props.listItem2}
+                </li>
+                <li className={props.listItems ? "list-items" : ""}>
+                  {props.listItem3}
+                </li>
+                <li className={props.listItems ? "list-items" : ""}>
+                  {props.listItem4}
+                </li>
+                <li className={props.listItems ? "list-items" : ""}>
+                  {props.listItem5}
+                </li>
+                <li className={props.listItems ? "list-items" : ""}>
+                  {props.listItem6}
+                </li>
+                <li className={props.listItems ? "list-items" : ""}>
+                  {props.listItem7}
+                </li>
+              </ul>
+            }
 
             <br />
-            {props.otherText}
+            <div className="join-team-other-text-container">
+              <div className="other-text">{props.otherText}</div>
+              <img className="image-team" src={Team} alt="placeholder" />
+            </div>
           </div>
         </div>
       </div>

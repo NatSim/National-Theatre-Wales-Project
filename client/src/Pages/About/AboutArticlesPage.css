@@ -45,7 +45,43 @@ video,
 
 .list-items-parent {
   display: flex;
-  background-color: moccasin;
+
   flex-wrap: wrap;
   justify-content: space-evenly;
+
+  margin: 50px 0px 50px 0px;
+
+  position: relative;
 }
+.list-items-parent::before {
+  background-color: gray;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 30%;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.list-items {
+  position: relative;
+}
+
+.team-subtitle {
+  margin-top: 20px;
+}
+
+.join-team-other-text-container {
+  display: flex;
+}
+
+.image-team {
+  max-width: 100%;
+  width: 250px;
+  height: 100px;
+}
+
+/*List background*/
