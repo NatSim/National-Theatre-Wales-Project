@@ -6,11 +6,6 @@ const AboutPageLogic = (props) => {
   /** Displays information for 2 or 3 article components with props */
 
   const id = props.match.params.id;
-  console.log(id);
-  console.log(aboutText);
-  console.log(aboutText[0].listItems);
-
-  console.log(aboutText[0].listItems);
 
   return (
     <>

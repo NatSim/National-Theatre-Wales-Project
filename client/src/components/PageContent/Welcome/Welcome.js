@@ -31,7 +31,8 @@ const Welcome = ({
   const specialChars = () => (
     <>
       <span>Go Tell the Bees, asks each one of us to perform seven</span>
-      <span className="blue"> Simple Acts </span> in our daily lives.
+      <span className="blue"> Simple Acts </span>
+      <span> in our daily lives.</span>
     </>
   );
 
@@ -68,7 +69,9 @@ const Welcome = ({
           src={PlaceHolder}
           alt="bee"
         />
-        <p>{welcomeStep === 0 ? specialChars() : mainText}</p>
+        <p className="main-text">
+          {welcomeStep === 0 ? specialChars() : mainText}
+        </p>
         <p>{welcomeStep === 3 ? navigateToHome() : ""}</p>
         <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
       </section>
