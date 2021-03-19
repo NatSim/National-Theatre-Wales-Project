@@ -22,7 +22,7 @@ const StoriesPageA = (props) => {
               <VideoPlayer url={props.videoMono} height={"150px"} />
             </div>
             <div className="video-container-child">
-              <VideoPlayer url={stories[0].videoMono} height={"150px"} />
+              <VideoPlayer url={props.videoMono2} height={"150px"} />
             </div>
             <div className="video-container-child">
               <VideoPlayer url={stories[0].videoMono} height={"150px"} />

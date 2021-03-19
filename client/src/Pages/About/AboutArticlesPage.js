@@ -3,8 +3,6 @@ import "./AboutArticlesPage.css";
 import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../components/Header/Header";
-import * as CgIcons from "react-icons/cg";
-import aboutText from "../../Models/aboutText";
 import Team from "../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 
 //Aiming to use one page component and render different info using props

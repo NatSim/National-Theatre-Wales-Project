@@ -3,6 +3,7 @@ import "./Welcome.css";
 import NextButton from "../../Buttons/MainButton";
 import PlaceHolder from "../../../images/whole-beeimage.png";
 import { useHistory } from "react-router";
+import SideNav from "../../Nav/SideNav";
 
 /**
  Functional component-Welcome message
@@ -23,13 +24,13 @@ const Welcome = ({
     <>
       Welcome to
       <br />
-      <span className="yellow">Go tell the bees</span>
+      <span className="yellow">Go tell the Bees</span>
     </>
   );
 
   const specialChars = () => (
     <>
-      Go Tell the Bees, asks each one of us to perform seven
+      <span>Go Tell the Bees, asks each one of us to perform seven</span>
       <span className="blue"> Simple Acts </span> in our daily lives.
     </>
   );
@@ -50,7 +51,10 @@ const Welcome = ({
     <div>
       {console.log(welcomeStep)}
       <section className="title-container">
-        <h1>
+        <div className="sidenav-container">
+          <SideNav />
+        </div>
+        <h1 className="welcome-title">
           {welcomeStep === 0
             ? newTitle()
             : title && welcomeStep === 2

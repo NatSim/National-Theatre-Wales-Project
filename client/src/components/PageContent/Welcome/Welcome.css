@@ -39,6 +39,42 @@ body {
 
 /* Temp image placeholder*/
 
+/*Background Image*/
 .title-container {
-  margin: 20px;
+  margin: 0px 0px 55px 0px;
+}
+
+.title-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../../images/Background-placeholders/pencil.jpg");
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.yellow,
+.blue,
+.transition-image,
+.bee-default,
+.welcome-title,
+span,
+.button,
+.sidenav-container,
+.nav-bar,
+.menu-bars,
+svg.menu-svg,
+path,
+.nav-menu,
+.navbar-toggle,
+.menu-svg,
+svg {
+  position: relative;
+}
+
+.welcome-title {
+  margin-top: 100px;
 }

@@ -13,7 +13,12 @@ const StoriesLogic = (props) => {
   return (
     <>
       <div>
-        <StoriesPage storiesChoice={id} videoMono={stories[id - 1].videoMono} />
+        <StoriesPage
+          storiesChoice={id}
+          videoMono={stories[id - 1].videoMono}
+          videoMono2={stories[id - 1].videoMono2}
+          videoMono3={stories[id - 1].videoMono3}
+        />
       </div>
     </>
   );
