@@ -19,7 +19,7 @@ const popupSizing = {
 };
 
 const ReactModal = () => {
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [modalIsOpen, setIsOpen] = React.useState(true);
   function openModal() {
     setIsOpen(true);
   }
@@ -33,11 +33,14 @@ const ReactModal = () => {
     setIsOpen(false);
   }
 
+  setTimeout(openModal, 5000);
+
   return (
     <div>
+      {/* 
       <button onClick={openModal} className="trigger-pop-up">
-        Open Modal
-      </button>
+        // Open Modal 
+      </button> */}
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}

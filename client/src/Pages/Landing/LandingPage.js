@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import Welcome from "../../components/PageContent/Welcome/Welcome";
 import { welcomeText } from "../../Models/welcomeText";
-import NTWlogo from "../../components/PageContent/NTWLogo/NTWlogo";
-import LargeImage from "../../components/PageContent/LargeImages/LargeImage";
 import "./LandingPage.css";
-import SideNav from "../../components/Nav/SideNav";
 import Header from "../../components/Header/Header";
 import Features from "../../components/PageContent/Features/Features";
 import NTWLogo from "../../images/logos/NTWLogo/NTW_Logo.png";
@@ -19,7 +16,7 @@ function LandingPage() {
   const [mainText, setMainText] = useState(welcomeText[0].mainText);
   const [imageUrl, setImageUrl] = useState(welcomeText[3].imageUrl);
   const [welcomeStep, setWelcomeStep] = useState(0); //starting point
-  console.log({ imageUrl });
+
   //Button onclick function arrayElement
   const onClickHandler = (arrayElement) => {
     setTitle(welcomeText[arrayElement].title);
@@ -27,7 +24,7 @@ function LandingPage() {
     setImageUrl(welcomeText[arrayElement].imageUrl);
     setWelcomeStep(arrayElement);
   };
-  console.log(Welcome);
+
   //Card Title Text
   const titleTeam = "Join TEAM";
   const titleNTW = "National Theatre Wales";
