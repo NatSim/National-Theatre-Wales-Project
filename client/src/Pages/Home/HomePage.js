@@ -1,4 +1,4 @@
-//import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import "./HomePage.css";
@@ -41,23 +41,21 @@ const placeholderText =
   "Some quick example text to build on the card title and make up the bulk of the card's content.";
 
 function HomePage(props) {
-  console.log("render");
+  console.log("hello");
 
   //Pop up modal function
-  // const [popUp, setPopUp] = useState([]);
-  // const test = <h1>Test</h1>;
-  // useEffect(() => {
-  //   setPopUp();
-  // }, []);
+  const [popUp, setPopUp] = useState([]);
 
-  setTimeout(Testing, 5000);
+  const displayModal = () => {
+    setPopUp("display modal");
+  };
+  //useEffect component did mount feature, if state used don't execute again
 
-  // Testing();
+  useEffect(() => {
+    setTimeout(displayModal, 5000);
+    //displayModal();
+  }, [popUp]);
 
-  function Testing() {
-    alert("Hi");
-    console.log(<ReactModal />);
-  }
   return (
     <>
       <Header />
@@ -67,7 +65,7 @@ function HomePage(props) {
         <main>
           <nav className="nav-container">
             <h2 className="subtitle1">Discover</h2>
-            {/* <Testing key={ReactModal} /> */}
+            <ReactModal>{props.displayModal}</ReactModal>
             <ul className="middle-nav-list">
               <li>
                 <Link to="/show">

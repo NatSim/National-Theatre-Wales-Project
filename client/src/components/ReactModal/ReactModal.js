@@ -18,11 +18,11 @@ const popupSizing = {
   },
 };
 
-const ReactModal = () => {
+const ReactModal = (props) => {
   const [modalIsOpen, setIsOpen] = React.useState(true);
-  function openModal() {
-    setIsOpen(true);
-  }
+  // function openModal() {
+  //   setIsOpen(true);
+  // }
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
@@ -32,8 +32,6 @@ const ReactModal = () => {
   function closeModal() {
     setIsOpen(false);
   }
-
-  setTimeout(openModal, 5000);
 
   return (
     <div>
