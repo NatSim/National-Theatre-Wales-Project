@@ -54,7 +54,8 @@ video,
   position: relative;
 }
 .list-items-parent::before {
-  background-color: gray;
+  background-color: gainsboro;
+  /*gainsboro*/
   content: "";
   position: absolute;
   top: 0px;

@@ -15,7 +15,7 @@ const SidebarData = [
   },
   {
     title: "About",
-    path: "/about/2",
+    path: "/show",
     icon: <IoIcons.IoIosPaper />,
     cName: "nav-text",
   },

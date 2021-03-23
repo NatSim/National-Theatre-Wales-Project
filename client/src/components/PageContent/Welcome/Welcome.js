@@ -18,6 +18,8 @@ const Welcome = ({
   onClickHandler,
   welcomeStep,
 }) => {
+  const history = useHistory();
+
   console.log(typeof welcomeStep); //check for errors
 
   const newTitle = () => (
@@ -42,7 +44,6 @@ const Welcome = ({
     </>
   );
 
-  const history = useHistory();
   //On Button click redirects user to profile page
   const navigateToHome = () => {
     history.push("/home");

@@ -17,9 +17,10 @@ const ChallengeItem = (props) => {
 
   return (
     <>
-      <Header />
-      <SideNav />
-      <div className="challenge-page">
+      <div className="title-container">
+        <Header />
+        <SideNav />
+
         <section className="prompt-act-container">
           <div className="prompt-text-container">
             <h1 className="prompt-text">{props.direction}</h1>

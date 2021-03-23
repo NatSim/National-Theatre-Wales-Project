@@ -93,8 +93,24 @@ app.get("/contactupdate", (req, res) => {
   });
 });
 
-/*CREATE SUBSCRIBE TABLE*/
-/*INSERT DATA into SUBCRIBE TABLE*/
+/*INSERT DATA into SUBSCRIBE TABLE*/
+app.post("/about/2", (req, res) => {
+  const email = req.body.email;
+
+  db.query(
+    "INSERT INTO subscribers(email) VALUES (?)",
+    [email],
+    (err, result) => {
+      if (err !== null) {
+        console.log(err);
+        console.log(result);
+      } else {
+        res.status(201).send("Subscriber email data submitted");
+        console.log("Successfully sent data");
+      }
+    }
+  );
+});
 
 app.get("/", (req, res) => {
   res.render("index");

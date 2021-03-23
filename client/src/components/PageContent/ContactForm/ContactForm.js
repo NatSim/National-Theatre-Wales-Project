@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Axios from "axios";
 import Button from "react-bootstrap/Button";
+import SideNav from "../../Nav/SideNav";
 
 function ContactForm(props) {
   const [state, setState] = useState({
@@ -45,8 +46,6 @@ function ContactForm(props) {
     setState((prevState) => ({ ...prevState, [id]: value }));
   };
 
-  //Handles Select value
-
   //Handles Input changes
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -59,7 +58,6 @@ function ContactForm(props) {
       <section className="title-container">
         <h1>Contact Us</h1>
       </section>
-
       <form
         action=""
         method="get"
