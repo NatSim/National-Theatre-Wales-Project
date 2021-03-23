@@ -16,7 +16,7 @@ The structure of the repository is:
 ### server
 **Node.js** code here.
 
-###The Database
+### The Database
 **SQL Database**
 
 ### Start The Development Server
