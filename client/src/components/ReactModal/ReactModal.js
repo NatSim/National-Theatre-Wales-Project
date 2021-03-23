@@ -19,10 +19,10 @@ const popupSizing = {
 };
 
 const ReactModal = (props) => {
-  const [modalIsOpen, setIsOpen] = React.useState(true);
-  // function openModal() {
-  //   setIsOpen(true);
-  // }
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
@@ -35,10 +35,9 @@ const ReactModal = (props) => {
 
   return (
     <div>
-      {/* 
       <button onClick={openModal} className="trigger-pop-up">
-        // Open Modal 
-      </button> */}
+        Subscribe
+      </button>
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}

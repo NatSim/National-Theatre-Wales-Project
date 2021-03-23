@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React from "react";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import "./HomePage.css";
@@ -12,7 +12,6 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Header from "../../components/Header/Header";
 import SideNav from "../../components/Nav/SideNav";
-import ReactModal from "../../components/ReactModal/ReactModal";
 
 /**Homepage with Nav buttons as routes to other pages
  * */
@@ -43,19 +42,6 @@ const placeholderText =
 function HomePage(props) {
   console.log("hello");
 
-  //Pop up modal function
-  const [popUp, setPopUp] = useState([]);
-
-  const displayModal = () => {
-    setPopUp("display modal");
-  };
-  //useEffect component did mount feature, if state used don't execute again
-
-  useEffect(() => {
-    setTimeout(displayModal, 5000);
-    //displayModal();
-  }, [popUp]);
-
   return (
     <>
       <Header />
@@ -65,7 +51,6 @@ function HomePage(props) {
         <main>
           <nav className="nav-container">
             <h2 className="subtitle1">Discover</h2>
-            <ReactModal>{props.displayModal}</ReactModal>
             <ul className="middle-nav-list">
               <li>
                 <Link to="/show">

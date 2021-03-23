@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AboutArticlesPage.css";
 import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../components/Header/Header";
 import Team from "../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
+import ReactModal from "../../components/ReactModal/ReactModal";
 
 //Aiming to use one page component and render different info using props
 const videoTeam = "https://www.youtube.com/watch?v=xV2FF-YUy94";
 
-// console.log(aboutText);
-
 const AboutArticlesPage = (props) => {
+  const [showButton, setShowButton] = useState(<ReactModal />);
+
+  function removeButton() {
+    setShowButton([]);
+  }
+
   return (
     <>
       <SideNav />
@@ -61,6 +66,7 @@ const AboutArticlesPage = (props) => {
               <div className="other-text">{props.otherText}</div>
               <img className="image-team" src={Team} alt="placeholder" />
             </div>
+            <div>{props.listItems ? showButton : removeButton}</div>
           </div>
         </div>
       </div>
