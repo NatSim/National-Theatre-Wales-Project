@@ -17,7 +17,7 @@ The structure of the repository is:
 **Node.js** code here.
 
 ###The Database
-**Mongo Database**
+**SQL Database**
 
 ### Start The Development Server
 
@@ -51,8 +51,6 @@ Props and State
 Thanks to the following people who have contributed to this project:
 
 🧑‍🏫 @shawsy171
-
-🧑‍🏫 [@tosimiadesoye](https://github.com/tosimiadesoye)
 
 <h4>Contact</h4>
 If you want to contact me you can reach me at: natsimbig@gmail.com
