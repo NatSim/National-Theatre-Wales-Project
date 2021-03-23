@@ -56,7 +56,9 @@ function ContactForm(props) {
   return (
     <>
       <section className="title-container">
-        <h1>Contact Us</h1>
+        <nav className="side-nav-control">
+          <SideNav />
+        </nav>
       </section>
       <form
         action=""
@@ -64,6 +66,8 @@ function ContactForm(props) {
         className="form-parent"
         onSubmit={handleSubmit}
       >
+        {" "}
+        <h1>Contact Us</h1>
         <div className="contact-form-child">
           {/* <label>Username:</label> */}
           <input

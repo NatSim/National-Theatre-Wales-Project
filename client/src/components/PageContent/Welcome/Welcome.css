@@ -37,11 +37,9 @@ body {
   }
 }
 
-/* Temp image placeholder*/
-
-/*Background Image*/
+/*Background Image-Design(on Landing page/Contact page and ChallengeChoicePage)*/
 .title-container {
-  margin: 0px 0px 55px 0px;
+  margin: -5px 0px 120px 0px;
 }
 
 .title-container::before {

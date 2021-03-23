@@ -6,9 +6,9 @@ body {
   font-weight: 400;
 }
 
-#contact-page {
+.title-container2 {
   height: 150vh;
-  padding: 80px 24px;
+  /* padding: 5px 20px 10px 20px; */
   background-color: #89d7e8;
   color: white;
 }
@@ -35,6 +35,10 @@ textarea {
 .form-control {
   margin-bottom: 10px;
   padding: 0px;
+}
+
+.form-parent {
+  margin: 0px 15px 0px 15px;
 }
 
 select {

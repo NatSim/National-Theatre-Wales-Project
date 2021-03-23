@@ -18,7 +18,11 @@ const aboutText = [
       "Joining is easy: Join the NTW TEAM Group on our online community. This is where all our opportunities will be placed first, so keep an eye out for something that suits you.Join us at any NTW event and speak to a member of staff, TEAM Panel or another TEAM member.",
     teamVideo: "",
     joinTeam: (
-      <a href="https://community.nationaltheatrewales.org/group/ntwteam">
+      <a
+        href="https://community.nationaltheatrewales.org/group/ntwteam"
+        target="_blank"
+        rel="noreferrer"
+      >
         Sign up to TEAM today!
       </a>
     ),

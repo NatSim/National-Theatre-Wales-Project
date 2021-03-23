@@ -7,9 +7,8 @@ import Header from "../../components/Header/Header";
 const ContactUsPage = () => {
   return (
     <>
-      <SideNav />
       <Header />
-      <div id="contact-page" className="home-button-container">
+      <div>
         <section>
           <Form />
         </section>
