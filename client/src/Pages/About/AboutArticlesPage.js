@@ -13,7 +13,7 @@ const AboutArticlesPage = (props) => {
   const [showButton, setShowButton] = useState(false);
 
   function addButton() {
-    setShowButton(<ReactModal />);
+    setShowButton(true);
   }
 
   return (
@@ -66,7 +66,7 @@ const AboutArticlesPage = (props) => {
               <div className="other-text">{props.otherText}</div>
               <img className="image-team" src={Team} alt="placeholder" />
             </div>
-            <div>{props.listItems ? <ReactModal /> : showButton}</div>
+            <div>{!props.listItems ? <ReactModal /> : props.joinTeam}</div>
           </div>
         </div>
       </div>

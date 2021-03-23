@@ -24,6 +24,7 @@ const AboutPageLogic = (props) => {
           listItem6={aboutText[id - 1].listItem6}
           listItem7={aboutText[id - 1].listItem7}
           otherText={aboutText[id - 1].otherText}
+          joinTeam={aboutText[id - 1].joinTeam}
         />
       </div>
     </>

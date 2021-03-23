@@ -93,24 +93,8 @@ app.get("/contactupdate", (req, res) => {
   });
 });
 
-/** SEND USER DETAILS TO DATABASE user table works fine **/
-app.post("/register", (req, res) => {
-  const username = req.body.username;
-  const email = req.body.email;
-  const password = req.body.password;
-
-  db.query(
-    "INSERT INTO users (username, email, password) VALUES (?,?,?)",
-    [username, email, password],
-    (err, result) => {
-      if (err !== null) {
-        console.log(err);
-      } else {
-        console.log("Data successfully stored in table!");
-      }
-    }
-  );
-});
+/*CREATE SUBSCRIBE TABLE*/
+/*INSERT DATA into SUBCRIBE TABLE*/
 
 app.get("/", (req, res) => {
   res.render("index");
