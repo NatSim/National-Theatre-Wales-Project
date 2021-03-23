@@ -10,10 +10,10 @@ import ReactModal from "../../components/ReactModal/ReactModal";
 const videoTeam = "https://www.youtube.com/watch?v=xV2FF-YUy94";
 
 const AboutArticlesPage = (props) => {
-  const [showButton, setShowButton] = useState(<ReactModal />);
+  const [showButton, setShowButton] = useState(false);
 
-  function removeButton() {
-    setShowButton([]);
+  function addButton() {
+    setShowButton(<ReactModal />);
   }
 
   return (
@@ -66,7 +66,7 @@ const AboutArticlesPage = (props) => {
               <div className="other-text">{props.otherText}</div>
               <img className="image-team" src={Team} alt="placeholder" />
             </div>
-            <div>{props.listItems ? showButton : removeButton}</div>
+            <div>{props.listItems ? <ReactModal /> : showButton}</div>
           </div>
         </div>
       </div>
