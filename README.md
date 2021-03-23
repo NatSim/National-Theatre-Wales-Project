@@ -14,7 +14,7 @@ The structure of the repository is:
 **Javascript code using React Framework.**
 
 ### server
-**Node.js** code here.
+**Node.js** 
 
 ### The Database
 **SQL Database**
