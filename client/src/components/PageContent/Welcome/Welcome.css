@@ -37,6 +37,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 801px) {
+  .title-container {
+    background-image: url("../../../images/Background-placeholders/pencil.jpg");
+    background-size: inherit;
+  }
+}
+
 /*Background Image-Design(on Landing page/Contact page and ChallengeChoicePage)*/
 .title-container {
   margin: -5px 0px 120px 0px;

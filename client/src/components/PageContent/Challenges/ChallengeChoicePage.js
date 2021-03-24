@@ -40,52 +40,55 @@ const ChallengeItem = (props) => {
             <p className="text-control2"> {props.text1}</p>
           </div>
         </section>
-      </div>
-      <div className="challenge-page-background2">
-        <section className="article-image-container">
-          <div className="flex-parent">
-            <div className="flex-child">
-              <h3 className="text2-subheading">{props.text2Subheading}</h3>
-              <p className="text-control"> {props.text2}</p>
-            </div>
-            <div className="flex-child">
-              <img
-                className="place-holder"
-                src={props.image}
-                alt={"placeholder"}
-              />
-            </div>
-          </div>
-          <div className="flex-child">
-            <h3 className="discover-subheading">{props.discoverHeading}</h3>
-            <span>
-              {props.urlFilm} {props.urlBook} {props.urlArtist}
-            </span>
-            <div className="flex-child">
-              <h3 className="resources-subheading">
-                {props.resourcesSubheading}
-              </h3>
-              <div className="flex-child">
-                <h3 className="resources-subheading">{props.charityHeading}</h3>
-                <span>{props.urlCharity}</span>
-              </div>
-              <ul>
-                (Under 16s)
-                <li>{props.urlResources}</li>
-                <li>{props.urlResources2}</li>
-                <li>{props.urlResources3}</li>
-              </ul>
-            </div>
-          </div>
-          <div className="flex-child" id="border-control">
-            <h3 className="quote-heading">{props.quoteHeading}</h3>
-            <p>{props.quote}</p>
-          </div>
-        </section>
-        <CompleteChallengeButton onClickHandler={onClickHandler} />
 
-        <div className="welldone-message">
-          <p>{welldone}</p>
+        <div className="challenge-page-background2">
+          <section className="article-image-container">
+            <div className="flex-parent">
+              <div className="flex-child">
+                <h3 className="text2-subheading">{props.text2Subheading}</h3>
+                <p className="text-control"> {props.text2}</p>
+              </div>
+              <div className="flex-child">
+                <img
+                  className="place-holder"
+                  src={props.image}
+                  alt={"placeholder"}
+                />
+              </div>
+            </div>
+            <div className="flex-child">
+              <h3 className="discover-subheading">{props.discoverHeading}</h3>
+              <span>
+                {props.urlFilm} {props.urlBook} {props.urlArtist}
+              </span>
+              <div className="flex-child">
+                <h3 className="resources-subheading">
+                  {props.resourcesSubheading}
+                </h3>
+                <div className="flex-child">
+                  <h3 className="resources-subheading">
+                    {props.charityHeading}
+                  </h3>
+                  <span>{props.urlCharity}</span>
+                </div>
+                <ul>
+                  (Under 16s)
+                  <li>{props.urlResources}</li>
+                  <li>{props.urlResources2}</li>
+                  <li>{props.urlResources3}</li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex-child" id="border-control">
+              <h3 className="quote-heading">{props.quoteHeading}</h3>
+              <p>{props.quote}</p>
+            </div>
+          </section>
+          <CompleteChallengeButton onClickHandler={onClickHandler} />
+
+          <div className="welldone-message">
+            <p>{welldone}</p>
+          </div>
         </div>
       </div>
     </>
