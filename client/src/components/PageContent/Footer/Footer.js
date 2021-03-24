@@ -66,8 +66,8 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link to={"/privacy"} className="Link-control">
-              Privacy
+            <Link to={"/accessibility"} className="Link-control">
+              Accessibility
             </Link>
           </li>
         </ul>

@@ -8,7 +8,7 @@ import SimpleActsPage from "./Act/SimpleActsPage";
 import ConnectPage from "./Connect/ConnectPage";
 import MusicPage from "./Listen/MusicPage";
 import TermsPage from "./Terms/TermsPage";
-import PrivacyPage from "./Privacy/PrivacyPage";
+import AccessPage from "./Access/AccessPage";
 import ContactUsPage from "./ContactUs/ContactUsPage";
 import ChallengePage from "../components/PageContent/Challenges/ChallengeLogic";
 import ShowPage from "./Show/ShowPage";
@@ -40,7 +40,7 @@ function App() {
           <Route path="/map" component={MapPage} />
           <Route path="/contact" component={ContactUsPage} />
           <Route path="/terms" component={TermsPage} />
-          <Route path="/privacy" component={PrivacyPage} />
+          <Route path="/accessibility" component={AccessPage} />
         </Switch>
         <Footer />
       </Router>
