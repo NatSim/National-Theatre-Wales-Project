@@ -1,12 +1,17 @@
 .home-footer {
   margin: 100px 0px 50px 0px;
   font-size: 16px;
+  padding: 0px 15px 0px 15px;
+}
+.socials-control {
+  margin: 0px 40px 0px 0px;
 }
 
 /*fb/contacts/terms/privacy section*/
 .footer-ul-control {
   display: flex;
   justify-content: space-evenly;
+  padding-left: 0rem;
 }
 
 .Link-control {

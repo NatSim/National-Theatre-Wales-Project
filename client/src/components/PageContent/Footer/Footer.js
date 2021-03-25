@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <>
       <div className="home-footer">
-        <ul>
+        <ul className="socials-control">
           <li>
             <a
               href={ntwFacebookPage}
