@@ -23,7 +23,7 @@ const ConnectPage = (props) => {
         <h2 className="subtitle1">Stories</h2>
         <section className="audio-container-parent">
           <ul className="story-container">
-            <li>
+            <li className="connect-button-control">
               <NavButton
                 link={"/stories/1"}
                 buttonColor={"green-button"}
@@ -32,7 +32,7 @@ const ConnectPage = (props) => {
                 Over 16s
               </NavButton>
             </li>
-            <li>
+            <li className="connect-button-control">
               <NavButton
                 link={"/stories/2"}
                 buttonColor={"pink-button"}

@@ -34,6 +34,10 @@ video,
   justify-content: center;
 }
 
+.team-subtitle {
+  font-size: 20px;
+}
+
 .info-container {
   padding: 30px;
 }

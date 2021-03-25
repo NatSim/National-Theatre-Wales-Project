@@ -15,10 +15,20 @@
   padding: 50px;
 }
 
+/*ConnectPage*/
+.story-container {
+  padding: 40px 0px 0px 0px;
+}
+
+.connect-button-control {
+  padding: 20px 0px 0px 0px;
+}
+
 /*Background*/
 .home-container-video4 {
   padding: 10px 0px 50px 0px;
   position: relative;
+  height: 100vh;
 }
 .home-container-video4::before {
   content: "";
@@ -29,7 +39,7 @@
   left: 0px;
   background-color: #ff2f69;
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.65;
   border-top-style: double;
   border-color: grey;
   border-top-width: 0.5px;

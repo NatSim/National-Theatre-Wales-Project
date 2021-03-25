@@ -18,7 +18,10 @@ body {
   text-align: left;
   letter-spacing: 1.1px;
 }
+.header-control {
+  font-size: 20px;
+}
 
 .terms-content-control {
-  font-size: 13px;
+  font-size: 15px;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Welcome.css";
 import NextButton from "../../Buttons/MainButton";
-import PlaceHolder from "../../../images/whole-beeimage.png";
+import PlaceHolder from "../../../images/logos/MainBeeLogo/GTTB_Logo.jpg";
 import { useHistory } from "react-router";
 import SideNav from "../../Nav/SideNav";
 
