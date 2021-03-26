@@ -24,6 +24,15 @@ h1 {
 .form-sizing-control {
   margin: 25px 0px 0px 0px;
   text-align: left;
+  background-color: white;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+@media only screen and (min-width: 801px) {
+  .form-sizing-control {
+    padding: 5px 25px 5px 0px;
+  }
 }
 
 .form-title-control {
