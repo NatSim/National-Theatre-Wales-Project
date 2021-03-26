@@ -61,57 +61,6 @@ db.connect((err) => {
   console.log("Successfully connected to MySQL database");
 });
 
-/**USER ENPOINTS**/
-/**INSERT DATA INTO CONTACT FORM TABLE works fine**/
-app.post("/contact", (req, res) => {
-  const name = req.body.name;
-  const email = req.body.email;
-  const subject = req.body.subject;
-  const message = req.body.message;
-
-  db.query(
-    "INSERT INTO contact_forms(name, email, subject, message) VALUES (?,?,?,?)",
-    [name, email, subject, message],
-    (err, result) => {
-      if (err !== null) {
-        console.log(err);
-      } else {
-        res.send("Contact form data submitted");
-        console.log("succesfully sent data");
-      }
-    }
-  );
-});
-
-/** ALTER TABLE works fine **/
-app.get("/contactupdate", (req, res) => {
-  let sql = "ALTER TABLE contact_forms MODIFY message VARCHAR(1000)";
-  db.query(sql, (err, result) => {
-    if (err) throw err;
-    console.log(result);
-    res.send("Contact form table updated");
-  });
-});
-
-/*INSERT DATA into SUBSCRIBE TABLE*/
-app.post("/about/2", (req, res) => {
-  const email = req.body.email;
-
-  db.query(
-    "INSERT INTO subscribers(email) VALUES (?)",
-    [email],
-    (err, result) => {
-      if (err !== null) {
-        console.log(err);
-        console.log(result);
-      } else {
-        res.status(201).send("Subscriber email data submitted");
-        console.log("Successfully sent data");
-      }
-    }
-  );
-});
-
 app.get("/", (req, res) => {
   res.render("index");
 });

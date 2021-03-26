@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import * as CgIcons from "react-icons/cg";
-import mapPlaceholder from "../../images/Maps/Pembrok.jfif";
+import Maps from "../../components/PageContent/Maps/Maps";
+import SideNav from "../../components/Nav/SideNav";
 
 /***Static image or Google API
 Tour Locations ***/
@@ -12,9 +13,12 @@ export default function MapPage() {
 
   return (
     <div>
+      <SideNav />
       <Header Link={Item} Icon={itemIcon} />
       <h3 className="subtitle1">Tour Locations</h3>
-      <img src={mapPlaceholder} alt="tour-locations" />
+      <div>
+        <Maps />
+      </div>
     </div>
   );
 }

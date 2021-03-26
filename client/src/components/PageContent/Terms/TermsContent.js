@@ -33,8 +33,8 @@ function TermsContent() {
         </p>
         <h1 className=" header-control">
           <strong>
-            NATIONAL THEATRE WALES’ WEBSITE National Theatre Wales’ and Go Tell
-            The Bees Website
+            NATIONAL THEATRE WALES’ WEBSITE National Theatre Wales’ and GOT TELL
+            THE BEES WEBSITE
           </strong>
         </h1>
         <p className="terms-content-control">

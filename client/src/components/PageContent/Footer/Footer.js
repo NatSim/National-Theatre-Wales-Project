@@ -95,9 +95,12 @@ const Footer = () => {
           </li>
         </ul>
         <p>
-          2021 Go Tell The Bees Copyright © National Theatre Wales. Website
-          developed by Natasha Simone. Registered Company No. 6693227 Charity
-          Registration No. 1127952
+          2021 Go Tell The Bees Copyright © National Theatre Wales.Registered
+          Company No. 6693227 Charity Registration No. 1127952. <br />
+          Website developed by{" "}
+          <a href="https://www.linkedin.com/in/natasha-simone-14310364/">
+            Natasha Simone.
+          </a>
         </p>
       </div>
     </>

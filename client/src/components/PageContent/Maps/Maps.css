@@ -1,0 +1,15 @@
+.map-parent-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.map-control {
+  height: 300px;
+  width: auto;
+  max-width: 100%;
+}
+
+.map-container-control-spacebetween {
+  padding: 40px 0px 0px 0px;
+}
