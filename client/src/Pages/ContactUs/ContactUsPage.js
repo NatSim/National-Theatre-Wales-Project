@@ -9,23 +9,25 @@ const ContactUsPage = () => {
     <>
       <SideNav />
       <Header />
-      <div className="form-content-parent">
-        <div className="subtitle3">
-          <h1>Contact Us</h1>
-        </div>
-        <div>
-          <p>
-            We operate from a small base in Cardiff’s city centre, but we work
-            all over the country, and beyond, using Wales’ rich and diverse
-            landscape, its towns, cities and villages, its incredible stories
-            and wealth of talent as our inspiration.
-          </p>
-        </div>
+      <div className="terms-page">
         <div className="form-content-parent">
-          <section>
-            <ContactInfo />
-          </section>
-        </div>{" "}
+          <div className="subtitle3">
+            <h1>Contact Us</h1>
+          </div>
+          <div>
+            <p>
+              We operate from a small base in Cardiff’s city centre, but we work
+              all over the country, and beyond, using Wales’ rich and diverse
+              landscape, its towns, cities and villages, its incredible stories
+              and wealth of talent as our inspiration.
+            </p>
+          </div>
+          <div className="form-content-parent">
+            <section>
+              <ContactInfo />
+            </section>
+          </div>
+        </div>
       </div>
     </>
   );
