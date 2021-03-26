@@ -21,11 +21,11 @@ const ContactUsPage = () => {
             and wealth of talent as our inspiration.
           </p>
         </div>
-      </div>
-      <div className="form-content-parent">
-        <section>
-          <ContactInfo />
-        </section>
+        <div className="form-content-parent">
+          <section>
+            <ContactInfo />
+          </section>
+        </div>{" "}
       </div>
     </>
   );
