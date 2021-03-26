@@ -1,10 +1,23 @@
 import React from "react";
 
-export default function ContactInfo() {
+const ContactInfo = () => {
   return (
-    <div>
-      Box Office: +44 (0)29 2037 1689 Office: +44 (0)29 2035 3070 Email:
-      info@nationaltheatrewales.org
+    <div className="form-sizing-control">
+      <ul>
+        <li className="form-title-control">
+          Email:
+          <a href="info@nationaltheatrewales.org">
+            info@nationaltheatrewales.org
+          </a>
+        </li>
+        <li className="form-title-control">
+          Box Office: <a href="+44 (0)29 2037 1689">+44 (0)29 2037 1689</a>
+        </li>
+        <li className="form-title-control">
+          Phone: <a href="+44 (0)29 2035 3070">+44 (0)29 2035 3070</a>
+        </li>
+      </ul>
     </div>
   );
-}
+};
+export default ContactInfo;

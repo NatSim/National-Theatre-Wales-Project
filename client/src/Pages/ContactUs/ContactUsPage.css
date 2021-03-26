@@ -14,6 +14,39 @@ h1 {
   box-sizing: border-box;
 }
 
+/*Form Details in fullscreen mode*/
+
+.form-content-parent {
+  margin: 85px 10px 50px 15px;
+  text-align: left;
+}
+
+.form-sizing-control {
+  margin: 25px 0px 0px 0px;
+  text-align: left;
+}
+
+.form-title-control {
+  margin: 25px 0px 0px 0px;
+}
+.subtitle3 {
+  padding: 0px 0px 15px 0px;
+}
+
+/*@media queries for Mobile Device/Ipads*/
+@media only screen and (max-width: 801px) {
+  .form-content-parent {
+    text-align: center;
+    margin: 70px 10px 0px 10px;
+  }
+  @media only screen and (max-width: 801px) {
+    .subtitle3 {
+      margin: 0px 0px 0px 25px;
+    }
+  }
+}
+
+/*Contact Form Control*/
 input[type="text"],
 select,
 textarea {
