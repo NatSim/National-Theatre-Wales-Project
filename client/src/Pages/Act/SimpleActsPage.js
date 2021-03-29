@@ -53,7 +53,6 @@ const SimpleActsPage = (props) => {
               margin: "auto",
               padding: "10px",
               border: "3px solid green",
-              width: "50%",
             }}
           />
         </div>

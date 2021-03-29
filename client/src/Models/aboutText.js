@@ -31,7 +31,7 @@ const aboutText = [
     title: "National Theatre Wales",
     subtitle: "About NTW",
     mainText1:
-      "About NTW The nation of Wales is our stage.  Collaborate. Make. Inspire.We collaborate with people and places to make extraordinary theatre that inspires change.From the intimate to the epic, our work is powerful, brave and unexpected.National Theatre Wales has been making English-language productions in locations all over.Wales, the UK, internationally and online since March 2010. It operates from a small base in Cardiff’s city centre, but works all over the country and beyond, using Wales’ rich and diverse landscape, its towns, cities and villages, its incredible stories and rich talent as its inspiration.National Theatre Wales is supported by the Welsh Government and the Arts Council of Wales.",
+      "The nation of Wales is our stage.  Collaborate. Make. Inspire.We collaborate with people and places to make extraordinary theatre that inspires change.From the intimate to the epic, our work is powerful, brave and unexpected.National Theatre Wales has been making English-language productions in locations all over.Wales, the UK, internationally and online since March 2010. It operates from a small base in Cardiff’s city centre, but works all over the country and beyond, using Wales’ rich and diverse landscape, its towns, cities and villages, its incredible stories and rich talent as its inspiration.National Theatre Wales is supported by the Welsh Government and the Arts Council of Wales.",
 
     websiteInfo:
       "nationaltheatrewales.org,  @ntwtweets,  nationaltheatrewales,  nationaltheatrewales",
