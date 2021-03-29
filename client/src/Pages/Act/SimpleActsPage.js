@@ -41,17 +41,25 @@ const SimpleActsPage = (props) => {
       <SideNav />
       <div className="home-container-video3">
         <h2 className="subtitle1">Simple Acts</h2>
+
         {/* Video Container-START HERE */}
         <div className="simple-acts-container-parent">
           <VideoPlayer
             className="simple-acts-video"
             url={videoSimple}
             height="150px"
+            width="50%"
+            style={{
+              margin: "auto",
+              padding: "10px",
+              border: "3px solid green",
+              width: "50%",
+            }}
           />
         </div>
         {/* Video Container-END HERE */}
 
-        {/*SIMPLE ACTS INTRO-START HERE */}
+        {/*SIMPLE ACTS INTRO TEXT-START HERE */}
         <div className="text-video-control">
           <article className="challenge-text">
             With a few simple acts we can change how we interact with our
@@ -61,7 +69,6 @@ const SimpleActsPage = (props) => {
             learn from each other, we can build confidence and skills and that
             we can experience through all of the senses.
           </article>
-
           <article className="challenge-text">
             We want this production to have a positive impact on communities.
             Learning in an active and imaginative way is critical to this.
@@ -72,10 +79,10 @@ const SimpleActsPage = (props) => {
             activities, ideas and educational resources:
           </article>
         </div>
-        {/*SIMPLE ACTS INTRO-END HERE */}
+        {/*SIMPLE ACTS INTRO TEXT-END HERE */}
 
-        {/* 7 SIMPLE ACTS Container-START HERE */}
-        <span className="challenge-text">
+        {/* 7 SIMPLE ACTS ICONS Container-START HERE */}
+        <span className="challenge-text2">
           <b>Explore the 7 Simple Acts below.</b>
         </span>
         <section className="flex-container">
@@ -91,7 +98,7 @@ const SimpleActsPage = (props) => {
             </div>
           </div>
         </section>
-        {/* 7 SIMPLE ACTS Container-END HERE */}
+        {/* 7 SIMPLE ACTS ICONS Container-END HERE */}
       </div>
     </>
   );

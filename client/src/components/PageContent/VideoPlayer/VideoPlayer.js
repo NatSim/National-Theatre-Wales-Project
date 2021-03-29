@@ -5,11 +5,12 @@ const VideoPlayer = (props) => {
   return (
     <>
       <ReactPlayer
-        width="246px"
+        width={props.width}
         height={props.height}
         controls
         url={props.url}
         alt="Video"
+        style={props.style}
       >
         Sorry, your browser doesn't support embedded videos.
       </ReactPlayer>

@@ -16,16 +16,32 @@ const StoriesPageA = (props) => {
           </span>
           <section className="video-container-parent">
             <div className="video-container-child">
-              <VideoPlayer url={props.videoMono1} height={"150px"} />
+              <VideoPlayer
+                url={props.videoMono1}
+                width={"246px"}
+                height={"150px"}
+              />
             </div>
             <div className="video-container-child">
-              <VideoPlayer url={props.videoMono2} height={"150px"} />
+              <VideoPlayer
+                url={props.videoMono2}
+                width={"246px"}
+                height={"150px"}
+              />
             </div>
             <div className="video-container-child">
-              <VideoPlayer url={props.videoMono1} height={"150px"} />
+              <VideoPlayer
+                url={props.videoMono1}
+                width={"246px"}
+                height={"150px"}
+              />
             </div>
             <div className="video-container-child">
-              <VideoPlayer url={props.videoMono2} height={"150px"} />
+              <VideoPlayer
+                url={props.videoMono2}
+                width={"246px"}
+                height={"150px"}
+              />
             </div>
           </section>
         </div>

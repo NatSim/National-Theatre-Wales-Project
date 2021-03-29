@@ -72,10 +72,12 @@ const ChallengeItem = (props) => {
                   <span>{props.urlCharity}</span>
                 </div>
                 <ul>
-                  (Under 16s)
-                  <li>{props.urlResources}</li>
-                  <li>{props.urlResources2}</li>
-                  <li>{props.urlResources3}</li>
+                  <li>{props.urlResources} (Under 16s)</li>
+                  <li>{props.urlResources2} (Under 16s)</li>
+                  <li>
+                    {props.urlResources3}{" "}
+                    {props.urlResources3 ? "(Under 16s)" : ""}
+                  </li>
                 </ul>
               </div>
             </div>

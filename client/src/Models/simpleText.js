@@ -72,7 +72,8 @@ const simpleText = [
     text1:
       "It might start with listening - to a new piece of music or poetry, a recipe, or someone's point of view. It's easy for us to get trapped in our habits and what we know, but trying something different can bring new perspectives and refresh our thinking. Volunteering could be another route to make new connections, alongside others in common cause or helping people who can also, it turns out, help you. Or learn a new skill, perhaps something you had never thought you would do, and find that you connect with new people too.",
 
-    text2: " ",
+    text2:
+      " Counterpoints Arts is a leading national organisation in the fields of arts, migration and cultural change. Their mission is to produce and support arts by and about migrants and refugees. ",
 
     urlFilm: (
       <a href="http://www.human-themovie.org/" target="_blank" rel="noreferrer">
