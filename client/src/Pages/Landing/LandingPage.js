@@ -17,7 +17,7 @@ function LandingPage() {
   const [imageUrl, setImageUrl] = useState(welcomeText[3].imageUrl);
   const [welcomeStep, setWelcomeStep] = useState(0); //starting point
 
-  //Button onclick function arrayElement
+  /*Button onclick function arrayElement*/
   const onClickHandler = (arrayElement) => {
     setTitle(welcomeText[arrayElement].title);
     setMainText(welcomeText[arrayElement].mainText);
@@ -25,24 +25,23 @@ function LandingPage() {
     setWelcomeStep(arrayElement);
   };
 
-  //Card Title Text
+  /*Card Title Text*/
   const titleTeam = "Join TEAM";
   const titleNTW = "National Theatre Wales";
   const contactUs = "Get in Touch";
 
-  //Card Button Text
+  /*Card Button Text*/
   const clickHere = "Click Here";
 
-  //Card placeholder Text
+  /*Card placeholder Text*/
   const placeholderText =
     "Some quick example text to build on the card title and make up the bulk of the card's content.";
 
   return (
-    //React.Fragment shorcut
     <>
       <Header />
-      <div className="parent-flex-container">
-        <div className="welcome-container">
+      <main className="parent-flex-container">
+        <section className="welcome-container">
           <Welcome
             welcomeStep={welcomeStep}
             onClickHandler={onClickHandler}
@@ -50,7 +49,7 @@ function LandingPage() {
             mainText={mainText}
             imageUrl={imageUrl}
           />
-        </div>
+        </section>
         <h2 className="subtitle2">Explore</h2>
         <Container className="card-deck">
           <Row>
@@ -85,7 +84,7 @@ function LandingPage() {
             </Col>
           </Row>
         </Container>
-      </div>
+      </main>
     </>
   );
 }

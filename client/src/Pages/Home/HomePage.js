@@ -13,12 +13,12 @@ import Container from "react-bootstrap/Container";
 import Header from "../../components/Header/Header";
 import SideNav from "../../components/Nav/SideNav";
 
-/**Homepage with Nav buttons as routes to other pages
+/**Homepage with Nav buttons as routes to sub pages
  * */
 
 const NavButton = (props) => {
   return (
-    //Reusable Nav button component
+    /*Reusable Nav button component*/
     <Link to={props.link}>
       <Button id={props.buttonColor} className="default-button">
         {props.children}
@@ -27,26 +27,24 @@ const NavButton = (props) => {
   );
 };
 
-//Card Title Text
+/*Card Title Text*/
 const titleTeam = "Join TEAM";
 const titleNTW = "National Theatre Wales";
 const contactUs = "Get in Touch";
 
-//Card Button Text
+/*Card Button Text*/
 const clickHere = "Click Here";
 
-//Card placeholder Text
+/*Card placeholder Text*/
 const placeholderText =
   "Some quick example text to build on the card title and make up the bulk of the card's content.";
 
-function HomePage(props) {
-  console.log("hello");
-
+const HomePage = (props) => {
   return (
     <>
       <Header />
       <SideNav />
-      <div className="homepage">
+      <section className="homepage">
         <div className="background-outer"></div>
         <main>
           <nav className="nav-container">
@@ -86,7 +84,7 @@ function HomePage(props) {
             </ul>
           </nav>
         </main>
-      </div>
+      </section>
       <h2 className="subtitle2">Explore</h2>
       <Container className="card-deck">
         <Row>
@@ -123,6 +121,6 @@ function HomePage(props) {
       </Container>
     </>
   );
-}
+};
 
 export default HomePage;

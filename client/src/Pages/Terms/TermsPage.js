@@ -3,7 +3,6 @@ import "../Terms/TermsPage.css";
 import TermsContent from "../../components/PageContent/Terms/TermsContent";
 import SideNav from "../../components/Nav/SideNav";
 import Header from "../../components/Header/Header";
-import * as CgIcons from "react-icons/cg";
 
 const Terms = () => {
   return (

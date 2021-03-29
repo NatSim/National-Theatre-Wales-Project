@@ -1,9 +1,8 @@
 import React from "react";
 import "../../components/Buttons/MainButton.css";
 
-//Next Button Functional Component
+/*Button use in WELCOME*/
 const NextButton = ({ onClickHandler, welcomeStep }) => {
-  console.log(onClickHandler, welcomeStep);
   return (
     <div>
       <button

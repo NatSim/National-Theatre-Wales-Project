@@ -6,8 +6,7 @@ import { useHistory } from "react-router";
 import SideNav from "../../Nav/SideNav";
 
 /**
- Functional component-Welcome message
- 
+ WELCOME MESSAGE
  Appears on Landing page
  **/
 
@@ -19,8 +18,10 @@ const Welcome = ({
   welcomeStep,
 }) => {
   const history = useHistory();
-
-  console.log(typeof welcomeStep); //check for errors
+  //On Button click redirects user to profile page
+  const navigateToHome = () => {
+    history.push("/home");
+  };
 
   const newTitle = () => (
     <>
@@ -44,18 +45,12 @@ const Welcome = ({
     </>
   );
 
-  //On Button click redirects user to profile page
-  const navigateToHome = () => {
-    history.push("/home");
-  };
-
   return (
-    <div>
-      {console.log(welcomeStep)}
+    <>
       <section className="title-container">
-        <div className="sidenav-container">
+        <nav className="sidenav-container">
           <SideNav />
-        </div>
+        </nav>
         <h1 className="welcome-title">
           {welcomeStep === 0
             ? newTitle()
@@ -76,7 +71,7 @@ const Welcome = ({
         <p>{welcomeStep === 3 ? navigateToHome() : ""}</p>
         <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
       </section>
-    </div>
+    </>
   );
 };
 

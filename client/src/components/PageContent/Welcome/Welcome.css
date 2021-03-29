@@ -16,6 +16,7 @@ body {
   color: #00c1a2;
 }
 
+/*Bee Image-START*/
 .bee-default {
   width: 150px;
   height: auto;
@@ -36,7 +37,9 @@ body {
     opacity: 0;
   }
 }
+/*Bee Image-END*/
 
+/*Responsive Queries*/
 @media only screen and (max-width: 801px) {
   .title-container {
     background-image: url("../../../images/Background-placeholders/pencil.jpg");
@@ -45,6 +48,7 @@ body {
 }
 
 /*Background Image-Design(on Landing page/Contact page and ChallengeChoicePage)*/
+/*START*/
 .title-container {
   margin: -5px 0px 120px 0px;
 }
@@ -87,3 +91,4 @@ h2 {
 .welcome-title {
   margin-top: 100px;
 }
+/*END*/

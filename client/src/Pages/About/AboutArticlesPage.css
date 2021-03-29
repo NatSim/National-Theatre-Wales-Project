@@ -1,4 +1,4 @@
-/*Background*/
+/*Background-START*/
 .home-container-video2 {
   padding: 10px 0px 50px 0px;
   position: relative;
@@ -18,17 +18,14 @@
 video,
 .video-container,
 .info-container,
-.what-is-team-control,
 .heading-control,
 .video-about-text-control {
   position: relative;
 }
 
-.what-is-team-control {
-  padding: 50px;
-  text-align: justify;
-}
+/*Background-END*/
 
+/*Video Container-START*/
 .video-about-text-control {
   display: flex;
   justify-content: center;
@@ -37,12 +34,17 @@ video,
 .team-subtitle {
   font-size: 20px;
 }
+/*Video Container-END*/
+
+.team-subtitle {
+  margin-top: 20px;
+}
 
 .info-container {
   padding: 30px;
 }
 
-/*UL style*/
+/*TEAM UL-START*/
 .list-items {
   list-style: circle;
 }
@@ -59,7 +61,6 @@ video,
 }
 .list-items-parent::before {
   background-color: gainsboro;
-  /*gainsboro*/
   content: "";
   position: absolute;
   top: 0px;
@@ -74,17 +75,19 @@ video,
 .list-items {
   position: relative;
 }
-
-.team-subtitle {
-  margin-top: 20px;
-}
+/*TEAM UL-END*/
 
 .join-team-other-text-container {
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0px 0px 25px 0px;
 }
 
+/*IMAGES-START*/
 .image-team {
   max-width: 100%;
   width: 250px;
   height: 100px;
 }
+/*IMAGES-END*/

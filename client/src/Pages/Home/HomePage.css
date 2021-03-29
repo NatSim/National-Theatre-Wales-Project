@@ -1,9 +1,8 @@
 body {
   margin: 0%;
-  /* text-align: center; */
 }
 
-/* Middle nav*/
+/* Middle button nav-START*/
 .nav-container {
   padding: 10px 25px 50px 0px;
   position: relative;
@@ -22,7 +21,7 @@ body {
   border-color: grey;
   border-top-width: 0.5px;
 }
-
+/* Middle button nav-END*/
 .subtitle1,
 .subtitle2,
 .middle-nav-list,
@@ -39,13 +38,6 @@ h2,
   padding-top: 15px;
 }
 
-.profile-svg {
-  float: left;
-  margin: 10px;
-  width: 50px;
-  height: 40px;
-}
-
 .welcome {
   font-family: hero-new, sans-serif;
   font: bold;
@@ -55,7 +47,7 @@ h2,
   color: black;
 }
 
-/*Transition elements*/
+/*Transition elements-START*/
 
 .welcome {
   animation: transitionIn 2s;
@@ -80,7 +72,7 @@ h2,
     transform: rotateX(0);
   }
 }
-
+/*Transition elements-END*/
 .features-container {
   z-index: 0;
   margin: 0px;
@@ -119,7 +111,7 @@ li {
   margin: 0px 0px 10px 0px;
 }
 
-/*Middle nav*/
+/*Middle Discover nav-START*/
 #about-button {
   border: black;
   box-shadow: 2px 2px whitesmoke;
@@ -137,7 +129,6 @@ li {
 }
 
 /* Bee Image about button*/
-
 .nav-container-control {
   padding: 50px;
 }
@@ -157,16 +148,4 @@ li {
 #pink-button {
   background-color: #ff2f69;
 }
-
-/* #monologues-button {
-  background-color: #fbce69;
-} */
-
-/*section white/yellow*/
-.h-container-video {
-  padding: 10%;
-}
-
-.info-container {
-  padding: 10%;
-}
+/*Middle Discover nav-END*/

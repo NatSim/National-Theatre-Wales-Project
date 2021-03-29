@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./AboutArticlesPage.css";
 import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
@@ -6,35 +6,36 @@ import Header from "../../components/Header/Header";
 import Team from "../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import ReactModal from "../../components/ReactModal/ReactModal";
 
-//Aiming to use one page component and render different info using props
+//Aiming to add this to aboutText file and render here
 const videoTeam = "https://www.youtube.com/watch?v=xV2FF-YUy94";
 
 const AboutArticlesPage = (props) => {
-  const [showButton, setShowButton] = useState(false);
-
-  function addButton() {
-    setShowButton(true);
-  }
-
   return (
     <>
       <SideNav />
       <Header />
-      <div className="section-color">
-        <div className="home-container-video2">
+
+      <main className="section-color">
+        {/* TOP Background-color Container-START HERE */}
+        <section className="home-container-video2">
           <div>
             <h2 className="subtitle1">{props.title}</h2>
           </div>
           <div className="video-about-text-control">
             <VideoPlayer url={videoTeam} height={"150px"} className="video" />
           </div>
-        </div>
-        <div className="background-outer">
-          <div className="info-container">
-            <span>{props.mainText1}</span>
-            <br />
+        </section>
+        {/* TOP Background-color Container-END HERE */}
 
+        {/* Background Container-START HERE */}
+        <div className="background-outer">
+          {/* Add spacing HERE */}
+          <div className="info-container">
+            <article>{props.mainText1}</article>
+            {/* Add spacing HERE */}
             <h3 className="team-subtitle">{props.listTitle}</h3>
+
+            {/* TEAM Member List-START HERE */}
             {
               <ul className={props.listItems ? "list-items-parent" : ""}>
                 <li className={props.listItems ? "list-items" : ""}>
@@ -60,16 +61,25 @@ const AboutArticlesPage = (props) => {
                 </li>
               </ul>
             }
+            {/* TEAM Member List-END HERE */}
 
-            <br />
-            <div className="join-team-other-text-container">
-              <div className="other-text">{props.otherText}</div>
-              <img className="image-team" src={Team} alt="placeholder" />
-            </div>
+            {/* Add spacing here */}
+            <div className="other-text">{props.otherText}</div>
+
+            {/* Image Container-START HERE */}
+            <section className="join-team-other-text-container">
+              <img className="image-team" src={Team} alt="placeholder" />{" "}
+              <img className="image-team" src={Team} alt="placeholder" />{" "}
+              <img className="image-team" src={Team} alt="placeholder" />{" "}
+            </section>
+            {/* Image Container-END HERE */}
+
+            {/* Button Options(SUBSCRIBE or SIGNUP) HERE */}
             <div>{!props.listItems ? <ReactModal /> : props.joinTeam}</div>
           </div>
         </div>
-      </div>
+        {/* Background Container-START END */}
+      </main>
     </>
   );
 };

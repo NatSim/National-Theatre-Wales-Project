@@ -9,12 +9,12 @@ const StoriesPageA = (props) => {
     <>
       <SideNav />
       <Header />
-      <div className="section-color">
+      <main className="section-color">
         <div className="home-container-video2">
-          <div>
+          <span>
             <h2 className="subtitle1">Stories</h2>
-          </div>
-          <div className="video-container-parent">
+          </span>
+          <section className="video-container-parent">
             <div className="video-container-child">
               <VideoPlayer url={props.videoMono1} height={"150px"} />
             </div>
@@ -27,9 +27,9 @@ const StoriesPageA = (props) => {
             <div className="video-container-child">
               <VideoPlayer url={props.videoMono2} height={"150px"} />
             </div>
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
     </>
   );
 };

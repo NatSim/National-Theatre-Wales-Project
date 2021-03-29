@@ -19,7 +19,7 @@ const ConnectPage = (props) => {
     <>
       <SideNav />
       <Header />
-      <div className="home-container-video4">
+      <main className="home-container-video4">
         <h2 className="subtitle1">Stories</h2>
         <section className="audio-container-parent">
           <ul className="story-container">
@@ -43,7 +43,7 @@ const ConnectPage = (props) => {
             </li>
           </ul>
         </section>
-      </div>
+      </main>
     </>
   );
 };

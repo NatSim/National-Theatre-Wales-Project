@@ -73,6 +73,15 @@ video,
   text-align: justify;
   padding: 15px;
 }
+.text-video-control {
+  display: flex;
+}
+
+@media only screen and (max-width: 802px) {
+  .text-video-control {
+    flex-wrap: wrap;
+  }
+}
 
 .simple-acts-container-parent {
   display: flex;
@@ -81,4 +90,11 @@ video,
   justify-content: space-evenly;
   position: relative;
   padding: 0px 0px 50px 0px;
+}
+
+.simple-acts-video {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }

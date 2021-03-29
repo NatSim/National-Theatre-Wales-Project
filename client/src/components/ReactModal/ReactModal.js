@@ -31,7 +31,7 @@ const ReactModal = (props) => {
     setIsOpen(false);
   }
 
-  //**Axios POST email input to db here | Subscriber input state **/
+  /*Axios POST email input to db here | Subscriber input state */
   const [state, setState] = useState({
     email: "",
   });
@@ -56,13 +56,13 @@ const ReactModal = (props) => {
       });
   };
 
-  //Select, Text Input & Submit Button  event handlers
+  /*Select, Text Input & Submit Button  event handlers*/
   const handleChange = (e) => {
     const { id, value } = e.target;
     setState((prevState) => ({ ...prevState, [id]: value }));
   };
 
-  //Handles Input changes
+  /*Handles Input changes*/
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(state);
@@ -70,7 +70,7 @@ const ReactModal = (props) => {
   };
 
   return (
-    <div>
+    <>
       <button onClick={openModal} className="trigger-pop-up">
         Subscribe
       </button>
@@ -109,7 +109,7 @@ const ReactModal = (props) => {
           </p>
         </form>
       </Modal>
-    </div>
+    </>
   );
 };
 

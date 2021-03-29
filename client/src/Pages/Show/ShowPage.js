@@ -1,31 +1,13 @@
 import React from "react";
-//import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import SideNav from "../../components/Nav/SideNav";
 import "./ShowPage.css";
-//import Button from "react-bootstrap/Button";
-import * as CgIcons from "react-icons/cg";
 
-// const NavButton = (props) => {
-//   return (
-//     //Reusable Nav button component
-//     <Link to={props.link}>
-//       <Button id={props.buttonColor} className="default-button">
-//         {props.children}
-//       </Button>
-//     </Link>
-//   );
-// };
-
-function ShowPage() {
-  //Header Profile icon/path
-  const profileLink5 = "/profile";
-  const profileIcon5 = <CgIcons.CgProfile className="profile-svg" />;
-
+const ShowPage = () => {
   return (
     <>
       <SideNav />
-      <Header Link={profileLink5} Icon={profileIcon5} />
+      <Header />
 
       <div className="live-background-container">
         <h2 className="subtitle1">Show Programme</h2>
@@ -41,6 +23,6 @@ function ShowPage() {
       </div>
     </>
   );
-}
+};
 
 export default ShowPage;
