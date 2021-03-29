@@ -6,6 +6,7 @@ import Learn1 from "../images/Learn1.jpg";
 import Plant from "../images/Plant.jpg";
 import TakeAWalk from "../images/TakeAWalk.jpg";
 
+/*Content for ChallengeChoicePage/ChallengeLogic*/
 const simpleText = [
   {
     act: "Be Kind to your Neighbour",
@@ -179,13 +180,24 @@ const simpleText = [
     text1:
       "We over-consume because we are encouraged to do so. Ever since the rise of the advertising industry in the 50s, we’ve been told that we need more and more stuff. Nowadays in order to ‘keep the economy going’.Yes, we all like to go shopping and sometimes even just for the sheer joy of experiencing something new. But so many t-shirts, plastic toys and 2-for-1 deals? How gratifying it is to go back to making, reusing, sharing and swapping. Borrowing books and tools from libraries; Growing some of our own food. Doing all this does not only make us feel better about ourselves, with more friends and skills. But it also helps us save cash and bank precious time to then spend with family, friends and in nature.",
 
-    text2: "Example Text2",
+    text2:
+      "Refill Wales is an initiative set to help the Welsh Government’s aim to make Wales the world’s first 'Refill Nation'. They say, “It has never been easier to swap a single-use plastic bottle for a taste of the rolling Welsh mountains.” Join the #refillrevolution",
 
     urlArtist: (
       <a href="https://thomasdambo.com/" target="_blank" rel="noreferrer">
         Explore
       </a>
     ),
+    urlCharity: (
+      <a
+        href="https://refill.org.uk/refill-wales/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Refill Wales
+      </a>
+    ),
+
     urlResources: (
       <a
         href="https://www.nationaltheatrewales.org/daisy-discovers-sharing/"

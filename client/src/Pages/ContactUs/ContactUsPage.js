@@ -15,7 +15,7 @@ const ContactUsPage = () => {
             <h1>Contact Us</h1>
           </div>
           <div>
-            <p>
+            <p className="contact-location-info">
               We operate from a small base in Cardiff’s city centre, but we work
               all over the country, and beyond, using Wales’ rich and diverse
               landscape, its towns, cities and villages, its incredible stories

@@ -18,8 +18,8 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: #00c1a2;
-  opacity: 0.3;
+  background-image: url("../../images/Background-placeholders/pencil.jpg");
+  opacity: 0.55;
 }
 
 .terms-content-control,
@@ -28,7 +28,8 @@ body {
 .form-control-parent,
 .subtitle3,
 .form-sizing-control,
-.form-title-control {
+.form-title-control,
+.contact-location-info {
   position: relative;
 }
 
