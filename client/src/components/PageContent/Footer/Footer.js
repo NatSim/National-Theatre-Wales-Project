@@ -18,7 +18,7 @@ const Footer = () => {
     <>
       <div className="home-footer">
         <ul className="socials-control">
-          <li>
+          <li className="socials-link-control">
             <a
               href={ntwFacebookPage}
               target="_blank"

@@ -12,31 +12,76 @@ const MusicPage = () => {
     <>
       <Header />
       <SideNav />
-      <div className="home-container-video4">
+      <main className="home-container-video4">
         <h2 className="subtitle1">Music</h2>
+        <div className="intro-text-container">
+          <span>
+            *Music can help improve your mood and overall outlook.Listen and
+            enjoy the playlsit below*
+          </span>
+        </div>
+        {/* Featured Item START HERE */}
         <section className="audio-container-parent">
           <div className="video-container-child">
-            <VideoPlayer url={videoMusic} height={"150px"} />
-            {/* <span className="title-text">
-              Carys Eleri - Go Tell The Bees/Dod nôl at fy nghoed
-            </span> */}
+            <VideoPlayer url={videoMusic} width={"246px"} height={"150px"} />
+            <div className="title-text-container">
+              <span className="title-text">
+                Carys Eleri - Go Tell The Bees/Dod nôl at fy nghoed
+              </span>
+            </div>
           </div>
         </section>
-        <section className="audio-container-parent">
-          <div className="video-container-child">
-            <VideoPlayer url={soundCloudExample} height={"100px"} />
-          </div>
-          <div className="video-container-child">
-            <VideoPlayer url={soundCloudExample} height={"100px"} />
-          </div>
-          <div className="video-container-child">
-            <VideoPlayer url={soundCloudExample} height={"100px"} />
-          </div>
-          <div className="video-container-child">
-            <VideoPlayer url={soundCloudExample} height={"100px"} />
-          </div>
+        {/* Featured Item END HERE */}
+
+        {/* List Section START HERE */}
+        <section>
+          <ol className="audio-container-parent">
+            <li className="video-container-child">
+              <VideoPlayer
+                url={soundCloudExample}
+                width={"246px"}
+                height={"100px"}
+              />
+            </li>
+            <li className="video-container-child">
+              <VideoPlayer
+                url={soundCloudExample}
+                width={"246px"}
+                height={"100px"}
+              />
+            </li>
+            <li className="video-container-child">
+              <VideoPlayer
+                url={soundCloudExample}
+                width={"246px"}
+                height={"100px"}
+              />
+            </li>
+            <li className="video-container-child">
+              <VideoPlayer
+                url={soundCloudExample}
+                width={"246px"}
+                height={"100px"}
+              />
+            </li>
+            <li className="video-container-child">
+              <VideoPlayer
+                url={soundCloudExample}
+                width={"246px"}
+                height={"100px"}
+              />
+            </li>
+            <li className="video-container-child">
+              <VideoPlayer
+                url={soundCloudExample}
+                width={"246px"}
+                height={"100px"}
+              />
+            </li>
+          </ol>
         </section>
-      </div>
+        {/* List Section END HERE */}
+      </main>
     </>
   );
 };

@@ -13,6 +13,7 @@
   background-color: #82d121;
   background-size: cover;
   opacity: 0.5;
+  /* background-image: url("../../images/TEAM/TideTEAMSocial.jpg"); */
 }
 
 video,
@@ -44,21 +45,32 @@ video,
   padding: 30px;
 }
 
+.team-info-container {
+  padding: 30px;
+  text-align: left;
+}
+
 /*TEAM UL-START*/
 .list-items {
   list-style: circle;
 }
 
 .list-items-parent {
-  display: flex;
+  /* display: flex; */
 
   flex-wrap: wrap;
   justify-content: space-evenly;
 
   position: relative;
 }
+
+.list-image-control {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .list-items-parent::before {
-  background-color: gainsboro;
+  /* background-color: gainsboro; */
   content: "";
   position: absolute;
   top: 0px;
@@ -86,6 +98,11 @@ video,
 section.spacing-container {
   padding: 50px 0px 50px 0px;
 }
+
+.list-show-none {
+  list-style: none;
+}
+
 /*NTW Page main Text line-height*/
 .article-line-control {
   line-height: 2;
@@ -99,7 +116,8 @@ section.spacing-container {
 /*IMAGES-START*/
 .image-team {
   max-width: 100%;
-  width: 250px;
-  height: 100px;
+  width: 350px;
+  height: auto;
+  margin: 10px;
 }
 /*IMAGES-END*/

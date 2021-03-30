@@ -1,5 +1,37 @@
+/*CONNECT(Stories) PAGE HERE*/
+.story-container {
+  padding: 40px 0px 0px 0px;
+}
+
+.connect-button-control {
+  padding: 20px 0px 0px 0px;
+}
+
+.video-container-parent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+/*LISTEN(Music) PAGE HERE*/
 .title-text {
   font-size: initial;
+}
+
+.title-text-container {
+  padding: 45px 0px 0px 0px;
+}
+
+.video-container-child {
+  text-align: -webkit-center;
+  padding: 0px 5px 100px 0px;
+}
+
+.audio-container-parent {
+  display: flex;
+  flex-flow: wrap;
+  max-width: 100%;
+  justify-content: space-evenly;
 }
 
 .home-video-container4 {
@@ -11,24 +43,9 @@
   padding-bottom: 20px;
 }
 
-.video-container-child {
-  padding: 50px;
-}
-
-/*ConnectPage*/
-.story-container {
-  padding: 40px 0px 0px 0px;
-}
-
-.connect-button-control {
-  padding: 20px 0px 0px 0px;
-}
-
-/*Background*/
 .home-container-video4 {
   padding: 10px 0px 50px 0px;
   position: relative;
-  height: 100vh;
 }
 .home-container-video4::before {
   content: "";
@@ -53,9 +70,6 @@ video,
   position: relative;
 }
 
-.audio-container-parent {
-  display: flex;
-  flex-flow: wrap;
-  max-width: 100%;
-  justify-content: space-evenly;
+.intro-text-control {
+  margin: 0px 0px 45px 0px;
 }

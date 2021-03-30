@@ -50,7 +50,7 @@ const HomePage = (props) => {
           <nav className="nav-container">
             <h2 className="subtitle1">Discover</h2>
             <ul className="middle-nav-list">
-              <li>
+              <li className="nav-button-list">
                 <Link to="/show">
                   <img
                     id="about-button"
@@ -60,23 +60,23 @@ const HomePage = (props) => {
                   />
                 </Link>
               </li>
-              <li>
+              <li className="nav-button-list">
                 <NavButton link={"/connect"} buttonColor={"green-button"}>
                   Connect
                 </NavButton>
               </li>
-              <li>
+              <li className="nav-button-list">
                 <NavButton link={"/music"} buttonColor={"pink-button"}>
                   Listen
                 </NavButton>
               </li>
 
-              <li>
+              <li className="nav-button-list">
                 <NavButton link={"/simpleacts"} buttonColor={"simple-button"}>
                   Act
                 </NavButton>
               </li>
-              <li>
+              <li className="nav-button-list">
                 <NavButton link={"/map"} buttonColor={"blue-button"}>
                   Map
                 </NavButton>

@@ -102,12 +102,12 @@ h2,
 }
 
 a,
-li {
+.nav-button-list {
   list-style: none;
   text-decoration: none;
 }
 
-li {
+.nav-button-list {
   margin: 0px 0px 10px 0px;
 }
 
