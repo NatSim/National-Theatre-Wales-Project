@@ -5,13 +5,18 @@ import Consume from "../images/Consume.jpg";
 import Learn1 from "../images/Learn1.jpg";
 import Plant from "../images/Plant.jpg";
 import TakeAWalk from "../images/TakeAWalk.jpg";
-/**/
-
+/*Article Image Imports START HERE*/
+import CKCimage from "../images/Background-placeholders/SAboards/consume-kind-connect.jpg";
+import Consider1 from "../images/Background-placeholders/SAboards/consider-the-stars.jpg";
+import Consume1 from "../images/Background-placeholders/SAboards/consume-kind-connect.jpg";
+import Plant1 from "../images/Background-placeholders/SAboards/plant-learn.jpg";
+import TakeAWalk1 from "../images/Background-placeholders/SAboards/consider-walk-plant.jpg";
 /*Content for ChallengeChoicePage/ChallengeLogic*/
 const simpleText = [
   {
     act: "Be Kind to your Neighbour",
-    image: BeKind,
+    image1: BeKind,
+    image2: CKCimage,
 
     text1:
       "We all know that acts of kindness can make someone's day but in our busy lives we can sometimes miss the opportunity. So it might help to make some plans. A regular check in on an elderly neighbour? An invite to share a meal? Or perhaps you can join a voluntary programme that can make helping others part of your weekly routine? The challenges we face as individuals and as a society can feel overwhelming but starting small, with things we know can make a difference, we can always be part of the solution.",
@@ -70,7 +75,8 @@ const simpleText = [
   },
   {
     act: "Connect with Someone New",
-    image: Connect,
+    image1: Connect,
+    image2: Consume1,
     text1:
       "It might start with listening - to a new piece of music or poetry, a recipe, or someone's point of view. It's easy for us to get trapped in our habits and what we know, but trying something different can bring new perspectives and refresh our thinking. Volunteering could be another route to make new connections, alongside others in common cause or helping people who can also, it turns out, help you. Or learn a new skill, perhaps something you had never thought you would do, and find that you connect with new people too.",
 
@@ -126,7 +132,8 @@ const simpleText = [
   },
   {
     act: "Consider The Stars",
-    image: Consider,
+    image1: Consider,
+    image2: Consider1,
     text1:
       "From mythical stories to prophetic signs; from navigational tools to an exploration of our place in the universe, we humans have long known that the stars are an important part of our lives. Every single atom in our bodies was once inside a star that exploded. We are – all of us – made of stardust.  We think that is a beautiful and incredible thing. When we consider the stars we are reminded of our connection to each other as well as our connection to our ancestors – after all, if you want to look back in time, all you have to do is look up.",
 
@@ -177,7 +184,8 @@ const simpleText = [
   },
   {
     act: "Consume A Little Less",
-    image: Consume,
+    image1: Consume,
+    image2: CKCimage,
     text1:
       "We over-consume because we are encouraged to do so. Ever since the rise of the advertising industry in the 50s, we’ve been told that we need more and more stuff. Nowadays in order to ‘keep the economy going’.Yes, we all like to go shopping and sometimes even just for the sheer joy of experiencing something new. But so many t-shirts, plastic toys and 2-for-1 deals? How gratifying it is to go back to making, reusing, sharing and swapping. Borrowing books and tools from libraries; Growing some of our own food. Doing all this does not only make us feel better about ourselves, with more friends and skills. But it also helps us save cash and bank precious time to then spend with family, friends and in nature.",
 
@@ -222,7 +230,8 @@ const simpleText = [
   },
   {
     act: "Learn one new thing about Nature",
-    image: Learn1,
+    image1: Learn1,
+    image2: CKCimage,
     text1:
       "Imagine if you had a teacher as awe-inspiring and wise as Nature. The one who could help you find knowledge and wonder in the everyday. Rediscover your curiosity and adventurousness  Improve your well-being. Show you the importance of respect and humility.The teacher who could tell you crazy things that bend your mind, like that there are more trees on Earth than stars in the Milky Way. Or that giraffes are predominantly gay. Or that ocean is a home to nearly 95% of all life. Would you not want to learn about all that, and then share with everyone you meet?",
 
@@ -281,7 +290,8 @@ const simpleText = [
   },
   {
     act: "Plant a Seed",
-    image: Plant,
+    image1: Plant,
+    image2: Plant1,
     text1:
       "Consider the power contained in a tiny seed. There in your palm, the potential to grow food, create shelter and turn carbon dioxide into oxygen. Plant, water, and wait for an everyday miracle. Invite bees back into your garden, street or local green space. Help a child discover where their food comes from. Or grow a tree that will one day offer shade to the children of their children’s children, long after we’re gone. ",
 
@@ -335,7 +345,8 @@ const simpleText = [
   },
   {
     act: "Take A Walk",
-    image: TakeAWalk,
+    image1: TakeAWalk,
+    image2: TakeAWalk1,
     text1:
       "Ever wondered what happens to you when you take a walk in nature, when your feet start interacting with the ground and the sound of wind in leaves and waves against the land reach your brain?Trees secrete phytoncides, the olfactory-provoking chemicals that reduce stress hormones. The effect is that a walk in nature improves immunity and memory, reduces anxiety, helps battle colds and flu and makes you happy. The list goes on. And if you do it again and again, research says, the benefits grow into a true medicinal marvel.",
 

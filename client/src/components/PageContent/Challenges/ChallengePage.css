@@ -54,6 +54,7 @@ body {
 .place-holder {
   max-width: 100%;
   height: auto;
+  width: 400px;
 }
 
 .simple-acts {
@@ -97,6 +98,22 @@ body {
   justify-content: space-between;
 }
 
+.flex-child {
+  margin: 20px 0px 0px 0px;
+}
+
+.flex-child-image {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 801px) {
+  .flex-parent {
+    flex-wrap: wrap;
+  }
+}
+
 .article-image-container {
   padding: 50px 5px 30px 5px;
   margin: 5px 5px 25px 5px;
@@ -124,9 +141,14 @@ body {
   padding-bottom: 90px;
 }
 
-/* #border-control {
-  border-style: solid;
-  border-radius: 10px;
-  padding: 20px 0px 20px 0px;
-  box-shadow: 2.5px 5px #888888;
-} */
+@media only screen and (max-width: 801px) {
+  .prompt-act-container {
+    padding-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 801px) {
+  .prompt-text {
+    padding: 20px 20px 10px 20px;
+  }
+}

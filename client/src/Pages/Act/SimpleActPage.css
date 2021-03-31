@@ -91,6 +91,11 @@ video,
   position: relative;
   padding: 0px 0px 50px 0px;
 }
+.simple-acts-container-parent,
+.simple-acts-video,
+.simplepage-container {
+  animation: fadeIn 10s;
+}
 
 .simple-acts-video {
   margin: auto;

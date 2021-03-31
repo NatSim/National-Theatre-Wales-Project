@@ -15,8 +15,7 @@ const ChallengeLogic = (props) => {
   //*****function steps:
 
   const id = props.match.params.id;
-  console.log(id);
-  console.log(simpleText);
+
   return (
     //return 7 challenge content in component below, from array id -1
     <>
@@ -25,7 +24,8 @@ const ChallengeLogic = (props) => {
           challengeChoice={id}
           direction={direction}
           act={simpleText[id - 1].act}
-          image={simpleText[id - 1].image}
+          image1={simpleText[id - 1].image1}
+          image2={simpleText[id - 1].image2}
           text1={simpleText[id - 1].text1}
           text2Subheading={text2Subheading}
           text2={simpleText[id - 1].text2}

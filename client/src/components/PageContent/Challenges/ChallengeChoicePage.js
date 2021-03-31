@@ -31,7 +31,7 @@ const ChallengeItem = (props) => {
           <div className="image-container">
             <img
               className="image"
-              src={props.image}
+              src={props.image1}
               alt={"simple act challenge"}
             />
           </div>
@@ -48,10 +48,10 @@ const ChallengeItem = (props) => {
                 <h3 className="text2-subheading">{props.text2Subheading}</h3>
                 <p className="text-control"> {props.text2}</p>
               </div>
-              <div className="flex-child">
+              <div className="flex-child-image">
                 <img
                   className="place-holder"
-                  src={props.image}
+                  src={props.image2}
                   alt={"placeholder"}
                 />
               </div>

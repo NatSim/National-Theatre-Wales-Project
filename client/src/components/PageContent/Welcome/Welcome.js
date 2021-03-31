@@ -85,7 +85,6 @@ const Welcome = ({
           </div>
         </section>
         <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
-        {/* <p>{welcomeStep === 3 ? navigateToHome() : ""}</p> */}
       </section>
     </>
   );
