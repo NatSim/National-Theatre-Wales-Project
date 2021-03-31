@@ -78,6 +78,7 @@ body {
   border-top-style: double;
   border-color: grey;
   border-top-width: 0.5px;
+  height: 600px;
 }
 
 .prompt-text,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Welcome.css";
 import NextButton from "../../Buttons/MainButton";
 import PlaceHolder from "../../../images/logos/MainBeeLogo/GTTB_Logo.jpg";
@@ -18,14 +18,21 @@ const Welcome = ({
   welcomeStep,
 }) => {
   const history = useHistory();
-  //On Button click redirects user to profile page
+  //On Button click redirects user to home page
+
   const navigateToHome = () => {
     history.push("/home");
   };
 
+  useEffect(() => {
+    if (welcomeStep === 3) {
+      navigateToHome();
+    }
+  });
+
   const newTitle = () => (
     <>
-      Welcome to
+      <span className="white">Welcome to</span>
       <br />
       <span className="yellow">Go tell the Bees</span>
     </>
@@ -33,9 +40,11 @@ const Welcome = ({
 
   const specialChars = () => (
     <>
-      <span>Go Tell the Bees, asks each one of us to perform seven</span>
+      <span className="white">
+        Go Tell the Bees, asks each one of us to perform seven
+      </span>
       <span className="blue"> Simple Acts </span>
-      <span> in our daily lives.</span>
+      <span className="white"> in our daily lives.</span>
     </>
   );
 
@@ -51,25 +60,32 @@ const Welcome = ({
         <nav className="sidenav-container">
           <SideNav />
         </nav>
-        <h1 className="welcome-title">
-          {welcomeStep === 0
-            ? newTitle()
-            : title && welcomeStep === 2
-            ? questionChars()
-            : title}
-        </h1>
-        <img
-          className={`bee-default ${
-            welcomeStep === 1 ? "transition-image" : ""
-          }`}
-          src={PlaceHolder}
-          alt="bee"
-        />
-        <p className="main-text">
-          {welcomeStep === 0 ? specialChars() : mainText}
-        </p>
-        <p>{welcomeStep === 3 ? navigateToHome() : ""}</p>
+        <section className="text-image-control">
+          <div>
+            <h1 className="welcome-title">
+              {welcomeStep === 0
+                ? newTitle()
+                : title && welcomeStep === 2
+                ? questionChars()
+                : title}
+            </h1>
+
+            <p className="main-text">
+              {welcomeStep === 0 ? specialChars() : mainText}
+            </p>
+          </div>
+          <div>
+            <img
+              className={`bee-default ${
+                welcomeStep === 1 ? "transition-image" : ""
+              }`}
+              src={PlaceHolder}
+              alt="bee"
+            />
+          </div>
+        </section>
         <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
+        {/* <p>{welcomeStep === 3 ? navigateToHome() : ""}</p> */}
       </section>
     </>
   );

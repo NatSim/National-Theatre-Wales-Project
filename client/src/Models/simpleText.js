@@ -5,6 +5,7 @@ import Consume from "../images/Consume.jpg";
 import Learn1 from "../images/Learn1.jpg";
 import Plant from "../images/Plant.jpg";
 import TakeAWalk from "../images/TakeAWalk.jpg";
+/**/
 
 /*Content for ChallengeChoicePage/ChallengeLogic*/
 const simpleText = [

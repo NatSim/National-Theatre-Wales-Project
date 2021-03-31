@@ -2,6 +2,15 @@ body {
   margin: 0%;
 }
 
+/*Background Transition*/
+.nav-container {
+  animation: fadeIn 10s;
+}
+
+.middle-nav-list {
+  animation: fadeIn 15s;
+}
+
 /* Middle button nav-START*/
 .nav-container {
   padding: 10px 25px 50px 0px;
@@ -14,7 +23,8 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: #ff9f00;
+  /* background-color: #ff9f00; */
+  background-image: url(../../images/Background-placeholders/SAboards/saboards-wide2.jpg);
   background-size: cover;
   opacity: 0.6;
   border-top-style: double;

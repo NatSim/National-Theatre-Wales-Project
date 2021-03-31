@@ -6,6 +6,16 @@ body {
   font-size: 36px;
 }
 
+.welcome-title {
+  margin: 100px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 801px) {
+  .welcome-title {
+    margin: 20px 0px 0px 0px;
+  }
+}
+
 /*title "Go Tell The Bees" */
 .yellow {
   color: #ff9f00;
@@ -16,6 +26,10 @@ body {
   color: #00c1a2;
 }
 
+.white {
+  color: white;
+}
+/*Transitions*/
 /*Bee Image-START*/
 .bee-default {
   width: 150px;
@@ -37,12 +51,40 @@ body {
     opacity: 0;
   }
 }
-/*Bee Image-END*/
+/*Bee Image-END HERE*/
+/*TEXT Text*/
+.welcome-title {
+  animation: fadeIn 10s;
+}
+
+.main-text {
+  animation: fadeIn 15s;
+}
+
+.button {
+  animation: fadeIn 20s;
+}
+
+/* .bee-default {
+  animation: fadeIn 20s;
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*TEXT END HERE*/
+/*Transitions END HERE*/
 
 /*Responsive Queries*/
 @media only screen and (max-width: 801px) {
   .title-container {
-    background-image: url("../../../images/Background-placeholders/pencil.jpg");
+    /* background-image: url("../../../images/Background-placeholders/pencil.jpg"); */
+    /* background-image: url(../../../images/Background-placeholders/SAboards/saboards-wide2.jpg); */
     background-size: inherit;
   }
 }
@@ -50,7 +92,7 @@ body {
 /*Background Image-Design(on Landing page/Contact page and ChallengeChoicePage)*/
 /*START*/
 .title-container {
-  margin: -5px 0px 120px 0px;
+  margin: -5px 0px 10px 0px;
 }
 
 .title-container::before {
@@ -60,7 +102,9 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../../../images/Background-placeholders/pencil.jpg");
+  background-color: #ff9f00;
+  /* background-image: url("../../../images/Background-placeholders/pencil.jpg"); */
+  /* background-image: url(../../../images/Background-placeholders/SAboards/saboards-wide2.jpg); */
   background-size: cover;
   opacity: 0.5;
 }
@@ -88,7 +132,4 @@ h2 {
   position: relative;
 }
 
-.welcome-title {
-  margin-top: 100px;
-}
 /*END*/

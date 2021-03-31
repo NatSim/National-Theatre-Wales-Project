@@ -19,10 +19,10 @@ function LandingPage() {
 
   /*Button onclick function arrayElement*/
   const onClickHandler = (arrayElement) => {
+    setWelcomeStep(arrayElement);
     setTitle(welcomeText[arrayElement].title);
     setMainText(welcomeText[arrayElement].mainText);
     setImageUrl(welcomeText[arrayElement].imageUrl);
-    setWelcomeStep(arrayElement);
   };
 
   /*Card Title Text*/
@@ -40,16 +40,19 @@ function LandingPage() {
   return (
     <>
       <Header />
-      <main className="parent-flex-container">
-        <section className="welcome-container">
-          <Welcome
-            welcomeStep={welcomeStep}
-            onClickHandler={onClickHandler}
-            title={title}
-            mainText={mainText}
-            imageUrl={imageUrl}
-          />
-        </section>
+      {/* WELCOME container START HERE */}
+      {/* <section className="welcome-container"> */}
+      <Welcome
+        welcomeStep={welcomeStep}
+        onClickHandler={onClickHandler}
+        title={title}
+        mainText={mainText}
+        imageUrl={imageUrl}
+      />
+      {/* </section> */}
+      {/* Welcome container END HERE */}
+      {/* CARD container START HERE */}
+      <section className="card-container">
         <h2 className="subtitle2">Explore</h2>
         <Container className="card-deck">
           <Row>
@@ -84,7 +87,8 @@ function LandingPage() {
             </Col>
           </Row>
         </Container>
-      </main>
+      </section>
+      {/* CARD container END HERE */}
     </>
   );
 }

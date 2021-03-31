@@ -17,7 +17,7 @@ const ChallengeItem = (props) => {
 
   return (
     <>
-      <div className="title-container">
+      <div className="challenge-page">
         <Header />
         <SideNav />
 
@@ -72,9 +72,13 @@ const ChallengeItem = (props) => {
                   <span>{props.urlCharity}</span>
                 </div>
                 <ul>
-                  <li>{props.urlResources} (Under 16s)</li>
-                  <li>{props.urlResources2} (Under 16s)</li>
-                  <li>
+                  <li className="nav-link-control">
+                    {props.urlResources} (Under 16s)
+                  </li>
+                  <li className="nav-link-control">
+                    {props.urlResources2} (Under 16s)
+                  </li>
+                  <li className="nav-link-control">
                     {props.urlResources3}{" "}
                     {props.urlResources3 ? "(Under 16s)" : ""}
                   </li>
