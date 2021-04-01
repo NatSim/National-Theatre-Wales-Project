@@ -8,14 +8,6 @@ body {
   font-size: 30px;
   padding: 100px 20px 10px 20px;
 }
-/* 
-.text-control2 {
-  background-color: white;
-  border-style: solid;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-} */
 
 .charity-name {
   color: #ff2f69;
@@ -44,13 +36,6 @@ body {
   padding: 24px;
 }
 
-/*small image setting, to be changed at later stage in favor of full app media queries setting*/
-/* @media only screen and (max-width: 600px) {
-  .place-holder {
-    width: 100%;
-  }
-} */
-
 .place-holder {
   max-width: 100%;
   height: auto;
@@ -73,7 +58,8 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: #82d121;
+  /* background-color: #82d121; */
+  background-image: url(../../../images/Background-placeholders/SAboards/3boardlandscape.jpg);
   background-size: cover;
   opacity: 0.7;
   border-top-style: double;
@@ -81,6 +67,10 @@ body {
   border-top-width: 0.5px;
   height: 600px;
 }
+/*@media only screen and (max-width: 801px) {
+  .challenge-page::before {
+    background-size: auto;
+    /* height: 1020px; */
 
 .prompt-text,
 .act-control-child,

@@ -69,18 +69,31 @@ video,
   padding: 10px;
 }
 
-.challenge-text {
-  text-align: justify;
-  padding: 50px;
-}
-.text-video-control {
-  display: flex;
+.text-container {
+  width: 800px;
+  margin: 50px auto;
+  display: table;
+  box-sizing: border-box;
 }
 
-@media only screen and (max-width: 802px) {
-  .text-video-control {
+/* @media only screen and (max-width: 802px) {
+  .text-container {
     flex-wrap: wrap;
   }
+}  */
+
+.text-video-row {
+  margin: 10px 0px;
+}
+
+.text-video-column {
+  display: table-cell;
+  padding: 10px;
+  width: 33.33333%;
+}
+
+article.challenge-text {
+  text-align: justify;
 }
 
 .simple-acts-container-parent {

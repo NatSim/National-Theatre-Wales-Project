@@ -17,8 +17,8 @@
 
 .nav-links {
   min-height: 10vh;
-  border-bottom-style: double;
-  border-color: wheat;
+  /* border-bottom-style: double;
+  border-color: wheat; */
   background: white;
   text-decoration: none;
   height: 50px;

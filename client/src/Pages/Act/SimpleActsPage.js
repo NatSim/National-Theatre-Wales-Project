@@ -62,24 +62,31 @@ const SimpleActsPage = (props) => {
       {/* Background END HERE */}
 
       {/*SIMPLE ACTS INTRO TEXT-START HERE */}
-      <div className="text-video-control">
-        <article className="challenge-text">
-          With a few simple acts we can change how we interact with our
-          environment, and how we interact with each other.
-          <br />
-          At the heart of Go Tell the Bees is the hope that by doing we can
-          learn from each other, we can build confidence and skills and that we
-          can experience through all of the senses.
-        </article>
-        <article className="challenge-text">
-          We want this production to have a positive impact on communities.
-          Learning in an active and imaginative way is critical to this.
-          <br />
-          NTW TEAM have created and curated a hive of information, knowledge,
-          activity and inspiration that people of all ages can use as a
-          springboard for learning. Explore each Simple Act through activities,
-          ideas and educational resources:
-        </article>
+      <div className="text-container">
+        <div className="text-video-row">
+          <div className="text-video-column">
+            <article className="challenge-text">
+              With a few simple acts we can change how we interact with our
+              environment, and how we interact with each other.
+              <br />
+              <br />
+              At the heart of Go Tell the Bees is the hope that by doing we can
+              learn from each other, we can build confidence and skills and that
+              we can experience through all of the senses.
+            </article>
+          </div>
+          <div className="text-video-column">
+            <article className="challenge-text">
+              We want this production to have a positive impact on communities.
+              Learning in an active and imaginative way is critical to this.
+              <br />
+              NTW TEAM have created and curated a hive of information,
+              knowledge, activity and inspiration that people of all ages can
+              use as a springboard for learning. Explore each Simple Act through
+              activities, ideas and educational resources:
+            </article>
+          </div>
+        </div>
       </div>
       {/*SIMPLE ACTS INTRO TEXT-END HERE */}
 
