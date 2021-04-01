@@ -98,12 +98,6 @@ body {
   padding: 10px;
 }
 
-@media only screen and (max-width: 801px) {
-  .flex-parent {
-    flex-wrap: wrap;
-  }
-}
-
 .article-image-container {
   padding: 50px 5px 30px 5px;
   margin: 5px 5px 25px 5px;

@@ -65,7 +65,7 @@ const SimpleActsPage = (props) => {
       <div className="text-container">
         <div className="text-video-row">
           <div className="text-video-column">
-            <article className="challenge-text">
+            <article className="challenge-text1">
               With a few simple acts we can change how we interact with our
               environment, and how we interact with each other.
               <br />
@@ -76,9 +76,10 @@ const SimpleActsPage = (props) => {
             </article>
           </div>
           <div className="text-video-column">
-            <article className="challenge-text">
+            <article className="challenge-text2">
               We want this production to have a positive impact on communities.
               Learning in an active and imaginative way is critical to this.
+              <br />
               <br />
               NTW TEAM have created and curated a hive of information,
               knowledge, activity and inspiration that people of all ages can
