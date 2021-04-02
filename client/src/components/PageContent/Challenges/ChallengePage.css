@@ -65,7 +65,7 @@ body {
   border-top-style: double;
   border-color: grey;
   border-top-width: 0.5px;
-  height: 600px;
+  height: auto;
 }
 /*@media only screen and (max-width: 801px) {
   .challenge-page::before {
@@ -88,6 +88,12 @@ body {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 802px) {
+  .flex-parent {
+    flex-wrap: wrap;
+  }
+}
+
 .flex-child {
   margin: 20px 0px 0px 0px;
 }
@@ -105,6 +111,8 @@ body {
 
 .intro-text {
   margin: 0px 60px;
+  background-color: white;
+  border-radius: 10px;
 }
 /*act control transitionIn (from homepage.css)*/
 .act-control-child {

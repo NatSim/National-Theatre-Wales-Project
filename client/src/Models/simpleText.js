@@ -22,7 +22,7 @@ const simpleText = [
       "We all know that acts of kindness can make someone's day but in our busy lives we can sometimes miss the opportunity. So it might help to make some plans. A regular check in on an elderly neighbour? An invite to share a meal? Or perhaps you can join a voluntary programme that can make helping others part of your weekly routine? The challenges we face as individuals and as a society can feel overwhelming but starting small, with things we know can make a difference, we can always be part of the solution.",
 
     text2:
-      "Did you know that acts of kindness are often accompanied by emotional warmth. Emotional warmth produces the hormone, oxytocin, therefore kindness can be said to be cardioprotective - being kind really can help your heart!",
+      "Acts of kindness are often accompanied by emotional warmth. Emotional warmth produces the hormone, oxytocin, therefore kindness can be said to be cardioprotective - being kind really can help your heart!",
 
     urlArtist: (
       <a
@@ -236,7 +236,7 @@ const simpleText = [
       "Imagine if you had a teacher as awe-inspiring and wise as Nature. The one who could help you find knowledge and wonder in the everyday. Rediscover your curiosity and adventurousness  Improve your well-being. Show you the importance of respect and humility.The teacher who could tell you crazy things that bend your mind, like that there are more trees on Earth than stars in the Milky Way. Or that giraffes are predominantly gay. Or that ocean is a home to nearly 95% of all life. Would you not want to learn about all that, and then share with everyone you meet?",
 
     text2:
-      "Did you know bees can map out a person’s facial characteristics, recognizing which kind souls would leave out nectar for them to come back to? “Look at the trees, look at the birds, look at the clouds, look at the stars and if you have eyes you will be able to see that the whole existence is joyful. Everything is simply happy”.- Osho",
+      "Bees can map out a person’s facial characteristics, recognizing which kind souls would leave out nectar for them to come back to? “Look at the trees, look at the birds, look at the clouds, look at the stars and if you have eyes you will be able to see that the whole existence is joyful. Everything is simply happy”.- Osho",
 
     urlBook: (
       <a

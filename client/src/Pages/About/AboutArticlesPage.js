@@ -10,7 +10,7 @@ import Festival from "../../images/TEAM/Festival.jpg";
 import TideTEAMSocial from "../../images/TEAM/TideTEAMSocial.jpg";
 import TideWhisperer3 from "../../images/TEAM/TideWhisperer3.jpg";
 import YGeginNTW from "../../images/TEAM/YGegin.jpg";
-
+import NTWlogo from "../../images/logos/NTWLogo/NTW_Logo.png";
 //Aiming to add this to aboutText file and render here
 const videoTeam = "https://www.youtube.com/watch?v=xV2FF-YUy94";
 
@@ -24,7 +24,11 @@ const AboutArticlesPage = (props) => {
 
       <main className="section-color">
         {/* TOP Background-color Container-START HERE */}
-        <section className="home-container-video2">
+        <section
+          className={
+            props.otherText ? "home-container-video2" : "home-container-video2a"
+          }
+        >
           <div>
             <h2 className="subtitle1">{props.title}</h2>
           </div>
@@ -99,7 +103,11 @@ const AboutArticlesPage = (props) => {
                       alt="placeholder"
                     />
                   ) : (
-                    ""
+                    <img
+                      className="ntw-logo-about"
+                      src={NTWlogo}
+                      alt="NTW logo"
+                    />
                   )}
                 </div>
               </div>

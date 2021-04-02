@@ -28,17 +28,16 @@ const ChallengeItem = (props) => {
           </div>
 
           <div className="intro-text">
+            <div className="image-container">
+              <img
+                className="image"
+                src={props.image1}
+                alt={"simple act challenge"}
+              />
+            </div>
             <p className="text-control2"> {props.text1}</p>
           </div>
         </section>
-
-        <div className="image-container">
-          <img
-            className="image"
-            src={props.image1}
-            alt={"simple act challenge"}
-          />
-        </div>
       </div>
       {/* Challenge top background END HERE */}
       {/* Challenge section START HERE */}
