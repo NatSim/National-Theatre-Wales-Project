@@ -84,7 +84,9 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep }) => {
           className={
             welcomeStep === 0
               ? "welcome-next-button-control0"
-              : "welcome-next-button-control1"
+              : "welcome-next-button-control1" && !mainText
+              ? "welcome-next-button-control1"
+              : "welcome-next-button-control2"
           }
         >
           <NextButton

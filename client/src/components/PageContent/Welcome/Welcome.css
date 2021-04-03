@@ -70,6 +70,16 @@ body {
   margin: 250px 0px 150px 0px;
 }
 
+.welcome-next-button-control2 {
+  margin: 175px 0px 150px 0px;
+}
+
+@media only screen and (max-width: 801px) {
+  .welcome-next-button-control2 {
+    margin: 100px 0px 150px 0px;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
