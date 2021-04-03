@@ -9,13 +9,7 @@ import SideNav from "../../Nav/SideNav";
  Appears on Landing page
  **/
 
-const Welcome = ({
-  title,
-  mainText,
-  imageUrl,
-  onClickHandler,
-  welcomeStep,
-}) => {
+const Welcome = ({ title, mainText, onClickHandler, welcomeStep }) => {
   const history = useHistory();
   //On Button click redirects user to home page
 
@@ -41,15 +35,19 @@ const Welcome = ({
     <>
       <div className="special-chars-control">
         <span className="">
-          Go Tell the Bees, <br />
-          asks each one of us to perform
-          <br /> seven
+          <b>Go Tell the Bees, </b>
+          <br />
+          <b>asks each one of us to perform</b>
+          <br />
+          <b>seven</b>
         </span>
         <span className="blue">
           <b> Simple Acts</b>
         </span>
         <br />
-        <span className=""> in our daily lives.</span>
+        <span className="">
+          <b> in our daily lives.</b>
+        </span>
       </div>
     </>
   );
@@ -60,8 +58,7 @@ const Welcome = ({
     </>
   );
 
-  console.log(welcomeStep[0]);
-
+  console.log(welcomeStep);
   return (
     <>
       <section className="title-container">

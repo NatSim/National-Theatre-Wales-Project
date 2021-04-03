@@ -14,13 +14,17 @@ import Container from "react-bootstrap/Container";
 function LandingPage() {
   const [title, setTitle] = useState(welcomeText[0].title);
   const [mainText, setMainText] = useState(welcomeText[0].mainText);
+  const [imageUrl, setImageUrl] = useState(welcomeText[3].imageUrl);
   const [welcomeStep, setWelcomeStep] = useState(0); //starting point
+
+  console.log(title);
 
   /*Button onclick function arrayElement*/
   const onClickHandler = (arrayElement) => {
     setWelcomeStep(arrayElement);
     setTitle(welcomeText[arrayElement].title);
     setMainText(welcomeText[arrayElement].mainText);
+    setImageUrl(welcomeText[arrayElement].imageUrl);
   };
 
   /*Card Title Text*/
@@ -48,6 +52,7 @@ function LandingPage() {
         onClickHandler={onClickHandler}
         title={title}
         mainText={mainText}
+        imageUrl={imageUrl}
       />
       {/* </section> */}
       {/* Welcome container END HERE */}

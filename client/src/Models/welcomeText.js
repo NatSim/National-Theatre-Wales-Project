@@ -13,6 +13,9 @@ const welcomeText = [
     title: "So what will you tell the bees?!",
     mainText: "",
   },
+  {
+    imageURL: "",
+  },
 ];
 
 export { welcomeText };
