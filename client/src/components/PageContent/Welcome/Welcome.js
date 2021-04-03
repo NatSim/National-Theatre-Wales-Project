@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./Welcome.css";
 import NextButton from "../../Buttons/MainButton";
-import PlaceHolder from "../../../images/logos/MainBeeLogo/GTTB_Logo.jpg";
 import { useHistory } from "react-router";
 import SideNav from "../../Nav/SideNav";
 
@@ -29,10 +28,10 @@ const Welcome = ({
       navigateToHome();
     }
   });
-
+  /**Step 1 */
   const newTitle = () => (
     <>
-      <span className="white">Welcome to</span>
+      <span className="">Welcome to</span>
       <br />
       <span className="yellow">Go tell the Bees</span>
     </>
@@ -40,11 +39,18 @@ const Welcome = ({
 
   const specialChars = () => (
     <>
-      <span className="white">
-        Go Tell the Bees, asks each one of us to perform seven
-      </span>
-      <span className="blue"> Simple Acts </span>
-      <span className="white"> in our daily lives.</span>
+      <div className="special-chars-control">
+        <span className="">
+          Go Tell the Bees, <br />
+          asks each one of us to perform
+          <br /> seven
+        </span>
+        <span className="blue">
+          <b> Simple Acts</b>
+        </span>
+        <br />
+        <span className=""> in our daily lives.</span>
+      </div>
     </>
   );
 
@@ -53,6 +59,8 @@ const Welcome = ({
       <span className="yellow">So what will you tell the bees?</span>
     </>
   );
+
+  console.log(welcomeStep[0]);
 
   return (
     <>
@@ -70,21 +78,23 @@ const Welcome = ({
                 : title}
             </h1>
 
-            <p className="main-text">
+            <h2 className={"main-text"}>
               {welcomeStep === 0 ? specialChars() : mainText}
-            </p>
-          </div>
-          <div>
-            <img
-              className={`bee-default ${
-                welcomeStep === 1 ? "transition-image" : ""
-              }`}
-              src={PlaceHolder}
-              alt="bee"
-            />
+            </h2>
           </div>
         </section>
-        <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
+        <div
+          className={
+            welcomeStep === 0
+              ? "welcome-next-button-control0"
+              : "welcome-next-button-control1"
+          }
+        >
+          <NextButton
+            onClickHandler={onClickHandler}
+            welcomeStep={welcomeStep}
+          />
+        </div>
       </section>
     </>
   );

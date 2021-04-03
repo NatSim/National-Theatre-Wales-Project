@@ -1,16 +1,16 @@
-import BeKind from "../images/BeKind.jpg";
-import Connect from "../images/Connect.jpg";
-import Consider from "../images/Consider.jpg";
-import Consume from "../images/Consume.jpg";
-import Learn1 from "../images/Learn1.jpg";
-import Plant from "../images/Plant.jpg";
-import TakeAWalk from "../images/TakeAWalk.jpg";
+import BeKind from "../images/simple7/BeKind.jpg";
+import Connect from "../images/simple7/Connect.jpg";
+import Consider from "../images/simple7/Consider.jpg";
+import Consume from "../images/simple7/Consume.jpg";
+import Learn1 from "../images/simple7/Learn1.jpg";
+import Plant from "../images/simple7/Plant.jpg";
+import TakeAWalk from "../images/simple7/TakeAWalk.jpg";
 /*Article Image Imports START HERE*/
-import CKCimage from "../images/Background-placeholders/SAboards/consume-kind-connect.jpg";
-import Consider1 from "../images/Background-placeholders/SAboards/consider-the-stars.jpg";
-import Consume1 from "../images/Background-placeholders/SAboards/consume-kind-connect.jpg";
-import Plant1 from "../images/Background-placeholders/SAboards/plant-learn.jpg";
-import TakeAWalk1 from "../images/Background-placeholders/SAboards/consider-walk-plant.jpg";
+import CKCimage from "../images/SAboards/consume-kind-connect.jpg";
+import Consider1 from "../images/SAboards/consider-the-stars.jpg";
+import Consume1 from "../images/SAboards/consume-kind-connect.jpg";
+import Plant1 from "../images/SAboards/plant-learn.jpg";
+import TakeAWalk1 from "../images/SAboards/consider-walk-plant.jpg";
 /*Content for ChallengeChoicePage/ChallengeLogic*/
 const simpleText = [
   {

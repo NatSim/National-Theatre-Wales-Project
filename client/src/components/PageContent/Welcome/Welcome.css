@@ -8,6 +8,7 @@ body {
 
 .welcome-title {
   margin: 100px 0px 0px 0px;
+  font-size: 50px;
 }
 
 @media only screen and (max-width: 801px) {
@@ -24,50 +25,50 @@ body {
 /* mainText "Simple Acts"*/
 .blue {
   color: #00c1a2;
+  font-size: 35px;
 }
 
 .white {
   color: white;
 }
-/*Transitions*/
-/*Bee Image-START*/
-.bee-default {
-  width: 150px;
-  height: auto;
-  border-radius: 10px;
-  margin: 50px;
-  box-shadow: 5px 5px whitesmoke;
+
+.text-image-control {
+  text-align: left;
+  margin: 0px 0px 0px 15px;
 }
 
-.transition-image {
-  animation: beeFade 10s;
+@media only screen and (max-width: 802px) {
+  .text-image-control {
+    margin: 0px 10px 0px 10px;
+  }
 }
 
-@keyframes beeFade {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-/*Bee Image-END HERE*/
 /*TEXT Text*/
+.title-container {
+  animation: fadeIn 2s;
+}
+
 .welcome-title {
-  animation: fadeIn 10s;
+  animation: fadeIn 3s;
 }
 
 .main-text {
-  animation: fadeIn 15s;
+  animation: fadeIn 5s;
+  margin: 10px 0px 0px 0px;
 }
 
 .button {
-  animation: fadeIn 20s;
+  animation: fadeIn 10s;
 }
 
-/* .bee-default {
-  animation: fadeIn 20s;
-} */
+/* Button */
+.welcome-next-button-control0 {
+  margin: 50px 0px 150px 0px;
+}
+
+.welcome-next-button-control1 {
+  margin: 250px 0px 150px 0px;
+}
 
 @keyframes fadeIn {
   from {
@@ -83,8 +84,6 @@ body {
 /*Responsive Queries*/
 @media only screen and (max-width: 801px) {
   .title-container {
-    /* background-image: url("../../../images/Background-placeholders/pencil.jpg"); */
-    /* background-image: url(../../../images/Background-placeholders/SAboards/saboards-wide2.jpg); */
     background-size: inherit;
   }
 }
@@ -92,7 +91,8 @@ body {
 /*Background Image-Design(on Landing page/Contact page and ChallengeChoicePage)*/
 /*START*/
 .title-container {
-  margin: -5px 0px 10px 0px;
+  margin: -5px 0px 75px 0px;
+  animation: fadeIn 15s;
 }
 
 .title-container::before {
@@ -102,10 +102,11 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #ff9f00;
-  /* background-image: url("../../../images/Background-placeholders/pencil.jpg"); */
-  /* background-image: url(../../../images/Background-placeholders/SAboards/saboards-wide2.jpg); */
+  /* background-color: #ff9f00;
+  background-image: url("../../../images/Background-placeholders/pencil.jpg"); */
+  background-image: url(../../../images/SAboards/3boardlandscape.jpg);
   background-size: cover;
+
   opacity: 0.5;
 }
 

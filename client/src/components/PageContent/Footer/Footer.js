@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import * as ImIcons from "react-icons/im";
 import "./Footer.css";
-import Counterpoints from "../../../images/logos/Counterpoints/Counterpoints.jpg";
-import PHFLogo from "../../../images/logos/PaulHamlyn/PaulHamlynFoundation.jpg";
+import Counterpoints from "../../../images/logos/counterpoints/Counterpoints.jpg";
+import PHFLogo from "../../../images/logos/paulHamlyn/PaulHamlynFoundation.jpg";
 import ACWColourLandscape from "../../../images/logos/ACW/ACWcolour.jpg";
 
 const Footer = () => {

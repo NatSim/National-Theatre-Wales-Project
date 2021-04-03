@@ -1,5 +1,3 @@
-import MainBeeLogo from "./../images/logos/MainBeeLogo/GTTB_Logo.jpg";
-
 const welcomeText = [
   {
     title: "Welcome to Go Tell The Bees",
@@ -14,9 +12,6 @@ const welcomeText = [
   {
     title: "So what will you tell the bees?!",
     mainText: "",
-  },
-  {
-    imageUrl: MainBeeLogo,
   },
 ];
 

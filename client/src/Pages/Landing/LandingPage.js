@@ -5,8 +5,8 @@ import "./LandingPage.css";
 import Header from "../../components/Header/Header";
 import Features from "../../components/PageContent/Features/Features";
 import NTWLogo from "../../images/logos/NTWLogo/NTW_Logo.png";
-import Party from "../../images/NTWHaverHub.jpg";
-import Tide from "../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
+import Party from "../../images/NTW/NTWHaverHub.jpg";
+import Tide from "../../images/TEAM/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
@@ -14,7 +14,6 @@ import Container from "react-bootstrap/Container";
 function LandingPage() {
   const [title, setTitle] = useState(welcomeText[0].title);
   const [mainText, setMainText] = useState(welcomeText[0].mainText);
-  const [imageUrl, setImageUrl] = useState(welcomeText[3].imageUrl);
   const [welcomeStep, setWelcomeStep] = useState(0); //starting point
 
   /*Button onclick function arrayElement*/
@@ -22,7 +21,6 @@ function LandingPage() {
     setWelcomeStep(arrayElement);
     setTitle(welcomeText[arrayElement].title);
     setMainText(welcomeText[arrayElement].mainText);
-    setImageUrl(welcomeText[arrayElement].imageUrl);
   };
 
   /*Card Title Text*/
@@ -34,8 +32,11 @@ function LandingPage() {
   const clickHere = "Click Here";
 
   /*Card placeholder Text*/
-  const placeholderText =
-    "Some quick example text to build on the card title and make up the bulk of the card's content.";
+  const mainTextNtw = "Find out about National Theatre Wales here.";
+
+  const mainTextTeam = "Enjoy the Arts, Theatre Shows and more? .";
+
+  const mainTextContact = "To get in touch or find out more, contact us here";
 
   return (
     <>
@@ -47,10 +48,10 @@ function LandingPage() {
         onClickHandler={onClickHandler}
         title={title}
         mainText={mainText}
-        imageUrl={imageUrl}
       />
       {/* </section> */}
       {/* Welcome container END HERE */}
+
       {/* CARD container START HERE */}
       <section className="card-container">
         <h2 className="subtitle2">Explore</h2>
@@ -60,7 +61,7 @@ function LandingPage() {
               <Features
                 image={NTWLogo}
                 title={titleNTW}
-                text={placeholderText}
+                text={mainTextNtw}
                 button={clickHere}
                 links={"/about/2"}
                 id={"2"}
@@ -70,7 +71,7 @@ function LandingPage() {
               <Features
                 image={Tide}
                 title={titleTeam}
-                text={placeholderText}
+                text={mainTextTeam}
                 button={clickHere}
                 links={"/about/1"}
                 id={"1"}
@@ -80,7 +81,7 @@ function LandingPage() {
               <Features
                 image={Party}
                 title={contactUs}
-                text={placeholderText}
+                text={mainTextContact}
                 button={clickHere}
                 links={"/contact"}
               />

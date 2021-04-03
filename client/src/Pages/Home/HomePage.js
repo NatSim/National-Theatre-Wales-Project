@@ -2,11 +2,11 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import "./HomePage.css";
-import BeeStamp from "../../images/whole-beeimage.png";
+import BeeStamp from "../../images/simple7/whole-beeimage.png";
 import Features from "../../components/PageContent/Features/Features";
 import NTWLogo from "../../images/logos/NTWLogo/NTW_Logo.png";
-import Party from "../../images/NTWHaverHub.jpg";
-import Tide from "../../images/Tide-Whisperer-TEAM-Social-1-1.jpg";
+import Party from "../../images/NTW/NTWHaverHub.jpg";
+import Tide from "../../images/TEAM/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
@@ -36,8 +36,12 @@ const contactUs = "Get in Touch";
 const clickHere = "Click Here";
 
 /*Card placeholder Text*/
-const placeholderText =
-  "Some quick example text to build on the card title and make up the bulk of the card's content.";
+const mainTextNtw = "Find out about National Theatre Wales here.";
+
+const mainTextTeam =
+  "Enjoy the Arts, Theatre Shows and more? Get involved here.";
+
+const mainTextContact = "To find out more, contact us here";
 
 const HomePage = (props) => {
   return (
@@ -92,7 +96,7 @@ const HomePage = (props) => {
             <Features
               image={NTWLogo}
               title={titleNTW}
-              text={placeholderText}
+              text={mainTextNtw}
               button={clickHere}
               links={"/about/2"}
               id={"2"}
@@ -102,7 +106,7 @@ const HomePage = (props) => {
             <Features
               image={Tide}
               title={titleTeam}
-              text={placeholderText}
+              text={mainTextTeam}
               button={clickHere}
               links={"/about/1"}
               id={"1"}
@@ -112,7 +116,7 @@ const HomePage = (props) => {
             <Features
               image={Party}
               title={contactUs}
-              text={placeholderText}
+              text={mainTextContact}
               button={clickHere}
               links={"/contact"}
             />

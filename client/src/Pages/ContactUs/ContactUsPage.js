@@ -12,7 +12,7 @@ const ContactUsPage = () => {
       <div className="terms-page">
         <div className="form-content-parent">
           <div className="subtitle3">
-            <h1>Contact Us</h1>
+            <h1 className="contact_heading">Contact Us</h1>
           </div>
           <div>
             <p className="contact-location-info">
