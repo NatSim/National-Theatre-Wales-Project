@@ -5,10 +5,15 @@ import "./index.css";
 import App from "./Pages/App";
 import reportWebVitals from "./reportWebVitals";
 
+import "./i18next/i18n";
+import { Suspense } from "react";
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Suspense fallback={<div>Loading...</div>}>
+        <App />
+      </Suspense>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

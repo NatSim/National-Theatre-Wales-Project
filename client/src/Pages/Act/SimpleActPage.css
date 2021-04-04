@@ -151,6 +151,13 @@ article.challenge-text1 {
 
 article.challenge-text2 {
   margin: 0px 0px 0px 20px;
+
+  padding: 0px 20px 0px 20px;
+}
+
+.challenge-text1 {
+  margin: 0px 20px 0px 0px;
+  padding: 0px 20px 0px 20px;
 }
 
 @media only screen and (max-width: 801px) {

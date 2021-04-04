@@ -1,4 +1,5 @@
 import React from "react";
+import { Trans, useTranslation } from "react-i18next";
 import "./AboutArticlesPage.css";
 import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
@@ -17,6 +18,11 @@ const videoTeam = "https://www.youtube.com/watch?v=xV2FF-YUy94";
 /*TEAM Images*/
 
 const AboutArticlesPage = (props) => {
+  const { i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <>
       <SideNav />
@@ -29,9 +35,24 @@ const AboutArticlesPage = (props) => {
             props.otherText ? "home-container-video2" : "home-container-video2a"
           }
         >
-          <div>
-            <h2 className="subtitle1">{props.title}</h2>
+          {/* Translation Button START HERE */}
+          <div className="translate-button">
+            <button onClick={() => changeLanguage("en")}>En</button>
+            <button onClick={() => changeLanguage("welsh")}>Welsh</button>
+            {/* Translation Button END HERE */}
+            <hr />
+
+            {/* Title container START HERE*/}
+            <div className="title-team-ntw-subtitle">
+              {!props.otherText ? (
+                <Trans i18nKey="title_ntw" className></Trans>
+              ) : (
+                <Trans i18nKey="title_team"></Trans>
+              )}
+            </div>
+            {/*Title container END HERE*/}
           </div>
+
           <div className="video-about-text-control">
             <VideoPlayer
               url={videoTeam}
@@ -49,19 +70,37 @@ const AboutArticlesPage = (props) => {
 
         {/* Background Container-START HERE */}
         <div className="background-outer">
-          {/* Add spacing HERE */}
+          {/*Spacing HERE */}
           <div
             className={
               !props.otherText ? "info-container" : "team-info-container"
             }
           >
+            {/* Main Description Text START HERE */}
             <article className="article-line-control">
-              {props.mainText1}
+              <div>
+                {!props.otherText ? (
+                  <Trans i18nKey="description2"> </Trans>
+                ) : (
+                  <Trans i18nKey="description1.part1"> </Trans>
+                )}
+              </div>
+              <div>
+                {props.otherText ? (
+                  <Trans i18nKey="description1.part2"> </Trans>
+                ) : (
+                  ""
+                )}
+              </div>
             </article>
+            <br />
+            {/* Main Description Text END HERE */}
 
-            {/* Add spacing HERE */}
-            <h3 className="team-subtitle">{props.listTitle}</h3>
+            {/* List Title  */}
 
+            <h3 className="team-subtitle">
+              {props.otherText ? <Trans i18nKey="list.subtitle"> </Trans> : ""}
+            </h3>
             {/* TEAM Member List-START HERE */}
             <section className={props.otherText ? "spacing-container" : ""}>
               {/* List and Image Container START HERE */}
@@ -72,29 +111,64 @@ const AboutArticlesPage = (props) => {
                       props.listItems ? "list-items-parent" : "list-show-none"
                     }
                   >
-                    <li className={props.listItems ? "list-items" : ""}>
-                      {props.listItems}
+                    <li>
+                      {props.listItems ? (
+                        <Trans i18nKey="list.item1"> </Trans>
+                      ) : (
+                        ""
+                      )}
                     </li>
-                    <li className={props.listItems ? "list-items" : ""}>
-                      {props.listItem2}
+                    <li>
+                      {" "}
+                      {props.listItems ? (
+                        <Trans i18nKey="list.item2"> </Trans>
+                      ) : (
+                        ""
+                      )}
                     </li>
-                    <li className={props.listItems ? "list-items" : ""}>
-                      {props.listItem3}
+                    <li>
+                      {" "}
+                      {props.listItems ? (
+                        <Trans i18nKey="list.item3"> </Trans>
+                      ) : (
+                        ""
+                      )}
                     </li>
-                    <li className={props.listItems ? "list-items" : ""}>
-                      {props.listItem4}
+                    <li>
+                      {" "}
+                      {props.listItems ? (
+                        <Trans i18nKey="list.item4"> </Trans>
+                      ) : (
+                        ""
+                      )}
                     </li>
-                    <li className={props.listItems ? "list-items" : ""}>
-                      {props.listItem5}
+                    <li>
+                      {" "}
+                      {props.listItems ? (
+                        <Trans i18nKey="list.item5"> </Trans>
+                      ) : (
+                        ""
+                      )}
                     </li>
-                    <li className={props.listItems ? "list-items" : ""}>
-                      {props.listItem6}
+                    <li>
+                      {" "}
+                      {props.listItems ? (
+                        <Trans i18nKey="list.item6"> </Trans>
+                      ) : (
+                        ""
+                      )}
                     </li>
-                    <li className={props.listItems ? "list-items" : ""}>
-                      {props.listItem7}
+                    <li>
+                      {" "}
+                      {props.listItems ? (
+                        <Trans i18nKey="list.item7"> </Trans>
+                      ) : (
+                        ""
+                      )}
                     </li>
                   </ul>
                 </div>
+                {/* List Item TEAM PAGE END HERE */}
                 <div className="list-image-conatiner">
                   {props.otherText ? (
                     <img
@@ -134,9 +208,35 @@ const AboutArticlesPage = (props) => {
 
             {/* Image Container-END HERE */}
 
-            {/* Other Text container START HERE*/}
+            {/* Join TEAM Text(Other Text) container START HERE*/}
             <section className={props.otherText ? "spacing-container" : ""}>
-              <div className="other-text">{props.otherText}</div>
+              <div className="other-text">
+                {props.otherText ? (
+                  <Trans i18nKey="joiningText.subtitle"> </Trans>
+                ) : (
+                  ""
+                )}
+              </div>
+              <ul
+                className={
+                  props.listItems ? "list-items-parent" : "list-show-none"
+                }
+              >
+                <li>
+                  {props.listItems ? (
+                    <Trans i18nKey="joiningText.part1"> </Trans>
+                  ) : (
+                    ""
+                  )}
+                </li>
+                <li>
+                  {props.listItems ? (
+                    <Trans i18nKey="joiningText.part2"> </Trans>
+                  ) : (
+                    ""
+                  )}
+                </li>
+              </ul>
             </section>
             {/* Other Text container END HERE*/}
 
@@ -145,8 +245,8 @@ const AboutArticlesPage = (props) => {
           </div>
           <img
             className="image-team"
-            src={props.otherText ? TideTEAMSocial : Team}
-            alt="placeholder"
+            src={props.otherText ? TideTEAMSocial : ""}
+            alt={props.otherText ? "placeholder" : ""}
           />
         </div>
         {/* Background Container-START END */}

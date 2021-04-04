@@ -45,7 +45,8 @@ video,
 .info-container,
 .heading-control,
 .video-about-text-control,
-.other-text {
+.other-text,
+.translate-button {
   position: relative;
 }
 
@@ -62,8 +63,9 @@ video,
 }
 /*Video Container-END*/
 
-.team-subtitle {
-  margin-top: 20px;
+.title-team-ntw-subtitle {
+  text-align: left;
+  margin: 20px 0px 0px 30px;
 }
 
 .info-container {
@@ -131,6 +133,7 @@ section.spacing-container {
 /*NTW Page main Text line-height*/
 .article-line-control {
   line-height: 2;
+  text-align: center;
 }
 
 .other-text {
@@ -151,3 +154,8 @@ section.spacing-container {
   height: auto;
 }
 /*IMAGES-END*/
+
+/*Translate Button*/
+.translate-button {
+  margin: 75px 0px 0px 0px;
+}
