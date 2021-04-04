@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Trans, useTranslation } from "react-i18next";
 import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 import Header from "../../../components/Header/Header";
 import SideNav from "../../Nav/SideNav";
@@ -15,27 +16,45 @@ const ChallengeItem = (props) => {
     setWelldone("Well done you have completed a Simple Act!");
   };
 
+  const { i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <>
       {/* Challenge top background START HERE */}
       <div className="challenge-page">
         <Header />
         <SideNav />
-        <section className="prompt-act-container">
-          <div className="prompt-text-container">
-            <h1 className="prompt-text">{props.direction}</h1>
-            <h2 className="act-control-child">{props.act}</h2>
-          </div>
 
-          <div className="intro-text">
-            <div className="image-container">
-              <img
-                className="image"
-                src={props.image1}
-                alt={"simple act challenge"}
-              />
+        <section className="prompt-act-container">
+          {/* Translation Button START HERE */}
+          <div className="translate-button">
+            <button onClick={() => changeLanguage("en")}>En</button>
+            <button onClick={() => changeLanguage("welsh")}>Welsh</button>
+            {/* Translation Button END HERE */}
+            <hr />
+            <div className="prompt-text-container">
+              <h1 className="prompt-text">{props.direction}</h1>
+              <h2 className="act-control-child">{props.act}</h2>
             </div>
-            <p className="text-control2"> {props.text1}</p>
+            <div className="intro-text">
+              <div className="image-container">
+                <img
+                  className="image"
+                  src={props.image1}
+                  alt={"simple act challenge"}
+                />
+              </div>
+              <p className="text-control2">
+                {props.act ? (
+                  <Trans i18nKey="text1"></Trans>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+              </p>
+            </div>{" "}
           </div>
         </section>
       </div>
