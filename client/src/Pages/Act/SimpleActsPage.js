@@ -88,7 +88,7 @@ const SimpleActsPage = (props) => {
 
       {/* 7 SIMPLE ACTS ICONS Container-START HERE */}
       <span className="challenge-text2">
-        <b>Explore the 7 Simple Acts below.</b>
+        <b>{t("exploreSA")}</b>
       </span>
       <section className="flex-container">
         <div className="child-container">

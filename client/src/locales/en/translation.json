@@ -1,6 +1,37 @@
-{
+{"title_team":"About TEAM",
+    "description1":{"part1":"Everywhere we go we collaborate with and support an ever-growing network of TEAM members. These are the people who play a part in everything we do, giving us a truly international reach. They are our leaders in their communities: they create, inspire, perform, teach, write, organise, run projects, give feedback and make decisions with us on the future of National Theatre Wales.","part2":"TEAM is free to join and open to anyone over the age of 16."}
+,"list":{"subtitle":"Join TEAM and you’ll get:","item1":"A chance to have your say on how we run NTW","item2":"Free entry to selected NTW shows (often before anyone else)","item3":"Placement, training and mentoring opportunities","item4":"Invites to social and networking events","item5":"Paid work opportunities","item6":"Ongoing support to develop your own ideas","item7":"Discounts to shows and events run by our partners & much more,"}
+,"joiningText":{"subtitle":"Joining is easy:","part1":"Join the NTW TEAM Group on our online community. This is where all our opportunities will be placed first, so keep an eye out for something that suits you.","part2":"Join us at any NTW event and speak to a member of staff, TEAM Panel or another TEAM member."},
+
+
+"title_ntw":"About NTW",
+    "description2":"The nation of Wales is our stage.Collaborate. Make. Inspire. We collaborate with people and places to make extraordinary theatre that inspires change. From the intimate to the epic, our work is powerful, brave and unexpected. National Theatre Wales has been making English-language productions in locations all over Wales, the UK, internationally and online since March 2010. It operates from a small base in Cardiff’s city centre, but works all over the country and beyond, using Wales’ rich and diverse landscape, its towns, cities and villages, its incredible stories and rich talent as its inspiration. National Theatre Wales is supported by the Welsh Government and the Arts Council of Wales."
+  ,
 "title":"Simple Acts"
 
 ,
 "article1":"With a few simple acts we can change how we interact with our environment, and how we interact with each other.At the heart of Go Tell the Bees is the hope that by doing we can learn from each other, we can build confidence and skills and that we can experience through all of the senses."
-,"article2":" We want this production to have a positive impact on communities. Learning in an active and imaginative way is critical to this. NTW TEAM have created and curated a hive of information, knowledge, activity and inspiration that people of all ages can use as a springboard for learning. Explore each Simple Act through activities, ideas and educational resources:"}
+,"article2":" We want this production to have a positive impact on communities. Learning in an active and imaginative way is critical to this. NTW TEAM have created and curated a hive of information, knowledge, activity and inspiration that people of all ages can use as a springboard for learning. Explore each Simple Act through activities, ideas and educational resources:",
+"exploreSA":"Explore the 7 Simple Acts below.","act": "Be Kind to your Neighbour","direction":"Your Simple Act is to..."
+,"image1": "BeKind",
+"image2": "CKCimage",
+
+"text1":
+  "We all know that act's of kindness can make someone's day but in our busy lives we can sometimes miss the opportunity. So it might help to make some plans. A regular check in on an elderly neighbour? An invite to share a meal? Or perhaps you can join a voluntary programme that can make helping others part of your weekly routine? The challenges we face as individuals and as a society can feel overwhelming but starting small, with things we know can make a difference, we can always be part of the solution.",
+"text2Subheading":"Did You Know",
+"text2":
+  "Acts of kindness are often accompanied by emotional warmth. Emotional warmth produces the hormone, oxytocin, therefore kindness can be said to be cardioprotective - being kind really can help your heart!",
+  "discoverSubheading":"Discover",
+  "links": [
+    "href='https://tomhirons.com/poetry/sometimes-a-wild-god'",
+      "target='_blank'", "rel='noreferrer'", "title='Archwilio'",  "type='text/html'"],
+      "quoteSubheading":"Quote",
+  "quote": "“No  act of kindness, no matter how small, is ever wasted.” - Aesop",
+
+"urlResources": " <a href='https://www.nationaltheatrewales.org/daisy-discovers-sharing/'target='blank'rel='noreferrer'> Daisy Discovers Sharing </a>",
+"urlResources2": "<a href='https://www.nationaltheatrewales.org/food-map/'target='_blank'rel='noreferrer'>Food Map</a>"    ,
+"urlResources3": "<a href='https://www.nationaltheatrewales.org/making-a-bug-hotel/' target='_blank' rel='noreferrer'> Making a Bug Hotel </a>"    ,
+"urlCharity": "<a href='https://get-the-boys-a-lift.mybigcommerce.com/' target='_blank' rel='noreferrer'> Give The Boys A Lift </a>"
+
+,"resourceSubheading":"Resources",
+ "act2":"Connect with Someone New","direction2":"Your Simple Act is to...","text1a":"It might start with listening - to a new piece of music or poetry, a recipe, or someone's point of view. It's easy for us to get trapped in our habits and what we know, but trying something different can bring new perspectives and refresh our thinking. Volunteering could be another route to make new connections, alongside others in common cause or helping people who can also, it turns out, help you. Or learn a new skill, perhaps something you had never thought you would do, and find that you connect with new people too.","text2Subheading2":"Did You Know","text2a":"Counterpoints Arts is a leading national organisation in the fields of arts, migration and cultural change. Their mission is to produce and support arts by and about migrants and refugees. ","discoverSubheading2":"Discover","links2":"","quoteSubheading2":"Quote","quote2":"“We are all connected to everyone and everything in the universe. Therefore everything one does as an individual affects the whole. All thoughts, words, images, prayers, blessings and deeds are listened to by all that is” Serge Kahili King ","resourceSubheading2":"","act3":"","direction3":"","text1b":"","text2Subheading3":"","discoverSubheading3":"Discover","links3":"","quoteSubheading3":"Quote","quote3":"","resourceSubheading3":"","act4":"","direction4":"","text1c":"","text2Subheading4":"","discoverSubheading4":"Discover","links4":"","quoteSubheading4":"Quote","quote4":"","resourceSubheading4":"","act5":"","direction5":"","text1d":"","text2Subheading5":"","discoverSubheading5":"Discover","links5":"","quoteSubheading5":"Quote","quote5":"","resourceSubheading5":"","act6":"","direction6":"","text1e":"","text2Subheading6":"","discoverSubheading6":"Discover","links6":"","quoteSubheading6":"Quote","quote6":"","resourceSubheading6":"","act7":"","direction7":"","text1f":"","text2Subheading7":"","discoverSubheading7":"Discover","links7":"","quoteSubheading7":"Quote","quote7":"","resourceSubheading7":""}
