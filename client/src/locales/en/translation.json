@@ -1,34 +1,4 @@
-
 {
-    "title_team":"About TEAM",
-    "description1":{"part1":"Everywhere we go we collaborate with and support an ever-growing network of TEAM members. These are the people who play a part in everything we do, giving us a truly international reach. They are our leaders in their communities: they create, inspire, perform, teach, write, organise, run projects, give feedback and make decisions with us on the future of National Theatre Wales.","part2":"TEAM is free to join and open to anyone over the age of 16."}
-,"list":{"subtitle":"Join TEAM and you’ll get:","item1":"A chance to have your say on how we run NTW","item2":"Free entry to selected NTW shows (often before anyone else)","item3":"Placement, training and mentoring opportunities","item4":"Invites to social and networking events","item5":"Paid work opportunities","item6":"Ongoing support to develop your own ideas","item7":"Discounts to shows and events run by our partners & much more,"}
-,"joiningText":{"subtitle":"Joining is easy:","part1":"Join the NTW TEAM Group on our online community. This is where all our opportunities will be placed first, so keep an eye out for something that suits you.","part2":"Join us at any NTW event and speak to a member of staff, TEAM Panel or another TEAM member."},
-
-
-"title_ntw":"About NTW",
-    "description2":"The nation of Wales is our stage.Collaborate. Make. Inspire. We collaborate with people and places to make extraordinary theatre that inspires change. From the intimate to the epic, our work is powerful, brave and unexpected. National Theatre Wales has been making English-language productions in locations all over Wales, the UK, internationally and online since March 2010. It operates from a small base in Cardiff’s city centre, but works all over the country and beyond, using Wales’ rich and diverse landscape, its towns, cities and villages, its incredible stories and rich talent as its inspiration. National Theatre Wales is supported by the Welsh Government and the Arts Council of Wales."
-  
-,"act": "Be Kind to your Neighbour",
-"image1": "BeKind",
-"image2": "CKCimage",
-
-"text1":
-  "We all know that act's of kindness can make someone's day but in our busy lives we can sometimes miss the opportunity. So it might help to make some plans. A regular check in on an elderly neighbour? An invite to share a meal? Or perhaps you can join a voluntary programme that can make helping others part of your weekly routine? The challenges we face as individuals and as a society can feel overwhelming but starting small, with things we know can make a difference, we can always be part of the solution.",
-
-"text2":
-  "Acts of kindness are often accompanied by emotional warmth. Emotional warmth produces the hormone, oxytocin, therefore kindness can be said to be cardioprotective - being kind really can help your heart!",
-
-  "links": [
-    "href='https://tomhirons.com/poetry/sometimes-a-wild-god'",
-      "target='_blank'", "rel='noreferrer'", "title='Archwilio'",  "type='text/html'"],
-  
-  "quote": "“No  act of kindness, no matter how small, is ever wasted.” - Aesop",
-
-"urlResources": " <a href='https://www.nationaltheatrewales.org/daisy-discovers-sharing/'target='blank'rel='noreferrer'> Daisy Discovers Sharing </a>",
-"urlResources2": "<a href='https://www.nationaltheatrewales.org/food-map/'target='_blank'rel='noreferrer'>Food Map</a>"    ,
-"urlResources3": "<a href='https://www.nationaltheatrewales.org/making-a-bug-hotel/' target='_blank' rel='noreferrer'> Making a Bug Hotel </a>"    ,
-"urlCharity": "<a href='https://get-the-boys-a-lift.mybigcommerce.com/' target='_blank' rel='noreferrer'> Give The Boys A Lift </a>"
+"title":"Simple Acts"
 
 }
-

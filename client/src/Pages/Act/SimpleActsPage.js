@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import BeKind from "../../images/simple7/BeKind.jpg";
 import Connect from "../../images/simple7/Connect.jpg";
@@ -35,13 +36,24 @@ const SimpleActsPage = (props) => {
   const videoSimple =
     "https://www.youtube.com/watch?v=qxB3-sw2HAQ&feature=emb_logo";
 
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <>
       <Header />
       <SideNav />
       {/* Background START HERE */}
       <div className="home-container-video3">
-        <h2 className="subtitle1">Simple Acts</h2>
+        <div className="translate-button">
+          <button onClick={() => changeLanguage("en")}>En</button>
+          <button onClick={() => changeLanguage("welsh")}>Welsh</button>
+          {/* Translation Button END HERE */}
+          <hr />
+        </div>
+        <h2 className="subtitle1">{t("title")}</h2>
 
         {/* Video Container-START HERE */}
         <div className="simple-acts-container-parent">

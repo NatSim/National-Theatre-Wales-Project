@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router";
 import { BrowserRouter as Router } from "react-router-dom";
+import "./../i18next/i18n";
 import "./App.css";
 import LandingPage from "./Landing/LandingPage";
 import HomePage from "./Home/HomePage";

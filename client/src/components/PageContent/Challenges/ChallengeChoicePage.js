@@ -3,7 +3,6 @@ import { Trans, useTranslation } from "react-i18next";
 import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 import Header from "../../../components/Header/Header";
 import SideNav from "../../Nav/SideNav";
-import i18next from "i18next";
 
 //**This page component displays the unique challenge item content 7 total **/
 
@@ -110,12 +109,18 @@ const ChallengeItem = (props) => {
             </span>
             {/* 1.BE KIND PAGE Did you know START HERE*/}
             <span className="text-control3">
-              {props.id_ === 1
+              {/* {props.id_ === 1
                 ? i18next.t("links:[]", { returnObjects: true })
-                : ""}
-            </span>
-            {/* 1.BE KIND PAGE Did you know END HERE*/}
+                : ""} */}
 
+              {props.id_ === 1 ? (
+                <Trans i18nKey="links"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+            </span>
+
+            {/* 1.BE KIND PAGE Did you know END HERE*/}
             <div className="flex-child">
               <h3 className="resources-subheading">
                 {props.resourcesSubheading}
