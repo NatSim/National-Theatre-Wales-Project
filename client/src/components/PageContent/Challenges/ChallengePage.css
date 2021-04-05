@@ -119,6 +119,11 @@ body {
   animation: transitionIn 25s;
 }
 
+.text-control3 {
+  text-align: justify;
+  margin: 0px 0px 0px 30px;
+}
+
 .text-control,
 .text2-subheading,
 .discover-subheading,

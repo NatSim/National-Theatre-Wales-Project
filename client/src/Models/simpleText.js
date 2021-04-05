@@ -14,6 +14,7 @@ import TakeAWalk1 from "../images/SAboards/consider-walk-plant.jpg";
 /*Content for ChallengeChoicePage/ChallengeLogic*/
 const simpleText = [
   {
+    id_: 1,
     act: "Be Kind to your Neighbour",
     image1: BeKind,
     image2: CKCimage,
@@ -74,6 +75,7 @@ const simpleText = [
     ),
   },
   {
+    id_: 2,
     act: "Connect with Someone New",
     image1: Connect,
     image2: Consume1,
@@ -131,6 +133,7 @@ const simpleText = [
     ),
   },
   {
+    id_: 3,
     act: "Consider The Stars",
     image1: Consider,
     image2: Consider1,
@@ -183,6 +186,7 @@ const simpleText = [
       "“Even through your hardest days, remember we are all made of stardust” - Carl Sagan",
   },
   {
+    id_: 4,
     act: "Consume A Little Less",
     image1: Consume,
     image2: CKCimage,
@@ -229,6 +233,7 @@ const simpleText = [
     quote: "“No act of kindness, no matter how small, is ever wasted.” - Aesop",
   },
   {
+    id_: 5,
     act: "Learn one new thing about Nature",
     image1: Learn1,
     image2: CKCimage,
@@ -289,6 +294,7 @@ const simpleText = [
       "“The goal of life is to make your heartbeat match the beat of the universe, to match your nature with nature” – Joseph Campbell",
   },
   {
+    id_: 6,
     act: "Plant a Seed",
     image1: Plant,
     image2: Plant1,
@@ -344,6 +350,7 @@ const simpleText = [
       "“Change the way things are. The seed may seem small and insignificant. It's not about what it is but about what it can become Dr Seuss, The Lorax” - Aesop",
   },
   {
+    id_: 7,
     act: "Take A Walk",
     image1: TakeAWalk,
     image2: TakeAWalk1,
@@ -401,19 +408,19 @@ const simpleText = [
 ];
 
 /*DRY code */
-const direction = "Your Simple Act is to...";
+const direction = ["Your Simple Act is to...", "/Eich Deddf Syml yw ..."];
 export { direction };
 
-const text2Subheading = "Did you know";
+const text2Subheading = ["Did you know", "/Oeddech chi'n gwybod "];
 export { text2Subheading };
 
-const discoverHeading = "Discover";
+const discoverHeading = ["Discover", "/Darganfod"];
 export { discoverHeading };
 
 const quoteHeading = "Simple Act Quote";
 export { quoteHeading };
 
-const resourcesHeading = "Explore";
+const resourcesHeading = ["Explore", "/Archwilio"];
 export { resourcesHeading };
 
 const resourcesSubheading = "Hive Learning Resources";
