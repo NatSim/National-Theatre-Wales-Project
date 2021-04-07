@@ -213,8 +213,37 @@ const ChallengeItem = (props) => {
             </span>
             {/* 1.BE KIND PAGE discover links START HERE*/}
             <span className="text-control3">
-              {props.id_ === 1 || 2 || 3 || 4 || 5 || 6 || 7 ? (
-                <a href={t("links.0")} target="_blank">
+              {props.id_ === 1 ? (
+                <a
+                  href={t("links.0")}
+                  target="_blank"
+                  rel="noreferrer"
+                  type="text/html"
+                >
+                  Explore
+                </a>
+              ) : (
+                ""
+              )}
+              {props.id_ === 2 ? (
+                <a
+                  href={t("links.1")}
+                  target="_blank"
+                  rel="noreferrer"
+                  type="text/html"
+                >
+                  Explore
+                </a>
+              ) : (
+                ""
+              )}
+              {props.id_ === 3 ? (
+                <a
+                  href={t("links.2")}
+                  target="_blank"
+                  rel="noreferrer"
+                  type="text/html"
+                >
                   Explore
                 </a>
               ) : (
