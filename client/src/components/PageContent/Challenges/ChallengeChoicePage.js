@@ -16,7 +16,7 @@ const ChallengeItem = (props) => {
     setWelldone("Well done you have completed a Simple Act!");
   };
 
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
@@ -213,7 +213,7 @@ const ChallengeItem = (props) => {
             </span>
             {/* 1.BE KIND PAGE discover links START HERE*/}
             <span className="text-control3">
-            i18next.t('arrayJoin', { joinArrays: '+' });
+              <a href="">{i18n.t("links", { joinArrays: " + " })}</a>
               {/* {props.id_ === 1 ? (
                 <Trans i18nKey="links"></Trans>
               ) : (

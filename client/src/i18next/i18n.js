@@ -20,6 +20,7 @@ i18n
       returnObjects: true,
 
       returnedObjectHandler: false, // function(key, value, options) triggered if key returns object but returnObjects is set to false
+      joinArrays: true,
     },
     resources,
     initImmediate: false,

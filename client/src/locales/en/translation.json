@@ -23,8 +23,8 @@
   "Acts of kindness are often accompanied by emotional warmth. Emotional warmth produces the hormone, oxytocin, therefore kindness can be said to be cardioprotective - being kind really can help your heart!",
   "discoverSubheading":"Discover",
   "links": [
-    "href='https://tomhirons.com/poetry/sometimes-a-wild-god'",
-      "target='_blank'", "rel='noreferrer'", "title='Archwilio'",  "type='text/html'"],
+    "'https://tomhirons.com/poetry/sometimes-a-wild-god'"
+  ],
       "quoteSubheading":"Quote",
   "quote": "“No  act of kindness, no matter how small, is ever wasted.” - Aesop",
 
