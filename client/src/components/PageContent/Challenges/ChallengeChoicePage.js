@@ -209,13 +209,22 @@ const ChallengeItem = (props) => {
               {/* 1.BE KIND PAGE discover subheading END HERE*/}
             </h3>
             <span>
-              {props.urlFilm} {props.urlBook} {props.urlArtist}
+              {/* {props.urlFilm} {props.urlBook} {props.urlArtist} */}
             </span>
             {/* 1.BE KIND PAGE discover links START HERE*/}
             <span className="text-control3">
-              <a href="">{i18n.t("links", { joinArrays: " + " })}</a>
+              {props.id_ === 1 || 2 || 3 || 4 || 5 || 6 || 7 ? (
+                <a href={t("links.0")} target="_blank">
+                  Explore
+                </a>
+              ) : (
+                ""
+              )}
               {/* {props.id_ === 1 ? (
-                <Trans i18nKey="links"></Trans>
+                <a href="">
+                  {" "}
+                  <Trans i18nKey="links"> Explore</Trans>
+                </a>
               ) : (
                 <Trans i18nKey=""></Trans>
               )} */}
