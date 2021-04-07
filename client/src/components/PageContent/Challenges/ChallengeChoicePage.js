@@ -220,11 +220,13 @@ const ChallengeItem = (props) => {
                   rel="noreferrer"
                   type="text/html"
                 >
-                  Explore
+                  <Trans i18nKey="linkSubheading">Explore</Trans>
                 </a>
               ) : (
                 ""
               )}
+              {/* 1.BE KIND PAGE discover links END HERE*/}
+              {/* 2.CONNECT PAGE discover links START HERE*/}
               {props.id_ === 2 ? (
                 <a
                   href={t("links.1")}
@@ -232,11 +234,13 @@ const ChallengeItem = (props) => {
                   rel="noreferrer"
                   type="text/html"
                 >
-                  Explore
+                  <Trans i18nKey="linkSubheading">Explore</Trans>
                 </a>
               ) : (
                 ""
               )}
+              {/* 2.CONNECT PAGE discover links END HERE*/}
+              {/* 3.CONSIDER PAGE discover links START HERE*/}
               {props.id_ === 3 ? (
                 <a
                   href={t("links.2")}
@@ -244,19 +248,13 @@ const ChallengeItem = (props) => {
                   rel="noreferrer"
                   type="text/html"
                 >
-                  Explore
+                  <Trans i18nKey="linkSubheading">Explore</Trans>
                 </a>
               ) : (
                 ""
               )}
-              {/* {props.id_ === 1 ? (
-                <a href="">
-                  {" "}
-                  <Trans i18nKey="links"> Explore</Trans>
-                </a>
-              ) : (
-                <Trans i18nKey=""></Trans>
-              )} */}
+              {/* 3.CONSIDER PAGE discover links START HERE*/}
+
               {/* 1.BE KIND PAGE discover links END HERE*/}
               {/* 2.CONNECT PAGE discover links START HERE */}
               {props.id_ === 2 ? (
