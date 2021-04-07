@@ -16,7 +16,11 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    options: { returnObjects: false },
+    options: {
+      returnObjects: true,
+      // returnedObjectHandler: () => {}, // function(key, value, options) triggered if key returns object but returnObjects is set to false
+      returnedObjectHandler: false, // function(key, value, options) triggered if key returns object but returnObjects is set to false
+    },
     resources,
     initImmediate: false,
     fallbackLng: "en",

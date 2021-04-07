@@ -38,19 +38,12 @@ const ChallengeItem = (props) => {
             <div className="prompt-text-container">
               <h1 className="prompt-text">
                 {/* 1.BE KIND PAGE  Direction START HERE*/}
-                {props.id_ === 1 ? (
+                {props.id_ === 1 || 2 || 3 || 4 || 5 || 6 || 7 ? (
                   <Trans i18nKey="direction"></Trans>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
                 {/* 1.BE KIND PAGE Direction END HERE*/}
-                {/* 2.CONNECT PAGE  Direction START HERE*/}
-                {props.id_ === 2 ? (
-                  <Trans i18nKey="direction2"></Trans>
-                ) : (
-                  <Trans i18nKey=""></Trans>
-                )}
-                {/* 2.CONNECT PAGE Direction END HERE*/}
               </h1>
 
               {/* 1.BE KIND PAGE Act START HERE*/}
@@ -60,6 +53,7 @@ const ChallengeItem = (props) => {
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
+                {/* 1.BE KIND PAGE Act END HERE */}
                 {/* 2.CONNECT PAGE  Act START HERE*/}
 
                 {props.id_ === 2 ? (
@@ -68,6 +62,13 @@ const ChallengeItem = (props) => {
                   <Trans i18nKey=""></Trans>
                 )}
                 {/* 2.CONNECT PAGE Act END HERE*/}
+                {/* 3.CONSIDER THE STARS PAGE Act START HERE */}
+                {props.id_ === 3 ? (
+                  <Trans i18nKey="act3"></Trans>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+                {/* 3.CONSIDER THE STARS PAGE Act END HERE */}
               </h2>
             </div>
             <div className="intro-text">
@@ -78,7 +79,7 @@ const ChallengeItem = (props) => {
                   alt={"simple act challenge"}
                 />
               </div>
-              {/* 1.BE KIND PAGE ACT START HERE*/}
+              {/* 1.BE KIND PAGE ACT Text1 START HERE*/}
               <p className="text-control2">
                 {props.id_ === 1 ? (
                   <Trans i18nKey="text1"></Trans>
@@ -86,8 +87,8 @@ const ChallengeItem = (props) => {
                   <Trans i18nKey=""></Trans>
                 )}
               </p>
-              {/* 1.BE KIND PAGE ACT END HERE*/}
-              {/* 2.CONNECT PAGE ACT START HERE*/}
+              {/* 1.BE KIND PAGE ACT Text1 END HERE*/}
+              {/* 2.CONNECT PAGE ACT Text1a START HERE*/}
               <p className="text-control2">
                 {props.id_ === 2 ? (
                   <Trans i18nKey="text1a"></Trans>
@@ -95,11 +96,19 @@ const ChallengeItem = (props) => {
                   <Trans i18nKey=""></Trans>
                 )}
               </p>
-              {/* 2.CONNECT PAGE ACT END HERE*/}
+              {/* 2.CONNECT PAGE ACT Text1a END HERE*/}
+              {/* 3.CONNECT PAGE text1b START HERE */}
+              {props.id_ === 3 ? (
+                <Trans i18nKey="text1b"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 3.CONNECT PAGE text1b END HERE */}
             </div>
           </div>
         </section>
       </div>
+
       {/* Challenge top background END HERE */}
       {/* Challenge section START HERE */}
       <div className="challenge-page-background2">
@@ -108,19 +117,12 @@ const ChallengeItem = (props) => {
             <div className="flex-child">
               <h3 className="text2-subheading">
                 {/* BE KIND text2Subheading START HERE */}
-                {props.id_ === 1 ? (
+                {props.id_ === 1 || 2 || 3 || 4 || 5 || 6 || 7 ? (
                   <Trans i18nKey="text2Subheading"></Trans>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
                 {/* BE KIND text2Subheading END HERE */}
-                {/* CONNECT text2Subheading START HERE */}
-                {props.id_ === 2 ? (
-                  <Trans i18nKey="text2Subheading2"></Trans>
-                ) : (
-                  <Trans i18nKey=""></Trans>
-                )}
-                {/* CONNECT text2Subheading END HERE */}
               </h3>
               {/* 1.BE KIND PAGE Did you know START HERE*/}
               <p className="text-control3">
@@ -128,7 +130,8 @@ const ChallengeItem = (props) => {
                   <Trans i18nKey="text2"></Trans>
                 ) : (
                   <Trans i18nKey=""></Trans>
-                )}
+                )}{" "}
+                {/* 1.BE KIND PAGE Did you know END HERE*/}
                 {/* 2.CONNECT PAGE Did you know START HERE*/}
                 {props.id_ === 2 ? (
                   <Trans i18nKey="text2a"></Trans>
@@ -136,8 +139,14 @@ const ChallengeItem = (props) => {
                   <Trans i18nKey=""></Trans>
                 )}
                 {/* 2.CONNECT PAGE Did you know END HERE*/}
+                {/* 3.CONNECT THE STARS Did you know START HERE */}
+                {props.id_ === 3 ? (
+                  <Trans i18nKey="text3"></Trans>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+                {/* 3.CONNECT THE STARS Did you know END HERE */}
               </p>
-              {/* 1.BE KIND PAGE Did you know END HERE*/}
             </div>
             <div className="flex-child-image">
               <img
@@ -148,37 +157,52 @@ const ChallengeItem = (props) => {
             </div>
           </div>
           <div className="flex-child">
+            {/* 1.BE KIND PAGE Discover subheading START HERE*/}
             <h3 className="discover-subheading">
-              {props.id_ === 1 ? (
+              {props.id_ === 1 || 2 || 3 || 4 || 5 || 6 || 7 ? (
                 <Trans i18nKey="discoverSubheading"></Trans>
               ) : (
                 <Trans i18nKey=""></Trans>
               )}
+              {/* 1.BE KIND PAGE discover subheading END HERE*/}
             </h3>
             <span>
               {props.urlFilm} {props.urlBook} {props.urlArtist}
             </span>
-            {/* 1.BE KIND PAGE Did you know START HERE*/}
+            {/* 1.BE KIND PAGE discover links START HERE*/}
             <span className="text-control3">
-              {/* {props.id_ === 1
-                ? i18next.t("links:[]", { returnObjects: true })
-                : ""} */}
-
               {props.id_ === 1 ? (
                 <Trans i18nKey="links"></Trans>
               ) : (
                 <Trans i18nKey=""></Trans>
               )}
+              {/* 1.BE KIND PAGE discover links END HERE*/}
+              {/* 2.CONNECT PAGE discover links START HERE */}
+              {props.id_ === 2 ? (
+                <Trans i18nKey="links2"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 2.CONNECT PAGE discover links END HERE */}
+              {/* 3.CONSIDER THE STARS PAGEdiscover links START HERE */}
+              {props.id_ === 3 ? (
+                <Trans i18nKey="links3"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 3.CONSIDER THE STARS PAGEdiscover links END HERE */}
             </span>
 
-            {/* 1.BE KIND PAGE Did you know END HERE*/}
             <div className="flex-child">
+              {/* BE KIND PAGE resources heading START HERE */}
+
               <h3 className="resources-subheading">
-                {props.id_ === 1 ? (
+                {props.id_ === 1 || 2 || 3 || 4 || 5 || 6 || 7 ? (
                   <Trans i18nKey="resourceSubheading"></Trans>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
+                {/* BE KIND PAGE resources heading END HERE */}
               </h3>
               <div className="flex-child">
                 <h3 className="resources-subheading">{props.charityHeading}</h3>
@@ -200,20 +224,12 @@ const ChallengeItem = (props) => {
           </div>
           <div className="flex-child" id="border-control">
             <h3 className="quote-heading">
-              {/* 1.BE KIND PAGE Quote START HERE*/}
-              {props.id_ === 1 ? (
+              {/* 1.BE KIND PAGE Quote heading START HERE*/}
+              {props.id_ === 1 || 2 || 3 || 4 || 5 || 6 || 7 ? (
                 <Trans i18nKey="quoteSubheading"></Trans>
               ) : (
                 <Trans i18nKey=""></Trans>
               )}
-              {/* 1.BE KIND PAGE Quote END HERE*/}
-              {/* 2.CONNECT PAGE Quote heading START HERE*/}
-              {props.id_ === 2 ? (
-                <Trans i18nKey="quoteSubheading2"></Trans>
-              ) : (
-                <Trans i18nKey=""></Trans>
-              )}
-              {/* 2.CONNECT PAGE Quote heading END HERE*/}
             </h3>
             <p>
               {/* 1.BE KIND PAGE Quote START HERE*/}
@@ -230,6 +246,13 @@ const ChallengeItem = (props) => {
                 <Trans i18nKey=""></Trans>
               )}
               {/* 2.CONNECT PAGE Quote END HERE*/}
+              {/* 3.CONSIDER THE STARS Quote START HERE */}
+              {props.id_ === 3 ? (
+                <Trans i18nKey="quote3"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 3.CONSIDER THE STARS Quote END HERE */}
             </p>
           </div>
         </section>
