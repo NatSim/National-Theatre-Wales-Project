@@ -69,6 +69,20 @@ const ChallengeItem = (props) => {
                   <Trans i18nKey=""></Trans>
                 )}
                 {/* 3.CONSIDER THE STARS PAGE Act END HERE */}
+                {/* 4.CONSUME PAGE Act START HERE */}
+                {props.id_ === 4 ? (
+                  <Trans i18nKey="act4"></Trans>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+                {/* 4.CONSUME PAGE Act START HERE */}
+                {/* 5.LEARN PAGE Act STARTS HERE */}
+                {props.id_ === 5 ? (
+                  <Trans i18nKey="act5"></Trans>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+                {/* 5.LEARN PAGE Act STARTS HERE */}
               </h2>
             </div>
             <div className="intro-text">
@@ -104,6 +118,20 @@ const ChallengeItem = (props) => {
                 <Trans i18nKey=""></Trans>
               )}
               {/* 3.CONNECT PAGE text1b END HERE */}
+              {/* 4.CONSUME PAGE text1c START HERE */}
+              {props.id_ === 4 ? (
+                <Trans i18nKey="text1c"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 4.CONSUME PAGE text1c START HERE */}
+              {/* 5.LEARN PAGE Act STARTS HERE */}
+              {props.id_ === 5 ? (
+                <Trans i18nKey="text1d"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 5.LEARN PAGE Act STARTS HERE */}
             </div>
           </div>
         </section>
@@ -146,6 +174,20 @@ const ChallengeItem = (props) => {
                   <Trans i18nKey=""></Trans>
                 )}
                 {/* 3.CONNECT THE STARS Did you know END HERE */}
+                {/* 4.CONSUME PAGE Act START HERE */}
+                {props.id_ === 4 ? (
+                  <Trans i18nKey="text4"></Trans>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+                {/* 4.CONSUME PAGE Act START HERE */}
+                {/* 5.LEARN PAGE Act STARTS HERE */}
+                {props.id_ === 5 ? (
+                  <Trans i18nKey="text5"></Trans>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+                {/* 5.LEARN PAGE Act STARTS HERE */}
               </p>
             </div>
             <div className="flex-child-image">
@@ -171,11 +213,12 @@ const ChallengeItem = (props) => {
             </span>
             {/* 1.BE KIND PAGE discover links START HERE*/}
             <span className="text-control3">
-              {props.id_ === 1 ? (
+            i18next.t('arrayJoin', { joinArrays: '+' });
+              {/* {props.id_ === 1 ? (
                 <Trans i18nKey="links"></Trans>
               ) : (
                 <Trans i18nKey=""></Trans>
-              )}
+              )} */}
               {/* 1.BE KIND PAGE discover links END HERE*/}
               {/* 2.CONNECT PAGE discover links START HERE */}
               {props.id_ === 2 ? (
@@ -191,6 +234,10 @@ const ChallengeItem = (props) => {
                 <Trans i18nKey=""></Trans>
               )}
               {/* 3.CONSIDER THE STARS PAGEdiscover links END HERE */}
+              {/* 4.CONSUME PAGE Act START HERE */}
+              {/* 4.CONSUME PAGE Act START HERE */}
+              {/* 5.LEARN PAGE Act STARTS HERE */}
+              {/* 5.LEARN PAGE Act STARTS HERE */}
             </span>
 
             <div className="flex-child">
@@ -253,6 +300,10 @@ const ChallengeItem = (props) => {
                 <Trans i18nKey=""></Trans>
               )}
               {/* 3.CONSIDER THE STARS Quote END HERE */}
+              {/* 4.CONSUME PAGE Act START HERE */}
+              {/* 4.CONSUME PAGE Act START HERE */}
+              {/* 5.LEARN PAGE Act STARTS HERE */}
+              {/* 5.LEARN PAGE Act STARTS HERE */}
             </p>
           </div>
         </section>

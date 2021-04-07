@@ -18,7 +18,7 @@ i18n
   .init({
     options: {
       returnObjects: true,
-      // returnedObjectHandler: () => {}, // function(key, value, options) triggered if key returns object but returnObjects is set to false
+
       returnedObjectHandler: false, // function(key, value, options) triggered if key returns object but returnObjects is set to false
     },
     resources,
