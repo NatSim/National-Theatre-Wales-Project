@@ -32,7 +32,7 @@ const ChallengeItem = (props) => {
           {/* Translation Button START HERE */}
           <div className="translate-button">
             <button onClick={() => changeLanguage("en")}>En</button>
-            <button onClick={() => changeLanguage("welsh")}>Welsh</button>
+            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
             {/* Translation Button END HERE */}
             <hr />
             <div className="prompt-text-container">
@@ -75,14 +75,28 @@ const ChallengeItem = (props) => {
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
-                {/* 4.CONSUME PAGE Act START HERE */}
+                {/* 4.CONSUME PAGE Act ENDS HERE */}
                 {/* 5.LEARN PAGE Act STARTS HERE */}
                 {props.id_ === 5 ? (
                   <Trans i18nKey="act5"></Trans>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
-                {/* 5.LEARN PAGE Act STARTS HERE */}
+                {/* 5.LEARN PAGE Act ENDS HERE */}
+                {/* 6.PLANT Act STARTS HERE */}
+                {props.id_ === 6 ? (
+                  <Trans i18nKey="act6"></Trans>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+                {/* 6.PLANT Act ENDS HERE */}
+                {/* 7.TAKE A WALK Act STARTS HERE */}
+                {props.id_ === 7 ? (
+                  <Trans i18nKey="act7"></Trans>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+                {/* 7.TAKE A WALK Act ENDS HERE */}
               </h2>
             </div>
             <div className="intro-text">
@@ -124,14 +138,28 @@ const ChallengeItem = (props) => {
               ) : (
                 <Trans i18nKey=""></Trans>
               )}
-              {/* 4.CONSUME PAGE text1c START HERE */}
+              {/* 4.CONSUME PAGE text1c ENDS HERE */}
               {/* 5.LEARN PAGE Act STARTS HERE */}
               {props.id_ === 5 ? (
                 <Trans i18nKey="text1d"></Trans>
               ) : (
                 <Trans i18nKey=""></Trans>
               )}
-              {/* 5.LEARN PAGE Act STARTS HERE */}
+              {/* 5.LEARN PAGE Act ENDS HERE */}
+              {/* 6.PLANT PAGE Act STARTS HERE */}
+              {props.id_ === 6 ? (
+                <Trans i18nKey="text1e"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 6.PLANT PAGE Act ENDS HERE */}
+              {/* 7.TAKE A WALK PAGE Act STARTS HERE */}
+              {props.id_ === 7 ? (
+                <Trans i18nKey="text1f"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 7.TAKE A WALK PAGE Act ENDS HERE */}
             </div>
           </div>
         </section>
@@ -174,20 +202,34 @@ const ChallengeItem = (props) => {
                   <Trans i18nKey=""></Trans>
                 )}
                 {/* 3.CONNECT THE STARS Did you know END HERE */}
-                {/* 4.CONSUME PAGE Act START HERE */}
+                {/* 4.CONSUME PAGE Did you know START HERE */}
                 {props.id_ === 4 ? (
                   <Trans i18nKey="text4"></Trans>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
-                {/* 4.CONSUME PAGE Act START HERE */}
-                {/* 5.LEARN PAGE Act STARTS HERE */}
+                {/* 4.CONSUME PAGE Did you know ENDS HERE */}
+                {/* 5.LEARN PAGE Did you know STARTS HERE */}
                 {props.id_ === 5 ? (
                   <Trans i18nKey="text5"></Trans>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
-                {/* 5.LEARN PAGE Act STARTS HERE */}
+                {/* 5.LEARN PAGE Did you know ENDS HERE */}
+                {/* 6. PLANT PAGE Did you know STARTS HERE */}
+                {props.id_ === 6 ? (
+                  <Trans i18nKey="text6"></Trans>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+                {/* 6.PLANT PAGE Did you know ENDS HERE */}
+                {/* 7.TAKE A WALK Did you know STARTS HERE */}
+                {props.id_ === 7 ? (
+                  <Trans i18nKey="text7"></Trans>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+                {/* 7.TAKE A WALK Did you know ENDS HERE */}
               </p>
             </div>
             <div className="flex-child-image">
@@ -254,30 +296,67 @@ const ChallengeItem = (props) => {
                 ""
               )}
               {/* 3.CONSIDER PAGE discover links START HERE*/}
+              {/* 4.CONNECT PAGE discover links START HERE*/}
+              {props.id_ === 4 ? (
+                <a
+                  href={t("links.3")}
+                  target="_blank"
+                  rel="noreferrer"
+                  type="text/html"
+                >
+                  <Trans i18nKey="linkSubheading">Explore</Trans>
+                </a>
+              ) : (
+                ""
+              )}
+              {/* 4.CONNECT PAGE discover links END HERE*/}
+              {/* 5.LEARN discover links START HERE*/}
+              {props.id_ === 5 ? (
+                <a
+                  href={t("links.4")}
+                  target="_blank"
+                  rel="noreferrer"
+                  type="text/html"
+                >
+                  <Trans i18nKey="linkSubheading">Explore</Trans>
+                </a>
+              ) : (
+                ""
+              )}
+              {/* 5.LEARN discover links START HERE*/}
 
-              {/* 1.BE KIND PAGE discover links END HERE*/}
-              {/* 2.CONNECT PAGE discover links START HERE */}
-              {props.id_ === 2 ? (
-                <Trans i18nKey="links2"></Trans>
+              {/* 6.PLANT links STARTS HERE */}
+              {props.id_ === 6 ? (
+                <a
+                  href={t("links.5")}
+                  target="_blank"
+                  rel="noreferrer"
+                  type="text/html"
+                >
+                  <Trans i18nKey="links.5">Explore</Trans>
+                </a>
               ) : (
                 <Trans i18nKey=""></Trans>
               )}
-              {/* 2.CONNECT PAGE discover links END HERE */}
-              {/* 3.CONSIDER THE STARS PAGEdiscover links START HERE */}
-              {props.id_ === 3 ? (
-                <Trans i18nKey="links3"></Trans>
+              {/* 6.PLANT links END HERE */}
+              {/* 7.TAKE A WALK links STARTS HERE */}
+              {props.id_ === 7 ? (
+                <a
+                  href={t("links.6")}
+                  target="_blank"
+                  rel="noreferrer"
+                  type="text/html"
+                >
+                  <Trans i18nKey="links.6">Explore</Trans>
+                </a>
               ) : (
                 <Trans i18nKey=""></Trans>
               )}
-              {/* 3.CONSIDER THE STARS PAGEdiscover links END HERE */}
-              {/* 4.CONSUME PAGE Act START HERE */}
-              {/* 4.CONSUME PAGE Act START HERE */}
-              {/* 5.LEARN PAGE Act STARTS HERE */}
-              {/* 5.LEARN PAGE Act STARTS HERE */}
+              {/* 7.TAKE A WALK links END HERE */}
             </span>
 
             <div className="flex-child">
-              {/* BE KIND PAGE resources heading START HERE */}
+              {/* 1. BE KIND PAGE resources heading START HERE */}
 
               <h3 className="resources-subheading">
                 {props.id_ === 1 || 2 || 3 || 4 || 5 || 6 || 7 ? (
@@ -285,7 +364,7 @@ const ChallengeItem = (props) => {
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
-                {/* BE KIND PAGE resources heading END HERE */}
+                {/* 1. BE KIND PAGE resources heading END HERE */}
               </h3>
               <div className="flex-child">
                 <h3 className="resources-subheading">{props.charityHeading}</h3>
@@ -336,10 +415,34 @@ const ChallengeItem = (props) => {
                 <Trans i18nKey=""></Trans>
               )}
               {/* 3.CONSIDER THE STARS Quote END HERE */}
-              {/* 4.CONSUME PAGE Act START HERE */}
-              {/* 4.CONSUME PAGE Act START HERE */}
-              {/* 5.LEARN PAGE Act STARTS HERE */}
-              {/* 5.LEARN PAGE Act STARTS HERE */}
+              {/* 4.CONSUME PAGE Quote START HERE */}
+              {props.id_ === 4 ? (
+                <Trans i18nKey="quote4"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 4.CONSUME PAGE Quote END HERE */}
+              {/* 5.LEARN PAGE Quote STARTS HERE */}
+              {props.id_ === 5 ? (
+                <Trans i18nKey="quote5"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 5.LEARN PAGE Quote END HERE */}
+              {/* 6.PLANT PAGE Quote STARTS HERE */}
+              {props.id_ === 6 ? (
+                <Trans i18nKey="quote6"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 6.PLANT PAGE Quote END HERE */}
+              {/* 7.TAKE A WALK PAGE Quote STARTS HERE */}
+              {props.id_ === 7 ? (
+                <Trans i18nKey="quote7"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 7.TAKE A WALK PAGE Quote END HERE */}
             </p>
           </div>
         </section>
