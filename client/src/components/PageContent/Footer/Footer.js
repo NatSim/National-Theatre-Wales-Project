@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Trans, useTranslation } from "react-i18next";
 import * as ImIcons from "react-icons/im";
 import "./Footer.css";
 import Counterpoints from "../../../images/logos/counterpoints/Counterpoints.jpg";
@@ -13,6 +14,11 @@ const Footer = () => {
   const ntwTwitterPage = "https://twitter.com/ntwtweets";
   const ntwYouTubePage =
     "https://www.youtube.com/channel/UC54_0F_URQ5nvePaZRldKVg";
+
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
 
   return (
     <>
@@ -57,17 +63,17 @@ const Footer = () => {
         <ul className="footer-ul-control">
           <li>
             <Link to={"/contact"} className="Link-control">
-              Contact Us
+              {t("footerContent.0")}
             </Link>
           </li>
           <li>
             <Link to={"/terms"} className="Link-control">
-              Terms{`&`}Conditions
+              {t("footerContent.1")}
             </Link>
           </li>
           <li>
             <Link to={"/accessibility"} className="Link-control">
-              Accessibility
+              {t("footerContent.2")}
             </Link>
           </li>
         </ul>
@@ -95,9 +101,7 @@ const Footer = () => {
           </li>
         </ul>
         <p>
-          2021 Go Tell The Bees Copyright © National Theatre Wales.Registered
-          Company No. 6693227 Charity Registration No. 1127952. <br />
-          Website developed by{" "}
+          {t("footerContent.3")}
           <a
             href="https://www.linkedin.com/in/natasha-simone-14310364/"
             target="_blank"

@@ -28,22 +28,6 @@ const NavButton = (props) => {
   );
 };
 
-/*Card Title Text*/
-const titleTeam = "Join TEAM";
-const titleNTW = "National Theatre Wales";
-const contactUs = "Get in Touch";
-
-/*Card Button Text*/
-const clickHere = "Click Here";
-
-/*Card placeholder Text*/
-const mainTextNtw = "Find out about National Theatre Wales here.";
-
-const mainTextTeam =
-  "Enjoy the Arts, Theatre Shows and more? Get involved here.";
-
-const mainTextContact = "To find out more, contact us here";
-
 const HomePage = (props) => {
   const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
@@ -57,53 +41,59 @@ const HomePage = (props) => {
       <section className="homepage">
         <div className="background-outer"></div>
         <main>
-          <nav className="nav-container">
-            <h2 className="subtitle1">Discover</h2>
-            <ul className="middle-nav-list">
-              <li className="nav-button-list">
-                <Link to="/show">
-                  <img
-                    id="about-button"
-                    className="default-button"
-                    src={BeeStamp}
-                    alt="whole bee "
-                  />
-                </Link>
-              </li>
-              <li className="nav-button-list">
-                <NavButton link={"/connect"} buttonColor={"green-button"}>
-                  Connect
-                </NavButton>
-              </li>
-              <li className="nav-button-list">
-                <NavButton link={"/music"} buttonColor={"pink-button"}>
-                  Listen
-                </NavButton>
-              </li>
+          <div className="translate-button">
+            <button onClick={() => changeLanguage("en")}>En</button>
+            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+            {/* Translation Button END HERE */}
+            <hr />
+            <nav className="nav-container">
+              <h2 className="subtitle1">{i18n.t("homeSubtitleDiscover")}</h2>
+              <ul className="middle-nav-list">
+                <li className="nav-button-list">
+                  <Link to="/show">
+                    <img
+                      id="about-button"
+                      className="default-button"
+                      src={BeeStamp}
+                      alt="whole bee "
+                    />
+                  </Link>
+                </li>
+                <li className="nav-button-list">
+                  <NavButton link={"/connect"} buttonColor={"green-button"}>
+                    {i18n.t("homeNavContent.0")}
+                  </NavButton>
+                </li>
+                <li className="nav-button-list">
+                  <NavButton link={"/music"} buttonColor={"pink-button"}>
+                    {i18n.t("homeNavContent.1")}
+                  </NavButton>
+                </li>
 
-              <li className="nav-button-list">
-                <NavButton link={"/simpleacts"} buttonColor={"simple-button"}>
-                  Act
-                </NavButton>
-              </li>
-              <li className="nav-button-list">
-                <NavButton link={"/map"} buttonColor={"blue-button"}>
-                  Map
-                </NavButton>
-              </li>
-            </ul>
-          </nav>
+                <li className="nav-button-list">
+                  <NavButton link={"/simpleacts"} buttonColor={"simple-button"}>
+                    {i18n.t("homeNavContent.2")}
+                  </NavButton>
+                </li>
+                <li className="nav-button-list">
+                  <NavButton link={"/map"} buttonColor={"blue-button"}>
+                    {i18n.t("homeNavContent.3")}
+                  </NavButton>
+                </li>
+              </ul>
+            </nav>{" "}
+          </div>
         </main>
       </section>
-      <h2 className="subtitle2">Explore</h2>
+      <h2 className="subtitle2">{i18n.t("homeSubtitleExplore")}</h2>
       <Container className="card-deck">
         <Row>
           <Col sm>
             <Features
               image={NTWLogo}
-              title={titleNTW}
-              text={mainTextNtw}
-              button={clickHere}
+              title={i18n.t("featureCard1.0")}
+              text={i18n.t("featureCard1.1")}
+              button={i18n.t("featureCard1.2")}
               links={"/about/2"}
               id={"2"}
             />
@@ -111,9 +101,9 @@ const HomePage = (props) => {
           <Col sm>
             <Features
               image={Tide}
-              title={titleTeam}
-              text={mainTextTeam}
-              button={clickHere}
+              title={i18n.t("featureCard2.0")}
+              text={i18n.t("featureCard2.1")}
+              button={i18n.t("featureCard1.2")}
               links={"/about/1"}
               id={"1"}
             />
@@ -121,9 +111,9 @@ const HomePage = (props) => {
           <Col sm>
             <Features
               image={Party}
-              title={contactUs}
-              text={mainTextContact}
-              button={clickHere}
+              title={i18n.t("featureCard3.0")}
+              text={i18n.t("featureCard3.1")}
+              button={i18n.t("featureCard1.2")}
               links={"/contact"}
             />
           </Col>

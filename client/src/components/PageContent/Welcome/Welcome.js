@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Trans, useTranslation } from "react-i18next";
 import "./Welcome.css";
 import NextButton from "../../Buttons/MainButton";
 import { useHistory } from "react-router";
@@ -25,9 +26,9 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep }) => {
   /**Step 1 */
   const newTitle = () => (
     <>
-      <span className="">Welcome to</span>
+      <span className="">{t("welcomeComponent.0")}</span>
       <br />
-      <span className="yellow">Go tell the Bees</span>
+      <span className="yellow">{t("welcomeComponent.1")}</span>
     </>
   );
 
@@ -35,18 +36,18 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep }) => {
     <>
       <div className="special-chars-control">
         <span className="">
-          <b>Go Tell the Bees, </b>
+          <b>{t("welcomeComponent.1")} </b>
           <br />
-          <b>asks each one of us to perform</b>
+          <b>{t("welcomeComponent.2")}</b>
           <br />
-          <b>seven</b>
+          <b>{t("welcomeComponent.3")}</b>
         </span>
         <span className="blue">
-          <b> Simple Acts</b>
+          <b> {t("welcomeComponent.4")}</b>
         </span>
         <br />
         <span className="">
-          <b> in our daily lives.</b>
+          <b> {t("welcomeComponent.5")}</b>
         </span>
       </div>
     </>
@@ -54,9 +55,24 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep }) => {
 
   const questionChars = () => (
     <>
-      <span className="yellow">So what will you tell the bees?</span>
+      <span className="yellow">{t("welcomeComponent.6")}</span>
     </>
   );
+
+  // const mainTextStepOneOnly = () => {
+  //   if (welcomeStep === questionChars()) {
+  //     <div></div>;
+
+  //     if (welcomeStep === 1) {
+  //       <Trans i18nKey="welcomeMainText.0"></Trans>;
+  //     }
+  //   }
+  // };
+
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
 
   console.log(welcomeStep);
   return (
@@ -65,18 +81,31 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep }) => {
         <nav className="sidenav-container">
           <SideNav />
         </nav>
+        <div className="translate-button">
+          <button onClick={() => changeLanguage("en")}>En</button>
+          <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+          {/* Translation Button END HERE */}
+          <hr />
+        </div>
         <section className="text-image-control">
           <div>
             <h1 className="welcome-title">
-              {welcomeStep === 0
-                ? newTitle()
-                : title && welcomeStep === 2
-                ? questionChars()
-                : title}
+              {welcomeStep === 0 ? (
+                newTitle()
+              ) : <Trans i18nKey="welcomeMainText.0"></Trans> &&
+                welcomeStep === 2 ? (
+                questionChars()
+              ) : (
+                <Trans i18nKey="welcomeTitle.1"></Trans>
+              )}
             </h1>
 
             <h2 className={"main-text"}>
-              {welcomeStep === 0 ? specialChars() : mainText}
+              {" "}
+              {welcomeStep === 0
+                ? specialChars()
+                : mainText // <Trans i18nKey="welcomeMainText.0"></Trans>
+              }
             </h2>
           </div>
         </section>

@@ -139,7 +139,8 @@ path,
 svg,
 .form-parent,
 h1,
-h2 {
+h2,
+.translate-button {
   position: relative;
 }
 
