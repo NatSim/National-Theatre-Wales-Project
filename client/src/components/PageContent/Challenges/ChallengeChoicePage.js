@@ -262,7 +262,7 @@ const ChallengeItem = (props) => {
                   rel="noreferrer"
                   type="text/html"
                 >
-                  <Trans i18nKey="linkSubheading">Explore</Trans>
+                  <Trans i18nKey="linkSubheading"></Trans>
                 </a>
               ) : (
                 ""
@@ -276,7 +276,7 @@ const ChallengeItem = (props) => {
                   rel="noreferrer"
                   type="text/html"
                 >
-                  <Trans i18nKey="linkSubheading">Explore</Trans>
+                  <Trans i18nKey="linkSubheading"></Trans>
                 </a>
               ) : (
                 ""
@@ -290,7 +290,7 @@ const ChallengeItem = (props) => {
                   rel="noreferrer"
                   type="text/html"
                 >
-                  <Trans i18nKey="linkSubheading">Explore</Trans>
+                  <Trans i18nKey="linkSubheading"></Trans>
                 </a>
               ) : (
                 ""
@@ -304,7 +304,7 @@ const ChallengeItem = (props) => {
                   rel="noreferrer"
                   type="text/html"
                 >
-                  <Trans i18nKey="linkSubheading">Explore</Trans>
+                  <Trans i18nKey="linkSubheading"></Trans>
                 </a>
               ) : (
                 ""
@@ -318,7 +318,7 @@ const ChallengeItem = (props) => {
                   rel="noreferrer"
                   type="text/html"
                 >
-                  <Trans i18nKey="linkSubheading">Explore</Trans>
+                  <Trans i18nKey="linkSubheading"></Trans>
                 </a>
               ) : (
                 ""
@@ -333,7 +333,7 @@ const ChallengeItem = (props) => {
                   rel="noreferrer"
                   type="text/html"
                 >
-                  <Trans i18nKey="links.5">Explore</Trans>
+                  <Trans i18nKey="linkSubheading"></Trans>
                 </a>
               ) : (
                 <Trans i18nKey=""></Trans>
@@ -347,7 +347,7 @@ const ChallengeItem = (props) => {
                   rel="noreferrer"
                   type="text/html"
                 >
-                  <Trans i18nKey="links.6">Explore</Trans>
+                  <Trans i18nKey="linkSubheading"></Trans>
                 </a>
               ) : (
                 <Trans i18nKey=""></Trans>
@@ -398,58 +398,350 @@ const ChallengeItem = (props) => {
                 )}
                 {/*2.CONNECT Charity ENDS HERE */}
                 {/*3.CONSIDER Charity STARTS HERE */}
+                {props.id_ === 3 ? (
+                  <a
+                    href={t("urlCharity.2")}
+                    target="_blank"
+                    rel="noreferrer"
+                    type="text/html"
+                  >
+                    <Trans i18nKey="urlCharityName.2"></Trans>
+                  </a>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
                 {/*3.CONSIDER Charity ENDS HERE */}
                 {/* 4. CONSUME Charity STARTS HERE */}
+                {props.id_ === 4 ? (
+                  <a
+                    href={t("urlCharity.3")}
+                    target="_blank"
+                    rel="noreferrer"
+                    type="text/html"
+                  >
+                    <Trans i18nKey="urlCharityName.3"></Trans>
+                  </a>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
                 {/*4. CONSUME Charity ENDS HERE */}
                 {/* 5.LEARN Charity STARTS HERE */}
+                {props.id_ === 5 ? (
+                  <a
+                    href={t("urlCharity.4")}
+                    target="_blank"
+                    rel="noreferrer"
+                    type="text/html"
+                  >
+                    <Trans i18nKey="urlCharityName.4"></Trans>
+                  </a>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
                 {/*5.LEARN Charity ENDS HERE */}
                 {/* 6.PLANT Charity STARTS HERE */}
+                {props.id_ === 6 ? (
+                  <a
+                    href={t("urlCharity.5")}
+                    target="_blank"
+                    rel="noreferrer"
+                    type="text/html"
+                  >
+                    <Trans i18nKey="urlCharityName.5"></Trans>
+                  </a>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
                 {/*6.PLANT Charity ENDS HERE */}
                 {/* 7.TAKE A WALK Charity STARTS HERE */}
+                {props.id_ === 7 ? (
+                  <a
+                    href={t("urlCharity.6")}
+                    target="_blank"
+                    rel="noreferrer"
+                    type="text/html"
+                  >
+                    <Trans i18nKey="urlCharityName.6"></Trans>
+                  </a>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
                 {/*7.TAKE A WALK Charity ENDS HERE */}
               </div>
               <ul>
+                {/*1.Be Kind Resources STARTS HERE */}
                 <li className="nav-link-control">
                   {props.id_ === 1 ? (
                     <a
-                      href={t("urlResources")}
+                      href={t("urlResources.0")}
                       target="_blank"
                       rel="noreferrer"
                       type="text/html"
                     >
-                      <Trans i18nKey="urlResourcesName"></Trans>
+                      <Trans i18nKey="urlResourcesName.0"></Trans>
                     </a>
                   ) : (
                     ""
                   )}
+                  {/*1.Be Kind resources ENDS HERE */}
+                  {/*2.CONNECT resources STARTS HERE */}
+                  {props.id_ === 2 ? (
+                    <a
+                      href={t("urlResources.1")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResourcesName.1"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+
+                  {/*2.CONNECT resources ENDS HERE */}
+                  {/*3.CONSIDER resources STARTS HERE */}
+                  {props.id_ === 3 ? (
+                    <a
+                      href={t("urlResources.2")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResourcesName.2"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {/*3.CONSIDER resources ENDS HERE */}
+                  {/* 4. CONSUME resources STARTS HERE */}
+                  {props.id_ === 4 ? (
+                    <a
+                      href={t("urlResources.0")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResourcesName.0"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {/*4. CONSUME resources ENDS HERE */}
+                  {/* 5.LEARN resources STARTS HERE */}
+                  {props.id_ === 5 ? (
+                    <a
+                      href={t("urlResources.3")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResourcesName.3"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {/*5.LEARN resources ENDS HERE */}
+                  {/* 6.PLANT resources STARTS HERE */}
+                  {props.id_ === 6 ? (
+                    <a
+                      href={t("urlResources.3")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResourcesName.3"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {/*6.PLANT resources ENDS HERE */}
+                  {/* 7.TAKE A WALK resources STARTS HERE */}
+                  {props.id_ === 7 ? (
+                    <a
+                      href={t("urlResources.4")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResourcesName.4"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {/*7.TAKE A WALK resources ENDS HERE */}
                 </li>
                 <li className="nav-link-control">
+                  {/*1.Be Kind resources2 STARTS HERE */}
                   {props.id_ === 1 ? (
                     <a
-                      href={t("urlResources2")}
+                      href={t("urlResources2.0")}
                       target="_blank"
                       rel="noreferrer"
                       type="text/html"
                     >
-                      <Trans i18nKey="urlResources2Name"></Trans>
+                      <Trans i18nKey="urlResources2Name.0"></Trans>
                     </a>
                   ) : (
                     ""
                   )}
+                  {/*1.Be Kind resources2 ENDS HERE */}
+                  {/*2.CONNECT resources2 STARTS HERE */}
+                  {props.id_ === 2 ? (
+                    <a
+                      href={t("urlResources.0")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResourcesName.0"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {/*2.CONNECT resources2 ENDS HERE */}
+                  {/*3.CONSIDER resources2 STARTS HERE */}
+                  {props.id_ === 3 ? (
+                    <a
+                      href={t("urlResources2.1")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResources2Name.1"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {/*3.CONSIDER resources2 ENDS HERE */}
+                  {/* 4. CONSUME resources2 STARTS HERE */}
+                  {props.id_ === 4 ? (
+                    <a
+                      href={t("urlResources2.2")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResources2Name.2"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {/*4. CONSUME resources2 ENDS HERE */}
+                  {/* 5.LEARN resources2 STARTS HERE */}
+                  {props.id_ === 5 ? (
+                    <a
+                      href={t("urlResources2.3")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResources2Name.3"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {/*5.LEARN resources2 ENDS HERE */}
+                  {/* 6.PLANT resources2 STARTS HERE */}
+                  {props.id_ === 6 ? (
+                    <a
+                      href={t("urlResources2.3")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResources2Name.3"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {/*6.PLANT resources2 ENDS HERE */}
+                  {/* 7.TAKE A WALK resources2 STARTS HERE */}
+                  {props.id_ === 7 ? (
+                    <a
+                      href={t("urlResources2.4")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResources2Name.4"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {/*7.TAKE A WALK resources2 ENDS HERE */}
                 </li>
+                {/*1.BE KIND resources3 STARTS HERE */}
+
                 <li className="nav-link-control">
                   {props.id_ === 1 ? (
                     <a
-                      href={t("urlResources3")}
+                      href={t("urlResources3.0")}
                       target="_blank"
                       rel="noreferrer"
                       type="text/html"
                     >
-                      <Trans i18nKey="urlResources3Name"></Trans>
+                      <Trans i18nKey="urlResources3Name.0"></Trans>
                     </a>
                   ) : (
                     ""
-                  )}
+                  )}{" "}
+                  {/*1.BE KIND resources3 ENDS HERE */}
+                  {/*2.CONNECT resources3 STARTS HERE */}
+                  {props.id_ === 2 ? (
+                    <a
+                      href={t("urlResources3.1")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResources3Name.1"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}{" "}
+                  {/*2.CONNECT resources3 ENDS HERE */}
+                  {/*5.LEARN resources3 STARTS HERE */}
+                  {props.id_ === 5 ? (
+                    <a
+                      href={t("urlResources3.2")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResources3Name.2"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}{" "}
+                  {/*5.LEARN resources3 ENDS HERE */}
+                  {/*6.PLANT resources2 START HERE */}
+                  {props.id_ === 6 ? (
+                    <a
+                      href={t("urlResources3.3")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResources3Name.3"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}{" "}
+                  {/*6.PLANT resources2 ENDS HERE */}
+                  {/* 7.TAKE A WALK resources2 STARTS HERE */}
+                  {props.id_ === 7 ? (
+                    <a
+                      href={t("urlResources3.4")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResources3Name.4"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}{" "}
+                  {/*7.TAKE A WALK resources2 ENDS HERE */}
                 </li>
                 {/* Resources ENDS HERE */}
               </ul>
