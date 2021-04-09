@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import { Trans, useTranslation } from "react-i18next";
 import "./HomePage.css";
 import BeeStamp from "../../images/simple7/whole-beeimage.png";
 import Features from "../../components/PageContent/Features/Features";
@@ -44,6 +45,11 @@ const mainTextTeam =
 const mainTextContact = "To find out more, contact us here";
 
 const HomePage = (props) => {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <>
       <Header />

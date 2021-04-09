@@ -367,20 +367,91 @@ const ChallengeItem = (props) => {
                 {/* 1. BE KIND PAGE resources heading END HERE */}
               </h3>
               <div className="flex-child">
-                <h3 className="resources-subheading">{props.charityHeading}</h3>
-                <span>{props.urlCharity}</span>
+                {/*1.Be Kind Charity STARTS HERE */}
+                {props.id_ === 1 ? (
+                  <a
+                    href={t("urlCharity")}
+                    target="_blank"
+                    rel="noreferrer"
+                    type="text/html"
+                  >
+                    <Trans i18nKey="urlCharityName.0">
+                      Give The Boys a Lift
+                    </Trans>
+                  </a>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+                {/*1.Be Kind Charity ENDS HERE */}
+                {/*2.CONNECT Charity STARTS HERE */}
+                {props.id_ === 2 ? (
+                  <a
+                    href={t("urlCharity.1")}
+                    target="_blank"
+                    rel="noreferrer"
+                    type="text/html"
+                  >
+                    <Trans i18nKey="urlCharityName.1"></Trans>
+                  </a>
+                ) : (
+                  <Trans i18nKey=""></Trans>
+                )}
+                {/*2.CONNECT Charity ENDS HERE */}
+                {/*3.CONSIDER Charity STARTS HERE */}
+                {/*3.CONSIDER Charity ENDS HERE */}
+                {/* 4. CONSUME Charity STARTS HERE */}
+                {/*4. CONSUME Charity ENDS HERE */}
+                {/* 5.LEARN Charity STARTS HERE */}
+                {/*5.LEARN Charity ENDS HERE */}
+                {/* 6.PLANT Charity STARTS HERE */}
+                {/*6.PLANT Charity ENDS HERE */}
+                {/* 7.TAKE A WALK Charity STARTS HERE */}
+                {/*7.TAKE A WALK Charity ENDS HERE */}
               </div>
               <ul>
                 <li className="nav-link-control">
-                  {props.urlResources} (Under 16s)
+                  {props.id_ === 1 ? (
+                    <a
+                      href={t("urlResources")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResourcesName"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
                 </li>
                 <li className="nav-link-control">
-                  {props.urlResources2} (Under 16s)
+                  {props.id_ === 1 ? (
+                    <a
+                      href={t("urlResources2")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResources2Name"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
                 </li>
                 <li className="nav-link-control">
-                  {props.urlResources3}{" "}
-                  {props.urlResources3 ? "(Under 16s)" : ""}
+                  {props.id_ === 1 ? (
+                    <a
+                      href={t("urlResources3")}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="text/html"
+                    >
+                      <Trans i18nKey="urlResources3Name"></Trans>
+                    </a>
+                  ) : (
+                    ""
+                  )}
                 </li>
+                {/* Resources ENDS HERE */}
               </ul>
             </div>
           </div>
