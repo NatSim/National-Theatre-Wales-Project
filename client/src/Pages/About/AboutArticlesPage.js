@@ -12,13 +12,14 @@ import TideTEAMSocial from "../../images/TEAM/TideTEAMSocial.jpg";
 import TideWhisperer3 from "../../images/TEAM/TideWhisperer3.jpg";
 import YGeginNTW from "../../images/TEAM/YGegin.jpg";
 import NTWlogo from "../../images/logos/NTWLogo/NTW_Logo.png";
+import Button from "react-bootstrap/esm/Button";
 //Aiming to add this to aboutText file and render here
 const videoTeam = "https://www.youtube.com/watch?v=xV2FF-YUy94";
 
 /*TEAM Images*/
 
 const AboutArticlesPage = (props) => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
@@ -241,7 +242,19 @@ const AboutArticlesPage = (props) => {
             {/* Other Text container END HERE*/}
 
             {/* Button Options(SUBSCRIBE or SIGNUP) HERE */}
-            <div>{!props.listItems ? <ReactModal /> : props.joinTeam}</div>
+            <div>
+              {!props.listItems ? (
+                <Button
+                  href="https://www.nationaltheatrewales.org/#signup"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {t("subscribeButton")}
+                </Button>
+              ) : (
+                props.joinTeam
+              )}
+            </div>
           </div>
           <img
             className="image-team"

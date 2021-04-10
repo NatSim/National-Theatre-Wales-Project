@@ -154,3 +154,8 @@ section.spacing-container {
   height: auto;
 }
 /*IMAGES-END*/
+
+/*Subscribe button*/
+.subscribe-terms {
+  margin: 20px 0px 0px 0px;
+}
