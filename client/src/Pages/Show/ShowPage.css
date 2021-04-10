@@ -16,7 +16,8 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: #ff9f00;
+  /* background-color: #ff9f00; */
+  background-image: url("../../images/showPage/show_pageLandscape.jpg");
   background-size: cover;
   opacity: 0.6;
 

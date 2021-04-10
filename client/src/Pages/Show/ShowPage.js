@@ -10,7 +10,11 @@ const ShowPage = () => {
       <Header />
 
       <div className="live-background-container">
-        <h2 className="subtitle1">Show Programme</h2>
+        <h2 id="white-font" className="subtitle1">
+          Show Programme
+        </h2>
+      </div>
+      <div>
         <p className=" programme-info-control">
           Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
           sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna

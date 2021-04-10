@@ -18,6 +18,35 @@
   color: whitesmoke;
 }
 
+.home-video-container5 {
+  padding: 10%;
+  border-top-style: double;
+  border-color: grey;
+  border-top-width: 0.5px;
+  padding-top: 75px;
+  padding-bottom: 20px;
+}
+
+.home-container-video5 {
+  padding: 10px 0px 50px 0px;
+  position: relative;
+}
+.home-container-video5::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /* background-color: #ff2f69; */
+  background-image: url("../../images/connect/headsetTEAMSocial5.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  border-top-style: double;
+  border-color: grey;
+  border-top-width: 0.5px;
+}
+
 /*LISTEN(Music) PAGE HERE*/
 .title-text {
   font-size: initial;
@@ -60,7 +89,7 @@
   bottom: 0px;
   left: 0px;
   /* background-color: #ff2f69; */
-  background-image: url("../../images/TEAM/YGeginNTW27.jpg");
+  background-image: url("../../images/connect/music_PartyTEAM.jpg");
   background-size: cover;
   opacity: 0.5;
   border-top-style: double;

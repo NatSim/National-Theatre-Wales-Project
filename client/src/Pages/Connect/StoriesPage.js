@@ -15,7 +15,7 @@ const StoriesPageA = (props) => {
       <SideNav />
       <Header />
       <main className="section-color">
-        <div className="home-container-video2">
+        <div className="home-container-video5">
           {/* Translation Button START HERE */}
           <div className="translate-button">
             <button onClick={() => changeLanguage("en")}>En</button>
