@@ -14,6 +14,10 @@
   flex-direction: row-reverse;
 }
 
+#white-font {
+  color: whitesmoke;
+}
+
 /*LISTEN(Music) PAGE HERE*/
 .title-text {
   font-size: initial;
@@ -55,7 +59,8 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: #ff2f69;
+  /* background-color: #ff2f69; */
+  background-image: url("../../images/TEAM/YGeginNTW27.jpg");
   background-size: cover;
   opacity: 0.5;
   border-top-style: double;

@@ -5,7 +5,6 @@ import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../components/Header/Header";
 import Team from "../../images/TEAM/Tide-Whisperer-TEAM-Social-1-1.jpg";
-import ReactModal from "../../components/ReactModal/ReactModal";
 //**IMAGE IMPORTS HERE */
 import Festival from "../../images/TEAM/Festival.jpg";
 import TideTEAMSocial from "../../images/TEAM/TideTEAMSocial.jpg";
