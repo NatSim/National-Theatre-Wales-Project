@@ -1,26 +1,33 @@
 import React from "react";
+import { Trans, useTranslation } from "react-i18next";
 import "../ContactUs/ContactUsPage.css";
 import SideNav from "../../components/Nav/SideNav";
 import Header from "../../components/Header/Header";
 import ContactInfo from "../../components/PageContent/ContactForm/ContactInfo";
 
 const ContactUsPage = () => {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <>
       <SideNav />
       <Header />
       <div className="terms-page">
+        <div className="translate-button">
+          <button onClick={() => changeLanguage("en")}>En</button>
+          <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+          {/* Translation Button END HERE */}
+          <hr />
+        </div>
         <div className="form-content-parent">
           <div className="subtitle3">
-            <h1 className="contact_heading">Contact Us</h1>
+            <h1 className="contact_heading">{t("contactContent.0")}</h1>
           </div>
           <div>
-            <p className="contact-location-info">
-              We operate from a small base in Cardiff’s city centre, but we work
-              all over the country, and beyond, using Wales’ rich and diverse
-              landscape, its towns, cities and villages, its incredible stories
-              and wealth of talent as our inspiration.
-            </p>
+            <p className="contact-location-info">{t("contactContent.1")}</p>
           </div>
           <div className="form-content-parent">
             <section>

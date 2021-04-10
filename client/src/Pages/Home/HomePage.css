@@ -4,7 +4,7 @@ body {
 
 /*Background Transition*/
 .nav-container {
-  animation: fadeIn 10s;
+  animation: fadeIn 2s;
 }
 
 .middle-nav-list {

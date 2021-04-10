@@ -102,7 +102,7 @@ body {
 /*START*/
 .title-container {
   margin: -5px 0px 75px 0px;
-  animation: fadeIn 15s;
+  animation: fadeIn 8s;
 }
 
 .title-container::before {

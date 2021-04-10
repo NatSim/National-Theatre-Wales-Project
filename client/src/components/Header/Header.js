@@ -1,9 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Trans, useTranslation } from "react-i18next";
 import mainBeeLogo from "../../images/logos/MainBeeLogo/GTTB_Logo.jpg";
 import "./Header.css";
 
 const Header = (props) => {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <>
       <div className="header" id="nav-header">
@@ -16,10 +22,10 @@ const Header = (props) => {
             />
           </li>
           <Link to="/home" className="nav-child">
-            <li className="nav-link-control"> Home </li>
+            <li className="nav-link-control"> {t("headerContent.0")} </li>
           </Link>
           <Link to="/show" className="nav-child">
-            <li className="nav-link-control"> About </li>
+            <li className="nav-link-control"> {t("headerContent.1")} </li>
           </Link>
           <Link to="/about/1" className="nav-child">
             <li className="nav-link-control"> TEAM </li>
