@@ -245,7 +245,7 @@ const AboutArticlesPage = (props) => {
             <div>
               {!props.listItems ? (
                 <Button
-                  href="https://www.nationaltheatrewales.org/#signup"
+                  href={t("subscribeHref")}
                   target="_blank"
                   rel="noreferrer"
                 >
