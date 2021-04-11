@@ -26,7 +26,7 @@ const ConnectPage = (props) => {
     <>
       <SideNav />
       <Header />
-      <main className="home-container-video4">
+      <main className="home-container-video5">
         {/* Translation Button START HERE */}
         <div className="translate-button">
           <button onClick={() => changeLanguage("en")}>En</button>

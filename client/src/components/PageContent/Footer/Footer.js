@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import * as ImIcons from "react-icons/im";
 import "./Footer.css";
 import Counterpoints from "../../../images/logos/counterpoints/Counterpoints.jpg";
@@ -15,10 +15,7 @@ const Footer = () => {
   const ntwYouTubePage =
     "https://www.youtube.com/channel/UC54_0F_URQ5nvePaZRldKVg";
 
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
+  const { t } = useTranslation();
 
   return (
     <>

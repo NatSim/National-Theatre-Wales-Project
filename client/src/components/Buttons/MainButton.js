@@ -1,13 +1,10 @@
 import React from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import "../../components/Buttons/MainButton.css";
 
 /*Button use in WELCOME*/
 const NextButton = ({ onClickHandler, welcomeStep }) => {
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
+  const { t } = useTranslation();
 
   return (
     <div>

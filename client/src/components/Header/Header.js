@@ -1,14 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import mainBeeLogo from "../../images/logos/MainBeeLogo/GTTB_Logo.jpg";
 import "./Header.css";
 
 const Header = (props) => {
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
+  const { t } = useTranslation();
 
   return (
     <>

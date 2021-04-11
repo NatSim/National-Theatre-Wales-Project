@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Welcome from "../../components/PageContent/Welcome/Welcome";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { welcomeText } from "../../Models/welcomeText";
 import "./LandingPage.css";
 import Header from "../../components/Header/Header";
@@ -28,10 +28,7 @@ function LandingPage() {
     setImageUrl(welcomeText[arrayElement].imageUrl);
   };
 
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
+  const { i18n } = useTranslation();
 
   return (
     <>

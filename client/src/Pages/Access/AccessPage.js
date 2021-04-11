@@ -1,5 +1,5 @@
 import React from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import SideNav from "../../components/Nav/SideNav";
 import Header from "../../components/Header/Header";
 import AccessContent from "../../components/PageContent/Access/AccessContent";

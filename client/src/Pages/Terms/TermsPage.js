@@ -1,5 +1,5 @@
 import React from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import "../Terms/TermsPage.css";
 import TermsContent from "../../components/PageContent/Terms/TermsContent";
 import SideNav from "../../components/Nav/SideNav";

@@ -25,36 +25,121 @@ const StoriesPageA = (props) => {
           </div>
           <span>
             <h2 className="subtitle2">{t("storiesContent.0")}</h2>
-          </span>
+          </span>{" "}
+          {/* Story 1 container START HERE */}
+          <section className="story-parent-container">
+            <h3 className="story-subtitle">{t("storiesContent.3")}</h3>
+            <p className="story-blurbs">
+              {t("storiesContent.4")}{" "}
+              <em className="blue-font">{t("storiesContent.5")}</em>
+            </p>
+          </section>
           <section className="video-container-parent">
-            <div className="video-container-child">
-              <VideoPlayer
-                url={props.videoMono1}
-                width={"246px"}
-                height={"150px"}
-              />
+            <div className="video-text-control">
+              <div className="video-container-child">
+                <VideoPlayer
+                  url={t("storyHref.0")}
+                  width={"246px"}
+                  height={"150px"}
+                />
+              </div>
+              <div className="story-info-container">
+                <h4>{t("story_Title.0")}</h4>
+                <article>{t("storyBlurb.0")}</article>
+              </div>
             </div>
-            <div className="video-container-child">
-              <VideoPlayer
-                url={props.videoMono2}
-                width={"246px"}
-                height={"150px"}
-              />
+            {/* Story 1 container END HERE */}
+            {/* Story 2 container START HERE */}
+            <div className="video-text-control">
+              <div className="video-container-child">
+                <VideoPlayer
+                  url={t("storyHref.1")}
+                  width={"246px"}
+                  height={"150px"}
+                />
+              </div>
+              <div className="story-info-container">
+                <h4>{t("story_Title.1")}</h4>
+                <article>{t("storyBlurb.1")}</article>
+              </div>
             </div>
-            <div className="video-container-child">
-              <VideoPlayer
-                url={props.videoMono1}
-                width={"246px"}
-                height={"150px"}
-              />
+
+            {/* Story 2 container END HERE */}
+            {/* Story 3 container START HERE */}
+            <div className="video-text-control">
+              <div className="video-container-child">
+                <VideoPlayer
+                  url={t("storyHref.2")}
+                  width={"246px"}
+                  height={"150px"}
+                />
+              </div>
+              <div className="story-info-container">
+                <h4>{t("story_Title.2")}</h4>
+                <article>{t("storyBlurb.2")}</article>
+              </div>
             </div>
-            <div className="video-container-child">
-              <VideoPlayer
-                url={props.videoMono2}
-                width={"246px"}
-                height={"150px"}
-              />
+            {/* Story 3 container END HERE */}
+            {/* Story 4 container START HERE */}
+            <div className="video-text-control">
+              <div className="video-container-child">
+                <VideoPlayer
+                  url={t("storyHref.3")}
+                  width={"246px"}
+                  height={"150px"}
+                />
+              </div>
+              <div className="story-info-container">
+                <h4>{t("story_Title.3")}</h4>
+                <article>{t("storyBlurb.3")}</article>
+              </div>
             </div>
+            {/* Story 4 container END HERE */}
+            {/* Story 5 container START HERE */}
+            <div className="video-text-control">
+              <div className="video-container-child">
+                <VideoPlayer
+                  url={t("storyHref.4")}
+                  width={"246px"}
+                  height={"150px"}
+                />
+              </div>
+              <div className="story-info-container">
+                <h4>{t("story_Title.4")}</h4>
+                <article>{t("storyBlurb.4")}</article>
+              </div>
+            </div>
+            {/* Story 5 container END HERE */}
+            {/* Story 6 container START HERE */}
+            <div className="video-text-control">
+              <div className="video-container-child">
+                <VideoPlayer
+                  url={t("storyHref.5")}
+                  width={"246px"}
+                  height={"150px"}
+                />
+              </div>
+              <div className="story-info-container">
+                <h4>{t("story_Title.5")}</h4>
+                <article>{t("storyBlurb.5")}</article>
+              </div>
+            </div>
+            {/* Story 6 container END HERE */}
+            {/* Story 7 container START HERE */}
+            <div className="video-text-control">
+              <div className="video-container-child">
+                <VideoPlayer
+                  url={t("storyHref.6")}
+                  width={"246px"}
+                  height={"150px"}
+                />
+              </div>
+              <div className="story-info-container">
+                <h4>{t("story_Title.6")}</h4>
+                <article>{t("storyBlurb.6")}</article>
+              </div>
+            </div>
+            {/* Story 7 container END HERE */}
           </section>
         </div>
       </main>
