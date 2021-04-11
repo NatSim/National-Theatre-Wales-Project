@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import Header from "../../components/Header/Header";
 import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
@@ -28,7 +28,14 @@ const StoriesPageA = (props) => {
           </span>{" "}
           {/* Story 1 container START HERE */}
           <section className="story-parent-container">
-            <h3 className="story-subtitle">{t("storiesContent.3")}</h3>
+            <h3 className="story-subtitle">
+              {props.id_ === 1 ? (
+                <Trans i18nKey="storiesContent.3"></Trans>
+              ) : (
+                <Trans i18nKey="storiesContent.6"></Trans>
+              )}
+            </h3>
+
             <p className="story-blurbs">
               {t("storiesContent.4")}{" "}
               <em className="blue-font">{t("storiesContent.5")}</em>
@@ -136,7 +143,7 @@ const StoriesPageA = (props) => {
               </div>
               <div className="story-info-container">
                 <h4>{t("story_Title.6")}</h4>
-                <article>{t("storyBlurb.6")}</article>
+                <article>{t("storyBlurb.")}</article>
               </div>
             </div>
             {/* Story 7 container END HERE */}

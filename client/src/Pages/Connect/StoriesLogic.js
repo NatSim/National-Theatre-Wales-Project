@@ -14,6 +14,8 @@ const StoriesLogic = (props) => {
       <div>
         <StoriesPage
           storiesChoice={id}
+          id_={stories[id - 1].id_}
+          videoTitle={stories[id - 1].videoTitle}
           videoMono1={stories[id - 1].videoMono1}
           videoMono2={stories[id - 1].videoMono2}
         />
