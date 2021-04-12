@@ -5,6 +5,9 @@ import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../components/Header/Header";
 import Team from "../../images/TEAM/Tide-Whisperer-TEAM-Social-1-1.jpg";
+import Projection from "../../images/connect/NTWHaverHub_projection.jpg";
+import YPeople from "../../images/connect/young_people.jpeg";
+import YPeople2 from "../../images/connect/young_people2.jpeg";
 //**IMAGE IMPORTS HERE */
 import Festival from "../../images/TEAM/Festival.jpg";
 import TideTEAMSocial from "../../images/TEAM/TideTEAMSocial.jpg";
@@ -76,6 +79,14 @@ const AboutArticlesPage = (props) => {
               !props.otherText ? "info-container" : "team-info-container"
             }
           >
+            {/* NTW PAGE ONLY HERE */}
+            <section className="join-team-other-text-container">
+              <img
+                className="image-team"
+                src={props.otherText ? TideWhisperer3 : NTWlogo}
+                alt="placeholder"
+              />
+            </section>
             {/* Main Description Text START HERE */}
             <article className="article-line-control">
               <div>
@@ -179,7 +190,7 @@ const AboutArticlesPage = (props) => {
                   ) : (
                     <img
                       className="ntw-logo-about"
-                      src={NTWlogo}
+                      src={Projection}
                       alt="NTW logo"
                     />
                   )}
@@ -195,12 +206,12 @@ const AboutArticlesPage = (props) => {
               <section className="join-team-other-text-container">
                 <img
                   className="image-team"
-                  src={props.otherText ? TideWhisperer3 : Team}
+                  src={props.otherText ? TideWhisperer3 : YPeople2}
                   alt="placeholder"
                 />
                 <img
                   className="image-team"
-                  src={props.otherText ? YGeginNTW : Team}
+                  src={props.otherText ? YGeginNTW : YPeople}
                   alt="placeholder"
                 />
               </section>
@@ -251,15 +262,19 @@ const AboutArticlesPage = (props) => {
                   {t("subscribeButton")}
                 </Button>
               ) : (
-                props.joinTeam
+                <div className="sign-up-control">{props.joinTeam}</div>
               )}
             </div>
           </div>
-          <img
-            className="image-team"
-            src={props.otherText ? TideTEAMSocial : ""}
-            alt={props.otherText ? "placeholder" : ""}
-          />
+          {props.listItems ? (
+            <img
+              className="image-team"
+              src={props.otherText ? TideTEAMSocial : ""}
+              alt={props.otherText ? "placeholder" : ""}
+            />
+          ) : (
+            ""
+          )}
         </div>
         {/* Background Container-START END */}
       </main>

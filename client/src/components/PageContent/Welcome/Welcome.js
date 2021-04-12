@@ -96,15 +96,14 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep }) => {
                 welcomeStep === 2 ? (
                 questionChars()
               ) : (
-                <Trans i18nKey="welcomeTitle.1"></Trans>
+                <Trans i18nKey="welcomeStory.0"></Trans>
               )}
             </h1>
 
             <h2 className={"main-text"}>
               {" "}
-              {welcomeStep === 0
-                ? specialChars()
-                : mainText // <Trans i18nKey="welcomeMainText.0"></Trans>
+              {
+                welcomeStep === 0 ? specialChars() : mainText // <Trans i18nKey="welcomeMainText.0"></Trans>
               }
             </h2>
           </div>
