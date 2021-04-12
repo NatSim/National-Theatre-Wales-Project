@@ -81,11 +81,11 @@ const AboutArticlesPage = (props) => {
           >
             {/* NTW PAGE ONLY HERE */}
             <section className="join-team-other-text-container">
-              <img
-                className="image-team"
-                src={props.otherText ? TideWhisperer3 : NTWlogo}
-                alt="placeholder"
-              />
+              {!props.otherText ? (
+                <img className="image-team" src={NTWlogo} alt="placeholder" />
+              ) : (
+                ""
+              )}
             </section>
             {/* Main Description Text START HERE */}
             <article className="article-line-control">
