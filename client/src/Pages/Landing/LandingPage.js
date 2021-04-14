@@ -17,7 +17,7 @@ function LandingPage() {
   const [mainText, setMainText] = useState(welcomeText[0].mainText);
   const [imageUrl, setImageUrl] = useState(welcomeText[3].imageUrl);
   const [welcomeStep, setWelcomeStep] = useState(0); //starting point
-
+  const [id_1, setId_1] = useState(welcomeText[1].id_1);
   console.log(title);
 
   /*Button onclick function arrayElement*/
@@ -26,6 +26,7 @@ function LandingPage() {
     setTitle(welcomeText[arrayElement].title);
     setMainText(welcomeText[arrayElement].mainText);
     setImageUrl(welcomeText[arrayElement].imageUrl);
+    setId_1(welcomeText[arrayElement].id_1);
   };
 
   const { i18n } = useTranslation();
@@ -59,7 +60,8 @@ function LandingPage() {
                 text={i18n.t("featureCard1.1")}
                 button={i18n.t("featureCard1.2")}
                 links={"/about/2"}
-                id={"2"}
+                // id={"2"}
+                id="button1-contol"
               />
             </Col>
             <Col sm>
@@ -69,7 +71,8 @@ function LandingPage() {
                 text={i18n.t("featureCard2.1")}
                 button={i18n.t("featureCard1.2")}
                 links={"/about/1"}
-                id={"1"}
+                // id={"1"}
+                id="button1-contol"
               />
             </Col>
             <Col sm>
@@ -79,6 +82,7 @@ function LandingPage() {
                 text={i18n.t("featureCard3.1")}
                 button={i18n.t("featureCard1.2")}
                 links={"/contact"}
+                id="button1-contol"
               />
             </Col>
           </Row>

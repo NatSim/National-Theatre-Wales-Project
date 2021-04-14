@@ -8,6 +8,7 @@ const welcomeText = [
     title: "The story goes that, whenever we fail to do so...",
     mainText:
       "...the bees will leave their hives and disappear from our area… .",
+    id_1: 1,
   },
   {
     title: "So what will you tell the bees?!",

@@ -10,7 +10,7 @@ import SideNav from "../../Nav/SideNav";
  Appears on Landing page
  **/
 
-const Welcome = ({ title, mainText, onClickHandler, welcomeStep }) => {
+const Welcome = ({ title, mainText, onClickHandler, welcomeStep, id_1 }) => {
   const history = useHistory();
   //On Button click redirects user to home page
 
@@ -92,8 +92,7 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep }) => {
             <h1 className="welcome-title">
               {welcomeStep === 0 ? (
                 newTitle()
-              ) : <Trans i18nKey="welcomeMainText.0"></Trans> &&
-                welcomeStep === 2 ? (
+              ) : welcomeStep === 2 ? (
                 questionChars()
               ) : (
                 <Trans i18nKey="welcomeStory.0"></Trans>
@@ -102,9 +101,13 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep }) => {
 
             <h2 className={"main-text"}>
               {" "}
-              {
-                welcomeStep === 0 ? specialChars() : mainText // <Trans i18nKey="welcomeMainText.0"></Trans>
-              }
+              {welcomeStep === 0 ? (
+                specialChars()
+              ) : welcomeStep === 1 || id_1 ? (
+                <Trans i18nKey="welcomeMainText.0"></Trans>
+              ) : (
+                ""
+              )}
             </h2>
           </div>
         </section>

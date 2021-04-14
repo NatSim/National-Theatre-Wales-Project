@@ -29,3 +29,7 @@ div.beeimage-container {
 .card-container {
   margin: 70px 0px 0px 0px;
 }
+
+.card {
+  height: 100%;
+}
