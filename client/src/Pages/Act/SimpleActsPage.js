@@ -93,13 +93,17 @@ const SimpleActsPage = (props) => {
       <section className="flex-container">
         <div className="child-container">
           <div>
-            {challengeData.map((challenge) => (
-              <SAPrompts
-                img={challenge.img}
-                alt={challenge.alt}
-                id={challenge.id}
-              />
-            ))}
+            {challengeData &&
+              challengeData.length > 0 &&
+              challengeData.map((challenge) => (
+                <React.Fragment key={challenge.id}>
+                  <SAPrompts
+                    img={challenge.img}
+                    alt={challenge.alt}
+                    id={challenge.id}
+                  />
+                </React.Fragment>
+              ))}
           </div>
         </div>
       </section>

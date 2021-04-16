@@ -18,7 +18,6 @@ function LandingPage() {
   const [imageUrl, setImageUrl] = useState(welcomeText[3].imageUrl);
   const [welcomeStep, setWelcomeStep] = useState(0); //starting point
   const [id_1, setId_1] = useState(welcomeText[1].id_1);
-  console.log(title);
 
   /*Button onclick function arrayElement*/
   const onClickHandler = (arrayElement) => {

@@ -16,7 +16,7 @@ const ChallengeLogic = (props) => {
 
   const id = props.match.params.id;
 
-  console.log(simpleText[id - 1].id_1);
+  console.log(simpleText[id - 1].id_);
   console.log(simpleText[id - 1].act);
 
   return (

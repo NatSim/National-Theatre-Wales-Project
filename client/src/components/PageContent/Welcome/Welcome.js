@@ -59,16 +59,6 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep, id_1 }) => {
     </>
   );
 
-  // const mainTextStepOneOnly = () => {
-  //   if (welcomeStep === questionChars()) {
-  //     <div></div>;
-
-  //     if (welcomeStep === 1) {
-  //       <Trans i18nKey="welcomeMainText.0"></Trans>;
-  //     }
-  //   }
-  // };
-
   const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
