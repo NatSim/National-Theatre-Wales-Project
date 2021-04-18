@@ -1,5 +1,4 @@
 import React from "react";
-import { Trans, useTranslation } from "react-i18next";
 import * as IoIcons from "react-icons/io";
 import * as AiIcons from "react-icons/ai";
 import * as RiIcons from "react-icons/ri";
@@ -7,17 +6,10 @@ import * as FaIcons from "react-icons/fa";
 import * as MdIcons from "react-icons/md";
 import * as ImIcons from "react-icons/im";
 
-const Translator = () => {
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
-};
-
 const SidebarData = [
   {
     id_1: 1,
-    title: <Trans i18nKey="navList.0"></Trans>,
+    title: "Home",
     path: "/home",
     icon: <AiIcons.AiFillHome />,
     cName: "nav-text",

@@ -12,7 +12,7 @@ function SideNav() {
 
   const showSidebar = () => setSidebar(!sidebar);
 
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };

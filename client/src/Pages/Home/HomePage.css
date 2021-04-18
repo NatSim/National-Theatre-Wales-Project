@@ -64,7 +64,8 @@ h2,
 }
 
 .subtitle1,
-.subtitle2 {
+.subtitle2,
+.subtitle5 {
   animation: transitionIn 8s;
 }
 

@@ -4,10 +4,11 @@ import "./AboutArticlesPage.css";
 import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import Header from "../../components/Header/Header";
-import Team from "../../images/TEAM/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import Projection from "../../images/connect/NTWHaverHub_projection.jpg";
 import YPeople from "../../images/connect/young_people.jpeg";
 import YPeople2 from "../../images/connect/young_people2.jpeg";
+import NTWperformance from "../../images/connect/performancepartyPembs.jpg";
+import HeadSetImage from "../../images/connect/headsetTEAMSocial5.jpg";
 //**IMAGE IMPORTS HERE */
 import Festival from "../../images/TEAM/Festival.jpg";
 import TideTEAMSocial from "../../images/TEAM/TideTEAMSocial.jpg";
@@ -188,11 +189,18 @@ const AboutArticlesPage = (props) => {
                       alt="placeholder"
                     />
                   ) : (
-                    <img
-                      className="ntw-logo-about"
-                      src={Projection}
-                      alt="NTW logo"
-                    />
+                    <>
+                      <img
+                        className="image-team"
+                        src={Projection}
+                        alt="projection"
+                      />
+                      <img
+                        className="image-team"
+                        src={HeadSetImage}
+                        alt="placeholder"
+                      />
+                    </>
                   )}
                 </div>
               </div>
@@ -212,6 +220,12 @@ const AboutArticlesPage = (props) => {
                 <img
                   className="image-team"
                   src={props.otherText ? YGeginNTW : YPeople}
+                  alt="placeholder"
+                />
+                <img
+                  className={props.otherText ? "image-team" : ""}
+                  src={NTWperformance}
+                  width="100%"
                   alt="placeholder"
                 />
               </section>

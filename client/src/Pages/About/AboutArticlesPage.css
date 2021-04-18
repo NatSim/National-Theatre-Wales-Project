@@ -96,19 +96,6 @@ video,
   flex-wrap: wrap;
 }
 
-.list-items-parent::before {
-  /* background-color: gainsboro; */
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 30%;
-  background-size: cover;
-  border-radius: 10px;
-}
-
 .list-items {
   position: relative;
 }
@@ -119,6 +106,7 @@ video,
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0px 0px 25px 0px;
+  float: left;
 }
 
 /*SPACING Container*/
