@@ -13,7 +13,7 @@ const ChallengeItem = (props) => {
   //DisplayWelldone onclick handler
   const onClickHandler = () => {
     // alert("this is working");
-    setWelldone("Well done you have completed a Simple Act!");
+    setWelldone(<Trans i18nKey="challengeButton">"</Trans>);
   };
 
   const { t, i18n } = useTranslation();
