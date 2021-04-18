@@ -16,12 +16,14 @@ const Translator = () => {
 
 const SidebarData = [
   {
+    id_1: 1,
     title: <Trans i18nKey="navList.0"></Trans>,
     path: "/home",
     icon: <AiIcons.AiFillHome />,
     cName: "nav-text",
   },
   {
+    id_2: 2,
     title: "About",
     path: "/show",
     icon: <IoIcons.IoIosPaper />,
@@ -29,30 +31,35 @@ const SidebarData = [
   },
 
   {
+    id_3: 3,
     title: "Connect",
     path: "/connect",
     icon: <ImIcons.ImFilm />,
     cName: "nav-text",
   },
   {
+    id_4: 4,
     title: "Listen",
     path: "/music",
     icon: <FaIcons.FaHeadphones />,
     cName: "nav-text",
   },
   {
+    id_5: 5,
     title: "Act",
     path: "/simpleacts",
     icon: <RiIcons.RiPlantLine />,
     cName: "nav-text",
   },
   {
+    id_6: 6,
     title: "TEAM",
     path: "/about/1",
     icon: <RiIcons.RiTeamLine />,
     cName: "nav-text",
   },
   {
+    id_7: 7,
     title: "Contact",
     path: "/contact",
     icon: <MdIcons.MdEmail />,

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -35,7 +35,44 @@ function SideNav() {
               return (
                 <li key={index} className={item.cName}>
                   <Link to={item.path}>
-                    {item.icon} <span>{item.title}</span>
+                    {item.icon}
+                    <span>
+                      {item.title && item.id_1 === 1 ? (
+                        <Trans i18nKey="navList.0"></Trans>
+                      ) : (
+                        ""
+                      )}
+                      {item.title && item.id_2 === 2 ? (
+                        <Trans i18nKey="navList.1"></Trans>
+                      ) : (
+                        ""
+                      )}
+                      {item.title && item.id_3 === 3 ? (
+                        <Trans i18nKey="navList.2"></Trans>
+                      ) : (
+                        ""
+                      )}
+                      {item.title && item.id_4 === 4 ? (
+                        <Trans i18nKey="navList.3"></Trans>
+                      ) : (
+                        ""
+                      )}
+                      {item.title && item.id_5 === 5 ? (
+                        <Trans i18nKey="navList.4"></Trans>
+                      ) : (
+                        ""
+                      )}
+                      {item.title && item.id_6 === 6 ? (
+                        <Trans i18nKey="navList.5"></Trans>
+                      ) : (
+                        ""
+                      )}
+                      {item.title && item.id_7 === 7 ? (
+                        <Trans i18nKey="navList.6"></Trans>
+                      ) : (
+                        ""
+                      )}
+                    </span>
                   </Link>
                 </li>
               );
