@@ -15,17 +15,13 @@ import Container from "react-bootstrap/Container";
 function LandingPage() {
   const [title, setTitle] = useState(welcomeText[0].title);
   const [mainText, setMainText] = useState(welcomeText[0].mainText);
-  const [imageUrl, setImageUrl] = useState(welcomeText[3].imageUrl);
   const [welcomeStep, setWelcomeStep] = useState(0); //starting point
-  // const [id_1, setId_1] = useState(welcomeText[1].id_1);
 
-  /*Button onclick function arrayElement*/
+  //Button onclick function arrayElement
   const onClickHandler = (arrayElement) => {
     setWelcomeStep(arrayElement);
     setTitle(welcomeText[arrayElement].title);
     setMainText(welcomeText[arrayElement].mainText);
-    setImageUrl(welcomeText[arrayElement].imageUrl);
-    // setId_1(welcomeText[arrayElement].id_1);
   };
 
   const { i18n } = useTranslation();
@@ -34,17 +30,13 @@ function LandingPage() {
     <>
       <Header />
       {/* WELCOME container START HERE */}
-      {/* <section className="welcome-container"> */}
 
       <Welcome
         welcomeStep={welcomeStep}
         onClickHandler={onClickHandler}
         title={title}
         mainText={mainText}
-        imageUrl={imageUrl}
       />
-
-      {/* </section> */}
       {/* Welcome container END HERE */}
 
       {/* CARD container START HERE */}
@@ -59,7 +51,6 @@ function LandingPage() {
                 text={i18n.t("featureCard1.1")}
                 button={i18n.t("featureCard1.2")}
                 links={"/about/2"}
-                // id={"2"}
                 id="button1-contol"
               />
             </Col>
@@ -70,7 +61,6 @@ function LandingPage() {
                 text={i18n.t("featureCard2.1")}
                 button={i18n.t("featureCard1.2")}
                 links={"/about/1"}
-                // id={"1"}
                 id="button1-contol"
               />
             </Col>

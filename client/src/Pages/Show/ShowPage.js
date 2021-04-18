@@ -8,12 +8,8 @@ const ShowPage = () => {
     <>
       <SideNav />
       <Header />
-
-      <div className="live-background-container">
-        <h2 id="white-font" className="subtitle1">
-          Show Programme
-        </h2>
-      </div>
+      <div className="live-background-container"></div>
+      <h2 className="subtitle5">Show Programme</h2>
       <div>
         <p className=" programme-info-control">
           Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit,

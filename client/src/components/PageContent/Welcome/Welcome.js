@@ -7,10 +7,10 @@ import SideNav from "../../Nav/SideNav";
 
 /**
  WELCOME MESSAGE
- Appears on Landing page
+ Appears in Landing page
  **/
 
-const Welcome = ({ title, mainText, onClickHandler, welcomeStep, id_1 }) => {
+const Welcome = ({ mainText, onClickHandler, welcomeStep, id_1 }) => {
   const history = useHistory();
   //On Button click redirects user to home page
 
@@ -23,7 +23,7 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep, id_1 }) => {
       navigateToHome();
     }
   });
-  /**Step 1 */
+  //Step 1
   const newTitle = () => (
     <>
       <span className="">{t("welcomeComponent.0")}</span>
@@ -64,6 +64,8 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep, id_1 }) => {
     i18n.changeLanguage(language);
   };
 
+  console.log(Welcome);
+
   console.log(welcomeStep);
   return (
     <>
@@ -71,6 +73,7 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep, id_1 }) => {
         <nav className="sidenav-container">
           <SideNav />
         </nav>
+        {/* Translation Button START HERE */}
         <div className="translate-button">
           <button onClick={() => changeLanguage("en")}>En</button>
           <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
@@ -90,7 +93,6 @@ const Welcome = ({ title, mainText, onClickHandler, welcomeStep, id_1 }) => {
             </h1>
 
             <h2 className={"main-text"}>
-              {" "}
               {welcomeStep === 0 ? (
                 specialChars()
               ) : welcomeStep === 1 || id_1 ? (
