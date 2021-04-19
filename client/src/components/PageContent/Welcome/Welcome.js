@@ -64,9 +64,6 @@ const Welcome = ({ mainText, onClickHandler, welcomeStep, id_1 }) => {
     i18n.changeLanguage(language);
   };
 
-  console.log(Welcome);
-
-  console.log(welcomeStep);
   return (
     <>
       <section className="title-container">
