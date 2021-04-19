@@ -3,7 +3,12 @@ import { Trans, useTranslation } from "react-i18next";
 import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
 import Header from "../../../components/Header/Header";
 import SideNav from "../../Nav/SideNav";
-
+import BeeImage from "../../../images/proccession_graphics/STILL1.jpeg";
+import PathImage from "../../../images/proccession_graphics/STILL5.jpeg";
+import PlantImage from "../../../images/proccession_graphics/STILL7.jpeg";
+import PeopleImage from "../../../images/proccession_graphics/STILL6.jpeg";
+import NatureImage from "../../../images/proccession_graphics/STILL8.jpeg";
+import StarImage from "../../../images/proccession_graphics/STILL3.jpeg";
 //**This page component displays the unique challenge item content 7 total **/
 
 const ChallengeItem = (props) => {
@@ -181,56 +186,119 @@ const ChallengeItem = (props) => {
                 {/* BE KIND text2Subheading END HERE */}
               </h3>
               {/* 1.BE KIND PAGE Did you know START HERE*/}
-              <p className="text-control3">
+              <section className="text-control3">
                 {props.id_ === 1 ? (
-                  <Trans i18nKey="text2"></Trans>
+                  <>
+                    <Trans i18nKey="text2"></Trans>
+                    <div className="procession-image-container">
+                      <img
+                        className="procession-image"
+                        src={BeeImage}
+                        alt="Bees"
+                      />
+                    </div>
+                  </>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}{" "}
                 {/* 1.BE KIND PAGE Did you know END HERE*/}
                 {/* 2.CONNECT PAGE Did you know START HERE*/}
                 {props.id_ === 2 ? (
-                  <Trans i18nKey="text2a"></Trans>
+                  <>
+                    <Trans i18nKey="text2a"></Trans>
+                    <div className="procession-image-container">
+                      <img
+                        className="procession-image"
+                        src={PeopleImage}
+                        alt="People"
+                      />
+                    </div>
+                  </>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
                 {/* 2.CONNECT PAGE Did you know END HERE*/}
-                {/* 3.CONNECT THE STARS Did you know START HERE */}
+                {/* 3.CONSIDER THE STARS Did you know START HERE */}
                 {props.id_ === 3 ? (
-                  <Trans i18nKey="text3"></Trans>
+                  <>
+                    <Trans i18nKey="text3"></Trans>
+                    <div className="procession-image-container">
+                      <img
+                        className="procession-image"
+                        src={StarImage}
+                        alt="People"
+                      />
+                    </div>
+                  </>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
-                {/* 3.CONNECT THE STARS Did you know END HERE */}
+                {/* 3.CONSIDER THE STARS Did you know END HERE */}
                 {/* 4.CONSUME PAGE Did you know START HERE */}
                 {props.id_ === 4 ? (
-                  <Trans i18nKey="text4"></Trans>
+                  <>
+                    <Trans i18nKey="text4"></Trans>
+                    <div className="procession-image-container">
+                      <img
+                        className="procession-image"
+                        src={PeopleImage}
+                        alt="People"
+                      />
+                    </div>
+                  </>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
                 {/* 4.CONSUME PAGE Did you know ENDS HERE */}
                 {/* 5.LEARN PAGE Did you know STARTS HERE */}
                 {props.id_ === 5 ? (
-                  <Trans i18nKey="text5"></Trans>
+                  <>
+                    <Trans i18nKey="text5"></Trans>
+                    <div className="procession-image-container">
+                      <img
+                        className="procession-image"
+                        src={NatureImage}
+                        alt="Sunflowers"
+                      />
+                    </div>
+                  </>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
                 {/* 5.LEARN PAGE Did you know ENDS HERE */}
                 {/* 6. PLANT PAGE Did you know STARTS HERE */}
                 {props.id_ === 6 ? (
-                  <Trans i18nKey="text6"></Trans>
+                  <>
+                    <Trans i18nKey="text6"></Trans>
+                    <div className="procession-image-container">
+                      <img
+                        className="procession-image"
+                        src={PlantImage}
+                        alt="Sunflowers"
+                      />
+                    </div>
+                  </>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
                 {/* 6.PLANT PAGE Did you know ENDS HERE */}
                 {/* 7.TAKE A WALK Did you know STARTS HERE */}
                 {props.id_ === 7 ? (
-                  <Trans i18nKey="text7"></Trans>
+                  <>
+                    <Trans i18nKey="text7"></Trans>
+                    <div className="procession-image-container">
+                      <img
+                        className="procession-image"
+                        src={PathImage}
+                        alt="Path"
+                      />
+                    </div>
+                  </>
                 ) : (
                   <Trans i18nKey=""></Trans>
                 )}
                 {/* 7.TAKE A WALK Did you know ENDS HERE */}
-              </p>
+              </section>
             </div>
             <div className="flex-child-image">
               <img
@@ -756,7 +824,7 @@ const ChallengeItem = (props) => {
                 <Trans i18nKey=""></Trans>
               )}
             </h3>
-            <p>
+            <p className="quote-control">
               {/* 1.BE KIND PAGE Quote START HERE*/}
               {props.id_ === 1 ? (
                 <Trans i18nKey="quote"></Trans>
