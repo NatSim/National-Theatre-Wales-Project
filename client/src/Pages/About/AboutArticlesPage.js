@@ -9,6 +9,7 @@ import YPeople from "../../images/connect/young_people.jpeg";
 import YPeople2 from "../../images/connect/young_people2.jpeg";
 import NTWperformance from "../../images/connect/performancepartyPembs.jpg";
 import HeadSetImage from "../../images/connect/headsetTEAMSocial5.jpg";
+import CafeImage from "../../images/connect/cafeImageTEAM.jpeg";
 //**IMAGE IMPORTS HERE */
 import Festival from "../../images/TEAM/Festival.jpg";
 import TideTEAMSocial from "../../images/TEAM/TideTEAMSocial.jpg";
@@ -18,6 +19,7 @@ import NTWlogo from "../../images/logos/NTWLogo/NTW_Logo.png";
 import Button from "react-bootstrap/esm/Button";
 //Aiming to add this to aboutText file and render here
 const videoTeam = "https://www.youtube.com/watch?v=xV2FF-YUy94";
+const videoNTW = "https://www.youtube.com/watch?v=BAV-BYPjnv8";
 
 /*TEAM Images*/
 
@@ -32,8 +34,8 @@ const AboutArticlesPage = (props) => {
       <SideNav />
       <Header />
 
-      <main className="section-color">
-        {/* TOP Background-color Container-START HERE */}
+      <div>
+        {/* NTW/TEAM Top Background-color Container-START HERE */}
         <section
           className={
             props.otherText ? "home-container-video2" : "home-container-video2a"
@@ -43,23 +45,23 @@ const AboutArticlesPage = (props) => {
           <div className="translate-button">
             <button onClick={() => changeLanguage("en")}>En</button>
             <button onClick={() => changeLanguage("welsh")}>Welsh</button>
-            {/* Translation Button END HERE */}
             <hr />
-
-            {/* Title container START HERE*/}
-            <div className="title-team-ntw-subtitle">
-              {!props.otherText ? (
-                <Trans i18nKey="title_ntw" className></Trans>
-              ) : (
-                <Trans i18nKey="title_team"></Trans>
-              )}
-            </div>
-            {/*Title container END HERE*/}
           </div>
+          {/* Translation Button END HERE */}
+          {/* Title container START HERE*/}
+          <h2 className="title-team-ntw-subtitle">
+            {!props.otherText ? (
+              <Trans i18nKey="title_ntw" className></Trans>
+            ) : (
+              <Trans i18nKey="title_team"></Trans>
+            )}
+          </h2>
+          {/*Title container END HERE*/}
 
+          {/* Video container START HERE */}
           <div className="video-about-text-control">
             <VideoPlayer
-              url={videoTeam}
+              url={props.otherText ? videoTeam : videoNTW}
               height={"150px"}
               width={"246px"}
               style={{
@@ -69,179 +71,192 @@ const AboutArticlesPage = (props) => {
               }}
             />
           </div>
+          {/* Video container START HERE */}
         </section>
-        {/* TOP Background-color Container-END HERE */}
+        {/* NTW/TEAM Top Background-image Container-END HERE */}
 
-        {/* Background Container-START HERE */}
-        <div className="background-outer">
+        {/* Main Content Container-START HERE */}
+        <main>
           {/*Spacing HERE */}
-          <div
-            className={
-              !props.otherText ? "info-container" : "team-info-container"
-            }
+          {/* NTW PAGE ONLY HERE START*/}
+          <section
+            className={!props.otherText ? "join-team-other-text-container" : ""}
           >
-            {/* NTW PAGE ONLY HERE */}
-            <section className="join-team-other-text-container">
+            {!props.otherText ? (
+              <img className="image-team" src={NTWlogo} alt="placeholder" />
+            ) : (
+              ""
+            )}
+          </section>
+          {/* NTW PAGE ONLY HERE START*/}
+          {/* Main Description Text START HERE */}
+          <article className="article-line-control">
+            <span>
               {!props.otherText ? (
-                <img className="image-team" src={NTWlogo} alt="placeholder" />
+                <Trans i18nKey="description2"> </Trans>
+              ) : (
+                <Trans i18nKey="description1.part1"> </Trans>
+              )}
+            </span>
+            <span>
+              {props.otherText ? (
+                <Trans i18nKey="description1.part2"> </Trans>
               ) : (
                 ""
               )}
-            </section>
-            {/* Main Description Text START HERE */}
-            <article className="article-line-control">
-              <div>
-                {!props.otherText ? (
-                  <Trans i18nKey="description2"> </Trans>
-                ) : (
-                  <Trans i18nKey="description1.part1"> </Trans>
-                )}
-              </div>
-              <div>
-                {props.otherText ? (
-                  <Trans i18nKey="description1.part2"> </Trans>
-                ) : (
-                  ""
-                )}
-              </div>
-            </article>
-            <br />
-            {/* Main Description Text END HERE */}
+            </span>
+          </article>
+          <br />
+          {/* Main Description Text END HERE */}
 
+          {/* TEAM PAGE ONLY Join List-START HERE */}
+          <section className={props.otherText ? "spacing-container" : ""}>
             {/* List Title  */}
-
             <h3 className="team-subtitle">
               {props.otherText ? <Trans i18nKey="list.subtitle"> </Trans> : ""}
             </h3>
-            {/* TEAM Member List-START HERE */}
-            <section className={props.otherText ? "spacing-container" : ""}>
-              {/* List and Image Container START HERE */}
-              <div className={props.otherText ? "list-image-control" : ""}>
-                <div className={props.otherText ? "list-image-container" : ""}>
-                  <ul
-                    className={
-                      props.listItems ? "list-items-parent" : "list-show-none"
-                    }
-                  >
-                    <li>
-                      {props.listItems ? (
-                        <Trans i18nKey="list.item1"> </Trans>
-                      ) : (
-                        ""
-                      )}
-                    </li>
-                    <li>
-                      {" "}
-                      {props.listItems ? (
-                        <Trans i18nKey="list.item2"> </Trans>
-                      ) : (
-                        ""
-                      )}
-                    </li>
-                    <li>
-                      {" "}
-                      {props.listItems ? (
-                        <Trans i18nKey="list.item3"> </Trans>
-                      ) : (
-                        ""
-                      )}
-                    </li>
-                    <li>
-                      {" "}
-                      {props.listItems ? (
-                        <Trans i18nKey="list.item4"> </Trans>
-                      ) : (
-                        ""
-                      )}
-                    </li>
-                    <li>
-                      {" "}
-                      {props.listItems ? (
-                        <Trans i18nKey="list.item5"> </Trans>
-                      ) : (
-                        ""
-                      )}
-                    </li>
-                    <li>
-                      {" "}
-                      {props.listItems ? (
-                        <Trans i18nKey="list.item6"> </Trans>
-                      ) : (
-                        ""
-                      )}
-                    </li>
-                    <li>
-                      {" "}
-                      {props.listItems ? (
-                        <Trans i18nKey="list.item7"> </Trans>
-                      ) : (
-                        ""
-                      )}
-                    </li>
-                  </ul>
-                </div>
-                {/* List Item TEAM PAGE END HERE */}
-                <div className="list-image-conatiner">
-                  {props.otherText ? (
+
+            {/* List and Image Container START HERE */}
+            <div className={props.otherText ? "list-image-control" : ""}>
+              <div className={props.otherText ? "list-image-container" : ""}>
+                <ul
+                  className={
+                    props.listItems ? "list-items-parent" : "list-show-none"
+                  }
+                >
+                  <li>
+                    {props.listItems ? (
+                      <Trans i18nKey="list.item1"> </Trans>
+                    ) : (
+                      ""
+                    )}
+                  </li>
+                  <li>
+                    {" "}
+                    {props.listItems ? (
+                      <Trans i18nKey="list.item2"> </Trans>
+                    ) : (
+                      ""
+                    )}
+                  </li>
+                  <li>
+                    {" "}
+                    {props.listItems ? (
+                      <Trans i18nKey="list.item3"> </Trans>
+                    ) : (
+                      ""
+                    )}
+                  </li>
+                  <li>
+                    {" "}
+                    {props.listItems ? (
+                      <Trans i18nKey="list.item4"> </Trans>
+                    ) : (
+                      ""
+                    )}
+                  </li>
+                  <li>
+                    {" "}
+                    {props.listItems ? (
+                      <Trans i18nKey="list.item5"> </Trans>
+                    ) : (
+                      ""
+                    )}
+                  </li>
+                  <li>
+                    {" "}
+                    {props.listItems ? (
+                      <Trans i18nKey="list.item6"> </Trans>
+                    ) : (
+                      ""
+                    )}
+                  </li>
+                  <li>
+                    {" "}
+                    {props.listItems ? (
+                      <Trans i18nKey="list.item7"> </Trans>
+                    ) : (
+                      ""
+                    )}
+                  </li>
+                </ul>
+              </div>
+              {/* List Item TEAM PAGE END HERE */}
+              {/* TEAM 1IMAGE & NTW PAGE 2IMAGES START HERE */}
+              <div className="list-image-conatiner">
+                {props.otherText ? (
+                  <img
+                    className="image-team"
+                    src={Festival}
+                    alt="placeholder"
+                  />
+                ) : (
+                  <>
                     <img
                       className="image-team"
-                      src={Festival}
+                      src={Projection}
+                      alt="projection"
+                    />
+                    <img
+                      className="image-team"
+                      src={HeadSetImage}
                       alt="placeholder"
                     />
-                  ) : (
-                    <>
-                      <img
-                        className="image-team"
-                        src={Projection}
-                        alt="projection"
-                      />
-                      <img
-                        className="image-team"
-                        src={HeadSetImage}
-                        alt="placeholder"
-                      />
-                    </>
-                  )}
-                </div>
+                  </>
+                )}
               </div>
-              {/* List and Image Container END HERE */}
-            </section>
+            </div>
+            {/* TEAM NTW PAGE IMAGES END HERE */}
+          </section>
+          {/* TEAM Member List-END HERE */}
 
-            {/* TEAM Member List-END HERE */}
-
-            {/* Image Container-START HERE */}
-            <section className="spacing-container">
-              <section className="join-team-other-text-container">
+          {/* BOTH PAGES lower Image Container-START HERE */}
+          <section className="spacing-container">
+            <section className="join-team-other-text-container">
+              <div className="image-control-team">
                 <img
                   className="image-team"
                   src={props.otherText ? TideWhisperer3 : YPeople2}
                   alt="placeholder"
+                  width="100%"
                 />
                 <img
                   className="image-team"
                   src={props.otherText ? YGeginNTW : YPeople}
                   alt="placeholder"
+                  width="100%"
                 />
+              </div>
+              <div>
                 <img
                   className={props.otherText ? "image-team" : ""}
                   src={NTWperformance}
                   width="100%"
                   alt="placeholder"
                 />
-              </section>
-            </section>
-
-            {/* Image Container-END HERE */}
-
-            {/* Join TEAM Text(Other Text) container START HERE*/}
-            <section className={props.otherText ? "spacing-container" : ""}>
-              <div className="other-text">
                 {props.otherText ? (
-                  <Trans i18nKey="joiningText.subtitle"> </Trans>
+                  <img
+                    className={props.otherText ? "image-team" : ""}
+                    src={CafeImage}
+                    width="100%"
+                    alt="placeholder"
+                  />
                 ) : (
                   ""
                 )}
               </div>
+            </section>
+          </section>
+          {/* Image Container-END HERE */}
+          {/* Join TEAM Text(Other Text) container START HERE*/}
+          <section className={"spacing-container"}>
+            <h3 className="team-subtitle">
+              {props.otherText ? (
+                <Trans i18nKey="joiningText.subtitle"> </Trans>
+              ) : (
+                ""
+              )}
+
               <ul
                 className={
                   props.listItems ? "list-items-parent" : "list-show-none"
@@ -262,23 +277,22 @@ const AboutArticlesPage = (props) => {
                   )}
                 </li>
               </ul>
-            </section>
-            {/* Other Text container END HERE*/}
-
-            {/* Button Options(SUBSCRIBE or SIGNUP) HERE */}
-            <div>
-              {!props.listItems ? (
-                <Button
-                  href={t("subscribeHref")}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {t("subscribeButton")}
-                </Button>
-              ) : (
-                <div className="sign-up-control">{props.joinTeam}</div>
-              )}
-            </div>
+            </h3>
+          </section>
+          {/* Other Text container END HERE*/}
+          {/* Button Options(SUBSCRIBE or SIGNUP) HERE */}
+          <div>
+            {!props.listItems ? (
+              <Button
+                href={t("subscribeHref")}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t("subscribeButton")}
+              </Button>
+            ) : (
+              <div className="sign-up-control">{props.joinTeam}</div>
+            )}
           </div>
           {props.listItems ? (
             <img
@@ -289,9 +303,9 @@ const AboutArticlesPage = (props) => {
           ) : (
             ""
           )}
-        </div>
-        {/* Background Container-START END */}
-      </main>
+        </main>
+        {/* Main Content Container- END HERE*/}
+      </div>
     </>
   );
 };

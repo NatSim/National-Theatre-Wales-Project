@@ -60,6 +60,8 @@ video,
 
 .team-subtitle {
   font-size: 20px;
+  text-align: left;
+  margin: 0px 0px 15px 15px;
 }
 /*Video Container-END*/
 
@@ -83,17 +85,22 @@ video,
 }
 
 .list-items-parent {
-  /* display: flex; */
-
   flex-wrap: wrap;
   justify-content: space-evenly;
-
+  text-align: left;
   position: relative;
 }
-
 .list-image-control {
   display: flex;
   flex-wrap: wrap;
+}
+
+.list-image-container {
+  display: flex;
+  align-content: space-evenly;
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin: 0px 0px 0px 30px;
 }
 
 .list-items {
@@ -105,13 +112,13 @@ video,
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 0px 0px 25px 0px;
+  margin: 0px 0px 100px 0px;
   float: left;
 }
 
 /*SPACING Container*/
 section.spacing-container {
-  padding: 50px 0px 50px 0px;
+  padding: 50px 50px 50px 50px;
 }
 
 .list-show-none {
@@ -121,22 +128,33 @@ section.spacing-container {
 /*NTW Page main Text line-height*/
 .article-line-control {
   line-height: 2;
-  text-align: center;
+  text-align: left;
+  padding: 20px 50px 0px 50px;
 }
 
 .other-text {
   line-height: 2;
   text-align: initial;
+  /* display: flex;
+  justify-content: space-evenly; */
 }
 
 /*IMAGES-START*/
+
 .image-team {
   max-width: 100%;
   width: 350px;
-  height: auto;
+  height: 276.63px;
   margin: 10px;
 }
-
+@media only screen and (max-width: 801px) {
+  .image-team {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    margin: 10px;
+  }
+}
 .ntw-logo-about {
   width: 300px;
   height: auto;
@@ -150,5 +168,6 @@ section.spacing-container {
 
 /*Sign up*/
 .sign-up-control {
-  text-align: center;
+  text-align: left;
+  margin: 0px 0px 0px 65px;
 }
