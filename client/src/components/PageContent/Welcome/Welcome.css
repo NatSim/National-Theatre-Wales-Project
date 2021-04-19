@@ -8,7 +8,7 @@ body {
 
 .welcome-title {
   margin: 100px 0px 0px 0px;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 801px) {
@@ -63,7 +63,7 @@ body {
 
 /* Button position */
 .welcome-next-button-control0 {
-  margin: 50px 0px 150px 0px;
+  margin: 120px 0px 150px 0px;
 }
 @media only screen and (min-width: 801px) {
   .welcome-next-button-control0 {
@@ -72,21 +72,21 @@ body {
 }
 
 .welcome-next-button-control1 {
-  margin: 222px 0px 150px 0px;
+  margin: 196px 0px 150px 0px;
 }
 @media only screen and (max-width: 801px) {
   .welcome-next-button-control1 {
-    margin: 218px 0px 150px 0px;
+    margin: 290px 0px 150px 0px;
   }
 }
 
 .welcome-next-button-control2 {
-  margin: 175px 0px 150px 0px;
+  margin: 150px 0px 150px 0px;
 }
 
 @media only screen and (max-width: 801px) {
   .welcome-next-button-control2 {
-    margin: 90px 0px 150px 0px;
+    margin: 188px 0px 150px 0px;
   }
 }
 
