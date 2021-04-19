@@ -7,14 +7,14 @@ const NextButton = ({ onClickHandler, welcomeStep }) => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <>
       <button
         onClick={() => onClickHandler(welcomeStep + 1)}
         className="button"
       >
         {t("welcomeButton")}
       </button>
-    </div>
+    </>
   );
 };
 

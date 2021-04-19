@@ -1,5 +1,4 @@
 import React from "react";
-// import axios from "axios";
 import simpleText, {
   direction,
   text2Subheading,
@@ -9,15 +8,10 @@ import simpleText, {
 import ChallengeItem from "./ChallengeChoicePage";
 import "./ChallengePage.css";
 
-//Display 7 pages in one component
-//simpleText content
+/**Display 7 pages in one component
+simpleText content */
 const ChallengeLogic = (props) => {
-  //*****function steps:
-
   const id = props.match.params.id;
-
-  console.log(simpleText[id - 1].id_);
-  console.log(simpleText[id - 1].act);
 
   return (
     //return 7 challenge content in component below, from array id -1

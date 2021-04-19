@@ -17,7 +17,7 @@ function LandingPage() {
   const [mainText, setMainText] = useState(welcomeText[0].mainText);
   const [welcomeStep, setWelcomeStep] = useState(0); //starting point
 
-  //Button onclick function arrayElement
+  //Welcome Button onclick function Array Element
   const onClickHandler = (arrayElement) => {
     setWelcomeStep(arrayElement);
     setTitle(welcomeText[arrayElement].title);

@@ -87,8 +87,10 @@ const Welcome = ({ mainText, onClickHandler, welcomeStep, id_1 }) => {
                 newTitle()
               ) : welcomeStep === 2 ? (
                 questionChars()
-              ) : (
+              ) : welcomeStep !== 3 ? (
                 <Trans i18nKey="welcomeStory.0"></Trans>
+              ) : (
+                ""
               )}
             </h1>
 
@@ -105,7 +107,7 @@ const Welcome = ({ mainText, onClickHandler, welcomeStep, id_1 }) => {
         </section>
         <div
           className={
-            welcomeStep === 0
+            welcomeStep === 0 || welcomeStep === 3
               ? "welcome-next-button-control0"
               : "welcome-next-button-control1" && !mainText
               ? "welcome-next-button-control1"
