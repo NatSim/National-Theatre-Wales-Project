@@ -28,7 +28,7 @@
     "mongoose": "^5.10.18",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.7",
-    "react-i18next": "^11.8.12",
+    "react-i18next": "^11.8.13",
     "react-modal": "^3.12.1",
     "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
