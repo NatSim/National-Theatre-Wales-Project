@@ -108,6 +108,7 @@ body {
 .title-container {
   margin: -5px 0px 75px 0px;
   animation: fadeIn 8s;
+  /* background-image: url(../../../images/SAboards/3boardlandscape.jpg); */
 }
 
 @media only screen and (max-width: 1005px) {
