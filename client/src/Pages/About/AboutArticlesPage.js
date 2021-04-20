@@ -191,18 +191,7 @@ const AboutArticlesPage = (props) => {
                     alt="placeholder"
                   />
                 ) : (
-                  <>
-                    <img
-                      className="image-team"
-                      src={Projection}
-                      alt="projection"
-                    />
-                    <img
-                      className="image-team"
-                      src={HeadSetImage}
-                      alt="placeholder"
-                    />
-                  </>
+                  ""
                 )}
               </div>
             </div>
@@ -229,21 +218,18 @@ const AboutArticlesPage = (props) => {
               </div>
               <div>
                 <img
-                  className={props.otherText ? "image-team" : ""}
-                  src={NTWperformance}
+                  className="image-team"
+                  src={props.otherText ? NTWperformance : Projection}
                   width="100%"
                   alt="placeholder"
                 />
-                {props.otherText ? (
-                  <img
-                    className={props.otherText ? "image-team" : ""}
-                    src={CafeImage}
-                    width="100%"
-                    alt="placeholder"
-                  />
-                ) : (
-                  ""
-                )}
+                <img
+                  className="image-team"
+                  src={props.otherText ? CafeImage : HeadSetImage}
+                  width="100%"
+                  alt="placeholder"
+                />
+                )
               </div>
             </section>
           </section>
