@@ -4,10 +4,6 @@ import StoriesPage from "../../Pages/Connect/StoriesPage";
 
 const StoriesLogic = (props) => {
   const id = props.match.params.id;
-  console.log(id);
-  console.log(stories);
-
-  console.log(stories[1].videoMono);
 
   return (
     <>

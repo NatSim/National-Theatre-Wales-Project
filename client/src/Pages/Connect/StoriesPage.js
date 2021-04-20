@@ -36,7 +36,7 @@ const StoriesPageA = (props) => {
               )}
             </h3>
 
-            <p className="story-blurbs">
+            <div className="story-blurbs">
               {props.id_ === 1 ? (
                 <>
                   <p>
@@ -47,7 +47,7 @@ const StoriesPageA = (props) => {
               ) : (
                 <Trans i18nKey="storiesContent.7"></Trans>
               )}
-            </p>
+            </div>
           </section>
           <section className="video-container-parent">
             <div className="video-text-control">
