@@ -76,7 +76,6 @@ const StoriesPageA = (props) => {
               ) : (
                 <div className="story-info-container">
                   <h4>{t("story_Title.7")}</h4>
-                  <article>{t("storyBlurb.7")}</article>
                 </div>
               )}
             </div>
@@ -94,7 +93,7 @@ const StoriesPageA = (props) => {
               ) : (
                 <div className="video-container-child">
                   <VideoPlayer
-                    url={t("storyHref.7")}
+                    url={t("storyHref.8")}
                     width={"246px"}
                     height={"150px"}
                   />
@@ -108,7 +107,6 @@ const StoriesPageA = (props) => {
               ) : (
                 <div className="story-info-container">
                   <h4>{t("story_Title.8")}</h4>
-                  <article>{t("storyBlurb.8")}</article>
                 </div>
               )}
             </div>
@@ -127,7 +125,7 @@ const StoriesPageA = (props) => {
               ) : (
                 <div className="video-container-child">
                   <VideoPlayer
-                    url={t("storyHref.7")}
+                    url={t("storyHref.9")}
                     width={"246px"}
                     height={"150px"}
                   />
@@ -141,7 +139,6 @@ const StoriesPageA = (props) => {
               ) : (
                 <div className="story-info-container">
                   <h4>{t("story_Title.9")}</h4>
-                  <article>{t("storyBlurb.9")}</article>
                 </div>
               )}
             </div>
@@ -159,7 +156,7 @@ const StoriesPageA = (props) => {
               ) : (
                 <div className="video-container-child">
                   <VideoPlayer
-                    url={t("storyHref.7")}
+                    url={t("storyHref.10")}
                     width={"246px"}
                     height={"150px"}
                   />
@@ -173,7 +170,6 @@ const StoriesPageA = (props) => {
               ) : (
                 <div className="story-info-container">
                   <h4>{t("story_Title.10")}</h4>
-                  <article>{t("storyBlurb.10")}</article>
                 </div>
               )}
             </div>
@@ -191,7 +187,7 @@ const StoriesPageA = (props) => {
               ) : (
                 <div className="video-container-child">
                   <VideoPlayer
-                    url={t("storyHref.7")}
+                    url={t("storyHref.11")}
                     width={"246px"}
                     height={"150px"}
                   />
@@ -205,7 +201,6 @@ const StoriesPageA = (props) => {
               ) : (
                 <div className="story-info-container">
                   <h4>{t("story_Title.11")}</h4>
-                  <article>{t("storyBlurb.11")}</article>
                 </div>
               )}
             </div>
@@ -223,7 +218,7 @@ const StoriesPageA = (props) => {
               ) : (
                 <div className="video-container-child">
                   <VideoPlayer
-                    url={t("storyHref.7")}
+                    url={t("storyHref.12")}
                     width={"246px"}
                     height={"150px"}
                   />
@@ -237,7 +232,6 @@ const StoriesPageA = (props) => {
               ) : (
                 <div className="story-info-container">
                   <h4>{t("story_Title.12")}</h4>
-                  <article>{t("storyBlurb.12")}</article>
                 </div>
               )}
             </div>
@@ -253,24 +247,14 @@ const StoriesPageA = (props) => {
                   />
                 </div>
               ) : (
-                <div className="video-container-child">
-                  <VideoPlayer
-                    url={t("storyHref.7")}
-                    width={"246px"}
-                    height={"150px"}
-                  />
-                </div>
+                ""
               )}
               {props.id_ === 1 ? (
                 <div className="story-info-container">
                   <h4>{t("story_Title.6")}</h4>
-                  <article>{t("storyBlurb.6")}</article>
                 </div>
               ) : (
-                <div className="story-info-container">
-                  <h4>{t("story_Title.13")}</h4>
-                  <article>{t("storyBlurb.13")}</article>
-                </div>
+                ""
               )}
             </div>
             {/* Story 7 container END HERE */}

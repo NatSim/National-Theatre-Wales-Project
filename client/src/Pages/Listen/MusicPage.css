@@ -26,7 +26,8 @@
   /* color: white; */
   text-align: left;
 }
-/* .story-info-container */
+#story-info-container-children {
+}
 
 .video-container-child {
   text-align: -webkit-center;

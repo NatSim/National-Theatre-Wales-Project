@@ -30,18 +30,21 @@ function LandingPage() {
     <>
       <Header />
       {/* WELCOME container START HERE */}
-
-      <Welcome
-        welcomeStep={welcomeStep}
-        onClickHandler={onClickHandler}
-        title={title}
-        mainText={mainText}
-      />
+      <section>
+        <Welcome
+          welcomeStep={welcomeStep}
+          onClickHandler={onClickHandler}
+          title={title}
+          mainText={mainText}
+        />
+      </section>
       {/* Welcome container END HERE */}
 
       {/* CARD container START HERE */}
       <section className="card-container">
-        <h2 className="subtitle2">{i18n.t("homeSubtitleExplore")}</h2>
+        <div>
+          <h2 className="">{i18n.t("homeSubtitleExplore")}</h2>
+        </div>
         <Container className="card-deck">
           <Row>
             <Col sm>
