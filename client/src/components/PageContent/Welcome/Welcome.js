@@ -34,28 +34,30 @@ const Welcome = ({ mainText, onClickHandler, welcomeStep, id_1 }) => {
 
   const specialChars = () => (
     <>
-      <div className="special-chars-control">
-        <span className="">
-          <b>{t("welcomeComponent.1")} </b>
+      <section className="set-all-container-size">
+        <div className="special-chars-control">
+          <span className="">
+            <b>{t("welcomeComponent.1")} </b>
+            <br />
+            <b>{t("welcomeComponent.2")}</b>
+            <br />
+            <b>{t("welcomeComponent.3")}</b>
+          </span>
+          <span className="blue">
+            <b> {t("welcomeComponent.4")}</b>
+          </span>
           <br />
-          <b>{t("welcomeComponent.2")}</b>
-          <br />
-          <b>{t("welcomeComponent.3")}</b>
-        </span>
-        <span className="blue">
-          <b> {t("welcomeComponent.4")}</b>
-        </span>
-        <br />
-        <span className="">
-          <b> {t("welcomeComponent.5")}</b>
-        </span>
-      </div>
+          <span className="">
+            <b> {t("welcomeComponent.5")}</b>
+          </span>
+        </div>
+      </section>
     </>
   );
 
   const questionChars = () => (
     <>
-      <span className="yellow">{t("welcomeComponent.6")}</span>
+      <span className="yellow">{t("welcomeComponent.6")}</span>{" "}
     </>
   );
 
@@ -112,12 +114,8 @@ const Welcome = ({ mainText, onClickHandler, welcomeStep, id_1 }) => {
               ? "welcome-next-button-control1"
               : "welcome-next-button-control2"
           }
-        >
-          <NextButton
-            onClickHandler={onClickHandler}
-            welcomeStep={welcomeStep}
-          />
-        </div>
+        ></div>
+        <NextButton onClickHandler={onClickHandler} welcomeStep={welcomeStep} />
       </section>
     </>
   );
