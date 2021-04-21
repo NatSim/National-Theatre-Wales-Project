@@ -26,8 +26,8 @@
   /* color: white; */
   text-align: left;
 }
-#story-info-container-children {
-}
+/* #story-info-container-children {
+} */
 
 .video-container-child {
   text-align: -webkit-center;
@@ -59,6 +59,10 @@
 }
 
 .story-parent-container {
+  margin: 30px 10px 30px 20px;
+}
+
+#story-parent-container1 {
   margin: 30px 10px 30px 20px;
 }
 

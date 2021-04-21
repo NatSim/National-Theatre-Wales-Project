@@ -43,7 +43,7 @@ function LandingPage() {
       {/* CARD container START HERE */}
       <section className="card-container">
         <div>
-          <h2 className="">{i18n.t("homeSubtitleExplore")}</h2>
+          <h2 className="subtitle-6">{i18n.t("homeSubtitleExplore")}</h2>
         </div>
         <Container className="card-deck">
           <Row>
