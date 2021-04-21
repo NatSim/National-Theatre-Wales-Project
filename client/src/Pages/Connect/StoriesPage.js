@@ -250,11 +250,9 @@ const StoriesPageA = (props) => {
                 ""
               )}
               {props.id_ === 1 ? (
-                <div
-                  id="story-parent-container1"
-                  className="story-info-container"
-                >
+                <div className="story-info-container">
                   <h4>{t("story_Title.6")}</h4>
+                  <article>{t("storyBlurb.6")}</article>
                 </div>
               ) : (
                 ""
