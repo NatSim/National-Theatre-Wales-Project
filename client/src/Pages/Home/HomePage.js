@@ -42,7 +42,6 @@ const HomePage = (props) => {
         <div className="background-outer"></div>
         <main>
           <div className="translate-button">
-            <hr />
             <div className="translate-button-control">
               <button onClick={() => changeLanguage("en")}>En</button>
               <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
