@@ -229,7 +229,6 @@ const AboutArticlesPage = (props) => {
                   width="100%"
                   alt="placeholder"
                 />
-                )
               </div>
             </section>
           </section>

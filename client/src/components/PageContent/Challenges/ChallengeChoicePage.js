@@ -438,13 +438,13 @@ const ChallengeItem = (props) => {
                 {/*1.Be Kind Charity STARTS HERE */}
                 {props.id_ === 1 ? (
                   <a
-                    href={t("urlCharity")}
+                    href={t("urlCharity.0")}
                     target="_blank"
                     rel="noreferrer"
                     type="text/html"
                   >
                     <Trans i18nKey="urlCharityName.0">
-                      Give The Boys a Lift
+                      Get The Boys a Lift
                     </Trans>
                   </a>
                 ) : (
@@ -880,7 +880,7 @@ const ChallengeItem = (props) => {
         <CompleteChallengeButton onClickHandler={onClickHandler} />
 
         <div className="welldone-message">
-          <p>{welldone}</p>
+          <p>{welldone}🎉</p>
         </div>
       </div>
 
