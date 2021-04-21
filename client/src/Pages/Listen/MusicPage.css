@@ -26,8 +26,6 @@
   /* color: white; */
   text-align: left;
 }
-/* #story-info-container-children {
-} */
 
 .video-container-child {
   text-align: -webkit-center;
@@ -64,6 +62,10 @@
 
 #story-parent-container1 {
   margin: 30px 10px 30px 20px;
+}
+
+.story-children-blurbs {
+  padding: 0px 20px 0px 20px;
 }
 
 /*Blurb background color*/
@@ -173,7 +175,8 @@ video,
 .story-container,
 .story-blurbs,
 .story-subtitle,
-.story-info-container {
+.story-info-container,
+.story-children-blurbs {
   position: relative;
 }
 

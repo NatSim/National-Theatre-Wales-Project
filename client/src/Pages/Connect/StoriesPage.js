@@ -74,7 +74,7 @@ const StoriesPageA = (props) => {
                   <article>{t("storyBlurb.0")}</article>
                 </div>
               ) : (
-                <div className="story-info-container">
+                <div className="story-children-blurbs">
                   <h4>{t("story_Title.7")}</h4>
                 </div>
               )}
@@ -105,7 +105,7 @@ const StoriesPageA = (props) => {
                   <article>{t("storyBlurb.1")}</article>
                 </div>
               ) : (
-                <div className="story-info-container">
+                <div className="story-children-blurbs">
                   <h4>{t("story_Title.8")}</h4>
                 </div>
               )}
@@ -137,7 +137,7 @@ const StoriesPageA = (props) => {
                   <article>{t("storyBlurb.2")}</article>
                 </div>
               ) : (
-                <div className="story-info-container">
+                <div className="story-children-blurbs">
                   <h4>{t("story_Title.9")}</h4>
                 </div>
               )}
@@ -168,7 +168,7 @@ const StoriesPageA = (props) => {
                   <article>{t("storyBlurb.3")}</article>
                 </div>
               ) : (
-                <div className="story-info-container">
+                <div className="story-children-blurbs">
                   <h4>{t("story_Title.10")}</h4>
                 </div>
               )}
@@ -199,7 +199,7 @@ const StoriesPageA = (props) => {
                   <article>{t("storyBlurb.4")}</article>
                 </div>
               ) : (
-                <div className="story-info-container">
+                <div className="story-children-blurbs">
                   <h4>{t("story_Title.11")}</h4>
                 </div>
               )}
@@ -230,7 +230,7 @@ const StoriesPageA = (props) => {
                   <article>{t("storyBlurb.5")}</article>
                 </div>
               ) : (
-                <div className="story-info-container">
+                <div className="story-children-blurbs">
                   <h4>{t("story_Title.12")}</h4>
                 </div>
               )}
