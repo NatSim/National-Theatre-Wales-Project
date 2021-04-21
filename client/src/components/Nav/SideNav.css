@@ -9,6 +9,13 @@
   cursor: pointer;
   padding-top: 20px;
   margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  height: 50px;
+  border-bottom-style: inset;
 }
 
 @media only screen and (min-width: 801px) {

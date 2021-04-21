@@ -13,7 +13,7 @@ body {
 
 /* Middle button nav-START*/
 .nav-container {
-  padding: 10px 25px 50px 0px;
+  padding: 0px 25px 50px 0px;
   position: relative;
 }
 .nav-container::before {
@@ -96,8 +96,8 @@ h2,
 }
 
 .subtitle1 {
-  display: -webkit-box;
-  margin: 45px 10px 30px 0px;
+  display: flex;
+  margin: 30px 0px 30px 0px;
   padding: 60px 20px 10px 20px;
 }
 
@@ -163,12 +163,16 @@ a,
 
 /* Translate Button START*/
 .translate-button {
-  margin: 75px 0px 0px 0px;
+  margin: 70px 0px 0px 0px;
 }
 
 @media only screen and (max-width: 802px) {
   .translate-button {
-    margin: 0px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
   }
+}
+
+.translate-button-control {
+  padding: 10px 0px 0px 0px;
 }
 /* Translate Button END*/

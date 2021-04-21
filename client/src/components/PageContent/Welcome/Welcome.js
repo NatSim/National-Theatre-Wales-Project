@@ -72,10 +72,12 @@ const Welcome = ({ mainText, onClickHandler, welcomeStep, id_1 }) => {
         </nav>
         {/* Translation Button START HERE */}
         <div className="translate-button">
-          <button onClick={() => changeLanguage("en")}>En</button>
-          <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+          <div className="translate-button-control">
+            <button onClick={() => changeLanguage("en")}>En</button>
+            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+            <hr />{" "}
+          </div>
           {/* Translation Button END HERE */}
-          <hr />
         </div>
         <section className="text-image-control">
           <div>

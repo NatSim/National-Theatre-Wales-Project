@@ -43,9 +43,11 @@ const AboutArticlesPage = (props) => {
         >
           {/* Translation Button START HERE */}
           <div className="translate-button">
-            <button onClick={() => changeLanguage("en")}>En</button>
-            <button onClick={() => changeLanguage("welsh")}>Welsh</button>
-            <hr />
+            <div className="translate-button-control">
+              <button onClick={() => changeLanguage("en")}>En</button>
+              <button onClick={() => changeLanguage("welsh")}>Welsh</button>
+              <hr />
+            </div>
           </div>
           {/* Translation Button END HERE */}
           {/* Title container START HERE*/}

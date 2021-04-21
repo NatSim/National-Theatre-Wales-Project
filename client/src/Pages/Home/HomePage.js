@@ -42,10 +42,12 @@ const HomePage = (props) => {
         <div className="background-outer"></div>
         <main>
           <div className="translate-button">
-            <button onClick={() => changeLanguage("en")}>En</button>
-            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
-            {/* Translation Button END HERE */}
             <hr />
+            <div className="translate-button-control">
+              <button onClick={() => changeLanguage("en")}>En</button>
+              <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+            </div>{" "}
+            {/* Translation Button END HERE */}
             <nav className="nav-container">
               <h2 className="subtitle1">{i18n.t("homeSubtitleDiscover")}</h2>
               <ul className="middle-nav-list">

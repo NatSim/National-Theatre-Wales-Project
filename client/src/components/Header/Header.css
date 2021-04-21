@@ -11,17 +11,15 @@
   top: 0;
   width: 100%;
   z-index: 1;
-  background-color: white;
-  height: 20px;
+  height: 10%;
 }
 
 .nav-links {
   min-height: 10vh;
-  /* border-bottom-style: double;
-  border-color: wheat; */
-  background: white;
   text-decoration: none;
   height: 50px;
+  border-bottom-style: inset;
+  background-color: white;
 }
 
 li {
