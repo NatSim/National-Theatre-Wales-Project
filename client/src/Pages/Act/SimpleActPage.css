@@ -69,27 +69,6 @@ video,
   padding: 10px;
 }
 
-/* .text-container {
-  width: 800px;
-  margin: 50px auto;
-  display: table;
-  box-sizing: border-box;
-}
-
-.text-video-row {
-  margin: 10px 0px;
-}
-
-.text-video-column {
-  display: table-cell;
-  padding: 10px;
-  width: 33.33333%;
-}
-
-article.challenge-text {
-  text-align: justify;
-} */
-
 .simple-acts-container-parent {
   display: flex;
   flex-flow: wrap;
@@ -115,17 +94,6 @@ article.challenge-text {
   text-align: justify;
 }
 
-/* @media only screen and (max-width: 801px) {
-  /* .text-container {
-    width: 0;
-  } */
-/* .text-video-row {
-    display: grid;
-    border: dashed;
-  }
-}
-*/
-
 .text-container {
   margin: 50px;
 }
@@ -149,15 +117,25 @@ article.challenge-text1 {
   text-align: justify;
 }
 
-article.challenge-text2 {
-  margin: 0px 0px 0px 20px;
+@media only screen and (min-width: 801px) {
+  article.challenge-text2 {
+    margin: 0px 0px 0px 20px;
 
-  padding: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .challenge-text1 {
+    margin: 0px 20px 0px 0px;
+    padding: 0px 20px 0px 20px;
+  }
 }
 
-.challenge-text1 {
-  margin: 0px 20px 0px 0px;
-  padding: 0px 20px 0px 20px;
+@media only screen and (min-width: 801px) {
+  article.challenge-text2 {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 801px) {
