@@ -880,7 +880,7 @@ const ChallengeItem = (props) => {
         <CompleteChallengeButton onClickHandler={onClickHandler} />
 
         <div className="welldone-message">
-          <p>{welldone}🎉</p>
+          <p>{welldone}</p>
         </div>
       </div>
 
