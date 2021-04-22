@@ -48,7 +48,7 @@ const HomePage = (props) => {
             </div>{" "}
             {/* Translation Button END HERE */}
             <nav className="nav-container">
-              <h2 className="subtitle1">{i18n.t("homeSubtitleDiscover")}</h2>
+              <h2 className="subtitle5">{i18n.t("homeSubtitleDiscover")}</h2>
               <ul className="middle-nav-list">
                 <li className="nav-button-list">
                   <Link to="/show">

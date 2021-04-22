@@ -17,7 +17,7 @@ const MapPage = () => {
       {/* Translation Button START HERE */}
       <div className="translate-button">
         <button onClick={() => changeLanguage("en")}>En</button>
-        <button onClick={() => changeLanguage("welsh")}>Welsh</button>
+        <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
         {/* Translation Button END HERE */}
         <hr />
       </div>

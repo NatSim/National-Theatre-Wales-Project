@@ -8,8 +8,13 @@
   height: 300px;
   width: auto;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .map-container-control-spacebetween {
   padding: 40px 0px 0px 0px;
+}
+
+.map-text-control {
+  text-align: left;
 }

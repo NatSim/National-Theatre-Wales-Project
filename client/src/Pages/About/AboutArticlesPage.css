@@ -168,6 +168,6 @@ section.spacing-container {
 
 /*Sign up*/
 .sign-up-control {
-  text-align: left;
-  margin: 0px 0px 0px 65px;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
 }

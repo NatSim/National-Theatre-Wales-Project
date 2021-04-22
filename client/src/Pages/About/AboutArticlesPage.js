@@ -45,7 +45,7 @@ const AboutArticlesPage = (props) => {
           <div className="translate-button">
             <div className="translate-button-control">
               <button onClick={() => changeLanguage("en")}>En</button>
-              <button onClick={() => changeLanguage("welsh")}>Welsh</button>
+              <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
               <hr />
             </div>
           </div>
@@ -278,7 +278,11 @@ const AboutArticlesPage = (props) => {
                 {t("subscribeButton")}
               </Button>
             ) : (
-              <div className="sign-up-control">{props.joinTeam}</div>
+              <div className="sign-up-control">
+                <a href={t("signUpHref")} target="blank" rel="noreferrer">
+                  {t("signUpText")}{" "}
+                </a>
+              </div>
             )}
           </div>
           {props.listItems ? (
