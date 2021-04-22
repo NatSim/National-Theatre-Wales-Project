@@ -14,7 +14,7 @@ const ShowPage = () => {
       <SideNav />
       <Header />
       {/* Translation Button START HERE */}
-      <div className="translate-button">
+      <div className="translate-button2">
         <div className="translate-button-control">
           <button onClick={() => changeLanguage("en")}>En</button>
           <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
