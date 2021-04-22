@@ -24,7 +24,6 @@ body {
   bottom: 0px;
   left: 0px;
   background-color: #ff9f00;
-  /* background-image: url(../../images/SAboards/saboards-wide2.jpg); */
   background-size: cover;
   opacity: 0.6;
   border-top-style: double;
@@ -172,8 +171,13 @@ a,
   }
 }
 
-/* .translate-button-control {
-  padding: 20px 0px 0px 0px;
-} */
+.translate-button2 {
+  margin: 70px 0px 0px 0px;
+}
+@media only screen and (max-width: 802px) {
+  .translate-button2 {
+    margin: 65px 0px 0px 0px;
+  }
+}
 
 /* Translate Button END*/
