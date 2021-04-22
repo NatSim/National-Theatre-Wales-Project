@@ -16,7 +16,7 @@ const ContactUsPage = () => {
       <SideNav />
       <Header />
       <div className="terms-page">
-        <div className="translate-button">
+        <div className="translate-button2">
           <button onClick={() => changeLanguage("en")}>En</button>
           <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
           {/* Translation Button END HERE */}
