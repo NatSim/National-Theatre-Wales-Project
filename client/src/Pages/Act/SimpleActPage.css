@@ -131,13 +131,6 @@ article.challenge-text1 {
   }
 }
 
-@media only screen and (min-width: 801px) {
-  article.challenge-text2 {
-    margin: 0;
-    padding: 0;
-  }
-}
-
 @media only screen and (max-width: 801px) {
   .text-video-column {
     max-width: 100%;
