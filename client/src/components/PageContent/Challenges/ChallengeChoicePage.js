@@ -257,7 +257,7 @@ const ChallengeItem = (props) => {
                     <div className="procession-image-container">
                       <img
                         className="procession-image"
-                        src={NatureImage}
+                        src={BeeImage}
                         alt="Sunflowers"
                       />
                     </div>
