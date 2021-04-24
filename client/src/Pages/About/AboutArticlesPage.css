@@ -166,6 +166,11 @@ section.spacing-container {
   margin: 20px 0px 0px 0px;
 }
 
+.subscribe-text-call-to-action {
+  padding: 0px 50px 0px 50px;
+  text-align: initial;
+}
+
 /*Sign up*/
 .sign-up-control {
   text-align: center;

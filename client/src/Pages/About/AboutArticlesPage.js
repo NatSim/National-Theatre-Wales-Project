@@ -268,32 +268,37 @@ const AboutArticlesPage = (props) => {
           </section>
           {/* Other Text container END HERE*/}
           {/* Button Options(SUBSCRIBE or SIGNUP) HERE */}
-          <div>
-            {!props.listItems ? (
-              <Button
-                href={t("subscribeHref")}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {t("subscribeButton")}
-              </Button>
+          <section className={"spacing-container"}>
+            <div>
+              {!props.listItems ? (
+                <>
+                  <p className="subscribe-text-call-to-action">{t("subscribeText")}</p>
+                  <Button
+                    href={t("subscribeHref")}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {t("subscribeButton")}
+                  </Button>
+                </>
+              ) : (
+                <div className="sign-up-control">
+                  <a href={t("signUpHref")} target="blank" rel="noreferrer">
+                    {t("signUpText")}{" "}
+                  </a>
+                </div>
+              )}
+            </div>
+            {props.listItems ? (
+              <img
+                className="image-team"
+                src={props.otherText ? TideTEAMSocial : ""}
+                alt={props.otherText ? "placeholder" : ""}
+              />
             ) : (
-              <div className="sign-up-control">
-                <a href={t("signUpHref")} target="blank" rel="noreferrer">
-                  {t("signUpText")}{" "}
-                </a>
-              </div>
+              ""
             )}
-          </div>
-          {props.listItems ? (
-            <img
-              className="image-team"
-              src={props.otherText ? TideTEAMSocial : ""}
-              alt={props.otherText ? "placeholder" : ""}
-            />
-          ) : (
-            ""
-          )}
+          </section>
         </main>
         {/* Main Content Container- END HERE*/}
       </div>
