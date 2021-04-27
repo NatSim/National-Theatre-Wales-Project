@@ -14,6 +14,9 @@ const Footer = () => {
   const ntwTwitterPage = "https://twitter.com/ntwtweets";
   const ntwYouTubePage =
     "https://www.youtube.com/channel/UC54_0F_URQ5nvePaZRldKVg";
+  const counterpointArtsHref = "https://counterpointsarts.org.uk";
+  const artsCouncilHref = "https://arts.wales/";
+  const paulHamlynHref = "https://www.phf.org.uk/";
 
   const { t } = useTranslation();
 
@@ -76,25 +79,46 @@ const Footer = () => {
         </ul>
         <ul className="footer-ul-control">
           <li>
-            <img
-              className="charity-logo"
-              src={Counterpoints}
-              alt="Arts Council Wales logo"
-            />
+            <a
+              href={counterpointArtsHref}
+              target="_blank"
+              rel="noreferrer"
+              className="Counterpoint Arts"
+            >
+              <img
+                className="charity-logo"
+                src={Counterpoints}
+                alt="Counterpoint Arts"
+              />
+            </a>
           </li>
           <li>
-            <img
-              className="acw-logo"
-              src={ACWColourLandscape}
-              alt="Arts Council Wales"
-            />
+            <a
+              href={artsCouncilHref}
+              target="_blank"
+              rel="noreferrer"
+              className="Arts Council Wales"
+            >
+              <img
+                className="acw-logo"
+                src={ACWColourLandscape}
+                alt="Arts Council Wales"
+              />
+            </a>
           </li>
           <li>
-            <img
-              className="charity-logo"
-              src={PHFLogo}
-              alt="Paul Hamlyn Foundation"
-            />
+            <a
+              href={paulHamlynHref}
+              target="_blank"
+              rel="noreferrer"
+              className="Paul Hamlyn Foundation"
+            >
+              <img
+                className="charity-logo"
+                src={PHFLogo}
+                alt="Paul Hamlyn Foundation"
+              />
+            </a>
           </li>
         </ul>
         <p>

@@ -71,7 +71,7 @@ const simpleText = [
 const direction = ["Your Simple Act is to...", "/Eich Deddf Syml yw ..."];
 export { direction };
 
-const text2Subheading = ["Did you know", "/Oeddech chi'n gwybod "];
+const text2Subheading = ["Did you know?", "/Oeddech chi'n gwybod "];
 export { text2Subheading };
 
 const discoverHeading = ["Discover", "/Darganfod"];
