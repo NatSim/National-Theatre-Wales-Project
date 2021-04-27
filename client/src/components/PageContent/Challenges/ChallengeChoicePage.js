@@ -7,7 +7,6 @@ import BeeImage from "../../../images/proccession_graphics/STILL1.jpeg";
 import PathImage from "../../../images/proccession_graphics/STILL5.jpeg";
 import PlantImage from "../../../images/proccession_graphics/STILL7.jpeg";
 import PeopleImage from "../../../images/proccession_graphics/STILL6.jpeg";
-import NatureImage from "../../../images/proccession_graphics/STILL8.jpeg";
 import StarImage from "../../../images/proccession_graphics/STILL3.jpeg";
 //**This page component displays the unique challenge item content 7 total **/
 

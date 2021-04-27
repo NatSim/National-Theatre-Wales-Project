@@ -10,10 +10,7 @@ import TyCanolNatureTrai from "../../../images/Maps/TyCanolNatureTrai.png";
 import "./Maps.css";
 
 const Maps = () => {
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
+  const { t } = useTranslation();
   return (
     <>
       <div className="map-parent-container">
