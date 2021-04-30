@@ -29,12 +29,16 @@ const MusicPage = () => {
         </div>
         <h2 className="subtitle1">{t("listenContent.1")}</h2>
         <div className="intro-text-container">
-          <span>{t("listenContent.0")}</span>
+          <span className="title-text">{t("listenContent.0")}</span>
         </div>
         {/* Featured Item START HERE */}
         <section className="audio-container-parent">
           <div className="video-container-child">
-            <VideoPlayer url={videoMusic} width={"246px"} height={"150px"} />
+            <VideoPlayer
+              url={t("listenHrefs.0")}
+              width={"246px"}
+              height={"150px"}
+            />
             <div className="title-text-container">
               <span className="title-text">{t("listenContent.2")}</span>
             </div>
@@ -47,42 +51,70 @@ const MusicPage = () => {
           <ol className="audio-container-parent">
             <li className="video-container-child">
               <VideoPlayer
-                url={soundCloudExample}
+                url={t("listenHrefs.1")}
                 width={"246px"}
                 height={"100px"}
               />
             </li>
             <li className="video-container-child">
               <VideoPlayer
-                url={soundCloudExample}
+                url={t("listenHrefs.2")}
                 width={"246px"}
                 height={"100px"}
               />
             </li>
             <li className="video-container-child">
               <VideoPlayer
-                url={soundCloudExample}
+                url={t("listenHrefs.3")}
                 width={"246px"}
                 height={"100px"}
               />
             </li>
             <li className="video-container-child">
               <VideoPlayer
-                url={soundCloudExample}
+                url={t("listenHrefs.4")}
                 width={"246px"}
                 height={"100px"}
               />
             </li>
             <li className="video-container-child">
               <VideoPlayer
-                url={soundCloudExample}
+                url={t("listenHrefs.5")}
                 width={"246px"}
                 height={"100px"}
               />
             </li>
             <li className="video-container-child">
               <VideoPlayer
-                url={soundCloudExample}
+                url={t("listenHrefs.6")}
+                width={"246px"}
+                height={"100px"}
+              />
+            </li>
+            <li className="video-container-child">
+              <VideoPlayer
+                url={t("listenHrefs.7")}
+                width={"246px"}
+                height={"100px"}
+              />
+            </li>
+            <li className="video-container-child">
+              <VideoPlayer
+                url={t("listenHrefs.8")}
+                width={"246px"}
+                height={"100px"}
+              />
+            </li>
+            <li className="video-container-child">
+              <VideoPlayer
+                url={t("listenHrefs.9")}
+                width={"246px"}
+                height={"100px"}
+              />
+            </li>
+            <li className="video-container-child">
+              <VideoPlayer
+                url={t("listenHrefs.10")}
                 width={"246px"}
                 height={"100px"}
               />

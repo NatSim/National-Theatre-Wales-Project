@@ -28,7 +28,9 @@ const Welcome = ({ mainText, onClickHandler, welcomeStep, id_1 }) => {
     <>
       <span className="">{t("welcomeComponent.0")}</span>
       <br />
-      <span className="yellow">{t("welcomeComponent.1")}</span>
+      <span className="yellow">
+        <b>{t("welcomeComponent.1")}</b>
+      </span>
     </>
   );
 

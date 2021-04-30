@@ -20,6 +20,7 @@ body {
 /*title "Go Tell The Bees" */
 .yellow {
   color: #ff9f00;
+  text-shadow: 0 0 black;
 }
 
 /* mainText "Simple Acts"*/
