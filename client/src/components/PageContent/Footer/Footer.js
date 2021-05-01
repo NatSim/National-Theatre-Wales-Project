@@ -124,7 +124,7 @@ const Footer = () => {
         <p>
           {t("footerContent.3")}
           <a
-            href="https://www.linkedin.com/in/natasha-simone-14310364/"
+            href="https://natsim-portfolio.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
