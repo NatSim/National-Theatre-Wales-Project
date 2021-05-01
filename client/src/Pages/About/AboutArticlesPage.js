@@ -53,9 +53,13 @@ const AboutArticlesPage = (props) => {
           {/* Title container START HERE*/}
           <h2 className="title-team-ntw-subtitle">
             {!props.otherText ? (
-              <Trans i18nKey="title_ntw" className></Trans>
+              <div id="ntw-title">
+                <Trans i18nKey="title_ntw"></Trans>
+              </div>
             ) : (
-              <Trans i18nKey="title_team"></Trans>
+              <div id="team-title">
+                <Trans i18nKey="title_team"></Trans>
+              </div>
             )}
           </h2>
           {/*Title container END HERE*/}
@@ -272,7 +276,9 @@ const AboutArticlesPage = (props) => {
             <div>
               {!props.listItems ? (
                 <>
-                  <p className="subscribe-text-call-to-action">{t("subscribeText")}</p>
+                  <p className="subscribe-text-call-to-action">
+                    {t("subscribeText")}
+                  </p>
                   <Button
                     href={t("subscribeHref")}
                     target="_blank"
