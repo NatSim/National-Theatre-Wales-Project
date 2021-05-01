@@ -167,13 +167,18 @@ a,
 
 @media only screen and (max-width: 802px) {
   .translate-button {
-    margin: 50px 0px 0px 0px;
+    margin: 5%;
   }
 }
 
-.translate-button2 {
+.translate-button-control {
   margin: 70px 0px 0px 0px;
 }
+
+.translate-button-2 {
+  margin: 7%;
+}
+
 @media only screen and (max-width: 802px) {
   .translate-button2 {
     margin: 65px 0px 0px 0px;
