@@ -11,6 +11,7 @@ import Tide from "../../images/TEAM/Tide-Whisperer-TEAM-Social-1-1.jpg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import SideNav from "../../components/Nav/SideNav";
 
 function LandingPage() {
   const [title, setTitle] = useState(welcomeText[0].title);
@@ -24,23 +25,43 @@ function LandingPage() {
     setMainText(welcomeText[arrayElement].mainText);
   };
 
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
 
   return (
     <>
       <Header />
-      {/* WELCOME container START HERE */}
-      {/* <section> */}
-      <Welcome
-        welcomeStep={welcomeStep}
-        onClickHandler={onClickHandler}
-        title={title}
-        mainText={mainText}
-      />
-      {/* </section> */}
-      {/* Welcome container END HERE */}
+      <nav className="sidenav-container">
+        <SideNav />
+      </nav>
+      {/* Translation Button START HERE */}
+      <div className="translate-button2">
+        <div className="translate-button-control">
+          <button onClick={() => changeLanguage("en")}>En</button>
+          <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+          <hr />{" "}
+        </div>
+
+        {/* WELCOME container START HERE */}
+        {/* <section> */}
+        <main className="title-container">
+          <section>
+            <Welcome
+              welcomeStep={welcomeStep}
+              onClickHandler={onClickHandler}
+              title={title}
+              mainText={mainText}
+            />
+          </section>
+        </main>
+        {/* Welcome container END HERE */}
+        {/* Translation Button END HERE */}
+      </div>
 
       {/* CARD container START HERE */}
+
       <section className="card-container">
         <div className="explore-title-control">
           <h2>{i18n.t("homeSubtitleExplore")}</h2>
@@ -80,6 +101,7 @@ function LandingPage() {
           </Row>
         </Container>
       </section>
+
       {/* CARD container END HERE */}
     </>
   );

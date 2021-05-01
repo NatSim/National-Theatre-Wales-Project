@@ -120,24 +120,23 @@ body {
 /*START*/
 .title-container {
   animation: fadeIn 8s;
-  /* background-image: url(../../../images/SAboards/3boardlandscape.jpg); */
+  padding: 7%;
+  position: relative;
 }
 
-@media only screen and (max-width: 1005px) {
-  .title-container::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(../../../images/SAboards/3boardlandscape.jpg);
-    background-size: auto;
-    opacity: 0.5;
-  }
+.title-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../../images/SAboards/3boardlandscape.jpg);
+  background-size: auto;
+  opacity: 0.5;
 }
 
-@media only screen and (min-width: 1004px) {
+/* @media only screen and (min-width: 1004px) {
   .title-container::before {
     content: "";
     position: absolute;
@@ -149,7 +148,7 @@ body {
     background-size: cover;
     opacity: 0.5;
   }
-}
+} */
 
 .yellow,
 .blue,
@@ -171,7 +170,8 @@ svg,
 .form-parent,
 h1,
 h2,
-.translate-button2 {
+.translate-button2,
+.translate-button-control {
   position: relative;
 }
 

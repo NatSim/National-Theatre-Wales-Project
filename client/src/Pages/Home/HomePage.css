@@ -31,11 +31,13 @@ body {
   border-top-width: 0.5px;
 }
 /* Middle button nav-END*/
+.sidenav-container,
 .subtitle1,
 .subtitle2,
 .middle-nav-list,
 h2,
-.trigger-pop-up {
+.trigger-pop-up,
+.translate-button2 {
   position: relative;
 }
 
