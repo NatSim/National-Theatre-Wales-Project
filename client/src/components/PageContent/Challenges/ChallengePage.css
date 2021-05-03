@@ -133,11 +133,17 @@ body {
 }
 
 .intro-text {
-  margin: 0px 60px;
   padding: 0px 0px 30px 0px;
   background-color: white;
   border-radius: 10px;
 }
+
+@media only screen and (min-width: 801px) {
+  .intro-text {
+    margin: 0px 60px;
+  }
+}
+
 /*act control transitionIn (from homepage.css)*/
 .act-control-child {
   animation: transitionIn 25s;
