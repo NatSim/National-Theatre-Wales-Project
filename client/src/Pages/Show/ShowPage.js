@@ -28,43 +28,51 @@ const ShowPage = () => {
         <div className="section-child-container">
           <ul className="section-list-style-control">
             <li className="co-creator-control">
-              Naomi Chiffi <p> {t("coCreators.0")}</p>
+              Naomi Chiffi{" "}
+              <p className="text-color-green"> {t("coCreators.0")}</p>
             </li>
 
             <li className="co-creator-control">
-              Diana Ford<p> {t("coCreators.1")}</p>
+              Diana Ford<p className="text-color-green"> {t("coCreators.1")}</p>
             </li>
 
             <li className="co-creator-control">
-              Sita Thomas<p>{t("coCreators.2")}</p>
+              Sita Thomas<p className="text-color-green">{t("coCreators.2")}</p>
             </li>
 
             <li className="co-creator-control">
-              Gavin Porter<p> {t("coCreators.3")}</p>
+              Gavin Porter
+              <p className="text-color-green"> {t("coCreators.3")}</p>
             </li>
 
             <li className="co-creator-control">
-              Julia Thomas<p> {t("coCreators.3")}</p>
+              Julia Thomas
+              <p className="text-color-green"> {t("coCreators.3")}</p>
             </li>
 
             <li className="co-creator-control">
-              Almir Koldzic<p> {t("coCreators.3")}</p>
+              Almir Koldzic
+              <p className="text-color-green"> {t("coCreators.3")}</p>
             </li>
 
             <li className="co-creator-control">
-              Joe Sullivan<p> {t("coCreators.4")}</p>
+              Joe Sullivan
+              <p className="text-color-green"> {t("coCreators.4")}</p>
             </li>
 
             <li className="co-creator-control">
-              Jack Abbott<p> {t("coCreators.5")}</p>
+              Jack Abbott
+              <p className="text-color-green"> {t("coCreators.5")}</p>
             </li>
 
             <li className="co-creator-control">
-              Joe Sullivan<p> {t("coCreators.6")}</p>
+              Joe Sullivan
+              <p className="text-color-green"> {t("coCreators.6")}</p>
             </li>
 
             <li className="co-creator-control">
-              Chloe Barnes<p> {t("coCreators.7")}</p>
+              Chloe Barnes
+              <p className="text-color-green"> {t("coCreators.7")}</p>
             </li>
           </ul>
         </div>
@@ -72,35 +80,43 @@ const ShowPage = () => {
         <div className="section-child-container">
           <ul className="section-list-style-control">
             <li className="co-creator-control">
-              Gemma Thomas<p> {t("productionTeam.0")}</p>
+              Gemma Thomas
+              <p className=" text-color-orange"> {t("productionTeam.0")}</p>
             </li>
 
             <li className="co-creator-control">
-              Becca Moore<p> {t("productionTeam.1")}</p>
+              Becca Moore
+              <p className=" text-color-orange"> {t("productionTeam.1")}</p>
             </li>
 
             <li className="co-creator-control">
-              Devinda De Silva<p> {t("productionTeam.2")}</p>
+              Devinda De Silva
+              <p className=" text-color-orange"> {t("productionTeam.2")}</p>
             </li>
 
             <li className="co-creator-control">
-              Rachel John<p> {t("productionTeam.3")}</p>
+              Rachel John
+              <p className=" text-color-orange"> {t("productionTeam.3")}</p>
             </li>
 
             <li className="co-creator-control">
-              Sophie Lewis<p> {t("productionTeam.4")}</p>
+              Sophie Lewis
+              <p className=" text-color-orange"> {t("productionTeam.4")}</p>
             </li>
 
             <li className="co-creator-control">
-              Fahadi Mukulu<p>{t("productionTeam.5")}</p>
+              Fahadi Mukulu
+              <p className=" text-color-orange">{t("productionTeam.5")}</p>
             </li>
 
             <li className="co-creator-control">
-              Ceri James<p> {t("productionTeam.6")}</p>
+              Ceri James
+              <p className=" text-color-orange"> {t("productionTeam.6")}</p>
             </li>
 
             <li className="co-creator-control">
-              Gemma Green Hope<p> {t("productionTeam.7")}</p>
+              Gemma Green Hope
+              <p className=" text-color-orange"> {t("productionTeam.7")}</p>
             </li>
           </ul>
         </div>
@@ -108,44 +124,53 @@ const ShowPage = () => {
         <div className="section-child-container">
           <ul className="section-list-style-control">
             <li className="co-creator-control">
-              Tom Frost<p> {t("productionTeam2.0")}</p>
+              Tom Frost
+              <p className="text-color-blue"> {t("productionTeam2.0")}</p>
             </li>
 
             <li className="co-creator-control">
-              Jon Foreman<p>{t("productionTeam2.1")}</p>
+              Jon Foreman
+              <p className="text-color-blue">{t("productionTeam2.1")}</p>
             </li>
 
             <li className="co-creator-control">
-              Dave Hammerton<p> {t("productionTeam2.2")}</p>
+              Dave Hammerton
+              <p className="text-color-blue"> {t("productionTeam2.2")}</p>
             </li>
 
             <li className="co-creator-control">
-              Ivan Black<p> {t("productionTeam2.3")}</p>
+              Ivan Black
+              <p className="text-color-blue"> {t("productionTeam2.3")}</p>
             </li>
 
             <li className="co-creator-control">
-              John Lawrence<p>{t("productionTeam2.4")}</p>
+              John Lawrence
+              <p className="text-color-blue">{t("productionTeam2.4")}</p>
             </li>
 
             <li className="co-creator-control">
-              Jess Ward<p> {t("productionTeam2.5")}</p>
+              Jess Ward
+              <p className="text-color-blue"> {t("productionTeam2.5")}</p>
             </li>
 
             <li className="co-creator-control">
-              Kristian Westmacott<p> {t("productionTeam2.6")}</p>
+              Kristian Westmacott
+              <p className="text-color-blue"> {t("productionTeam2.6")}</p>
             </li>
 
             <li className="co-creator-control">
-              David Pepper<p>{t("productionTeam2.7")}</p>
+              David Pepper
+              <p className="text-color-blue">{t("productionTeam2.7")}</p>
             </li>
 
             <li className="co-creator-control">
               Molara Awen {`&`} Jenny Guard <br />
-              {t("spanArtsThanks")}
+              <p className="text-color-blue">{t("spanArtsThanks")}</p>
             </li>
 
             <li className="co-creator-control">
-              Sabrina Evans<p> {t("productionTeam2.8")}</p>
+              Sabrina Evans
+              <p className="text-color-blue"> {t("productionTeam2.8")}</p>
             </li>
           </ul>
         </div>
@@ -154,51 +179,63 @@ const ShowPage = () => {
         <div className=" section-child-container">
           <ul className="section-list-style-control">
             <li className="co-creator-control">
-              Samba Doc<p>{t("productionTeam3.0")}</p>
+              Samba Doc
+              <p className="text-color-pink">{t("productionTeam3.0")}</p>
             </li>
 
             <li className="co-creator-control">
-              Kelly Bannister<p> {t("productionTeam3.1")}</p>
+              Kelly Bannister
+              <p className="text-color-pink"> {t("productionTeam3.1")}</p>
             </li>
 
             <li className="co-creator-control">
-              Fran Evans<p>{t("productionTeam3.2")}</p>
+              Fran Evans
+              <p className="text-color-pink">{t("productionTeam3.2")}</p>
             </li>
 
             <li className="co-creator-control">
-              Jack Waring<p> {t("productionTeam3.3")}</p>
+              Jack Waring
+              <p className="text-color-pink"> {t("productionTeam3.3")}</p>
             </li>
 
             <li className="co-creator-control">
-              Laura Chapman<p> {t("productionTeam3.3")}</p>
+              Laura Chapman
+              <p className="text-color-pink"> {t("productionTeam3.3")}</p>
             </li>
 
             <li className="co-creator-control">
-              Georgia Daniels<p> {t("productionTeam3.3")}</p>
+              Georgia Daniels
+              <p className="text-color-pink"> {t("productionTeam3.3")}</p>
             </li>
 
             <li className="co-creator-control">
-              Sanjyokta Deshmukh<p> {t("productionTeam3.4")}</p>
+              Sanjyokta Deshmukh
+              <p className="text-color-pink"> {t("productionTeam3.4")}</p>
             </li>
 
             <li className="co-creator-control">
-              Wayne Boucher<p> {t("productionTeam3.5")}</p>
+              Wayne Boucher
+              <p className="text-color-pink"> {t("productionTeam3.5")}</p>
             </li>
 
             <li className="co-creator-control">
-              Wil Eiddan Richardson<p> {t("productionTeam3.6")}</p>
+              Wil Eiddan Richardson
+              <p className="text-color-pink"> {t("productionTeam3.6")}</p>
             </li>
 
             <li className="co-creator-control">
-              Rowan Chitania<p> {t("productionTeam3.6")}</p>
+              Rowan Chitania
+              <p className="text-color-pink"> {t("productionTeam3.6")}</p>
             </li>
 
             <li className="co-creator-control">
-              Blaise Bullimore<p> {t("productionTeam3.7")}</p>
+              Blaise Bullimore
+              <p className="text-color-pink"> {t("productionTeam3.7")}</p>
             </li>
 
             <li className="co-creator-control">
-              Gareth Davies<p>{t("productionTeam3.8")}</p>
+              Gareth Davies
+              <p className="text-color-pink">{t("productionTeam3.8")}</p>
             </li>
           </ul>
         </div>
@@ -210,83 +247,84 @@ const ShowPage = () => {
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">
-              Phil Okwedy <p>Seer</p>{" "}
+              Phil Okwedy <p className="text-color-green">Seer</p>{" "}
             </li>
 
             <li className="cast-list-control">
-              Tristan Edmonds <p>Dryw</p>
+              Tristan Edmonds <p className="text-color-green">Dryw</p>
             </li>
 
             <li className="cast-list-control">
-              Sophie Grehan<p> {t("cast.0")}</p>
+              Sophie Grehan<p className="text-color-green"> {t("cast.0")}</p>
             </li>
 
             <li className="cast-list-control">
-              Hannah La-Trobe<p> {t("cast.0")}</p>
+              Hannah La-Trobe<p className="text-color-green"> {t("cast.0")}</p>
             </li>
 
             <li className="cast-list-control">
-              Francesca Tebbutt <p> {t("cast.0")}</p>
+              Francesca Tebbutt{" "}
+              <p className="text-color-green"> {t("cast.0")}</p>
             </li>
 
             <li className="cast-list-control">
-              Abigail Beck <p>{t("cast.1")}</p>
+              Abigail Beck <p className="text-color-green">{t("cast.1")}</p>
             </li>
 
             <li className="cast-list-control">
-              Melissa Phillips <p> Gwenyn</p>
+              Melissa Phillips <p className="text-color-green"> Gwenyn</p>
             </li>
 
             <li className="cast-list-control">
-              Mirelle Gipson<p>Hedd</p>
+              Mirelle Gipson<p className="text-color-green">Hedd</p>
             </li>
 
             <li className="cast-list-control">
-              Kristian Westmacott<p>Mabon</p>
+              Kristian Westmacott<p className="text-color-green">Mabon</p>
             </li>
 
             <li className="cast-list-control">
-              Ben Hughes <p> {t("cast.2")}</p>
+              Ben Hughes <p className="text-color-green"> {t("cast.2")}</p>
             </li>
 
             <li className="cast-list-control">
-              Oscar Kinnard<p> {t("cast.2")}</p>
+              Oscar Kinnard<p className="text-color-green"> {t("cast.2")}</p>
             </li>
 
             <li className="cast-list-control">
-              Kenton Lloyd Morgan <p>Ywen</p>
+              Kenton Lloyd Morgan <p className="text-color-green">Ywen</p>
             </li>
 
             <li className="cast-list-control">
-              Ava Thomas<p>{t("cast.3")}</p>
+              Ava Thomas<p className="text-color-green">{t("cast.3")}</p>
             </li>
 
             <li className="cast-list-control">
-              Raph Chiffi<p>{t("cast.3")}</p>
+              Raph Chiffi<p className="text-color-green">{t("cast.3")}</p>
             </li>
 
             <li className="cast-list-control">
-              Ivy Chiffi<p> {t("cast.3")}</p>
+              Ivy Chiffi<p className="text-color-green"> {t("cast.3")}</p>
             </li>
 
             <li className="cast-list-control">
-              Gruff Chiffi<p> {t("cast.3")}</p>
+              Gruff Chiffi<p className="text-color-green"> {t("cast.3")}</p>
             </li>
 
             <li className="cast-list-control">
-              Rachel John<p> {t("cast.3")}</p>
+              Rachel John<p className="text-color-green"> {t("cast.3")}</p>
             </li>
 
             <li className="cast-list-control">
-              Judith Humphreys <p>Zephyr</p>
+              Judith Humphreys <p className="text-color-green">Zephyr</p>
             </li>
 
             <li className="cast-list-control">
-              Molara Awen<p>Petra</p>
+              Molara Awen<p className="text-color-green">Petra</p>
             </li>
 
             <li className="cast-list-control">
-              Sanjyokta Deshmukh<p>Môr</p>
+              Sanjyokta Deshmukh<p className="text-color-green">Môr</p>
             </li>
           </ul>
         </div>

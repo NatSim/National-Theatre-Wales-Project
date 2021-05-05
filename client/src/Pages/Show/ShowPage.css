@@ -42,3 +42,25 @@
 .cast-list-control {
   padding: 10px;
 }
+
+.text-color-green {
+  color: #82d121;
+  text-shadow: 0 0 black;
+}
+
+.text-color-orange {
+  color: #ff9f00;
+  text-shadow: 0 0 black;
+}
+
+.text-color-blue {
+  color: #00c1a2;
+
+  text-shadow: 0 0 black;
+}
+
+.text-color-pink {
+  color: #ff2f69;
+
+  text-shadow: 0 0 black;
+}
