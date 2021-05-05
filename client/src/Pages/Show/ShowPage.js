@@ -331,7 +331,7 @@ const ShowPage = () => {
         {/* Section 5 Credits Cast2*/}
         <div className=" section-child-container">
           <h3>
-            <u>{t("castTitle.1")}</u>
+            <u className="text-color-green ">{t("castTitle.1")}</u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">Ruby Stephens </li>
@@ -356,11 +356,11 @@ const ShowPage = () => {
         {/* Section 6 Credits Cast3 Community Gardeners*/}
         <div className=" section-child-container">
           <h3>
-            <u>{t("castTitle.2")}</u>
+            <u className="text-color-blue">{t("castTitle.2")}</u>
           </h3>
           <br />
           <h3>
-            <u>{t("castTitle.3")}</u>
+            <u className="text-color-blue">{t("castTitle.3")}</u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">Ben Manning </li>
@@ -389,7 +389,7 @@ const ShowPage = () => {
         {/* Section 7 Credits Cast4 Community Protestors*/}
         <div className=" section-child-container">
           <h3>
-            <u>{t("castTitle.4")}</u>
+            <u className="text-color-blue">{t("castTitle.4")}</u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">Josh Beynon </li>
@@ -412,7 +412,9 @@ const ShowPage = () => {
         {/* Section 8 Credits Cast4 Community Get the boys a lift*/}
         <div className=" section-child-container">
           <h3>
-            <u>{t("castTitle.4")}-Get the Boys a Lift</u>
+            <u className="text-color-blue">
+              {t("castTitle.4")}-Get the Boys a Lift
+            </u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">Ryan Evans </li>
@@ -424,7 +426,7 @@ const ShowPage = () => {
             <li className="cast-list-control">Amsaal Maqsood</li>
           </ul>
           <h3>
-            <u>{t("castTitle.4")}- VC Gallery </u>
+            <u className="text-color-blue">{t("castTitle.4")}- VC Gallery </u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">Ryan Wilson </li>
@@ -435,7 +437,7 @@ const ShowPage = () => {
         {/* Section 8 Credits Cast5 Artist inspired by Nature*/}
         <div className=" section-child-container">
           <h3>
-            <u>{t("castTitle.5")}</u>
+            <u className="text-color-blue ">{t("castTitle.5")}</u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">David Pepper </li>
@@ -450,7 +452,7 @@ const ShowPage = () => {
         {/* Section 8 Credits Cast6 Surfers*/}
         <div className=" section-child-container">
           <h3>
-            <u>{t("castTitle.6")}</u>
+            <u className="text-color-blue">{t("castTitle.6")}</u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">Harry Cromwell </li>
@@ -461,7 +463,7 @@ const ShowPage = () => {
         {/* Section 8 Credits Cast7 Blue tit swimmers*/}
         <div className=" section-child-container">
           <h3>
-            <u>{t("castTitle.7")}</u>
+            <u className="text-color-blue">{t("castTitle.7")}</u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">Anna Grime</li>
@@ -482,7 +484,7 @@ const ShowPage = () => {
         {/* Section 8 Credits Cast8 Verbatim interviews*/}
         <div className=" section-child-container">
           <h3>
-            <u>{t("castTitle.8")}</u>
+            <u className="text-color-blue">{t("castTitle.8")}</u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">Diana Ford </li>
@@ -495,7 +497,7 @@ const ShowPage = () => {
         {/* Section 8 Credits Cast8 candlelight vigil*/}
         <div className=" section-child-container">
           <h3>
-            <u>{t("castTitle.9")}</u>
+            <u className="text-color-blue">{t("castTitle.9")}</u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">Rachael Bush</li>
@@ -514,7 +516,7 @@ const ShowPage = () => {
         {/* Section 8 Credits Cast9 candlelit vigil choir*/}
         <div className=" section-child-container">
           <h3>
-            <u>{t("castTitle.10")}</u>
+            <u className="text-color-blue">{t("castTitle.10")}</u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">Alice Davidson </li>
@@ -543,7 +545,7 @@ const ShowPage = () => {
         {/* Section 8 Credits Cast10 Footage submitted community*/}
         <div className=" section-child-container">
           <h3>
-            <u>{t("castTitle.11")}</u>
+            <u className="text-color-blue">{t("castTitle.11")}</u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">Adam Morgan </li>
@@ -616,7 +618,7 @@ const ShowPage = () => {
         {/* Section 8 Credits With Thanks*/}
         <div className=" section-child-container">
           <h3>
-            <u>{t("castTitle.12")}</u>
+            <u className="text-color-blue">{t("castTitle.12")}</u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">
@@ -640,7 +642,7 @@ const ShowPage = () => {
         <div className=" section-child-container">
           <h3>{t("castTitle.13")}</h3>
           <h3>
-            <u>{t("castTitle.14")}</u>
+            <u className="text-color-blue">{t("castTitle.14")}</u>
           </h3>
           <ul className="section-list-style-control">
             <li className="cast-list-control">{t("specialThanks.0")} </li>
