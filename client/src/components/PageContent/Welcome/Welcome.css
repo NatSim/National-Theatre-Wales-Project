@@ -132,7 +132,7 @@ body {
   right: 0;
   bottom: 0;
   background-image: url(../../../images/SAboards/3boardlandscape.jpg);
-  background-size: auto;
+  background-size: cover;
   opacity: 0.5;
 }
 
