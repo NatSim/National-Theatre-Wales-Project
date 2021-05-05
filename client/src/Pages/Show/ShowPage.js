@@ -28,42 +28,34 @@ const ShowPage = () => {
         <div className="section-child-container">
           <ul className="section-list-style-control">
             <li className="co-creator-control">
-              {" "}
               Naomi Chiffi <p> {t("coCreators.0")}</p>
             </li>
 
             <li className="co-creator-control">
-              {" "}
               Diana Ford<p> {t("coCreators.1")}</p>
             </li>
 
             <li className="co-creator-control">
-              {" "}
               Sita Thomas<p>{t("coCreators.2")}</p>
             </li>
 
             <li className="co-creator-control">
-              {" "}
               Gavin Porter<p> {t("coCreators.3")}</p>
             </li>
 
             <li className="co-creator-control">
-              {" "}
               Julia Thomas<p> {t("coCreators.3")}</p>
             </li>
 
             <li className="co-creator-control">
-              {" "}
               Almir Koldzic<p> {t("coCreators.3")}</p>
             </li>
 
             <li className="co-creator-control">
-              {" "}
               Joe Sullivan<p> {t("coCreators.4")}</p>
             </li>
 
             <li className="co-creator-control">
-              {" "}
               Jack Abbott<p> {t("coCreators.5")}</p>
             </li>
 
@@ -394,7 +386,6 @@ const ShowPage = () => {
             <li className="cast-list-control">Amsaal Maqsood</li>
           </ul>
           <h3>
-            {" "}
             <u>{t("castTitle.4")}- VC Gallery </u>
           </h3>
           <ul className="section-list-style-control">
@@ -630,7 +621,6 @@ const ShowPage = () => {
             <li className="cast-list-control"> Ysgol Hafan y Môr </li>
             <li className="cast-list-control">Mena Evans</li>
             <li className="cast-list-control">
-              {" "}
               Robert Jakes, Sand Palace Arts{" "}
             </li>
             <li className="cast-list-control">Kerry Steed </li>
