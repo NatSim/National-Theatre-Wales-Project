@@ -26,3 +26,18 @@
 .programme-info-control {
   position: relative;
 }
+
+/*Section Style*/
+.section-child-container {
+  border-bottom-style: inset;
+}
+.section-list-style-control {
+  list-style: none;
+}
+
+.co-creator-control {
+  padding: 10px;
+}
+.cast-list-control {
+  padding: 10px;
+}
