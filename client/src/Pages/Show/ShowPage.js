@@ -640,7 +640,7 @@ const ShowPage = () => {
         </div>
         {/* Section 8 Credits With Special Thanks*/}
         <div className=" section-child-container">
-          <h3>{t("castTitle.13")}</h3>
+          <h3 className="text-color-blue">{t("castTitle.13")}</h3>
           <h3>
             <u className="text-color-blue">{t("castTitle.14")}</u>
           </h3>
@@ -657,7 +657,8 @@ const ShowPage = () => {
             <li className="cast-list-control">{t("specialThanks.5")} </li>
             <li className="cast-list-control">Ysgol Bro Gwaun </li>
             <li className="cast-list-control">{t("specialThanks.6")} </li>
-            <li className="cast-list-control"> St Oswald</li>
+            <li className="cast-list-control"> Ysgol Gelli Aur</li>
+            <li className="cast-list-control"> {t("specialThanks.7")}</li>
             <li className="cast-list-control"> Ysgol Hafan y Môr </li>
             <li className="cast-list-control">Mena Evans</li>
             <li className="cast-list-control">
