@@ -63,3 +63,13 @@
 
   text-shadow: 0 0 black;
 }
+
+/* Show Copy */
+
+.text-border-control {
+  margin: 20px 20px 20px 20px;
+  text-align: justify;
+  padding: 5%;
+  border-style: solid;
+  border-width: thin;
+}

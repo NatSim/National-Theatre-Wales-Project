@@ -21,7 +21,8 @@
   },
   "title_ntw": "Ynglun NTW",
   "description2": "Cymru y wlad yw ein llwyfan.Cydweithredu. Gwneud. Ysbrydoli. Rydym yn cydweithio â phobl a lleoedd i wneud theatr ryfeddol sy’n ysbrydoli newid. O’r agos-atoch-chi i’r epig, mae ein gwaith yn rymus, yn ddewr ac yn annisgwyl. Mae National Theatre Wales wedi bod yn gwneud cynyrchiadau Saesneg mewn lleoliadau ledled Cymru, y DU, yn rhyngwladol ac ar-lein ers mis Mawrth 2010. Mae’n gweithredu o leoliad bach yng nghanol dinas Caerdydd, ond mae’n gweithio ar draws y wlad a thu hwnt, gan ddefnyddio tirlun cyfoethog ac amrywiol Cymru, ei threfi, ei dinasoedd a’i phentrefi, ei straeon anhygoel a’i thalent gyfoethog yn ysbrydoliaeth. Mae Llywodraeth Cymru a Chyngor Celfyddydau Cymru yn cefnogi National Theatre Wales. nationaltheatrewales.org @ntwtweets",
-  "subcribeText":"","subscribeButton":"TANYSGRIFIWCH",
+  "subcribeText":"Cofrestrwch ar gyfer ein cylchlythyr i gael diweddariadau rheolaidd a'r holl newyddion diweddaraf. Cliciwch tanysgrifio i dderbyn ein cylchlythyr:",
+  "subscribeButton":"TANYSGRIFIWCH",
   "subscribeHref":"https://www.nationaltheatrewales.org/cy/#signup",
   "signUpHref":"https://community.nationaltheatrewales.org/group/ntwteam",
   "signUpText":"Sign Up to TEAM Today!-welsh",
@@ -140,22 +141,24 @@
   "text7": "Tua 70,000 o flynyddoedd yn ôl gadawodd grŵp o ddim mwy na 1000 Homo Sapiens ddwyrain Affrica? Dros y 30,000 o flynyddoedd nesaf fe wnaethon nhw boblogi gweddill y byd - a cherddon nhw'r holl ffordd, sy'n gwneud Affrica yn gartref i'r hil ddynol.",
   "quote7": "'Ond mae’r harddwch yn y cerdded – cawn ein twyllo gan gyrchfannau' Gwyn Thomas",
   "homeSubtitleDiscover": "Darganfod",
-  "homeNavContent": ["Cysylltu", "Gwrandewch", "Deddf", "Mapiau"],
+  "homeNavContent": ["Straeon", "Gwrandewch", "Deddf", "Mapiau"],
   "homeSubtitleExplore": "Archwilio",
   "featureCard1": [
     "National Theatre Wales",
-    "Find out about National Theatre Wales-welsh",
+    "Darganfyddwch fwy am National Theatre Wales",
     "Cliciwch yma"
   ],
   "featureCard2": [
     "Ymunwch â  TEAM",
-    "Enjoy the Arts, Theatre Shows and more? Get involved here-welsh"
+    "Mwynhau'r Celfyddydau, Theatr a mwy? Cymerwch ran yma"
   ],
   "featureCard3": [
     "Cysylltwch â Ni",
-    "To find out more, contact us here-welsh"
+    " I ddarganfod mwy, cysylltwch â ni yma"
   ],
   "showProgramme":"Rhaglen Dangos",
+  "showCopy":["Mae tywyllwch ar y gorwel - rhywbeth yn ymgripio'n agosach sy'n adleisio’r düwch a orchuddiodd y tir a'r môr 25 mlynedd yn ôl. Gall y gwenyn, fu unwaith yn ffrindiau i ni gan rannu'n cyfrinachau, synhwyro'r perygl ac maent yn paratoi i ffoi. Hebddyn nhw bydd ecosystem y Ddaear a'n cymunedau yn chwalu.","Mae un plentyn bach sydd â chysylltiad arbennig â'r byd naturiol yn synhwyro'r perygl. Ymunwch ag ef ar daith epig wrth iddo deithio drwy Sir Benfro gyda dim ond pedair awr ar hugain i'n hail-gysylltu â natur a'n gilydd i helpu i argyhoeddi'r gwenyn i aros. Mae Go Tell The Bees yn ffilm a wnaed gyda phobl Sir Benfro, ganddyn nhw ac ar eu cyfer. Wedi'i datblygu gan NTW TEAM dros bedair blynedd mewn cydweithrediad ag artistiaid a chymunedau lleol, mae'n archwilio'r hyn sydd wedi newid yn y blynyddoedd ers trychineb y Sea Empress a sut, gydag ychydig o weithredoedd syml, y gallwn newid y ffordd yr ydym yn cysylltu â'r byd naturiol a'n gilydd."],
+
   "coCreators":["Cyd-Grëwr & Awdur","Cyd-Grëwr & Dylunydd","Cyd-Grëwr & Cyfarwyddwr"," Cyd-Grëwr","Cyfarwyddwr Ffotograffiaeth ","Cyfarwyddwr Ffotograffiaeth 2il Uned","Golygydd  ","Cynhyrchydd"],"productionTeam":[" Rheolwr Llwyfan Y Cwmni","Rheolwr Llwyfan","Pennaeth Cydweithredu NTW","Cyswllt TEAM NTW (Sir Benfro)","Cynorthwyydd TEAM NTW","Cyfarwyddwr Cyswllt","Dylunydd Goleuadau","Animeiddio"],
 "productionTeam2":["Dylunio Graffeg","Artist Tir","Saer","Dylunio Ychwanegol","Cyfansoddwr","Cyfansoddi ychwanegol a thelynor"," Lleisiau gwenyn","Cyfansoddiad piano","Geiriau, Catch This Quiet"],
 "spanArtsThanks":"Molara Awen & Jenny Guard  gyda diolch i Span Arts Cyfansoddiadau corawl",  
@@ -170,8 +173,8 @@
 "withThanks":["Coedwig Ty Canol"," Gardd Bwthyn, Penfro"," Castell Maenorbŷr","Cyfoeth Naturiol Cymru"," Parc Cenedlaethol Arfordir Sir Benfro","Cyngor Sir Penfro","Cyngor Tref Dinbych-y-pysgod","Fferm Winterton, Marloes"],
 "specialThanks":["Holl Arddwyr Penfro a Doc Penfro"," Theatr Torch","Maenorbŷr","Ysgol a reolir yn wirfoddol yr Eglwys yng Nghymru, Maenorbŷr","Ysgol Greenhil, Dinbych-y-Pysgod"," Ysgol Gyfun Aberdaugleddau","Ysgol Uwchradd a reolir yn wirfoddol Hwlffordd","Ysgol a reolir yn wirfoddol yr Eglwys yng Nghymru St Oswald","Ysgol a reolir yn wirfoddol yr Eglwys yng Nghymru","Canolfan Dysgu Sir Benfro"], "sustainable":["Cyn Gydymaith TEAM (Sir Benfro)","Cyn Gydymaith TEAM (Sir Benfro)","Cyn Gydymaith TEAM (Sir Benfro)"],
 
-"mapContent":["Simple Act Locations-welsh"],"mapAct":["1. Plannwch Hedyn","2. Ewch Am Dro","3. Cysylltwch   Rhywun Newydd","4. Gwastraffwch Ychydig Yn Llai","5. Ystyriwch Y Sêr","6. Byddwch Yn Garedig  'ch Cymydog","7. Dysgwch Un Peth Newydd Am Natur"],"mapLocation":["St Davids Pollinator Trail:"],"challengeButton":"Da iawn!🎉",
-  "navList":["Adref","Am","Cysylltu","Gwrandewch","Deddf","TEAM","Contact"],
+"mapContent":["Lleoliadau Gweithred Syml"],"mapAct":["1. Plannwch Hedyn","2. Ewch Am Dro","3. Cysylltwch   Rhywun Newydd","4. Gwastraffwch Ychydig Yn Llai","5. Ystyriwch Y Sêr","6. Byddwch Yn Garedig  'ch Cymydog","7. Dysgwch Un Peth Newydd Am Natur"],"mapLocation":["St Davids Pollinator Trail:"],"challengeButton":"Da iawn!🎉",
+  "navList":["Adref","Am","Straeon","Gwrandewch","Deddf","TEAM","Contact"],
   "welcomeComponent": [
     "Croeso i",
     "Go Tell The Bees",

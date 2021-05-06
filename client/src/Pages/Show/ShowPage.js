@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Header from "../../components/Header/Header";
 import SideNav from "../../components/Nav/SideNav";
+import ShowCopy from "../Show/ShowCopy";
 import "./ShowPage.css";
 
 const ShowPage = () => {
@@ -23,6 +24,7 @@ const ShowPage = () => {
       {/* Translation Button END HERE */}
       <div className="live-background-container"></div>
       <h2 className="subtitle5">{t("showProgramme")}</h2>
+      <ShowCopy />
       {/* Section 1 Credits */}
       <section className=" programme-container-control">
         <div className="section-child-container">
