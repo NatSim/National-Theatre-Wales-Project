@@ -25,7 +25,7 @@ function LandingPage() {
     setMainText(welcomeText[arrayElement].mainText);
   };
 
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };

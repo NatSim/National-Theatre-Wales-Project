@@ -6,10 +6,6 @@ import "./MusicPage.css";
 import SideNav from "../../components/Nav/SideNav";
 
 const MusicPage = () => {
-  const videoMusic = "https://www.youtube.com/watch?v=K37qZvu5zio";
-  const soundCloudExample =
-    "https://soundcloud.com/lavish/informal-never-look-back";
-
   const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);

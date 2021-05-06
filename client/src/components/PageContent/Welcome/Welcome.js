@@ -10,10 +10,7 @@ import { useHistory } from "react-router";
  **/
 
 const Welcome = ({ mainText, onClickHandler, welcomeStep, id_1 }) => {
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
+  const { t } = useTranslation();
 
   const history = useHistory();
   //On Button click redirects user to home page
