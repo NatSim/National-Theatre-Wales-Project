@@ -124,7 +124,7 @@ const Footer = () => {
         <p>
           {t("footerContent.3")}
           <a
-            href="https://natsim-portfolio.netlify.app/"
+            href="https://natsim-portfolio.herokuapp.com/"
             target="_blank"
             rel="noreferrer"
           >
