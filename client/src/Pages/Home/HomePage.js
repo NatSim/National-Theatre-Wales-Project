@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./HomePage.css";
-import BeeStamp from "../../images/simple7/whole-beeimage.png";
+import BeeStamp from "../../images/Simple7/whole-beeimage.png";
 import Features from "../../components/PageContent/Features/Features";
 import NTWLogo from "../../images/logos/NTWLogo/NTW_Logo.png";
 import Party from "../../images/NTW/NTWHaverHub.jpg";

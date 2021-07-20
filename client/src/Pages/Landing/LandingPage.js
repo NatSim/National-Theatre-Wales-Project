@@ -4,14 +4,8 @@ import { useTranslation } from "react-i18next";
 import { welcomeText } from "../../Models/welcomeText";
 import "./LandingPage.css";
 import Header from "../../components/Header/Header";
-import Features from "../../components/PageContent/Features/Features";
-import NTWLogo from "../../images/logos/NTWLogo/NTW_Logo.png";
-import Party from "../../images/NTW/NTWHaverHub.jpg";
-import Tide from "../../images/TEAM/Tide-Whisperer-TEAM-Social-1-1.jpg";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
 import SideNav from "../../components/Nav/SideNav";
+import WelcomeTest from "../../components/PageContent/Welcome/WelcomeTest";
 
 function LandingPage() {
   const [title, setTitle] = useState(welcomeText[0].title);
@@ -48,12 +42,13 @@ function LandingPage() {
         {/* <section> */}
         <main className="title-container">
           <section>
-            <Welcome
+            {/* <Welcome
               welcomeStep={welcomeStep}
               onClickHandler={onClickHandler}
               title={title}
               mainText={mainText}
-            />
+            /> */}
+            <WelcomeTest />
           </section>
         </main>
         {/* Welcome container END HERE */}
@@ -62,7 +57,7 @@ function LandingPage() {
 
       {/* CARD container START HERE */}
 
-      <section className="card-container">
+      {/* <section className="card-container">
         <div className="explore-title-control">
           <h2>{i18n.t("homeSubtitleExplore")}</h2>
         </div>
@@ -100,7 +95,7 @@ function LandingPage() {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
 
       {/* CARD container END HERE */}
     </>

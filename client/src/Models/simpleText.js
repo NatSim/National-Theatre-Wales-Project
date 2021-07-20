@@ -1,10 +1,10 @@
-import BeKind from "../images/simple7/BeKind.jpg";
-import Connect from "../images/simple7/Connect.jpg";
-import Consider from "../images/simple7/Consider.jpg";
-import Consume from "../images/simple7/Consume.jpg";
-import Learn1 from "../images/simple7/Learn1.jpg";
-import Plant from "../images/simple7/Plant.jpg";
-import TakeAWalk from "../images/simple7/TakeAWalk.jpg";
+import BeKind from "../images/Simple7/BeKind.jpg";
+import Connect from "../images/Simple7/Connect.jpg";
+import Consider from "../images/Simple7/Consider.jpg";
+import Consume from "../images/Simple7/Consume.jpg";
+import Learn1 from "../images/Simple7/Learn1.jpg";
+import Plant from "../images/Simple7/Plant.jpg";
+import TakeAWalk from "../images/Simple7/TakeAWalk.jpg";
 /*Article Image Imports START HERE*/
 import CKCimage from "../images/SAboards/consume-kind-connect.jpg";
 import Consider1 from "../images/SAboards/consider-the-stars.jpg";
