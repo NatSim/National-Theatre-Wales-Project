@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Trans, useTranslation } from "react-i18next";
-import { MdSettingsBackupRestore } from "react-icons/md";
 
 function WelcomeTest() {
-  const { t } = useTranslation();
+  const { i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
 
   const sentences = [
-    "Welcome to GTTBs...",
-    "The story goes that...",
-    "So what will you...",
+    <Trans i18nKey="welcomeComponent.0"></Trans>,
+    <Trans i18nKey="welcomeStory.0"></Trans>,
+    <Trans i18nKey="welcomeQuestion.0"></Trans>,
   ];
 
   const [intro, setIntro] = useState(sentences[0]);
@@ -35,9 +37,11 @@ function WelcomeTest() {
   }, [intro]); // [] - means, it runs only once after mounting the component
 
   return (
-    <div>
-      <h1>{intro}</h1>
-    </div>
+    <>
+      <div>
+        <h1>{intro}</h1>
+      </div>
+    </>
   );
 }
 
