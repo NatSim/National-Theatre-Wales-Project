@@ -30,7 +30,7 @@ Before you continue, ensure you have met the following requirements:
 
 You have a basic understanding of React Framework/JavaScript
 React Functional Components
-Props and State
+React Hooks
 
 <h3>Contributors</h3>
 
