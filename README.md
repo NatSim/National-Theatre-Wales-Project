@@ -3,7 +3,7 @@
 
 This Project is called **Got Tell The Bees** and is a responsive 'Wellness' web application to go alongside a site-specific show aimed at a broad audience for **National Theatre Wales** . This app uses **React Framework**.
 
-View the site here :https://gotellthebees-testing.netlify.app/
+View the site here : https://www.gotellthebees.org/
 
 ## Project Structure
 
@@ -30,7 +30,7 @@ Before you continue, ensure you have met the following requirements:
 
 You have a basic understanding of React Framework/JavaScript
 React Functional Components
-Props and State
+React Hooks
 
 <h3>Contributors</h3>
 
