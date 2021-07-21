@@ -1,3 +1,11 @@
+body div > .background-bee-image {
+  background-image: url(../../images/Background-placeholders/bee_lowopacity.png);
+  background-size: cover;
+  height: 100vh;
+  background-color: aquamarine;
+  background-position: center;
+}
+
 /*NTW Logo */
 .ntw-main {
   max-width: 100%;

@@ -118,7 +118,8 @@ body {
 
 /*Background Image-Design(on Landing page/Contact page and ChallengeChoicePage)*/
 /*START*/
-.title-container {
+
+/* .title-container {
   animation: fadeIn 8s;
   padding: 7%;
   position: relative;
@@ -134,7 +135,7 @@ body {
   background-image: url(../../../images/SAboards/3boardlandscape.jpg);
   background-size: cover;
   opacity: 0.5;
-}
+} */
 
 /* @media only screen and (min-width: 1004px) {
   .title-container::before {

@@ -1,24 +1,11 @@
 import React, { useState } from "react";
-import Welcome from "../../components/PageContent/Welcome/Welcome";
 import { useTranslation } from "react-i18next";
-import { welcomeText } from "../../Models/welcomeText";
 import "./LandingPage.css";
 import Header from "../../components/Header/Header";
 import SideNav from "../../components/Nav/SideNav";
-import WelcomeTest from "../../components/PageContent/Welcome/WelcomeTest";
+import Welcome2 from "../../components/PageContent/Welcome/Welcome2";
 
 function LandingPage() {
-  const [title, setTitle] = useState(welcomeText[0].title);
-  const [mainText, setMainText] = useState(welcomeText[0].mainText);
-  const [welcomeStep, setWelcomeStep] = useState(0); //starting point
-
-  //Welcome Button onclick function Array Element
-  const onClickHandler = (arrayElement) => {
-    setWelcomeStep(arrayElement);
-    setTitle(welcomeText[arrayElement].title);
-    setMainText(welcomeText[arrayElement].mainText);
-  };
-
   const { i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -26,38 +13,33 @@ function LandingPage() {
 
   return (
     <>
-      <Header />
-      <nav className="sidenav-container">
-        <SideNav />
-      </nav>
-      {/* Translation Button START HERE */}
-      <div className="translate-button2">
-        <div className="translate-button-control">
-          <button onClick={() => changeLanguage("en")}>En</button>
-          <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
-          <hr />{" "}
+      <div className="background-bee-image">
+        <Header />
+        <nav className="sidenav-container">
+          <SideNav />
+        </nav>
+        {/* Translation Button START HERE */}
+        <div className="translate-button2">
+          <div className="translate-button-control">
+            <button onClick={() => changeLanguage("en")}>En</button>
+            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+            <hr />{" "}
+          </div>
+
+          {/* WELCOME container START HERE */}
+          {/* <section> */}
+          <main className="title-container">
+            <section>
+              <Welcome2 />
+            </section>
+          </main>
+          {/* Welcome container END HERE */}
+          {/* Translation Button END HERE */}
         </div>
 
-        {/* WELCOME container START HERE */}
-        {/* <section> */}
-        <main className="title-container">
-          <section>
-            {/* <Welcome
-              welcomeStep={welcomeStep}
-              onClickHandler={onClickHandler}
-              title={title}
-              mainText={mainText}
-            /> */}
-            <WelcomeTest />
-          </section>
-        </main>
-        {/* Welcome container END HERE */}
-        {/* Translation Button END HERE */}
-      </div>
+        {/* CARD container START HERE */}
 
-      {/* CARD container START HERE */}
-
-      {/* <section className="card-container">
+        {/* <section className="card-container">
         <div className="explore-title-control">
           <h2>{i18n.t("homeSubtitleExplore")}</h2>
         </div>
@@ -97,7 +79,8 @@ function LandingPage() {
         </Container>
       </section> */}
 
-      {/* CARD container END HERE */}
+        {/* CARD container END HERE */}
+      </div>
     </>
   );
 }

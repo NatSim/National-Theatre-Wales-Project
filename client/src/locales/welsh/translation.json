@@ -175,12 +175,12 @@
 
 "mapContent":["Lleoliadau Gweithred Syml"],"mapAct":["1. Plannwch Hedyn","2. Ewch Am Dro","3. Cysylltwch   Rhywun Newydd","4. Gwastraffwch Ychydig Yn Llai","5. Ystyriwch Y Sêr","6. Byddwch Yn Garedig  'ch Cymydog","7. Dysgwch Un Peth Newydd Am Natur"],"mapLocation":["St Davids Pollinator Trail:"],"challengeButton":"Da iawn!🎉",
   "navList":["Adref","Am","Straeon","Gwrandewch","Deddf","TEAM","Contact"],
-  "welcomeComponent": [
+  "welcomeComponent": 
     "Croeso i Go Tell The Bees,Go Tell The Bees Mae Go Tell the Bees yn gofyn i bob un ohonom berfformio saith act syml ,yn ein bywydau beunyddiol..."
-  ],
-  "welcomeStory": [
+  ,
+  "welcomeStory": 
     "Yn ôl y stori, pryd bynnag y byddwn yn methu â gwneud hynny, bydd y gwenyn yn gadael eu cychod ac yn diflannu o’n hardal …"
-  ], "welcomeQuestion":["felly, beth fyddwch chi’n ei ddweud wrth y gwenyn?  "],
+  , "welcomeQuestion":"felly, beth fyddwch chi’n ei ddweud wrth y gwenyn?  ",
   "welcomeButton":"Nesaf",
   "footerContent": [
     "Cysylltwch â Ni",

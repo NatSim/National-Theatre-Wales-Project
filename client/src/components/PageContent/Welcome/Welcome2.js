@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Trans, useTranslation } from "react-i18next";
+// import "./Welcome2.css";
 
 function WelcomeTest() {
   const { t } = useTranslation();
@@ -13,10 +14,6 @@ function WelcomeTest() {
     i18n.t("welcomeStory"),
     i18n.t("welcomeQuestion"),
   ];
-
-  // <span id="1">{t("welcomeComponent")}</span>,
-  //   <span id="2">{t("welcomeStory")}</span>,
-  //   <span id="3">{t("welcomeQuestion")}</span>,
 
   const [intro, setIntro] = useState(sentences[0]);
   //   console.log(sentences.indexOf(intro));
@@ -47,7 +44,7 @@ function WelcomeTest() {
 
   return (
     <>
-      <div>
+      <div className="background-image-bee">
         <h1>{intro}</h1>
       </div>
     </>
