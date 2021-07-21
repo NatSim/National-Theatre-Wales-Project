@@ -8,15 +8,19 @@ function WelcomeTest() {
     i18n.changeLanguage(language);
   };
 
-  const sentences = ["hello1", "bonjour2", "hola3"];
-  {
-    /* <Trans i18nKey="welcomeComponent.0"></Trans>,
-    <Trans i18nKey="welcomeStory.0"></Trans>,
-    <Trans i18nKey="welcomeQuestion.0"></Trans>, */
-  }
+  const sentences = [
+    i18n.t("welcomeComponent"),
+    i18n.t("welcomeStory"),
+    i18n.t("welcomeQuestion"),
+  ];
+
+  // <span id="1">{t("welcomeComponent")}</span>,
+  //   <span id="2">{t("welcomeStory")}</span>,
+  //   <span id="3">{t("welcomeQuestion")}</span>,
+
   const [intro, setIntro] = useState(sentences[0]);
-  console.log(sentences.indexOf(intro));
-  console.log(sentences.length);
+  //   console.log(sentences.indexOf(intro));
+  console.log(sentences);
 
   useEffect(() => {
     //ToDo: Change name every 3 seconds here
@@ -26,10 +30,11 @@ function WelcomeTest() {
 
       setIntro((previousIntro) => {
         let newIndex = sentences.indexOf(intro) + 1;
+        console.log(newIndex);
         if (newIndex === sentences.length) {
           newIndex = 0;
         }
-
+        console.log(newIndex);
         const newIntro = sentences[newIndex];
         return newIntro;
       });
