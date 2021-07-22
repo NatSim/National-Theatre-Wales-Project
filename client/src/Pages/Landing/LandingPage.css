@@ -1,8 +1,8 @@
-body div > .background-bee-image {
+.background-bee-image {
   background-image: url(../../images/Background-placeholders/bee_lowopacity.png);
   background-size: cover;
   height: 100vh;
-  background-color: aquamarine;
+  /* background-color: chocolate; */
   background-position: center;
 }
 

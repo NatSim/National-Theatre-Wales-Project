@@ -1,19 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "./LandingPage.css";
 import Header from "../../components/Header/Header";
 import SideNav from "../../components/Nav/SideNav";
 import Welcome2 from "../../components/PageContent/Welcome/Welcome2";
 
-function LandingPage() {
+function LandingPage(props) {
   const { i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
 
+  const setBeeBackground = () => {
+    if (LandingPage) {
+      //condition needs to be checked before landing page render
+      document.body.classList.add("background-bee-image");
+
+      console.log("SHOW BEE BACKGROUND!");
+    }
+  };
+
+  setBeeBackground();
+
   return (
     <>
-      <div className="background-bee-image">
+      <div id="content">
         <Header />
         <nav className="sidenav-container">
           <SideNav />
