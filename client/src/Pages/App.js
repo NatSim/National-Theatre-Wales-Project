@@ -18,16 +18,19 @@ import Footer from "../components/PageContent/Footer/Footer";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import AboutPageLogic from "../components/PageContent/AboutInfo/AboutPageLogic";
 import StoriesLogic from "./Connect/StoriesLogic";
+import Header from "../components/Header/Header";
 
 // // SERVICES
 // import userService from "../services/userService";
 
 //App Routes
-function App() {
+function App(props) {
+  console.log(props);
   return (
     <>
       <Router>
         <ScrollToTop />
+        <Header />
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route path="/home" component={HomePage} />

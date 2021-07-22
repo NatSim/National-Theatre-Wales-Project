@@ -1,7 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./LandingPage.css";
-import Header from "../../components/Header/Header";
 import SideNav from "../../components/Nav/SideNav";
 import Welcome2 from "../../components/PageContent/Welcome/Welcome2";
 
@@ -20,12 +19,11 @@ function LandingPage(props) {
     }
   };
 
-  setBeeBackground();
+  // setBeeBackground();
 
   return (
     <>
-      <div id="content">
-        <Header />
+      <div className="background-bee-image">
         <nav className="sidenav-container">
           <SideNav />
         </nav>
