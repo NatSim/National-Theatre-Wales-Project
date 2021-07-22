@@ -34,16 +34,16 @@ const HomePage = (props) => {
     i18n.changeLanguage(language);
   };
 
-  const removeBeeBackground = (props) => {
-    if (!props.LandingPage) {
+  const setBeeBackground = () => {
+    if (HomePage) {
       //condition needs to be checked before landing page render
-      document.body.classList.remove("background-bee-image");
-
-      console.log("REMOVE BEE BACKGROUND!");
+      document.body.classList.add("background-bee-image");
+      //SET UNIQUE HEX COLOR
+      console.log("SHOW BEE BACKGROUND!");
     }
   };
 
-  removeBeeBackground(props);
+  setBeeBackground();
 
   return (
     <>

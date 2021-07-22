@@ -15,7 +15,7 @@ function LandingPage(props) {
     if (LandingPage) {
       //condition needs to be checked before landing page render
       document.body.classList.add("background-bee-image");
-
+      //SET UNIQUE HEX COLOR
       console.log("SHOW BEE BACKGROUND!");
     }
   };

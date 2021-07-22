@@ -5,11 +5,23 @@ import SideNav from "../../components/Nav/SideNav";
 import ShowCopy from "../Show/ShowCopy";
 import "./ShowPage.css";
 
-const ShowPage = () => {
+const ShowPage = (props) => {
   const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
+
+  const removeBeeBackground = (props) => {
+    if (ShowPage) {
+      //condition needs to be checked before page render
+      document.body.classList.remove("background-bee-image");
+      //ADD UNIQUE hex inline styling
+      console.log("REMOVE BEE BACKGROUND!");
+    }
+  };
+
+  removeBeeBackground();
+
   return (
     <>
       <SideNav />
