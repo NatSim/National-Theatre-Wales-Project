@@ -29,7 +29,7 @@ function WelcomeTest() {
         const newIntro = sentences[newIndex];
         return newIntro;
       });
-    }, 3000);
+    }, 5000);
     //Clearing the timer when component unmounts
     return () => {
       clearInterval(timer);
@@ -39,7 +39,7 @@ function WelcomeTest() {
   return (
     <>
       <div className="welcome-text-control">
-        <h1>{intro}</h1>
+        <h1 className="welcome-child-text-control">{intro}</h1>
       </div>
     </>
   );
