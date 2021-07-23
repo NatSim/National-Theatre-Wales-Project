@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import "../Terms/TermsPage.css";
 import TermsContent from "../../components/PageContent/Terms/TermsContent";
 import SideNav from "../../components/Nav/SideNav";
-import Header from "../../components/Header/Header";
 
 const Terms = () => {
   const { t, i18n } = useTranslation();
@@ -14,7 +13,6 @@ const Terms = () => {
   return (
     <>
       <SideNav />
-      <Header />
       <div className="terms-page">
         <div className="translate-button2">
           <button onClick={() => changeLanguage("en")}>En</button>

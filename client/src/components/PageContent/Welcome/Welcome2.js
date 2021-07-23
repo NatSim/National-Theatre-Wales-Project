@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-// import "./Welcome2.css";
+import "./Welcome2.css";
 
 function WelcomeTest() {
   const { i18n } = useTranslation();
@@ -38,7 +38,7 @@ function WelcomeTest() {
 
   return (
     <>
-      <div className="background-image-bee">
+      <div className="welcome-text-control">
         <h1>{intro}</h1>
       </div>
     </>

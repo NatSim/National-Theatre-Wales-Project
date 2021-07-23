@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Header from "../../components/Header/Header";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import "./MusicPage.css";
 import SideNav from "../../components/Nav/SideNav";
@@ -13,7 +12,6 @@ const MusicPage = () => {
 
   return (
     <>
-      <Header />
       <SideNav />
       <main className="home-container-video4">
         {/* Translation Button START HERE */}

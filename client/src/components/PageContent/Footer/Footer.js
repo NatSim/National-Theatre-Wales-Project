@@ -7,7 +7,7 @@ import Counterpoints from "../../../images/logos/Counterpoints/Counterpoints.jpg
 import PHFLogo from "../../../images/logos/PaulHamlyn/PaulHamlynFoundation.jpg";
 import ACWColourLandscape from "../../../images/logos/ACW/ACWcolour.jpg";
 
-const Footer = () => {
+const Footer = (props) => {
   //Footer href Links
   const ntwFacebookPage = "https://www.facebook.com/nationaltheatrewales/";
   const ntwInstagramPage = "https://www.instagram.com/nationaltheatrewales/";
@@ -22,7 +22,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="home-footer">
+      <div className="">
         <ul className="socials-control">
           <li className="socials-link-control">
             <a

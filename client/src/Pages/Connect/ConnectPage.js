@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import SideNav from "../../components/Nav/SideNav";
-import Header from "../../components/Header/Header";
 
 const ConnectPage = (props) => {
   const NavButton = (props) => {
@@ -25,7 +24,7 @@ const ConnectPage = (props) => {
   return (
     <>
       <SideNav />
-      <Header />
+
       <main className="home-container-video5">
         {/* Translation Button START HERE */}
         <div className="translate-button">

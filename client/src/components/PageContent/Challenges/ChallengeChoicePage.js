@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import CompleteChallengeButton from "../../Buttons/CompleteChallengeButton";
-import Header from "../../../components/Header/Header";
 import SideNav from "../../Nav/SideNav";
 import BeeImage from "../../../images/proccession_graphics/STILL1.jpeg";
 import PathImage from "../../../images/proccession_graphics/STILL5.jpeg";
@@ -29,7 +28,6 @@ const ChallengeItem = (props) => {
     <>
       {/* Challenge top background START HERE */}
       <div className="challenge-page">
-        <Header />
         <SideNav />
 
         <section className="prompt-act-container">

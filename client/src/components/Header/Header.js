@@ -6,7 +6,7 @@ import "./Header.css";
 
 const Header = (props) => {
   const { t } = useTranslation();
-
+  const changeLanguage = (language) => {};
   return (
     <>
       <div className="header" id="nav-header">
@@ -27,6 +27,15 @@ const Header = (props) => {
           <Link to="/about/1" className="nav-child">
             <li className="nav-link-control"> TEAM </li>
           </Link>
+          {/* Translation Button START HERE
+          <div className="translate-button2">
+            <div className="translate-button-control">
+              <button onClick={() => changeLanguage("en")}>En</button>
+              <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+              <hr />{" "}
+            </div>
+            {/* Translation Button END HERE */}
+          {/* </div>  */}
         </ul>
       </div>
     </>

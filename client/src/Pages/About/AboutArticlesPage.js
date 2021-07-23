@@ -3,7 +3,6 @@ import { Trans, useTranslation } from "react-i18next";
 import "./AboutArticlesPage.css";
 import SideNav from "../../components/Nav/SideNav";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
-import Header from "../../components/Header/Header";
 import Projection from "../../images/connect/NTWHaverHub_projection.jpg";
 import YPeople from "../../images/connect/young_people.jpeg";
 import YPeople2 from "../../images/connect/young_people2.jpeg";
@@ -43,7 +42,6 @@ const AboutArticlesPage = (props) => {
   return (
     <>
       <SideNav />
-      <Header />
 
       <div>
         {/* NTW/TEAM Top Background-color Container-START HERE */}

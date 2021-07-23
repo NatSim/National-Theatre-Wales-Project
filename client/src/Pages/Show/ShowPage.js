@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Header from "../../components/Header/Header";
 import SideNav from "../../components/Nav/SideNav";
 import ShowCopy from "../Show/ShowCopy";
 import "./ShowPage.css";
@@ -25,7 +24,7 @@ const ShowPage = (props) => {
   return (
     <>
       <SideNav />
-      <Header />
+
       {/* Translation Button START HERE */}
       <div className="translate-button2">
         <div className="translate-button-control">

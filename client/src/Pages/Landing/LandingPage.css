@@ -18,9 +18,11 @@
 }
 
 .translate-button,
-.translate-button,
-.home-footer,
-ul {
+.translate-button2,
+.translate-button-control .home-footer,
+ul,
+header,
+.welcome-text-control {
   position: relative;
 }
 

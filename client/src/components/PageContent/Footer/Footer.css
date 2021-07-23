@@ -1,11 +1,21 @@
 .home-footer {
   font-size: 16px;
   padding: 0px 15px 0px 15px;
+  height: fit-content;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.home-footer-absolute {
+  font-size: 16px;
+  padding: 0px 15px 0px 15px;
   position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
 }
+
 .socials-control {
   margin: 0px 40px 0px 0px;
 }

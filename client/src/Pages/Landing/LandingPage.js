@@ -26,6 +26,14 @@ function LandingPage(props) {
 
   // setBeeBackground();
 
+  // const absoluteFooter = () => {
+  //   document.body.classList.add("home-footer-absolute");
+  // };
+
+  // absoluteFooter();
+
+  const setAbsolute = true;
+
   return (
     <>
       <div className="background-bee-image">
@@ -33,24 +41,24 @@ function LandingPage(props) {
           <SideNav />
         </nav>
         {/* Translation Button START HERE */}
-        <div className="translate-button2">
+        {/* <div className="translate-button2">
           <div className="translate-button-control">
             <button onClick={() => changeLanguage("en")}>En</button>
             <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
             <hr />{" "}
-          </div>
+          </div> */}
 
-          {/* WELCOME container START HERE */}
-          {/* <section> */}
-          <main className="title-container">
-            <section>
-              <Welcome2 />
-            </section>
-          </main>
-          {/* Welcome container END HERE */}
-          {/* Translation Button END HERE */}
-        </div>
+        {/* WELCOME container START HERE */}
+        {/* <section> */}
+        {/* <main className="title-container"> */}
+        <section>
+          <Welcome2 />
+        </section>
+        {/* </main> */}
+        {/* Welcome container END HERE */}
+        {/* Translation Button END HERE */}
       </div>
+      {/* </div> */}
     </>
   );
 }

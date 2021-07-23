@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import "../ContactUs/ContactUsPage.css";
 import SideNav from "../../components/Nav/SideNav";
-import Header from "../../components/Header/Header";
 import ContactInfo from "../../components/PageContent/ContactForm/ContactInfo";
 
 const ContactUsPage = () => {
@@ -14,7 +13,7 @@ const ContactUsPage = () => {
   return (
     <>
       <SideNav />
-      <Header />
+
       <div className="terms-page">
         <div className="translate-button2">
           <button onClick={() => changeLanguage("en")}>En</button>

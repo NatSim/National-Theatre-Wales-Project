@@ -9,7 +9,6 @@ import Learn1 from "../../images/Simple7/Learn1.jpg";
 import Plant from "../../images/Simple7/Plant.jpg";
 import TakeAWalk from "../../images/Simple7/TakeAWalk.jpg";
 import "./SimpleActPage.css";
-import Header from "../../components/Header/Header";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import SideNav from "../../components/Nav/SideNav";
 
@@ -43,7 +42,7 @@ const SimpleActsPage = (props) => {
 
   return (
     <>
-      <Header />
+   
       <SideNav />
       {/* Background START HERE */}
       <div className="home-container-video3">
