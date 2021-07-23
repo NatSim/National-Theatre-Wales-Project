@@ -19,31 +19,8 @@
   text-align: center;
 }
 
-/*Background image*/
-.home-video-container7 {
-  padding: 10%;
-  border-top-style: double;
-  border-color: grey;
-  border-top-width: 0.5px;
-  padding-top: 75px;
-  padding-bottom: 20px;
-}
-
-.home-container-video7 {
+.home-container-video7,
+.map-parent-container {
   padding: 10px 0px 50px 0px;
   position: relative;
-}
-.home-container-video7::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: url("../../../images/proccession_graphics//STILL5.jpeg");
-  background-size: cover;
-  opacity: 0.5;
-  border-top-style: double;
-  border-color: grey;
-  border-top-width: 0.5px;
 }

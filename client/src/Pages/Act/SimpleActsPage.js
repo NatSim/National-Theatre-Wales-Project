@@ -42,10 +42,9 @@ const SimpleActsPage = (props) => {
 
   return (
     <>
-   
       <SideNav />
       {/* Background START HERE */}
-      <div className="home-container-video3">
+      <div className="background-bee-image">
         <div className="translate-button">
           <button onClick={() => changeLanguage("en")}>En</button>
           <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>

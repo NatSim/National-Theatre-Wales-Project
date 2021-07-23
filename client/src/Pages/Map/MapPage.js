@@ -13,8 +13,8 @@ const MapPage = () => {
   return (
     <div>
       <SideNav />
-      <Header />
-      <main className="home-container-video7">
+
+      <main className="background-bee-image">
         {/* Translation Button START HERE */}
         <div className="translate-button">
           <button onClick={() => changeLanguage("en")}>En</button>

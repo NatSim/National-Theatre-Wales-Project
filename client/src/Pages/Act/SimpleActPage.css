@@ -13,32 +13,13 @@
   padding-top: 50px;
 }
 
-/*Top Background*/
-.home-container-video3 {
-  padding: 10px 0px 50px 0px;
-  position: relative;
-}
-.home-container-video3::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: url(../../images/SAboards/saboards-wide.jpg);
-  background-size: cover;
-  opacity: 0.4;
-  border-top-style: double;
-  border-color: grey;
-  border-top-width: 0.5px;
-}
-
 video,
 .video-container,
 .info-container,
 .flex-container,
 .child-container,
-.challenge-text {
+.challenge-text,
+.text-container {
   position: relative;
 }
 

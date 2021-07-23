@@ -13,7 +13,7 @@ const MusicPage = () => {
   return (
     <>
       <SideNav />
-      <main className="home-container-video4">
+      <main className="background-bee-image">
         {/* Translation Button START HERE */}
         <div className="translate-button">
           <button onClick={() => changeLanguage("en")}>En</button>
