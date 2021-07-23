@@ -23,9 +23,20 @@
 /*fb/contacts/terms/privacy section*/
 .footer-ul-control {
   display: flex;
+
   justify-content: space-evenly;
   padding-left: 0rem;
   list-style: none;
+}
+
+@media only screen and (max-width: 820px) {
+  .footer-ul-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 0rem;
+    list-style: none;
+  }
 }
 
 .Link-control {
