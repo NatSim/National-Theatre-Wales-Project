@@ -38,7 +38,7 @@ const AboutArticlesPage = (props) => {
     }
   };
 
-  removeBeeBackground(props);
+  // removeBeeBackground(props);
 
   return (
     <>

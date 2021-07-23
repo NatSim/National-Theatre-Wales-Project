@@ -1,14 +1,27 @@
-.background-bee-image::before {
-  background-color: #db5a00;
-}
-
 .background-bee-image {
+  position: relative;
+}
+.background-bee-image::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   background-image: url(../../images/Background-placeholders/bee_lowopacity.png);
   background-size: cover;
   height: 100vh;
-
+  /* background-color: #db5a00; */
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.translate-button,
+.translate-button,
+.home-footer,
+ul {
+  position: relative;
 }
 
 /*NTW Logo */

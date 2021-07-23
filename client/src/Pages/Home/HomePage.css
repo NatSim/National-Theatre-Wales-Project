@@ -23,7 +23,7 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: #ff9f00;
+
   background-size: cover;
   opacity: 0.6;
   border-top-style: double;
@@ -164,7 +164,7 @@ a,
 
 /* Translate Button START*/
 .translate-button {
-  margin: 70px 0px 0px 0px;
+  margin: 100px 0px 0px 0px;
 }
 
 @media only screen and (max-width: 802px) {
@@ -173,9 +173,9 @@ a,
   }
 }
 
-.translate-button-control {
+/* .translate-button-control {
   margin: 70px 0px 0px 0px;
-}
+} */
 
 .translate-button-2 {
   margin: 7%;
