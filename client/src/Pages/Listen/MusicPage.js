@@ -13,7 +13,8 @@ const MusicPage = () => {
   return (
     <>
       <SideNav />
-      <main className="background-bee-image">
+
+      <div className="background-bee-image dark green">
         {/* Translation Button START HERE */}
         <div className="translate-button">
           <button onClick={() => changeLanguage("en")}>En</button>
@@ -116,7 +117,7 @@ const MusicPage = () => {
           </ol>
         </section>
         {/* List Section END HERE */}
-      </main>
+      </div>
     </>
   );
 };

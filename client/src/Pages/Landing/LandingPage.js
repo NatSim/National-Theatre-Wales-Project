@@ -24,19 +24,20 @@ function LandingPage(props) {
     }
   };
 
-  // setBeeBackground();
+  setBeeBackground();
 
-  // const absoluteFooter = () => {
-  //   document.body.classList.add("home-footer-absolute");
-  // };
+  const absoluteFooter = () => {
+    let setAbsolute = true;
+    if (setAbsolute === true) {
+      document.body.classList.add("home-footer");
+    }
+  };
 
   // absoluteFooter();
 
-  const setAbsolute = true;
-
   return (
     <>
-      <div className="background-bee-image">
+      <div className="background-bee-image brown">
         <nav className="sidenav-container">
           <SideNav />
         </nav>

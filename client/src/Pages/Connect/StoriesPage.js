@@ -13,9 +13,9 @@ const StoriesPageA = (props) => {
   return (
     <>
       <SideNav />
-      <Header />
+
       <main>
-        <div className="background-bee-image">
+        <div className="background-bee-image dark-green">
           {/* Translation Button START HERE */}
           <div className="translate-button">
             <button onClick={() => changeLanguage("en")}>En</button>

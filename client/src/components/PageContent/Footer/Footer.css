@@ -1,20 +1,11 @@
-.home-footer {
-  font-size: 16px;
-  padding: 0px 15px 0px 15px;
-  height: fit-content;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
+/* .home-footer {
+  background-color: #db5a00;
+} */
 
-.home-footer-absolute {
-  font-size: 16px;
-  padding: 0px 15px 0px 15px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
+/* .home-footer {
+  background-color: #db5a00;
+  color: white;
+} */
 
 .socials-control {
   margin: 0px 40px 0px 0px;
@@ -41,6 +32,7 @@
 
 .Link-control {
   font-size: 16px;
+  /* color: white; */
 }
 
 /*Social Media handler control */
@@ -49,7 +41,6 @@
 }
 .socials-link-control {
   list-style: none;
-  margin: 15px 0px 15px 0px;
 }
 
 /*Charity Logos*/

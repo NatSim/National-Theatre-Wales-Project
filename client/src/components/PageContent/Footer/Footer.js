@@ -22,7 +22,7 @@ const Footer = (props) => {
 
   return (
     <>
-      <div className="">
+      <div className="home-footer">
         <ul className="socials-control">
           <li className="socials-link-control">
             <a

@@ -28,7 +28,7 @@ const HomePage = (props) => {
 
   return (
     <>
-      <div className="background-bee-image">
+      <div className="background-bee-image dark-green">
         <nav className="sidenav-container">
           <SideNav />
         </nav>

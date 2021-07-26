@@ -44,7 +44,7 @@ const SimpleActsPage = (props) => {
     <>
       <SideNav />
       {/* Background START HERE */}
-      <div className="background-bee-image">
+      <div className="background-bee-image green">
         <div className="translate-button">
           <button onClick={() => changeLanguage("en")}>En</button>
           <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
@@ -67,45 +67,46 @@ const SimpleActsPage = (props) => {
             }}
           />
         </div>
+
+        {/* Background END HERE */}
+
+        {/*SIMPLE ACTS INTRO TEXT-START HERE */}
+        <div className="text-container">
+          <div className="text-video-row">
+            <div className="text-video-column">
+              <article className="challenge-text1">{t("article1")}</article>
+            </div>
+            <div className="text-video-column">
+              <article className="challenge-text2">{t("article2")}</article>
+            </div>
+          </div>
+        </div>
+        {/*SIMPLE ACTS INTRO TEXT-END HERE */}
+
+        {/* 7 SIMPLE ACTS ICONS Container-START HERE */}
+        <span className="challenge-text2">
+          <b>{t("exploreSA")}</b>
+        </span>
+        <section className="flex-container">
+          <div className="child-container">
+            <div>
+              {challengeData &&
+                challengeData.length > 0 &&
+                challengeData.map((challenge) => (
+                  <React.Fragment key={challenge.id}>
+                    <SAPrompts
+                      img={challenge.img}
+                      alt={challenge.alt}
+                      id={challenge.id}
+                    />
+                  </React.Fragment>
+                ))}
+            </div>
+          </div>
+        </section>
+        {/* 7 SIMPLE ACTS ICONS Container-END HERE */}
         {/* Video Container-END HERE */}
       </div>
-      {/* Background END HERE */}
-
-      {/*SIMPLE ACTS INTRO TEXT-START HERE */}
-      <div className="text-container">
-        <div className="text-video-row">
-          <div className="text-video-column">
-            <article className="challenge-text1">{t("article1")}</article>
-          </div>
-          <div className="text-video-column">
-            <article className="challenge-text2">{t("article2")}</article>
-          </div>
-        </div>
-      </div>
-      {/*SIMPLE ACTS INTRO TEXT-END HERE */}
-
-      {/* 7 SIMPLE ACTS ICONS Container-START HERE */}
-      <span className="challenge-text2">
-        <b>{t("exploreSA")}</b>
-      </span>
-      <section className="flex-container">
-        <div className="child-container">
-          <div>
-            {challengeData &&
-              challengeData.length > 0 &&
-              challengeData.map((challenge) => (
-                <React.Fragment key={challenge.id}>
-                  <SAPrompts
-                    img={challenge.img}
-                    alt={challenge.alt}
-                    id={challenge.id}
-                  />
-                </React.Fragment>
-              ))}
-          </div>
-        </div>
-      </section>
-      {/* 7 SIMPLE ACTS ICONS Container-END HERE */}
     </>
   );
 };

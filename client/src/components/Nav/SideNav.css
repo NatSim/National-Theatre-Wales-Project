@@ -9,11 +9,10 @@
   cursor: pointer;
   padding-top: 20px;
   margin-bottom: 10px;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   z-index: 1;
-
   height: 50px;
 }
 
@@ -27,6 +26,7 @@ svg {
   vertical-align: middle;
   position: relative;
   max-width: 100%;
+  color: white;
 }
 
 .menu-bars {

@@ -108,6 +108,7 @@
   flex-flow: wrap;
   max-width: 100%;
   justify-content: space-evenly;
+  margin: 0;
 }
 
 video,
@@ -118,7 +119,8 @@ video,
 .story-blurbs,
 .story-subtitle,
 .story-info-container,
-.story-children-blurbs {
+.story-children-blurbs,
+.home-footer {
   position: relative;
 }
 

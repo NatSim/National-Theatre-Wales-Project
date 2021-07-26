@@ -1,20 +1,21 @@
 .background-bee-image {
   position: relative;
 }
-.background-bee-image::before {
+div.background-bee-image::before {
   content: "";
   position: absolute;
-  top: 0px;
+  /* top: 0px; */
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../../images/Background-placeholders/bee_lowopacity.png);
+  /*background-image: url(../../images/Background-placeholders/bee_lowopacity.png);*/
+  background-image: url(../../images/Background-placeholders/svg-logo.png); /*TEMP SVG*/
   background-size: cover;
   height: 100vh;
-  /* background-color: #db5a00; */
+
   background-position: center;
   /* background-repeat: no-repeat; */
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .translate-button,
@@ -24,6 +25,26 @@ ul,
 header,
 .welcome-text-control {
   position: relative;
+}
+
+/*COLOR FOR EACH BEE BACKGROUND PAGE*/
+
+.brown {
+  background-color: #db5a00;
+}
+.dark-green {
+  background-color: #008476;
+}
+
+.orange {
+  background-color: #ffa301;
+}
+
+.pink {
+  background-color: #ff4b6d;
+}
+.green {
+  background-color: #acd356;
 }
 
 /*NTW Logo */
