@@ -46,70 +46,69 @@ const SimpleActsPage = (props) => {
       <div className="background-bee-image green">
         <nav className="sidenav-container">
           <SideNav />
-        </nav>
-        <main>
           <div className="translate-button">
             <button onClick={() => changeLanguage("en")}>En</button>
             <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
-
-            <h2 className="subtitle1">{t("title")}</h2>
-
-            {/* Video Container-START HERE */}
-            <div className="simple-acts-container-parent">
-              <VideoPlayer
-                className="simple-acts-video"
-                url={videoSimple}
-                height="150px"
-                width="50%"
-                style={{
-                  margin: "auto",
-                  padding: "10px",
-                  border: "3px solid green",
-                }}
-              />
-            </div>
-
-            {/* Background END HERE */}
-
-            {/*SIMPLE ACTS INTRO TEXT-START HERE */}
-            <div className="text-container">
-              <div className="text-video-row">
-                <div className="text-video-column">
-                  <article className="challenge-text1">{t("article1")}</article>
-                </div>
-                <div className="text-video-column">
-                  <article className="challenge-text2">{t("article2")}</article>
-                </div>
-              </div>
-            </div>
-            {/*SIMPLE ACTS INTRO TEXT-END HERE */}
-
-            {/* 7 SIMPLE ACTS ICONS Container-START HERE */}
-            <span className="challenge-text2">
-              <b>{t("exploreSA")}</b>
-            </span>
-            <section className="flex-container">
-              <div className="child-container">
-                <div>
-                  {challengeData &&
-                    challengeData.length > 0 &&
-                    challengeData.map((challenge) => (
-                      <React.Fragment key={challenge.id}>
-                        <SAPrompts
-                          img={challenge.img}
-                          alt={challenge.alt}
-                          id={challenge.id}
-                        />
-                      </React.Fragment>
-                    ))}
-                </div>
-              </div>
-            </section>
-            {/* 7 SIMPLE ACTS ICONS Container-END HERE */}
-            {/* Video Container-END HERE */}
+            {/* Translation Button END HERE */}
           </div>
-        </main>
-        {/* Translation Button END HERE */}
+        </nav>
+        <main>
+          <h2 className="subtitle1">{t("title")}</h2>
+
+          {/* Video Container-START HERE */}
+          <div className="simple-acts-container-parent">
+            <VideoPlayer
+              className="simple-acts-video"
+              url={videoSimple}
+              height="150px"
+              width="50%"
+              style={{
+                margin: "auto",
+                padding: "10px",
+                border: "3px solid green",
+              }}
+            />
+          </div>
+
+          {/* Background END HERE */}
+
+          {/*SIMPLE ACTS INTRO TEXT-START HERE */}
+          <div className="text-container">
+            <div className="text-video-row">
+              <div className="text-video-column">
+                <article className="challenge-text1">{t("article1")}</article>
+              </div>
+              <div className="text-video-column">
+                <article className="challenge-text2">{t("article2")}</article>
+              </div>
+            </div>
+          </div>
+          {/*SIMPLE ACTS INTRO TEXT-END HERE */}
+
+          {/* 7 SIMPLE ACTS ICONS Container-START HERE */}
+          <span className="challenge-text2">
+            <b>{t("exploreSA")}</b>
+          </span>
+          <section className="flex-container">
+            <div className="child-container">
+              <div>
+                {challengeData &&
+                  challengeData.length > 0 &&
+                  challengeData.map((challenge) => (
+                    <React.Fragment key={challenge.id}>
+                      <SAPrompts
+                        img={challenge.img}
+                        alt={challenge.alt}
+                        id={challenge.id}
+                      />
+                    </React.Fragment>
+                  ))}
+              </div>
+            </div>
+          </section>
+          {/* 7 SIMPLE ACTS ICONS Container-END HERE */}
+          {/* Video Container-END HERE */}
+        </main>{" "}
       </div>
     </>
   );

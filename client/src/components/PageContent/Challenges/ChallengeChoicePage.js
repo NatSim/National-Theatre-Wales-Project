@@ -28,141 +28,141 @@ const ChallengeItem = (props) => {
     <>
       {/* Challenge top background START HERE */}
       <div className="challenge-page">
-        <SideNav />
-
-        <section className="prompt-act-container">
+        <nav className="sidenav-container">
+          <SideNav />
           {/* Translation Button START HERE */}
           <div className="translate-button">
             <button onClick={() => changeLanguage("en")}>En</button>
             <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
             {/* Translation Button END HERE */}
-            <hr />
-            <div className="prompt-text-container">
-              <h1 className="prompt-text">
-                {/* 1.BE KIND PAGE  Direction START HERE*/}
-                {props.id_ === 1 || 2 || 3 || 4 || 5 || 6 || 7 ? (
-                  <Trans i18nKey="direction"></Trans>
-                ) : (
-                  <Trans i18nKey=""></Trans>
-                )}
-                {/* 1.BE KIND PAGE Direction END HERE*/}
-              </h1>
+          </div>
+        </nav>
+        <section className="prompt-act-container">
+          <div className="prompt-text-container">
+            <h1 className="prompt-text">
+              {/* 1.BE KIND PAGE  Direction START HERE*/}
+              {props.id_ === 1 || 2 || 3 || 4 || 5 || 6 || 7 ? (
+                <Trans i18nKey="direction"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 1.BE KIND PAGE Direction END HERE*/}
+            </h1>
 
-              {/* 1.BE KIND PAGE Act START HERE*/}
-              <h2 className="act-control-child">
-                {props.id_ === 1 ? (
-                  <Trans i18nKey="act"></Trans>
-                ) : (
-                  <Trans i18nKey=""></Trans>
-                )}
-                {/* 1.BE KIND PAGE Act END HERE */}
-                {/* 2.CONNECT PAGE  Act START HERE*/}
+            {/* 1.BE KIND PAGE Act START HERE*/}
+            <h2 className="act-control-child">
+              {props.id_ === 1 ? (
+                <Trans i18nKey="act"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 1.BE KIND PAGE Act END HERE */}
+              {/* 2.CONNECT PAGE  Act START HERE*/}
 
-                {props.id_ === 2 ? (
-                  <Trans i18nKey="act2"></Trans>
-                ) : (
-                  <Trans i18nKey=""></Trans>
-                )}
-                {/* 2.CONNECT PAGE Act END HERE*/}
-                {/* 3.CONSIDER THE STARS PAGE Act START HERE */}
-                {props.id_ === 3 ? (
-                  <Trans i18nKey="act3"></Trans>
-                ) : (
-                  <Trans i18nKey=""></Trans>
-                )}
-                {/* 3.CONSIDER THE STARS PAGE Act END HERE */}
-                {/* 4.CONSUME PAGE Act START HERE */}
-                {props.id_ === 4 ? (
-                  <Trans i18nKey="act4"></Trans>
-                ) : (
-                  <Trans i18nKey=""></Trans>
-                )}
-                {/* 4.CONSUME PAGE Act ENDS HERE */}
-                {/* 5.LEARN PAGE Act STARTS HERE */}
-                {props.id_ === 5 ? (
-                  <Trans i18nKey="act5"></Trans>
-                ) : (
-                  <Trans i18nKey=""></Trans>
-                )}
-                {/* 5.LEARN PAGE Act ENDS HERE */}
-                {/* 6.PLANT Act STARTS HERE */}
-                {props.id_ === 6 ? (
-                  <Trans i18nKey="act6"></Trans>
-                ) : (
-                  <Trans i18nKey=""></Trans>
-                )}
-                {/* 6.PLANT Act ENDS HERE */}
-                {/* 7.TAKE A WALK Act STARTS HERE */}
-                {props.id_ === 7 ? (
-                  <Trans i18nKey="act7"></Trans>
-                ) : (
-                  <Trans i18nKey=""></Trans>
-                )}
-                {/* 7.TAKE A WALK Act ENDS HERE */}
-              </h2>
-            </div>
-            <div className="intro-text">
-              <div className="image-container">
-                <img
-                  className="image"
-                  src={props.image1}
-                  alt={"simple act challenge"}
-                />
-              </div>
-              {/* 1.BE KIND PAGE ACT Text1 START HERE*/}
-              <p className="text-control2">
-                {props.id_ === 1 ? (
-                  <Trans i18nKey="text1"></Trans>
-                ) : (
-                  <Trans i18nKey=""></Trans>
-                )}
-              </p>
-              {/* 1.BE KIND PAGE ACT Text1 END HERE*/}
-              {/* 2.CONNECT PAGE ACT Text1a START HERE*/}
-              <p className="text-control2">
-                {props.id_ === 2 ? (
-                  <Trans i18nKey="text1a"></Trans>
-                ) : (
-                  <Trans i18nKey=""></Trans>
-                )}
-              </p>
-              {/* 2.CONNECT PAGE ACT Text1a END HERE*/}
-              {/* 3.CONNECT PAGE text1b START HERE */}
+              {props.id_ === 2 ? (
+                <Trans i18nKey="act2"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+              {/* 2.CONNECT PAGE Act END HERE*/}
+              {/* 3.CONSIDER THE STARS PAGE Act START HERE */}
               {props.id_ === 3 ? (
-                <Trans i18nKey="text1b"></Trans>
+                <Trans i18nKey="act3"></Trans>
               ) : (
                 <Trans i18nKey=""></Trans>
               )}
-              {/* 3.CONNECT PAGE text1b END HERE */}
-              {/* 4.CONSUME PAGE text1c START HERE */}
+              {/* 3.CONSIDER THE STARS PAGE Act END HERE */}
+              {/* 4.CONSUME PAGE Act START HERE */}
               {props.id_ === 4 ? (
-                <Trans i18nKey="text1c"></Trans>
+                <Trans i18nKey="act4"></Trans>
               ) : (
                 <Trans i18nKey=""></Trans>
               )}
-              {/* 4.CONSUME PAGE text1c ENDS HERE */}
+              {/* 4.CONSUME PAGE Act ENDS HERE */}
               {/* 5.LEARN PAGE Act STARTS HERE */}
               {props.id_ === 5 ? (
-                <Trans i18nKey="text1d"></Trans>
+                <Trans i18nKey="act5"></Trans>
               ) : (
                 <Trans i18nKey=""></Trans>
               )}
               {/* 5.LEARN PAGE Act ENDS HERE */}
-              {/* 6.PLANT PAGE Act STARTS HERE */}
+              {/* 6.PLANT Act STARTS HERE */}
               {props.id_ === 6 ? (
-                <Trans i18nKey="text1e"></Trans>
+                <Trans i18nKey="act6"></Trans>
               ) : (
                 <Trans i18nKey=""></Trans>
               )}
-              {/* 6.PLANT PAGE Act ENDS HERE */}
-              {/* 7.TAKE A WALK PAGE Act STARTS HERE */}
+              {/* 6.PLANT Act ENDS HERE */}
+              {/* 7.TAKE A WALK Act STARTS HERE */}
               {props.id_ === 7 ? (
-                <Trans i18nKey="text1f"></Trans>
+                <Trans i18nKey="act7"></Trans>
               ) : (
                 <Trans i18nKey=""></Trans>
               )}
-              {/* 7.TAKE A WALK PAGE Act ENDS HERE */}
+              {/* 7.TAKE A WALK Act ENDS HERE */}
+            </h2>
+          </div>
+          <div className="intro-text">
+            <div className="image-container">
+              <img
+                className="image"
+                src={props.image1}
+                alt={"simple act challenge"}
+              />
             </div>
+            {/* 1.BE KIND PAGE ACT Text1 START HERE*/}
+            <p className="text-control2">
+              {props.id_ === 1 ? (
+                <Trans i18nKey="text1"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+            </p>
+            {/* 1.BE KIND PAGE ACT Text1 END HERE*/}
+            {/* 2.CONNECT PAGE ACT Text1a START HERE*/}
+            <p className="text-control2">
+              {props.id_ === 2 ? (
+                <Trans i18nKey="text1a"></Trans>
+              ) : (
+                <Trans i18nKey=""></Trans>
+              )}
+            </p>
+            {/* 2.CONNECT PAGE ACT Text1a END HERE*/}
+            {/* 3.CONNECT PAGE text1b START HERE */}
+            {props.id_ === 3 ? (
+              <Trans i18nKey="text1b"></Trans>
+            ) : (
+              <Trans i18nKey=""></Trans>
+            )}
+            {/* 3.CONNECT PAGE text1b END HERE */}
+            {/* 4.CONSUME PAGE text1c START HERE */}
+            {props.id_ === 4 ? (
+              <Trans i18nKey="text1c"></Trans>
+            ) : (
+              <Trans i18nKey=""></Trans>
+            )}
+            {/* 4.CONSUME PAGE text1c ENDS HERE */}
+            {/* 5.LEARN PAGE Act STARTS HERE */}
+            {props.id_ === 5 ? (
+              <Trans i18nKey="text1d"></Trans>
+            ) : (
+              <Trans i18nKey=""></Trans>
+            )}
+            {/* 5.LEARN PAGE Act ENDS HERE */}
+            {/* 6.PLANT PAGE Act STARTS HERE */}
+            {props.id_ === 6 ? (
+              <Trans i18nKey="text1e"></Trans>
+            ) : (
+              <Trans i18nKey=""></Trans>
+            )}
+            {/* 6.PLANT PAGE Act ENDS HERE */}
+            {/* 7.TAKE A WALK PAGE Act STARTS HERE */}
+            {props.id_ === 7 ? (
+              <Trans i18nKey="text1f"></Trans>
+            ) : (
+              <Trans i18nKey=""></Trans>
+            )}
+            {/* 7.TAKE A WALK PAGE Act ENDS HERE */}
           </div>
         </section>
       </div>

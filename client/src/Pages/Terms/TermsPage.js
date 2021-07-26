@@ -14,14 +14,14 @@ const Terms = () => {
     <>
       <div className="terms-page">
         <nav className="sidenav-container">
-          <SideNav />
+          <SideNav />{" "}
+          <div className="translate-button2">
+            <button onClick={() => changeLanguage("en")}>En</button>
+            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+            {/* Translation Button END HERE */}
+          </div>
         </nav>
-        <div className="translate-button2">
-          <button onClick={() => changeLanguage("en")}>En</button>
-          <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
-          {/* Translation Button END HERE */}
-          <hr />
-        </div>
+
         <h1 className="subtitle1">{t("termsContent.0")}</h1>
         <section>
           <TermsContent />

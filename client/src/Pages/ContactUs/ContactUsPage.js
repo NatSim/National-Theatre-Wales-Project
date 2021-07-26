@@ -15,13 +15,13 @@ const ContactUsPage = () => {
       <div className="terms-page">
         <nav className="sidenav-container">
           <SideNav />
+          <div className="translate-button2">
+            <button onClick={() => changeLanguage("en")}>En</button>
+            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+            {/* Translation Button END HERE */}
+          </div>
         </nav>
-        <div className="translate-button2">
-          <button onClick={() => changeLanguage("en")}>En</button>
-          <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
-          {/* Translation Button END HERE */}
-          <hr />
-        </div>
+
         <div className="form-content-parent">
           <div className="subtitle3">
             <h1 className="contact_heading">{t("contactContent.0")}</h1>

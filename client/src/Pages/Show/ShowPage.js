@@ -12,17 +12,17 @@ const ShowPage = (props) => {
 
   return (
     <>
-      <SideNav />
-
-      {/* Translation Button START HERE */}
-      <div className="translate-button2">
-        <div className="translate-button-control">
-          <button onClick={() => changeLanguage("en")}>En</button>
-          <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
-        </div>
-      </div>
       {/* Translation Button END HERE */}
-      <div className="live-background-container"></div>
+      <div className="live-background-container">
+        <nav className="sidenav-container">
+          <SideNav />
+          {/* Translation Button START HERE */}
+          <div className="translate-button-control">
+            <button onClick={() => changeLanguage("en")}>En</button>
+            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+          </div>{" "}
+        </nav>
+      </div>
       <h2 className="subtitle5">{t("showProgramme")}</h2>
       <ShowCopy />
       {/* Section 1 Credits */}

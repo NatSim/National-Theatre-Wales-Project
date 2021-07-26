@@ -43,7 +43,8 @@ video,
 .heading-control,
 .video-about-text-control,
 .other-text,
-.translate-button {
+.translate-button,
+.translate-button-control {
   position: relative;
 }
 

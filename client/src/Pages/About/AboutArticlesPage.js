@@ -39,15 +39,16 @@ const AboutArticlesPage = (props) => {
         >
           <nav className="sidenav-container">
             <SideNav />
+            {/* Translation Button START HERE */}
+
+            <div className="translate-button-control">
+              <button onClick={() => changeLanguage("en")}>En</button>
+              <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+            </div>
+
+            {/* Translation Button END HERE */}
           </nav>
-          {/* Translation Button START HERE */}
 
-          <div className="translate-button-control">
-            <button onClick={() => changeLanguage("en")}>En</button>
-            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
-          </div>
-
-          {/* Translation Button END HERE */}
           {/* Title container START HERE*/}
           <h2 className="title-team-ntw-subtitle">
             {!props.otherText ? (
