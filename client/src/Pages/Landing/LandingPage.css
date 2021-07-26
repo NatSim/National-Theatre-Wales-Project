@@ -8,8 +8,8 @@ div.background-bee-image::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  /*background-image: url(../../images/Background-placeholders/bee_lowopacity.png);*/
-  background-image: url(../../images/Background-placeholders/svg-logo.png); /*TEMP SVG*/
+  background-image: url(../../images/Background-placeholders/bee_lowopacity2.png);
+  /* background-image: url(../../images/Background-placeholders/svg-logo.png); TEMP SVG */
   background-size: cover;
   height: 100vh;
 
