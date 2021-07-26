@@ -28,17 +28,6 @@ const AboutArticlesPage = (props) => {
     i18n.changeLanguage(language);
   };
 
-  const removeBeeBackground = (props) => {
-    if (!props.LandingPage) {
-      //condition needs to be checked before landing page render
-      document.body.classList.remove("background-bee-image");
-
-      console.log("REMOVE BEE BACKGROUND!");
-    }
-  };
-
-  // removeBeeBackground(props);
-
   return (
     <>
       <SideNav />

@@ -14,7 +14,7 @@ function SideNav() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#000" }}>
+      <IconContext.Provider value={{ color: "" }}>
         <div className="nav-bar">
           <Link to="#" className="menu-bars"></Link>
           <FaIcons.FaBars className="menu-svg" onClick={showSidebar} />

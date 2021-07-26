@@ -26,6 +26,9 @@ svg {
   vertical-align: middle;
   position: relative;
   max-width: 100%;
+}
+
+svg.menu-svg {
   color: white;
 }
 
@@ -33,6 +36,7 @@ svg {
   margin-left: 2rem;
   font-size: 2rem;
   background: none;
+  color: white;
 }
 
 .nav-menu {

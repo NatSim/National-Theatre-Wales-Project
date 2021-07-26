@@ -10,17 +10,6 @@ const ShowPage = (props) => {
     i18n.changeLanguage(language);
   };
 
-  const removeBeeBackground = (props) => {
-    if (ShowPage) {
-      //condition needs to be checked before page render
-      document.body.classList.remove("background-bee-image");
-      //ADD UNIQUE hex inline styling
-      console.log("REMOVE BEE BACKGROUND!");
-    }
-  };
-
-  removeBeeBackground();
-
   return (
     <>
       <SideNav />

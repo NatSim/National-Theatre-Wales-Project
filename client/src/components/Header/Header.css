@@ -7,7 +7,7 @@
 }
 
 #nav-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -33,6 +33,7 @@ li {
 
 .nav-link-control {
   list-style: none;
+  /* color: white; */
 }
 
 .bee-logo-control {
