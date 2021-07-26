@@ -10,44 +10,26 @@ function LandingPage(props) {
     i18n.changeLanguage(language);
   };
 
-  const setBeeBackground = () => {
-    if (LandingPage) {
-      //condition needs to be checked before landing page render
-      document.body.classList.add("background-bee-image");
-      //SET UNIQUE HEX COLOR
-      console.log("SHOW BEE BACKGROUND!");
-    }
-    if (!LandingPage) {
-      document.body.classList.remove("background-bee-image");
-
-      console.log("REMOVE BEE BACKGROUND!");
+  const setFooterColor = () => {
+    if ("background-bee-image brown") {
+      document.getElementById("root").classList.add("brown"); //footer to change not root
+      console.log("Add brown footer");
     }
   };
 
-  setBeeBackground();
-
-  const absoluteFooter = () => {
-    let setAbsolute = true;
-    if (setAbsolute === true) {
-      document.body.classList.add("home-footer");
-    }
-  };
-
-  // absoluteFooter();
+  // setFooterColor();
 
   return (
     <>
       <div className="background-bee-image brown">
         <nav className="sidenav-container">
           <SideNav />
-        </nav>
-        {/* Translation Button START HERE */}
-        {/* <div className="translate-button2">
+          {/* Translation Button START HERE */}
           <div className="translate-button-control">
             <button onClick={() => changeLanguage("en")}>En</button>
             <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
-            <hr />{" "}
-          </div> */}
+          </div>{" "}
+        </nav>
 
         {/* WELCOME container START HERE */}
         {/* <section> */}

@@ -7,6 +7,10 @@
   color: white;
 } */
 
+ul.socials-control svg {
+  color: white;
+}
+
 .socials-control {
   margin: 0px 40px 0px 0px;
 }

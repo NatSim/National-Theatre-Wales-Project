@@ -30,8 +30,6 @@ const AboutArticlesPage = (props) => {
 
   return (
     <>
-      <SideNav />
-
       <div>
         {/* NTW/TEAM Top Background-color Container-START HERE */}
         <section
@@ -39,14 +37,16 @@ const AboutArticlesPage = (props) => {
             props.otherText ? "home-container-video2" : "home-container-video2a"
           }
         >
+          <nav className="sidenav-container">
+            <SideNav />
+          </nav>
           {/* Translation Button START HERE */}
-          <div className="translate-button">
-            <div className="translate-button-control">
-              <button onClick={() => changeLanguage("en")}>En</button>
-              <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
-              <hr />
-            </div>
+
+          <div className="translate-button-control">
+            <button onClick={() => changeLanguage("en")}>En</button>
+            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
           </div>
+
           {/* Translation Button END HERE */}
           {/* Title container START HERE*/}
           <h2 className="title-team-ntw-subtitle">
@@ -303,8 +303,8 @@ const AboutArticlesPage = (props) => {
               ""
             )}
           </section>
+          {/* Main Content Container- END HERE*/}
         </main>
-        {/* Main Content Container- END HERE*/}
       </div>
     </>
   );

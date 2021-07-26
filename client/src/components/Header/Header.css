@@ -7,11 +7,10 @@
 }
 
 #nav-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
-  height: 10%;
   background-color: white;
 }
 

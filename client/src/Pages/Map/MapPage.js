@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Header from "../../components/Header/Header";
 import Maps from "../../components/PageContent/Maps/Maps";
 import SideNav from "../../components/Nav/SideNav";
 
@@ -12,10 +11,11 @@ const MapPage = () => {
   };
   return (
     <div>
-      <SideNav />
-
       <main>
         <div className="background-bee-image green">
+          <nav className="sidenav-container">
+            <SideNav />
+          </nav>
           {/* Translation Button START HERE */}
           <div className="translate-button">
             <button onClick={() => changeLanguage("en")}>En</button>

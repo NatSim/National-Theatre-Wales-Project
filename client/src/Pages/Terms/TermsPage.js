@@ -12,8 +12,10 @@ const Terms = () => {
 
   return (
     <>
-      <SideNav />
       <div className="terms-page">
+        <nav className="sidenav-container">
+          <SideNav />
+        </nav>
         <div className="translate-button2">
           <button onClick={() => changeLanguage("en")}>En</button>
           <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>

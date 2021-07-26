@@ -1,15 +1,16 @@
 .navbar {
-  height: 80px;
+  /* height: 80px; */
   display: flex;
   flex: start;
   align-items: center;
+  position: absolute;
 }
 .nav-bar {
   display: flex;
+  /* position: relative; */
   cursor: pointer;
   padding-top: 20px;
   margin-bottom: 10px;
-  /* position: fixed; */
   top: 0;
   width: 100%;
   z-index: 1;
@@ -94,4 +95,8 @@ svg.menu-svg {
   display: flex;
   flex: start;
   align-items: center;
+}
+
+.sidenav-container {
+  display: flex;
 }
