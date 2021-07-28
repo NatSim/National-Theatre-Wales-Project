@@ -31,9 +31,9 @@ const ChallengeItem = (props) => {
         <nav className="sidenav-container">
           <SideNav />
           {/* Translation Button START HERE */}
-          <div className="translate-button">
-            <button onClick={() => changeLanguage("en")}>En</button>
-            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+          <div className="translate-button-control">
+            <span onClick={() => changeLanguage("en")}>En/</span>
+            <span onClick={() => changeLanguage("welsh")}>Cymraeg</span>
             {/* Translation Button END HERE */}
           </div>
         </nav>

@@ -4,7 +4,7 @@ body {
 /*SA Prompt Page generic*/
 
 .prompt-text {
-  /* color: white; */
+  color: #3e455a;
   font-size: 30px;
   padding: 100px 20px 10px 20px;
 }
@@ -147,15 +147,18 @@ body {
 /*act control transitionIn (from homepage.css)*/
 .act-control-child {
   animation: transitionIn 25s;
+  color: #3e455a;
 }
 
 .text-control3 {
   text-align: justify;
+  color: #3e455a;
 }
 
 .text2-subheading {
   text-align: left;
   display: block;
+  color: #3e455a;
 }
 .text-control,
 .discover-subheading,
@@ -164,6 +167,7 @@ body {
   padding: 0px 30px;
   text-align: left;
   display: block;
+  color: #3e455a;
 }
 
 .prompt-act-container {

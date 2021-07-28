@@ -15,9 +15,9 @@ const Terms = () => {
       <div className="terms-page">
         <nav className="sidenav-container">
           <SideNav />{" "}
-          <div className="translate-button2">
-            <button onClick={() => changeLanguage("en")}>En</button>
-            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+          <div className="translate-button-control">
+            <span onClick={() => changeLanguage("en")}>En/</span>
+            <span onClick={() => changeLanguage("welsh")}>Cymraeg</span>
             {/* Translation Button END HERE */}
           </div>
         </nav>

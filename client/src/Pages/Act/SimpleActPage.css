@@ -94,8 +94,10 @@ article.challenge-text {
 }
 
 article.challenge-text2,
+.challenge-text2 b,
 article.challenge-text1 {
   text-align: justify;
+  color: white;
 }
 
 @media only screen and (min-width: 801px) {
