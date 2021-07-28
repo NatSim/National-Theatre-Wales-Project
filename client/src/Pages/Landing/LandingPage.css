@@ -1,5 +1,5 @@
 .background-bee-image {
-  position: relative;
+  position: static;
 }
 div.background-bee-image::before {
   content: "";

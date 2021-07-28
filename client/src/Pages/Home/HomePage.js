@@ -51,16 +51,6 @@ const HomePage = (props) => {
             <h2 className="subtitle5">{i18n.t("homeSubtitleDiscover")}</h2>
             <ul className="middle-nav-list">
               <li className="nav-button-list">
-                <Link to="/show">
-                  <img
-                    id="about-button"
-                    className="default-button"
-                    src={BeeStamp}
-                    alt="whole bee "
-                  />
-                </Link>
-              </li>
-              <li className="nav-button-list">
                 <NavButton link={"/connect"} buttonColor={"green-button"}>
                   {i18n.t("homeNavContent.0")}
                 </NavButton>
