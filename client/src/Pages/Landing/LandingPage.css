@@ -82,3 +82,18 @@ div.beeimage-container {
 .card {
   height: 100%;
 }
+
+.translate-button-control {
+  color: white;
+  padding: 5% 2% 5% 0%;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  margin: 0px 0px 50px 0px;
+  padding: 60px 10px 0px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}

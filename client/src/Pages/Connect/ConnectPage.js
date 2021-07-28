@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import SideNav from "../../components/Nav/SideNav";
+import "./Connect.css";
 
 const ConnectPage = (props) => {
   const NavButton = (props) => {
@@ -23,13 +24,13 @@ const ConnectPage = (props) => {
 
   return (
     <>
-      <div className="background-bee-image dark-green">
+      <div className="background-bee-image dark-green extra-height">
         <nav className="sidenav-container">
           <SideNav />
           {/* Translation Button START HERE */}
-          <div className="translate-button">
-            <button onClick={() => changeLanguage("en")}>En</button>
-            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+          <div className="translate-button-control">
+            <span onClick={() => changeLanguage("en")}>En/</span>
+            <span onClick={() => changeLanguage("welsh")}>Cymraeg</span>
             {/* Translation Button END HERE */}
           </div>
         </nav>

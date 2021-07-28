@@ -10,12 +10,12 @@ function LandingPage(props) {
     i18n.changeLanguage(language);
   };
 
-  const setFooterColor = () => {
-    if ("background-bee-image brown") {
-      document.getElementById("root").classList.add("brown"); //footer to change not root
-      console.log("Add brown footer");
-    }
-  };
+  // const setFooterColor = () => {
+  //   if ("background-bee-image brown") {
+  //     document.getElementById("root").classList.add("brown"); //footer to change not root
+  //     console.log("Add brown footer");
+  //   }
+  // };
 
   // setFooterColor();
 
@@ -26,8 +26,8 @@ function LandingPage(props) {
           <SideNav />
           {/* Translation Button START HERE */}
           <div className="translate-button-control">
-            <button onClick={() => changeLanguage("en")}>En</button>
-            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+            <span onClick={() => changeLanguage("en")}>En/</span>
+            <span onClick={() => changeLanguage("welsh")}>Cymraeg</span>
           </div>{" "}
         </nav>
 

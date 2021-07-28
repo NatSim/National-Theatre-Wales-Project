@@ -42,8 +42,8 @@ const AboutArticlesPage = (props) => {
             {/* Translation Button START HERE */}
 
             <div className="translate-button-control">
-              <button onClick={() => changeLanguage("en")}>En</button>
-              <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+              <span onClick={() => changeLanguage("en")}>En</span>
+              <span onClick={() => changeLanguage("welsh")}>Cymraeg</span>
             </div>
 
             {/* Translation Button END HERE */}
