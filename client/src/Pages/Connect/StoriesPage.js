@@ -15,14 +15,14 @@ const StoriesPageA = (props) => {
         <nav className="sidenav-container">
           <SideNav /> {/* Translation Button START HERE */}
           <div className="translate-button-control">
-            <button onClick={() => changeLanguage("en")}>En</button>
-            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+            <span onClick={() => changeLanguage("en")}>En</span>
+            <span onClick={() => changeLanguage("welsh")}>Cymraeg</span>
           </div>
           {/* Translation Button END HERE */}
         </nav>
         <main>
           <span>
-            <h2 className="subtitle2">{t("storiesContent.0")}</h2>
+            <h2 className="subtitle5">{t("storiesContent.0")}</h2>
           </span>{" "}
           {/* Story 1 container START HERE */}
           <section className="story-parent-container">

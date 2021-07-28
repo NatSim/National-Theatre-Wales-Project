@@ -35,9 +35,7 @@ const ConnectPage = (props) => {
           </div>
         </nav>
         <main>
-          <h2 id="white-font" className="subtitle2">
-            {t("storiesContent.0")}
-          </h2>
+          <h2 className="subtitle5">{t("storiesContent.0")}</h2>
           <section className="audio-container-parent">
             <ul className="story-container">
               <li className="connect-button-control">

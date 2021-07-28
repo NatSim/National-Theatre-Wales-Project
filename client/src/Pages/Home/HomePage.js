@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./HomePage.css";
-import BeeStamp from "../../images/Simple7/whole-beeimage.png";
 import SideNav from "../../components/Nav/SideNav";
 
 /**Homepage with Nav buttons as routes to sub pages

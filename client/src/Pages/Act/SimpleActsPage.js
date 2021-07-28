@@ -46,9 +46,9 @@ const SimpleActsPage = (props) => {
       <div className="background-bee-image pink">
         <nav className="sidenav-container">
           <SideNav />
-          <div className="translate-button">
-            <button onClick={() => changeLanguage("en")}>En</button>
-            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+          <div className="translate-button-control">
+            <span onClick={() => changeLanguage("en")}>En/</span>
+            <span onClick={() => changeLanguage("welsh")}>Cymraeg</span>
             {/* Translation Button END HERE */}
           </div>
         </nav>
