@@ -4,10 +4,11 @@ import SideNav from "../../components/Nav/SideNav";
 import Features from "../../components/PageContent/Features/Features";
 import NTWLogo from "../../images/logos/NTWLogo/NTW_Logo.png";
 import Party from "../../images/NTW/NTWHaverHub.jpg";
-import Tide from "../../images/TEAM/Tide-Whisperer-TEAM-Social-1-1.jpg";
+import Tide from "../../images/TEAM/Festival.jpg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import "./ExplorePage.css";
 
 function ExplorePage() {
   const { i18n } = useTranslation();
@@ -17,7 +18,7 @@ function ExplorePage() {
 
   return (
     <>
-      <div>
+      <div className="background-explore-image">
         <nav className="sidenav-container">
           <SideNav />
           {/* Translation Button START HERE */}
