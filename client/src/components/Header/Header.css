@@ -16,7 +16,7 @@
 
 .nav-links {
   text-decoration: none;
-  height: 50px;
+  height: 25px;
 }
 
 li {
@@ -38,5 +38,4 @@ li {
 .bee-logo-control {
   width: 35px;
   height: auto;
-  margin: 0px 0px 10px 0px;
 }
