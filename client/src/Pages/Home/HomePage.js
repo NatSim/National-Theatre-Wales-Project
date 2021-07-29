@@ -25,14 +25,6 @@ const HomePage = (props) => {
     i18n.changeLanguage(language);
   };
 
-  const setFooterColor = () => {
-    if ("background-bee-image dark-green") {
-      document
-        .getElementsByClassName("home-footer") //in App.js
-        .classList.add("dark-green");
-    }
-  };
-
   return (
     <>
       <div className="background-bee-image dark-green">

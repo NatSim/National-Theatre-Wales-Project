@@ -174,7 +174,7 @@
 "specialThanks":["Holl Arddwyr Penfro a Doc Penfro"," Theatr Torch","Maenorbŷr","Ysgol a reolir yn wirfoddol yr Eglwys yng Nghymru, Maenorbŷr","Ysgol Greenhil, Dinbych-y-Pysgod"," Ysgol Gyfun Aberdaugleddau","Ysgol Uwchradd a reolir yn wirfoddol Hwlffordd","Ysgol a reolir yn wirfoddol yr Eglwys yng Nghymru St Oswald","Ysgol a reolir yn wirfoddol yr Eglwys yng Nghymru","Canolfan Dysgu Sir Benfro"], "sustainable":["Cyn Gydymaith TEAM (Sir Benfro)","Cyn Gydymaith TEAM (Sir Benfro)","Cyn Gydymaith TEAM (Sir Benfro)"],
 
 "mapContent":["Lleoliadau Gweithred Syml"],"mapAct":["1. Plannwch Hedyn","2. Ewch Am Dro","3. Cysylltwch   Rhywun Newydd","4. Gwastraffwch Ychydig Yn Llai","5. Ystyriwch Y Sêr","6. Byddwch Yn Garedig  'ch Cymydog","7. Dysgwch Un Peth Newydd Am Natur"],"mapLocation":["St Davids Pollinator Trail:"],"challengeButton":"Da iawn!🎉",
-  "navList":["Adref","Am","Straeon","Gwrandewch","Deddf","TEAM","Contact"],
+  "navList":["Adref","Am","Straeon","Gwrandewch","Deddf","archwilio","Cysylltwch â Ni"],
   "welcomeComponent": 
     "Croeso i Go Tell The Bees,Go Tell The Bees Mae Go Tell the Bees yn gofyn i bob un ohonom berfformio saith act syml ,yn ein bywydau beunyddiol..."
   ,
@@ -188,7 +188,7 @@
     "Hygyrchedd",
     "  2021 Go Tell The Bees Hawlfraint © National Theatre Wales.Rhif Cofrestredig y Cwmni: 6693227 Rhif Cofrestredig Elusen: 1127952. Gwefan wedi’i datblygu gan "
   ],
-  "headerContent": ["Hafan", "Amdanom ni"],
+  "headerContent": ["Hafan", "Amdanom ni","Archwilio"],
   "contactContent": [
     "Cysylltwch â Ni",
     " Rydym yn gweithredu o ganolfan fach yng nghanol dinas Caerdydd, ond yn gweithio ar draws y wlad, a thu hwnt, yn defnyddio tirwedd gyfoethog ac amrywiol Cymru, ei threfi, dinasoedd a phentrefi, ei straeon arbennig a'i chyfoeth o dalent yn ysbrydoliaeth i ni.",

@@ -45,8 +45,8 @@ const SidebarData = [
   },
   {
     id_6: 6,
-    title: "TEAM",
-    path: "/about/1",
+    title: "Explore",
+    path: "/explore",
     icon: <RiIcons.RiTeamLine />,
     cName: "nav-text",
   },

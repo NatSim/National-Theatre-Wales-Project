@@ -19,6 +19,7 @@ import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import AboutPageLogic from "../components/PageContent/AboutInfo/AboutPageLogic";
 import StoriesLogic from "./Connect/StoriesLogic";
 import Header from "../components/Header/Header";
+import ExplorePage from "./Explore/ExplorePage";
 
 // // SERVICES
 // import userService from "../services/userService";
@@ -34,6 +35,7 @@ function App(props) {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route path="/home" component={HomePage} />
+          <Route path="/explore" component={ExplorePage} />
           <Route path="/about/:id" component={AboutPageLogic} />
           <Route path="/simpleacts" component={SimpleActsPage} />
           <Route path="/connect" component={ConnectPage} />
@@ -42,6 +44,7 @@ function App(props) {
           <Route path="/challenge/:id" component={ChallengePage} />
           <Route path="/show" component={ShowPage} />
           <Route path="/map" component={MapPage} />
+
           <Route path="/contact" component={ContactUsPage} />
           <Route path="/terms" component={TermsPage} />
           <Route path="/accessibility" component={AccessPage} />
