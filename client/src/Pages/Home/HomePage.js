@@ -40,7 +40,7 @@ const HomePage = (props) => {
         <main>
           <nav className="nav-container">
             <ul className="middle-nav-list">
-              <li>
+              <li className="nav-list-child">
                 {" "}
                 <h2 className="subtitle5">{i18n.t("homeSubtitleDiscover")}</h2>
               </li>

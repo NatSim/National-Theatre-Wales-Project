@@ -143,6 +143,11 @@ li {
 }
 
 /* Bee Image about button*/
+
+.nav-list-child {
+  display: inline-flex;
+  margin-bottom: 15%;
+}
 .middle-nav-list {
   padding: 0;
 }
