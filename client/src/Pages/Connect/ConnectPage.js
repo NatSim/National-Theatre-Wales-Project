@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import SideNav from "../../components/Nav/SideNav";
@@ -44,7 +44,7 @@ const ConnectPage = (props) => {
               <li className="connect-button-control">
                 <NavButton
                   link={"/stories/1"}
-                  buttonColor={"green-button"}
+                  buttonColor={"pink-button"}
                   id={"1"}
                 >
                   {t("storiesContent.1")}
@@ -53,7 +53,7 @@ const ConnectPage = (props) => {
               <li className="connect-button-control">
                 <NavButton
                   link={"/stories/2"}
-                  buttonColor={"pink-button"}
+                  buttonColor={"simple-button"}
                   id={"2"}
                 >
                   {t("storiesContent.2")}

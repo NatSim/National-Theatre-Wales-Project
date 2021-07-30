@@ -10,6 +10,7 @@
 
 .video-container-parent {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -23,7 +24,7 @@
 
 .story-blurbs,
 .story-subtitle {
-  /* color: white; */
+  color: white;
   text-align: left;
 }
 
@@ -71,26 +72,7 @@
 /*Blurb background color*/
 .story-info-container {
   padding: 10px 10px 10px 10px;
-  background: whitesmoke;
-  border-radius: 5px;
-}
-
-.story-info-container {
-  position: relative;
-}
-
-.story-info-container::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-size: cover;
-  opacity: 0.5;
-  border-top-style: double;
-
-  border-top-width: 0.5px;
+  color: white;
 }
 
 /*LISTEN(Music) PAGE HERE*/

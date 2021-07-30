@@ -1,6 +1,13 @@
+h1.subtitle1 {
+  color: white;
+  font-family: hero-new, sans-serif;
+}
+
 .access-content-control {
+  border-radius: 5px;
   background-color: white;
   border-radius: 5px;
-  text-align: initial;
-  padding: 20px;
+  text-align: center;
+  padding: 5%;
+  margin: 5%;
 }

@@ -23,8 +23,8 @@ const ContactUsPage = () => {
         </nav>
 
         <div className="form-content-parent">
-          <div className="subtitle3">
-            <h1 className="contact_heading">{t("contactContent.0")}</h1>
+          <div className="">
+            <h1 className="subtitle1">{t("contactContent.0")}</h1>
           </div>
           <div>
             <p className="contact-location-info">{t("contactContent.1")}</p>
