@@ -33,7 +33,7 @@ const StoriesPageA = (props) => {
                 <Trans i18nKey="storiesContent.6"></Trans>
               )}
             </h3>
-            <section className="video-container-parent">
+            <section className="">
               <div className="story-blurbs">
                 {props.id_ === 1 ? (
                   <>
@@ -58,25 +58,24 @@ const StoriesPageA = (props) => {
                 </div>
               )}
 
-              <div className="video-text-control">
-                {props.id_ === 1 ? (
-                  <div className="video-container-child">
-                    <VideoPlayer
-                      url={t("storyHref.0")}
-                      width={"246px"}
-                      height={"150px"}
-                    />
-                  </div>
-                ) : (
-                  <div className="video-container-child">
-                    <VideoPlayer
-                      url={t("storyHref.7")}
-                      width={"246px"}
-                      height={"150px"}
-                    />
-                  </div>
-                )}
-              </div>
+              {props.id_ === 1 ? (
+                <div className="video-text-control">
+                  <VideoPlayer
+                    url={t("storyHref.0")}
+                    width={"246px"}
+                    height={"150px"}
+                  />
+                </div>
+              ) : (
+                <div className="video-container-child">
+                  <VideoPlayer
+                    url={t("storyHref.7")}
+                    width={"246px"}
+                    height={"150px"}
+                  />
+                </div>
+              )}
+
               {/* Story 1 container END HERE */}
               {/* Story 2 container START HERE */}
               {props.id_ === 1 ? (
@@ -243,19 +242,21 @@ const StoriesPageA = (props) => {
               ) : (
                 ""
               )}
-              <div className="video-text-control">
-                {props.id_ === 1 ? (
-                  <div className="video-container-child">
+
+              {props.id_ === 1 ? (
+                <div className="video-container-child">
+                  <div>
                     <VideoPlayer
                       url={t("storyHref.6")}
                       width={"246px"}
                       height={"150px"}
                     />
                   </div>
-                ) : (
-                  ""
-                )}
-              </div>
+                </div>
+              ) : (
+                ""
+              )}
+
               {/* Story 7 container END HERE */}
             </section>
           </section>

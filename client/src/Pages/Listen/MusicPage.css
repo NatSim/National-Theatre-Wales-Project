@@ -25,22 +25,23 @@
 .story-blurbs,
 .story-subtitle {
   color: white;
-  text-align: left;
+  text-align: center;
 }
 
 .video-container-child {
   text-align: -webkit-center;
-  padding: 20px 0px 20px 0px;
+  padding: 0;
   margin: auto;
 }
 @media only screen and (min-width: 802px) {
   .video-container-child {
-    padding: 0px 60px 20px 0px;
+    padding: 0;
   }
 }
 
 .video-text-control {
   display: flex;
+  justify-content: center;
   max-width: 100%;
 }
 @media only screen and (max-width: 802px) {
@@ -66,7 +67,8 @@
 }
 
 .story-children-blurbs {
-  padding: 0px 20px 0px 20px;
+  /* padding: 0px 20px 0px 20px; */
+  color: white;
 }
 
 /*Blurb background color*/
