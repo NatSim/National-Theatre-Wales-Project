@@ -39,8 +39,11 @@ const HomePage = (props) => {
         </nav>
         <main>
           <nav className="nav-container">
-            <h2 className="subtitle5">{i18n.t("homeSubtitleDiscover")}</h2>
             <ul className="middle-nav-list">
+              <li>
+                {" "}
+                <h2 className="subtitle5">{i18n.t("homeSubtitleDiscover")}</h2>
+              </li>
               <li className="nav-button-list">
                 <NavButton link={"/connect"} buttonColor={"green-button"}>
                   {i18n.t("homeNavContent.0")}

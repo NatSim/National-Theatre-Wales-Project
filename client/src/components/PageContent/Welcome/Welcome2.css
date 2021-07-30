@@ -5,6 +5,7 @@
   color: white;
 }
 
-.welcome-child-text-control {
-  margin-top: 15%;
-}
+/* Add media query for Galaxy Fold responsive */
+/* .welcome-child-text-control {
+
+} */

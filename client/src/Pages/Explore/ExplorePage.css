@@ -8,15 +8,20 @@ div.background-explore-image::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../../images/TEAM/TideTEAMSocial.jpg);
+  /* background-image: url(../../images/TEAM/TideTEAMSocial.jpg); */
+  background-image: url(../../images/TEAM/TideWhisperer3.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 50%;
   background-position: center;
-  opacity: 0.65;
+  opacity: 0.5;
 }
 
 .translate-button-control .home-footer,
 ul,
 header {
   position: relative;
+}
+
+h2.explore-page {
+  color: #3e455a;
 }

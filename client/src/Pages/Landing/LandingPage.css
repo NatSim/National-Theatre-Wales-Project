@@ -9,13 +9,9 @@ div.background-bee-image::before {
   bottom: 0px;
   left: 0px;
   background-image: url(../../images/Background-placeholders/bee_lowopacity2.png);
-  /* background-image: url(../../images/Background-placeholders/svg-logo.png); TEMP SVG */
   background-size: cover;
-  height: 100vh;
-
+  height: 110vh;
   background-position: center;
-  /* background-repeat: no-repeat; */
-  /* opacity: 0.5; */
 }
 
 .translate-button,
