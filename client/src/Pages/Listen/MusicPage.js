@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import "./MusicPage.css";
 import SideNav from "../../components/Nav/SideNav";
+import AudioPlayer from "../../components/PageContent/AudioPlayer/AudioPlayer";
 
 const MusicPage = () => {
   const { t, i18n } = useTranslation();
@@ -30,6 +31,7 @@ const MusicPage = () => {
           {/* Featured Item START HERE */}
           <section className="audio-container-parent">
             <div className="video-container-child">
+              <AudioPlayer />
               <VideoPlayer
                 url={t("listenHrefs.0")}
                 width={"246px"}
