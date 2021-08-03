@@ -31,11 +31,14 @@ const MusicPage = () => {
           {/* Featured Item START HERE */}
           <section className="audio-container-parent">
             <div className="video-container-child">
-              <AudioPlayer />
               <VideoPlayer
                 url={t("listenHrefs.0")}
                 width={"246px"}
                 height={"150px"}
+                // style={{
+                //   backgroundColor: "rgb(248, 248, 248",
+                //   position: "relative",
+                // }}
               />
               <div className="title-text-container">
                 <span className="title-text">{t("listenContent.2")}</span>
@@ -45,6 +48,9 @@ const MusicPage = () => {
           {/* Featured Item END HERE */}
 
           {/* List Section START HERE */}
+          <div className="temp-audio-container">
+            <AudioPlayer />
+          </div>
           <section>
             <ol className="audio-container-parent">
               <li className="video-container-child">
