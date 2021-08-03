@@ -20,28 +20,37 @@ function AudioPlayer() {
       >
         Your browser does not support the audio element.
       </audio>
-      <span>Track Title</span>
-
+      <section className="audio-track-title-container">
+        <span>Track Title</span>
+      </section>
       {/*CUSTOM CONTROLS START */}
-      <button className="audio-icons-control">
-        <FaIcons.FaBackward /> 30
-      </button>
-      <button onClick={togglePlayPause} className="audio-icons-control">
-        {isPlaying ? <FaIcons.FaPause /> : <FaIcons.FaPlay />}
-      </button>
-      <button className="audio-icons-control">
-        30
-        <FaIcons.FaFastForward />
-      </button>
+      <section className="audio-track-title-container">
+        <button className="audio-icons-control forward-back">
+          <FaIcons.FaBackward /> 30
+        </button>
+        <button
+          onClick={togglePlayPause}
+          className="audio-icons-control play-pause"
+        >
+          {isPlaying ? <FaIcons.FaPause /> : <FaIcons.FaPlay />}
+        </button>
+        <button className="audio-icons-control forward-back">
+          30
+          <FaIcons.FaFastForward />
+        </button>
+      </section>
+      <section className="audio-track-title-container">
+        {/* current time */}
+        <div>0:00</div>
 
-      {/* current time */}
-      <div>0:00</div>
-
-      {/* progress bar */}
-      <div input type="range"></div>
-      {/* duration */}
-      <div>Duration</div>
-      {/*CUSTOM CONTROLS START */}
+        {/* progress bar */}
+        <div>
+          <input type="range" />
+        </div>
+        {/* duration */}
+        <div>Duration</div>
+        {/*CUSTOM CONTROLS START */}
+      </section>
     </div>
   );
 }
