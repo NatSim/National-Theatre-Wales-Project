@@ -34,19 +34,6 @@ const StoriesPageA = (props) => {
               )}
             </h3>
             <section className="">
-              <div className="story-blurbs">
-                {props.id_ === 1 ? (
-                  <>
-                    <p>
-                      {t("storiesContent.4")}
-                      <em className="blue-font">{t("storiesContent.5")}</em>
-                    </p>
-                  </>
-                ) : (
-                  <Trans i18nKey="storiesContent.7"></Trans>
-                )}
-              </div>
-
               {props.id_ === 1 ? (
                 <div className="story-info-container">
                   <h4>{t("story_Title.0")}</h4>
@@ -67,7 +54,7 @@ const StoriesPageA = (props) => {
                   />
                 </div>
               ) : (
-                <div className="video-container-child">
+                <div className="video-text-control">
                   <VideoPlayer
                     url={t("storyHref.7")}
                     width={"246px"}
@@ -258,6 +245,28 @@ const StoriesPageA = (props) => {
               )}
 
               {/* Story 7 container END HERE */}
+              {/* Story 8 container START HERE  (Awaiting video content)*/}
+              {props.id_ === 1 ? (
+                ""
+              ) : (
+                <div className="story-children-blurbs">
+                  <h4>{t("story_Title.13")}</h4>
+                </div>
+              )}
+              <div className="video-text-control">
+                {props.id_ === 1 ? (
+                  ""
+                ) : (
+                  <div className="video-container-child">
+                    <VideoPlayer
+                      url={t("storyHref.8")}
+                      width={"246px"}
+                      height={"150px"}
+                    />
+                  </div>
+                )}
+              </div>
+              {/* Story 8 container END HERE */}
             </section>
           </section>
         </main>

@@ -21,12 +21,10 @@ import StoriesLogic from "./Connect/StoriesLogic";
 import Header from "../components/Header/Header";
 import ExplorePage from "./Explore/ExplorePage";
 
-// // SERVICES
 // import userService from "../services/userService";
 
 //App Routes
 function App(props) {
-  console.log(props);
   return (
     <>
       <Router>
