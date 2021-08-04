@@ -24,7 +24,7 @@ const ConnectPage = (props) => {
 
   return (
     <>
-      <div className="background-bee-image dark-green extra-height">
+      <div className="background-bee-image dark-green">
         <nav className="sidenav-container">
           <SideNav />
           {/* Translation Button START HERE */}
@@ -43,25 +43,40 @@ const ConnectPage = (props) => {
               </li>
               <li className="connect-button-control">
                 <NavButton
-                  link={"/stories/1"}
-                  buttonColor={"pink-button"}
-                  id={"1"}
-                >
-                  {t("storiesContent.1")}
-                </NavButton>
-              </li>
-              <li className="connect-button-control">
-                <NavButton
                   link={"/stories/2"}
-                  buttonColor={"simple-button"}
+                  buttonColor={"pink-button"}
                   id={"2"}
                 >
                   {t("storiesContent.2")}
-                </NavButton>
+                </NavButton>{" "}
+                {/*children story intro info STARTS HERE*/}{" "}
+                <div className="story-blurbs">
+                  <p>
+                    <em>{t("storiesContent.7")}</em>
+                  </p>
+                </div>{" "}
+                {/*children story intro info ENDS HERE*/}
+              </li>{" "}
+              <li className="connect-button-control">
+                <NavButton
+                  link={"/stories/1"}
+                  buttonColor={"simple-button"}
+                  id={"1"}
+                >
+                  {t("storiesContent.1")}
+                </NavButton>{" "}
+                {/*children story intro info STARTS HERE*/}
+                <div className="story-blurbs">
+                  <p>
+                    {t("storiesContent.4")}
+                    <em>{t("storiesContent.5")}</em>
+                  </p>
+                </div>
+                {/*children story intro info END HERE*/}
               </li>
             </ul>
           </section>
-        </main>{" "}
+        </main>
       </div>
     </>
   );

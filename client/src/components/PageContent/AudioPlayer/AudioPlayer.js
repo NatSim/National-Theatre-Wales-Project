@@ -12,26 +12,14 @@ function AudioPlayer() {
 
   const togglePlayPause = () => {
     const prevValue = isPlaying;
-    const playPromise = audioPlayer.current.play();
 
     setIsPlaying(!prevValue);
     if (prevValue) {
       audioPlayer.current.play();
       console.log("Play");
-
-      if (playPromise !== undefined) {
-        playPromise
-          .then((_) => {
-            // Automatic playback started!
-            // Show playing UI.
-            audioPlayer.current.pause();
-            console.log("Pause");
-          })
-          .catch((error) => {
-            // Auto-play was prevented
-            // Show paused UI.
-          });
-      }
+    } else {
+      audioPlayer.current.pause();
+      console.log("Pause");
     }
   };
 
@@ -40,7 +28,7 @@ function AudioPlayer() {
       <audio
         ref={audioPlayer}
         type="audio"
-        url="https://soundcloud.com/user-526412140/dawn"
+        src="https://soundcloud.com/user-526412140/dawn"
         preload="none"
       >
         Your browser does not support the audio element.
