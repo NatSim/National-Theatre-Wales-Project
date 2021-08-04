@@ -10,6 +10,7 @@
   justify-content: center;
   font-size: 12px;
   font-family: hero-new, sans-serif;
+  height: fit-content;
 }
 
 /* until move to all audio-style control */

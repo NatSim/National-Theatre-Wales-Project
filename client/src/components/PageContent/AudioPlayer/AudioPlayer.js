@@ -1,22 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./AudioPlayer.css";
 import * as FaIcons from "react-icons/fa";
 
 function AudioPlayer() {
   // play/pause tracker
 
-  const [isPlaying, setIsPlaying] = useState();
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  //references
+  const audioPlayer = useRef(); //for audio component
 
   const togglePlayPause = () => {
-    setIsPlaying(!isPlaying);
+    const prevValue = isPlaying;
+    const playPromise = audioPlayer.current.play();
+
+    setIsPlaying(!prevValue);
+    if (prevValue) {
+      audioPlayer.current.play();
+      console.log("Play");
+
+      if (playPromise !== undefined) {
+        playPromise
+          .then((_) => {
+            // Automatic playback started!
+            // Show playing UI.
+            audioPlayer.current.pause();
+            console.log("Pause");
+          })
+          .catch((error) => {
+            // Auto-play was prevented
+            // Show paused UI.
+          });
+      }
+    }
   };
 
   return (
     <div className="default-button audio-style-control">
       <audio
+        ref={audioPlayer}
         type="audio"
-        src="https://soundcloud.com/user-526412140/animal-kingdom-expressive-arts"
-        preload="metadata"
+        url="https://soundcloud.com/user-526412140/dawn"
+        preload="none"
       >
         Your browser does not support the audio element.
       </audio>
