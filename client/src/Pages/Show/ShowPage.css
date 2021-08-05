@@ -28,7 +28,6 @@
 /*Section Style*/
 .section-child-container {
   border-bottom-style: inset;
-  display: flex;
   justify-content: center;
 }
 .section-list-style-control {
