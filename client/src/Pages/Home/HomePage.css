@@ -126,21 +126,15 @@ li {
   width: 200px;
   height: 100px;
   font-family: hero-new, sans-serif;
-  font: bold;
   font-size: 22px;
   color: white;
   border-radius: 50%;
-  border-color: none !important;
+  border: none;
 }
 
-@media only screen and (max-width: 801px) {
+@media (max-width: 801px) {
   .default-button {
     height: 80px;
-    font-family: hero-new, sans-serif;
-    font: bold;
-    font-size: 22px;
-    color: white;
-    border-radius: 50%;
   }
 }
 
@@ -180,7 +174,7 @@ li {
   margin: 100px 0px 0px 0px;
 }
 
-@media only screen and (max-width: 802px) {
+@media  (max-width: 802px) {
   .translate-button {
     margin: 15%;
   }
@@ -190,7 +184,7 @@ li {
   margin: 100px;
 }
 
-@media only screen and (max-width: 802px) {
+@media  (max-width: 802px) {
   .translate-button2 {
     margin: 65px 0px 0px 0px;
   }
