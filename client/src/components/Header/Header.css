@@ -7,11 +7,12 @@
 }
 
 #nav-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1;
   background-color: white;
+  padding: 10px 10px 5px 10px;
 }
 
 .nav-links {
