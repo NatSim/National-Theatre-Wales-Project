@@ -130,7 +130,7 @@ li {
   font-size: 22px;
   color: white;
   border-radius: 50%;
-  border-color: none;
+  border-color: none !important;
 }
 
 @media only screen and (max-width: 801px) {

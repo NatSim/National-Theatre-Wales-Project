@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./AudioPlayer.css";
 import * as FaIcons from "react-icons/fa";
+import Dawn from "./tracks/dawn.wav";
 
 function AudioPlayer() {
   // play/pause tracker
@@ -25,12 +26,7 @@ function AudioPlayer() {
 
   return (
     <div className="default-button audio-style-control">
-      <audio
-        ref={audioPlayer}
-        type="audio"
-        src="https://soundcloud.com/user-526412140/dawn"
-        preload="none"
-      >
+      <audio ref={audioPlayer} type="audio" src={Dawn} preload="none">
         Your browser does not support the audio element.
       </audio>
       <section className="audio-track-title-container">
