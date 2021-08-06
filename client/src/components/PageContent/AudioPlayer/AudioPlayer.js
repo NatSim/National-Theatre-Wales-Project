@@ -13,6 +13,7 @@ function AudioPlayer() {
   //references
   const audioPlayer = useRef(); //for audio component
   const progressBar = useRef(); //ref to progress bar
+  const animationRef = useRef(); //ref for animation
 
   useEffect(() => {
     //calculate the duration to seconds
@@ -41,16 +42,43 @@ function AudioPlayer() {
     setIsPlaying(!prevValue);
     if (!prevValue) {
       audioPlayer.current.play();
+      animationRef.current = requestAnimationFrame(whilePlaying);
       console.log("Play");
     } else {
       audioPlayer.current.pause();
+      cancelAnimationFrame(animationRef.current);
       console.log("Pause");
     }
   };
 
+  const whilePlaying = () => {
+    progressBar.current.value = audioPlayer.current.currentTime;
+    changePlayerCurrentTime();
+    animationRef.current = requestAnimationFrame(whilePlaying);
+  };
+
   const changeRange = () => {
     audioPlayer.current.currentTime = progressBar.current.value;
-    progressBar.current.style.setProperty("--seek-before-width");
+    changePlayerCurrentTime();
+  };
+
+  const changePlayerCurrentTime = () => {
+    //abstracted function
+    progressBar.current.style.setProperty(
+      "--seek-before-width",
+      `${(progressBar.current.value / duration) * 100}%`
+    );
+    setCurrentTime(progressBar.current.value);
+  };
+
+  const backThirty = () => {
+    progressBar.current.value = Number(progressBar.current.value - 30);
+    changeRange();
+  };
+
+  const forwardThirty = () => {
+    progressBar.current.value = Number(progressBar.current.value) + 30;
+    changeRange();
   };
 
   return (
@@ -63,7 +91,10 @@ function AudioPlayer() {
       </section>
       {/*CUSTOM CONTROLS START */}
       <section className="audio-track-title-container">
-        <button className="audio-icons-control forward-back">
+        <button
+          className="audio-icons-control forward-back"
+          onClick={backThirty}
+        >
           <FaIcons.FaBackward /> 30
         </button>
         <button
@@ -72,7 +103,10 @@ function AudioPlayer() {
         >
           {isPlaying ? <FaIcons.FaPause /> : <FaIcons.FaPlay />}
         </button>
-        <button className="audio-icons-control forward-back">
+        <button
+          className="audio-icons-control forward-back"
+          onClick={forwardThirty}
+        >
           30
           <FaIcons.FaFastForward />
         </button>

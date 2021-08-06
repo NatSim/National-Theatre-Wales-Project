@@ -15,15 +15,14 @@ const MapPage = () => {
         <div className="background-bee-image green">
           <nav className="sidenav-container">
             <SideNav />
-          </nav>
-          {/* Translation Button START HERE */}
-          <div className="translate-button">
-            <button onClick={() => changeLanguage("en")}>En</button>
-            <button onClick={() => changeLanguage("welsh")}>Cymraeg</button>
+            {/* Translation Button START HERE */}
+            <div className="translate-button-control">
+              <span onClick={() => changeLanguage("en")}>En/</span>
+              <span onClick={() => changeLanguage("welsh")}>Cymraeg</span>
+            </div>
             {/* Translation Button END HERE */}
-            <hr />
-          </div>
-          <h3 className="subtitle1">{t("mapContent.0")}</h3>
+          </nav>
+          <h2 className="subtitle5">{t("mapContent.0")}</h2>
 
           <div>
             <Maps />

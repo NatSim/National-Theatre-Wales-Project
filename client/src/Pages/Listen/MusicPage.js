@@ -24,7 +24,7 @@ const MusicPage = () => {
           {/* Translation Button END HERE */}
         </nav>
         <main>
-          <h2 className="subtitle1">{t("listenContent.1")}</h2>
+          <h2 className="subtitle5">{t("listenContent.1")}</h2>
           <div className="intro-text-container">
             <span className="title-text">{t("listenContent.0")}</span>
           </div>
