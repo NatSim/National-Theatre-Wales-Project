@@ -11,13 +11,12 @@
   font-size: 12px;
   font-family: hero-new, sans-serif;
   height: fit-content;
+
+  margin: 15px 0px 15px 0px;
 }
 
 /* until move to all audio-style control */
-.audio-container-control {
-  display: flex;
-  justify-content: center;
-}
+
 .audio-icons-control {
   width: auto;
   height: auto;

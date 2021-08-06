@@ -40,7 +40,7 @@ const MusicPage = (props) => {
           </div>
           {/* Featured Item START HERE */}
           <section className="audio-container-parent">
-            <div className="video-container-child">
+            <div className="audio-container-control">
               <VideoPlayer
                 url={t("listenHrefs")}
                 width={"246px"}
@@ -67,55 +67,55 @@ const MusicPage = (props) => {
                   trackTitle={t("listenTrackTitle.0")}
                 />
               </li>
-              <li className="video-container-child">
+              <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={CatchThisQuiet}
                   trackTitle={t("listenTrackTitle.1")}
                 />
               </li>
-              <li className="video-container-child">
+              <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Dryw}
                   trackTitle={t("listenTrackTitle.2")}
                 />
               </li>
-              <li className="video-container-child">
+              <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Gwenyn}
                   trackTitle={t("listenTrackTitle.3")}
                 />
               </li>
-              <li className="video-container-child">
+              <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={JustToBee}
                   trackTitle={t("listenTrackTitle.4")}
                 />
               </li>
-              <li className="video-container-child">
+              <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Merfolk}
                   trackTitle={t("listenTrackTitle.5")}
                 />
               </li>
-              <li className="video-container-child">
+              <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Petra}
                   trackTitle={t("listenTrackTitle.6")}
                 />
               </li>
-              <li className="video-container-child">
+              <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Stars}
                   trackTitle={t("listenTrackTitle.7")}
                 />
               </li>
-              <li className="video-container-child">
+              <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Trees}
                   trackTitle={t("listenTrackTitle.8")}
                 />
               </li>
-              <li className="video-container-child">
+              <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Ywen}
                   trackTitle={t("listenTrackTitle.9")}

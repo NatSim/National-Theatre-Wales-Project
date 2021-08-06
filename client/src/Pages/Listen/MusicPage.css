@@ -28,13 +28,13 @@
   text-align: center;
 }
 
-.video-container-child {
-  text-align: -webkit-center;
+.audio-container-control {
+  text-align: center;
   padding: 0;
   margin: auto;
 }
 @media only screen and (min-width: 802px) {
-  .video-container-child {
+  .audio-container-control {
     padding: 0;
   }
 }
@@ -100,7 +100,7 @@
 video,
 .subtitle1,
 .title-text,
-.video-container-child,
+.audio-container-control,
 .story-container,
 .story-blurbs,
 .story-subtitle,
