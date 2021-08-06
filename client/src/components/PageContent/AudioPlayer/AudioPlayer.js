@@ -1,9 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./AudioPlayer.css";
 import * as FaIcons from "react-icons/fa";
-import Dawn from "./tracks/dawn.wav";
 
-function AudioPlayer() {
+function AudioPlayer(props) {
   // play/pause tracker
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -17,6 +16,7 @@ function AudioPlayer() {
 
   useEffect(() => {
     //calculate the duration to seconds
+
     const seconds = Math.floor(audioPlayer.current.duration);
 
     setDuration(seconds);
@@ -35,8 +35,8 @@ function AudioPlayer() {
     return `${returnMinutes} :${returnSeconds}`;
   };
 
-  //Play/Pause function
   const togglePlayPause = () => {
+    //Play/Pause function
     const prevValue = isPlaying;
 
     setIsPlaying(!prevValue);
@@ -64,6 +64,7 @@ function AudioPlayer() {
 
   const changePlayerCurrentTime = () => {
     //abstracted function
+
     progressBar.current.style.setProperty(
       "--seek-before-width",
       `${(progressBar.current.value / duration) * 100}%`
@@ -83,11 +84,16 @@ function AudioPlayer() {
 
   return (
     <div className="default-button audio-style-control">
-      <audio ref={audioPlayer} type="audio" src={Dawn} preload="metadata">
+      <audio
+        ref={audioPlayer}
+        type="audio"
+        src={props.trackAudio}
+        preload="metadata"
+      >
         Your browser does not support the audio element.
       </audio>
       <section className="audio-track-title-container">
-        <span>Track Title</span>
+        <span>{props.trackTitle}</span>
       </section>
       {/*CUSTOM CONTROLS START */}
       <section className="audio-track-title-container">

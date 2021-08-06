@@ -67,7 +67,8 @@
   margin: 30px 10px 30px 20px;
 }
 
-.story-children-blurbs {
+.story-children-blurbs,
+.title-text {
   /* padding: 0px 20px 0px 20px; */
   color: white;
 }
@@ -81,11 +82,10 @@
 /*LISTEN(Music) PAGE HERE*/
 .title-text {
   font-size: initial;
-  color: black;
 }
 
 .title-text-container {
-  padding: 15px 0px 0px 0px;
+  padding: 15px 0px 50px 0px;
 }
 
 .audio-container-parent {

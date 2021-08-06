@@ -4,8 +4,9 @@ import VideoPlayer from "../../components/PageContent/VideoPlayer/VideoPlayer";
 import "./MusicPage.css";
 import SideNav from "../../components/Nav/SideNav";
 import AudioPlayer from "../../components/PageContent/AudioPlayer/AudioPlayer";
+import Dawn from "../../components/PageContent/AudioPlayer/tracks/dawn.wav";
 
-const MusicPage = () => {
+const MusicPage = (props) => {
   const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -26,7 +27,7 @@ const MusicPage = () => {
         <main>
           <h2 className="subtitle5">{t("listenContent.1")}</h2>
           <div className="intro-text-container">
-            <span className="title-text">{t("listenContent.0")}</span>
+            <h3 className="title-text">{t("listenContent.0")}</h3>
           </div>
           {/* Featured Item START HERE */}
           <section className="audio-container-parent">
@@ -49,7 +50,7 @@ const MusicPage = () => {
 
           {/* List Section START HERE */}
           <div className="temp-audio-container">
-            <AudioPlayer />
+            <AudioPlayer trackAudio={Dawn} trackTitle={"Dawn"} />
           </div>
           <section>
             <ol className="audio-container-parent">
