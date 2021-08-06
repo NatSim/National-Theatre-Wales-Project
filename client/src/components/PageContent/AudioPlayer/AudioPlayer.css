@@ -14,7 +14,7 @@
 }
 
 /* until move to all audio-style control */
-.temp-audio-container {
+.audio-container-control {
   display: flex;
   justify-content: center;
 }
