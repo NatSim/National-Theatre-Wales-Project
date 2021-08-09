@@ -85,13 +85,12 @@ function AudioPlayer(props) {
   };
 
   return (
-    <div className="default-button audio-style-control">
+    <div className="default-button audio-style-control" style={props.style}>
       <audio
         ref={audioPlayer}
         type="audio"
         src={props.trackAudio}
         preload="metadata"
-        style={{ backgroundColor: "blue" }}
       >
         Your browser does not support the audio element.
       </audio>
