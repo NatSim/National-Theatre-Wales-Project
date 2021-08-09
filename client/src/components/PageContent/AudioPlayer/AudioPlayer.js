@@ -35,19 +35,21 @@ function AudioPlayer(props) {
     return `${returnMinutes} :${returnSeconds}`;
   };
 
+  const play = () => {
+    audioPlayer.current.play();
+    animationRef.current = requestAnimationFrame(whilePlaying);
+  };
+
   const togglePlayPause = () => {
     //Play/Pause function
     const prevValue = isPlaying;
 
     setIsPlaying(!prevValue);
     if (!prevValue) {
-      audioPlayer.current.play();
-      animationRef.current = requestAnimationFrame(whilePlaying);
-      console.log("Play");
+      play();
     } else {
       audioPlayer.current.pause();
       cancelAnimationFrame(animationRef.current);
-      console.log("Pause");
     }
   };
 
@@ -73,7 +75,7 @@ function AudioPlayer(props) {
   };
 
   const backThirty = () => {
-    progressBar.current.value = Number(progressBar.current.value - 30);
+    progressBar.current.value = Number(progressBar.current.value) - 30;
     changeRange();
   };
 
@@ -132,7 +134,9 @@ function AudioPlayer(props) {
           />
         </div>
         {/* duration */}
-        <div>{duration && !isNaN(duration) && calculateTime(duration)}</div>
+        <div>
+          {isNaN ? !isNaN(duration) && calculateTime(duration) : "0:00"}
+        </div>
         {/*CUSTOM CONTROLS START */}
       </section>
     </div>

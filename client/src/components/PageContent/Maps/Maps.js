@@ -21,7 +21,7 @@ const Maps = () => {
             <span>{t("mapLocation.0")}</span>
           </div>
           <p>
-            <a href="https://g.page/thebugfarm?share ">
+            <a href="https://stdavids.gov.uk/pollinator-trail/#">
               <img
                 className="map-control"
                 src={StDavidsPol}
@@ -38,7 +38,7 @@ const Maps = () => {
             <span>{t("mapLocation.1")}</span>
           </div>
           <p>
-            <a href="https://goo.gl/maps/3LMrdPYMSZThB5qGA ">
+            <a href="https://www.pembrokeshirecoast.wales/coast-path/">
               <img
                 className="map-control"
                 src={PemCoastPath}
@@ -56,7 +56,7 @@ const Maps = () => {
             <span>{t("mapLocation.2")}</span>
           </div>
           <p>
-            <a href="https://g.page/gettheboysalift?share  ">
+            <a href="https://get-the-boys-a-lift.mybigcommerce.com/">
               <img
                 className="map-control"
                 src={GetTheBoys}
@@ -73,7 +73,7 @@ const Maps = () => {
             <span>{t("mapLocation.3")}</span>
           </div>
           <p>
-            <a href="https://goo.gl/maps/h4oxgLR55vPCQDFm8 ">
+            <a href="https://www.facebook.com/TheLittlePantryTenby/">
               <img
                 className="map-control"
                 src={LittlePantryShop}
@@ -90,7 +90,7 @@ const Maps = () => {
             <span>{t("mapLocation.4")}</span>
           </div>
           <p>
-            <a href="https://goo.gl/maps/rwwK4BPeYtE4ta3i9 ">
+            <a href="https://gostargazing.co.uk/events/locations/skrinkle-haven-car-park/">
               <img
                 className="map-control"
                 src={Skrinkle}
@@ -107,7 +107,7 @@ const Maps = () => {
             <span>{t("mapLocation.5")}</span>
           </div>
           <p>
-            <a href="https://goo.gl/maps/Km3o7kqh58wqsxbj6  ">
+            <a href="https://www.facebook.com/groups/146549385814002/">
               <img
                 className="map-control"
                 src={CroesoAbergwaun}
@@ -124,7 +124,7 @@ const Maps = () => {
             <span>{t("mapLocation.6")}</span>
           </div>
           <p>
-            <a href="https://goo.gl/maps/J8rGz6HPxqHogaR36 ">
+            <a href="http://www.tysculpturetrail.co.uk/">
               <img
                 className="map-control"
                 src={TyCanolNatureTrai}
