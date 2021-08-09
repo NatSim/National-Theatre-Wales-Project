@@ -89,6 +89,7 @@ function AudioPlayer(props) {
         type="audio"
         src={props.trackAudio}
         preload="metadata"
+        style={{ backgroundColor: "blue" }}
       >
         Your browser does not support the audio element.
       </audio>
