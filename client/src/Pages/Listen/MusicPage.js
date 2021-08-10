@@ -79,56 +79,56 @@ const MusicPage = (props) => {
                 <AudioPlayer
                   trackAudio={Dryw}
                   trackTitle={t("listenTrackTitle.2")}
-                  style={{ backgroundColor: "#008476" }}
+                  style={{ backgroundColor: "#89d7e8" }}
                 />
               </li>
               <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Gwenyn}
                   trackTitle={t("listenTrackTitle.3")}
-                  style={{ backgroundColor: "#ff2f69" }}
+                  style={{ backgroundColor: "#008476" }}
                 />
               </li>
               <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={JustToBee}
                   trackTitle={t("listenTrackTitle.4")}
-                  style={{ backgroundColor: "#00c1a2" }}
+                  style={{ backgroundColor: "#ff2f69" }}
                 />
               </li>
               <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Merfolk}
                   trackTitle={t("listenTrackTitle.5")}
-                  style={{ backgroundColor: "#008476" }}
+                  style={{ backgroundColor: "#00c1a2" }}
                 />
               </li>
               <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Petra}
                   trackTitle={t("listenTrackTitle.6")}
-                  style={{ backgroundColor: "#ff2f69" }}
+                  style={{ backgroundColor: "#89d7e8" }}
                 />
               </li>
               <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Stars}
                   trackTitle={t("listenTrackTitle.7")}
-                  style={{ backgroundColor: "#00c1a2" }}
+                  style={{ backgroundColor: "#008476" }}
                 />
               </li>
               <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Trees}
                   trackTitle={t("listenTrackTitle.8")}
-                  style={{ backgroundColor: "#008476" }}
+                  style={{ backgroundColor: "#ff2f69" }}
                 />
               </li>
               <li className="audio-container-control">
                 <AudioPlayer
                   trackAudio={Ywen}
                   trackTitle={t("listenTrackTitle.9")}
-                  style={{ backgroundColor: "#ff2f69" }}
+                  style={{ backgroundColor: "#00c1a2" }}
                 />
               </li>
             </ol>
