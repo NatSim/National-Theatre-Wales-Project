@@ -23,6 +23,15 @@ function AudioPlayer(props) {
     progressBar.current.max = seconds;
   }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
 
+  useEffect(() => {
+    if (currentTime === duration) {
+      // togglePlayPause();
+      //timeTravel();
+      console.log("return to beginning of track");
+      console.log(currentTime);
+    }
+  }, [currentTime]);
+
   const calculateTime = (secs) => {
     const minutes = Math.floor(secs / 60);
 
@@ -30,7 +39,7 @@ function AudioPlayer(props) {
 
     const seconds = Math.floor(secs % 60);
 
-    const returnSeconds = secs < 10 ? `0${seconds}` : `${seconds}`;
+    const returnSeconds = secs < 10 ? `${"0" + seconds}` : `${seconds}`;
 
     return `${returnMinutes} :${returnSeconds}`;
   };
@@ -81,6 +90,7 @@ function AudioPlayer(props) {
 
   const forwardThirty = () => {
     progressBar.current.value = Number(progressBar.current.value) + 30;
+
     changeRange();
   };
 
@@ -134,7 +144,9 @@ function AudioPlayer(props) {
         </div>
         {/* duration */}
         <div>
-          {isNaN ? !isNaN(duration) && calculateTime(duration) : "0:00"}
+          {isNaN
+            ? !isNaN(duration) && calculateTime(duration)
+            : calculateTime(duration)}
         </div>
         {/*CUSTOM CONTROLS START */}
       </section>
