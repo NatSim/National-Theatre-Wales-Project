@@ -259,7 +259,7 @@ const StoriesPageA = (props) => {
                 ) : (
                   <div className="video-container-child">
                     <VideoPlayer
-                      url={t("storyHref.8")}
+                      url={t("storyHref.9")}
                       width={"246px"}
                       height={"150px"}
                     />

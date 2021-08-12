@@ -28,6 +28,10 @@
   text-align: center;
 }
 
+.story-blurbs {
+  padding: 0px 5px 0px 5px;
+}
+
 .audio-container-control {
   text-align: center;
   padding: 0;
