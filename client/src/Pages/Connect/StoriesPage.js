@@ -232,7 +232,7 @@ const StoriesPageA = (props) => {
 
               {props.id_ === 1 ? (
                 <div className="video-container-child">
-                  <div>
+                  <div className="video-text-control">
                     <VideoPlayer
                       url={t("storyHref.6")}
                       width={"246px"}
