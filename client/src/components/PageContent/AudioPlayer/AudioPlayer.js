@@ -24,14 +24,9 @@ function AudioPlayer(props) {
   }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
 
   useEffect(() => {
-    // if (currentTime === duration) {
-    //function to return back to beginning of track
-    // togglePlayPause();
-    //timeTravel();
-    // console.log("return to beginning of track");
-    // console.log(`is duration time` + duration);
-    // console.log(`is currentime time` + currentTime);
-    // }
+    if (currentTime === duration) {
+      // togglePlayPause();
+    }
   }, [currentTime]);
 
   const calculateTime = (secs) => {
@@ -41,7 +36,7 @@ function AudioPlayer(props) {
 
     const seconds = Math.floor(secs % 60);
 
-    const returnSeconds = secs < 10 ? `${"0" + seconds}` : `${seconds}`;
+    const returnSeconds = secs < 10 ? `0${seconds}` : `${seconds}`;
 
     return `${returnMinutes} :${returnSeconds}`;
   };
@@ -86,27 +81,23 @@ function AudioPlayer(props) {
   };
 
   const backThirty = () => {
-    progressBar.current.value = Number(progressBar.current.value) - 30;
-    changeRange();
+    timeTravel(Number(progressBar.current.value) - 30);
   };
 
   const forwardThirty = () => {
-    progressBar.current.value = Number(progressBar.current.value) + 30;
-
-    changeRange();
+    timeTravel(Number(progressBar.current.value) + 30);
   };
 
-  // const handleLoadMetadata = (meta) => {
-  //   const { duration } = meta.target;
-  //   console.log(meta.target);
-  //   console.log(calculateTime(duration));
-  //   return calculateTime(duration);
-  // };
-
   const onLoadedMetadata = () => {
+    //displays our audio duration initial
     const seconds = Math.floor(audioPlayer.current.duration);
     setDuration(seconds);
     progressBar.current.max = seconds;
+  };
+
+  const timeTravel = (newTime) => {
+    progressBar.current.value = newTime;
+    changeRange();
   };
 
   return (
