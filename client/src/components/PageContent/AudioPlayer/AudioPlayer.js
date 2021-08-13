@@ -24,12 +24,14 @@ function AudioPlayer(props) {
   }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
 
   useEffect(() => {
-    if (currentTime === duration) {
-      // togglePlayPause();
-      //timeTravel();
-      console.log("return to beginning of track");
-      console.log(currentTime);
-    }
+    // if (currentTime === duration) {
+    //function to return back to beginning of track
+    // togglePlayPause();
+    //timeTravel();
+    // console.log("return to beginning of track");
+    // console.log(`is duration time` + duration);
+    // console.log(`is currentime time` + currentTime);
+    // }
   }, [currentTime]);
 
   const calculateTime = (secs) => {
@@ -94,6 +96,13 @@ function AudioPlayer(props) {
     changeRange();
   };
 
+  const handleLoadMetadata = (meta) => {
+    const { duration } = meta.target;
+    console.log(meta.target);
+    console.log(calculateTime(duration));
+    return calculateTime(duration);
+  };
+
   return (
     <div className="default-button audio-style-control" style={props.style}>
       <audio
@@ -101,6 +110,7 @@ function AudioPlayer(props) {
         type="audio"
         src={props.trackAudio}
         preload="metadata"
+        onLoadedMetadata={handleLoadMetadata}
       >
         Your browser does not support the audio element.
       </audio>
@@ -143,11 +153,7 @@ function AudioPlayer(props) {
           />
         </div>
         {/* duration */}
-        <div>
-          {isNaN
-            ? !isNaN(duration) && calculateTime(duration)
-            : calculateTime(duration)}
-        </div>
+        <div>{!isNaN(duration) && duration && calculateTime(duration)}</div>
         {/*CUSTOM CONTROLS START */}
       </section>
     </div>
