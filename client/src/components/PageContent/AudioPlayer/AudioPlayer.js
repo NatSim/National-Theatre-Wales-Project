@@ -96,11 +96,17 @@ function AudioPlayer(props) {
     changeRange();
   };
 
-  const handleLoadMetadata = (meta) => {
-    const { duration } = meta.target;
-    console.log(meta.target);
-    console.log(calculateTime(duration));
-    return calculateTime(duration);
+  // const handleLoadMetadata = (meta) => {
+  //   const { duration } = meta.target;
+  //   console.log(meta.target);
+  //   console.log(calculateTime(duration));
+  //   return calculateTime(duration);
+  // };
+
+  const onLoadedMetadata = () => {
+    const seconds = Math.floor(audioPlayer.current.duration);
+    setDuration(seconds);
+    progressBar.current.max = seconds;
   };
 
   return (
@@ -110,7 +116,7 @@ function AudioPlayer(props) {
         type="audio"
         src={props.trackAudio}
         preload="metadata"
-        onLoadedMetadata={handleLoadMetadata}
+        onLoadedMetadata={onLoadedMetadata}
       >
         Your browser does not support the audio element.
       </audio>
@@ -153,7 +159,7 @@ function AudioPlayer(props) {
           />
         </div>
         {/* duration */}
-        <div>{!isNaN(duration) && duration && calculateTime(duration)}</div>
+        <div>{duration && calculateTime(duration)}</div>
         {/*CUSTOM CONTROLS START */}
       </section>
     </div>
