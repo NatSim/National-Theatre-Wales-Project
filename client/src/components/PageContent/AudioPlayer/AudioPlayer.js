@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "./AudioPlayer.css";
 import * as FaIcons from "react-icons/fa";
 
-function AudioPlayer(props) {
+function AudioPlayer(props, { timeJump }) {
   // play/pause tracker
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -15,6 +15,16 @@ function AudioPlayer(props) {
   const animationRef = useRef(); //ref for animation
 
   useEffect(() => {
+    if (timeJump) {
+      timeTravel(timeJump);
+      // setIsPlaying(true);
+      // play();
+    } else {
+      timeTravel(0);
+    }
+  }, [timeJump]);
+
+  useEffect(() => {
     //calculate the duration to seconds
 
     const seconds = Math.floor(audioPlayer.current.duration);
@@ -24,8 +34,11 @@ function AudioPlayer(props) {
   }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
 
   useEffect(() => {
-    if (currentTime === duration) {
-      // togglePlayPause();
+    if (calculateTime(currentTime) === calculateTime(duration)) {
+      togglePlayPause();
+      timeTravel(0);
+      console.log("return to start");
+      console.log(currentTime, "+", duration);
     }
   }, [currentTime]);
 
@@ -36,7 +49,7 @@ function AudioPlayer(props) {
 
     const seconds = Math.floor(secs % 60);
 
-    const returnSeconds = secs < 10 ? `0${seconds}` : `${seconds}`;
+    const returnSeconds = secs < 10 ? `${"0" + seconds}` : `${seconds}`;
 
     return `${returnMinutes} :${returnSeconds}`;
   };
