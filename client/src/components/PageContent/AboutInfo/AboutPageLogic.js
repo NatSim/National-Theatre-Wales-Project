@@ -3,7 +3,10 @@ import aboutText from "../../../Models/aboutText";
 import AboutArticlesPage from "../../../Pages/About/AboutArticlesPage";
 
 const AboutPageLogic = (props) => {
-  /** Displays ABOUT TEAM&NTW information*/
+  /** Displays ABOUT TEAM&NTW information
+   * Dynamically displaying 2 pages,containing same HTML structure found at /Pages/AboutArticlesPage.js
+   * All below props imported from json file above.
+   */
 
   const id = props.match.params.id;
 

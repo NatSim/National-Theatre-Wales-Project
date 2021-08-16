@@ -132,6 +132,10 @@ li {
   border: none;
 }
 
+.default-button .btn-primary {
+  border: none;
+}
+
 @media (max-width: 801px) {
   .default-button {
     height: 80px;
@@ -168,26 +172,3 @@ li {
   background-color: #ff2f69;
 }
 /*Middle Discover nav-END*/
-
-/* Translate Button START*/
-/* .translate-button {
-  margin: 100px 0px 0px 0px;
-}
-
-@media  (max-width: 802px) {
-  .translate-button {
-    margin: 15%;
-  }
-} */
-
-/* .translate-button-2 {
-  margin: 100px;
-}
-
-@media  (max-width: 802px) {
-  .translate-button2 {
-    margin: 65px 0px 0px 0px;
-  }
-} */
-
-/* Translate Button END*/

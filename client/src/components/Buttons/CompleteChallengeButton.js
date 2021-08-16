@@ -1,7 +1,6 @@
 import React from "react";
 import "../../components/Buttons/MainButton.css";
 import Button from "react-bootstrap/Button";
-// import simpleText from "../../Models/simpleText";
 
 const CompleteChallengeButton = (props) => {
   return (
