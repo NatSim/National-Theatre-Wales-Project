@@ -5,7 +5,7 @@ import * as FaIcons from "react-icons/fa";
 function AudioPlayer(props, { timeJump }) {
   // play/pause tracker
 
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
 
@@ -37,8 +37,8 @@ function AudioPlayer(props, { timeJump }) {
     if (calculateTime(currentTime) === calculateTime(duration)) {
       togglePlayPause();
       timeTravel(0);
-      console.log("return to start");
-      console.log(currentTime, "+", duration);
+      // console.log("return to start");
+      // console.log(currentTime, "+", duration);
     }
   }, [currentTime]);
 
@@ -163,7 +163,7 @@ function AudioPlayer(props, { timeJump }) {
           />
         </div>
         {/* duration */}
-        <div>{duration && calculateTime(duration)}</div>
+        <div>'{duration && calculateTime(duration)}'</div>
         {/*CUSTOM CONTROLS START */}
       </section>
     </div>
