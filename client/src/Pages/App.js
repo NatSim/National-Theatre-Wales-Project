@@ -16,7 +16,7 @@ import ShowPage from "./Show/ShowPage";
 import MapPage from "./Map/MapPage";
 import Footer from "../components/PageContent/Footer/Footer";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
-import AboutPageLogic from "../components/PageContent/AboutInfo/AboutPageLogic";
+import AboutPageLogic from "../Pages/About/AboutPageLogic";
 import StoriesLogic from "./Connect/StoriesLogic";
 import Header from "../components/Header/Header";
 import ExplorePage from "./Explore/ExplorePage";
@@ -42,7 +42,6 @@ function App(props) {
           <Route path="/challenge/:id" component={ChallengePage} />
           <Route path="/show" component={ShowPage} />
           <Route path="/map" component={MapPage} />
-
           <Route path="/contact" component={ContactUsPage} />
           <Route path="/terms" component={TermsPage} />
           <Route path="/accessibility" component={AccessPage} />

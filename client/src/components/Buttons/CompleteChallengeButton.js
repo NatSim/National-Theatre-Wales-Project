@@ -1,5 +1,4 @@
 import React from "react";
-import "../../components/Buttons/MainButton.css";
 import Button from "react-bootstrap/Button";
 
 const CompleteChallengeButton = (props) => {

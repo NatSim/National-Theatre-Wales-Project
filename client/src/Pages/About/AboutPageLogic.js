@@ -1,6 +1,6 @@
 import React from "react";
-import aboutText from "../../../Models/aboutText";
-import AboutArticlesPage from "../../../Pages/About/AboutArticlesPage";
+import aboutText from "../../Models/aboutText";
+import AboutArticlesPage from "./AboutArticlesPage";
 
 const AboutPageLogic = (props) => {
   /** Displays ABOUT TEAM&NTW information

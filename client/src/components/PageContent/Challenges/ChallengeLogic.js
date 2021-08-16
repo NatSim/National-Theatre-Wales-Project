@@ -8,8 +8,12 @@ import simpleText, {
 import ChallengeItem from "./ChallengeChoicePage";
 import "./ChallengePage.css";
 
-/**Display 7 pages in one component
-simpleText content */
+/** Displays 7 pages in one component
+simpleText content information
+   * Dynamically displaying 7 pages,containing same HTML structure found at /ChallengeChoicePage.js
+   * All below props imported from json file above.
+   */
+
 const ChallengeLogic = (props) => {
   const id = props.match.params.id;
 

@@ -4,7 +4,6 @@
 
   position: relative;
 
-  /* background-color: rgb(0, 193, 162); */
   max-width: 100%;
   align-items: center;
   justify-content: center;
@@ -14,8 +13,6 @@
 
   margin: 15px 0px 15px 0px;
 }
-
-/* until move to all audio-style control */
 
 .audio-icons-control {
   width: auto;

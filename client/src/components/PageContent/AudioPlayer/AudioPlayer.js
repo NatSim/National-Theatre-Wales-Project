@@ -37,8 +37,6 @@ function AudioPlayer(props, { timeJump }) {
     if (calculateTime(currentTime) === calculateTime(duration)) {
       togglePlayPause();
       timeTravel(0);
-      // console.log("return to start");
-      // console.log(currentTime, "+", duration);
     }
   }, [currentTime]);
 
