@@ -11,13 +11,15 @@ const Header = (props) => {
     <>
       <div className="header" id="nav-header">
         <ul className="nav-links">
-          <li className="bee-logo-parent">
-            <img
-              className="bee-logo-control"
-              src={mainBeeLogo}
-              alt="bee-logo"
-            />
-          </li>
+          <Link to="/">
+            <li className="bee-logo-parent">
+              <img
+                className="bee-logo-control"
+                src={mainBeeLogo}
+                alt="bee-logo"
+              />
+            </li>
+          </Link>
           <Link to="/home" className="nav-child">
             <li className="nav-link-control"> {t("headerContent.0")} </li>
           </Link>

@@ -10,15 +10,6 @@ function LandingPage(props) {
     i18n.changeLanguage(language);
   };
 
-  // const setFooterColor = () => {
-  //   if ("background-bee-image brown") {
-  //     document.getElementById("root").classList.add("brown"); //footer to change not root
-  //     console.log("Add brown footer");
-  //   }
-  // };
-
-  // setFooterColor();
-
   return (
     <>
       <div className="background-bee-image brown">
