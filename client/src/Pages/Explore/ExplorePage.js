@@ -11,6 +11,11 @@ import Container from "react-bootstrap/Container";
 import "./ExplorePage.css";
 
 function ExplorePage() {
+/**
+ * Page Hosts the About pages & contact
+ * */
+
+
   const { i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);

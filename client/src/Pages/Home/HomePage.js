@@ -6,7 +6,7 @@ import "./HomePage.css";
 import SideNav from "../../components/Nav/SideNav";
 
 /**Homepage with Nav buttons as routes to sub pages
- * */
+ **/
 
 const NavButton = (props) => {
   return (

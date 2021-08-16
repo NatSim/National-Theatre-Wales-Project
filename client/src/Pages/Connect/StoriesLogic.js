@@ -3,6 +3,11 @@ import stories from "../../Models/stories";
 import StoriesPage from "../../Pages/Connect/StoriesPage";
 
 const StoriesLogic = (props) => {
+  /** Displays Connect Stories information
+   * Dynamically displaying 2 pages,containing same HTML structure found at /Pages/Connect/StoriesPage.js
+   * All bellow props imported from json file above.
+   */
+
   const id = props.match.params.id;
 
   return (

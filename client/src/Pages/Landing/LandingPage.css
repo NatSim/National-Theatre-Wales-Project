@@ -13,12 +13,6 @@ div.background-bee-image::before {
 .background-bee-image {
   position: static;
 }
-/* 
-@media (max-width: 1024px) {
-  .background-bee-image {
-    height: 100px;
-  }
-} */
 
 .translate-button,
 .translate-button2,
