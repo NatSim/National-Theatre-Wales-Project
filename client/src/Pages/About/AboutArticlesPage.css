@@ -184,6 +184,12 @@ section.spacing-container {
   text-align: initial;
 }
 
+@media only screen and (max-width: 801px) {
+  .subscribe-text-call-to-action {
+    padding: 0px;
+  }
+}
+
 /*Sign up*/
 .sign-up-control {
   text-align: center;
