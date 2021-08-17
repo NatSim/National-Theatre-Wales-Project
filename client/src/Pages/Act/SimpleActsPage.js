@@ -43,7 +43,7 @@ const SimpleActsPage = (props) => {
   return (
     <>
       {/* Background START HERE */}
-      <div className="background-bee-image pink">
+      <div id="background-simple-acts" className="background-bee-image pink">
         <nav className="sidenav-container">
           <SideNav />
           <div className="translate-button-control">
