@@ -38,7 +38,7 @@
   padding: 0;
   margin: auto;
 }
-@media only screen and (min-width: 802px) {
+@media (min-width: 802px) {
   .audio-container-control {
     padding: 0;
   }
@@ -51,14 +51,14 @@
   position: relative;
   padding: 0px 0px 20px 0px;
 }
-@media only screen and (max-width: 802px) {
+@media (max-width: 802px) {
   .video-text-control {
     display: flex;
     max-width: 100%;
     flex-wrap: wrap;
   }
 }
-@media only screen and (min-width: 802px) {
+@media (min-width: 802px) {
   .video-text-control {
     padding: 20px 150px 20px 150px;
     text-align: left;

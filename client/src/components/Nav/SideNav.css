@@ -15,7 +15,7 @@
   height: 50px;
 }
 
-@media only screen and (min-width: 801px) {
+@media (min-width: 801px) {
   .nav-bar {
     display: none;
   }

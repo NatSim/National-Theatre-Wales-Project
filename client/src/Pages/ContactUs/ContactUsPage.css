@@ -30,7 +30,7 @@ body {
   width: fit-content;
 }
 
-@media only screen and (min-width: 801px) {
+@media (min-width: 801px) {
   .form-sizing-control {
     padding: 5px 25px 5px 0px;
   }
@@ -44,12 +44,12 @@ body {
 }
 
 /*@media queries for Mobile Device/Ipads*/
-@media only screen and (max-width: 801px) {
+@media (max-width: 801px) {
   .form-content-parent {
     text-align: center;
     margin: 70px 10px 0px 0px;
   }
-  @media only screen and (max-width: 801px) {
+  @media (max-width: 801px) {
     .subtitle3 {
       margin: 0px 0px 0px 25px;
     }

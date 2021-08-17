@@ -140,7 +140,7 @@ section.spacing-container {
   padding: 5%;
 }
 
-@media only screen and (max-width: 801px) {
+@media (max-width: 801px) {
   .article-line-control {
     text-align: center;
     padding: 5%;
@@ -160,7 +160,7 @@ section.spacing-container {
   height: 276.63px;
   margin: 10px;
 }
-@media only screen and (max-width: 801px) {
+@media (max-width: 801px) {
   .image-team {
     max-width: 100%;
     width: 350px;
@@ -184,7 +184,7 @@ section.spacing-container {
   text-align: initial;
 }
 
-@media only screen and (max-width: 801px) {
+@media (max-width: 801px) {
   .subscribe-text-call-to-action {
     padding: 0px;
   }

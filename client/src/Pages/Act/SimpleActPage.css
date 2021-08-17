@@ -99,21 +99,21 @@ article.challenge-text1 {
   color: white;
 }
 
-@media only screen and (min-width: 801px) {
+@media (min-width: 801px) {
   article.challenge-text2 {
     margin: 0px 0px 0px 20px;
 
     padding: 0px 20px 0px 20px;
   }
 }
-@media only screen and (min-width: 801px) {
+@media (min-width: 801px) {
   .challenge-text1 {
     margin: 0px 20px 0px 0px;
     padding: 0px 20px 0px 20px;
   }
 }
 
-@media only screen and (max-width: 801px) {
+@media (max-width: 801px) {
   .text-video-column {
     max-width: 100%;
     flex: none;

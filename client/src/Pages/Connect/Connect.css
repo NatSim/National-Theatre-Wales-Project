@@ -11,7 +11,7 @@ div.story-info-container {
   color: white;
 }
 
-@media only screen and (max-width: 802px) {
+@media (max-width: 802px) {
   div.story-info-container {
     margin: 10% 0% 2% 0%;
     padding: 10px 10px 10px 10px;
