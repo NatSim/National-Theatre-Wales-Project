@@ -45,7 +45,7 @@ function AudioPlayer(props, { timeJump }) {
     const seconds = Math.floor(secs % 60);
 
     const formattedMinutes = minutes.toString().padStart(2, "0");
-    const formattedSeconds = secs.toString().padStart(2, "0");
+    const formattedSeconds = seconds.toString().padStart(2, "0");
 
     return `${formattedMinutes} : ${formattedSeconds}`;
   };
