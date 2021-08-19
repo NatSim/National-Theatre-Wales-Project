@@ -23,11 +23,14 @@
 
 .Link-control {
   font-size: 16px;
+  color: #3e455a;
 }
 
 /*Social Media handler control */
 .social-media-control {
   padding: 0px 20px 0px 20px;
+  word-wrap: break-word;
+  color: #3e455a;
 }
 .socials-link-control {
   list-style: none;

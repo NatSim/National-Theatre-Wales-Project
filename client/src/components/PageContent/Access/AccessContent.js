@@ -10,11 +10,14 @@ const AccessContent = () => {
       <p className="access-content-control">
         {t("accessibilityContent.1")}
         <br />
-        <a href="rhianlewis@nationaltheatrewales.org">
+        <a
+          className="anchor-control"
+          href="rhianlewis@nationaltheatrewales.org"
+        >
           rhianlewis@nationaltheatrewales.org
         </a>
         {t("accessibilityContent.2")}
-        <a href="info@nationaltheatrewales.org">
+        <a className="anchor-control" href="info@nationaltheatrewales.org">
           info@nationaltheatrewales.org
         </a>
       </p>
