@@ -84,6 +84,7 @@ div.beeimage-container {
   display: flex;
   align-items: center;
   padding-right: 10px;
+  cursor: pointer;
   /*   temp need to move into nav tag for semantics*/
 }
 
