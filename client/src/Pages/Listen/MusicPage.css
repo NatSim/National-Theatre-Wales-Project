@@ -103,6 +103,10 @@
   padding: 0;
 }
 
+.home-footer {
+  padding: 0px 20px 0px 20px;
+}
+
 video,
 .subtitle1,
 .title-text,

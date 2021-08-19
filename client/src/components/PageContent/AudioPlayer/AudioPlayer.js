@@ -42,14 +42,12 @@ function AudioPlayer(props, { timeJump }) {
 
   const calculateTime = (secs) => {
     const minutes = Math.floor(secs / 60);
-
-    const returnMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
-
     const seconds = Math.floor(secs % 60);
 
-    const returnSeconds = secs < 10 ? `${"0" + seconds}` : `${seconds}`;
+    const formattedMinutes = minutes.toString().padStart(2, "0");
+    const formattedSeconds = secs.toString().padStart(2, "0");
 
-    return `${returnMinutes} :${returnSeconds}`;
+    return `${formattedMinutes} : ${formattedSeconds}`;
   };
 
   const play = () => {
