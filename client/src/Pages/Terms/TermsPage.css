@@ -44,4 +44,5 @@ body {
 
 .terms-content-control {
   font-size: 15px;
+  word-wrap: break-word;
 }
