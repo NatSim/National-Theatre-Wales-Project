@@ -12,7 +12,7 @@ const ContactUsPage = () => {
 
   return (
     <>
-      <div className="terms-page">
+      <div id="contact-page" className="terms-page">
         <nav className="sidenav-container">
           <SideNav />
           <div className="translate-button-control">
