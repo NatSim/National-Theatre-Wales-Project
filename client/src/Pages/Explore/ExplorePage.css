@@ -9,10 +9,15 @@ div.background-explore-image::before {
   bottom: 0px;
   left: 0px;
   background-size: cover;
-  height: 50%;
+  height: 40vh;
   background-position: center;
   opacity: 0.85;
   background-color: #82d121;
+}
+@media (min-width: 767px) {
+  div.card-deck {
+    padding: 250px 0px 0px 0px;
+  }
 }
 
 .translate-button-control .home-footer,
