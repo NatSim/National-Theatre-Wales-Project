@@ -57,6 +57,7 @@ body {
 }
 .anchor-control {
   color: blue;
+  word-break: break-all;
 }
 
 /*Contact Form Control*/

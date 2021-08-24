@@ -173,7 +173,7 @@ const StoriesPageA = (props) => {
                 {props.id_ === 1 ? (
                   <div className="video-container-child">
                     <VideoPlayer
-                      url={t("storyHref.4")}
+                      url={t("storyHref.5")}
                       width={"246px"}
                       height={"150px"}
                     />
@@ -204,7 +204,7 @@ const StoriesPageA = (props) => {
                 {props.id_ === 1 ? (
                   <div className="video-container-child">
                     <VideoPlayer
-                      url={t("storyHref.5")}
+                      url={t("storyHref.6")}
                       width={"246px"}
                       height={"150px"}
                     />
@@ -234,7 +234,7 @@ const StoriesPageA = (props) => {
                 <div className="video-container-child">
                   <div className="video-text-control">
                     <VideoPlayer
-                      url={t("storyHref.6")}
+                      url={t("storyHref.4")}
                       width={"246px"}
                       height={"150px"}
                     />
