@@ -1,12 +1,12 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import StDavidsPol from "../../../images/Maps/St_Davids_pollinator.png";
-import PemCoastPath from "../../../images/Maps/PembCoastalPath.png";
-import GetTheBoys from "../../../images/Maps/GetTheBoysLift.png";
-import LittlePantryShop from "../../../images/Maps/LittlePantryWasteShop.png";
-import Skrinkle from "../../../images/Maps/Skrinkle.png";
-import CroesoAbergwaun from "../../../images/Maps/CroesoAbergwaun.png";
-import TyCanolNatureTrai from "../../../images/Maps/TyCanolNatureTrai.png";
+import StDavidsPol from "../../../images/Maps/locations/map1stdavids.jpg";
+import PemCoastPath from "../../../images/Maps/locations/map2pembscoast.jpg";
+import GetTheBoys from "../../../images/Maps/locations/map3milfordgtbal.jpg";
+import LittlePantryShop from "../../../images/Maps/locations/map4tenbylittlepantry.jpg";
+import Skrinkle from "../../../images/Maps/locations/map5skrinkle.jpg";
+import CroesoAbergwaun from "../../../images/Maps/locations/map6fishguardcroeso.jpg";
+import TyCanolNatureTrai from "../../../images/Maps/locations/map7tycanol.jpg";
 import "./Maps.css";
 
 const Maps = () => {
