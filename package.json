@@ -8,7 +8,8 @@
     "client": "npm run start --prefix client",
     "server": "nodemon server/index.js",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "build": "npm install && CI= react-scripts build"
   },
   "keywords": [],
   "author": "",
