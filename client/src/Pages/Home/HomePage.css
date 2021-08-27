@@ -151,6 +151,8 @@ li {
 .middle-nav-list {
   padding: 0;
   height: fit-content;
+  max-height: 100%;
+  overflow: inherit;
 }
 
 .nav-container-control {

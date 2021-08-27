@@ -66,7 +66,7 @@ const HomePage = (props) => {
                 </NavButton>
               </li>
             </ul>
-          </nav>{" "}
+          </nav>
         </main>
       </div>
     </>
