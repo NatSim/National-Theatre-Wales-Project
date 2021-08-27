@@ -78,7 +78,7 @@ const Footer = (props) => {
           </li>
         </ul>
         <ul className="footer-ul-control">
-          <li>
+          <li className="extra-spacing">
             <a
               href={counterpointArtsHref}
               target="_blank"
@@ -92,7 +92,7 @@ const Footer = (props) => {
               />
             </a>
           </li>
-          <li>
+          <li className="extra-spacing">
             <a
               href={artsCouncilHref}
               target="_blank"
@@ -106,7 +106,7 @@ const Footer = (props) => {
               />
             </a>
           </li>
-          <li>
+          <li className="extra-spacing">
             <a
               href={paulHamlynHref}
               target="_blank"

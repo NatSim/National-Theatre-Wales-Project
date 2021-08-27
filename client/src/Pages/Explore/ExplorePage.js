@@ -11,10 +11,9 @@ import Container from "react-bootstrap/Container";
 import "./ExplorePage.css";
 
 function ExplorePage() {
-/**
- * Page Hosts the About pages & contact
- * */
-
+  /**
+   * Page Hosts the About pages & contact
+   * */
 
   const { i18n } = useTranslation();
   const changeLanguage = (language) => {
@@ -34,13 +33,13 @@ function ExplorePage() {
           </div>
         </nav>
         {/* CARD container START HERE */}
+        <div className="explore-title-control">
+          <h2 className="explore-page">{i18n.t("homeSubtitleExplore")}</h2>
+        </div>
         <section className="card-container">
-          <div className="explore-title-control">
-            <h2 className="explore-page">{i18n.t("homeSubtitleExplore")}</h2>
-          </div>
           <Container className="card-deck">
             <Row>
-              <Col sm>
+              <Col lg>
                 <Features
                   image={NTWLogo}
                   title={i18n.t("featureCard1.0")}
@@ -50,7 +49,7 @@ function ExplorePage() {
                   id="button1-contol"
                 />
               </Col>
-              <Col sm>
+              <Col lg>
                 <Features
                   image={Tide}
                   title={i18n.t("featureCard2.0")}
@@ -60,7 +59,7 @@ function ExplorePage() {
                   id="button1-contol"
                 />
               </Col>
-              <Col sm>
+              <Col lg>
                 <Features
                   image={Party}
                   title={i18n.t("featureCard3.0")}
@@ -73,7 +72,7 @@ function ExplorePage() {
             </Row>
           </Container>
         </section>
-        ;{/* CARD container END HERE */}
+        {/* CARD container END HERE */}
       </div>
     </>
   );

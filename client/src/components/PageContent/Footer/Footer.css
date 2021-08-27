@@ -21,6 +21,12 @@
   }
 }
 
+@media (max-width: 820px) {
+  li.extra-spacing {
+    margin: 15px 0px 15px 0px;
+  }
+}
+
 .Link-control {
   font-size: 16px;
   color: #3e455a;
