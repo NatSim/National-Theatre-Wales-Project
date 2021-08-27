@@ -38,35 +38,39 @@ const HomePage = (props) => {
           </div>
         </nav>
         <main>
-          <nav className="nav-container">
-            <ul className="middle-nav-list">
-              <li className="nav-list-child">
-                {" "}
-                <h2 className="subtitle5">{i18n.t("homeSubtitleDiscover")}</h2>
-              </li>
-              <li className="nav-button-list">
-                <NavButton link={"/connect"} buttonColor={"green-button"}>
-                  {i18n.t("homeNavContent.0")}
-                </NavButton>
-              </li>
-              <li className="nav-button-list">
-                <NavButton link={"/music"} buttonColor={"pink-button"}>
-                  {i18n.t("homeNavContent.1")}
-                </NavButton>
-              </li>
+          <section>
+            <nav className="nav-container">
+              <ul className="middle-nav-list">
+                <li className="nav-list-child">
+                  {" "}
+                  <h2 className="subtitle5">
+                    {i18n.t("homeSubtitleDiscover")}
+                  </h2>
+                </li>
+                <li className="nav-button-list">
+                  <NavButton link={"/connect"} buttonColor={"green-button"}>
+                    {i18n.t("homeNavContent.0")}
+                  </NavButton>
+                </li>
+                <li className="nav-button-list">
+                  <NavButton link={"/music"} buttonColor={"pink-button"}>
+                    {i18n.t("homeNavContent.1")}
+                  </NavButton>
+                </li>
 
-              <li className="nav-button-list">
-                <NavButton link={"/simpleacts"} buttonColor={"simple-button"}>
-                  {i18n.t("homeNavContent.2")}
-                </NavButton>
-              </li>
-              <li className="nav-button-list">
-                <NavButton link={"/map"} buttonColor={"blue-button"}>
-                  {i18n.t("homeNavContent.3")}
-                </NavButton>
-              </li>
-            </ul>
-          </nav>
+                <li className="nav-button-list">
+                  <NavButton link={"/simpleacts"} buttonColor={"simple-button"}>
+                    {i18n.t("homeNavContent.2")}
+                  </NavButton>
+                </li>
+                <li className="nav-button-list">
+                  <NavButton link={"/map"} buttonColor={"blue-button"}>
+                    {i18n.t("homeNavContent.3")}
+                  </NavButton>
+                </li>
+              </ul>
+            </nav>
+          </section>
         </main>
       </div>
     </>

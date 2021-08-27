@@ -22,11 +22,11 @@ body {
   justify-content: center;
 }
 
-/* @media (min-width: 640px) {
+@media (min-device-width: 320px) and (max-device-height: 500px) {
   .nav-container {
     height: fit-content;
   }
-} */
+}
 
 .nav-container::before {
   content: "";
