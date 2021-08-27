@@ -15,9 +15,9 @@ body {
 /* Middle button nav-START*/
 .nav-container {
   position: relative;
-  margin: 25px 50px 25px 50px;
-  padding: 50px 10px 50px 10px;
-  height: 100vh;
+  margin: 0px 50px 0px 50px;
+  padding: 10px 50px 0px 50px;
+  height: 110vh;
   display: flex;
   justify-content: center;
 }
@@ -146,10 +146,11 @@ li {
 
 .nav-list-child {
   display: inline-flex;
-  margin-bottom: 15%;
+  margin-bottom: 50px;
 }
 .middle-nav-list {
   padding: 0;
+  height: fit-content;
 }
 
 .nav-container-control {
