@@ -14,6 +14,8 @@ div.background-explore-image::before {
   opacity: 0.85;
   background-color: #82d121;
 }
+
+/* Devices */
 @media (min-width: 767px) {
   div.card-row {
     margin: 250px 0px 0px 0px;

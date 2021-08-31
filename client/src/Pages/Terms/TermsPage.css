@@ -6,15 +6,8 @@ body {
 
 .terms-page {
   height: fit-content;
-  color: black;
   padding: 5px 5px 5px 5px;
   position: relative;
-}
-
-@media (min-width: 1024px) {
-  #contact-page {
-    height: 110vh;
-  }
 }
 
 .terms-page::before {
