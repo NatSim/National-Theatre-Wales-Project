@@ -1,7 +1,7 @@
 
 <h1>Go Tell The Bees-App</h1>
 
-This Project is called **Got Tell The Bees** and is a responsive 'Wellness' web application to go alongside a site-specific show aimed at a broad audience for **National Theatre Wales** . This app uses **React Framework**.
+This Project is called **Got Tell The Bees** and is a responsive 'Wellbeing' web application to go alongside a site-specific show aimed at a broad audience for **National Theatre Wales** . This app uses **React Framework**.
 
 View the site here : https://www.gotellthebees.org/
 
