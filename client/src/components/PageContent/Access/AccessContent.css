@@ -10,4 +10,6 @@ h1.subtitle1 {
   text-align: center;
   padding: 5%;
   margin: 5%;
+  overflow: scroll;
+  height: 100vh;
 }
